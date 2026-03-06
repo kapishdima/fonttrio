@@ -1,0 +1,29 @@
+{
+  "name": "arimo",
+  "type": "registry:font",
+  "title": "Arimo",
+  "description": "Arimo — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Arimo",
+    "provider": "google",
+    "import": "Arimo",
+    "variable": "--font-arimo",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

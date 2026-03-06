@@ -1,0 +1,29 @@
+{
+  "name": "smooch-sans",
+  "type": "registry:font",
+  "title": "Smooch Sans",
+  "description": "Smooch Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Smooch Sans",
+    "provider": "google",
+    "import": "Smooch_Sans",
+    "variable": "--font-smooch-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

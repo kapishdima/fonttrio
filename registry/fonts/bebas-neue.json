@@ -1,0 +1,20 @@
+{
+  "name": "bebas-neue",
+  "type": "registry:font",
+  "title": "Bebas Neue",
+  "description": "Bebas Neue — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Bebas Neue",
+    "provider": "google",
+    "import": "Bebas_Neue",
+    "variable": "--font-bebas-neue",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "saira",
+  "type": "registry:font",
+  "title": "Saira",
+  "description": "Saira — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Saira",
+    "provider": "google",
+    "import": "Saira",
+    "variable": "--font-saira",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

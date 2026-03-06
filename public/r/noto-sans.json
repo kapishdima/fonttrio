@@ -1,0 +1,34 @@
+{
+  "name": "noto-sans",
+  "type": "registry:font",
+  "title": "Noto Sans",
+  "description": "Noto Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Noto Sans",
+    "provider": "google",
+    "import": "Noto_Sans",
+    "variable": "--font-noto-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "devanagari",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

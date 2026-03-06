@@ -1,0 +1,31 @@
+{
+  "name": "overpass",
+  "type": "registry:font",
+  "title": "Overpass",
+  "description": "Overpass — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Overpass",
+    "provider": "google",
+    "import": "Overpass",
+    "variable": "--font-overpass",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

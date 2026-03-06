@@ -1,0 +1,23 @@
+{
+  "name": "pt-serif",
+  "type": "registry:font",
+  "title": "PT Serif",
+  "description": "PT Serif — Serif font from Google Fonts.",
+  "font": {
+    "family": "PT Serif",
+    "provider": "google",
+    "import": "PT_Serif",
+    "variable": "--font-pt-serif",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

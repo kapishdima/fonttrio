@@ -1,0 +1,25 @@
+{
+  "name": "caveat",
+  "type": "registry:font",
+  "title": "Caveat",
+  "description": "Caveat — Handwriting font from Google Fonts.",
+  "font": {
+    "family": "Caveat",
+    "provider": "google",
+    "import": "Caveat",
+    "variable": "--font-caveat",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

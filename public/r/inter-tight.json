@@ -1,0 +1,33 @@
+{
+  "name": "inter-tight",
+  "type": "registry:font",
+  "title": "Inter Tight",
+  "description": "Inter Tight — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Inter Tight",
+    "provider": "google",
+    "import": "Inter_Tight",
+    "variable": "--font-inter-tight",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

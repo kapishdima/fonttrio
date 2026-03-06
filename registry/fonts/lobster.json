@@ -1,0 +1,23 @@
+{
+  "name": "lobster",
+  "type": "registry:font",
+  "title": "Lobster",
+  "description": "Lobster — Display font from Google Fonts.",
+  "font": {
+    "family": "Lobster",
+    "provider": "google",
+    "import": "Lobster",
+    "variable": "--font-lobster",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

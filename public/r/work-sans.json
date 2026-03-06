@@ -1,0 +1,29 @@
+{
+  "name": "work-sans",
+  "type": "registry:font",
+  "title": "Work Sans",
+  "description": "Work Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Work Sans",
+    "provider": "google",
+    "import": "Work_Sans",
+    "variable": "--font-work-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

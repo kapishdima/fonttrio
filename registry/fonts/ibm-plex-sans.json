@@ -1,0 +1,30 @@
+{
+  "name": "ibm-plex-sans",
+  "type": "registry:font",
+  "title": "IBM Plex Sans",
+  "description": "IBM Plex Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "IBM Plex Sans",
+    "provider": "google",
+    "import": "IBM_Plex_Sans",
+    "variable": "--font-ibm-plex-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

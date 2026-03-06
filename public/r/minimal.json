@@ -1,0 +1,32 @@
+{
+  "name": "pairing-minimal",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Minimal — Geist + Geist + Geist Mono",
+  "description": "Ultra-minimal Vercel-style pairing. One font family for everything, clean and modern.",
+  "categories": ["sans-serif", "minimal", "modern"],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/geist.json",
+    "https://fonttrio.dev/r/geist-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-geist)",
+      "--font-body": "var(--font-geist)",
+      "--font-mono": "var(--font-geist-mono)"
+    }
+  },
+  "css": {
+    "h1": { "font-family": "var(--font-heading)", "font-size": "2.25rem", "line-height": "1.15", "letter-spacing": "-0.025em", "font-weight": "700" },
+    "h2": { "font-family": "var(--font-heading)", "font-size": "1.875rem", "line-height": "1.2", "letter-spacing": "-0.02em", "font-weight": "600" },
+    "h3": { "font-family": "var(--font-heading)", "font-size": "1.5rem", "line-height": "1.3", "letter-spacing": "-0.015em", "font-weight": "500" },
+    "h4, h5, h6": { "font-family": "var(--font-heading)", "letter-spacing": "-0.01em" },
+    "body, p": { "font-family": "var(--font-body)", "line-height": "1.6" },
+    "code, pre": { "font-family": "var(--font-mono)" }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": ["modern", "minimal", "Vercel-style"],
+    "useCase": ["SaaS", "developer tools", "Vercel-style"]
+  }
+}

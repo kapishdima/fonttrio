@@ -1,0 +1,29 @@
+{
+  "name": "jost",
+  "type": "registry:font",
+  "title": "Jost",
+  "description": "Jost — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Jost",
+    "provider": "google",
+    "import": "Jost",
+    "variable": "--font-jost",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

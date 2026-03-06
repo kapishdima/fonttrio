@@ -1,0 +1,21 @@
+{
+  "name": "alfa-slab-one",
+  "type": "registry:font",
+  "title": "Alfa Slab One",
+  "description": "Alfa Slab One — Display font from Google Fonts.",
+  "font": {
+    "family": "Alfa Slab One",
+    "provider": "google",
+    "import": "Alfa_Slab_One",
+    "variable": "--font-alfa-slab-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

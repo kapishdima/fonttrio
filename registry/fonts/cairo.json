@@ -1,0 +1,29 @@
+{
+  "name": "cairo",
+  "type": "registry:font",
+  "title": "Cairo",
+  "description": "Cairo — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Cairo",
+    "provider": "google",
+    "import": "Cairo",
+    "variable": "--font-cairo",
+    "weight": [
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

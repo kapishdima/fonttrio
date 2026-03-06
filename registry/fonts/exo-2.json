@@ -1,0 +1,31 @@
+{
+  "name": "exo-2",
+  "type": "registry:font",
+  "title": "Exo 2",
+  "description": "Exo 2 — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Exo 2",
+    "provider": "google",
+    "import": "Exo_2",
+    "variable": "--font-exo-2",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

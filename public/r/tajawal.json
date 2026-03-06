@@ -1,0 +1,26 @@
+{
+  "name": "tajawal",
+  "type": "registry:font",
+  "title": "Tajawal",
+  "description": "Tajawal — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Tajawal",
+    "provider": "google",
+    "import": "Tajawal",
+    "variable": "--font-tajawal",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin"
+    ]
+  }
+}

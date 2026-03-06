@@ -1,0 +1,29 @@
+{
+  "name": "noto-sans-telugu",
+  "type": "registry:font",
+  "title": "Noto Sans Telugu",
+  "description": "Noto Sans Telugu — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Noto Sans Telugu",
+    "provider": "google",
+    "import": "Noto_Sans_Telugu",
+    "variable": "--font-noto-sans-telugu",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "telugu"
+    ]
+  }
+}

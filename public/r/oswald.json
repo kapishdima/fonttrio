@@ -1,0 +1,28 @@
+{
+  "name": "oswald",
+  "type": "registry:font",
+  "title": "Oswald",
+  "description": "Oswald — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Oswald",
+    "provider": "google",
+    "import": "Oswald",
+    "variable": "--font-oswald",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "m-plus-rounded-1c",
+  "type": "registry:font",
+  "title": "M PLUS Rounded 1c",
+  "description": "M PLUS Rounded 1c — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "M PLUS Rounded 1c",
+    "provider": "google",
+    "import": "M_PLUS_Rounded_1c",
+    "variable": "--font-m-plus-rounded-1c",
+    "weight": [
+      "100",
+      "300",
+      "400",
+      "500",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "hebrew",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

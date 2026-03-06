@@ -1,0 +1,29 @@
+{
+  "name": "public-sans",
+  "type": "registry:font",
+  "title": "Public Sans",
+  "description": "Public Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Public Sans",
+    "provider": "google",
+    "import": "Public_Sans",
+    "variable": "--font-public-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

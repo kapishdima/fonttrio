@@ -1,0 +1,35 @@
+{
+  "name": "roboto",
+  "type": "registry:font",
+  "title": "Roboto",
+  "description": "Roboto — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Roboto",
+    "provider": "google",
+    "import": "Roboto",
+    "variable": "--font-roboto",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "gravitas-one",
+  "type": "registry:font",
+  "title": "Gravitas One",
+  "description": "Gravitas One — Display font from Google Fonts.",
+  "font": {
+    "family": "Gravitas One",
+    "provider": "google",
+    "import": "Gravitas_One",
+    "variable": "--font-gravitas-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

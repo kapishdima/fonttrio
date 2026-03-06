@@ -1,0 +1,32 @@
+{
+  "name": "source-sans-3",
+  "type": "registry:font",
+  "title": "Source Sans 3",
+  "description": "Source Sans 3 — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Source Sans 3",
+    "provider": "google",
+    "import": "Source_Sans_3",
+    "variable": "--font-source-sans-3",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

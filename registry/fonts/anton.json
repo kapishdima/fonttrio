@@ -1,0 +1,21 @@
+{
+  "name": "anton",
+  "type": "registry:font",
+  "title": "Anton",
+  "description": "Anton — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Anton",
+    "provider": "google",
+    "import": "Anton",
+    "variable": "--font-anton",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "pacifico",
+  "type": "registry:font",
+  "title": "Pacifico",
+  "description": "Pacifico — Handwriting font from Google Fonts.",
+  "font": {
+    "family": "Pacifico",
+    "provider": "google",
+    "import": "Pacifico",
+    "variable": "--font-pacifico",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

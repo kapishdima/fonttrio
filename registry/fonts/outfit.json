@@ -1,0 +1,28 @@
+{
+  "name": "outfit",
+  "type": "registry:font",
+  "title": "Outfit",
+  "description": "Outfit — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Outfit",
+    "provider": "google",
+    "import": "Outfit",
+    "variable": "--font-outfit",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "noto-serif-jp",
+  "type": "registry:font",
+  "title": "Noto Serif JP",
+  "description": "Noto Serif JP — Serif font from Google Fonts.",
+  "font": {
+    "family": "Noto Serif JP",
+    "provider": "google",
+    "import": "Noto_Serif_JP",
+    "variable": "--font-noto-serif-jp",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

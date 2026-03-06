@@ -1,0 +1,27 @@
+{
+  "name": "ubuntu",
+  "type": "registry:font",
+  "title": "Ubuntu",
+  "description": "Ubuntu — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Ubuntu",
+    "provider": "google",
+    "import": "Ubuntu",
+    "variable": "--font-ubuntu",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

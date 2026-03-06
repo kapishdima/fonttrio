@@ -1,0 +1,21 @@
+{
+  "name": "bungee",
+  "type": "registry:font",
+  "title": "Bungee",
+  "description": "Bungee — Display font from Google Fonts.",
+  "font": {
+    "family": "Bungee",
+    "provider": "google",
+    "import": "Bungee",
+    "variable": "--font-bungee",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "mukta",
+  "type": "registry:font",
+  "title": "Mukta",
+  "description": "Mukta — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Mukta",
+    "provider": "google",
+    "import": "Mukta",
+    "variable": "--font-mukta",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

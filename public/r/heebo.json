@@ -1,0 +1,31 @@
+{
+  "name": "heebo",
+  "type": "registry:font",
+  "title": "Heebo",
+  "description": "Heebo — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Heebo",
+    "provider": "google",
+    "import": "Heebo",
+    "variable": "--font-heebo",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

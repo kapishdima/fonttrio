@@ -1,0 +1,23 @@
+{
+  "name": "pt-sans",
+  "type": "registry:font",
+  "title": "PT Sans",
+  "description": "PT Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "PT Sans",
+    "provider": "google",
+    "import": "PT_Sans",
+    "variable": "--font-pt-sans",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

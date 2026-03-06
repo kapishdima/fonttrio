@@ -1,0 +1,33 @@
+{
+  "name": "roboto-condensed",
+  "type": "registry:font",
+  "title": "Roboto Condensed",
+  "description": "Roboto Condensed — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Roboto Condensed",
+    "provider": "google",
+    "import": "Roboto_Condensed",
+    "variable": "--font-roboto-condensed",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

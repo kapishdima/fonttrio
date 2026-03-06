@@ -1,0 +1,34 @@
+{
+  "name": "noto-serif",
+  "type": "registry:font",
+  "title": "Noto Serif",
+  "description": "Noto Serif — Serif font from Google Fonts.",
+  "font": {
+    "family": "Noto Serif",
+    "provider": "google",
+    "import": "Noto_Serif",
+    "variable": "--font-noto-serif",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "vietnamese"
+    ]
+  }
+}

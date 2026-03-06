@@ -1,0 +1,29 @@
+{
+  "name": "eb-garamond",
+  "type": "registry:font",
+  "title": "EB Garamond",
+  "description": "EB Garamond — Serif font from Google Fonts.",
+  "font": {
+    "family": "EB Garamond",
+    "provider": "google",
+    "import": "EB_Garamond",
+    "variable": "--font-eb-garamond",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

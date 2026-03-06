@@ -1,0 +1,27 @@
+{
+  "name": "bricolage-grotesque",
+  "type": "registry:font",
+  "title": "Bricolage Grotesque",
+  "description": "Bricolage Grotesque — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Bricolage Grotesque",
+    "provider": "google",
+    "import": "Bricolage_Grotesque",
+    "variable": "--font-bricolage-grotesque",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "plus-jakarta-sans",
+  "type": "registry:font",
+  "title": "Plus Jakarta Sans",
+  "description": "Plus Jakarta Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Plus Jakarta Sans",
+    "provider": "google",
+    "import": "Plus_Jakarta_Sans",
+    "variable": "--font-plus-jakarta-sans",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

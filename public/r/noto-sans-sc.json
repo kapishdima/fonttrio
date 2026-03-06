@@ -1,0 +1,31 @@
+{
+  "name": "noto-sans-sc",
+  "type": "registry:font",
+  "title": "Noto Sans SC",
+  "description": "Noto Sans SC — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Noto Sans SC",
+    "provider": "google",
+    "import": "Noto_Sans_SC",
+    "variable": "--font-noto-sans-sc",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-simplified",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "dancing-script",
+  "type": "registry:font",
+  "title": "Dancing Script",
+  "description": "Dancing Script — Handwriting font from Google Fonts.",
+  "font": {
+    "family": "Dancing Script",
+    "provider": "google",
+    "import": "Dancing_Script",
+    "variable": "--font-dancing-script",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

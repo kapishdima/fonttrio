@@ -1,0 +1,25 @@
+{
+  "name": "hind",
+  "type": "registry:font",
+  "title": "Hind",
+  "description": "Hind — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Hind",
+    "provider": "google",
+    "import": "Hind",
+    "variable": "--font-hind",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "google-sans",
+  "type": "registry:font",
+  "title": "Google Sans",
+  "description": "Google Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Google Sans",
+    "provider": "google",
+    "import": "Google_Sans",
+    "variable": "--font-google-sans",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "armenian",
+      "bengali",
+      "canadian-aboriginal",
+      "cyrillic",
+      "cyrillic-ext",
+      "devanagari",
+      "ethiopic",
+      "georgian",
+      "greek",
+      "greek-ext",
+      "gujarati",
+      "gurmukhi",
+      "hebrew",
+      "khmer",
+      "lao",
+      "latin",
+      "latin-ext",
+      "malayalam",
+      "oriya",
+      "sinhala",
+      "symbols",
+      "tamil",
+      "telugu",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

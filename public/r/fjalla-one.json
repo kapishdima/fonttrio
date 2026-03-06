@@ -1,0 +1,22 @@
+{
+  "name": "fjalla-one",
+  "type": "registry:font",
+  "title": "Fjalla One",
+  "description": "Fjalla One — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Fjalla One",
+    "provider": "google",
+    "import": "Fjalla_One",
+    "variable": "--font-fjalla-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

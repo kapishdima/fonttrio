@@ -1,0 +1,27 @@
+{
+  "name": "cormorant-garamond",
+  "type": "registry:font",
+  "title": "Cormorant Garamond",
+  "description": "Cormorant Garamond — Serif font from Google Fonts.",
+  "font": {
+    "family": "Cormorant Garamond",
+    "provider": "google",
+    "import": "Cormorant_Garamond",
+    "variable": "--font-cormorant-garamond",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "schibsted-grotesk",
+  "type": "registry:font",
+  "title": "Schibsted Grotesk",
+  "description": "Schibsted Grotesk — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Schibsted Grotesk",
+    "provider": "google",
+    "import": "Schibsted_Grotesk",
+    "variable": "--font-schibsted-grotesk",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

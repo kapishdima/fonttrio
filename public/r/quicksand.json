@@ -1,0 +1,25 @@
+{
+  "name": "quicksand",
+  "type": "registry:font",
+  "title": "Quicksand",
+  "description": "Quicksand — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Quicksand",
+    "provider": "google",
+    "import": "Quicksand",
+    "variable": "--font-quicksand",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

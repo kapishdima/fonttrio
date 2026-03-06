@@ -1,0 +1,31 @@
+{
+  "name": "mulish",
+  "type": "registry:font",
+  "title": "Mulish",
+  "description": "Mulish — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Mulish",
+    "provider": "google",
+    "import": "Mulish",
+    "variable": "--font-mulish",
+    "weight": [
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

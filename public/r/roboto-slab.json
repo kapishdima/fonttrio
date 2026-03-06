@@ -1,0 +1,33 @@
+{
+  "name": "roboto-slab",
+  "type": "registry:font",
+  "title": "Roboto Slab",
+  "description": "Roboto Slab — Serif font from Google Fonts.",
+  "font": {
+    "family": "Roboto Slab",
+    "provider": "google",
+    "import": "Roboto_Slab",
+    "variable": "--font-roboto-slab",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

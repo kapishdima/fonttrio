@@ -1,0 +1,733 @@
+{
+  "fonts": [
+    {
+      "name": "work-sans",
+      "title": "Work Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/work-sans.json"
+    },
+    {
+      "name": "montserrat",
+      "title": "Montserrat",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/montserrat.json"
+    },
+    {
+      "name": "mulish",
+      "title": "Mulish",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/mulish.json"
+    },
+    {
+      "name": "figtree",
+      "title": "Figtree",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/figtree.json"
+    },
+    {
+      "name": "dancing-script",
+      "title": "Dancing Script",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/dancing-script.json"
+    },
+    {
+      "name": "red-hat-display",
+      "title": "Red Hat Display",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/red-hat-display.json"
+    },
+    {
+      "name": "barlow",
+      "title": "Barlow",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/barlow.json"
+    },
+    {
+      "name": "assistant",
+      "title": "Assistant",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/assistant.json"
+    },
+    {
+      "name": "roboto-condensed",
+      "title": "Roboto Condensed",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/roboto-condensed.json"
+    },
+    {
+      "name": "outfit",
+      "title": "Outfit",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/outfit.json"
+    },
+    {
+      "name": "bebas-neue",
+      "title": "Bebas Neue",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/bebas-neue.json"
+    },
+    {
+      "name": "oswald",
+      "title": "Oswald",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/oswald.json"
+    },
+    {
+      "name": "josefin-sans",
+      "title": "Josefin Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/josefin-sans.json"
+    },
+    {
+      "name": "cabin",
+      "title": "Cabin",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/cabin.json"
+    },
+    {
+      "name": "manrope",
+      "title": "Manrope",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/manrope.json"
+    },
+    {
+      "name": "gravitas-one",
+      "title": "Gravitas One",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/gravitas-one.json"
+    },
+    {
+      "name": "plus-jakarta-sans",
+      "title": "Plus Jakarta Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/plus-jakarta-sans.json"
+    },
+    {
+      "name": "google-sans",
+      "title": "Google Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/google-sans.json"
+    },
+    {
+      "name": "fjalla-one",
+      "title": "Fjalla One",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/fjalla-one.json"
+    },
+    {
+      "name": "pacifico",
+      "title": "Pacifico",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/pacifico.json"
+    },
+    {
+      "name": "oxygen",
+      "title": "Oxygen",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/oxygen.json"
+    },
+    {
+      "name": "anton",
+      "title": "Anton",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/anton.json"
+    },
+    {
+      "name": "roboto-slab",
+      "title": "Roboto Slab",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/roboto-slab.json"
+    },
+    {
+      "name": "crimson-text",
+      "title": "Crimson Text",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/crimson-text.json"
+    },
+    {
+      "name": "raleway",
+      "title": "Raleway",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/raleway.json"
+    },
+    {
+      "name": "tajawal",
+      "title": "Tajawal",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/tajawal.json"
+    },
+    {
+      "name": "libre-franklin",
+      "title": "Libre Franklin",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/libre-franklin.json"
+    },
+    {
+      "name": "rubik",
+      "title": "Rubik",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/rubik.json"
+    },
+    {
+      "name": "changa-one",
+      "title": "Changa One",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/changa-one.json"
+    },
+    {
+      "name": "noto-sans",
+      "title": "Noto Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-sans.json"
+    },
+    {
+      "name": "jost",
+      "title": "Jost",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/jost.json"
+    },
+    {
+      "name": "archivo",
+      "title": "Archivo",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/archivo.json"
+    },
+    {
+      "name": "bungee",
+      "title": "Bungee",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/bungee.json"
+    },
+    {
+      "name": "noto-sans-kr",
+      "title": "Noto Sans KR",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-sans-kr.json"
+    },
+    {
+      "name": "eb-garamond",
+      "title": "EB Garamond",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/eb-garamond.json"
+    },
+    {
+      "name": "exo-2",
+      "title": "Exo 2",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/exo-2.json"
+    },
+    {
+      "name": "source-sans-3",
+      "title": "Source Sans 3",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/source-sans-3.json"
+    },
+    {
+      "name": "roboto",
+      "title": "Roboto",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/roboto.json"
+    },
+    {
+      "name": "prompt",
+      "title": "Prompt",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/prompt.json"
+    },
+    {
+      "name": "m-plus-rounded-1c",
+      "title": "M PLUS Rounded 1c",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/m-plus-rounded-1c.json"
+    },
+    {
+      "name": "ubuntu",
+      "title": "Ubuntu",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/ubuntu.json"
+    },
+    {
+      "name": "quicksand",
+      "title": "Quicksand",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/quicksand.json"
+    },
+    {
+      "name": "caveat",
+      "title": "Caveat",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/caveat.json"
+    },
+    {
+      "name": "kanit",
+      "title": "Kanit",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/kanit.json"
+    },
+    {
+      "name": "karla",
+      "title": "Karla",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/karla.json"
+    },
+    {
+      "name": "inconsolata",
+      "title": "Inconsolata",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/inconsolata.json"
+    },
+    {
+      "name": "bitter",
+      "title": "Bitter",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/bitter.json"
+    },
+    {
+      "name": "open-sans",
+      "title": "Open Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/open-sans.json"
+    },
+    {
+      "name": "nanum-gothic",
+      "title": "Nanum Gothic",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/nanum-gothic.json"
+    },
+    {
+      "name": "arvo",
+      "title": "Arvo",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/arvo.json"
+    },
+    {
+      "name": "inter-tight",
+      "title": "Inter Tight",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/inter-tight.json"
+    },
+    {
+      "name": "lato",
+      "title": "Lato",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/lato.json"
+    },
+    {
+      "name": "roboto-mono",
+      "title": "Roboto Mono",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/roboto-mono.json"
+    },
+    {
+      "name": "overpass",
+      "title": "Overpass",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/overpass.json"
+    },
+    {
+      "name": "barlow-condensed",
+      "title": "Barlow Condensed",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/barlow-condensed.json"
+    },
+    {
+      "name": "hind-siliguri",
+      "title": "Hind Siliguri",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/hind-siliguri.json"
+    },
+    {
+      "name": "heebo",
+      "title": "Heebo",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/heebo.json"
+    },
+    {
+      "name": "poppins",
+      "title": "Poppins",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/poppins.json"
+    },
+    {
+      "name": "noto-color-emoji",
+      "title": "Noto Color Emoji",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-color-emoji.json"
+    },
+    {
+      "name": "noto-sans-sc",
+      "title": "Noto Sans SC",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-sans-sc.json"
+    },
+    {
+      "name": "source-code-pro",
+      "title": "Source Code Pro",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/source-code-pro.json"
+    },
+    {
+      "name": "titillium-web",
+      "title": "Titillium Web",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/titillium-web.json"
+    },
+    {
+      "name": "lobster",
+      "title": "Lobster",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/lobster.json"
+    },
+    {
+      "name": "libre-baskerville",
+      "title": "Libre Baskerville",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/libre-baskerville.json"
+    },
+    {
+      "name": "noto-sans-telugu",
+      "title": "Noto Sans Telugu",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-sans-telugu.json"
+    },
+    {
+      "name": "fira-sans",
+      "title": "Fira Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/fira-sans.json"
+    },
+    {
+      "name": "noto-serif-jp",
+      "title": "Noto Serif JP",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-serif-jp.json"
+    },
+    {
+      "name": "ibm-plex-sans",
+      "title": "IBM Plex Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/ibm-plex-sans.json"
+    },
+    {
+      "name": "anek-telugu",
+      "title": "Anek Telugu",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/anek-telugu.json"
+    },
+    {
+      "name": "bricolage-grotesque",
+      "title": "Bricolage Grotesque",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/bricolage-grotesque.json"
+    },
+    {
+      "name": "nunito",
+      "title": "Nunito",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/nunito.json"
+    },
+    {
+      "name": "lora",
+      "title": "Lora",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/lora.json"
+    },
+    {
+      "name": "pt-sans-narrow",
+      "title": "PT Sans Narrow",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/pt-sans-narrow.json"
+    },
+    {
+      "name": "lexend",
+      "title": "Lexend",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/lexend.json"
+    },
+    {
+      "name": "public-sans",
+      "title": "Public Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/public-sans.json"
+    },
+    {
+      "name": "dosis",
+      "title": "Dosis",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/dosis.json"
+    },
+    {
+      "name": "pt-sans",
+      "title": "PT Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/pt-sans.json"
+    },
+    {
+      "name": "cormorant-garamond",
+      "title": "Cormorant Garamond",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/cormorant-garamond.json"
+    },
+    {
+      "name": "noto-sans-jp",
+      "title": "Noto Sans JP",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-sans-jp.json"
+    },
+    {
+      "name": "alfa-slab-one",
+      "title": "Alfa Slab One",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/alfa-slab-one.json"
+    },
+    {
+      "name": "cairo",
+      "title": "Cairo",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/cairo.json"
+    },
+    {
+      "name": "nunito-sans",
+      "title": "Nunito Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/nunito-sans.json"
+    },
+    {
+      "name": "space-grotesk",
+      "title": "Space Grotesk",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/space-grotesk.json"
+    },
+    {
+      "name": "share-tech",
+      "title": "Share Tech",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/share-tech.json"
+    },
+    {
+      "name": "archivo-black",
+      "title": "Archivo Black",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/archivo-black.json"
+    },
+    {
+      "name": "merriweather",
+      "title": "Merriweather",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/merriweather.json"
+    },
+    {
+      "name": "roboto-flex",
+      "title": "Roboto Flex",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/roboto-flex.json"
+    },
+    {
+      "name": "pt-serif",
+      "title": "PT Serif",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/pt-serif.json"
+    },
+    {
+      "name": "noto-serif",
+      "title": "Noto Serif",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-serif.json"
+    },
+    {
+      "name": "playfair-display",
+      "title": "Playfair Display",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/playfair-display.json"
+    },
+    {
+      "name": "mukta",
+      "title": "Mukta",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/mukta.json"
+    },
+    {
+      "name": "ramabhadra",
+      "title": "Ramabhadra",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/ramabhadra.json"
+    },
+    {
+      "name": "saira",
+      "title": "Saira",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/saira.json"
+    },
+    {
+      "name": "hind",
+      "title": "Hind",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/hind.json"
+    },
+    {
+      "name": "arimo",
+      "title": "Arimo",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/arimo.json"
+    },
+    {
+      "name": "schibsted-grotesk",
+      "title": "Schibsted Grotesk",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/schibsted-grotesk.json"
+    },
+    {
+      "name": "inter",
+      "title": "Inter",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/inter.json"
+    },
+    {
+      "name": "smooch-sans",
+      "title": "Smooch Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/smooch-sans.json"
+    },
+    {
+      "name": "noto-sans-tc",
+      "title": "Noto Sans TC",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-sans-tc.json"
+    },
+    {
+      "name": "dm-sans",
+      "title": "DM Sans",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/dm-sans.json"
+    }
+  ],
+  "pairings": [
+    {
+      "name": "pairing-minimal",
+      "title": "Minimal — Geist + Geist + Geist Mono",
+      "description": "Ultra-minimal Vercel-style pairing. One font family for everything, clean and modern.",
+      "categories": [
+        "sans-serif",
+        "minimal",
+        "modern"
+      ],
+      "mood": [
+        "modern",
+        "minimal",
+        "Vercel-style"
+      ],
+      "useCase": [
+        "SaaS",
+        "developer tools",
+        "Vercel-style"
+      ],
+      "url": "https://fonttrio.dev/r/minimal.json"
+    },
+    {
+      "name": "pairing-classic",
+      "title": "Classic — DM Serif Display + Libre Baskerville + JetBrains Mono",
+      "description": "Literary and warm serif pairing. Elegant display headings with classic body text for publishing.",
+      "categories": [
+        "serif",
+        "classic",
+        "literary"
+      ],
+      "mood": [
+        "literary",
+        "warm",
+        "traditional"
+      ],
+      "useCase": [
+        "blog",
+        "publishing",
+        "book"
+      ],
+      "url": "https://fonttrio.dev/r/classic.json"
+    },
+    {
+      "name": "pairing-creative",
+      "title": "Creative — Space Grotesk + DM Sans + Fira Code",
+      "description": "Playful geometric pairing. Bold headings with friendly body text for startups and portfolios.",
+      "categories": [
+        "sans-serif",
+        "creative",
+        "geometric"
+      ],
+      "mood": [
+        "playful",
+        "startup",
+        "geometric"
+      ],
+      "useCase": [
+        "landing page",
+        "startup",
+        "portfolio"
+      ],
+      "url": "https://fonttrio.dev/r/creative.json"
+    },
+    {
+      "name": "pairing-editorial",
+      "title": "Editorial — Playfair Display + Source Serif 4 + JetBrains Mono",
+      "description": "Classic editorial pairing. High-contrast serif headings with readable serif body text.",
+      "categories": [
+        "serif",
+        "editorial",
+        "elegant"
+      ],
+      "mood": [
+        "elegant",
+        "traditional",
+        "authoritative"
+      ],
+      "useCase": [
+        "blog",
+        "editorial",
+        "magazine",
+        "documentation"
+      ],
+      "url": "https://fonttrio.dev/r/editorial.json"
+    },
+    {
+      "name": "pairing-technical",
+      "title": "Technical — IBM Plex Sans + IBM Plex Sans + IBM Plex Mono",
+      "description": "Professional IBM Plex family pairing. Designed for documentation and enterprise applications.",
+      "categories": [
+        "sans-serif",
+        "technical",
+        "professional"
+      ],
+      "mood": [
+        "professional",
+        "corporate",
+        "IBM-style"
+      ],
+      "useCase": [
+        "documentation",
+        "enterprise",
+        "developer tools"
+      ],
+      "url": "https://fonttrio.dev/r/technical.json"
+    },
+    {
+      "name": "pairing-modern-clean",
+      "title": "Modern Clean — Inter + Inter + Geist Mono",
+      "description": "Clean and neutral sans-serif pairing. Perfect for SaaS dashboards and web applications.",
+      "categories": [
+        "sans-serif",
+        "modern",
+        "clean"
+      ],
+      "mood": [
+        "clean",
+        "neutral",
+        "SaaS"
+      ],
+      "useCase": [
+        "SaaS",
+        "dashboard",
+        "web app"
+      ],
+      "url": "https://fonttrio.dev/r/modern-clean.json"
+    }
+  ]
+}

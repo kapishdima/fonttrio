@@ -1,0 +1,22 @@
+{
+  "name": "nanum-gothic",
+  "type": "registry:font",
+  "title": "Nanum Gothic",
+  "description": "Nanum Gothic — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Nanum Gothic",
+    "provider": "google",
+    "import": "Nanum_Gothic",
+    "variable": "--font-nanum-gothic",
+    "weight": [
+      "400",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

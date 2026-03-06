@@ -1,0 +1,31 @@
+{
+  "name": "noto-sans-tc",
+  "type": "registry:font",
+  "title": "Noto Sans TC",
+  "description": "Noto Sans TC — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Noto Sans TC",
+    "provider": "google",
+    "import": "Noto_Sans_TC",
+    "variable": "--font-noto-sans-tc",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-traditional",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "fira-sans",
+  "type": "registry:font",
+  "title": "Fira Sans",
+  "description": "Fira Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Fira Sans",
+    "provider": "google",
+    "import": "Fira_Sans",
+    "variable": "--font-fira-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

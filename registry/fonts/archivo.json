@@ -1,0 +1,29 @@
+{
+  "name": "archivo",
+  "type": "registry:font",
+  "title": "Archivo",
+  "description": "Archivo — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Archivo",
+    "provider": "google",
+    "import": "Archivo",
+    "variable": "--font-archivo",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

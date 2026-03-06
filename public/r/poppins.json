@@ -1,0 +1,29 @@
+{
+  "name": "poppins",
+  "type": "registry:font",
+  "title": "Poppins",
+  "description": "Poppins — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Poppins",
+    "provider": "google",
+    "import": "Poppins",
+    "variable": "--font-poppins",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

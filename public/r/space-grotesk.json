@@ -1,0 +1,25 @@
+{
+  "name": "space-grotesk",
+  "type": "registry:font",
+  "title": "Space Grotesk",
+  "description": "Space Grotesk — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Space Grotesk",
+    "provider": "google",
+    "import": "Space_Grotesk",
+    "variable": "--font-space-grotesk",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

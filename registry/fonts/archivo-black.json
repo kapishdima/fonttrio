@@ -1,0 +1,20 @@
+{
+  "name": "archivo-black",
+  "type": "registry:font",
+  "title": "Archivo Black",
+  "description": "Archivo Black — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Archivo Black",
+    "provider": "google",
+    "import": "Archivo_Black",
+    "variable": "--font-archivo-black",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

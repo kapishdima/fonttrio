@@ -1,0 +1,24 @@
+{
+  "name": "cabin",
+  "type": "registry:font",
+  "title": "Cabin",
+  "description": "Cabin — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Cabin",
+    "provider": "google",
+    "import": "Cabin",
+    "variable": "--font-cabin",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

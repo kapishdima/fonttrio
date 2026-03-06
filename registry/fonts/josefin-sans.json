@@ -1,0 +1,27 @@
+{
+  "name": "josefin-sans",
+  "type": "registry:font",
+  "title": "Josefin Sans",
+  "description": "Josefin Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Josefin Sans",
+    "provider": "google",
+    "import": "Josefin_Sans",
+    "variable": "--font-josefin-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

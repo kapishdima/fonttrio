@@ -1,0 +1,20 @@
+{
+  "name": "ramabhadra",
+  "type": "registry:font",
+  "title": "Ramabhadra",
+  "description": "Ramabhadra — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Ramabhadra",
+    "provider": "google",
+    "import": "Ramabhadra",
+    "variable": "--font-ramabhadra",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "libre-franklin",
+  "type": "registry:font",
+  "title": "Libre Franklin",
+  "description": "Libre Franklin — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Libre Franklin",
+    "provider": "google",
+    "import": "Libre_Franklin",
+    "variable": "--font-libre-franklin",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

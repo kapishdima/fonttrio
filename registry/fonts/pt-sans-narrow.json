@@ -1,0 +1,23 @@
+{
+  "name": "pt-sans-narrow",
+  "type": "registry:font",
+  "title": "PT Sans Narrow",
+  "description": "PT Sans Narrow — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "PT Sans Narrow",
+    "provider": "google",
+    "import": "PT_Sans_Narrow",
+    "variable": "--font-pt-sans-narrow",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

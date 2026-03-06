@@ -1,0 +1,29 @@
+{
+  "name": "merriweather",
+  "type": "registry:font",
+  "title": "Merriweather",
+  "description": "Merriweather — Serif font from Google Fonts.",
+  "font": {
+    "family": "Merriweather",
+    "provider": "google",
+    "import": "Merriweather",
+    "variable": "--font-merriweather",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "arvo",
+  "type": "registry:font",
+  "title": "Arvo",
+  "description": "Arvo — Serif font from Google Fonts.",
+  "font": {
+    "family": "Arvo",
+    "provider": "google",
+    "import": "Arvo",
+    "variable": "--font-arvo",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

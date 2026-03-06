@@ -1,0 +1,28 @@
+{
+  "name": "lora",
+  "type": "registry:font",
+  "title": "Lora",
+  "description": "Lora — Serif font from Google Fonts.",
+  "font": {
+    "family": "Lora",
+    "provider": "google",
+    "import": "Lora",
+    "variable": "--font-lora",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ]
+  }
+}

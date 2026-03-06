@@ -1,0 +1,29 @@
+{
+  "name": "dm-sans",
+  "type": "registry:font",
+  "title": "DM Sans",
+  "description": "DM Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "DM Sans",
+    "provider": "google",
+    "import": "DM_Sans",
+    "variable": "--font-dm-sans",
+    "weight": [
+      "100",
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

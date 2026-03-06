@@ -1,0 +1,30 @@
+{
+  "name": "kanit",
+  "type": "registry:font",
+  "title": "Kanit",
+  "description": "Kanit — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Kanit",
+    "provider": "google",
+    "import": "Kanit",
+    "variable": "--font-kanit",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

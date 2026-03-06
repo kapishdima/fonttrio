@@ -1,0 +1,31 @@
+{
+  "name": "bitter",
+  "type": "registry:font",
+  "title": "Bitter",
+  "description": "Bitter — Serif font from Google Fonts.",
+  "font": {
+    "family": "Bitter",
+    "provider": "google",
+    "import": "Bitter",
+    "variable": "--font-bitter",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

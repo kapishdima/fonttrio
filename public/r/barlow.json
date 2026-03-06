@@ -1,0 +1,29 @@
+{
+  "name": "barlow",
+  "type": "registry:font",
+  "title": "Barlow",
+  "description": "Barlow — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Barlow",
+    "provider": "google",
+    "import": "Barlow",
+    "variable": "--font-barlow",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

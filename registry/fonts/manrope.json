@@ -1,0 +1,30 @@
+{
+  "name": "manrope",
+  "type": "registry:font",
+  "title": "Manrope",
+  "description": "Manrope — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Manrope",
+    "provider": "google",
+    "import": "Manrope",
+    "variable": "--font-manrope",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

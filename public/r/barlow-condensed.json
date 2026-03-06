@@ -1,0 +1,29 @@
+{
+  "name": "barlow-condensed",
+  "type": "registry:font",
+  "title": "Barlow Condensed",
+  "description": "Barlow Condensed — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Barlow Condensed",
+    "provider": "google",
+    "import": "Barlow_Condensed",
+    "variable": "--font-barlow-condensed",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

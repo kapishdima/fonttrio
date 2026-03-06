@@ -1,0 +1,30 @@
+{
+  "name": "prompt",
+  "type": "registry:font",
+  "title": "Prompt",
+  "description": "Prompt — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Prompt",
+    "provider": "google",
+    "import": "Prompt",
+    "variable": "--font-prompt",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

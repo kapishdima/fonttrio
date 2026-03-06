@@ -1,0 +1,31 @@
+{
+  "name": "nunito-sans",
+  "type": "registry:font",
+  "title": "Nunito Sans",
+  "description": "Nunito Sans — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Nunito Sans",
+    "provider": "google",
+    "import": "Nunito_Sans",
+    "variable": "--font-nunito-sans",
+    "weight": [
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

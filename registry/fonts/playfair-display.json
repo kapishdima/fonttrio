@@ -1,0 +1,27 @@
+{
+  "name": "playfair-display",
+  "type": "registry:font",
+  "title": "Playfair Display",
+  "description": "Playfair Display — Serif font from Google Fonts.",
+  "font": {
+    "family": "Playfair Display",
+    "provider": "google",
+    "import": "Playfair_Display",
+    "variable": "--font-playfair-display",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

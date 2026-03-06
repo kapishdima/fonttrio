@@ -1,0 +1,23 @@
+{
+  "name": "crimson-text",
+  "type": "registry:font",
+  "title": "Crimson Text",
+  "description": "Crimson Text — Serif font from Google Fonts.",
+  "font": {
+    "family": "Crimson Text",
+    "provider": "google",
+    "import": "Crimson_Text",
+    "variable": "--font-crimson-text",
+    "weight": [
+      "400",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

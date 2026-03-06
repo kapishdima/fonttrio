@@ -1,0 +1,26 @@
+{
+  "name": "karla",
+  "type": "registry:font",
+  "title": "Karla",
+  "description": "Karla — Sans Serif font from Google Fonts.",
+  "font": {
+    "family": "Karla",
+    "provider": "google",
+    "import": "Karla",
+    "variable": "--font-karla",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}
