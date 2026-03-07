@@ -7,79 +7,14 @@ export interface Sponsor {
 }
 
 export const SPONSORS: Sponsor[] = [
-  // Gold Sponsors
-  {
-    id: "1",
-    name: "Vercel",
-    logo: "",
-    url: "https://vercel.com",
-    tier: "gold"
-  },
-  {
-    id: "2",
-    name: "Linear",
-    logo: "",
-    url: "https://linear.app",
-    tier: "gold"
-  },
-  // Silver Sponsors
-  {
-    id: "3",
-    name: "Raycast",
-    logo: "",
-    url: "https://raycast.com",
-    tier: "silver"
-  },
-  {
-    id: "4",
-    name: "Supabase",
-    logo: "",
-    url: "https://supabase.com",
-    tier: "silver"
-  },
-  {
-    id: "5",
-    name: "Prisma",
-    logo: "",
-    url: "https://prisma.io",
-    tier: "silver"
-  },
-  // Bronze Sponsors
-  {
-    id: "6",
-    name: "Resend",
-    logo: "",
-    url: "https://resend.com",
-    tier: "bronze"
-  },
-  {
-    id: "7",
-    name: "Upstash",
-    logo: "",
-    url: "https://upstash.com",
-    tier: "bronze"
-  },
-  {
-    id: "8",
-    name: "PlanetScale",
-    logo: "",
-    url: "https://planetscale.com",
-    tier: "bronze"
-  },
-  {
-    id: "9",
-    name: "Clerk",
-    logo: "",
-    url: "https://clerk.com",
-    tier: "bronze"
-  },
-  {
-    id: "10",
-    name: "Trigger.dev",
-    logo: "",
-    url: "https://trigger.dev",
-    tier: "bronze"
-  }
+  // Add your sponsors here
+  // {
+  //   id: "1",
+  //   name: "Your Company",
+  //   logo: "/sponsors/logo.svg",
+  //   url: "https://yourcompany.com",
+  //   tier: "gold"
+  // }
 ];
 
 export interface SponsorTier {
@@ -102,7 +37,7 @@ export const SPONSOR_TIERS: SponsorTier[] = [
       "Twitter shoutout",
       "Good karma"
     ],
-    paymentUrl: "https://buy.stripe.com/bronze_tier_link" // Replace with actual Stripe/PayPal link
+    paymentUrl: "https://www.creem.io/payment/prod_rwG87qt0R1UuhPLyL2WGg"
   },
   {
     key: "silver",
@@ -115,7 +50,7 @@ export const SPONSOR_TIERS: SponsorTier[] = [
       "Twitter shoutout",
       "Good karma"
     ],
-    paymentUrl: "https://buy.stripe.com/silver_tier_link" // Replace with actual Stripe/PayPal link
+    paymentUrl: "https://www.creem.io/payment/prod_1Js8kckF3HRNEAGRmKp3g"
   },
   {
     key: "gold",
@@ -130,6 +65,38 @@ export const SPONSOR_TIERS: SponsorTier[] = [
       "Twitter shoutout",
       "Good karma"
     ],
-    paymentUrl: "https://buy.stripe.com/gold_tier_link" // Replace with actual Stripe/PayPal link
+    paymentUrl: "https://www.creem.io/payment/prod_kvmcaM5AWH5VIRMiJ7Asz" 
   }
 ];
+
+// Page content constants
+export const SPONSORS_PAGE = {
+  title: "Support Fonttrio",
+  description: "Fonttrio is an open-source project. Your support helps us maintain the registry, add new font pairings, and keep the service running.",
+  
+  sectionTitles: {
+    sponsors: "Our Sponsors",
+    whySponsor: "Why Sponsor Fonttrio?"
+  },
+  
+  emptyState: {
+    title: "No sponsors yet",
+    description: "Be the first to support Fonttrio and help us continue building the best font pairing registry for the shadcn/ui community.",
+    cta: "Become a Sponsor"
+  },
+  
+  whySponsor: {
+    openSource: {
+      title: "Open Source",
+      description: "All pairings are free and open source. Your support keeps it that way."
+    },
+    community: {
+      title: "Community Driven",
+      description: "Help us grow the collection and improve the service for everyone."
+    },
+    brand: {
+      title: "Showcase Your Brand",
+      description: "Get visibility among developers and designers using shadcn/ui."
+    }
+  }
+} as const;

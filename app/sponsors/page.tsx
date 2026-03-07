@@ -1,4 +1,4 @@
-import { SPONSORS, SPONSOR_TIERS } from "@/lib/sponsors";
+import { SPONSORS, SPONSOR_TIERS, SPONSORS_PAGE } from "@/lib/sponsors";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { Heart, ExternalLink } from "lucide-react";
@@ -17,11 +17,10 @@ export default function SponsorsPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-            Support Fonttrio
+            {SPONSORS_PAGE.title}
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Fonttrio is an open-source project. Your support helps us maintain the registry,
-            add new font pairings, and keep the service running.
+            {SPONSORS_PAGE.description}
           </p>
         </div>
 
@@ -68,17 +67,16 @@ export default function SponsorsPage() {
         {/* Current Sponsors Section */}
         <div className="border-t border-border pt-16">
           <h2 className="text-2xl font-bold text-center mb-12">
-            Our Sponsors
+            {SPONSORS_PAGE.sectionTitles.sponsors}
           </h2>
 
           {!hasSponsors ? (
             // Empty State
             <div className="text-center py-16 bg-surface/30 border border-border border-dashed">
               <Heart className="size-12 text-muted-foreground mx-auto mb-4" />
-              <h3 className="text-lg font-medium mb-2">No sponsors yet</h3>
+              <h3 className="text-lg font-medium mb-2">{SPONSORS_PAGE.emptyState.title}</h3>
               <p className="text-muted-foreground max-w-md mx-auto mb-6">
-                Be the first to support Fonttrio and help us continue building the best
-                font pairing registry for the shadcn/ui community.
+                {SPONSORS_PAGE.emptyState.description}
               </p>
               <a
                 href={SPONSOR_TIERS[0].paymentUrl}
@@ -86,7 +84,7 @@ export default function SponsorsPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-foreground text-background text-sm uppercase tracking-wider font-medium hover:opacity-90 transition-opacity"
               >
-                Become a Sponsor
+                {SPONSORS_PAGE.emptyState.cta}
               </a>
             </div>
           ) : (
@@ -195,25 +193,25 @@ export default function SponsorsPage() {
         {/* Why Sponsor Section */}
         <div className="mt-20 pt-16 border-t border-border">
           <h2 className="text-2xl font-bold text-center mb-8">
-            Why Sponsor Fonttrio?
+            {SPONSORS_PAGE.sectionTitles.whySponsor}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <h3 className="font-medium mb-2">Open Source</h3>
+              <h3 className="font-medium mb-2">{SPONSORS_PAGE.whySponsor.openSource.title}</h3>
               <p className="text-sm text-muted-foreground">
-                All pairings are free and open source. Your support keeps it that way.
+                {SPONSORS_PAGE.whySponsor.openSource.description}
               </p>
             </div>
             <div>
-              <h3 className="font-medium mb-2">Community Driven</h3>
+              <h3 className="font-medium mb-2">{SPONSORS_PAGE.whySponsor.community.title}</h3>
               <p className="text-sm text-muted-foreground">
-                Help us grow the collection and improve the service for everyone.
+                {SPONSORS_PAGE.whySponsor.community.description}
               </p>
             </div>
             <div>
-              <h3 className="font-medium mb-2">Showcase Your Brand</h3>
+              <h3 className="font-medium mb-2">{SPONSORS_PAGE.whySponsor.brand.title}</h3>
               <p className="text-sm text-muted-foreground">
-                Get visibility among developers and designers using shadcn/ui.
+                {SPONSORS_PAGE.whySponsor.brand.description}
               </p>
             </div>
           </div>
