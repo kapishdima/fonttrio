@@ -9,19 +9,21 @@
     "superfamily",
     "friendly"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/nunito.json",
-    "https://www.fonttrio.xyz/r/nunito-sans.json",
-    "https://www.fonttrio.xyz/r/fira-code.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-nunito)",
       "--font-body": "var(--font-nunito-sans)",
-      "--font-mono": "var(--font-fira-code)"
+      "--font-mono": "var(--font-fira-code)",
+      "--font-nunito": "Nunito",
+      "--font-nunito-sans": "Nunito Sans",
+      "--font-fira-code": "Fira Code"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/nunito\"": {},
+    "@import \"@fontsource-variable/nunito-sans\"": {},
+    "@import \"@fontsource-variable/fira-code\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.5rem",
@@ -66,5 +68,10 @@
       "consumer app",
       "landing page"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/nunito",
+    "@fontsource-variable/nunito-sans",
+    "@fontsource-variable/fira-code"
+  ]
 }

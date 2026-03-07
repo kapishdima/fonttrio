@@ -9,19 +9,21 @@
     "complementary",
     "inclusive"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/cabin.json",
-    "https://www.fonttrio.xyz/r/mukta.json",
-    "https://www.fonttrio.xyz/r/fira-code.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-cabin)",
       "--font-body": "var(--font-mukta)",
-      "--font-mono": "var(--font-fira-code)"
+      "--font-mono": "var(--font-fira-code)",
+      "--font-cabin": "Cabin",
+      "--font-mukta": "Mukta",
+      "--font-fira-code": "Fira Code"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/cabin\"": {},
+    "@import \"@fontsource/mukta\"": {},
+    "@import \"@fontsource-variable/fira-code\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.25rem",
@@ -66,5 +68,10 @@
       "nonprofit",
       "education"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/cabin",
+    "@fontsource/mukta",
+    "@fontsource-variable/fira-code"
+  ]
 }

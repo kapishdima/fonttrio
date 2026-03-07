@@ -9,18 +9,19 @@
     "superfamily",
     "developer"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/red-hat-display.json",
-    "https://www.fonttrio.xyz/r/fira-code.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-red-hat-display)",
       "--font-body": "var(--font-red-hat-display)",
-      "--font-mono": "var(--font-fira-code)"
+      "--font-mono": "var(--font-fira-code)",
+      "--font-red-hat-display": "Red Hat Display",
+      "--font-fira-code": "Fira Code"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/red-hat-display\"": {},
+    "@import \"@fontsource-variable/fira-code\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.25rem",
@@ -65,5 +66,9 @@
       "documentation",
       "open source"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/red-hat-display",
+    "@fontsource-variable/fira-code"
+  ]
 }

@@ -4,30 +4,75 @@
   "extends": "none",
   "title": "Classic — DM Serif Display + Libre Baskerville + JetBrains Mono",
   "description": "Literary and warm serif pairing. Elegant display headings with classic body text for publishing.",
-  "categories": ["serif", "classic", "literary"],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/dm-serif-display.json",
-    "https://www.fonttrio.xyz/r/libre-baskerville.json",
-    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
+  "categories": [
+    "serif",
+    "classic",
+    "literary"
   ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-dm-serif-display)",
       "--font-body": "var(--font-libre-baskerville)",
-      "--font-mono": "var(--font-jetbrains-mono)"
+      "--font-mono": "var(--font-jetbrains-mono)",
+      "--font-dm-serif-display": "DM Serif Display",
+      "--font-libre-baskerville": "Libre Baskerville",
+      "--font-jetbrains-mono": "JetBrains Mono"
     }
   },
   "css": {
-    "h1": { "font-family": "var(--font-heading)", "font-size": "2.5rem", "line-height": "1.2", "letter-spacing": "-0.02em", "font-weight": "400" },
-    "h2": { "font-family": "var(--font-heading)", "font-size": "2rem", "line-height": "1.25", "letter-spacing": "-0.015em", "font-weight": "400" },
-    "h3": { "font-family": "var(--font-heading)", "font-size": "1.5rem", "line-height": "1.3", "letter-spacing": "-0.01em", "font-weight": "400" },
-    "h4, h5, h6": { "font-family": "var(--font-heading)", "letter-spacing": "-0.01em" },
-    "body, p": { "font-family": "var(--font-body)", "line-height": "1.7" },
-    "code, pre": { "font-family": "var(--font-mono)" }
+    "@import \"@fontsource/dm-serif-display\"": {},
+    "@import \"@fontsource-variable/libre-baskerville\"": {},
+    "@import \"@fontsource-variable/jetbrains-mono\"": {},
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.5rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.02em",
+      "font-weight": "400"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.015em",
+      "font-weight": "400"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.3",
+      "letter-spacing": "-0.01em",
+      "font-weight": "400"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.7"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
   },
   "meta": {
     "preview": "The quick brown fox jumps over the lazy dog",
-    "mood": ["literary", "warm", "traditional"],
-    "useCase": ["blog", "publishing", "book"]
-  }
+    "mood": [
+      "literary",
+      "warm",
+      "traditional"
+    ],
+    "useCase": [
+      "blog",
+      "publishing",
+      "book"
+    ]
+  },
+  "dependencies": [
+    "@fontsource/dm-serif-display",
+    "@fontsource-variable/libre-baskerville",
+    "@fontsource-variable/jetbrains-mono"
+  ]
 }

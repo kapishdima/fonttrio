@@ -9,19 +9,21 @@
     "superfamily",
     "universal"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/pt-serif.json",
-    "https://www.fonttrio.xyz/r/pt-sans.json",
-    "https://www.fonttrio.xyz/r/inconsolata.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-pt-serif)",
       "--font-body": "var(--font-pt-sans)",
-      "--font-mono": "var(--font-inconsolata)"
+      "--font-mono": "var(--font-inconsolata)",
+      "--font-pt-serif": "PT Serif",
+      "--font-pt-sans": "PT Sans",
+      "--font-inconsolata": "Inconsolata"
     }
   },
   "css": {
+    "@import \"@fontsource/pt-serif\"": {},
+    "@import \"@fontsource/pt-sans\"": {},
+    "@import \"@fontsource-variable/inconsolata\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.25rem",
@@ -66,5 +68,10 @@
       "publishing",
       "i18n"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource/pt-serif",
+    "@fontsource/pt-sans",
+    "@fontsource-variable/inconsolata"
+  ]
 }

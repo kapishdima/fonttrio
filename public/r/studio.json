@@ -9,19 +9,21 @@
     "creative",
     "design"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/bricolage-grotesque.json",
-    "https://www.fonttrio.xyz/r/figtree.json",
-    "https://www.fonttrio.xyz/r/fira-code.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-bricolage-grotesque)",
       "--font-body": "var(--font-figtree)",
-      "--font-mono": "var(--font-fira-code)"
+      "--font-mono": "var(--font-fira-code)",
+      "--font-bricolage-grotesque": "Bricolage Grotesque",
+      "--font-figtree": "Figtree",
+      "--font-fira-code": "Fira Code"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/bricolage-grotesque\"": {},
+    "@import \"@fontsource-variable/figtree\"": {},
+    "@import \"@fontsource-variable/fira-code\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.75rem",
@@ -66,5 +68,10 @@
       "agency",
       "creative"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/bricolage-grotesque",
+    "@fontsource-variable/figtree",
+    "@fontsource-variable/fira-code"
+  ]
 }

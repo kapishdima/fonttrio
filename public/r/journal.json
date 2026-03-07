@@ -9,19 +9,21 @@
     "contrast",
     "readable"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/merriweather.json",
-    "https://www.fonttrio.xyz/r/mulish.json",
-    "https://www.fonttrio.xyz/r/source-code-pro.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-merriweather)",
       "--font-body": "var(--font-mulish)",
-      "--font-mono": "var(--font-source-code-pro)"
+      "--font-mono": "var(--font-source-code-pro)",
+      "--font-merriweather": "Merriweather",
+      "--font-mulish": "Mulish",
+      "--font-source-code-pro": "Source Code Pro"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/merriweather\"": {},
+    "@import \"@fontsource-variable/mulish\"": {},
+    "@import \"@fontsource-variable/source-code-pro\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.25rem",
@@ -66,5 +68,10 @@
       "journal",
       "publishing"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/merriweather",
+    "@fontsource-variable/mulish",
+    "@fontsource-variable/source-code-pro"
+  ]
 }

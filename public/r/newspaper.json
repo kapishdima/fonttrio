@@ -9,19 +9,21 @@
     "contrast",
     "editorial"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/playfair-display.json",
-    "https://www.fonttrio.xyz/r/dm-sans.json",
-    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-playfair-display)",
       "--font-body": "var(--font-dm-sans)",
-      "--font-mono": "var(--font-jetbrains-mono)"
+      "--font-mono": "var(--font-jetbrains-mono)",
+      "--font-playfair-display": "Playfair Display",
+      "--font-dm-sans": "DM Sans",
+      "--font-jetbrains-mono": "JetBrains Mono"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/playfair-display\"": {},
+    "@import \"@fontsource-variable/dm-sans\"": {},
+    "@import \"@fontsource-variable/jetbrains-mono\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.25rem",
@@ -66,5 +68,10 @@
       "magazine",
       "blog"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/playfair-display",
+    "@fontsource-variable/dm-sans",
+    "@fontsource-variable/jetbrains-mono"
+  ]
 }

@@ -14,7 +14,6 @@ export interface FontItem {
     family: string;
     provider: string;
     import: string;
-    npmPackage?: string;
     variable: string;
     weight: string[];
     subsets: string[];
@@ -58,6 +57,30 @@ export interface RegistryIndex {
   }>;
 }
 
+export function buildRegistryIndexFromItems(
+  fonts: FontItem[],
+  pairings: PairingItem[],
+  baseUrl = "https://www.fonttrio.xyz"
+): RegistryIndex {
+  return {
+    fonts: fonts.map((f) => ({
+      name: f.name,
+      title: f.title,
+      category: f.font?.provider || "google",
+      url: `${baseUrl}/r/${f.name}.json`,
+    })),
+    pairings: pairings.map((p) => ({
+      name: p.name,
+      title: p.title,
+      description: p.description,
+      categories: p.categories,
+      mood: p.meta?.mood || [],
+      useCase: p.meta?.useCase || [],
+      url: `${baseUrl}/r/${p.name.replace("pairing-", "")}.json`,
+    })),
+  };
+}
+
 function readJsonDir<T>(dir: string): T[] {
   try {
     const files = readdirSync(dir).filter((f) => f.endsWith(".json"));
@@ -99,22 +122,5 @@ export function getPairing(name: string): PairingItem | null {
 export function buildRegistryIndex(baseUrl = "https://www.fonttrio.xyz"): RegistryIndex {
   const fonts = getAllFonts();
   const pairings = getAllPairings();
-
-  return {
-    fonts: fonts.map((f) => ({
-      name: f.name,
-      title: f.title,
-      category: f.font?.provider || "google",
-      url: `${baseUrl}/r/${f.name}.json`,
-    })),
-    pairings: pairings.map((p) => ({
-      name: p.name,
-      title: p.title,
-      description: p.description,
-      categories: p.categories,
-      mood: p.meta?.mood || [],
-      useCase: p.meta?.useCase || [],
-      url: `${baseUrl}/r/${p.name.replace("pairing-", "")}.json`,
-    })),
-  };
+  return buildRegistryIndexFromItems(fonts, pairings, baseUrl);
 }

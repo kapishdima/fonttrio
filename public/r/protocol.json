@@ -9,19 +9,21 @@
     "complementary",
     "technical"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/saira.json",
-    "https://www.fonttrio.xyz/r/ubuntu.json",
-    "https://www.fonttrio.xyz/r/ibm-plex-mono.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-saira)",
       "--font-body": "var(--font-ubuntu)",
-      "--font-mono": "var(--font-ibm-plex-mono)"
+      "--font-mono": "var(--font-ibm-plex-mono)",
+      "--font-saira": "Saira",
+      "--font-ubuntu": "Ubuntu",
+      "--font-ibm-plex-mono": "IBM Plex Mono"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/saira\"": {},
+    "@import \"@fontsource/ubuntu\"": {},
+    "@import \"@fontsource/ibm-plex-mono\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.5rem",
@@ -66,5 +68,10 @@
       "Linux",
       "open source"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/saira",
+    "@fontsource/ubuntu",
+    "@fontsource/ibm-plex-mono"
+  ]
 }

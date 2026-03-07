@@ -9,19 +9,21 @@
     "complementary",
     "nordic"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/schibsted-grotesk.json",
-    "https://www.fonttrio.xyz/r/karla.json",
-    "https://www.fonttrio.xyz/r/fira-code.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-schibsted-grotesk)",
       "--font-body": "var(--font-karla)",
-      "--font-mono": "var(--font-fira-code)"
+      "--font-mono": "var(--font-fira-code)",
+      "--font-schibsted-grotesk": "Schibsted Grotesk",
+      "--font-karla": "Karla",
+      "--font-fira-code": "Fira Code"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/schibsted-grotesk\"": {},
+    "@import \"@fontsource-variable/karla\"": {},
+    "@import \"@fontsource-variable/fira-code\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.25rem",
@@ -66,5 +68,10 @@
       "design",
       "portfolio"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/schibsted-grotesk",
+    "@fontsource-variable/karla",
+    "@fontsource-variable/fira-code"
+  ]
 }

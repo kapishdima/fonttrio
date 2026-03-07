@@ -9,19 +9,21 @@
     "complementary",
     "neutral"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/inter-tight.json",
-    "https://www.fonttrio.xyz/r/open-sans.json",
-    "https://www.fonttrio.xyz/r/ibm-plex-mono.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-inter-tight)",
       "--font-body": "var(--font-open-sans)",
-      "--font-mono": "var(--font-ibm-plex-mono)"
+      "--font-mono": "var(--font-ibm-plex-mono)",
+      "--font-inter-tight": "Inter Tight",
+      "--font-open-sans": "Open Sans",
+      "--font-ibm-plex-mono": "IBM Plex Mono"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/inter-tight\"": {},
+    "@import \"@fontsource-variable/open-sans\"": {},
+    "@import \"@fontsource/ibm-plex-mono\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.25rem",
@@ -66,5 +68,10 @@
       "dashboard",
       "admin"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/inter-tight",
+    "@fontsource-variable/open-sans",
+    "@fontsource/ibm-plex-mono"
+  ]
 }

@@ -9,19 +9,21 @@
     "complementary",
     "startup"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/sora.json",
-    "https://www.fonttrio.xyz/r/public-sans.json",
-    "https://www.fonttrio.xyz/r/fira-code.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-sora)",
       "--font-body": "var(--font-public-sans)",
-      "--font-mono": "var(--font-fira-code)"
+      "--font-mono": "var(--font-fira-code)",
+      "--font-sora": "Sora",
+      "--font-public-sans": "Public Sans",
+      "--font-fira-code": "Fira Code"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/sora\"": {},
+    "@import \"@fontsource-variable/public-sans\"": {},
+    "@import \"@fontsource-variable/fira-code\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.5rem",
@@ -66,5 +68,10 @@
       "landing page",
       "product"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/sora",
+    "@fontsource-variable/public-sans",
+    "@fontsource-variable/fira-code"
+  ]
 }

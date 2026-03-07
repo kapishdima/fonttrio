@@ -9,19 +9,21 @@
     "complementary",
     "data"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/manrope.json",
-    "https://www.fonttrio.xyz/r/dm-sans.json",
-    "https://www.fonttrio.xyz/r/fira-code.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-manrope)",
       "--font-body": "var(--font-dm-sans)",
-      "--font-mono": "var(--font-fira-code)"
+      "--font-mono": "var(--font-fira-code)",
+      "--font-manrope": "Manrope",
+      "--font-dm-sans": "DM Sans",
+      "--font-fira-code": "Fira Code"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/manrope\"": {},
+    "@import \"@fontsource-variable/dm-sans\"": {},
+    "@import \"@fontsource-variable/fira-code\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.25rem",
@@ -66,5 +68,10 @@
       "analytics",
       "admin"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/manrope",
+    "@fontsource-variable/dm-sans",
+    "@fontsource-variable/fira-code"
+  ]
 }

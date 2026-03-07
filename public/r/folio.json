@@ -9,19 +9,21 @@
     "complementary",
     "elegant"
   ],
-  "registryDependencies": [
-    "https://www.fonttrio.xyz/r/josefin-sans.json",
-    "https://www.fonttrio.xyz/r/raleway.json",
-    "https://www.fonttrio.xyz/r/roboto-mono.json"
-  ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "--font-heading": "var(--font-josefin-sans)",
       "--font-body": "var(--font-raleway)",
-      "--font-mono": "var(--font-roboto-mono)"
+      "--font-mono": "var(--font-roboto-mono)",
+      "--font-josefin-sans": "Josefin Sans",
+      "--font-raleway": "Raleway",
+      "--font-roboto-mono": "Roboto Mono"
     }
   },
   "css": {
+    "@import \"@fontsource-variable/josefin-sans\"": {},
+    "@import \"@fontsource-variable/raleway\"": {},
+    "@import \"@fontsource-variable/roboto-mono\"": {},
     "h1": {
       "font-family": "var(--font-heading)",
       "font-size": "2.5rem",
@@ -66,5 +68,10 @@
       "fashion",
       "luxury"
     ]
-  }
+  },
+  "dependencies": [
+    "@fontsource-variable/josefin-sans",
+    "@fontsource-variable/raleway",
+    "@fontsource-variable/roboto-mono"
+  ]
 }
