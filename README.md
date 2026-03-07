@@ -1,5 +1,7 @@
 # Fonttrio
 
+![Fonttrio Hero](./public/hero.png)
+
 Three fonts. One command.
 
 Fonttrio is a curated collection of font pairings designed specifically for shadcn/ui projects. Each pairing includes a carefully selected combination of heading, body, and monospace fonts that work together harmoniously.

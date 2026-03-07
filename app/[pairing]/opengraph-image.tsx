@@ -61,7 +61,7 @@ export default async function Image({ params }: { params: { pairing: string } })
           }}
         />
         
-        {/* Logo */}
+        {/* Logo from logo-square.svg */}
         <div
           style={{
             position: "absolute",
@@ -72,30 +72,21 @@ export default async function Image({ params }: { params: { pairing: string } })
             gap: "12px",
           }}
         >
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              background: "#171717",
-              border: "1px solid #404040",
-              borderRadius: "6px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <span
-              style={{
-                color: "white",
-                fontSize: "20px",
-                fontWeight: 700,
-                letterSpacing: "-0.08em",
-                fontFamily: "system-ui",
-              }}
-            >
-              tt
-            </span>
-          </div>
+            <rect width="40" height="40" rx="6" fill="#171717" stroke="#404040" strokeWidth="1"/>
+            <g stroke="white" strokeWidth="4" strokeLinecap="round">
+              <line x1="10" y1="8" x2="10" y2="32"/>
+              <line x1="4" y1="14" x2="16" y2="14"/>
+              <line x1="22" y1="8" x2="22" y2="32"/>
+              <line x1="16" y1="14" x2="28" y2="14"/>
+            </g>
+          </svg>
           <span
             style={{
               fontSize: "24px",
