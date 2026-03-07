@@ -15,6 +15,7 @@ export function FontSwitcher({ pairings, onIndexChange }: FontSwitcherProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayText, setDisplayText] = useState(DISPLAY_TEXT);
   const [isScrambling, setIsScrambling] = useState(false);
+  const [isFading, setIsFading] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const scrambleText = useCallback(() => {
@@ -47,11 +48,18 @@ export function FontSwitcher({ pairings, onIndexChange }: FontSwitcherProps) {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => {
-        const next = (prev + 1) % pairings.length;
-        return next;
-      });
-      scrambleText();
+      // Start fade out
+      setIsFading(true);
+      
+      // Wait for fade out, then switch font and fade in
+      setTimeout(() => {
+        setCurrentIndex((prev) => {
+          const next = (prev + 1) % pairings.length;
+          return next;
+        });
+        scrambleText();
+        setIsFading(false);
+      }, 200);
     }, 4000);
 
     return () => {
@@ -70,7 +78,7 @@ export function FontSwitcher({ pairings, onIndexChange }: FontSwitcherProps) {
 
   return (
     <span
-      className={`inline-block ${isScrambling ? "text-muted-foreground" : ""}`}
+      className={`inline-block transition-opacity duration-200 ${isFading ? "opacity-0" : "opacity-100"}`}
       style={{
         fontFamily,
         fontWeight: currentPairing.scale.h1.weight,
@@ -94,6 +102,7 @@ interface AnimatedSubtitleProps {
 export function AnimatedSubtitle({ pairings, currentIndex, text }: AnimatedSubtitleProps) {
   const [displayText, setDisplayText] = useState(text);
   const [isScrambling, setIsScrambling] = useState(false);
+  const [isFading, setIsFading] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const prevIndexRef = useRef(currentIndex);
 
@@ -128,7 +137,15 @@ export function AnimatedSubtitle({ pairings, currentIndex, text }: AnimatedSubti
   useEffect(() => {
     if (prevIndexRef.current !== currentIndex) {
       prevIndexRef.current = currentIndex;
-      scrambleText();
+      
+      // Start fade out
+      setIsFading(true);
+      
+      // Wait for fade out, then scramble and fade in
+      setTimeout(() => {
+        scrambleText();
+        setIsFading(false);
+      }, 200);
     }
   }, [currentIndex, scrambleText]);
 
@@ -137,7 +154,7 @@ export function AnimatedSubtitle({ pairings, currentIndex, text }: AnimatedSubti
 
   return (
     <span
-      className={`inline-block ${isScrambling ? "text-muted-foreground/70" : ""}`}
+      className={`inline-block transition-opacity duration-200 ${isFading ? "opacity-0" : "opacity-100"}`}
       style={{
         fontFamily,
         fontWeight: currentPairing.scale.body.weight,
