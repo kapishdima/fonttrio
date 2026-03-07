@@ -68,7 +68,7 @@ export function PairingCard({ pairing }: PairingCardProps) {
       {/* Install Command — copyable mono specimen */}
       <button
         onClick={handleCopy}
-        className="w-full flex items-center gap-2 px-4 py-2 border-t border-border bg-surface/30 hover:bg-surface text-left transition-[background-color]"
+        className="w-full flex items-center gap-2 px-4 py-3 border-t border-border bg-surface/30 hover:bg-surface text-left transition-[background-color] min-h-[44px]"
         aria-label={`Copy install command for ${pairing.name}`}
       >
         <span
@@ -83,9 +83,9 @@ export function PairingCard({ pairing }: PairingCardProps) {
           {command}
         </code>
         {copied ? (
-          <Check className="size-3 shrink-0 text-foreground" aria-hidden="true" />
+          <Check className="size-4 shrink-0 text-foreground" aria-hidden="true" />
         ) : (
-          <Copy className="size-3 shrink-0 text-muted-foreground/50" aria-hidden="true" />
+          <Copy className="size-4 shrink-0 text-muted-foreground/50" aria-hidden="true" />
         )}
       </button>
 

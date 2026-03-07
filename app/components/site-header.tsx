@@ -1,7 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { Logo, LogoIcon } from "./logo";
 import { ThemeToggle } from "./theme-toggle";
 import { SOCIAL_LINKS } from "@/lib/constants";
+import { Menu, X } from "lucide-react";
 
 interface SiteHeaderProps {
   subtitle?: string;
@@ -33,36 +37,36 @@ function GitHubIcon({ className }: { className?: string }) {
   );
 }
 
-function SocialLinks() {
+function SocialLinks({ className = "" }: { className?: string }) {
   return (
-    <div className="flex items-center gap-2">
+    <div className={`flex items-center gap-3 ${className}`}>
       <a
         href={SOCIAL_LINKS.x.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="size-8 flex items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-[color,background-color]"
+        className="size-11 sm:size-10 flex items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-[color,background-color] min-h-[44px] min-w-[44px]"
         aria-label={SOCIAL_LINKS.x.label}
       >
-        <XIcon className="size-4" />
+        <XIcon className="size-5 sm:size-4" />
       </a>
       <a
         href={SOCIAL_LINKS.github.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="size-8 flex items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-[color,background-color]"
+        className="size-11 sm:size-10 flex items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-[color,background-color] min-h-[44px] min-w-[44px]"
         aria-label={SOCIAL_LINKS.github.label}
       >
-        <GitHubIcon className="size-4" />
+        <GitHubIcon className="size-5 sm:size-4" />
       </a>
     </div>
   );
 }
 
-function SponsorButton() {
+function SponsorButton({ className = "" }: { className?: string }) {
   return (
     <Link
       href="/sponsors"
-      className="hidden sm:flex items-center gap-2 px-3 py-1.5 text-xs uppercase tracking-wider border border-border bg-surface hover:bg-surface-hover transition-colors"
+      className={`flex items-center justify-center gap-2 px-4 py-3 text-sm sm:text-xs uppercase tracking-wider border border-border bg-surface hover:bg-surface-hover transition-colors min-h-[44px] ${className}`}
     >
       <span>Support</span>
     </Link>
@@ -70,18 +74,47 @@ function SponsorButton() {
 }
 
 export function SiteHeader({ subtitle = "Font pairings for shadcn/ui" }: SiteHeaderProps) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 border-b border-border backdrop-blur-sm">
       <div className="px-4 lg:px-12 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
           <Logo size="sm" variant="text" />
         </Link>
-        <div className="flex items-center gap-2">
+        
+        {/* Desktop Navigation */}
+        <div className="hidden sm:flex items-center gap-2">
           <SponsorButton />
           <SocialLinks />
           <ThemeToggle />
         </div>
+
+        {/* Mobile Navigation */}
+        <div className="flex sm:hidden items-center gap-2">
+          <ThemeToggle />
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="size-11 flex items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-[color,background-color] min-h-[44px] min-w-[44px]"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
+          >
+            {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {mobileMenuOpen && (
+        <div className="sm:hidden border-t border-border bg-background/95 backdrop-blur-sm">
+          <div className="px-4 py-4 space-y-4">
+            <SponsorButton className="w-full" />
+            <div className="flex items-center justify-center gap-4 pt-2 border-t border-border">
+              <SocialLinks />
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

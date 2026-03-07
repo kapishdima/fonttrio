@@ -44,23 +44,25 @@ export function LandingClient({
       <SiteHeader />
 
       {/* Hero */}
-      <section id="main-content" className="pt-16 relative min-h-screen flex flex-col">
+      <section id="main-content" className="pt-20 sm:pt-16 relative min-h-[85vh] sm:min-h-screen flex flex-col">
         <GridBackground />
 
-        <div className="relative flex-1 flex flex-col justify-center px-4 lg:px-8 xl:px-12 pb-12 lg:pb-16">
+        <div className="relative flex-1 flex flex-col justify-start sm:justify-center px-4 lg:px-8 xl:px-12 pb-8 sm:pb-12 lg:pb-16">
           <AnimatedLayout>
             {/* Heading with metric lines */}
-            <div className="relative mt-20">
-              <MetricLines lines={[
-                { position: "15%", label: "710" },
-                { position: "42%", label: "530" },
-                { position: "68%", label: "0" },
-                { position: "90%", label: "-150" },
-              ]} />
+            <div className="relative mt-8 sm:mt-12 lg:mt-20">
+              <div className="hidden sm:block">
+                <MetricLines lines={[
+                  { position: "15%", label: "710" },
+                  { position: "42%", label: "530" },
+                  { position: "68%", label: "0" },
+                  { position: "90%", label: "-150" },
+                ]} />
+              </div>
 
               {/* Text — above lines */}
-              <div className="relative z-10 h-[clamp(4rem,16vw,13rem)] flex items-center">
-                <div className="text-[clamp(3.5rem,15vw,12rem)] leading-[1.1] tracking-tight w-full">
+              <div className="relative z-10 h-[clamp(3.5rem,12vw,10rem)] sm:h-[clamp(4rem,16vw,13rem)] flex items-center">
+                <div className="text-[clamp(2.5rem,11vw,8rem)] sm:text-[clamp(3.5rem,15vw,12rem)] leading-[1.05] sm:leading-[1.1] tracking-tight w-full">
                   <FontSwitcher 
                     pairings={allPairings} 
                     onIndexChange={setCurrentFontIndex}
@@ -70,8 +72,8 @@ export function LandingClient({
             </div>
 
             {/* Supporting content — tight vertical rhythm */}
-            <div className="mt-4 ml-5 h-[3em]">
-              <p className="text-[clamp(1.125rem,2.5vw,1.75rem)] leading-normal tracking-[-0.01em] text-muted-foreground max-w-4xl line-clamp-2">
+            <div className="mt-3 sm:mt-4 ml-0 sm:ml-5">
+              <p className="text-base sm:text-[clamp(1.125rem,2.5vw,1.75rem)] leading-snug sm:leading-normal tracking-[-0.01em] text-muted-foreground max-w-4xl">
                 <AnimatedSubtitle 
                   pairings={allPairings}
                   currentIndex={currentFontIndex}
@@ -80,7 +82,7 @@ export function LandingClient({
               </p>
             </div>
 
-            <div className="pt-40 ml-5 max-w-2xl">
+            <div className="mt-8 sm:mt-16 lg:mt-24 ml-0 sm:ml-5 max-w-full sm:max-w-2xl">
               <InstallCommand pairingName={featured.name} showPackageManagerSelector showFeatures />
             </div>
 
@@ -89,55 +91,58 @@ export function LandingClient({
       </section>
 
       {/* Sticky Filters */}
-      <div className="sticky top-16 z-40 bg-background/95 border-b border-border backdrop-blur-sm px-5">
-        <div className="px-4 lg:px-8 py-3 flex items-center gap-6">
-          {/* Type filter */}
-          <div className="flex items-center gap-0 shrink-0">
-            {categoryOptions.map((cat) => (
-              <button
-                key={cat.key}
-                onClick={() => setCategoryFilter(cat.key)}
-                aria-pressed={categoryFilter === cat.key}
-                className={`px-3 py-1.5 text-xs uppercase tracking-wider border-b-2 transition-[color,border-color] ${
-                  categoryFilter === cat.key
-                    ? "border-foreground text-foreground"
-                    : "border-transparent text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {cat.label}
-              </button>
-            ))}
-          </div>
+      <div className="sticky top-16 z-40 bg-background/95 border-b border-border backdrop-blur-sm">
+        <div className="px-4 lg:px-8 py-3 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+          {/* Type filter + Style groups row on mobile */}
+          <div className="flex items-center gap-4 overflow-x-auto no-scrollbar pb-1 sm:pb-0">
+            {/* Type filter */}
+            <div className="flex items-center gap-0 shrink-0">
+              {categoryOptions.map((cat) => (
+                <button
+                  key={cat.key}
+                  onClick={() => setCategoryFilter(cat.key)}
+                  aria-pressed={categoryFilter === cat.key}
+                  className={`px-3 py-2 text-xs uppercase tracking-wider border-b-2 transition-[color,border-color] min-h-[44px] flex items-center ${
+                    categoryFilter === cat.key
+                      ? "border-foreground text-foreground"
+                      : "border-transparent text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {cat.label}
+                </button>
+              ))}
+            </div>
 
-          <span className="w-px h-4 bg-border shrink-0" />
+            <span className="w-px h-6 bg-border shrink-0 hidden sm:block" />
 
-          {/* Style groups — horizontal scroll on mobile */}
-          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
-            {styleGroups.map((group) => (
-              <button
-                key={group.key}
-                onClick={() => toggleStyleFilter(group.key)}
-                aria-pressed={styleFilter === group.key}
-                className={`px-2.5 py-1 text-[11px] uppercase tracking-wider whitespace-nowrap transition-[background-color,color,border-color] border shrink-0 ${
-                  styleFilter === group.key
-                    ? "bg-foreground text-background border-foreground"
-                    : "bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground"
-                }`}
-              >
-                {group.label}
-              </button>
-            ))}
+            {/* Style groups — horizontal scroll */}
+            <div className="flex items-center gap-1.5">
+              {styleGroups.map((group) => (
+                <button
+                  key={group.key}
+                  onClick={() => toggleStyleFilter(group.key)}
+                  aria-pressed={styleFilter === group.key}
+                  className={`px-3 py-2 text-[11px] uppercase tracking-wider whitespace-nowrap transition-[background-color,color,border-color] border shrink-0 min-h-[44px] flex items-center ${
+                    styleFilter === group.key
+                      ? "bg-foreground text-background border-foreground"
+                      : "bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground"
+                  }`}
+                >
+                  {group.label}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Count + Clear */}
-          <div className="flex items-center gap-3 ml-auto shrink-0">
-            <span className="text-[11px] font-mono text-muted-foreground tabular-nums">
-              {filteredPairings.length}
+          <div className="flex items-center gap-3 sm:ml-auto shrink-0 pt-2 sm:pt-0 border-t sm:border-t-0 border-border">
+            <span className="text-xs font-mono text-muted-foreground tabular-nums">
+              {filteredPairings.length} pairings
             </span>
             {hasActiveFilters && (
               <button
                 onClick={clearFilters}
-                className="text-[11px] uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors"
+                className="text-xs uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors px-2 py-1 min-h-[44px] flex items-center"
               >
                 Clear
               </button>
@@ -147,7 +152,7 @@ export function LandingClient({
       </div>
 
       {/* Pairing Cards */}
-      <section className="px-12">
+      <section className="px-4 sm:px-6 lg:px-8">
         {filteredPairings.length === 0 ? (
           <div className="py-24 text-center">
             <p className="text-muted-foreground">No pairings match the current filters.</p>
