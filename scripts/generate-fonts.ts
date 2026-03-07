@@ -45,6 +45,10 @@ const MANUAL_FONTS: Array<{
   },
 ];
 
+const GOOGLE_FONT_NPM_PACKAGE_OVERRIDES: Record<string, string> = {
+  Lato: "@fontsource/lato",
+};
+
 function toKebab(family: string): string {
   return family
     .toLowerCase()
@@ -193,6 +197,7 @@ async function main() {
       weights: extractWeights(font.variants),
       subsets: font.subsets,
       provider: "google",
+      npmPackage: GOOGLE_FONT_NPM_PACKAGE_OVERRIDES[font.family],
     });
     count++;
   }

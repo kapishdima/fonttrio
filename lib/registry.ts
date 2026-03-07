@@ -14,6 +14,7 @@ export interface FontItem {
     family: string;
     provider: string;
     import: string;
+    npmPackage?: string;
     variable: string;
     weight: string[];
     subsets: string[];

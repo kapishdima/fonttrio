@@ -7,6 +7,7 @@
     "family": "Lato",
     "provider": "google",
     "import": "Lato",
+    "npmPackage": "@fontsource/lato",
     "variable": "--font-lato",
     "weight": [
       "100",
