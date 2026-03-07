@@ -6,9 +6,9 @@
   "description": "Literary and warm serif pairing. Elegant display headings with classic body text for publishing.",
   "categories": ["serif", "classic", "literary"],
   "registryDependencies": [
-    "https://fonttrio.dev/r/dm-serif-display.json",
-    "https://fonttrio.dev/r/libre-baskerville.json",
-    "https://fonttrio.dev/r/jetbrains-mono.json"
+    "https://www.fonttrio.xyz/r/dm-serif-display.json",
+    "https://www.fonttrio.xyz/r/libre-baskerville.json",
+    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
   ],
   "cssVars": {
     "theme": {

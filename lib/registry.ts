@@ -95,7 +95,7 @@ export function getPairing(name: string): PairingItem | null {
   }
 }
 
-export function buildRegistryIndex(baseUrl = "https://fonttrio.dev"): RegistryIndex {
+export function buildRegistryIndex(baseUrl = "https://www.fonttrio.xyz"): RegistryIndex {
   const fonts = getAllFonts();
   const pairings = getAllPairings();
 

@@ -10,9 +10,9 @@
     "nordic"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/schibsted-grotesk.json",
-    "https://fonttrio.dev/r/karla.json",
-    "https://fonttrio.dev/r/fira-code.json"
+    "https://www.fonttrio.xyz/r/schibsted-grotesk.json",
+    "https://www.fonttrio.xyz/r/karla.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
   ],
   "cssVars": {
     "theme": {

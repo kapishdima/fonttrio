@@ -10,5 +10,5 @@ export function buildFontFamily(name: string, category: string): string {
 }
 
 export function buildInstallCommand(pairingName: string): string {
-  return `npx shadcn@latest add https://fonttrio.dev/r/${pairingName}.json`;
+  return `npx shadcn@latest add https://www.fonttrio.xyz/r/${pairingName}.json`;
 }

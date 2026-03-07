@@ -10,9 +10,9 @@
     "warm"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/lora.json",
-    "https://fonttrio.dev/r/nunito-sans.json",
-    "https://fonttrio.dev/r/inconsolata.json"
+    "https://www.fonttrio.xyz/r/lora.json",
+    "https://www.fonttrio.xyz/r/nunito-sans.json",
+    "https://www.fonttrio.xyz/r/inconsolata.json"
   ],
   "cssVars": {
     "theme": {

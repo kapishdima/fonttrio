@@ -10,9 +10,9 @@
     "friendly"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/quicksand.json",
-    "https://fonttrio.dev/r/cabin.json",
-    "https://fonttrio.dev/r/inconsolata.json"
+    "https://www.fonttrio.xyz/r/quicksand.json",
+    "https://www.fonttrio.xyz/r/cabin.json",
+    "https://www.fonttrio.xyz/r/inconsolata.json"
   ],
   "cssVars": {
     "theme": {

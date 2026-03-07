@@ -2,7 +2,7 @@
 
 ## Что это
 
-Кураторский shadcn-совместимый реестр font pairings. Пользователь делает `shadcn add https://fonttrio.dev/r/editorial.json` и получает полностью настроенную типографику (heading + body + mono).
+Кураторский shadcn-совместимый реестр font pairings. Пользователь делает `shadcn add https://www.fonttrio.xyz/r/editorial.json` и получает полностью настроенную типографику (heading + body + mono).
 
 **Tagline:** "Three fonts. One command."
 

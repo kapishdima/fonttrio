@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Logo } from "./logo";
+import { Logo, LogoIcon } from "./logo";
 import { ThemeToggle } from "./theme-toggle";
 import { SOCIAL_LINKS } from "@/lib/constants";
 
@@ -58,14 +58,26 @@ function SocialLinks() {
   );
 }
 
+function SponsorButton() {
+  return (
+    <Link
+      href="/sponsors"
+      className="hidden sm:flex items-center gap-2 px-3 py-1.5 text-xs uppercase tracking-wider border border-border bg-surface hover:bg-surface-hover transition-colors"
+    >
+      <span>Support</span>
+    </Link>
+  );
+}
+
 export function SiteHeader({ subtitle = "Font pairings for shadcn/ui" }: SiteHeaderProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 border-b border-border backdrop-blur-sm">
       <div className="px-4 lg:px-12 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-1 hover:opacity-70 transition-opacity">
-          <Logo />
+        <Link href="/" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
+          <Logo size="sm" variant="text" />
         </Link>
         <div className="flex items-center gap-2">
+          <SponsorButton />
           <SocialLinks />
           <ThemeToggle />
         </div>

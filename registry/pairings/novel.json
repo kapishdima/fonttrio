@@ -10,9 +10,9 @@
     "narrative"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/cormorant-garamond.json",
-    "https://fonttrio.dev/r/lora.json",
-    "https://fonttrio.dev/r/jetbrains-mono.json"
+    "https://www.fonttrio.xyz/r/cormorant-garamond.json",
+    "https://www.fonttrio.xyz/r/lora.json",
+    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
   ],
   "cssVars": {
     "theme": {

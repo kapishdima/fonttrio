@@ -77,7 +77,7 @@ function collectRequiredFonts(): void {
       const content = JSON.parse(readFileSync(join(PAIRINGS_DIR, file), "utf-8"));
       const deps: string[] = content.registryDependencies || [];
       for (const dep of deps) {
-        // Extract font name from URL like "https://fonttrio.dev/r/playfair-display.json"
+        // Extract font name from URL like "https://www.fonttrio.xyz/r/playfair-display.json"
         const match = dep.match(/\/r\/(.+)\.json$/);
         if (match) {
           REQUIRED_FAMILIES.add(match[1]);

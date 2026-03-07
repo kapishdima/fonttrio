@@ -10,9 +10,9 @@
     "startup"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/sora.json",
-    "https://fonttrio.dev/r/public-sans.json",
-    "https://fonttrio.dev/r/fira-code.json"
+    "https://www.fonttrio.xyz/r/sora.json",
+    "https://www.fonttrio.xyz/r/public-sans.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
   ],
   "cssVars": {
     "theme": {

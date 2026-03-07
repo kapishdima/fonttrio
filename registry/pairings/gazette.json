@@ -10,9 +10,9 @@
     "elegant"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/cormorant-garamond.json",
-    "https://fonttrio.dev/r/raleway.json",
-    "https://fonttrio.dev/r/roboto-mono.json"
+    "https://www.fonttrio.xyz/r/cormorant-garamond.json",
+    "https://www.fonttrio.xyz/r/raleway.json",
+    "https://www.fonttrio.xyz/r/roboto-mono.json"
   ],
   "cssVars": {
     "theme": {

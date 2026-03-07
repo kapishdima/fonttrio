@@ -10,9 +10,9 @@
     "global"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/poppins.json",
-    "https://fonttrio.dev/r/hind.json",
-    "https://fonttrio.dev/r/roboto-mono.json"
+    "https://www.fonttrio.xyz/r/poppins.json",
+    "https://www.fonttrio.xyz/r/hind.json",
+    "https://www.fonttrio.xyz/r/roboto-mono.json"
   ],
   "cssVars": {
     "theme": {

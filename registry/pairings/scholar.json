@@ -10,9 +10,9 @@
     "academic"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/eb-garamond.json",
-    "https://fonttrio.dev/r/inter.json",
-    "https://fonttrio.dev/r/source-code-pro.json"
+    "https://www.fonttrio.xyz/r/eb-garamond.json",
+    "https://www.fonttrio.xyz/r/inter.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
   ],
   "cssVars": {
     "theme": {

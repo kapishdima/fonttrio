@@ -10,9 +10,9 @@
     "bold"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/archivo-black.json",
-    "https://fonttrio.dev/r/archivo.json",
-    "https://fonttrio.dev/r/source-code-pro.json"
+    "https://www.fonttrio.xyz/r/archivo-black.json",
+    "https://www.fonttrio.xyz/r/archivo.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
   ],
   "cssVars": {
     "theme": {

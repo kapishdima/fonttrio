@@ -22,7 +22,7 @@ Building a typography system from scratch is time-consuming. Finding fonts that 
 ### Install a pairing
 
 ```bash
-npx shadcn@latest add https://fonttrio.dev/r/editorial.json
+npx shadcn@latest add https://www.fonttrio.xyz/r/editorial.json
 ```
 
 Replace `editorial` with any pairing name from our collection.
@@ -51,7 +51,7 @@ Apply them in your components:
 
 ## Browse Pairings
 
-Visit [fonttrio.dev](https://fonttrio.dev) to browse all available pairings. Each pairing page includes:
+Visit [fonttrio.dev](https://www.fonttrio.xyz) to browse all available pairings. Each pairing page includes:
 
 - Live preview with actual fonts
 - Typography scale visualization
@@ -125,8 +125,8 @@ Edit the CSS variables in your `globals.css`:
 Install multiple pairings and switch between them:
 
 ```bash
-npx shadcn@latest add https://fonttrio.dev/r/minimal.json
-npx shadcn@latest add https://fonttrio.dev/r/editorial.json
+npx shadcn@latest add https://www.fonttrio.xyz/r/minimal.json
+npx shadcn@latest add https://www.fonttrio.xyz/r/editorial.json
 ```
 
 ## Contributing

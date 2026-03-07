@@ -10,9 +10,9 @@
     "technical"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/saira.json",
-    "https://fonttrio.dev/r/ubuntu.json",
-    "https://fonttrio.dev/r/ibm-plex-mono.json"
+    "https://www.fonttrio.xyz/r/saira.json",
+    "https://www.fonttrio.xyz/r/ubuntu.json",
+    "https://www.fonttrio.xyz/r/ibm-plex-mono.json"
   ],
   "cssVars": {
     "theme": {

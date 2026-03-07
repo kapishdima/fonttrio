@@ -10,9 +10,9 @@
     "editorial"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/playfair-display.json",
-    "https://fonttrio.dev/r/dm-sans.json",
-    "https://fonttrio.dev/r/jetbrains-mono.json"
+    "https://www.fonttrio.xyz/r/playfair-display.json",
+    "https://www.fonttrio.xyz/r/dm-sans.json",
+    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
   ],
   "cssVars": {
     "theme": {

@@ -10,9 +10,9 @@
     "universal"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/pt-serif.json",
-    "https://fonttrio.dev/r/pt-sans.json",
-    "https://fonttrio.dev/r/inconsolata.json"
+    "https://www.fonttrio.xyz/r/pt-serif.json",
+    "https://www.fonttrio.xyz/r/pt-sans.json",
+    "https://www.fonttrio.xyz/r/inconsolata.json"
   ],
   "cssVars": {
     "theme": {

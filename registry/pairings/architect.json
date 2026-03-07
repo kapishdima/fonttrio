@@ -10,9 +10,9 @@
     "structured"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/outfit.json",
-    "https://fonttrio.dev/r/libre-baskerville.json",
-    "https://fonttrio.dev/r/ibm-plex-mono.json"
+    "https://www.fonttrio.xyz/r/outfit.json",
+    "https://www.fonttrio.xyz/r/libre-baskerville.json",
+    "https://www.fonttrio.xyz/r/ibm-plex-mono.json"
   ],
   "cssVars": {
     "theme": {

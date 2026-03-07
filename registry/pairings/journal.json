@@ -10,9 +10,9 @@
     "readable"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/merriweather.json",
-    "https://fonttrio.dev/r/mulish.json",
-    "https://fonttrio.dev/r/source-code-pro.json"
+    "https://www.fonttrio.xyz/r/merriweather.json",
+    "https://www.fonttrio.xyz/r/mulish.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
   ],
   "cssVars": {
     "theme": {

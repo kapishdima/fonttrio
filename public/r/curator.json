@@ -10,9 +10,9 @@
     "curated"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/plus-jakarta-sans.json",
-    "https://fonttrio.dev/r/pt-serif.json",
-    "https://fonttrio.dev/r/source-code-pro.json"
+    "https://www.fonttrio.xyz/r/plus-jakarta-sans.json",
+    "https://www.fonttrio.xyz/r/pt-serif.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
   ],
   "cssVars": {
     "theme": {

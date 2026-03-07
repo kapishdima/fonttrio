@@ -80,7 +80,7 @@ export function PairingCard({ pairing }: PairingCardProps) {
           className="flex-1 truncate text-muted-foreground text-[11px]"
           style={{ fontFamily: monoFont }}
         >
-          npx shadcn add {pairing.name}
+          {command}
         </code>
         {copied ? (
           <Check className="size-3 shrink-0 text-foreground" aria-hidden="true" />

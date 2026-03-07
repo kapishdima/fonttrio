@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Bebas_Neue } from "next/font/google";
+import { Bebas_Neue, Heebo } from "next/font/google";
 import "./globals.css";
 import { AllFontsLoader } from "./components/all-fonts-loader";
 import { ThemeProvider } from "./components/theme-provider";
+
+import { Analytics } from "@vercel/analytics/next"
+
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -11,9 +14,13 @@ const bebasNeue = Bebas_Neue({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
-  title: "fonttrio — Font Pairings for shadcn",
+  title: "Fonttrio - Font Pairings for shadcn",
   description: "Three fonts. One command. Curated font pairings for shadcn/ui.",
+  icons: {
+    icon: "/logo/logo-square.svg",
+  },
 };
 
 export default function RootLayout({
@@ -34,7 +41,7 @@ export default function RootLayout({
         />
         <AllFontsLoader />
       </head>
-      <body className={`${bebasNeue.variable} antialiased`}>
+      <body className={`${bebasNeue.variable}  antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -49,6 +56,7 @@ export default function RootLayout({
           </a>
           {children}
         </ThemeProvider>
+        <Analytics/>
       </body>
     </html>
   );

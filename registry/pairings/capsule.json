@@ -10,9 +10,9 @@
     "urban"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/montserrat.json",
-    "https://fonttrio.dev/r/karla.json",
-    "https://fonttrio.dev/r/jetbrains-mono.json"
+    "https://www.fonttrio.xyz/r/montserrat.json",
+    "https://www.fonttrio.xyz/r/karla.json",
+    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
   ],
   "cssVars": {
     "theme": {

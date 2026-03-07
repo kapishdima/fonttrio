@@ -10,9 +10,9 @@
     "futuristic"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/exo-2.json",
-    "https://fonttrio.dev/r/titillium-web.json",
-    "https://fonttrio.dev/r/source-code-pro.json"
+    "https://www.fonttrio.xyz/r/exo-2.json",
+    "https://www.fonttrio.xyz/r/titillium-web.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
   ],
   "cssVars": {
     "theme": {

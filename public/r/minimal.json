@@ -6,8 +6,8 @@
   "description": "Ultra-minimal Vercel-style pairing. One font family for everything, clean and modern.",
   "categories": ["sans-serif", "minimal", "modern"],
   "registryDependencies": [
-    "https://fonttrio.dev/r/geist.json",
-    "https://fonttrio.dev/r/geist-mono.json"
+    "https://www.fonttrio.xyz/r/geist.json",
+    "https://www.fonttrio.xyz/r/geist-mono.json"
   ],
   "cssVars": {
     "theme": {

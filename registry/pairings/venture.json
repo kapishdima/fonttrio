@@ -10,9 +10,9 @@
     "geometric"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/jost.json",
-    "https://fonttrio.dev/r/rubik.json",
-    "https://fonttrio.dev/r/roboto-mono.json"
+    "https://www.fonttrio.xyz/r/jost.json",
+    "https://www.fonttrio.xyz/r/rubik.json",
+    "https://www.fonttrio.xyz/r/roboto-mono.json"
   ],
   "cssVars": {
     "theme": {

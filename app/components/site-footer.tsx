@@ -65,7 +65,15 @@ export function SiteFooter({ subtitle = "Curated font pairings for shadcn/ui" }:
           <Link href="/" className="flex items-center gap-1 hover:opacity-70 transition-opacity">
             <Logo size="sm" />
           </Link>
-          <SocialLinks />
+          <div className="flex items-center gap-6">
+            <Link
+              href="/sponsors"
+              className="text-xs uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Sponsors
+            </Link>
+            <SocialLinks />
+          </div>
         </div>
       </div>
     </footer>

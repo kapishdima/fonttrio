@@ -10,9 +10,9 @@
     "product"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/urbanist.json",
-    "https://fonttrio.dev/r/libre-franklin.json",
-    "https://fonttrio.dev/r/jetbrains-mono.json"
+    "https://www.fonttrio.xyz/r/urbanist.json",
+    "https://www.fonttrio.xyz/r/libre-franklin.json",
+    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
   ],
   "cssVars": {
     "theme": {

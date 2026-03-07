@@ -14,7 +14,7 @@ import { writeFileSync, mkdirSync, existsSync } from "fs";
 import { join } from "path";
 
 const PAIRINGS_DIR = join(import.meta.dir, "..", "registry", "pairings");
-const BASE_URL = "https://fonttrio.dev";
+const BASE_URL = "https://www.fonttrio.xyz";
 
 function toKebab(s: string): string {
   return s

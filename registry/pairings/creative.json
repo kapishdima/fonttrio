@@ -6,9 +6,9 @@
   "description": "Playful geometric pairing. Bold headings with friendly body text for startups and portfolios.",
   "categories": ["sans-serif", "creative", "geometric"],
   "registryDependencies": [
-    "https://fonttrio.dev/r/space-grotesk.json",
-    "https://fonttrio.dev/r/dm-sans.json",
-    "https://fonttrio.dev/r/fira-code.json"
+    "https://www.fonttrio.xyz/r/space-grotesk.json",
+    "https://www.fonttrio.xyz/r/dm-sans.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
   ],
   "cssVars": {
     "theme": {

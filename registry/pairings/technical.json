@@ -6,8 +6,8 @@
   "description": "Professional IBM Plex family pairing. Designed for documentation and enterprise applications.",
   "categories": ["sans-serif", "technical", "professional"],
   "registryDependencies": [
-    "https://fonttrio.dev/r/ibm-plex-sans.json",
-    "https://fonttrio.dev/r/ibm-plex-mono.json"
+    "https://www.fonttrio.xyz/r/ibm-plex-sans.json",
+    "https://www.fonttrio.xyz/r/ibm-plex-mono.json"
   ],
   "cssVars": {
     "theme": {

@@ -10,9 +10,9 @@
     "editorial"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/bitter.json",
-    "https://fonttrio.dev/r/open-sans.json",
-    "https://fonttrio.dev/r/source-code-pro.json"
+    "https://www.fonttrio.xyz/r/bitter.json",
+    "https://www.fonttrio.xyz/r/open-sans.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
   ],
   "cssVars": {
     "theme": {

@@ -10,9 +10,9 @@
     "global"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/heebo.json",
-    "https://fonttrio.dev/r/assistant.json",
-    "https://fonttrio.dev/r/source-code-pro.json"
+    "https://www.fonttrio.xyz/r/heebo.json",
+    "https://www.fonttrio.xyz/r/assistant.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
   ],
   "cssVars": {
     "theme": {

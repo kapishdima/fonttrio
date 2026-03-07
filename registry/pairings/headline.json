@@ -10,9 +10,9 @@
     "impactful"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/anton.json",
-    "https://fonttrio.dev/r/work-sans.json",
-    "https://fonttrio.dev/r/roboto-mono.json"
+    "https://www.fonttrio.xyz/r/anton.json",
+    "https://www.fonttrio.xyz/r/work-sans.json",
+    "https://www.fonttrio.xyz/r/roboto-mono.json"
   ],
   "cssVars": {
     "theme": {

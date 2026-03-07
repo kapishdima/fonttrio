@@ -10,9 +10,9 @@
     "neutral"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/inter-tight.json",
-    "https://fonttrio.dev/r/open-sans.json",
-    "https://fonttrio.dev/r/ibm-plex-mono.json"
+    "https://www.fonttrio.xyz/r/inter-tight.json",
+    "https://www.fonttrio.xyz/r/open-sans.json",
+    "https://www.fonttrio.xyz/r/ibm-plex-mono.json"
   ],
   "cssVars": {
     "theme": {

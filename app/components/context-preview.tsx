@@ -313,7 +313,7 @@ function DocsPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
           className="px-5 py-4 border border-border rounded-lg overflow-x-auto bg-muted"
           style={{ fontFamily: monoFont, fontSize: "0.8125rem", lineHeight: "1.65" }}
         >
-          <code className="text-muted-foreground">{`npx shadcn@latest add https://fonttrio.dev/r/editorial.json`}</code>
+          <code className="text-muted-foreground">{`npx shadcn@latest add https://www.fonttrio.xyz/r/editorial.json`}</code>
         </pre>
 
         <p

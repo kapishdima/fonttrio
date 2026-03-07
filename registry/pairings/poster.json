@@ -10,9 +10,9 @@
     "bold"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/oswald.json",
-    "https://fonttrio.dev/r/barlow.json",
-    "https://fonttrio.dev/r/inconsolata.json"
+    "https://www.fonttrio.xyz/r/oswald.json",
+    "https://www.fonttrio.xyz/r/barlow.json",
+    "https://www.fonttrio.xyz/r/inconsolata.json"
   ],
   "cssVars": {
     "theme": {

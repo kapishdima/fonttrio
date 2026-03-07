@@ -6,9 +6,9 @@
   "description": "Classic editorial pairing. High-contrast serif headings with readable serif body text.",
   "categories": ["serif", "editorial", "elegant"],
   "registryDependencies": [
-    "https://fonttrio.dev/r/playfair-display.json",
-    "https://fonttrio.dev/r/source-serif-4.json",
-    "https://fonttrio.dev/r/jetbrains-mono.json"
+    "https://www.fonttrio.xyz/r/playfair-display.json",
+    "https://www.fonttrio.xyz/r/source-serif-4.json",
+    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
   ],
   "cssVars": {
     "theme": {

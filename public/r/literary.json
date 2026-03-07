@@ -10,9 +10,9 @@
     "literary"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/eb-garamond.json",
-    "https://fonttrio.dev/r/crimson-text.json",
-    "https://fonttrio.dev/r/inconsolata.json"
+    "https://www.fonttrio.xyz/r/eb-garamond.json",
+    "https://www.fonttrio.xyz/r/crimson-text.json",
+    "https://www.fonttrio.xyz/r/inconsolata.json"
   ],
   "cssVars": {
     "theme": {

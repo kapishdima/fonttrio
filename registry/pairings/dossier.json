@@ -10,9 +10,9 @@
     "condensed"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/barlow-condensed.json",
-    "https://fonttrio.dev/r/barlow.json",
-    "https://fonttrio.dev/r/ibm-plex-mono.json"
+    "https://www.fonttrio.xyz/r/barlow-condensed.json",
+    "https://www.fonttrio.xyz/r/barlow.json",
+    "https://www.fonttrio.xyz/r/ibm-plex-mono.json"
   ],
   "cssVars": {
     "theme": {

@@ -10,9 +10,9 @@
     "product"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/plus-jakarta-sans.json",
-    "https://fonttrio.dev/r/inter.json",
-    "https://fonttrio.dev/r/jetbrains-mono.json"
+    "https://www.fonttrio.xyz/r/plus-jakarta-sans.json",
+    "https://www.fonttrio.xyz/r/inter.json",
+    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
   ],
   "cssVars": {
     "theme": {

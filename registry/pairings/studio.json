@@ -10,9 +10,9 @@
     "design"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/bricolage-grotesque.json",
-    "https://fonttrio.dev/r/figtree.json",
-    "https://fonttrio.dev/r/fira-code.json"
+    "https://www.fonttrio.xyz/r/bricolage-grotesque.json",
+    "https://www.fonttrio.xyz/r/figtree.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
   ],
   "cssVars": {
     "theme": {

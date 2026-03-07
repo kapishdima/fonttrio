@@ -10,9 +10,9 @@
     "systematic"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/roboto-slab.json",
-    "https://fonttrio.dev/r/roboto.json",
-    "https://fonttrio.dev/r/roboto-mono.json"
+    "https://www.fonttrio.xyz/r/roboto-slab.json",
+    "https://www.fonttrio.xyz/r/roboto.json",
+    "https://www.fonttrio.xyz/r/roboto-mono.json"
   ],
   "cssVars": {
     "theme": {

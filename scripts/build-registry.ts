@@ -13,7 +13,7 @@ const PUBLIC_R = join(ROOT, "public", "r");
 const FONTS_DIR = join(ROOT, "registry", "fonts");
 const PAIRINGS_DIR = join(ROOT, "registry", "pairings");
 
-const BASE_URL = process.env.BASE_URL || "https://fonttrio.dev";
+const BASE_URL = process.env.BASE_URL || "https://www.fonttrio.xyz";
 
 mkdirSync(PUBLIC_R, { recursive: true });
 

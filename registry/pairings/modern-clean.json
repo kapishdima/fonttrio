@@ -6,8 +6,8 @@
   "description": "Clean and neutral sans-serif pairing. Perfect for SaaS dashboards and web applications.",
   "categories": ["sans-serif", "modern", "clean"],
   "registryDependencies": [
-    "https://fonttrio.dev/r/inter.json",
-    "https://fonttrio.dev/r/geist-mono.json"
+    "https://www.fonttrio.xyz/r/inter.json",
+    "https://www.fonttrio.xyz/r/geist-mono.json"
   ],
   "cssVars": {
     "theme": {

@@ -10,9 +10,9 @@
     "healthcare"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/figtree.json",
-    "https://fonttrio.dev/r/overpass.json",
-    "https://fonttrio.dev/r/inconsolata.json"
+    "https://www.fonttrio.xyz/r/figtree.json",
+    "https://www.fonttrio.xyz/r/overpass.json",
+    "https://www.fonttrio.xyz/r/inconsolata.json"
   ],
   "cssVars": {
     "theme": {

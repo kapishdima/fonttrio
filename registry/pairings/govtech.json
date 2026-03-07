@@ -10,9 +10,9 @@
     "accessible"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/public-sans.json",
-    "https://fonttrio.dev/r/lato.json",
-    "https://fonttrio.dev/r/source-code-pro.json"
+    "https://www.fonttrio.xyz/r/public-sans.json",
+    "https://www.fonttrio.xyz/r/lato.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
   ],
   "cssVars": {
     "theme": {

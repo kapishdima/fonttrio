@@ -10,8 +10,8 @@
     "document"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/source-sans-3.json",
-    "https://fonttrio.dev/r/source-code-pro.json"
+    "https://www.fonttrio.xyz/r/source-sans-3.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
   ],
   "cssVars": {
     "theme": {

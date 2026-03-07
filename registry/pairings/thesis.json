@@ -10,9 +10,9 @@
     "universal"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/noto-serif.json",
-    "https://fonttrio.dev/r/noto-sans.json",
-    "https://fonttrio.dev/r/inconsolata.json"
+    "https://www.fonttrio.xyz/r/noto-serif.json",
+    "https://www.fonttrio.xyz/r/noto-sans.json",
+    "https://www.fonttrio.xyz/r/inconsolata.json"
   ],
   "cssVars": {
     "theme": {

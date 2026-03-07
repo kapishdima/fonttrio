@@ -62,7 +62,7 @@ export function PreviewSection({ pairing }: PreviewSectionProps) {
             style={{ fontFamily: mono.family, fontSize: "0.8125rem", lineHeight: "1.65" }}
           >
             <span className="text-muted-foreground">{'// Install this pairing'}</span><br />
-            npx shadcn add https://fonttrio.dev/r/{pairing.name}.json
+            npx shadcn add https://www.fonttrio.xyz/r/{pairing.name}.json
           </code>
         </div>
       </div>

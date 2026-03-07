@@ -10,9 +10,9 @@
     "bold"
   ],
   "registryDependencies": [
-    "https://fonttrio.dev/r/fjalla-one.json",
-    "https://fonttrio.dev/r/josefin-sans.json",
-    "https://fonttrio.dev/r/fira-code.json"
+    "https://www.fonttrio.xyz/r/fjalla-one.json",
+    "https://www.fonttrio.xyz/r/josefin-sans.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
   ],
   "cssVars": {
     "theme": {
