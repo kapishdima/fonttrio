@@ -5,7 +5,7 @@ import type { PairingData } from "@/lib/pairings";
 import { usePairingFonts } from "@/lib/hooks/use-pairing-fonts";
 import { GridBackground } from "../grid-background";
 import { MetricLines } from "../metric-lines";
-import { CopyCommand } from "../copy-command";
+import { InstallCommand } from "../install-command";
 import { SectionLabel } from "../section-label";
 import { AnimatedLayout } from "../animated-layout";
 import { ArrowLeft } from "lucide-react";
@@ -24,7 +24,7 @@ export function HeroSection({ pairing }: HeroSectionProps) {
   const { heading, body, mono, getHeadingStyle } = usePairingFonts(pairing);
 
   return (
-    <header id="main-content" className="pt-16 relative min-h-[70vh] flex flex-col">
+    <header id="main-content" className="pt-16 relative min-h-screen flex flex-col">
       <GridBackground />
 
       {/* Back Button */}
@@ -99,8 +99,8 @@ export function HeroSection({ pairing }: HeroSectionProps) {
 
             {/* Install Command */}
             <AnimatedLayout delay={200}>
-              <div className="mt-8 max-w-md">
-                <CopyCommand pairingName={pairing.name} />
+              <div className="mt-28 max-w-2xl">
+                <InstallCommand pairingName={pairing.name} showPackageManagerSelector showFeatures={false} />
               </div>
             </AnimatedLayout>
           </div>

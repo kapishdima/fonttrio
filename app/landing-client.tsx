@@ -5,7 +5,7 @@ import type { PairingData } from "@/lib/pairings";
 import { usePairingFilters } from "@/lib/hooks/use-pairing-filters";
 import { FontSwitcher, AnimatedSubtitle } from "./components/font-switcher";
 import { AnimatedLayout } from "./components/animated-layout";
-import { CopyCommand } from "./components/copy-command";
+import { InstallCommand } from "./components/install-command";
 import { SiteHeader } from "./components/site-header";
 import { SiteFooter } from "./components/site-footer";
 import { GridBackground } from "./components/grid-background";
@@ -44,13 +44,13 @@ export function LandingClient({
       <SiteHeader />
 
       {/* Hero */}
-      <section id="main-content" className="pt-16 relative min-h-[93vh] flex flex-col">
+      <section id="main-content" className="pt-16 relative min-h-screen flex flex-col">
         <GridBackground />
 
         <div className="relative flex-1 flex flex-col justify-center px-4 lg:px-8 xl:px-12 pb-12 lg:pb-16">
           <AnimatedLayout>
             {/* Heading with metric lines */}
-            <div className="relative">
+            <div className="relative mt-20">
               <MetricLines lines={[
                 { position: "15%", label: "710" },
                 { position: "42%", label: "530" },
@@ -80,27 +80,10 @@ export function LandingClient({
               </p>
             </div>
 
-            {/* How it works — minimal inline */}
-            <div className="mt-30 ml-5 flex items-center gap-4 text-xs text-muted-foreground">
-              <span className="flex items-center gap-1.5">
-                <span className="font-mono text-[10px]">1</span>
-                Choose
-              </span>
-              <span className="text-border">→</span>
-              <span className="flex items-center gap-1.5">
-                <span className="font-mono text-[10px]">2</span>
-                Install
-              </span>
-              <span className="text-border">→</span>
-              <span className="flex items-center gap-1.5">
-                <span className="font-mono text-[10px]">3</span>
-                Ship
-              </span>
+            <div className="pt-40 ml-5 max-w-2xl">
+              <InstallCommand pairingName={featured.name} showPackageManagerSelector showFeatures />
             </div>
 
-            <div className="mt-5 ml-5 max-w-sm">
-              <CopyCommand pairingName={featured.name} />
-            </div>
           </AnimatedLayout>
         </div>
       </section>
