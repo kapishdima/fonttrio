@@ -2,7 +2,7 @@
   "name": "alfa-slab-one",
   "type": "registry:font",
   "title": "Alfa Slab One",
-  "description": "Alfa Slab One — Display font from Google Fonts.",
+  "description": "Alfa Slab One — Display font.",
   "font": {
     "family": "Alfa Slab One",
     "provider": "google",

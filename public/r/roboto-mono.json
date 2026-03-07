@@ -2,7 +2,7 @@
   "name": "roboto-mono",
   "type": "registry:font",
   "title": "Roboto Mono",
-  "description": "Roboto Mono — Monospace font from Google Fonts.",
+  "description": "Roboto Mono — Monospace font.",
   "font": {
     "family": "Roboto Mono",
     "provider": "google",

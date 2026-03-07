@@ -2,7 +2,7 @@
   "name": "source-code-pro",
   "type": "registry:font",
   "title": "Source Code Pro",
-  "description": "Source Code Pro — Monospace font from Google Fonts.",
+  "description": "Source Code Pro — Monospace font.",
   "font": {
     "family": "Source Code Pro",
     "provider": "google",

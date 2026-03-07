@@ -1,25 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import type { PairingData, TypographyScale } from "@/lib/pairings";
+import type { PairingData } from "@/lib/pairings";
 import { FontProvider } from "../components/font-provider";
 import { ThemeToggle } from "../components/theme-toggle";
 import { TypeTester } from "../components/type-tester";
 import { ContextPreview } from "../components/context-preview";
-import { TypographyCustomizer } from "../components/typography-customizer";
-import { InstallCommand } from "../components/install-command";
-import { SideBySide } from "../components/side-by-side";
+import { AnimatedLayout } from "../components/animated-layout";
 import { getAllPairings } from "@/lib/pairings";
-import { useState } from "react";
-import { ArrowLeft } from "lucide-react";
+import { useState, useCallback } from "react";
+import { ArrowLeft, Check, Copy } from "lucide-react";
 
 interface PairingDetailProps {
   pairing: PairingData;
 }
 
 export function PairingDetail({ pairing }: PairingDetailProps) {
-  const [isCustomized, setIsCustomized] = useState(false);
-
   const allPairings = getAllPairings();
   const allFontUrls = allPairings
     .map((p) => p.googleFontsUrl)
@@ -29,158 +25,241 @@ export function PairingDetail({ pairing }: PairingDetailProps) {
   const bodyFont = `"${pairing.body}", ${pairing.bodyCategory}`;
   const monoFont = `"${pairing.mono}", monospace`;
 
-  const handleScaleChange = (scale: TypographyScale) => {
-    const changed = JSON.stringify(scale) !== JSON.stringify(pairing.scale);
-    setIsCustomized(changed);
-  };
-
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       {allFontUrls.map((url) => (
         <FontProvider key={url} fonts={[]} googleFontsUrl={url} />
       ))}
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-background border-b border-border">
-        <div className="px-6 lg:px-12 h-16 flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors"
-          >
-            <ArrowLeft className="size-4" aria-hidden="true" />
-            <span className="font-display text-lg tracking-wider">BACK</span>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 border-b border-border backdrop-blur-sm">
+        <div className="px-4 lg:px-8 h-16 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-1 hover:opacity-70 transition-opacity">
+            <span className="font-display text-2xl tracking-tight">Font</span>
+            <span className="font-display text-2xl tracking-tight text-muted-foreground">trio</span>
           </Link>
           <ThemeToggle />
         </div>
       </nav>
 
-      {/* Hero Header */}
-      <header id="main-content" className="border-b border-border">
-        <div className="px-6 lg:px-12 py-12 lg:py-20">
-          <div className="max-w-[1600px] mx-auto">
-            <div className="grid grid-cols-12 gap-4">
-              {/* Section Label */}
-              <div className="col-span-12 lg:col-span-1">
-                <span className="text-xs text-muted-foreground uppercase tracking-widest">01</span>
-              </div>
-              
-              {/* Main Content */}
-              <div className="col-span-12 lg:col-span-11">
-                {/* Mood Tags */}
-                <div className="flex items-center gap-2 mb-6">
-                  {pairing.mood.map((m) => (
-                    <span
-                      key={m}
-                      className="text-xs uppercase tracking-wider px-2 py-1 border border-[#e30613] text-[#e30613]"
-                    >
-                      {m}
-                    </span>
-                  ))}
-                </div>
-                
-                {/* Giant Title */}
-                <h1
-                  style={{
-                    fontFamily: headingFont,
-                    fontWeight: pairing.scale.h1.weight,
-                    lineHeight: "0.9",
-                    letterSpacing: "-0.02em",
-                  }}
-                  className="text-[clamp(3rem,12vw,10rem)] uppercase"
-                >
-                  {pairing.name}
-                </h1>
-                
-                {/* Font Trio Display */}
-                <div className="grid grid-cols-12 gap-8 mt-12 pt-8 border-t border-border">
-                  <div className="col-span-12 lg:col-span-5">
-                    <p 
-                      className="text-lg leading-relaxed text-muted-foreground"
-                      style={{ fontFamily: bodyFont }}
-                    >
-                      {pairing.description}
-                    </p>
-                  </div>
-                  
-                  <div className="col-span-12 lg:col-span-6 lg:col-start-7">
-                    <div className="grid grid-cols-3 gap-4">
-                      <FontDisplay
-                        label="Heading"
-                        name={pairing.heading}
-                        font={headingFont}
-                      />
-                      <FontDisplay
-                        label="Body"
-                        name={pairing.body}
-                        font={bodyFont}
-                      />
-                      <FontDisplay
-                        label="Mono"
-                        name={pairing.mono}
-                        font={monoFont}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Hero */}
+      <header id="main-content" className="pt-16 relative min-h-[70vh] flex flex-col">
+        {/* Grid Background */}
+        <div className="absolute inset-0 cross-grid pointer-events-none opacity-40" />
+
+        {/* Back Button */}
+        <div className="relative px-4 lg:px-8 py-6">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ArrowLeft className="size-4" />
+            <span>Back to pairings</span>
+          </Link>
         </div>
+
+        {/* Hero Content */}
+        <div className="relative flex-1 flex flex-col justify-center px-4 lg:px-8 xl:px-12 pb-12">
+          <AnimatedLayout>
+            <div className="max-w-none">
+              {/* Pairing Name with Metric Lines */}
+              <div className="relative h-[clamp(3rem,15vw,12rem)]">
+                {/* Metric lines + labels — behind text */}
+                <div className="absolute inset-0 pointer-events-none z-0">
+                  <div className="absolute top-[20%] left-0 right-0 flex items-center gap-2">
+                    <div className="flex-1 border-t border-dashed border-border" />
+                    <span className="text-[10px] font-mono text-muted-foreground shrink-0">Ascender</span>
+                  </div>
+                  <div className="absolute top-[50%] left-0 right-0 flex items-center gap-2">
+                    <div className="flex-1 border-t border-dashed border-border" />
+                    <span className="text-[10px] font-mono text-muted-foreground shrink-0">Baseline</span>
+                  </div>
+                  <div className="absolute top-[80%] left-0 right-0 flex items-center gap-2">
+                    <div className="flex-1 border-t border-dashed border-border" />
+                    <span className="text-[10px] font-mono text-muted-foreground shrink-0">Descender</span>
+                  </div>
+                </div>
+
+                {/* Text — above lines */}
+                <div className="h-full flex items-center relative z-10">
+                  <h1
+                    style={{
+                      fontFamily: headingFont,
+                      fontWeight: pairing.scale.h1.weight,
+                      lineHeight: "0.9",
+                      letterSpacing: pairing.scale.h1.letterSpacing,
+                    }}
+                    className="text-[clamp(2.5rem,14vw,12rem)]"
+                  >
+                    {pairing.name}
+                  </h1>
+                </div>
+              </div>
+
+              {/* Font Trio Preview — show how they look together */}
+              <AnimatedLayout delay={100}>
+                <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                  <div>
+                    <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-2">Heading Font</p>
+                    <p style={{ fontFamily: headingFont, fontSize: "1.5rem", fontWeight: pairing.scale.h1.weight }}>{pairing.heading}</p>
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-2">Body Font</p>
+                    <p style={{ fontFamily: bodyFont, fontSize: "1.25rem" }}>{pairing.body}</p>
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-2">Mono Font</p>
+                    <p style={{ fontFamily: monoFont, fontSize: "1rem" }}>{pairing.mono}</p>
+                  </div>
+                </div>
+              </AnimatedLayout>
+
+              {/* Description */}
+              <AnimatedLayout delay={150}>
+                <p
+                  className="mt-10 text-lg text-muted-foreground leading-relaxed max-w-2xl"
+                  style={{ fontFamily: bodyFont }}
+                >
+                  {pairing.description}
+                </p>
+              </AnimatedLayout>
+
+              {/* Install Command — immediately in hero */}
+              <AnimatedLayout delay={200}>
+                <div className="mt-8 max-w-md">
+                  <CopyCommand pairingName={pairing.name} />
+                </div>
+              </AnimatedLayout>
+            </div>
+          </AnimatedLayout>
+        </div>
+
+        <div className="absolute bottom-0 left-0 right-0 border-b border-border" />
       </header>
 
-      {/* Sections */}
-      <main>
-        {/* Type Tester */}
-        <DetailSection number="02" label="Type Tester">
-          <TypeTester pairing={pairing} />
-        </DetailSection>
+      {/* Pairing Preview — How it looks together */}
+      <section className="border-b border-border">
+        <div className="px-4 lg:px-8 xl:px-12 py-16 lg:py-24">
+          <AnimatedLayout>
+            <h2 className="text-[10px] uppercase tracking-wider text-muted-foreground mb-8">Preview</h2>
 
-        {/* In Context */}
-        <DetailSection number="03" label="In Context">
-          <ContextPreview pairing={pairing} />
-        </DetailSection>
+            <div className="space-y-8">
+              {/* Heading Preview */}
+              <div>
+                <h3
+                  style={{
+                    fontFamily: headingFont,
+                    fontSize: pairing.scale.h1.size,
+                    fontWeight: pairing.scale.h1.weight,
+                    lineHeight: pairing.scale.h1.lineHeight,
+                    letterSpacing: pairing.scale.h1.letterSpacing,
+                  }}
+                >
+                  The quick brown fox jumps over the lazy dog
+                </h3>
+              </div>
 
-        {/* Typography Scale */}
-        <DetailSection number="04" label="Typography Scale">
-          <TypographyCustomizer
-            pairing={pairing}
-            onScaleChange={handleScaleChange}
-          />
-        </DetailSection>
+              {/* Body Preview */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl">
+                <p
+                  style={{
+                    fontFamily: bodyFont,
+                    fontSize: pairing.scale.body.size,
+                    lineHeight: pairing.scale.body.lineHeight,
+                    fontWeight: pairing.scale.body.weight,
+                  }}
+                  className="text-muted-foreground"
+                >
+                  Typography is the art and technique of arranging type to make written language
+                  legible, readable, and appealing when displayed. The arrangement of type involves
+                  selecting typefaces, point sizes, line lengths, line-spacing, and letter-spacing.
+                </p>
+                <p
+                  style={{
+                    fontFamily: bodyFont,
+                    fontSize: pairing.scale.body.size,
+                    lineHeight: pairing.scale.body.lineHeight,
+                    fontWeight: pairing.scale.body.weight,
+                  }}
+                  className="text-muted-foreground"
+                >
+                  Good typography is measured by how well it reinforces the meaning of the text,
+                  not by some abstract scale of merit. Typographic subtlety can be just as important
+                  as typographic boldness.
+                </p>
+              </div>
 
-        {/* Install */}
-        <DetailSection number="05" label="Install">
-          <InstallCommand
-            pairingName={pairing.name}
-            isCustomized={isCustomized}
-          />
-        </DetailSection>
+              {/* Mixed Preview */}
+              <div className="pt-8 border-t border-border max-w-3xl">
+                <h4
+                  style={{
+                    fontFamily: headingFont,
+                    fontSize: pairing.scale.h3.size,
+                    fontWeight: pairing.scale.h3.weight,
+                    lineHeight: pairing.scale.h3.lineHeight,
+                    letterSpacing: pairing.scale.h3.letterSpacing,
+                  }}
+                  className="mb-4"
+                >
+                  A beautiful pairing
+                </h4>
+                <p
+                  style={{
+                    fontFamily: bodyFont,
+                    fontSize: pairing.scale.body.size,
+                    lineHeight: pairing.scale.body.lineHeight,
+                    fontWeight: pairing.scale.body.weight,
+                  }}
+                  className="text-muted-foreground mb-4"
+                >
+                  When <span style={{ fontFamily: headingFont }}>{pairing.heading}</span> meets{" "}
+                  <span style={{ fontFamily: bodyFont }}>{pairing.body}</span>, magic happens.
+                  This combination creates a perfect balance between impact and readability.
+                </p>
+                <code
+                  className="block p-4 bg-surface border border-border text-sm max-w-xl"
+                  style={{ fontFamily: monoFont }}
+                >
+                  <span className="text-muted-foreground">// Install this pairing</span><br />
+                  npx shadcn add https://fonttrio.dev/r/{pairing.name}.json
+                </code>
+              </div>
+            </div>
+          </AnimatedLayout>
+        </div>
+      </section>
 
-        {/* Compare */}
-        <DetailSection number="06" label="Compare" last>
-          <SideBySide current={pairing} />
-        </DetailSection>
-      </main>
+      {/* Type Tester */}
+      <section className="border-b border-border">
+        <div className="px-4 lg:px-8 xl:px-12 py-16 lg:py-24">
+          <AnimatedLayout>
+            <h2 className="text-[10px] uppercase tracking-wider text-muted-foreground mb-8">Type Tester</h2>
+            <TypeTester pairing={pairing} />
+          </AnimatedLayout>
+        </div>
+      </section>
+
+      {/* In Context */}
+      <section className="border-b border-border">
+        <div className="px-4 lg:px-8 xl:px-12 py-16 lg:py-24">
+          <AnimatedLayout>
+            <h2 className="text-[10px] uppercase tracking-wider text-muted-foreground mb-8">In Context</h2>
+            <ContextPreview pairing={pairing} />
+          </AnimatedLayout>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="border-t border-border">
-        <div className="px-6 lg:px-12 py-8">
-          <div className="max-w-[1600px] mx-auto">
-            <div className="grid grid-cols-12 gap-4">
-              <div className="col-span-12 lg:col-span-6">
-                <Link 
-                  href="/" 
-                  className="font-display text-xl tracking-wider hover:text-muted-foreground transition-colors"
-                >
-                  FONTTRIO
-                </Link>
-              </div>
-              <div className="col-span-12 lg:col-span-6 lg:text-right">
-                <p className="text-xs text-muted-foreground uppercase tracking-widest">
-                  {pairing.heading} / {pairing.body} / {pairing.mono}
-                </p>
-              </div>
-            </div>
+        <div className="px-4 lg:px-8 py-8">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="flex items-center gap-1 hover:opacity-70 transition-opacity">
+              <span className="font-display text-lg tracking-tight">Font</span>
+              <span className="font-display text-lg tracking-tight text-muted-foreground">trio</span>
+            </Link>
+            <p className="text-xs text-muted-foreground uppercase tracking-wider">
+              {pairing.heading} / {pairing.body} / {pairing.mono}
+            </p>
           </div>
         </div>
       </footer>
@@ -188,65 +267,33 @@ export function PairingDetail({ pairing }: PairingDetailProps) {
   );
 }
 
-function FontDisplay({
-  label,
-  name,
-  font,
-}: {
-  label: string;
-  name: string;
-  font: string;
-}) {
-  return (
-    <div className="border-l-2 border-border pl-4">
-      <span className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
-        {label}
-      </span>
-      <span
-        className="block text-lg"
-        style={{ fontFamily: font, fontWeight: 500 }}
-      >
-        {name}
-      </span>
-    </div>
-  );
-}
+/* ─── Copy Command ─── */
 
-function DetailSection({
-  number,
-  label,
-  last,
-  children,
-}: {
-  number: string;
-  label: string;
-  last?: boolean;
-  children: React.ReactNode;
-}) {
+function CopyCommand({ pairingName }: { pairingName: string }) {
+  const [copied, setCopied] = useState(false);
+  const command = `npx shadcn@latest add https://fonttrio.dev/r/${pairingName}.json`;
+
+  const copy = useCallback(() => {
+    navigator.clipboard.writeText(command);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }, [command]);
+
   return (
-    <section className={`border-b border-border ${last ? "" : ""}`}>
-      <div className="px-6 lg:px-12 py-12 lg:py-20">
-        <div className="max-w-[1600px] mx-auto">
-          <div className="grid grid-cols-12 gap-4">
-            {/* Section Number & Label */}
-            <div className="col-span-12 lg:col-span-3 mb-8 lg:mb-0">
-              <div className="lg:sticky lg:top-24">
-                <span className="block text-xs text-muted-foreground uppercase tracking-widest mb-2">
-                  {number}
-                </span>
-                <h2 className="font-display text-3xl lg:text-4xl tracking-wider">
-                  {label}
-                </h2>
-              </div>
-            </div>
-            
-            {/* Content */}
-            <div className="col-span-12 lg:col-span-9">
-              {children}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <button
+      onClick={copy}
+      className="group w-full flex items-center gap-3 px-4 py-3 bg-surface border border-border text-left hover:bg-surface-hover transition-[background-color] rounded-sm"
+      aria-label="Copy install command"
+    >
+      <span className="text-muted-foreground select-none text-xs uppercase tracking-wider font-mono" aria-hidden="true">$</span>
+      <code className="text-sm flex-1 break-all font-mono">
+        shadcn add {pairingName}
+      </code>
+      {copied ? (
+        <Check className="size-4 shrink-0" aria-hidden="true" />
+      ) : (
+        <Copy className="size-4 text-muted-foreground shrink-0" aria-hidden="true" />
+      )}
+    </button>
   );
 }

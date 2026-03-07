@@ -2,7 +2,7 @@
   "name": "space-grotesk",
   "type": "registry:font",
   "title": "Space Grotesk",
-  "description": "Space Grotesk — Sans Serif font from Google Fonts.",
+  "description": "Space Grotesk — Sans Serif font.",
   "font": {
     "family": "Space Grotesk",
     "provider": "google",

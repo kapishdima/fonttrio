@@ -2,7 +2,7 @@
   "name": "ubuntu",
   "type": "registry:font",
   "title": "Ubuntu",
-  "description": "Ubuntu — Sans Serif font from Google Fonts.",
+  "description": "Ubuntu — Sans Serif font.",
   "font": {
     "family": "Ubuntu",
     "provider": "google",

@@ -2,7 +2,7 @@
   "name": "kanit",
   "type": "registry:font",
   "title": "Kanit",
-  "description": "Kanit — Sans Serif font from Google Fonts.",
+  "description": "Kanit — Sans Serif font.",
   "font": {
     "family": "Kanit",
     "provider": "google",

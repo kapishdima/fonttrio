@@ -1,0 +1,70 @@
+{
+  "name": "pairing-folio",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Folio — Josefin Sans + Raleway + Roboto Mono",
+  "description": "Vintage geometry meets modern elegance. Josefin Sans's 1920s-inspired letterforms create distinctive headlines, while Raleway's refined thin weights bring fashion-forward sophistication to body text.",
+  "categories": [
+    "sans-serif",
+    "complementary",
+    "elegant"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/josefin-sans.json",
+    "https://fonttrio.dev/r/raleway.json",
+    "https://fonttrio.dev/r/roboto-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-josefin-sans)",
+      "--font-body": "var(--font-raleway)",
+      "--font-mono": "var(--font-roboto-mono)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.5rem",
+      "line-height": "1.1",
+      "letter-spacing": "-0.03em",
+      "font-weight": "700"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2rem",
+      "line-height": "1.15",
+      "letter-spacing": "-0.025em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.015em",
+      "font-weight": "600"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.6"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "elegant",
+      "sophisticated"
+    ],
+    "useCase": [
+      "portfolio",
+      "fashion",
+      "luxury"
+    ]
+  }
+}

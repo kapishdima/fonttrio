@@ -2,7 +2,7 @@
   "name": "nanum-gothic",
   "type": "registry:font",
   "title": "Nanum Gothic",
-  "description": "Nanum Gothic — Sans Serif font from Google Fonts.",
+  "description": "Nanum Gothic — Sans Serif font.",
   "font": {
     "family": "Nanum Gothic",
     "provider": "google",

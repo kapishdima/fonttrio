@@ -2,7 +2,7 @@
   "name": "tajawal",
   "type": "registry:font",
   "title": "Tajawal",
-  "description": "Tajawal — Sans Serif font from Google Fonts.",
+  "description": "Tajawal — Sans Serif font.",
   "font": {
     "family": "Tajawal",
     "provider": "google",

@@ -1,0 +1,29 @@
+{
+  "name": "geist-mono",
+  "type": "registry:font",
+  "title": "Geist Mono",
+  "description": "Geist Mono — Monospace font.",
+  "font": {
+    "family": "Geist Mono",
+    "provider": "google",
+    "import": "Geist_Mono",
+    "variable": "--font-geist-mono",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

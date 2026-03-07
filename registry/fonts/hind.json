@@ -2,7 +2,7 @@
   "name": "hind",
   "type": "registry:font",
   "title": "Hind",
-  "description": "Hind — Sans Serif font from Google Fonts.",
+  "description": "Hind — Sans Serif font.",
   "font": {
     "family": "Hind",
     "provider": "google",

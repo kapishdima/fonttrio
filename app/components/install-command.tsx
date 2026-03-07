@@ -28,11 +28,11 @@ export function InstallCommand({
     return (
       <button
         onClick={copy}
-        className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-colors font-mono uppercase tracking-wider"
+        className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-[color] font-mono"
         aria-label="Copy install command"
       >
         <span className="truncate max-w-[280px]">
-          shadcn add .../{pairingName}.json
+          shadcn add {pairingName}
         </span>
         {copied ? <Check className="size-3.5" aria-hidden="true" /> : <Copy className="size-3.5" aria-hidden="true" />}
       </button>
@@ -40,32 +40,39 @@ export function InstallCommand({
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {isCustomized && (
-        <div className="inline-block">
-          <span className="text-xs uppercase tracking-widest text-[#e30613] border border-[#e30613] px-3 py-1">
-            Scale Customized
-          </span>
-        </div>
+        <p className="text-sm text-foreground">
+          Scale has been customized. The install command uses the default scale.
+        </p>
       )}
 
-      <div className="grid grid-cols-3 gap-4 text-xs uppercase tracking-widest text-muted-foreground border-b border-border pb-4">
-        <span>3 Fonts</span>
-        <span>Typography Scale</span>
-        <span>CSS Variables</span>
+      <div className="grid grid-cols-3 gap-6 text-sm text-muted-foreground pb-6 border-b border-border">
+        <div>
+          <p className="text-foreground font-medium">3 Fonts</p>
+          <p className="text-xs mt-1">Heading, body, mono</p>
+        </div>
+        <div>
+          <p className="text-foreground font-medium">Typography Scale</p>
+          <p className="text-xs mt-1">h1 through body</p>
+        </div>
+        <div>
+          <p className="text-foreground font-medium">CSS Variables</p>
+          <p className="text-xs mt-1">Ready to use</p>
+        </div>
       </div>
 
       <button
         onClick={copy}
-        className="group flex items-center gap-4 w-full px-5 py-5 border-2 border-foreground text-left hover:bg-foreground hover:text-background transition-colors"
+        className="group flex items-center gap-4 w-full px-5 py-4 bg-foreground text-background rounded-lg text-left hover:opacity-90 transition-[opacity]"
         aria-label="Copy install command"
       >
-        <span className="text-muted-foreground group-hover:text-background/70 select-none text-xs uppercase tracking-wider font-mono" aria-hidden="true">$</span>
+        <span className="opacity-40 font-mono text-sm" aria-hidden="true">$</span>
         <code className="text-sm flex-1 break-all font-mono">{command}</code>
         {copied ? (
-          <Check className="size-4 text-[#e30613] shrink-0" aria-hidden="true" />
+          <Check className="size-4 opacity-70 shrink-0" aria-hidden="true" />
         ) : (
-          <Copy className="size-4 text-muted-foreground group-hover:text-background shrink-0" aria-hidden="true" />
+          <Copy className="size-4 opacity-40 group-hover:opacity-100 transition-[opacity] shrink-0" aria-hidden="true" />
         )}
       </button>
     </div>

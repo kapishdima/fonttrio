@@ -1,0 +1,70 @@
+{
+  "name": "pairing-fintech",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Fintech — Outfit + IBM Plex Sans + IBM Plex Mono",
+  "description": "Trust through typography. Outfit's geometric clarity inspires confidence in headings, while IBM Plex's rigorous design system ensures readability in data-heavy financial interfaces.",
+  "categories": [
+    "sans-serif",
+    "complementary",
+    "finance"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/outfit.json",
+    "https://fonttrio.dev/r/ibm-plex-sans.json",
+    "https://fonttrio.dev/r/ibm-plex-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-outfit)",
+      "--font-body": "var(--font-ibm-plex-sans)",
+      "--font-mono": "var(--font-ibm-plex-mono)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.15",
+      "letter-spacing": "-0.03em",
+      "font-weight": "700"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.875rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.025em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.02em",
+      "font-weight": "600"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.6"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "trustworthy",
+      "precise"
+    ],
+    "useCase": [
+      "fintech",
+      "banking",
+      "enterprise"
+    ]
+  }
+}

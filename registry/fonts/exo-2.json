@@ -2,7 +2,7 @@
   "name": "exo-2",
   "type": "registry:font",
   "title": "Exo 2",
-  "description": "Exo 2 — Sans Serif font from Google Fonts.",
+  "description": "Exo 2 — Sans Serif font.",
   "font": {
     "family": "Exo 2",
     "provider": "google",

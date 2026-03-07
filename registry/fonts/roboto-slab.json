@@ -2,7 +2,7 @@
   "name": "roboto-slab",
   "type": "registry:font",
   "title": "Roboto Slab",
-  "description": "Roboto Slab — Serif font from Google Fonts.",
+  "description": "Roboto Slab — Serif font.",
   "font": {
     "family": "Roboto Slab",
     "provider": "google",

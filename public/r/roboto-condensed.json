@@ -2,7 +2,7 @@
   "name": "roboto-condensed",
   "type": "registry:font",
   "title": "Roboto Condensed",
-  "description": "Roboto Condensed — Sans Serif font from Google Fonts.",
+  "description": "Roboto Condensed — Sans Serif font.",
   "font": {
     "family": "Roboto Condensed",
     "provider": "google",

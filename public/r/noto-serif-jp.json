@@ -2,7 +2,7 @@
   "name": "noto-serif-jp",
   "type": "registry:font",
   "title": "Noto Serif JP",
-  "description": "Noto Serif JP — Serif font from Google Fonts.",
+  "description": "Noto Serif JP — Serif font.",
   "font": {
     "family": "Noto Serif JP",
     "provider": "google",

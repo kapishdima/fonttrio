@@ -2,7 +2,7 @@
   "name": "poppins",
   "type": "registry:font",
   "title": "Poppins",
-  "description": "Poppins — Sans Serif font from Google Fonts.",
+  "description": "Poppins — Sans Serif font.",
   "font": {
     "family": "Poppins",
     "provider": "google",

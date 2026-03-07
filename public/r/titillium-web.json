@@ -2,7 +2,7 @@
   "name": "titillium-web",
   "type": "registry:font",
   "title": "Titillium Web",
-  "description": "Titillium Web — Sans Serif font from Google Fonts.",
+  "description": "Titillium Web — Sans Serif font.",
   "font": {
     "family": "Titillium Web",
     "provider": "google",

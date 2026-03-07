@@ -1,0 +1,69 @@
+{
+  "name": "pairing-devtool",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Devtool — Red Hat Display + Red Hat Display + Fira Code",
+  "description": "Open-source identity. Red Hat Display balances geometric precision with humanist warmth, creating a type system that feels both technical and approachable — exactly what developer tools need.",
+  "categories": [
+    "sans-serif",
+    "superfamily",
+    "developer"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/red-hat-display.json",
+    "https://fonttrio.dev/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-red-hat-display)",
+      "--font-body": "var(--font-red-hat-display)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.15",
+      "letter-spacing": "-0.03em",
+      "font-weight": "700"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.875rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.025em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.02em",
+      "font-weight": "600"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.6"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "technical",
+      "open-source"
+    ],
+    "useCase": [
+      "developer tools",
+      "documentation",
+      "open source"
+    ]
+  }
+}

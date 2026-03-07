@@ -2,7 +2,7 @@
   "name": "work-sans",
   "type": "registry:font",
   "title": "Work Sans",
-  "description": "Work Sans — Sans Serif font from Google Fonts.",
+  "description": "Work Sans — Sans Serif font.",
   "font": {
     "family": "Work Sans",
     "provider": "google",

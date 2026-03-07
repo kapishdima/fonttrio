@@ -2,7 +2,7 @@
   "name": "pt-sans",
   "type": "registry:font",
   "title": "PT Sans",
-  "description": "PT Sans — Sans Serif font from Google Fonts.",
+  "description": "PT Sans — Sans Serif font.",
   "font": {
     "family": "PT Sans",
     "provider": "google",

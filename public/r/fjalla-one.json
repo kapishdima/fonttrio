@@ -2,7 +2,7 @@
   "name": "fjalla-one",
   "type": "registry:font",
   "title": "Fjalla One",
-  "description": "Fjalla One — Sans Serif font from Google Fonts.",
+  "description": "Fjalla One — Sans Serif font.",
   "font": {
     "family": "Fjalla One",
     "provider": "google",

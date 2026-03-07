@@ -2,7 +2,7 @@
   "name": "bitter",
   "type": "registry:font",
   "title": "Bitter",
-  "description": "Bitter — Serif font from Google Fonts.",
+  "description": "Bitter — Serif font.",
   "font": {
     "family": "Bitter",
     "provider": "google",

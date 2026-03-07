@@ -2,7 +2,7 @@
   "name": "overpass",
   "type": "registry:font",
   "title": "Overpass",
-  "description": "Overpass — Sans Serif font from Google Fonts.",
+  "description": "Overpass — Sans Serif font.",
   "font": {
     "family": "Overpass",
     "provider": "google",

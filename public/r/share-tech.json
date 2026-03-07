@@ -2,7 +2,7 @@
   "name": "share-tech",
   "type": "registry:font",
   "title": "Share Tech",
-  "description": "Share Tech — Sans Serif font from Google Fonts.",
+  "description": "Share Tech — Sans Serif font.",
   "font": {
     "family": "Share Tech",
     "provider": "google",

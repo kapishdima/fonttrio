@@ -2,7 +2,7 @@
   "name": "smooch-sans",
   "type": "registry:font",
   "title": "Smooch Sans",
-  "description": "Smooch Sans — Sans Serif font from Google Fonts.",
+  "description": "Smooch Sans — Sans Serif font.",
   "font": {
     "family": "Smooch Sans",
     "provider": "google",

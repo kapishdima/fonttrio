@@ -2,7 +2,7 @@
   "name": "manrope",
   "type": "registry:font",
   "title": "Manrope",
-  "description": "Manrope — Sans Serif font from Google Fonts.",
+  "description": "Manrope — Sans Serif font.",
   "font": {
     "family": "Manrope",
     "provider": "google",

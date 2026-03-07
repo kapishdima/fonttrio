@@ -2,7 +2,7 @@
   "name": "quicksand",
   "type": "registry:font",
   "title": "Quicksand",
-  "description": "Quicksand — Sans Serif font from Google Fonts.",
+  "description": "Quicksand — Sans Serif font.",
   "font": {
     "family": "Quicksand",
     "provider": "google",

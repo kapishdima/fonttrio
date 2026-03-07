@@ -2,7 +2,7 @@
   "name": "lato",
   "type": "registry:font",
   "title": "Lato",
-  "description": "Lato — Sans Serif font from Google Fonts.",
+  "description": "Lato — Sans Serif font.",
   "font": {
     "family": "Lato",
     "provider": "google",

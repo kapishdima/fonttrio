@@ -1,0 +1,70 @@
+{
+  "name": "pairing-social",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Social — Poppins + Hind + Roboto Mono",
+  "description": "Global-ready friendliness. Poppins brings Indian Type Foundry's geometric warmth to headlines, while Hind's Devanagari-first design ensures beautiful rendering across Latin and Indic scripts.",
+  "categories": [
+    "sans-serif",
+    "complementary",
+    "global"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/poppins.json",
+    "https://fonttrio.dev/r/hind.json",
+    "https://fonttrio.dev/r/roboto-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-poppins)",
+      "--font-body": "var(--font-hind)",
+      "--font-mono": "var(--font-roboto-mono)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.5rem",
+      "line-height": "1.1",
+      "letter-spacing": "-0.03em",
+      "font-weight": "700"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2rem",
+      "line-height": "1.15",
+      "letter-spacing": "-0.025em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.015em",
+      "font-weight": "600"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.6"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "friendly",
+      "warm"
+    ],
+    "useCase": [
+      "social media",
+      "consumer app",
+      "i18n"
+    ]
+  }
+}

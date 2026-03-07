@@ -2,7 +2,7 @@
   "name": "saira",
   "type": "registry:font",
   "title": "Saira",
-  "description": "Saira — Sans Serif font from Google Fonts.",
+  "description": "Saira — Sans Serif font.",
   "font": {
     "family": "Saira",
     "provider": "google",

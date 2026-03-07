@@ -2,7 +2,7 @@
   "name": "jost",
   "type": "registry:font",
   "title": "Jost",
-  "description": "Jost — Sans Serif font from Google Fonts.",
+  "description": "Jost — Sans Serif font.",
   "font": {
     "family": "Jost",
     "provider": "google",

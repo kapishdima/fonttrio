@@ -2,7 +2,7 @@
   "name": "public-sans",
   "type": "registry:font",
   "title": "Public Sans",
-  "description": "Public Sans — Sans Serif font from Google Fonts.",
+  "description": "Public Sans — Sans Serif font.",
   "font": {
     "family": "Public Sans",
     "provider": "google",

@@ -2,7 +2,7 @@
   "name": "assistant",
   "type": "registry:font",
   "title": "Assistant",
-  "description": "Assistant — Sans Serif font from Google Fonts.",
+  "description": "Assistant — Sans Serif font.",
   "font": {
     "family": "Assistant",
     "provider": "google",

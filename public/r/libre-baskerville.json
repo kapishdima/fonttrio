@@ -2,7 +2,7 @@
   "name": "libre-baskerville",
   "type": "registry:font",
   "title": "Libre Baskerville",
-  "description": "Libre Baskerville — Serif font from Google Fonts.",
+  "description": "Libre Baskerville — Serif font.",
   "font": {
     "family": "Libre Baskerville",
     "provider": "google",

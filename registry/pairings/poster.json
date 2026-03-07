@@ -1,0 +1,70 @@
+{
+  "name": "pairing-poster",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Poster — Oswald + Barlow + Inconsolata",
+  "description": "Condensed impact. Oswald's tall proportions make every headline a statement, balanced by Barlow's slightly rounded sans-serif that adds approachability to the mechanical strength.",
+  "categories": [
+    "display",
+    "condensed",
+    "bold"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/oswald.json",
+    "https://fonttrio.dev/r/barlow.json",
+    "https://fonttrio.dev/r/inconsolata.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-oswald)",
+      "--font-body": "var(--font-barlow)",
+      "--font-mono": "var(--font-inconsolata)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.75rem",
+      "line-height": "1.05",
+      "letter-spacing": "-0.035em",
+      "font-weight": "800"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.1",
+      "letter-spacing": "-0.025em",
+      "font-weight": "700"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.75rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.02em",
+      "font-weight": "700"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.6"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "commanding",
+      "editorial"
+    ],
+    "useCase": [
+      "media",
+      "news",
+      "marketing"
+    ]
+  }
+}

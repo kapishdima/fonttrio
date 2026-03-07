@@ -2,7 +2,7 @@
   "name": "oswald",
   "type": "registry:font",
   "title": "Oswald",
-  "description": "Oswald — Sans Serif font from Google Fonts.",
+  "description": "Oswald — Sans Serif font.",
   "font": {
     "family": "Oswald",
     "provider": "google",

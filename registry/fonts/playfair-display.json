@@ -2,7 +2,7 @@
   "name": "playfair-display",
   "type": "registry:font",
   "title": "Playfair Display",
-  "description": "Playfair Display — Serif font from Google Fonts.",
+  "description": "Playfair Display — Serif font.",
   "font": {
     "family": "Playfair Display",
     "provider": "google",

@@ -2,7 +2,7 @@
   "name": "cairo",
   "type": "registry:font",
   "title": "Cairo",
-  "description": "Cairo — Sans Serif font from Google Fonts.",
+  "description": "Cairo — Sans Serif font.",
   "font": {
     "family": "Cairo",
     "provider": "google",

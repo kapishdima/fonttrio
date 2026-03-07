@@ -25,6 +25,12 @@
       "url": "https://fonttrio.dev/r/figtree.json"
     },
     {
+      "name": "jetbrains-mono",
+      "title": "JetBrains Mono",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/jetbrains-mono.json"
+    },
+    {
       "name": "dancing-script",
       "title": "Dancing Script",
       "category": "google",
@@ -65,6 +71,12 @@
       "title": "Bebas Neue",
       "category": "google",
       "url": "https://fonttrio.dev/r/bebas-neue.json"
+    },
+    {
+      "name": "source-serif-4",
+      "title": "Source Serif 4",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/source-serif-4.json"
     },
     {
       "name": "oswald",
@@ -193,6 +205,12 @@
       "url": "https://fonttrio.dev/r/archivo.json"
     },
     {
+      "name": "geist",
+      "title": "Geist",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/geist.json"
+    },
+    {
       "name": "bungee",
       "title": "Bungee",
       "category": "google",
@@ -241,6 +259,12 @@
       "url": "https://fonttrio.dev/r/m-plus-rounded-1c.json"
     },
     {
+      "name": "ibm-plex-mono",
+      "title": "IBM Plex Mono",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/ibm-plex-mono.json"
+    },
+    {
       "name": "ubuntu",
       "title": "Ubuntu",
       "category": "google",
@@ -257,6 +281,12 @@
       "title": "Caveat",
       "category": "google",
       "url": "https://fonttrio.dev/r/caveat.json"
+    },
+    {
+      "name": "noto-sans-arabic",
+      "title": "Noto Sans Arabic",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/noto-sans-arabic.json"
     },
     {
       "name": "kanit",
@@ -319,10 +349,22 @@
       "url": "https://fonttrio.dev/r/roboto-mono.json"
     },
     {
+      "name": "fira-code",
+      "title": "Fira Code",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/fira-code.json"
+    },
+    {
       "name": "overpass",
       "title": "Overpass",
       "category": "google",
       "url": "https://fonttrio.dev/r/overpass.json"
+    },
+    {
+      "name": "urbanist",
+      "title": "Urbanist",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/urbanist.json"
     },
     {
       "name": "barlow-condensed",
@@ -359,6 +401,12 @@
       "title": "Noto Sans SC",
       "category": "google",
       "url": "https://fonttrio.dev/r/noto-sans-sc.json"
+    },
+    {
+      "name": "slabo-27px",
+      "title": "Slabo 27px",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/slabo-27px.json"
     },
     {
       "name": "source-code-pro",
@@ -415,6 +463,12 @@
       "url": "https://fonttrio.dev/r/anek-telugu.json"
     },
     {
+      "name": "lobster-two",
+      "title": "Lobster Two",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/lobster-two.json"
+    },
+    {
       "name": "bricolage-grotesque",
       "title": "Bricolage Grotesque",
       "category": "google",
@@ -457,6 +511,12 @@
       "url": "https://fonttrio.dev/r/dosis.json"
     },
     {
+      "name": "geist-mono",
+      "title": "Geist Mono",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/geist-mono.json"
+    },
+    {
       "name": "pt-sans",
       "title": "PT Sans",
       "category": "google",
@@ -497,6 +557,12 @@
       "title": "Space Grotesk",
       "category": "google",
       "url": "https://fonttrio.dev/r/space-grotesk.json"
+    },
+    {
+      "name": "dm-serif-display",
+      "title": "DM Serif Display",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/dm-serif-display.json"
     },
     {
       "name": "share-tech",
@@ -571,6 +637,12 @@
       "url": "https://fonttrio.dev/r/arimo.json"
     },
     {
+      "name": "sora",
+      "title": "Sora",
+      "category": "google",
+      "url": "https://fonttrio.dev/r/sora.json"
+    },
+    {
       "name": "schibsted-grotesk",
       "title": "Schibsted Grotesk",
       "category": "google",
@@ -603,6 +675,66 @@
   ],
   "pairings": [
     {
+      "name": "pairing-newspaper",
+      "title": "Newspaper — Playfair Display + DM Sans + JetBrains Mono",
+      "description": "High-contrast editorial with a modern twist. Playfair's sharp serifs cut through DM Sans's soft geometry, creating a sophisticated tension between tradition and modernity.",
+      "categories": [
+        "serif",
+        "contrast",
+        "editorial"
+      ],
+      "mood": [
+        "sophisticated",
+        "editorial"
+      ],
+      "useCase": [
+        "news",
+        "magazine",
+        "blog"
+      ],
+      "url": "https://fonttrio.dev/r/newspaper.json"
+    },
+    {
+      "name": "pairing-manifesto",
+      "title": "Manifesto — Roboto Slab + Roboto + Roboto Mono",
+      "description": "The complete Roboto system. Slab headlines bring gravitas to Google's most versatile typeface family. A three-weight system that works everywhere, from Android to enterprise dashboards.",
+      "categories": [
+        "serif",
+        "superfamily",
+        "systematic"
+      ],
+      "mood": [
+        "systematic",
+        "professional"
+      ],
+      "useCase": [
+        "enterprise",
+        "Material Design",
+        "documentation"
+      ],
+      "url": "https://fonttrio.dev/r/manifesto.json"
+    },
+    {
+      "name": "pairing-headline",
+      "title": "Headline — Anton + Work Sans + Roboto Mono",
+      "description": "Bold and unapologetic. Anton's narrow, impactful letterforms dominate the viewport, while Work Sans's humanist warmth grounds the reading experience in comfortable body text.",
+      "categories": [
+        "display",
+        "bold",
+        "impactful"
+      ],
+      "mood": [
+        "bold",
+        "impactful"
+      ],
+      "useCase": [
+        "news",
+        "sports",
+        "media"
+      ],
+      "url": "https://fonttrio.dev/r/headline.json"
+    },
+    {
       "name": "pairing-minimal",
       "title": "Minimal — Geist + Geist + Geist Mono",
       "description": "Ultra-minimal Vercel-style pairing. One font family for everything, clean and modern.",
@@ -622,6 +754,26 @@
         "Vercel-style"
       ],
       "url": "https://fonttrio.dev/r/minimal.json"
+    },
+    {
+      "name": "pairing-fintech",
+      "title": "Fintech — Outfit + IBM Plex Sans + IBM Plex Mono",
+      "description": "Trust through typography. Outfit's geometric clarity inspires confidence in headings, while IBM Plex's rigorous design system ensures readability in data-heavy financial interfaces.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "finance"
+      ],
+      "mood": [
+        "trustworthy",
+        "precise"
+      ],
+      "useCase": [
+        "fintech",
+        "banking",
+        "enterprise"
+      ],
+      "url": "https://fonttrio.dev/r/fintech.json"
     },
     {
       "name": "pairing-classic",
@@ -645,6 +797,546 @@
       "url": "https://fonttrio.dev/r/classic.json"
     },
     {
+      "name": "pairing-memoir",
+      "title": "Memoir — Bitter + Lora + Inconsolata",
+      "description": "Two screen-first serifs in harmony. Bitter's sturdy slab headlines ground the page, while Lora's calligraphic curves make every paragraph feel like turning a page in a favorite book.",
+      "categories": [
+        "serif",
+        "harmonious",
+        "warm"
+      ],
+      "mood": [
+        "warm",
+        "narrative"
+      ],
+      "useCase": [
+        "blog",
+        "memoir",
+        "longform"
+      ],
+      "url": "https://fonttrio.dev/r/memoir.json"
+    },
+    {
+      "name": "pairing-broadsheet",
+      "title": "Broadsheet — PT Serif + PT Sans + Inconsolata",
+      "description": "Russia's gift to web typography. ParaType's public text fonts — commissioned for pan-Russian readability — pair beautifully: serif headlines carry authority, sans body text ensures clarity across Cyrillic and Latin.",
+      "categories": [
+        "serif",
+        "superfamily",
+        "universal"
+      ],
+      "mood": [
+        "authoritative",
+        "universal"
+      ],
+      "useCase": [
+        "news",
+        "publishing",
+        "i18n"
+      ],
+      "url": "https://fonttrio.dev/r/broadsheet.json"
+    },
+    {
+      "name": "pairing-startup",
+      "title": "Startup — Nunito + Nunito Sans + Fira Code",
+      "description": "Friendly and approachable. Nunito's rounded terminals give headings warmth, while Nunito Sans straightens out for professional body text. The family that grows with your product.",
+      "categories": [
+        "sans-serif",
+        "superfamily",
+        "friendly"
+      ],
+      "mood": [
+        "friendly",
+        "approachable"
+      ],
+      "useCase": [
+        "startup",
+        "consumer app",
+        "landing page"
+      ],
+      "url": "https://fonttrio.dev/r/startup.json"
+    },
+    {
+      "name": "pairing-architect",
+      "title": "Architect — Outfit + Libre Baskerville + IBM Plex Mono",
+      "description": "Structured meets refined. Outfit's geometric precision in headings contrasts beautifully with Libre Baskerville's warm readability, like blueprints meeting handwritten notes.",
+      "categories": [
+        "sans-serif",
+        "contrast",
+        "structured"
+      ],
+      "mood": [
+        "structured",
+        "professional"
+      ],
+      "useCase": [
+        "portfolio",
+        "agency",
+        "architecture"
+      ],
+      "url": "https://fonttrio.dev/r/architect.json"
+    },
+    {
+      "name": "pairing-venture",
+      "title": "Venture — Jost + Rubik + Roboto Mono",
+      "description": "Futura-inspired ambition. Jost channels Paul Renner's geometric ideals for commanding headlines, softened by Rubik's slightly rounded sans-serif that adds just enough warmth for comfortable reading.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "geometric"
+      ],
+      "mood": [
+        "bold",
+        "geometric"
+      ],
+      "useCase": [
+        "venture capital",
+        "finance",
+        "landing page"
+      ],
+      "url": "https://fonttrio.dev/r/venture.json"
+    },
+    {
+      "name": "pairing-health",
+      "title": "Health — Figtree + Overpass + Inconsolata",
+      "description": "Calm and clear. Figtree's friendly geometry in headings paired with Overpass's Highway Gothic roots — designed to be read at speed. Perfect for interfaces where clarity saves lives.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "healthcare"
+      ],
+      "mood": [
+        "calm",
+        "clear"
+      ],
+      "useCase": [
+        "healthcare",
+        "wellness",
+        "medical"
+      ],
+      "url": "https://fonttrio.dev/r/health.json"
+    },
+    {
+      "name": "pairing-playful",
+      "title": "Playful — Quicksand + Cabin + Inconsolata",
+      "description": "Rounded and inviting. Quicksand's perfectly circular counters give headings a toy-like friendliness, while Cabin's humanist proportions keep body text grounded and professional.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "friendly"
+      ],
+      "mood": [
+        "playful",
+        "approachable"
+      ],
+      "useCase": [
+        "kids",
+        "education",
+        "consumer app"
+      ],
+      "url": "https://fonttrio.dev/r/playful.json"
+    },
+    {
+      "name": "pairing-storyteller",
+      "title": "Storyteller — Lora + Nunito Sans + Inconsolata",
+      "description": "Warm and inviting. Lora's brushed curves bring narrative warmth to headlines, while Nunito Sans's rounded terminals keep body text approachable and easy to scan.",
+      "categories": [
+        "serif",
+        "contrast",
+        "warm"
+      ],
+      "mood": [
+        "warm",
+        "narrative"
+      ],
+      "useCase": [
+        "blog",
+        "storytelling",
+        "content"
+      ],
+      "url": "https://fonttrio.dev/r/storyteller.json"
+    },
+    {
+      "name": "pairing-handbook",
+      "title": "Handbook — Lexend + Lexend + Inconsolata",
+      "description": "Designed for readability research. Lexend's variable font axes were fine-tuned through scientific studies to reduce visual noise and increase reading proficiency.",
+      "categories": [
+        "sans-serif",
+        "superfamily",
+        "readable"
+      ],
+      "mood": [
+        "accessible",
+        "clear"
+      ],
+      "useCase": [
+        "education",
+        "documentation",
+        "accessibility"
+      ],
+      "url": "https://fonttrio.dev/r/handbook.json"
+    },
+    {
+      "name": "pairing-scholar",
+      "title": "Scholar — EB Garamond + Inter + Source Code Pro",
+      "description": "Academic precision meets digital clarity. EB Garamond's renaissance roots lend authority to headings, while Inter ensures perfect screen readability for long-form content.",
+      "categories": [
+        "serif",
+        "contrast",
+        "academic"
+      ],
+      "mood": [
+        "academic",
+        "refined"
+      ],
+      "useCase": [
+        "documentation",
+        "research",
+        "education"
+      ],
+      "url": "https://fonttrio.dev/r/scholar.json"
+    },
+    {
+      "name": "pairing-saas",
+      "title": "Saas — Urbanist + Libre Franklin + JetBrains Mono",
+      "description": "SaaS-native typography. Urbanist's low-contrast geometric forms feel at home in navigation and pricing, while Libre Franklin's newsprint heritage makes feature descriptions feel trustworthy.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "product"
+      ],
+      "mood": [
+        "clean",
+        "startup"
+      ],
+      "useCase": [
+        "SaaS",
+        "pricing page",
+        "product"
+      ],
+      "url": "https://fonttrio.dev/r/saas.json"
+    },
+    {
+      "name": "pairing-social",
+      "title": "Social — Poppins + Hind + Roboto Mono",
+      "description": "Global-ready friendliness. Poppins brings Indian Type Foundry's geometric warmth to headlines, while Hind's Devanagari-first design ensures beautiful rendering across Latin and Indic scripts.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "global"
+      ],
+      "mood": [
+        "friendly",
+        "warm"
+      ],
+      "useCase": [
+        "social media",
+        "consumer app",
+        "i18n"
+      ],
+      "url": "https://fonttrio.dev/r/social.json"
+    },
+    {
+      "name": "pairing-commons",
+      "title": "Commons — Cabin + Mukta + Fira Code",
+      "description": "Humanist warmth across scripts. Cabin's slightly condensed forms give headings a distinct character, while Mukta — designed for both Devanagari and Latin — brings inclusive readability to body text.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "inclusive"
+      ],
+      "mood": [
+        "approachable",
+        "inclusive"
+      ],
+      "useCase": [
+        "community",
+        "nonprofit",
+        "education"
+      ],
+      "url": "https://fonttrio.dev/r/commons.json"
+    },
+    {
+      "name": "pairing-dispatch",
+      "title": "Dispatch — Heebo + Assistant + Source Code Pro",
+      "description": "Hebrew-Latin harmony. Heebo's geometric forms designed for both scripts create inclusive headlines, while Assistant — with similar dual-script DNA — maintains that consistency through body text.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "global"
+      ],
+      "mood": [
+        "neutral",
+        "inclusive"
+      ],
+      "useCase": [
+        "i18n",
+        "enterprise",
+        "communication"
+      ],
+      "url": "https://fonttrio.dev/r/dispatch.json"
+    },
+    {
+      "name": "pairing-devtool",
+      "title": "Devtool — Red Hat Display + Red Hat Display + Fira Code",
+      "description": "Open-source identity. Red Hat Display balances geometric precision with humanist warmth, creating a type system that feels both technical and approachable — exactly what developer tools need.",
+      "categories": [
+        "sans-serif",
+        "superfamily",
+        "developer"
+      ],
+      "mood": [
+        "technical",
+        "open-source"
+      ],
+      "useCase": [
+        "developer tools",
+        "documentation",
+        "open source"
+      ],
+      "url": "https://fonttrio.dev/r/devtool.json"
+    },
+    {
+      "name": "pairing-thesis",
+      "title": "Thesis — Noto Serif + Noto Sans + Inconsolata",
+      "description": "The universal pairing. Noto's unified design system ensures consistent rendering across every language and script. Truly global typography with no tofu.",
+      "categories": [
+        "serif",
+        "contrast",
+        "universal"
+      ],
+      "mood": [
+        "universal",
+        "professional"
+      ],
+      "useCase": [
+        "documentation",
+        "i18n",
+        "enterprise"
+      ],
+      "url": "https://fonttrio.dev/r/thesis.json"
+    },
+    {
+      "name": "pairing-studio",
+      "title": "Studio — Bricolage Grotesque + Figtree + Fira Code",
+      "description": "Design-forward pairing. Bricolage Grotesque's distinctive ink traps and angular terminals command attention, softened by Figtree's friendly geometric body text.",
+      "categories": [
+        "sans-serif",
+        "creative",
+        "design"
+      ],
+      "mood": [
+        "creative",
+        "distinctive"
+      ],
+      "useCase": [
+        "design studio",
+        "agency",
+        "creative"
+      ],
+      "url": "https://fonttrio.dev/r/studio.json"
+    },
+    {
+      "name": "pairing-folio",
+      "title": "Folio — Josefin Sans + Raleway + Roboto Mono",
+      "description": "Vintage geometry meets modern elegance. Josefin Sans's 1920s-inspired letterforms create distinctive headlines, while Raleway's refined thin weights bring fashion-forward sophistication to body text.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "elegant"
+      ],
+      "mood": [
+        "elegant",
+        "sophisticated"
+      ],
+      "useCase": [
+        "portfolio",
+        "fashion",
+        "luxury"
+      ],
+      "url": "https://fonttrio.dev/r/folio.json"
+    },
+    {
+      "name": "pairing-dashboard",
+      "title": "Dashboard — Manrope + DM Sans + Fira Code",
+      "description": "Data-driven clarity. Manrope's optical corrections make dense dashboards legible, while DM Sans handles labels and descriptions with compact efficiency.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "data"
+      ],
+      "mood": [
+        "analytical",
+        "clear"
+      ],
+      "useCase": [
+        "dashboard",
+        "analytics",
+        "admin"
+      ],
+      "url": "https://fonttrio.dev/r/dashboard.json"
+    },
+    {
+      "name": "pairing-gazette",
+      "title": "Gazette — Cormorant Garamond + Raleway + Roboto Mono",
+      "description": "Old-world elegance meets contemporary grace. Cormorant Garamond's delicate high-contrast strokes create dramatic headlines, balanced by Raleway's geometric sophistication.",
+      "categories": [
+        "serif",
+        "contrast",
+        "elegant"
+      ],
+      "mood": [
+        "elegant",
+        "dramatic"
+      ],
+      "useCase": [
+        "magazine",
+        "luxury",
+        "fashion"
+      ],
+      "url": "https://fonttrio.dev/r/gazette.json"
+    },
+    {
+      "name": "pairing-document",
+      "title": "Document — Source Sans 3 + Source Sans 3 + Source Code Pro",
+      "description": "Adobe's open-source superfamily. Source Sans 3's humanist proportions excel in UI and documents alike, with Source Code Pro maintaining the same vertical metrics for seamless mixed content.",
+      "categories": [
+        "sans-serif",
+        "superfamily",
+        "document"
+      ],
+      "mood": [
+        "professional",
+        "versatile"
+      ],
+      "useCase": [
+        "documentation",
+        "enterprise",
+        "publishing"
+      ],
+      "url": "https://fonttrio.dev/r/document.json"
+    },
+    {
+      "name": "pairing-journal",
+      "title": "Journal — Merriweather + Mulish + Source Code Pro",
+      "description": "Purpose-built for reading. Merriweather's sturdy serifs hold up at any size, paired with Mulish's neutral warmth for body text that keeps readers engaged paragraph after paragraph.",
+      "categories": [
+        "serif",
+        "contrast",
+        "readable"
+      ],
+      "mood": [
+        "reliable",
+        "readable"
+      ],
+      "useCase": [
+        "blog",
+        "journal",
+        "publishing"
+      ],
+      "url": "https://fonttrio.dev/r/journal.json"
+    },
+    {
+      "name": "pairing-swiss",
+      "title": "Swiss — Inter Tight + Open Sans + IBM Plex Mono",
+      "description": "Neo-grotesque precision. Inter Tight's condensed proportions pack more information into headlines without sacrificing legibility, while Open Sans provides the reliable body text that 40% of the web already trusts.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "neutral"
+      ],
+      "mood": [
+        "neutral",
+        "systematic"
+      ],
+      "useCase": [
+        "enterprise",
+        "dashboard",
+        "admin"
+      ],
+      "url": "https://fonttrio.dev/r/swiss.json"
+    },
+    {
+      "name": "pairing-capsule",
+      "title": "Capsule — Montserrat + Karla + JetBrains Mono",
+      "description": "Buenos Aires modernism. Montserrat channels the urban signage of its namesake neighborhood — bold, geometric, unmistakable. Karla's grotesque quirks keep body text from feeling clinical.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "urban"
+      ],
+      "mood": [
+        "modern",
+        "bold"
+      ],
+      "useCase": [
+        "fashion",
+        "retail",
+        "branding"
+      ],
+      "url": "https://fonttrio.dev/r/capsule.json"
+    },
+    {
+      "name": "pairing-corporate",
+      "title": "Corporate — Roboto + Roboto + Roboto Mono",
+      "description": "Google's type system. Roboto's dual nature — mechanical skeleton with friendly curves — creates a cohesive experience from headlines to fine print. The de facto standard for Material Design.",
+      "categories": [
+        "sans-serif",
+        "superfamily",
+        "corporate"
+      ],
+      "mood": [
+        "neutral",
+        "systematic"
+      ],
+      "useCase": [
+        "enterprise",
+        "Android",
+        "Material Design"
+      ],
+      "url": "https://fonttrio.dev/r/corporate.json"
+    },
+    {
+      "name": "pairing-brutalist",
+      "title": "Brutalist — Archivo Black + Archivo + Source Code Pro",
+      "description": "Raw typographic power. Archivo Black's heavy weight fills every pixel of the headline, while regular Archivo maintains the same DNA in a readable body weight. No decoration, pure function.",
+      "categories": [
+        "display",
+        "brutalist",
+        "bold"
+      ],
+      "mood": [
+        "raw",
+        "brutalist"
+      ],
+      "useCase": [
+        "portfolio",
+        "art",
+        "experimental"
+      ],
+      "url": "https://fonttrio.dev/r/brutalist.json"
+    },
+    {
+      "name": "pairing-impact",
+      "title": "Impact — Fjalla One + Josefin Sans + Fira Code",
+      "description": "Condensed power meets art deco elegance. Fjalla One's Nordic condensed forms dominate the headline, while Josefin Sans's vintage geometric proportions add character to every paragraph.",
+      "categories": [
+        "display",
+        "condensed",
+        "bold"
+      ],
+      "mood": [
+        "impactful",
+        "commanding"
+      ],
+      "useCase": [
+        "media",
+        "sports",
+        "marketing"
+      ],
+      "url": "https://fonttrio.dev/r/impact.json"
+    },
+    {
       "name": "pairing-creative",
       "title": "Creative — Space Grotesk + DM Sans + Fira Code",
       "description": "Playful geometric pairing. Bold headings with friendly body text for startups and portfolios.",
@@ -664,6 +1356,66 @@
         "portfolio"
       ],
       "url": "https://fonttrio.dev/r/creative.json"
+    },
+    {
+      "name": "pairing-dossier",
+      "title": "Dossier — Barlow Condensed + Barlow + IBM Plex Mono",
+      "description": "California grotesk in two widths. Barlow Condensed packs maximum information into headlines, while regular Barlow breathes in body text. A superfamily designed for screen-first interfaces.",
+      "categories": [
+        "sans-serif",
+        "superfamily",
+        "condensed"
+      ],
+      "mood": [
+        "efficient",
+        "modern"
+      ],
+      "useCase": [
+        "dashboard",
+        "data",
+        "news"
+      ],
+      "url": "https://fonttrio.dev/r/dossier.json"
+    },
+    {
+      "name": "pairing-protocol",
+      "title": "Protocol — Saira + Ubuntu + IBM Plex Mono",
+      "description": "Racing DNA meets open-source philosophy. Saira's motorsport-inspired geometry powers through headlines, while Ubuntu's distinctive humanist forms — Canonical's signature typeface — make body text unmistakably modern.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "technical"
+      ],
+      "mood": [
+        "technical",
+        "distinctive"
+      ],
+      "useCase": [
+        "developer tools",
+        "Linux",
+        "open source"
+      ],
+      "url": "https://fonttrio.dev/r/protocol.json"
+    },
+    {
+      "name": "pairing-beacon",
+      "title": "Beacon — Exo 2 + Titillium Web + Source Code Pro",
+      "description": "Space-age geometry. Exo 2's futuristic proportions make headlines feel like mission control, while Titillium Web's Italian polytechnic origins keep body text grounded in engineering precision.",
+      "categories": [
+        "sans-serif",
+        "geometric",
+        "futuristic"
+      ],
+      "mood": [
+        "futuristic",
+        "technical"
+      ],
+      "useCase": [
+        "tech",
+        "space",
+        "gaming"
+      ],
+      "url": "https://fonttrio.dev/r/beacon.json"
     },
     {
       "name": "pairing-editorial",
@@ -688,6 +1440,66 @@
       "url": "https://fonttrio.dev/r/editorial.json"
     },
     {
+      "name": "pairing-launch",
+      "title": "Launch — Sora + Public Sans + Fira Code",
+      "description": "Launch-ready confidence. Sora's geometric precision with optical adjustments makes bold headlines pop, while Public Sans — born from US government accessibility standards — ensures every word lands clearly.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "startup"
+      ],
+      "mood": [
+        "modern",
+        "confident"
+      ],
+      "useCase": [
+        "startup",
+        "landing page",
+        "product"
+      ],
+      "url": "https://fonttrio.dev/r/launch.json"
+    },
+    {
+      "name": "pairing-product",
+      "title": "Product — Plus Jakarta Sans + Inter + JetBrains Mono",
+      "description": "Product-focused clarity. Jakarta's slightly warmer geometry gives headings personality without the noise, while Inter handles the fine print with surgical precision.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "product"
+      ],
+      "mood": [
+        "friendly",
+        "professional"
+      ],
+      "useCase": [
+        "SaaS",
+        "product",
+        "web app"
+      ],
+      "url": "https://fonttrio.dev/r/product.json"
+    },
+    {
+      "name": "pairing-agency",
+      "title": "Agency — Schibsted Grotesk + Karla + Fira Code",
+      "description": "Nordic minimalism meets grotesque warmth. Schibsted Grotesk's Scandinavian clarity in headlines paired with Karla's quirky grotesque personality for body text that feels human.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "nordic"
+      ],
+      "mood": [
+        "minimal",
+        "nordic"
+      ],
+      "useCase": [
+        "agency",
+        "design",
+        "portfolio"
+      ],
+      "url": "https://fonttrio.dev/r/agency.json"
+    },
+    {
       "name": "pairing-technical",
       "title": "Technical — IBM Plex Sans + IBM Plex Sans + IBM Plex Mono",
       "description": "Professional IBM Plex family pairing. Designed for documentation and enterprise applications.",
@@ -707,6 +1519,126 @@
         "developer tools"
       ],
       "url": "https://fonttrio.dev/r/technical.json"
+    },
+    {
+      "name": "pairing-govtech",
+      "title": "Govtech — Public Sans + Lato + Source Code Pro",
+      "description": "Government-grade clarity. Public Sans was designed for the US Web Design System — strong, neutral, and accessible. Paired with Lato's warm humanist body text for approachable civic interfaces.",
+      "categories": [
+        "sans-serif",
+        "complementary",
+        "accessible"
+      ],
+      "mood": [
+        "trustworthy",
+        "accessible"
+      ],
+      "useCase": [
+        "government",
+        "healthcare",
+        "public sector"
+      ],
+      "url": "https://fonttrio.dev/r/govtech.json"
+    },
+    {
+      "name": "pairing-curator",
+      "title": "Curator — Plus Jakarta Sans + PT Serif + Source Code Pro",
+      "description": "Contemporary curation. Plus Jakarta Sans brings Indonesian design heritage to bold headings, while PT Serif delivers ParaType's exceptional Cyrillic and Latin body text.",
+      "categories": [
+        "sans-serif",
+        "contrast",
+        "curated"
+      ],
+      "mood": [
+        "curated",
+        "contemporary"
+      ],
+      "useCase": [
+        "gallery",
+        "museum",
+        "portfolio"
+      ],
+      "url": "https://fonttrio.dev/r/curator.json"
+    },
+    {
+      "name": "pairing-poster",
+      "title": "Poster — Oswald + Barlow + Inconsolata",
+      "description": "Condensed impact. Oswald's tall proportions make every headline a statement, balanced by Barlow's slightly rounded sans-serif that adds approachability to the mechanical strength.",
+      "categories": [
+        "display",
+        "condensed",
+        "bold"
+      ],
+      "mood": [
+        "commanding",
+        "editorial"
+      ],
+      "useCase": [
+        "media",
+        "news",
+        "marketing"
+      ],
+      "url": "https://fonttrio.dev/r/poster.json"
+    },
+    {
+      "name": "pairing-literary",
+      "title": "Literary — EB Garamond + Crimson Text + Inconsolata",
+      "description": "Pure literary elegance. Two old-style serifs in conversation — Garamond's refined Renaissance forms meet Crimson's contemporary interpretation, creating a scholarly harmony.",
+      "categories": [
+        "serif",
+        "harmonious",
+        "literary"
+      ],
+      "mood": [
+        "scholarly",
+        "literary"
+      ],
+      "useCase": [
+        "publishing",
+        "literature",
+        "academic"
+      ],
+      "url": "https://fonttrio.dev/r/literary.json"
+    },
+    {
+      "name": "pairing-novel",
+      "title": "Novel — Cormorant Garamond + Lora + JetBrains Mono",
+      "description": "For stories worth telling. Cormorant's dramatic display weight arrests attention at the chapter level, while Lora's brush-inspired curves make each paragraph a pleasure to read.",
+      "categories": [
+        "serif",
+        "harmonious",
+        "narrative"
+      ],
+      "mood": [
+        "dramatic",
+        "literary"
+      ],
+      "useCase": [
+        "publishing",
+        "book",
+        "longform"
+      ],
+      "url": "https://fonttrio.dev/r/novel.json"
+    },
+    {
+      "name": "pairing-digest",
+      "title": "Digest — Bitter + Open Sans + Source Code Pro",
+      "description": "Slab-serif substance. Bitter's sturdy slab serifs were designed specifically for screen reading, making headlines feel anchored and authoritative. Open Sans handles the body with effortless neutrality.",
+      "categories": [
+        "serif",
+        "contrast",
+        "editorial"
+      ],
+      "mood": [
+        "reliable",
+        "editorial"
+      ],
+      "useCase": [
+        "newsletter",
+        "blog",
+        "content"
+      ],
+      "url": "https://fonttrio.dev/r/digest.json"
     },
     {
       "name": "pairing-modern-clean",

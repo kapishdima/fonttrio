@@ -1,0 +1,20 @@
+{
+  "name": "lobster-two",
+  "type": "registry:font",
+  "title": "Lobster Two",
+  "description": "Lobster Two — Display font.",
+  "font": {
+    "family": "Lobster Two",
+    "provider": "google",
+    "import": "Lobster_Two",
+    "variable": "--font-lobster-two",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

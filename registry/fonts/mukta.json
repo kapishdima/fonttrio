@@ -2,7 +2,7 @@
   "name": "mukta",
   "type": "registry:font",
   "title": "Mukta",
-  "description": "Mukta — Sans Serif font from Google Fonts.",
+  "description": "Mukta — Sans Serif font.",
   "font": {
     "family": "Mukta",
     "provider": "google",

@@ -2,7 +2,7 @@
   "name": "red-hat-display",
   "type": "registry:font",
   "title": "Red Hat Display",
-  "description": "Red Hat Display — Sans Serif font from Google Fonts.",
+  "description": "Red Hat Display — Sans Serif font.",
   "font": {
     "family": "Red Hat Display",
     "provider": "google",

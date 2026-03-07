@@ -2,7 +2,7 @@
   "name": "inter-tight",
   "type": "registry:font",
   "title": "Inter Tight",
-  "description": "Inter Tight — Sans Serif font from Google Fonts.",
+  "description": "Inter Tight — Sans Serif font.",
   "font": {
     "family": "Inter Tight",
     "provider": "google",

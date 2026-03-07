@@ -2,7 +2,7 @@
   "name": "dancing-script",
   "type": "registry:font",
   "title": "Dancing Script",
-  "description": "Dancing Script — Handwriting font from Google Fonts.",
+  "description": "Dancing Script — Handwriting font.",
   "font": {
     "family": "Dancing Script",
     "provider": "google",

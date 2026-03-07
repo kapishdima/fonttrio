@@ -2,7 +2,7 @@
   "name": "libre-franklin",
   "type": "registry:font",
   "title": "Libre Franklin",
-  "description": "Libre Franklin — Sans Serif font from Google Fonts.",
+  "description": "Libre Franklin — Sans Serif font.",
   "font": {
     "family": "Libre Franklin",
     "provider": "google",

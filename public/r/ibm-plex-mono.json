@@ -1,0 +1,29 @@
+{
+  "name": "ibm-plex-mono",
+  "type": "registry:font",
+  "title": "IBM Plex Mono",
+  "description": "IBM Plex Mono — Monospace font.",
+  "font": {
+    "family": "IBM Plex Mono",
+    "provider": "google",
+    "import": "IBM_Plex_Mono",
+    "variable": "--font-ibm-plex-mono",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

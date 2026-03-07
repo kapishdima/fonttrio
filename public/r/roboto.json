@@ -2,7 +2,7 @@
   "name": "roboto",
   "type": "registry:font",
   "title": "Roboto",
-  "description": "Roboto — Sans Serif font from Google Fonts.",
+  "description": "Roboto — Sans Serif font.",
   "font": {
     "family": "Roboto",
     "provider": "google",

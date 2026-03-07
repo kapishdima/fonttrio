@@ -1,0 +1,70 @@
+{
+  "name": "pairing-thesis",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Thesis — Noto Serif + Noto Sans + Inconsolata",
+  "description": "The universal pairing. Noto's unified design system ensures consistent rendering across every language and script. Truly global typography with no tofu.",
+  "categories": [
+    "serif",
+    "contrast",
+    "universal"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/noto-serif.json",
+    "https://fonttrio.dev/r/noto-sans.json",
+    "https://fonttrio.dev/r/inconsolata.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-noto-serif)",
+      "--font-body": "var(--font-noto-sans)",
+      "--font-mono": "var(--font-inconsolata)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.025em",
+      "font-weight": "700"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.875rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.02em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.3",
+      "letter-spacing": "-0.015em",
+      "font-weight": "600"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.65"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "universal",
+      "professional"
+    ],
+    "useCase": [
+      "documentation",
+      "i18n",
+      "enterprise"
+    ]
+  }
+}

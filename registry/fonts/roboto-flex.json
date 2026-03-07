@@ -2,7 +2,7 @@
   "name": "roboto-flex",
   "type": "registry:font",
   "title": "Roboto Flex",
-  "description": "Roboto Flex — Sans Serif font from Google Fonts.",
+  "description": "Roboto Flex — Sans Serif font.",
   "font": {
     "family": "Roboto Flex",
     "provider": "google",

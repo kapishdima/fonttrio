@@ -2,7 +2,7 @@
   "name": "josefin-sans",
   "type": "registry:font",
   "title": "Josefin Sans",
-  "description": "Josefin Sans — Sans Serif font from Google Fonts.",
+  "description": "Josefin Sans — Sans Serif font.",
   "font": {
     "family": "Josefin Sans",
     "provider": "google",

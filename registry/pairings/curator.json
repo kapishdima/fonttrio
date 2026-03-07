@@ -1,0 +1,70 @@
+{
+  "name": "pairing-curator",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Curator — Plus Jakarta Sans + PT Serif + Source Code Pro",
+  "description": "Contemporary curation. Plus Jakarta Sans brings Indonesian design heritage to bold headings, while PT Serif delivers ParaType's exceptional Cyrillic and Latin body text.",
+  "categories": [
+    "sans-serif",
+    "contrast",
+    "curated"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/plus-jakarta-sans.json",
+    "https://fonttrio.dev/r/pt-serif.json",
+    "https://fonttrio.dev/r/source-code-pro.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-plus-jakarta-sans)",
+      "--font-body": "var(--font-pt-serif)",
+      "--font-mono": "var(--font-source-code-pro)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.02em",
+      "font-weight": "600"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.75rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.015em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.375rem",
+      "line-height": "1.3",
+      "letter-spacing": "-0.01em",
+      "font-weight": "500"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.005em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.65"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "curated",
+      "contemporary"
+    ],
+    "useCase": [
+      "gallery",
+      "museum",
+      "portfolio"
+    ]
+  }
+}

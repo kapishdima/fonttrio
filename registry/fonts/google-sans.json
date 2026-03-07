@@ -2,7 +2,7 @@
   "name": "google-sans",
   "type": "registry:font",
   "title": "Google Sans",
-  "description": "Google Sans — Sans Serif font from Google Fonts.",
+  "description": "Google Sans — Sans Serif font.",
   "font": {
     "family": "Google Sans",
     "provider": "google",

@@ -2,7 +2,7 @@
   "name": "montserrat",
   "type": "registry:font",
   "title": "Montserrat",
-  "description": "Montserrat — Sans Serif font from Google Fonts.",
+  "description": "Montserrat — Sans Serif font.",
   "font": {
     "family": "Montserrat",
     "provider": "google",

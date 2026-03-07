@@ -1,0 +1,27 @@
+{
+  "name": "sora",
+  "type": "registry:font",
+  "title": "Sora",
+  "description": "Sora — Sans Serif font.",
+  "font": {
+    "family": "Sora",
+    "provider": "google",
+    "import": "Sora",
+    "variable": "--font-sora",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

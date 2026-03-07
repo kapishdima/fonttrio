@@ -2,7 +2,7 @@
   "name": "archivo",
   "type": "registry:font",
   "title": "Archivo",
-  "description": "Archivo — Sans Serif font from Google Fonts.",
+  "description": "Archivo — Sans Serif font.",
   "font": {
     "family": "Archivo",
     "provider": "google",

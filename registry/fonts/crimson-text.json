@@ -2,7 +2,7 @@
   "name": "crimson-text",
   "type": "registry:font",
   "title": "Crimson Text",
-  "description": "Crimson Text — Serif font from Google Fonts.",
+  "description": "Crimson Text — Serif font.",
   "font": {
     "family": "Crimson Text",
     "provider": "google",

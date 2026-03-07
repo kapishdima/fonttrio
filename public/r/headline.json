@@ -1,0 +1,70 @@
+{
+  "name": "pairing-headline",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Headline — Anton + Work Sans + Roboto Mono",
+  "description": "Bold and unapologetic. Anton's narrow, impactful letterforms dominate the viewport, while Work Sans's humanist warmth grounds the reading experience in comfortable body text.",
+  "categories": [
+    "display",
+    "bold",
+    "impactful"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/anton.json",
+    "https://fonttrio.dev/r/work-sans.json",
+    "https://fonttrio.dev/r/roboto-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-anton)",
+      "--font-body": "var(--font-work-sans)",
+      "--font-mono": "var(--font-roboto-mono)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.75rem",
+      "line-height": "1.05",
+      "letter-spacing": "-0.035em",
+      "font-weight": "800"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.1",
+      "letter-spacing": "-0.025em",
+      "font-weight": "700"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.75rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.02em",
+      "font-weight": "700"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.6"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "bold",
+      "impactful"
+    ],
+    "useCase": [
+      "news",
+      "sports",
+      "media"
+    ]
+  }
+}

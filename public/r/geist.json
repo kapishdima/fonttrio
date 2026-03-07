@@ -1,0 +1,29 @@
+{
+  "name": "geist",
+  "type": "registry:font",
+  "title": "Geist",
+  "description": "Geist — Sans Serif font.",
+  "font": {
+    "family": "Geist",
+    "provider": "google",
+    "import": "Geist",
+    "variable": "--font-geist",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

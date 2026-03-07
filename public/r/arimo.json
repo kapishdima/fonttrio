@@ -2,7 +2,7 @@
   "name": "arimo",
   "type": "registry:font",
   "title": "Arimo",
-  "description": "Arimo — Sans Serif font from Google Fonts.",
+  "description": "Arimo — Sans Serif font.",
   "font": {
     "family": "Arimo",
     "provider": "google",

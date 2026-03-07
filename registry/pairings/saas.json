@@ -1,0 +1,70 @@
+{
+  "name": "pairing-saas",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Saas — Urbanist + Libre Franklin + JetBrains Mono",
+  "description": "SaaS-native typography. Urbanist's low-contrast geometric forms feel at home in navigation and pricing, while Libre Franklin's newsprint heritage makes feature descriptions feel trustworthy.",
+  "categories": [
+    "sans-serif",
+    "complementary",
+    "product"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/urbanist.json",
+    "https://fonttrio.dev/r/libre-franklin.json",
+    "https://fonttrio.dev/r/jetbrains-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-urbanist)",
+      "--font-body": "var(--font-libre-franklin)",
+      "--font-mono": "var(--font-jetbrains-mono)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.15",
+      "letter-spacing": "-0.03em",
+      "font-weight": "700"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.875rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.025em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.02em",
+      "font-weight": "600"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.6"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "clean",
+      "startup"
+    ],
+    "useCase": [
+      "SaaS",
+      "pricing page",
+      "product"
+    ]
+  }
+}

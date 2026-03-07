@@ -1,0 +1,31 @@
+{
+  "name": "source-serif-4",
+  "type": "registry:font",
+  "title": "Source Serif 4",
+  "description": "Source Serif 4 — Serif font.",
+  "font": {
+    "family": "Source Serif 4",
+    "provider": "google",
+    "import": "Source_Serif_4",
+    "variable": "--font-source-serif-4",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

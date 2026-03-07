@@ -2,7 +2,7 @@
   "name": "merriweather",
   "type": "registry:font",
   "title": "Merriweather",
-  "description": "Merriweather — Serif font from Google Fonts.",
+  "description": "Merriweather — Serif font.",
   "font": {
     "family": "Merriweather",
     "provider": "google",

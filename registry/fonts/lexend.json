@@ -2,7 +2,7 @@
   "name": "lexend",
   "type": "registry:font",
   "title": "Lexend",
-  "description": "Lexend — Sans Serif font from Google Fonts.",
+  "description": "Lexend — Sans Serif font.",
   "font": {
     "family": "Lexend",
     "provider": "google",

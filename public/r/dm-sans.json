@@ -2,7 +2,7 @@
   "name": "dm-sans",
   "type": "registry:font",
   "title": "DM Sans",
-  "description": "DM Sans — Sans Serif font from Google Fonts.",
+  "description": "DM Sans — Sans Serif font.",
   "font": {
     "family": "DM Sans",
     "provider": "google",

@@ -1,0 +1,70 @@
+{
+  "name": "pairing-launch",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Launch — Sora + Public Sans + Fira Code",
+  "description": "Launch-ready confidence. Sora's geometric precision with optical adjustments makes bold headlines pop, while Public Sans — born from US government accessibility standards — ensures every word lands clearly.",
+  "categories": [
+    "sans-serif",
+    "complementary",
+    "startup"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/sora.json",
+    "https://fonttrio.dev/r/public-sans.json",
+    "https://fonttrio.dev/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-sora)",
+      "--font-body": "var(--font-public-sans)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.5rem",
+      "line-height": "1.1",
+      "letter-spacing": "-0.03em",
+      "font-weight": "700"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2rem",
+      "line-height": "1.15",
+      "letter-spacing": "-0.025em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.015em",
+      "font-weight": "600"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.6"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "modern",
+      "confident"
+    ],
+    "useCase": [
+      "startup",
+      "landing page",
+      "product"
+    ]
+  }
+}

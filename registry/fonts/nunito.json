@@ -2,7 +2,7 @@
   "name": "nunito",
   "type": "registry:font",
   "title": "Nunito",
-  "description": "Nunito — Sans Serif font from Google Fonts.",
+  "description": "Nunito — Sans Serif font.",
   "font": {
     "family": "Nunito",
     "provider": "google",

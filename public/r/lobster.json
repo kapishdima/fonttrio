@@ -2,7 +2,7 @@
   "name": "lobster",
   "type": "registry:font",
   "title": "Lobster",
-  "description": "Lobster — Display font from Google Fonts.",
+  "description": "Lobster — Display font.",
   "font": {
     "family": "Lobster",
     "provider": "google",

@@ -2,7 +2,7 @@
   "name": "dosis",
   "type": "registry:font",
   "title": "Dosis",
-  "description": "Dosis — Sans Serif font from Google Fonts.",
+  "description": "Dosis — Sans Serif font.",
   "font": {
     "family": "Dosis",
     "provider": "google",

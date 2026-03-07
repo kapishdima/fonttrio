@@ -1,0 +1,69 @@
+{
+  "name": "pairing-document",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Document — Source Sans 3 + Source Sans 3 + Source Code Pro",
+  "description": "Adobe's open-source superfamily. Source Sans 3's humanist proportions excel in UI and documents alike, with Source Code Pro maintaining the same vertical metrics for seamless mixed content.",
+  "categories": [
+    "sans-serif",
+    "superfamily",
+    "document"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/source-sans-3.json",
+    "https://fonttrio.dev/r/source-code-pro.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-source-sans-3)",
+      "--font-body": "var(--font-source-sans-3)",
+      "--font-mono": "var(--font-source-code-pro)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.02em",
+      "font-weight": "600"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.75rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.015em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.375rem",
+      "line-height": "1.3",
+      "letter-spacing": "-0.01em",
+      "font-weight": "500"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.005em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.65"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "professional",
+      "versatile"
+    ],
+    "useCase": [
+      "documentation",
+      "enterprise",
+      "publishing"
+    ]
+  }
+}

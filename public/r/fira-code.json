@@ -1,0 +1,29 @@
+{
+  "name": "fira-code",
+  "type": "registry:font",
+  "title": "Fira Code",
+  "description": "Fira Code — Monospace font.",
+  "font": {
+    "family": "Fira Code",
+    "provider": "google",
+    "import": "Fira_Code",
+    "variable": "--font-fira-code",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "symbols2"
+    ]
+  }
+}

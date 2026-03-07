@@ -1,0 +1,70 @@
+{
+  "name": "pairing-novel",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Novel — Cormorant Garamond + Lora + JetBrains Mono",
+  "description": "For stories worth telling. Cormorant's dramatic display weight arrests attention at the chapter level, while Lora's brush-inspired curves make each paragraph a pleasure to read.",
+  "categories": [
+    "serif",
+    "harmonious",
+    "narrative"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/cormorant-garamond.json",
+    "https://fonttrio.dev/r/lora.json",
+    "https://fonttrio.dev/r/jetbrains-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-cormorant-garamond)",
+      "--font-body": "var(--font-lora)",
+      "--font-mono": "var(--font-jetbrains-mono)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.5rem",
+      "line-height": "1.15",
+      "letter-spacing": "-0.015em",
+      "font-weight": "400"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.01em",
+      "font-weight": "400"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.3",
+      "letter-spacing": "0em",
+      "font-weight": "400"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "0em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.75"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "dramatic",
+      "literary"
+    ],
+    "useCase": [
+      "publishing",
+      "book",
+      "longform"
+    ]
+  }
+}

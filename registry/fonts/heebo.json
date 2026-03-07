@@ -2,7 +2,7 @@
   "name": "heebo",
   "type": "registry:font",
   "title": "Heebo",
-  "description": "Heebo — Sans Serif font from Google Fonts.",
+  "description": "Heebo — Sans Serif font.",
   "font": {
     "family": "Heebo",
     "provider": "google",

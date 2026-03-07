@@ -2,7 +2,7 @@
   "name": "anek-telugu",
   "type": "registry:font",
   "title": "Anek Telugu",
-  "description": "Anek Telugu — Sans Serif font from Google Fonts.",
+  "description": "Anek Telugu — Sans Serif font.",
   "font": {
     "family": "Anek Telugu",
     "provider": "google",

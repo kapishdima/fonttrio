@@ -2,7 +2,7 @@
   "name": "lora",
   "type": "registry:font",
   "title": "Lora",
-  "description": "Lora — Serif font from Google Fonts.",
+  "description": "Lora — Serif font.",
   "font": {
     "family": "Lora",
     "provider": "google",

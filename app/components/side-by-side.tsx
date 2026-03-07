@@ -56,17 +56,17 @@ export function SideBySide({ current }: SideBySideProps) {
   if (!compare) return null;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* Controls */}
       <div className="flex items-center gap-4">
-        <span className="text-xs uppercase tracking-widest text-muted-foreground">Compare with</span>
+        <span className="text-sm text-muted-foreground">Compare with</span>
         <Select value={compareName} onValueChange={setCompareName}>
-          <SelectTrigger className="w-[200px] text-xs uppercase tracking-wider border-2 border-foreground rounded-none bg-transparent">
+          <SelectTrigger className="w-[200px] text-sm">
             <SelectValue />
           </SelectTrigger>
-          <SelectContent className="rounded-none">
+          <SelectContent>
             {others.map((p) => (
-              <SelectItem key={p.name} value={p.name} className="text-xs uppercase tracking-wider">
+              <SelectItem key={p.name} value={p.name} className="text-sm">
                 {p.name}
               </SelectItem>
             ))}
@@ -74,10 +74,10 @@ export function SideBySide({ current }: SideBySideProps) {
         </Select>
       </div>
 
-      {/* Comparison Container */}
+      {/* Comparison */}
       <div
         ref={containerRef}
-        className="relative border-2 border-border overflow-hidden select-none"
+        className="relative border border-border rounded-lg overflow-hidden select-none"
         style={{ minHeight: 380 }}
         aria-live="polite"
         aria-atomic="true"
@@ -113,16 +113,16 @@ export function SideBySide({ current }: SideBySideProps) {
           className="drag-handle absolute inset-y-0 z-10 flex items-center justify-center"
           style={{ left: `${split}%`, width: 24, marginLeft: -12 }}
         >
-          <div className="w-0.5 h-full bg-border" />
-          <div className="absolute w-6 h-12 bg-background border-2 border-foreground flex items-center justify-center">
+          <div className="w-px h-full bg-border" />
+          <div className="absolute w-6 h-10 bg-background border border-border rounded-md flex items-center justify-center shadow-sm">
             <svg
               width="8"
-              height="16"
+              height="14"
               viewBox="0 0 6 14"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
-              className="text-foreground"
+              strokeWidth="1.5"
+              className="text-muted-foreground"
             >
               <path d="M1 1v12M5 1v12" />
             </svg>
@@ -130,10 +130,10 @@ export function SideBySide({ current }: SideBySideProps) {
         </div>
 
         {/* Labels */}
-        <div className="absolute top-4 left-4 px-3 py-1.5 bg-background border-2 border-foreground text-xs uppercase tracking-wider">
+        <div className="absolute top-4 left-4 px-3 py-1.5 bg-background/90 backdrop-blur-sm border border-border rounded-md text-xs text-muted-foreground">
           {current.name}
         </div>
-        <div className="absolute top-4 right-4 px-3 py-1.5 bg-background border-2 border-foreground text-xs uppercase tracking-wider">
+        <div className="absolute top-4 right-4 px-3 py-1.5 bg-background/90 backdrop-blur-sm border border-border rounded-md text-xs text-muted-foreground">
           {compare.name}
         </div>
       </div>
@@ -172,7 +172,7 @@ function PaneContent({ pairing }: { pairing: PairingData }) {
         {COMPARE_BODY}
       </p>
       <pre
-        className="px-4 py-3 border border-border overflow-x-auto bg-surface"
+        className="px-4 py-3 border border-border rounded-lg overflow-x-auto bg-muted"
         style={{ fontFamily: monoFont, fontSize: "0.75rem", lineHeight: "1.55" }}
       >
         <code className="text-muted-foreground">{COMPARE_CODE}</code>

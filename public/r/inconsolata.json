@@ -2,7 +2,7 @@
   "name": "inconsolata",
   "type": "registry:font",
   "title": "Inconsolata",
-  "description": "Inconsolata — Monospace font from Google Fonts.",
+  "description": "Inconsolata — Monospace font.",
   "font": {
     "family": "Inconsolata",
     "provider": "google",

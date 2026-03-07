@@ -1,0 +1,70 @@
+{
+  "name": "pairing-journal",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Journal — Merriweather + Mulish + Source Code Pro",
+  "description": "Purpose-built for reading. Merriweather's sturdy serifs hold up at any size, paired with Mulish's neutral warmth for body text that keeps readers engaged paragraph after paragraph.",
+  "categories": [
+    "serif",
+    "contrast",
+    "readable"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/merriweather.json",
+    "https://fonttrio.dev/r/mulish.json",
+    "https://fonttrio.dev/r/source-code-pro.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-merriweather)",
+      "--font-body": "var(--font-mulish)",
+      "--font-mono": "var(--font-source-code-pro)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.025em",
+      "font-weight": "700"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.875rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.02em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.3",
+      "letter-spacing": "-0.015em",
+      "font-weight": "600"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.01em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.65"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "reliable",
+      "readable"
+    ],
+    "useCase": [
+      "blog",
+      "journal",
+      "publishing"
+    ]
+  }
+}

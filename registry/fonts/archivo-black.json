@@ -2,7 +2,7 @@
   "name": "archivo-black",
   "type": "registry:font",
   "title": "Archivo Black",
-  "description": "Archivo Black — Sans Serif font from Google Fonts.",
+  "description": "Archivo Black — Sans Serif font.",
   "font": {
     "family": "Archivo Black",
     "provider": "google",

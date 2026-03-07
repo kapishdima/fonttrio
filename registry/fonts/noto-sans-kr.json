@@ -2,7 +2,7 @@
   "name": "noto-sans-kr",
   "type": "registry:font",
   "title": "Noto Sans KR",
-  "description": "Noto Sans KR — Sans Serif font from Google Fonts.",
+  "description": "Noto Sans KR — Sans Serif font.",
   "font": {
     "family": "Noto Sans KR",
     "provider": "google",

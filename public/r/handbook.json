@@ -1,0 +1,69 @@
+{
+  "name": "pairing-handbook",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Handbook — Lexend + Lexend + Inconsolata",
+  "description": "Designed for readability research. Lexend's variable font axes were fine-tuned through scientific studies to reduce visual noise and increase reading proficiency.",
+  "categories": [
+    "sans-serif",
+    "superfamily",
+    "readable"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/lexend.json",
+    "https://fonttrio.dev/r/inconsolata.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-lexend)",
+      "--font-body": "var(--font-lexend)",
+      "--font-mono": "var(--font-inconsolata)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.25rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.02em",
+      "font-weight": "600"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.75rem",
+      "line-height": "1.25",
+      "letter-spacing": "-0.015em",
+      "font-weight": "600"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.375rem",
+      "line-height": "1.3",
+      "letter-spacing": "-0.01em",
+      "font-weight": "500"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "-0.005em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.65"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "accessible",
+      "clear"
+    ],
+    "useCase": [
+      "education",
+      "documentation",
+      "accessibility"
+    ]
+  }
+}

@@ -2,7 +2,7 @@
   "name": "eb-garamond",
   "type": "registry:font",
   "title": "EB Garamond",
-  "description": "EB Garamond — Serif font from Google Fonts.",
+  "description": "EB Garamond — Serif font.",
   "font": {
     "family": "EB Garamond",
     "provider": "google",

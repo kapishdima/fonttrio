@@ -2,7 +2,7 @@
   "name": "inter",
   "type": "registry:font",
   "title": "Inter",
-  "description": "Inter — Sans Serif font from Google Fonts.",
+  "description": "Inter — Sans Serif font.",
   "font": {
     "family": "Inter",
     "provider": "google",

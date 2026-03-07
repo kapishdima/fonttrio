@@ -2,7 +2,7 @@
   "name": "outfit",
   "type": "registry:font",
   "title": "Outfit",
-  "description": "Outfit — Sans Serif font from Google Fonts.",
+  "description": "Outfit — Sans Serif font.",
   "font": {
     "family": "Outfit",
     "provider": "google",

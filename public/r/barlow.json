@@ -2,7 +2,7 @@
   "name": "barlow",
   "type": "registry:font",
   "title": "Barlow",
-  "description": "Barlow — Sans Serif font from Google Fonts.",
+  "description": "Barlow — Sans Serif font.",
   "font": {
     "family": "Barlow",
     "provider": "google",

@@ -2,7 +2,7 @@
   "name": "oxygen",
   "type": "registry:font",
   "title": "Oxygen",
-  "description": "Oxygen — Sans Serif font from Google Fonts.",
+  "description": "Oxygen — Sans Serif font.",
   "font": {
     "family": "Oxygen",
     "provider": "google",

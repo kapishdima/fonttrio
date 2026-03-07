@@ -2,7 +2,7 @@
   "name": "fira-sans",
   "type": "registry:font",
   "title": "Fira Sans",
-  "description": "Fira Sans — Sans Serif font from Google Fonts.",
+  "description": "Fira Sans — Sans Serif font.",
   "font": {
     "family": "Fira Sans",
     "provider": "google",

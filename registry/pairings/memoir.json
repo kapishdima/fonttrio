@@ -1,0 +1,70 @@
+{
+  "name": "pairing-memoir",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Memoir — Bitter + Lora + Inconsolata",
+  "description": "Two screen-first serifs in harmony. Bitter's sturdy slab headlines ground the page, while Lora's calligraphic curves make every paragraph feel like turning a page in a favorite book.",
+  "categories": [
+    "serif",
+    "harmonious",
+    "warm"
+  ],
+  "registryDependencies": [
+    "https://fonttrio.dev/r/bitter.json",
+    "https://fonttrio.dev/r/lora.json",
+    "https://fonttrio.dev/r/inconsolata.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-bitter)",
+      "--font-body": "var(--font-lora)",
+      "--font-mono": "var(--font-inconsolata)"
+    }
+  },
+  "css": {
+    "h1": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2.5rem",
+      "line-height": "1.15",
+      "letter-spacing": "-0.015em",
+      "font-weight": "400"
+    },
+    "h2": {
+      "font-family": "var(--font-heading)",
+      "font-size": "2rem",
+      "line-height": "1.2",
+      "letter-spacing": "-0.01em",
+      "font-weight": "400"
+    },
+    "h3": {
+      "font-family": "var(--font-heading)",
+      "font-size": "1.5rem",
+      "line-height": "1.3",
+      "letter-spacing": "0em",
+      "font-weight": "400"
+    },
+    "h4, h5, h6": {
+      "font-family": "var(--font-heading)",
+      "letter-spacing": "0em"
+    },
+    "body, p": {
+      "font-family": "var(--font-body)",
+      "line-height": "1.75"
+    },
+    "code, pre": {
+      "font-family": "var(--font-mono)"
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "warm",
+      "narrative"
+    ],
+    "useCase": [
+      "blog",
+      "memoir",
+      "longform"
+    ]
+  }
+}

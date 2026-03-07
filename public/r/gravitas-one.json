@@ -2,7 +2,7 @@
   "name": "gravitas-one",
   "type": "registry:font",
   "title": "Gravitas One",
-  "description": "Gravitas One — Display font from Google Fonts.",
+  "description": "Gravitas One — Display font.",
   "font": {
     "family": "Gravitas One",
     "provider": "google",

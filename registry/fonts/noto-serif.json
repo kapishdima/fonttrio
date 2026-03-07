@@ -2,7 +2,7 @@
   "name": "noto-serif",
   "type": "registry:font",
   "title": "Noto Serif",
-  "description": "Noto Serif — Serif font from Google Fonts.",
+  "description": "Noto Serif — Serif font.",
   "font": {
     "family": "Noto Serif",
     "provider": "google",

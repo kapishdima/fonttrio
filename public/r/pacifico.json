@@ -2,7 +2,7 @@
   "name": "pacifico",
   "type": "registry:font",
   "title": "Pacifico",
-  "description": "Pacifico — Handwriting font from Google Fonts.",
+  "description": "Pacifico — Handwriting font.",
   "font": {
     "family": "Pacifico",
     "provider": "google",

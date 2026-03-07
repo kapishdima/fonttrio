@@ -5,6 +5,8 @@ import Link from "next/link";
 import type { PairingData, FontCategory } from "@/lib/pairings";
 import { FontProvider } from "./components/font-provider";
 import { ThemeToggle } from "./components/theme-toggle";
+import { FontSwitcher, AnimatedSubtitle } from "./components/font-switcher";
+import { AnimatedLayout } from "./components/animated-layout";
 import { Check, Copy, ArrowRight } from "lucide-react";
 
 interface LandingClientProps {
@@ -23,19 +25,37 @@ export function LandingClient({
   moods,
 }: LandingClientProps) {
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>("all");
-  const [moodFilter, setMoodFilter] = useState<string | null>(null);
+  const [styleFilter, setStyleFilter] = useState<string | null>(null);
+  const [currentFontIndex, setCurrentFontIndex] = useState(0);
 
   const allFontUrls = allPairings
     .map((p) => p.googleFontsUrl)
     .filter(Boolean);
 
+  /**
+   * Style groups — curated buckets that map multiple moods.
+   * Each group matches if ANY of its moods appear in the pairing.
+   */
+  const STYLE_GROUPS: { key: string; label: string; moods: string[] }[] = [
+    { key: "editorial", label: "Editorial", moods: ["editorial", "literary", "narrative", "dramatic", "sophisticated"] },
+    { key: "clean", label: "Clean", moods: ["clean", "neutral", "minimal", "modern", "Vercel-style"] },
+    { key: "bold", label: "Bold", moods: ["bold", "impactful", "commanding", "raw", "brutalist"] },
+    { key: "friendly", label: "Friendly", moods: ["friendly", "approachable", "warm", "playful", "startup"] },
+    { key: "corporate", label: "Corporate", moods: ["professional", "corporate", "trustworthy", "systematic"] },
+    { key: "creative", label: "Creative", moods: ["creative", "distinctive", "geometric", "curated", "nordic"] },
+    { key: "academic", label: "Academic", moods: ["academic", "scholarly", "refined", "readable", "universal"] },
+  ];
+
   const allDisplayed = useMemo(() => {
     return allPairings.filter((p) => {
       if (categoryFilter !== "all" && p.headingCategory !== categoryFilter) return false;
-      if (moodFilter && !p.mood.includes(moodFilter)) return false;
+      if (styleFilter) {
+        const group = STYLE_GROUPS.find((g) => g.key === styleFilter);
+        if (group && !p.mood.some((m) => group.moods.includes(m))) return false;
+      }
       return true;
     });
-  }, [allPairings, categoryFilter, moodFilter]);
+  }, [allPairings, categoryFilter, styleFilter]);
 
   const categories: { key: CategoryFilter; label: string }[] = [
     { key: "all", label: "All" },
@@ -43,175 +63,190 @@ export function LandingClient({
     { key: "sans-serif", label: "Sans" },
   ];
 
-  const featuredHeadingFont = `"${featured.heading}", ${featured.headingCategory}`;
-  const featuredBodyFont = `"${featured.body}", ${featured.bodyCategory}`;
-
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       {allFontUrls.map((url) => (
         <FontProvider key={url} fonts={[]} googleFontsUrl={url} />
       ))}
 
-      {/* Navigation - Swiss Style */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
-        <div className="px-6 lg:px-12 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-8">
-            <span className="font-display text-2xl tracking-wider text-foreground">
-              FONTTRIO
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 border-b border-border backdrop-blur-sm">
+        <div className="px-4 lg:px-8 h-16 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-1">
+            <span className="font-display text-2xl tracking-tight">Font</span>
+            <span className="font-display text-2xl tracking-tight text-muted-foreground">trio</span>
+          </Link>
+          <div className="flex items-center gap-4">
+            <span className="hidden sm:block text-sm text-muted-foreground">
+              Font pairings for shadcn/ui
             </span>
-            <span className="hidden sm:block text-xs text-muted-foreground uppercase tracking-widest">
-              Font Pairings for shadcn/ui
-            </span>
+            <ThemeToggle />
           </div>
-          <ThemeToggle />
         </div>
       </nav>
 
-      {/* Hero Section - Swiss Grid */}
-      <section id="main-content" className="pt-16">
-        {/* Large Title Block */}
-        <div className="border-b border-border">
-          <div className="px-6 lg:px-12 py-12 lg:py-20">
-            <div className="max-w-[1600px] mx-auto">
-              <div className="grid grid-cols-12 gap-4">
-                {/* Section Number */}
-                <div className="col-span-12 lg:col-span-1">
-                  <span className="text-xs text-muted-foreground uppercase tracking-widest">01</span>
+      {/* Hero */}
+      <section id="main-content" className="pt-16 relative min-h-[93vh] flex flex-col">
+        {/* Grid Background */}
+        <div className="absolute inset-0 cross-grid pointer-events-none opacity-40" />
+
+        <div className="relative flex-1 flex flex-col justify-center px-4 lg:px-8 xl:px-12 pb-12 lg:pb-16">
+          <AnimatedLayout>
+            {/* Heading with metric lines */}
+            <div className="relative">
+              {/* Metric lines + labels — behind text */}
+              <div className="absolute inset-0 pointer-events-none z-0">
+                <div className="absolute top-[15%] left-0 right-0 flex items-center gap-2">
+                  <div className="flex-1 border-t border-dashed border-border" />
+                  <span className="text-[10px] font-mono text-muted-foreground shrink-0">710</span>
                 </div>
-                
-                {/* Main Content */}
-                <div className="col-span-12 lg:col-span-11">
-                  {/* Oversized Display Title */}
-                  <h1 className="font-display text-[clamp(4rem,15vw,12rem)] leading-[0.85] tracking-tight text-foreground mb-8">
-                    THREE FONTS
-                    <br />
-                    <span className="text-[#e30613]">ONE COMMAND</span>
-                  </h1>
-                  
-                  {/* Description + CTA Grid */}
-                  <div className="grid grid-cols-12 gap-8 mt-12">
-                    <div className="col-span-12 lg:col-span-5">
-                      <p 
-                        className="text-base lg:text-lg leading-relaxed text-muted-foreground"
-                        style={{ fontFamily: featuredBodyFont }}
-                      >
-                        Curated font pairings for shadcn/ui. Each trio combines heading, 
-                        body, and monospace fonts with a complete typography scale.
-                      </p>
-                    </div>
-                    
-                    <div className="col-span-12 lg:col-span-4 lg:col-start-8">
-                      <HeroCopyCommand pairingName={featured.name} />
-                    </div>
-                  </div>
+                <div className="absolute top-[42%] left-0 right-0 flex items-center gap-2">
+                  <div className="flex-1 border-t border-dashed border-border" />
+                  <span className="text-[10px] font-mono text-muted-foreground shrink-0">530</span>
+                </div>
+                <div className="absolute top-[68%] left-0 right-0 flex items-center gap-2">
+                  <div className="flex-1 border-t border-dashed border-border" />
+                  <span className="text-[10px] font-mono text-muted-foreground shrink-0">0</span>
+                </div>
+                <div className="absolute top-[90%] left-0 right-0 flex items-center gap-2">
+                  <div className="flex-1 border-t border-dashed border-border" />
+                  <span className="text-[10px] font-mono text-muted-foreground shrink-0">-150</span>
+                </div>
+              </div>
+
+              {/* Text — above lines */}
+              <div className="relative z-10 min-h-[1.2em]">
+                <div className="text-[clamp(3.5rem,15vw,12rem)] leading-[1.1] tracking-tight">
+                  <FontSwitcher 
+                    pairings={allPairings} 
+                    onIndexChange={setCurrentFontIndex}
+                  />
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* Filter Bar - Swiss Style */}
-        <div className="border-b border-border">
-          <div className="px-6 lg:px-12 py-4">
-            <div className="max-w-[1600px] mx-auto">
-              <div className="flex items-center gap-1 text-xs uppercase tracking-widest">
-                <span className="text-muted-foreground mr-4">Filter:</span>
-                {categories.map((cat) => (
-                  <button
-                    key={cat.key}
-                    onClick={() => setCategoryFilter(cat.key)}
-                    className={`px-4 py-2 transition-colors ${
-                      categoryFilter === cat.key
-                        ? "bg-foreground text-background"
-                        : "text-foreground hover:bg-surface"
-                    }`}
-                  >
-                    {cat.label}
-                  </button>
-                ))}
-                
-                <span className="w-px h-4 bg-border mx-4" />
-                
-                {moods.map((mood) => (
-                  <button
-                    key={mood}
-                    onClick={() => setMoodFilter(moodFilter === mood ? null : mood)}
-                    className={`px-4 py-2 transition-colors ${
-                      moodFilter === mood
-                        ? "bg-[#e30613] text-white"
-                        : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {mood}
-                  </button>
-                ))}
-
-                {(categoryFilter !== "all" || moodFilter) && (
-                  <>
-                    <span className="w-px h-4 bg-border mx-4" />
-                    <button
-                      onClick={() => { setCategoryFilter("all"); setMoodFilter(null); }}
-                      className="px-4 py-2 text-muted-foreground hover:text-foreground"
-                    >
-                      Clear
-                    </button>
-                  </>
-                )}
-              </div>
+            {/* Supporting content — tight vertical rhythm */}
+            <div className="mt-8 ml-5 min-h-[4.5em]">
+              <p className="text-[clamp(1.125rem,2.5vw,1.75rem)] leading-[1.5] tracking-[-0.01em] text-muted-foreground max-w-3xl">
+                <AnimatedSubtitle 
+                  pairings={allPairings}
+                  currentIndex={currentFontIndex}
+                  text="Ready-made font combinations for shadcn/ui projects. Each includes heading, body, and mono fonts with a complete scale."
+                />
+              </p>
             </div>
-          </div>
+
+            {/* How it works — minimal inline */}
+            <div className="mt-20 ml-5 flex items-center gap-4 text-xs text-muted-foreground">
+              <span className="flex items-center gap-1.5">
+                <span className="font-mono text-[10px]">1</span>
+                Choose
+              </span>
+              <span className="text-border">→</span>
+              <span className="flex items-center gap-1.5">
+                <span className="font-mono text-[10px]">2</span>
+                Install
+              </span>
+              <span className="text-border">→</span>
+              <span className="flex items-center gap-1.5">
+                <span className="font-mono text-[10px]">3</span>
+                Ship
+              </span>
+            </div>
+
+            <div className="mt-5 ml-5 max-w-sm">
+              <CopyCommand pairingName={featured.name} />
+            </div>
+          </AnimatedLayout>
         </div>
       </section>
 
-      {/* Specimen List - Swiss Style */}
-      <section>
-        <div className="px-6 lg:px-12 py-8">
-          <div className="max-w-[1600px] mx-auto">
-            <div className="grid grid-cols-12 gap-4 mb-8">
-              <div className="col-span-1">
-                <span className="text-xs text-muted-foreground uppercase tracking-widest">02</span>
-              </div>
-              <div className="col-span-11">
-                <span className="text-xs text-muted-foreground uppercase tracking-widest">
-                  {allDisplayed.length} Pairings
-                </span>
-              </div>
-            </div>
+      {/* Sticky Filters */}
+      <div className="sticky top-16 z-40 bg-background/95 border-b border-border backdrop-blur-sm">
+        <div className="px-4 lg:px-8 py-3 flex items-center gap-6">
+          {/* Type filter */}
+          <div className="flex items-center gap-0 shrink-0">
+            {categories.map((cat) => (
+              <button
+                key={cat.key}
+                onClick={() => setCategoryFilter(cat.key)}
+                aria-pressed={categoryFilter === cat.key}
+                className={`px-3 py-1.5 text-xs uppercase tracking-wider border-b-2 transition-[color,border-color] ${
+                  categoryFilter === cat.key
+                    ? "border-foreground text-foreground"
+                    : "border-transparent text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+
+          <span className="w-px h-4 bg-border shrink-0" />
+
+          {/* Style groups — horizontal scroll on mobile */}
+          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+            {STYLE_GROUPS.map((group) => (
+              <button
+                key={group.key}
+                onClick={() => setStyleFilter(styleFilter === group.key ? null : group.key)}
+                aria-pressed={styleFilter === group.key}
+                className={`px-2.5 py-1 text-[11px] uppercase tracking-wider whitespace-nowrap transition-[background-color,color,border-color] border shrink-0 ${
+                  styleFilter === group.key
+                    ? "bg-foreground text-background border-foreground"
+                    : "bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground"
+                }`}
+              >
+                {group.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Count + Clear */}
+          <div className="flex items-center gap-3 ml-auto shrink-0">
+            <span className="text-[11px] font-mono text-muted-foreground tabular-nums">
+              {allDisplayed.length}
+            </span>
+            {(categoryFilter !== "all" || styleFilter) && (
+              <button
+                onClick={() => { setCategoryFilter("all"); setStyleFilter(null); }}
+                className="text-[11px] uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Clear
+              </button>
+            )}
           </div>
         </div>
+      </div>
 
+      {/* Pairing Cards */}
+      <section>
         {allDisplayed.length === 0 ? (
-          <div className="px-6 lg:px-12 py-24">
-            <div className="max-w-[1600px] mx-auto text-center">
-              <p className="text-muted-foreground uppercase tracking-widest text-sm">
-                No pairings match the current filters
-              </p>
-            </div>
+          <div className="py-24 text-center">
+            <p className="text-muted-foreground">No pairings match the current filters.</p>
           </div>
         ) : (
-          allDisplayed.map((p) => (
-            <SpecimenStrip key={p.name} pairing={p} />
-          ))
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-border">
+            {allDisplayed.map((pairing, i) => (
+              <AnimatedLayout key={pairing.name} delay={Math.min(i, 8) * 40}>
+                <PairingCard pairing={pairing} />
+              </AnimatedLayout>
+            ))}
+          </div>
         )}
       </section>
 
-      {/* Footer - Swiss Style */}
-      <footer className="border-t border-border mt-20">
-        <div className="px-6 lg:px-12 py-8">
-          <div className="max-w-[1600px] mx-auto">
-            <div className="grid grid-cols-12 gap-4">
-              <div className="col-span-12 lg:col-span-6">
-                <span className="font-display text-xl tracking-wider">FONTTRIO</span>
-                <p className="text-xs text-muted-foreground mt-2 uppercase tracking-widest">
-                  Curated for shadcn/ui
-                </p>
-              </div>
-              <div className="col-span-12 lg:col-span-6 lg:text-right">
-                <p className="text-xs text-muted-foreground uppercase tracking-widest">
-                  © 2026 Fonttrio
-                </p>
-              </div>
+      {/* Footer */}
+      <footer className="border-t border-border">
+        <div className="px-4 lg:px-8 py-8">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-1">
+              <span className="font-display text-lg tracking-tight">Font</span>
+              <span className="font-display text-lg tracking-tight text-muted-foreground">trio</span>
             </div>
+            <p className="text-xs text-muted-foreground uppercase tracking-wider">
+              Curated font pairings for shadcn/ui
+            </p>
           </div>
         </div>
       </footer>
@@ -219,75 +254,105 @@ export function LandingClient({
   );
 }
 
-function SpecimenStrip({ pairing }: { pairing: PairingData }) {
+/* ─── Pairing Card ─── */
+
+function PairingCard({ pairing }: { pairing: PairingData }) {
+  const [copied, setCopied] = useState(false);
   const headingFont = `"${pairing.heading}", ${pairing.headingCategory}`;
   const bodyFont = `"${pairing.body}", ${pairing.bodyCategory}`;
+  const monoFont = `"${pairing.mono}", monospace`;
+  const command = `npx shadcn@latest add https://fonttrio.dev/r/${pairing.name}.json`;
+
+  const handleCopy = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    navigator.clipboard.writeText(command);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }, [command]);
 
   return (
-    <Link href={`/${pairing.name}`} className="block specimen-card">
-      <div className="px-6 lg:px-12 py-8 lg:py-12">
-        <div className="max-w-[1600px] mx-auto">
-          <div className="grid grid-cols-12 gap-4 items-end">
-            {/* Number */}
-            <div className="hidden lg:block col-span-1">
-              <span className="text-xs text-muted-foreground font-mono">
-                {pairing.name.slice(0, 2).toUpperCase()}
-              </span>
-            </div>
-            
-            {/* Main Specimen */}
-            <div className="col-span-12 lg:col-span-6">
-              <h2
-                style={{
-                  fontFamily: headingFont,
-                  fontWeight: pairing.scale.h1.weight,
-                  lineHeight: "0.95",
-                  letterSpacing: pairing.scale.h1.letterSpacing,
-                }}
-                className="text-[clamp(2.5rem,8vw,6rem)] truncate"
-              >
-                {pairing.name}
-              </h2>
-              
-              <p
-                style={{
-                  fontFamily: bodyFont,
-                  fontSize: "1rem",
-                  lineHeight: "1.6",
-                }}
-                className="text-muted-foreground mt-4 max-w-xl"
-              >
-                {pairing.description}
-              </p>
-            </div>
-            
-            {/* Meta */}
-            <div className="col-span-12 lg:col-span-4 lg:col-start-9">
-              <div className="space-y-2 text-right">
-                <p className="text-sm text-foreground">
-                  {pairing.heading} / {pairing.body} / {pairing.mono}
-                </p>
-                <div className="flex items-center justify-end gap-2">
-                  {pairing.mood.map((m) => (
-                    <span
-                      key={m}
-                      className="text-xs uppercase tracking-wider text-muted-foreground px-2 py-1 border border-border"
-                    >
-                      {m}
-                    </span>
-                  ))}
-                  <ArrowRight className="specimen-arrow size-4 text-[#e30613] ml-2" aria-hidden="true" />
-                </div>
-              </div>
-            </div>
+    <Link
+      href={`/${pairing.name}`}
+      className="group flex flex-col border-r border-b border-border hover:bg-surface/40 transition-[background-color] bg-background"
+    >
+      {/* Preview Area — fixed height */}
+      <div className="h-48 px-4 py-4 flex flex-col justify-between overflow-hidden">
+        {/* Heading Preview */}
+        <div>
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Heading</p>
+          <p
+            style={{
+              fontFamily: headingFont,
+              fontSize: "1.75rem",
+              fontWeight: pairing.scale.h1.weight,
+              lineHeight: "1.1",
+            }}
+            className="truncate"
+          >
+            {pairing.heading}
+          </p>
+        </div>
+
+        {/* Body Preview */}
+        <div>
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Body</p>
+          <p
+            style={{
+              fontFamily: bodyFont,
+              fontSize: "0.8125rem",
+              lineHeight: "1.5",
+            }}
+            className="text-muted-foreground line-clamp-2"
+          >
+            {pairing.description}
+          </p>
+        </div>
+      </div>
+
+      {/* Install Command — copyable mono specimen */}
+      <button
+        onClick={handleCopy}
+        className="w-full flex items-center gap-2 px-4 py-2 border-t border-border bg-surface/30 hover:bg-surface text-left transition-[background-color]"
+        aria-label={`Copy install command for ${pairing.name}`}
+      >
+        <span
+          className="text-muted-foreground/50 select-none text-[11px]"
+          style={{ fontFamily: monoFont }}
+          aria-hidden="true"
+        >$</span>
+        <code
+          className="flex-1 truncate text-muted-foreground text-[11px]"
+          style={{ fontFamily: monoFont }}
+        >
+          npx shadcn add {pairing.name}
+        </code>
+        {copied ? (
+          <Check className="size-3 shrink-0 text-foreground" aria-hidden="true" />
+        ) : (
+          <Copy className="size-3 shrink-0 text-muted-foreground/50" aria-hidden="true" />
+        )}
+      </button>
+
+      {/* Info Area */}
+      <div className="px-4 py-2.5 border-t border-border">
+        <div className="flex items-center justify-between">
+          <div>
+            <h3 className="text-sm font-medium">{pairing.name}</h3>
+            <p className="text-[11px] text-muted-foreground mt-0.5">
+              {pairing.heading} + {pairing.body} + {pairing.mono}
+            </p>
           </div>
+          <ArrowRight className="size-4 text-muted-foreground group-hover:text-foreground transition-colors" />
         </div>
       </div>
     </Link>
   );
 }
 
-function HeroCopyCommand({ pairingName }: { pairingName: string }) {
+/* ─── Copy Command ─── */
+
+function CopyCommand({ pairingName }: { pairingName: string }) {
   const [copied, setCopied] = useState(false);
   const command = `npx shadcn@latest add https://fonttrio.dev/r/${pairingName}.json`;
 
@@ -298,25 +363,20 @@ function HeroCopyCommand({ pairingName }: { pairingName: string }) {
   }, [command]);
 
   return (
-    <div className="space-y-3">
-      <p className="text-xs text-muted-foreground uppercase tracking-widest">
-        Install
-      </p>
-      <button
-        onClick={copy}
-        className="group w-full flex items-center gap-4 px-4 py-4 border-2 border-foreground text-left hover:bg-foreground hover:text-background transition-colors"
-        aria-label="Copy install command"
-      >
-        <span className="text-muted-foreground group-hover:text-background/70 select-none text-xs uppercase tracking-wider" aria-hidden="true">$</span>
-        <code className="text-sm flex-1 break-all font-mono">
-          shadcn add .../{pairingName}.json
-        </code>
-        {copied ? (
-          <Check className="size-4 text-[#e30613] shrink-0" aria-hidden="true" />
-        ) : (
-          <Copy className="size-4 text-muted-foreground group-hover:text-background shrink-0" aria-hidden="true" />
-        )}
-      </button>
-    </div>
+    <button
+      onClick={copy}
+      className="group w-full flex items-center gap-3 px-4 py-3 bg-surface border border-border text-left hover:bg-surface-hover transition-[background-color] rounded-sm"
+      aria-label="Copy install command"
+    >
+      <span className="text-muted-foreground select-none text-xs uppercase tracking-wider font-mono" aria-hidden="true">$</span>
+      <code className="text-sm flex-1 break-all font-mono">
+        shadcn add {pairingName}
+      </code>
+      {copied ? (
+        <Check className="size-4 shrink-0" aria-hidden="true" />
+      ) : (
+        <Copy className="size-4 text-muted-foreground shrink-0" aria-hidden="true" />
+      )}
+    </button>
   );
 }

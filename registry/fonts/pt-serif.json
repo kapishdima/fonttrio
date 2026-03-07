@@ -2,7 +2,7 @@
   "name": "pt-serif",
   "type": "registry:font",
   "title": "PT Serif",
-  "description": "PT Serif — Serif font from Google Fonts.",
+  "description": "PT Serif — Serif font.",
   "font": {
     "family": "PT Serif",
     "provider": "google",

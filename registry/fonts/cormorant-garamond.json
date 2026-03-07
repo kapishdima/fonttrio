@@ -2,7 +2,7 @@
   "name": "cormorant-garamond",
   "type": "registry:font",
   "title": "Cormorant Garamond",
-  "description": "Cormorant Garamond — Serif font from Google Fonts.",
+  "description": "Cormorant Garamond — Serif font.",
   "font": {
     "family": "Cormorant Garamond",
     "provider": "google",

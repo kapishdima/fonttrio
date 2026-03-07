@@ -2,7 +2,7 @@
   "name": "cabin",
   "type": "registry:font",
   "title": "Cabin",
-  "description": "Cabin — Sans Serif font from Google Fonts.",
+  "description": "Cabin — Sans Serif font.",
   "font": {
     "family": "Cabin",
     "provider": "google",

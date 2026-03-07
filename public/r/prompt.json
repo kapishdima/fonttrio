@@ -2,7 +2,7 @@
   "name": "prompt",
   "type": "registry:font",
   "title": "Prompt",
-  "description": "Prompt — Sans Serif font from Google Fonts.",
+  "description": "Prompt — Sans Serif font.",
   "font": {
     "family": "Prompt",
     "provider": "google",

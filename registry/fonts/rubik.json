@@ -2,7 +2,7 @@
   "name": "rubik",
   "type": "registry:font",
   "title": "Rubik",
-  "description": "Rubik — Sans Serif font from Google Fonts.",
+  "description": "Rubik — Sans Serif font.",
   "font": {
     "family": "Rubik",
     "provider": "google",

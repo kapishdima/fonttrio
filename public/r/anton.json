@@ -2,7 +2,7 @@
   "name": "anton",
   "type": "registry:font",
   "title": "Anton",
-  "description": "Anton — Sans Serif font from Google Fonts.",
+  "description": "Anton — Sans Serif font.",
   "font": {
     "family": "Anton",
     "provider": "google",

@@ -2,7 +2,7 @@
   "name": "ibm-plex-sans",
   "type": "registry:font",
   "title": "IBM Plex Sans",
-  "description": "IBM Plex Sans — Sans Serif font from Google Fonts.",
+  "description": "IBM Plex Sans — Sans Serif font.",
   "font": {
     "family": "IBM Plex Sans",
     "provider": "google",

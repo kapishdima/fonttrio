@@ -2,7 +2,7 @@
   "name": "raleway",
   "type": "registry:font",
   "title": "Raleway",
-  "description": "Raleway — Sans Serif font from Google Fonts.",
+  "description": "Raleway — Sans Serif font.",
   "font": {
     "family": "Raleway",
     "provider": "google",

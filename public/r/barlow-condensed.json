@@ -2,7 +2,7 @@
   "name": "barlow-condensed",
   "type": "registry:font",
   "title": "Barlow Condensed",
-  "description": "Barlow Condensed — Sans Serif font from Google Fonts.",
+  "description": "Barlow Condensed — Sans Serif font.",
   "font": {
     "family": "Barlow Condensed",
     "provider": "google",

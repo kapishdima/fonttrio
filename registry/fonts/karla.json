@@ -2,7 +2,7 @@
   "name": "karla",
   "type": "registry:font",
   "title": "Karla",
-  "description": "Karla — Sans Serif font from Google Fonts.",
+  "description": "Karla — Sans Serif font.",
   "font": {
     "family": "Karla",
     "provider": "google",

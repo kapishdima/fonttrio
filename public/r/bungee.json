@@ -2,7 +2,7 @@
   "name": "bungee",
   "type": "registry:font",
   "title": "Bungee",
-  "description": "Bungee — Display font from Google Fonts.",
+  "description": "Bungee — Display font.",
   "font": {
     "family": "Bungee",
     "provider": "google",

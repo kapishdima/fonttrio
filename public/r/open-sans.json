@@ -2,7 +2,7 @@
   "name": "open-sans",
   "type": "registry:font",
   "title": "Open Sans",
-  "description": "Open Sans — Sans Serif font from Google Fonts.",
+  "description": "Open Sans — Sans Serif font.",
   "font": {
     "family": "Open Sans",
     "provider": "google",

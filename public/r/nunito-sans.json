@@ -2,7 +2,7 @@
   "name": "nunito-sans",
   "type": "registry:font",
   "title": "Nunito Sans",
-  "description": "Nunito Sans — Sans Serif font from Google Fonts.",
+  "description": "Nunito Sans — Sans Serif font.",
   "font": {
     "family": "Nunito Sans",
     "provider": "google",
