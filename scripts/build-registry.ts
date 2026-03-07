@@ -14,13 +14,8 @@ import {
   buildRegistryIndexFromItems,
   getAllFonts,
   getAllPairings,
-  PairingItem,
 } from "../lib/registry";
-import {
-  getNonFontRegistryDependencies,
-  getPairingFontNames,
-  resolveFontPackageName,
-} from "../lib/font-package-support";
+import { materializePairing } from "../lib/materialize-pairing";
 
 const ROOT = process.cwd();
 const PUBLIC_R = join(ROOT, "public", "r");
@@ -38,40 +33,6 @@ const allFonts = getAllFonts();
 const allPairings = getAllPairings();
 const fontsByName = new Map(allFonts.map((font) => [font.name, font]));
 
-function materializePairing(pairing: PairingItem): Record<string, unknown> {
-  const fontNames = getPairingFontNames(pairing);
-  const fonts = fontNames.map((fontName) => {
-    const font = fontsByName.get(fontName);
-
-    if (!font) {
-      throw new Error(`Missing font dependency ${fontName} for pairing ${pairing.name}`);
-    }
-
-    return font;
-  });
-
-  const dependencies = fonts.map(resolveFontPackageName);
-  const cssVarsTheme = {
-    ...(pairing.cssVars?.theme || {}),
-    ...Object.fromEntries(fonts.map((font) => [font.font.variable, font.font.family])),
-  };
-  const css = {
-    ...Object.fromEntries(dependencies.map((dependency) => [`@import "${dependency}"`, {}])),
-    ...(pairing.css || {}),
-  };
-
-  return {
-    ...pairing,
-    dependencies,
-    registryDependencies: getNonFontRegistryDependencies(pairing),
-    cssVars: {
-      ...(pairing.cssVars || {}),
-      theme: cssVarsTheme,
-    },
-    css,
-  };
-}
-
 // Copy font JSONs to public/r/
 for (const font of allFonts) {
   copyFileSync(join(FONTS_DIR, `${font.name}.json`), join(PUBLIC_R, `${font.name}.json`));
@@ -82,7 +43,7 @@ for (const pairing of allPairings) {
   const file = `${pairing.name.replace("pairing-", "")}.json`;
   writeFileSync(
     join(PUBLIC_R, file),
-    JSON.stringify(materializePairing(pairing), null, 2) + "\n"
+    JSON.stringify(materializePairing(pairing, fontsByName), null, 2) + "\n"
   );
 }
 
