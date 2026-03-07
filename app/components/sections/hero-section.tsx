@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import type { PairingData } from "@/lib/pairings";
 import { usePairingFonts } from "@/lib/hooks/use-pairing-fonts";
@@ -8,7 +9,6 @@ import { MetricLines } from "../metric-lines";
 import { InstallCommand } from "../install-command";
 import { SectionLabel } from "../section-label";
 import { AnimatedLayout } from "../animated-layout";
-import { ArrowLeft } from "lucide-react";
 
 interface HeroSectionProps {
   pairing: PairingData;
@@ -22,21 +22,24 @@ const METRIC_LINES = [
 
 export function HeroSection({ pairing }: HeroSectionProps) {
   const { heading, body, mono, getHeadingStyle } = usePairingFonts(pairing);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Parallax effect - title moves faster than scroll
+  const parallaxOffset = scrollY * 0.6;
+  const titleOpacity = Math.max(0, 1 - scrollY / 250);
 
   return (
-    <header id="main-content" className="pt-16 relative min-h-screen flex flex-col">
+    <header id="main-content" className="pt-[120px] relative min-h-screen flex flex-col">
       <GridBackground />
-
-      {/* Back Button */}
-      <div className="relative px-4 lg:px-8 py-6">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <ArrowLeft className="size-4" />
-          <span>Back to pairings</span>
-        </Link>
-      </div>
 
       {/* Hero Content */}
       <div className="relative flex-1 flex flex-col justify-center px-4 lg:px-8 xl:px-12 pb-12">
@@ -46,8 +49,14 @@ export function HeroSection({ pairing }: HeroSectionProps) {
             <div className="relative h-[clamp(3rem,15vw,12rem)] overflow-hidden">
               <MetricLines lines={METRIC_LINES} />
 
-              {/* Text — above lines */}
-              <div className="h-full flex items-center relative z-10 overflow-hidden">
+              {/* Text — above lines with parallax */}
+              <div 
+                className="h-full flex items-center relative z-10 overflow-hidden"
+                style={{
+                  transform: `translateY(${-parallaxOffset}px)`,
+                  opacity: titleOpacity,
+                }}
+              >
                 <h1
                   style={{
                     fontFamily: heading.family,

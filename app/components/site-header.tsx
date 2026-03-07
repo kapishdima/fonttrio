@@ -61,7 +61,7 @@ function SocialLinks() {
 export function SiteHeader({ subtitle = "Font pairings for shadcn/ui" }: SiteHeaderProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 border-b border-border backdrop-blur-sm">
-      <div className="px-4 lg:px-8 h-16 flex items-center justify-between">
+      <div className="px-4 lg:px-12 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-1 hover:opacity-70 transition-opacity">
           <Logo />
         </Link>

@@ -3,6 +3,7 @@
 import type { PairingData } from "@/lib/pairings";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
+import { StickyDetailHeader } from "../components/sticky-detail-header";
 import { HeroSection } from "../components/sections/hero-section";
 import { PreviewSection } from "../components/sections/preview-section";
 import { TypeTesterSection } from "../components/sections/type-tester-section";
@@ -16,6 +17,7 @@ export function PairingDetail({ pairing }: PairingDetailProps) {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
+      <StickyDetailHeader pairing={pairing} />
       
       <HeroSection pairing={pairing} />
       <PreviewSection pairing={pairing} />

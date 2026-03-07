@@ -89,7 +89,7 @@ export function LandingClient({
       </section>
 
       {/* Sticky Filters */}
-      <div className="sticky top-16 z-40 bg-background/95 border-b border-border backdrop-blur-sm">
+      <div className="sticky top-16 z-40 bg-background/95 border-b border-border backdrop-blur-sm px-5">
         <div className="px-4 lg:px-8 py-3 flex items-center gap-6">
           {/* Type filter */}
           <div className="flex items-center gap-0 shrink-0">
@@ -147,7 +147,7 @@ export function LandingClient({
       </div>
 
       {/* Pairing Cards */}
-      <section>
+      <section className="px-12">
         {filteredPairings.length === 0 ? (
           <div className="py-24 text-center">
             <p className="text-muted-foreground">No pairings match the current filters.</p>

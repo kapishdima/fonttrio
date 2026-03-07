@@ -8,7 +8,7 @@ import { mkdirSync, writeFileSync, copyFileSync, readdirSync } from "fs";
 import { join } from "path";
 import { buildRegistryIndex } from "../lib/registry";
 
-const ROOT = join(import.meta.dir, "..");
+const ROOT = process.cwd();
 const PUBLIC_R = join(ROOT, "public", "r");
 const FONTS_DIR = join(ROOT, "registry", "fonts");
 const PAIRINGS_DIR = join(ROOT, "registry", "pairings");
