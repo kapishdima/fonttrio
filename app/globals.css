@@ -49,38 +49,7 @@
   --sidebar-ring: var(--text);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not(.light) {
-    --bg: #0a0a0a;
-    --text: #ededed;
-    --text-muted: #888888;
-    --text-subtle: #555555;
-    --surface-border: #1f1f1f;
-    --surface-border-strong: #333333;
-    --surface: #141414;
 
-    --card: var(--surface);
-    --card-foreground: var(--text);
-    --popover: var(--bg);
-    --popover-foreground: var(--text);
-    --primary: var(--text);
-    --primary-foreground: var(--bg);
-    --secondary: var(--surface);
-    --secondary-foreground: var(--text);
-    --muted: var(--surface);
-    --destructive: #ef4444;
-    --border: var(--surface-border);
-    --input: var(--surface-border);
-
-    --sidebar: var(--surface);
-    --sidebar-foreground: var(--text);
-    --sidebar-primary: var(--text);
-    --sidebar-primary-foreground: var(--bg);
-    --sidebar-accent: var(--surface);
-    --sidebar-accent-foreground: var(--text);
-    --sidebar-border: var(--surface-border);
-  }
-}
 
 .dark {
   --bg: #0a0a0a;
@@ -171,7 +140,11 @@
 }
 
 html {
-  color-scheme: light dark;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 body {

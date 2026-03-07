@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import type { PairingData } from "@/lib/pairings";
+import { UnderlineTabs } from "./underline-tabs";
+import { SectionLabel } from "./section-label";
 
 interface TypeTesterProps {
   pairing: PairingData;
@@ -47,23 +49,15 @@ export function TypeTester({ pairing }: TypeTesterProps) {
     <div className="space-y-0">
       {/* Controls Bar */}
       <div className="flex flex-col lg:flex-row lg:items-center gap-6 pb-6 border-b border-border">
-        {/* Font Selector */}
-        <div className="flex items-center gap-0">
-          {(["heading", "body", "mono"] as const).map((key) => (
-            <button
-              key={key}
-              onClick={() => setTarget(key)}
-              aria-pressed={target === key}
-              className={`px-4 py-2 text-xs uppercase tracking-wider border-b-2 transition-[color,border-color] ${
-                target === key
-                  ? "border-foreground text-foreground"
-                  : "border-transparent text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              {fontMap[key].name}
-            </button>
-          ))}
-        </div>
+        <UnderlineTabs
+          items={[
+            { key: "heading", label: fontMap.heading.name },
+            { key: "body", label: fontMap.body.name },
+            { key: "mono", label: fontMap.mono.name },
+          ]}
+          value={target}
+          onChange={(value) => setTarget(value as FontTarget)}
+        />
 
         {/* Size Selector */}
         <div className="flex items-center gap-4 lg:ml-auto">
@@ -99,9 +93,7 @@ export function TypeTester({ pairing }: TypeTesterProps) {
           >
             {/* Weight Label */}
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[10px] uppercase tracking-wider text-muted-foreground">
-                {w.label}
-              </span>
+              <SectionLabel>{w.label}</SectionLabel>
               <span className="text-[10px] font-mono text-muted-foreground">
                 {w.value}
               </span>
@@ -127,9 +119,7 @@ export function TypeTester({ pairing }: TypeTesterProps) {
       {/* Editable Specimen */}
       <div className="pt-8 border-t border-border">
         <div className="flex items-center justify-between mb-4">
-          <span className="text-[10px] uppercase tracking-wider text-muted-foreground">
-            Custom Text
-          </span>
+          <SectionLabel>Custom Text</SectionLabel>
           <span className="text-[10px] font-mono text-muted-foreground">
             {current.family} {weight} / {size}px
           </span>
@@ -152,9 +142,7 @@ export function TypeTester({ pairing }: TypeTesterProps) {
           {DEFAULT_TEXT}
         </div>
 
-        <p className="text-[10px] uppercase tracking-wider text-muted-foreground mt-3">
-          Click to edit text
-        </p>
+        <SectionLabel className="mt-3">Click to edit text</SectionLabel>
       </div>
     </div>
   );

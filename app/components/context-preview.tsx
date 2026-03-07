@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { PairingData } from "@/lib/pairings";
+import { UnderlineTabs } from "./underline-tabs";
 
 interface ContextPreviewProps {
   pairing: PairingData;
@@ -17,28 +18,17 @@ export function ContextPreview({ pairing }: ContextPreviewProps) {
   const monoFont = `"${pairing.mono}", monospace`;
   const scale = pairing.scale;
 
-  const modes: PreviewMode[] = ["blog", "landing", "docs"];
-
   return (
     <div className="space-y-8">
-      {/* Tabs */}
-      <div className="flex items-center gap-0" role="tablist">
-        {modes.map((m) => (
-          <button
-            key={m}
-            role="tab"
-            aria-selected={mode === m}
-            onClick={() => setMode(m)}
-            className={`px-4 py-2 text-xs uppercase tracking-wider border-b-2 capitalize transition-[color,border-color] ${
-              mode === m
-                ? "border-foreground text-foreground"
-                : "border-transparent text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            {m}
-          </button>
-        ))}
-      </div>
+      <UnderlineTabs
+        items={[
+          { key: "blog", label: "Blog" },
+          { key: "landing", label: "Landing" },
+          { key: "docs", label: "Docs" },
+        ]}
+        value={mode}
+        onChange={(value) => setMode(value as PreviewMode)}
+      />
 
       {/* Preview */}
       <div className="border border-border overflow-hidden">

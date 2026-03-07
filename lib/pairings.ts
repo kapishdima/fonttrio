@@ -49,3 +49,18 @@ export function getAllMoods(): string[] {
   PAIRINGS.forEach((p) => p.mood.forEach((m) => moods.add(m)));
   return Array.from(moods);
 }
+
+export function getAllGoogleFontsUrls(): string[] {
+  const urls = new Set<string>();
+  PAIRINGS.forEach((p) => {
+    if (p.googleFontsUrl) {
+      urls.add(p.googleFontsUrl);
+    }
+  });
+  return Array.from(urls);
+}
+
+export function getPairingGoogleFontsUrl(name: string): string | null {
+  const pairing = getPairing(name);
+  return pairing?.googleFontsUrl ?? null;
+}

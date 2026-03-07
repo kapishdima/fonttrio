@@ -74,13 +74,13 @@ export function FontSwitcher({ pairings, onIndexChange }: FontSwitcherProps) {
       style={{
         fontFamily,
         fontWeight: currentPairing.scale.h1.weight,
-        lineHeight: "1.1",
+        lineHeight: "1",
         letterSpacing: "-0.03em",
         minWidth: "8ch",
       }}
     >
       {displayText}
-      <span className="cursor-blink ml-1 inline-block w-[3px] h-[0.75em] bg-current align-middle" />
+      <span className="cursor-blink ml-1 inline-block w-1 h-[0.75em] bg-current align-middle" />
     </span>
   );
 }
