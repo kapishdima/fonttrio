@@ -74,30 +74,33 @@ fonttrio/
 
 ## Дизайн
 
-**Aesthetic:** Editorial Type Foundry (Klim/Grilli/Commercial Type вдохновение)
-- Тёплая OKLCH палитра (no pure black/white), terracotta акцент
-- UI шрифт: Geist + Geist Mono (minimal пара)
-- Editorial masonry layout (не uniform grid)
-- Generous whitespace, type specimens крупные
+**Aesthetic:** Swiss International Style (Швейцарский стиль)
+- Чистый чёрно-белый дизайн с швейцарским красным акцентом (#E30613)
+- Display шрифт: Bebas Neue (драматичные заголовки)
+- UI шрифт: System fonts (максимальная производительность)
+- Модульная сетка 12 колонок, номера секций (01, 02, 03...)
+- Жёсткие горизонтальные разделители, нулевой border-radius
 
-### Цвета (OKLCH)
+### Цвета (Swiss Style)
 
 ```css
 /* Light */
---bg: oklch(0.985 0.005 80);
---text: oklch(0.15 0.01 80);
---muted: oklch(0.55 0.01 80);
---border: oklch(0.88 0.005 80);
---accent: oklch(0.65 0.15 45);
---accent-soft: oklch(0.92 0.05 45);
+--bg: #ffffff;
+--text: #000000;
+--muted: rgba(0, 0, 0, 0.5);
+--border: rgba(0, 0, 0, 0.1);
+--border-strong: rgba(0, 0, 0, 0.25);
+--accent: #e30613; /* Swiss Red */
+--accent-soft: rgba(227, 6, 19, 0.1);
 
 /* Dark */
---bg: oklch(0.13 0.01 80);
---text: oklch(0.92 0.005 80);
---muted: oklch(0.5 0.01 80);
---border: oklch(0.25 0.005 80);
---accent: oklch(0.72 0.12 45);
---accent-soft: oklch(0.2 0.04 45);
+--bg: #000000;
+--text: #ffffff;
+--muted: rgba(255, 255, 255, 0.5);
+--border: rgba(255, 255, 255, 0.15);
+--border-strong: rgba(255, 255, 255, 0.3);
+--accent: #ff1a26;
+--accent-soft: rgba(255, 26, 38, 0.15);
 ```
 
 ## План реализации

@@ -7,70 +7,52 @@ interface ContextPreviewProps {
   pairing: PairingData;
 }
 
-type Tab = "blog" | "landing" | "docs";
+type PreviewMode = "blog" | "landing" | "docs";
 
 export function ContextPreview({ pairing }: ContextPreviewProps) {
-  const [tab, setTab] = useState<Tab>("blog");
+  const [mode, setMode] = useState<PreviewMode>("blog");
 
   const headingFont = `"${pairing.heading}", ${pairing.headingCategory}`;
   const bodyFont = `"${pairing.body}", ${pairing.bodyCategory}`;
   const monoFont = `"${pairing.mono}", monospace`;
   const scale = pairing.scale;
 
-  const tabs: { key: Tab; label: string }[] = [
-    { key: "blog", label: "Blog" },
-    { key: "landing", label: "Landing" },
-    { key: "docs", label: "Docs" },
-  ];
+  const modes: PreviewMode[] = ["blog", "landing", "docs"];
 
   return (
     <div className="space-y-6">
-      {/* Tabs */}
-      <div className="flex items-center gap-1 border-b border-border">
-        {tabs.map((t) => (
-          <button
-            key={t.key}
-            onClick={() => setTab(t.key)}
-            className={`px-4 py-2.5 text-sm font-sans font-medium transition-colors relative ${
-              tab === t.key ? "text-text" : "text-muted hover:text-text"
-            }`}
-          >
-            {t.label}
-            {tab === t.key && (
-              <span className="absolute bottom-0 left-0 right-0 h-px bg-text" />
-            )}
-          </button>
-        ))}
+      {/* Tabs - Swiss Style */}
+      <div className="border-b border-border">
+        <div className="flex items-center gap-0" role="tablist">
+          {modes.map((m) => (
+            <button
+              key={m}
+              role="tab"
+              aria-selected={mode === m}
+              onClick={() => setMode(m)}
+              className={`px-4 py-3 text-xs uppercase tracking-widest border-b-2 transition-colors capitalize ${
+                mode === m
+                  ? "border-foreground text-foreground"
+                  : "border-transparent text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {m}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Content */}
-      <div className="border border-border rounded-lg overflow-hidden bg-bg">
-        <div key={tab} className="tab-content-enter">
-          {tab === "blog" && (
-            <BlogPreview
-              headingFont={headingFont}
-              bodyFont={bodyFont}
-              monoFont={monoFont}
-              scale={scale}
-            />
-          )}
-          {tab === "landing" && (
-            <LandingPreview
-              headingFont={headingFont}
-              bodyFont={bodyFont}
-              monoFont={monoFont}
-              scale={scale}
-            />
-          )}
-          {tab === "docs" && (
-            <DocsPreview
-              headingFont={headingFont}
-              bodyFont={bodyFont}
-              monoFont={monoFont}
-              scale={scale}
-            />
-          )}
-        </div>
+      {/* Preview Container */}
+      <div className="border-2 border-border">
+        {mode === "blog" && (
+          <BlogPreview headingFont={headingFont} bodyFont={bodyFont} monoFont={monoFont} scale={scale} />
+        )}
+        {mode === "landing" && (
+          <LandingPreview headingFont={headingFont} bodyFont={bodyFont} monoFont={monoFont} scale={scale} />
+        )}
+        {mode === "docs" && (
+          <DocsPreview headingFont={headingFont} bodyFont={bodyFont} monoFont={monoFont} scale={scale} />
+        )}
       </div>
     </div>
   );
@@ -85,26 +67,25 @@ interface PreviewProps {
 
 function BlogPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
   return (
-    <div className="p-6 sm:p-10 max-w-2xl mx-auto space-y-6">
-      <div className="space-y-2">
-        <span
-          className="text-[11px] font-mono tracking-widest uppercase text-muted"
-          style={{ fontFamily: monoFont }}
-        >
-          March 6, 2026
-        </span>
-        <h1
-          style={{
-            fontFamily: headingFont,
-            fontSize: scale.h1.size,
-            fontWeight: scale.h1.weight,
-            lineHeight: scale.h1.lineHeight,
-            letterSpacing: scale.h1.letterSpacing,
-          }}
-        >
-          On the Craft of Typography
-        </h1>
-      </div>
+    <div className="px-8 lg:px-16 py-12 lg:py-16 max-w-3xl mx-auto space-y-8">
+      <span
+        className="text-xs uppercase tracking-widest text-muted-foreground"
+        style={{ fontFamily: monoFont }}
+      >
+        March 7, 2026
+      </span>
+
+      <h1
+        style={{
+          fontFamily: headingFont,
+          fontSize: scale.h1.size,
+          fontWeight: scale.h1.weight,
+          lineHeight: scale.h1.lineHeight,
+          letterSpacing: scale.h1.letterSpacing,
+        }}
+      >
+        On the Craft of Typography
+      </h1>
 
       <p
         style={{
@@ -113,7 +94,7 @@ function BlogPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
           lineHeight: scale.body.lineHeight,
           fontWeight: scale.body.weight,
         }}
-        className="text-muted"
+        className="text-muted-foreground"
       >
         Typography is the art of arranging type to make written language
         legible, readable, and appealing when displayed. It involves
@@ -140,16 +121,15 @@ function BlogPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
           lineHeight: scale.body.lineHeight,
           fontWeight: scale.body.weight,
         }}
-        className="text-muted"
+        className="text-muted-foreground"
       >
         Good typography is invisible. Bad typography is everywhere. The
         reader should never have to fight against the presentation to get
-        to the content. Every choice -- from the width of the measure to
-        the rhythm of the baseline grid -- serves the text.
+        to the content. Every choice serves the text.
       </p>
 
       <blockquote
-        className="border-l-2 border-accent pl-6 py-1"
+        className="border-l-4 border-[#e30613] pl-6 py-2"
         style={{
           fontFamily: bodyFont,
           fontSize: scale.body.size,
@@ -157,21 +137,21 @@ function BlogPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
           fontStyle: "italic",
         }}
       >
-        &ldquo;Typography exists to honor content.&rdquo;
-        <span className="block text-sm text-muted mt-1 not-italic">
-          -- Robert Bringhurst
+        Typography exists to honor content.
+        <span className="block text-sm text-muted-foreground mt-2 not-italic">
+          — Robert Bringhurst
         </span>
       </blockquote>
 
       <pre
-        className="px-4 py-3 rounded bg-accent-soft/40 border border-border overflow-x-auto"
+        className="px-5 py-4 border border-border overflow-x-auto bg-surface"
         style={{
           fontFamily: monoFont,
           fontSize: "0.8125rem",
-          lineHeight: "1.6",
+          lineHeight: "1.65",
         }}
       >
-        <code className="text-muted">{`// Typography scale configuration
+        <code className="text-muted-foreground">{`// Typography scale configuration
 const scale = {
   h1: { size: "${scale.h1.size}", weight: ${scale.h1.weight} },
   body: { size: "${scale.body.size}", lineHeight: "${scale.body.lineHeight}" },
@@ -181,16 +161,10 @@ const scale = {
   );
 }
 
-function LandingPreview({
-  headingFont,
-  bodyFont,
-  monoFont,
-  scale,
-}: PreviewProps) {
+function LandingPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
   return (
-    <div className="p-6 sm:p-10 space-y-10">
-      {/* Hero */}
-      <div className="text-center space-y-5 py-8">
+    <div className="px-8 lg:px-16 py-12 lg:py-16 space-y-12">
+      <div className="text-center space-y-6 py-8">
         <h1
           style={{
             fontFamily: headingFont,
@@ -210,46 +184,34 @@ function LandingPreview({
             fontSize: "1.125rem",
             lineHeight: "1.6",
           }}
-          className="text-muted max-w-lg mx-auto"
+          className="text-muted-foreground max-w-lg mx-auto"
         >
           The modern toolkit for creators who care about every pixel and
           every word. Ship faster, look better.
         </p>
-        <div className="flex items-center justify-center gap-3 pt-2">
-          <button
-            className="px-5 py-2.5 rounded-lg bg-text text-bg font-sans text-sm font-medium hover:opacity-90"
+        <div className="flex items-center justify-center gap-4 pt-4">
+          <span
+            className="inline-block px-6 py-3 bg-foreground text-background text-sm uppercase tracking-wider"
+            style={{ fontFamily: bodyFont }}
           >
             Get Started
-          </button>
-          <button
-            className="px-5 py-2.5 rounded-lg border border-border font-sans text-sm font-medium hover:bg-accent-soft/50"
+          </span>
+          <span
+            className="inline-block px-6 py-3 border-2 border-foreground text-sm uppercase tracking-wider"
             style={{ fontFamily: monoFont }}
           >
             View Docs
-          </button>
+          </span>
         </div>
       </div>
 
-      {/* Feature Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-px bg-border">
         {[
-          {
-            title: "Type Scale",
-            desc: "Consistent hierarchy from h1 to body text.",
-          },
-          {
-            title: "Three Fonts",
-            desc: "Heading, body, and mono -- perfectly matched.",
-          },
-          {
-            title: "One Command",
-            desc: "Install with shadcn CLI. No config needed.",
-          },
+          { title: "Type Scale", desc: "Consistent hierarchy from h1 to body text." },
+          { title: "Three Fonts", desc: "Heading, body, and mono — perfectly matched." },
+          { title: "One Command", desc: "Install with shadcn CLI. No config needed." },
         ].map((f) => (
-          <div
-            key={f.title}
-            className="p-4 rounded-lg border border-border space-y-2"
-          >
+          <div key={f.title} className="p-6 bg-background space-y-3">
             <h3
               style={{
                 fontFamily: headingFont,
@@ -261,12 +223,8 @@ function LandingPreview({
               {f.title}
             </h3>
             <p
-              style={{
-                fontFamily: bodyFont,
-                fontSize: "0.9375rem",
-                lineHeight: "1.5",
-              }}
-              className="text-muted"
+              style={{ fontFamily: bodyFont, fontSize: "0.9375rem", lineHeight: "1.5" }}
+              className="text-muted-foreground"
             >
               {f.desc}
             </p>
@@ -280,37 +238,35 @@ function LandingPreview({
 function DocsPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
   return (
     <div className="flex min-h-[400px]">
-      {/* Sidebar */}
-      <aside className="hidden sm:block w-48 shrink-0 border-r border-border p-4 space-y-4">
+      <aside className="hidden lg:block w-56 shrink-0 border-r border-border p-6 space-y-6">
         <span
-          className="block text-[11px] font-mono uppercase tracking-widest text-muted"
+          className="block text-xs uppercase tracking-widest text-muted-foreground"
           style={{ fontFamily: monoFont }}
         >
           Getting Started
         </span>
         <nav className="space-y-1">
-          {["Installation", "Configuration", "Typography", "Theming"].map(
-            (item, i) => (
-              <a
-                key={item}
-                href="#"
-                onClick={(e) => e.preventDefault()}
-                className={`block px-2 py-1.5 rounded text-sm font-sans ${
-                  i === 0
-                    ? "bg-accent-soft text-accent font-medium"
-                    : "text-muted hover:text-text"
-                }`}
-              >
-                {item}
-              </a>
-            )
-          )}
+          {["Installation", "Configuration", "Typography", "Theming"].map((item, i) => (
+            <a
+              key={item}
+              href="#"
+              onClick={(e) => e.preventDefault()}
+              className={`block px-3 py-2 text-sm ${
+                i === 0
+                  ? "text-[#e30613] font-medium border-l-2 border-[#e30613]"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              style={{ fontFamily: bodyFont }}
+            >
+              {item}
+            </a>
+          ))}
         </nav>
         <span
-          className="block text-[11px] font-mono uppercase tracking-widest text-muted pt-2"
+          className="block text-xs uppercase tracking-widest text-muted-foreground pt-4"
           style={{ fontFamily: monoFont }}
         >
-          API Reference
+          API
         </span>
         <nav className="space-y-1">
           {["Components", "Hooks", "Utilities"].map((item) => (
@@ -318,7 +274,8 @@ function DocsPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
               key={item}
               href="#"
               onClick={(e) => e.preventDefault()}
-              className="block px-2 py-1.5 rounded text-sm font-sans text-muted hover:text-text"
+              className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
+              style={{ fontFamily: bodyFont }}
             >
               {item}
             </a>
@@ -326,8 +283,7 @@ function DocsPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
         </nav>
       </aside>
 
-      {/* Content */}
-      <div className="flex-1 p-6 sm:p-8 space-y-5 max-w-2xl">
+      <div className="flex-1 px-8 lg:px-12 py-8 space-y-6 max-w-2xl">
         <h1
           style={{
             fontFamily: headingFont,
@@ -346,7 +302,7 @@ function DocsPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
             fontSize: scale.body.size,
             lineHeight: scale.body.lineHeight,
           }}
-          className="text-muted"
+          className="text-muted-foreground"
         >
           Get started by installing the font pairing into your project. This
           will add the necessary font imports and CSS variables.
@@ -360,20 +316,16 @@ function DocsPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
             lineHeight: scale.h3.lineHeight,
             letterSpacing: scale.h3.letterSpacing,
           }}
-          className="pt-2"
+          className="pt-4"
         >
           Quick Start
         </h2>
 
         <pre
-          className="px-4 py-3 rounded bg-accent-soft/40 border border-border overflow-x-auto"
-          style={{
-            fontFamily: monoFont,
-            fontSize: "0.8125rem",
-            lineHeight: "1.6",
-          }}
+          className="px-5 py-4 border border-border overflow-x-auto bg-surface"
+          style={{ fontFamily: monoFont, fontSize: "0.8125rem", lineHeight: "1.65" }}
         >
-          <code className="text-muted">{`npx shadcn@latest add https://fonttrio.dev/r/editorial.json`}</code>
+          <code className="text-muted-foreground">{`npx shadcn@latest add https://fonttrio.dev/r/editorial.json`}</code>
         </pre>
 
         <p
@@ -382,15 +334,24 @@ function DocsPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
             fontSize: scale.body.size,
             lineHeight: scale.body.lineHeight,
           }}
-          className="text-muted"
+          className="text-muted-foreground"
         >
           This will add the following to your project:
         </p>
 
-        <ul className="space-y-1.5 pl-5" style={{ fontFamily: bodyFont, fontSize: scale.body.size, lineHeight: scale.body.lineHeight }}>
-          <li className="text-muted list-disc">Font imports via <code className="px-1.5 py-0.5 rounded bg-accent-soft/40 text-xs" style={{ fontFamily: monoFont }}>next/font/google</code></li>
-          <li className="text-muted list-disc">CSS variables for heading, body, and mono fonts</li>
-          <li className="text-muted list-disc">A typography scale with sizes, weights, and line heights</li>
+        <ul className="space-y-2" style={{ fontFamily: bodyFont, fontSize: scale.body.size, lineHeight: scale.body.lineHeight }}>
+          <li className="text-muted-foreground flex gap-3">
+            <span className="text-[#e30613]">—</span>
+            Font imports via <code className="px-2 py-0.5 border border-border text-xs bg-surface" style={{ fontFamily: monoFont }}>next/font/google</code>
+          </li>
+          <li className="text-muted-foreground flex gap-3">
+            <span className="text-[#e30613]">—</span>
+            CSS variables for heading, body, and mono fonts
+          </li>
+          <li className="text-muted-foreground flex gap-3">
+            <span className="text-[#e30613]">—</span>
+            A typography scale with sizes, weights, and line heights
+          </li>
         </ul>
       </div>
     </div>

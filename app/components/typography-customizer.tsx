@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useMemo } from "react";
 import type { PairingData, TypographyScale } from "@/lib/pairings";
+import { Slider } from "@/components/ui/slider";
 
 interface TypographyCustomizerProps {
   pairing: PairingData;
@@ -15,7 +16,7 @@ export function TypographyCustomizer({
   onScaleChange,
 }: TypographyCustomizerProps) {
   const [scale, setScale] = useState<TypographyScale>(pairing.scale);
-  const [openSection, setOpenSection] = useState<string | null>("h1");
+  const [expanded, setExpanded] = useState<string | null>("h1");
 
   const isCustomized = useMemo(() => {
     return JSON.stringify(scale) !== JSON.stringify(pairing.scale);
@@ -33,10 +34,7 @@ export function TypographyCustomizer({
       value: string | number
     ) => {
       setScale((prev) => {
-        const next = {
-          ...prev,
-          [level]: { ...prev[level], [field]: value },
-        };
+        const next = { ...prev, [level]: { ...prev[level], [field]: value } };
         onScaleChange?.(next);
         return next;
       });
@@ -47,10 +45,7 @@ export function TypographyCustomizer({
   const updateBody = useCallback(
     (field: "size" | "lineHeight" | "weight", value: string | number) => {
       setScale((prev) => {
-        const next = {
-          ...prev,
-          body: { ...prev.body, [field]: value },
-        };
+        const next = { ...prev, body: { ...prev.body, [field]: value } };
         onScaleChange?.(next);
         return next;
       });
@@ -64,35 +59,35 @@ export function TypographyCustomizer({
   const headingLevels: HeadingLevel[] = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
   return (
-    <div className="space-y-4">
-      {/* Header */}
-      <div className="flex items-center justify-between">
-        <h3 className="text-sm font-sans font-medium text-muted">
-          Typography Scale
-        </h3>
-        {isCustomized && (
+    <div className="space-y-0">
+      {/* Modified Indicator */}
+      {isCustomized && (
+        <div className="flex items-center justify-between pb-6 border-b border-border mb-6">
+          <span className="text-xs uppercase tracking-widest text-[#e30613]">
+            Scale Modified
+          </span>
           <button
             onClick={reset}
-            className="text-xs font-mono text-accent hover:text-accent/80"
+            className="text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors"
           >
-            Reset to defaults
+            Reset
           </button>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Heading levels */}
       {headingLevels.map((level) => {
         const data = scale[level];
-        const isOpen = openSection === level;
-
+        const isOpen = expanded === level;
         return (
-          <div key={level} className="border border-border rounded-lg overflow-hidden">
+          <div key={level} className="border-b border-border">
             <button
-              onClick={() => setOpenSection(isOpen ? null : level)}
-              className="w-full flex items-center justify-between px-4 py-3 hover:bg-accent-soft/30 transition-colors"
+              onClick={() => setExpanded(isOpen ? null : level)}
+              aria-expanded={isOpen}
+              className="w-full flex items-center justify-between py-4 text-left hover:bg-surface/50 transition-colors px-2"
             >
-              <div className="flex items-center gap-3">
-                <span className="text-xs font-mono text-muted uppercase w-6">
+              <div className="flex items-center gap-6">
+                <span className="text-xs text-muted-foreground uppercase tracking-widest w-8">
                   {level}
                 </span>
                 <span
@@ -107,69 +102,38 @@ export function TypographyCustomizer({
                   Heading {level.slice(1)}
                 </span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] font-mono text-muted">
-                  {data.size} / {data.weight}
-                </span>
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  className={`text-muted transition-transform duration-200 ${
-                    isOpen ? "rotate-180" : ""
-                  }`}
-                >
-                  <path d="M3 4.5l3 3 3-3" />
-                </svg>
-              </div>
+              <span className="text-xs font-mono text-muted-foreground">
+                {data.size} / {data.weight}
+              </span>
             </button>
 
             {isOpen && (
-              <div className="px-4 pb-4 pt-2 space-y-3 border-t border-border">
+              <div className="px-2 pb-6 pt-2 space-y-4 bg-surface/30">
                 <SliderRow
                   label="Size"
                   value={parseFloat(data.size)}
-                  min={0.75}
-                  max={6}
-                  step={0.125}
-                  unit="rem"
+                  min={0.75} max={6} step={0.125} unit="rem"
                   onChange={(v) => updateHeading(level, "size", `${v}rem`)}
                 />
                 <SliderRow
                   label="Weight"
                   value={data.weight}
-                  min={100}
-                  max={900}
-                  step={100}
+                  min={100} max={900} step={100}
                   onChange={(v) => updateHeading(level, "weight", v)}
                 />
                 <SliderRow
-                  label="Line Height"
+                  label="Leading"
                   value={parseFloat(data.lineHeight)}
-                  min={0.8}
-                  max={2}
-                  step={0.05}
-                  onChange={(v) =>
-                    updateHeading(level, "lineHeight", v.toString())
-                  }
+                  min={0.8} max={2} step={0.05}
+                  onChange={(v) => updateHeading(level, "lineHeight", v.toString())}
                 />
                 <SliderRow
                   label="Tracking"
                   value={parseFloat(data.letterSpacing)}
-                  min={-0.05}
-                  max={0.1}
-                  step={0.005}
-                  unit="em"
-                  onChange={(v) =>
-                    updateHeading(level, "letterSpacing", `${v}em`)
-                  }
+                  min={-0.05} max={0.1} step={0.005} unit="em"
+                  onChange={(v) => updateHeading(level, "letterSpacing", `${v}em`)}
                 />
-
-                {/* Live mini-preview */}
-                <div className="pt-2 border-t border-border/50">
+                <div className="pt-4 border-t border-border">
                   <p
                     style={{
                       fontFamily: headingFont,
@@ -190,15 +154,14 @@ export function TypographyCustomizer({
       })}
 
       {/* Body */}
-      <div className="border border-border rounded-lg overflow-hidden">
+      <div className="border-b border-border">
         <button
-          onClick={() =>
-            setOpenSection(openSection === "body" ? null : "body")
-          }
-          className="w-full flex items-center justify-between px-4 py-3 hover:bg-accent-soft/30 transition-colors"
+          onClick={() => setExpanded(expanded === "body" ? null : "body")}
+          aria-expanded={expanded === "body"}
+          className="w-full flex items-center justify-between py-4 text-left hover:bg-surface/50 transition-colors px-2"
         >
-          <div className="flex items-center gap-3">
-            <span className="text-xs font-mono text-muted uppercase w-6">
+          <div className="flex items-center gap-6">
+            <span className="text-xs text-muted-foreground uppercase tracking-widest w-8">
               P
             </span>
             <span
@@ -212,55 +175,32 @@ export function TypographyCustomizer({
               Body text
             </span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-[10px] font-mono text-muted">
-              {scale.body.size} / {scale.body.lineHeight}
-            </span>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              className={`text-muted transition-transform duration-200 ${
-                openSection === "body" ? "rotate-180" : ""
-              }`}
-            >
-              <path d="M3 4.5l3 3 3-3" />
-            </svg>
-          </div>
+          <span className="text-xs font-mono text-muted-foreground">
+            {scale.body.size} / {scale.body.lineHeight}
+          </span>
         </button>
 
-        {openSection === "body" && (
-          <div className="px-4 pb-4 pt-2 space-y-3 border-t border-border">
+        {expanded === "body" && (
+          <div className="px-2 pb-6 pt-2 space-y-4 bg-surface/30">
             <SliderRow
               label="Size"
               value={parseFloat(scale.body.size)}
-              min={0.75}
-              max={1.5}
-              step={0.0625}
-              unit="rem"
+              min={0.75} max={1.5} step={0.0625} unit="rem"
               onChange={(v) => updateBody("size", `${v}rem`)}
             />
             <SliderRow
-              label="Line Height"
+              label="Leading"
               value={parseFloat(scale.body.lineHeight)}
-              min={1.2}
-              max={2.2}
-              step={0.05}
+              min={1.2} max={2.2} step={0.05}
               onChange={(v) => updateBody("lineHeight", v.toString())}
             />
             <SliderRow
               label="Weight"
               value={scale.body.weight}
-              min={300}
-              max={500}
-              step={100}
+              min={300} max={500} step={100}
               onChange={(v) => updateBody("weight", v)}
             />
-
-            <div className="pt-2 border-t border-border/50">
+            <div className="pt-4 border-t border-border">
               <p
                 style={{
                   fontFamily: bodyFont,
@@ -268,7 +208,7 @@ export function TypographyCustomizer({
                   fontWeight: scale.body.weight,
                   lineHeight: scale.body.lineHeight,
                 }}
-                className="text-muted"
+                className="text-muted-foreground"
               >
                 Typography exists to honor content. Good typography is
                 invisible; bad typography is everywhere.
@@ -277,25 +217,8 @@ export function TypographyCustomizer({
           </div>
         )}
       </div>
-
-      {isCustomized && (
-        <p className="text-[11px] font-mono text-accent">
-          Scale customized. Install command will include your changes.
-        </p>
-      )}
     </div>
   );
-}
-
-/* ── Slider Row ── */
-interface SliderRowProps {
-  label: string;
-  value: number;
-  min: number;
-  max: number;
-  step: number;
-  unit?: string;
-  onChange: (value: number) => void;
 }
 
 function SliderRow({
@@ -306,22 +229,29 @@ function SliderRow({
   step,
   unit = "",
   onChange,
-}: SliderRowProps) {
+}: {
+  label: string;
+  value: number;
+  min: number;
+  max: number;
+  step: number;
+  unit?: string;
+  onChange: (value: number) => void;
+}) {
   return (
-    <div className="flex items-center gap-3">
-      <span className="text-[11px] font-mono text-muted w-16 shrink-0">
+    <div className="flex items-center gap-4">
+      <span className="text-xs uppercase tracking-widest text-muted-foreground w-20 shrink-0">
         {label}
       </span>
-      <input
-        type="range"
+      <Slider
+        value={[value]}
+        onValueChange={([v]) => onChange(v)}
         min={min}
         max={max}
         step={step}
-        value={value}
-        onChange={(e) => onChange(Number(e.target.value))}
         className="flex-1"
       />
-      <span className="text-[11px] font-mono text-muted w-14 text-right tabular-nums">
+      <span className="text-xs font-mono text-muted-foreground w-20 text-right">
         {Number.isInteger(value) ? value : value.toFixed(step < 0.01 ? 3 : 2)}
         {unit}
       </span>

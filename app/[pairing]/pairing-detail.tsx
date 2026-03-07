@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import type { PairingData } from "@/lib/pairings";
+import type { PairingData, TypographyScale } from "@/lib/pairings";
 import { FontProvider } from "../components/font-provider";
 import { ThemeToggle } from "../components/theme-toggle";
 import { TypeTester } from "../components/type-tester";
@@ -11,7 +11,7 @@ import { InstallCommand } from "../components/install-command";
 import { SideBySide } from "../components/side-by-side";
 import { getAllPairings } from "@/lib/pairings";
 import { useState } from "react";
-import type { TypographyScale } from "@/lib/pairings";
+import { ArrowLeft } from "lucide-react";
 
 interface PairingDetailProps {
   pairing: PairingData;
@@ -20,7 +20,6 @@ interface PairingDetailProps {
 export function PairingDetail({ pairing }: PairingDetailProps) {
   const [isCustomized, setIsCustomized] = useState(false);
 
-  // Load fonts for all pairings (for side-by-side compare)
   const allPairings = getAllPairings();
   const allFontUrls = allPairings
     .map((p) => p.googleFontsUrl)
@@ -36,201 +35,218 @@ export function PairingDetail({ pairing }: PairingDetailProps) {
   };
 
   return (
-    <div className="min-h-screen">
-      {/* Font Provider */}
+    <div className="min-h-screen bg-background">
       {allFontUrls.map((url) => (
         <FontProvider key={url} fonts={[]} googleFontsUrl={url} />
       ))}
 
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-bg/80 backdrop-blur-md border-b border-border/50">
-        <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Link
-              href="/"
-              className="text-sm font-sans text-muted hover:text-text flex items-center gap-1.5"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 16 16"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              >
-                <path d="M10 3L5 8l5 5" />
-              </svg>
-              fonttrio
-            </Link>
-            <span className="text-muted/30">/</span>
-            <span className="text-sm font-mono">{pairing.name}</span>
-          </div>
+      {/* Navigation */}
+      <nav className="sticky top-0 z-50 bg-background border-b border-border">
+        <div className="px-6 lg:px-12 h-16 flex items-center justify-between">
+          <Link
+            href="/"
+            className="flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors"
+          >
+            <ArrowLeft className="size-4" aria-hidden="true" />
+            <span className="font-display text-lg tracking-wider">BACK</span>
+          </Link>
           <ThemeToggle />
         </div>
       </nav>
 
-      {/* Header */}
-      <header
-        className="max-w-5xl mx-auto px-6"
-        style={{
-          paddingTop: "clamp(3rem, 6vw, 6rem)",
-          paddingBottom: "clamp(2rem, 4vw, 4rem)",
-        }}
-      >
-        <div className="space-y-4">
-          <div className="flex items-center gap-2 flex-wrap">
-            {pairing.mood.map((m) => (
-              <span
-                key={m}
-                className="inline-flex px-2.5 py-0.5 rounded-full text-[11px] font-sans font-medium tracking-wide text-muted border border-border"
-              >
-                {m}
-              </span>
-            ))}
-          </div>
-
-          <h1
-            style={{
-              fontFamily: headingFont,
-              fontSize: "clamp(2.5rem, 6vw, 5rem)",
-              fontWeight: pairing.scale.h1.weight,
-              lineHeight: "1.05",
-              letterSpacing: pairing.scale.h1.letterSpacing,
-            }}
-          >
-            {pairing.name}
-          </h1>
-
-          <p
-            style={{
-              fontFamily: bodyFont,
-              fontSize: "clamp(1rem, 2vw, 1.25rem)",
-              lineHeight: "1.7",
-              fontWeight: pairing.scale.body.weight,
-            }}
-            className="text-muted max-w-2xl"
-          >
-            {pairing.description}
-          </p>
-
-          <div className="flex items-center gap-6 pt-2">
-            <div className="space-y-0.5">
-              <span className="block text-[10px] font-mono uppercase tracking-widest text-muted">
-                Heading
-              </span>
-              <span
-                className="block text-sm"
-                style={{ fontFamily: headingFont, fontWeight: 600 }}
-              >
-                {pairing.heading}
-              </span>
-            </div>
-            <div className="w-px h-8 bg-border" />
-            <div className="space-y-0.5">
-              <span className="block text-[10px] font-mono uppercase tracking-widest text-muted">
-                Body
-              </span>
-              <span
-                className="block text-sm"
-                style={{ fontFamily: bodyFont }}
-              >
-                {pairing.body}
-              </span>
-            </div>
-            <div className="w-px h-8 bg-border" />
-            <div className="space-y-0.5">
-              <span className="block text-[10px] font-mono uppercase tracking-widest text-muted">
-                Mono
-              </span>
-              <span
-                className="block text-sm"
-                style={{ fontFamily: monoFont }}
-              >
-                {pairing.mono}
-              </span>
+      {/* Hero Header */}
+      <header id="main-content" className="border-b border-border">
+        <div className="px-6 lg:px-12 py-12 lg:py-20">
+          <div className="max-w-[1600px] mx-auto">
+            <div className="grid grid-cols-12 gap-4">
+              {/* Section Label */}
+              <div className="col-span-12 lg:col-span-1">
+                <span className="text-xs text-muted-foreground uppercase tracking-widest">01</span>
+              </div>
+              
+              {/* Main Content */}
+              <div className="col-span-12 lg:col-span-11">
+                {/* Mood Tags */}
+                <div className="flex items-center gap-2 mb-6">
+                  {pairing.mood.map((m) => (
+                    <span
+                      key={m}
+                      className="text-xs uppercase tracking-wider px-2 py-1 border border-[#e30613] text-[#e30613]"
+                    >
+                      {m}
+                    </span>
+                  ))}
+                </div>
+                
+                {/* Giant Title */}
+                <h1
+                  style={{
+                    fontFamily: headingFont,
+                    fontWeight: pairing.scale.h1.weight,
+                    lineHeight: "0.9",
+                    letterSpacing: "-0.02em",
+                  }}
+                  className="text-[clamp(3rem,12vw,10rem)] uppercase"
+                >
+                  {pairing.name}
+                </h1>
+                
+                {/* Font Trio Display */}
+                <div className="grid grid-cols-12 gap-8 mt-12 pt-8 border-t border-border">
+                  <div className="col-span-12 lg:col-span-5">
+                    <p 
+                      className="text-lg leading-relaxed text-muted-foreground"
+                      style={{ fontFamily: bodyFont }}
+                    >
+                      {pairing.description}
+                    </p>
+                  </div>
+                  
+                  <div className="col-span-12 lg:col-span-6 lg:col-start-7">
+                    <div className="grid grid-cols-3 gap-4">
+                      <FontDisplay
+                        label="Heading"
+                        name={pairing.heading}
+                        font={headingFont}
+                      />
+                      <FontDisplay
+                        label="Body"
+                        name={pairing.body}
+                        font={bodyFont}
+                      />
+                      <FontDisplay
+                        label="Mono"
+                        name={pairing.mono}
+                        font={monoFont}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
       {/* Sections */}
-      <main className="max-w-5xl mx-auto px-6 space-y-0">
-        {/* Section 1: Type Tester */}
-        <section
-          className="border-t border-border"
-          style={{ paddingTop: "clamp(2rem, 4vw, 4rem)", paddingBottom: "clamp(2rem, 4vw, 4rem)" }}
-        >
-          <h2 className="text-xs font-mono uppercase tracking-[0.15em] text-muted mb-6">
-            Type Tester
-          </h2>
+      <main>
+        {/* Type Tester */}
+        <DetailSection number="02" label="Type Tester">
           <TypeTester pairing={pairing} />
-        </section>
+        </DetailSection>
 
-        {/* Section 2: Context Preview */}
-        <section
-          className="border-t border-border"
-          style={{ paddingTop: "clamp(2rem, 4vw, 4rem)", paddingBottom: "clamp(2rem, 4vw, 4rem)" }}
-        >
-          <h2 className="text-xs font-mono uppercase tracking-[0.15em] text-muted mb-6">
-            In Context
-          </h2>
+        {/* In Context */}
+        <DetailSection number="03" label="In Context">
           <ContextPreview pairing={pairing} />
-        </section>
+        </DetailSection>
 
-        {/* Section 3: Typography Customizer */}
-        <section
-          className="border-t border-border"
-          style={{ paddingTop: "clamp(2rem, 4vw, 4rem)", paddingBottom: "clamp(2rem, 4vw, 4rem)" }}
-        >
-          <h2 className="text-xs font-mono uppercase tracking-[0.15em] text-muted mb-6">
-            Customize Scale
-          </h2>
+        {/* Typography Scale */}
+        <DetailSection number="04" label="Typography Scale">
           <TypographyCustomizer
             pairing={pairing}
             onScaleChange={handleScaleChange}
           />
-        </section>
+        </DetailSection>
 
-        {/* Section 4: Install Command */}
-        <section
-          className="border-t border-border"
-          style={{ paddingTop: "clamp(2rem, 4vw, 4rem)", paddingBottom: "clamp(2rem, 4vw, 4rem)" }}
-        >
-          <h2 className="text-xs font-mono uppercase tracking-[0.15em] text-muted mb-6">
-            Install
-          </h2>
+        {/* Install */}
+        <DetailSection number="05" label="Install">
           <InstallCommand
             pairingName={pairing.name}
             isCustomized={isCustomized}
           />
-        </section>
+        </DetailSection>
 
-        {/* Section 5: Side by Side */}
-        <section
-          className="border-t border-border"
-          style={{ paddingTop: "clamp(2rem, 4vw, 4rem)", paddingBottom: "clamp(3rem, 6vw, 6rem)" }}
-        >
-          <h2 className="text-xs font-mono uppercase tracking-[0.15em] text-muted mb-6">
-            Compare
-          </h2>
+        {/* Compare */}
+        <DetailSection number="06" label="Compare" last>
           <SideBySide current={pairing} />
-        </section>
+        </DetailSection>
       </main>
 
       {/* Footer */}
       <footer className="border-t border-border">
-        <div className="max-w-5xl mx-auto px-6 py-8 flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-xs font-mono text-muted hover:text-text"
-          >
-            fonttrio
-          </Link>
-          <span className="text-xs font-mono text-muted">
-            {pairing.heading} + {pairing.body} + {pairing.mono}
-          </span>
+        <div className="px-6 lg:px-12 py-8">
+          <div className="max-w-[1600px] mx-auto">
+            <div className="grid grid-cols-12 gap-4">
+              <div className="col-span-12 lg:col-span-6">
+                <Link 
+                  href="/" 
+                  className="font-display text-xl tracking-wider hover:text-muted-foreground transition-colors"
+                >
+                  FONTTRIO
+                </Link>
+              </div>
+              <div className="col-span-12 lg:col-span-6 lg:text-right">
+                <p className="text-xs text-muted-foreground uppercase tracking-widest">
+                  {pairing.heading} / {pairing.body} / {pairing.mono}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
+  );
+}
+
+function FontDisplay({
+  label,
+  name,
+  font,
+}: {
+  label: string;
+  name: string;
+  font: string;
+}) {
+  return (
+    <div className="border-l-2 border-border pl-4">
+      <span className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
+        {label}
+      </span>
+      <span
+        className="block text-lg"
+        style={{ fontFamily: font, fontWeight: 500 }}
+      >
+        {name}
+      </span>
+    </div>
+  );
+}
+
+function DetailSection({
+  number,
+  label,
+  last,
+  children,
+}: {
+  number: string;
+  label: string;
+  last?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className={`border-b border-border ${last ? "" : ""}`}>
+      <div className="px-6 lg:px-12 py-12 lg:py-20">
+        <div className="max-w-[1600px] mx-auto">
+          <div className="grid grid-cols-12 gap-4">
+            {/* Section Number & Label */}
+            <div className="col-span-12 lg:col-span-3 mb-8 lg:mb-0">
+              <div className="lg:sticky lg:top-24">
+                <span className="block text-xs text-muted-foreground uppercase tracking-widest mb-2">
+                  {number}
+                </span>
+                <h2 className="font-display text-3xl lg:text-4xl tracking-wider">
+                  {label}
+                </h2>
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div className="col-span-12 lg:col-span-9">
+              {children}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

@@ -3,14 +3,21 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import type { PairingData } from "@/lib/pairings";
 import { getAllPairings } from "@/lib/pairings";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 interface SideBySideProps {
   current: PairingData;
 }
 
-const COMPARE_TEXT_HEADING = "Beautiful Typography";
-const COMPARE_TEXT_BODY =
-  "The quick brown fox jumps over the lazy dog. Typography is the craft of endowing human language with a durable visual form, and thus with an independent existence.";
+const COMPARE_HEADING = "Beautiful Typography";
+const COMPARE_BODY =
+  "The quick brown fox jumps over the lazy dog. Typography is the craft of endowing human language with a durable visual form.";
 const COMPARE_CODE = `const config = {\n  fonts: ["heading", "body", "mono"],\n  scale: "major-third",\n};`;
 
 export function SideBySide({ current }: SideBySideProps) {
@@ -49,30 +56,32 @@ export function SideBySide({ current }: SideBySideProps) {
   if (!compare) return null;
 
   return (
-    <div className="space-y-4">
-      {/* Dropdown */}
-      <div className="flex items-center gap-3">
-        <span className="text-sm font-sans text-muted">Compare with</span>
-        <select
-          value={compareName}
-          onChange={(e) => setCompareName(e.target.value)}
-          className="bg-transparent border border-border rounded-lg px-3 py-1.5 text-sm font-mono text-text focus:outline-none focus:border-accent"
-        >
-          {others.map((p) => (
-            <option key={p.name} value={p.name}>
-              {p.name}
-            </option>
-          ))}
-        </select>
+    <div className="space-y-6">
+      {/* Controls */}
+      <div className="flex items-center gap-4">
+        <span className="text-xs uppercase tracking-widest text-muted-foreground">Compare with</span>
+        <Select value={compareName} onValueChange={setCompareName}>
+          <SelectTrigger className="w-[200px] text-xs uppercase tracking-wider border-2 border-foreground rounded-none bg-transparent">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent className="rounded-none">
+            {others.map((p) => (
+              <SelectItem key={p.name} value={p.name} className="text-xs uppercase tracking-wider">
+                {p.name}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
       </div>
 
-      {/* Split View */}
+      {/* Comparison Container */}
       <div
         ref={containerRef}
-        className="relative border border-border rounded-lg overflow-hidden select-none"
-        style={{ minHeight: 320 }}
+        className="relative border-2 border-border overflow-hidden select-none"
+        style={{ minHeight: 380 }}
+        aria-live="polite"
+        aria-atomic="true"
       >
-        {/* Left */}
         <div
           className="absolute inset-y-0 left-0 overflow-hidden"
           style={{ width: `${split}%` }}
@@ -80,7 +89,6 @@ export function SideBySide({ current }: SideBySideProps) {
           <PaneContent pairing={current} />
         </div>
 
-        {/* Right */}
         <div
           className="absolute inset-y-0 right-0 overflow-hidden"
           style={{ width: `${100 - split}%` }}
@@ -88,37 +96,44 @@ export function SideBySide({ current }: SideBySideProps) {
           <PaneContent pairing={compare} />
         </div>
 
-        {/* Divider */}
+        {/* Drag Handle */}
         <div
+          role="slider"
+          aria-label="Comparison slider"
+          aria-valuenow={Math.round(split)}
+          aria-valuemin={15}
+          aria-valuemax={85}
+          aria-valuetext={`${Math.round(split)}% ${current.name}, ${Math.round(100 - split)}% ${compare?.name ?? ""}`}
+          tabIndex={0}
           onMouseDown={onMouseDown}
+          onKeyDown={(e) => {
+            if (e.key === "ArrowLeft") setSplit((s) => Math.max(15, s - 2));
+            if (e.key === "ArrowRight") setSplit((s) => Math.min(85, s + 2));
+          }}
           className="drag-handle absolute inset-y-0 z-10 flex items-center justify-center"
-          style={{ left: `${split}%`, width: 20, marginLeft: -10 }}
+          style={{ left: `${split}%`, width: 24, marginLeft: -12 }}
         >
-          <div className="w-px h-full bg-border" />
-          <div className="absolute w-6 h-8 rounded bg-bg border border-border flex items-center justify-center">
+          <div className="w-0.5 h-full bg-border" />
+          <div className="absolute w-6 h-12 bg-background border-2 border-foreground flex items-center justify-center">
             <svg
               width="8"
-              height="14"
-              viewBox="0 0 8 14"
+              height="16"
+              viewBox="0 0 6 14"
               fill="none"
               stroke="currentColor"
-              strokeWidth="1.5"
-              className="text-muted"
+              strokeWidth="2"
+              className="text-foreground"
             >
-              <path d="M2 1v12M6 1v12" />
+              <path d="M1 1v12M5 1v12" />
             </svg>
           </div>
         </div>
 
         {/* Labels */}
-        <div
-          className="absolute top-3 left-3 px-2 py-0.5 rounded bg-bg/80 backdrop-blur-sm text-[10px] font-mono text-muted border border-border"
-        >
+        <div className="absolute top-4 left-4 px-3 py-1.5 bg-background border-2 border-foreground text-xs uppercase tracking-wider">
           {current.name}
         </div>
-        <div
-          className="absolute top-3 right-3 px-2 py-0.5 rounded bg-bg/80 backdrop-blur-sm text-[10px] font-mono text-muted border border-border"
-        >
+        <div className="absolute top-4 right-4 px-3 py-1.5 bg-background border-2 border-foreground text-xs uppercase tracking-wider">
           {compare.name}
         </div>
       </div>
@@ -133,7 +148,7 @@ function PaneContent({ pairing }: { pairing: PairingData }) {
   const scale = pairing.scale;
 
   return (
-    <div className="p-6 space-y-4 min-w-[280px]">
+    <div className="p-8 lg:p-10 space-y-5 min-w-[300px]">
       <h2
         style={{
           fontFamily: headingFont,
@@ -143,7 +158,7 @@ function PaneContent({ pairing }: { pairing: PairingData }) {
           letterSpacing: scale.h2.letterSpacing,
         }}
       >
-        {COMPARE_TEXT_HEADING}
+        {COMPARE_HEADING}
       </h2>
       <p
         style={{
@@ -152,19 +167,15 @@ function PaneContent({ pairing }: { pairing: PairingData }) {
           lineHeight: scale.body.lineHeight,
           fontWeight: scale.body.weight,
         }}
-        className="text-muted"
+        className="text-muted-foreground"
       >
-        {COMPARE_TEXT_BODY}
+        {COMPARE_BODY}
       </p>
       <pre
-        className="px-3 py-2 rounded bg-accent-soft/40 border border-border overflow-x-auto"
-        style={{
-          fontFamily: monoFont,
-          fontSize: "0.75rem",
-          lineHeight: "1.5",
-        }}
+        className="px-4 py-3 border border-border overflow-x-auto bg-surface"
+        style={{ fontFamily: monoFont, fontSize: "0.75rem", lineHeight: "1.55" }}
       >
-        <code className="text-muted">{COMPARE_CODE}</code>
+        <code className="text-muted-foreground">{COMPARE_CODE}</code>
       </pre>
     </div>
   );
