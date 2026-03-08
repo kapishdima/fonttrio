@@ -1,74 +1,42 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { PairingData } from "@/lib/pairings";
+import { useScrambleAnimation } from "@/lib/hooks/use-scramble-animation";
 
 interface FontSwitcherProps {
   pairings: PairingData[];
   onIndexChange?: (index: number) => void;
 }
 
-const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-const DISPLAY_TEXT = "Three fonts";
-
 export function FontSwitcher({ pairings, onIndexChange }: FontSwitcherProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [displayText, setDisplayText] = useState(DISPLAY_TEXT);
-  const [isScrambling, setIsScrambling] = useState(false);
   const [isFading, setIsFading] = useState(false);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const scrambleText = useCallback(() => {
-    setIsScrambling(true);
-    let iteration = 0;
-
-    if (intervalRef.current) clearInterval(intervalRef.current);
-
-    intervalRef.current = setInterval(() => {
-      setDisplayText(
-        DISPLAY_TEXT
-          .split("")
-          .map((char, index) => {
-            if (char === " ") return " ";
-            if (index < iteration) return DISPLAY_TEXT[index];
-            return CHARS[Math.floor(Math.random() * CHARS.length)];
-          })
-          .join("")
-      );
-
-      iteration += 0.5;
-
-      if (iteration >= DISPLAY_TEXT.length + 8) {
-        if (intervalRef.current) clearInterval(intervalRef.current);
-        setDisplayText(DISPLAY_TEXT);
-        setIsScrambling(false);
-      }
-    }, 30);
-  }, []);
+  const { displayText, scramble, cleanup } = useScrambleAnimation({
+    text: "Three fonts",
+    speed: 30,
+    iterationStep: 0.5,
+    overshoot: 8,
+  });
 
   useEffect(() => {
     const timer = setInterval(() => {
-      // Start fade out
       setIsFading(true);
-      
-      // Wait for fade out, then switch font and fade in
+
       setTimeout(() => {
-        setCurrentIndex((prev) => {
-          const next = (prev + 1) % pairings.length;
-          return next;
-        });
-        scrambleText();
+        setCurrentIndex((prev) => (prev + 1) % pairings.length);
+        scramble();
         setIsFading(false);
       }, 200);
     }, 4000);
 
     return () => {
       clearInterval(timer);
-      if (intervalRef.current) clearInterval(intervalRef.current);
+      cleanup();
     };
-  }, [pairings.length, scrambleText]);
+  }, [pairings.length, scramble, cleanup]);
 
-  // Notify parent about index change
   useEffect(() => {
     onIndexChange?.(currentIndex);
   }, [currentIndex, onIndexChange]);
@@ -100,54 +68,27 @@ interface AnimatedSubtitleProps {
 }
 
 export function AnimatedSubtitle({ pairings, currentIndex, text }: AnimatedSubtitleProps) {
-  const [displayText, setDisplayText] = useState(text);
-  const [isScrambling, setIsScrambling] = useState(false);
   const [isFading, setIsFading] = useState(false);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const prevIndexRef = useRef(currentIndex);
 
-  const scrambleText = useCallback(() => {
-    setIsScrambling(true);
-    let iteration = 0;
-
-    if (intervalRef.current) clearInterval(intervalRef.current);
-
-    intervalRef.current = setInterval(() => {
-      setDisplayText(
-        text
-          .split("")
-          .map((char, index) => {
-            if (char === " ") return " ";
-            if (index < iteration) return text[index];
-            return CHARS[Math.floor(Math.random() * CHARS.length)];
-          })
-          .join("")
-      );
-
-      iteration += 3;
-
-      if (iteration >= text.length + 3) {
-        if (intervalRef.current) clearInterval(intervalRef.current);
-        setDisplayText(text);
-        setIsScrambling(false);
-      }
-    }, 5);
-  }, [text]);
+  const { displayText, scramble } = useScrambleAnimation({
+    text,
+    speed: 5,
+    iterationStep: 3,
+    overshoot: 3,
+  });
 
   useEffect(() => {
     if (prevIndexRef.current !== currentIndex) {
       prevIndexRef.current = currentIndex;
-      
-      // Start fade out
       setIsFading(true);
-      
-      // Wait for fade out, then scramble and fade in
+
       setTimeout(() => {
-        scrambleText();
+        scramble();
         setIsFading(false);
       }, 200);
     }
-  }, [currentIndex, scrambleText]);
+  }, [currentIndex, scramble]);
 
   const currentPairing = pairings[currentIndex];
   const fontFamily = `"${currentPairing.body}", ${currentPairing.bodyCategory}`;

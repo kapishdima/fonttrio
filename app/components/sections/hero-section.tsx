@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import type { PairingData } from "@/lib/pairings";
 import { usePairingFonts } from "@/lib/hooks/use-pairing-fonts";
 import { GridBackground } from "../grid-background";
 import { MetricLines } from "../metric-lines";
 import { InstallCommand } from "../install-command";
+
 import { SectionLabel } from "../section-label";
 import { AnimatedLayout } from "../animated-layout";
 
@@ -22,20 +23,20 @@ const METRIC_LINES = [
 
 export function HeroSection({ pairing }: HeroSectionProps) {
   const { heading, body, mono, getHeadingStyle } = usePairingFonts(pairing);
-  const [scrollY, setScrollY] = useState(0);
+  const parallaxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      const el = parallaxRef.current;
+      if (!el) return;
+      const y = window.scrollY;
+      el.style.transform = `translateY(${-y * 0.6}px)`;
+      el.style.opacity = `${Math.max(0, 1 - y / 250)}`;
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Parallax effect - title moves faster than scroll
-  const parallaxOffset = scrollY * 0.6;
-  const titleOpacity = Math.max(0, 1 - scrollY / 250);
 
   return (
     <header id="main-content" className="pt-24 sm:pt-[100px] lg:pt-[120px] relative min-h-[70vh] sm:min-h-[80vh] lg:min-h-screen flex flex-col">
@@ -52,12 +53,9 @@ export function HeroSection({ pairing }: HeroSectionProps) {
               </div>
 
               {/* Text — above lines with parallax */}
-              <div 
+              <div
+                ref={parallaxRef}
                 className="h-full flex items-center relative z-10 overflow-hidden"
-                style={{
-                  transform: `translateY(${-parallaxOffset}px)`,
-                  opacity: titleOpacity,
-                }}
               >
                 <h1
                   style={{
@@ -120,7 +118,7 @@ export function HeroSection({ pairing }: HeroSectionProps) {
             {/* Install Command */}
             <AnimatedLayout delay={200}>
               <div className="mt-6 sm:mt-10 lg:mt-16 max-w-full sm:max-w-2xl">
-                <InstallCommand pairingName={pairing.name} showPackageManagerSelector showFeatures={false} />
+                <InstallCommand.Full pairingName={pairing.name} />
               </div>
             </AnimatedLayout>
           </div>

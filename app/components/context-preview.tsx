@@ -53,6 +53,15 @@ interface PreviewProps {
   scale: PairingData["scale"];
 }
 
+const LANDING_FEATURES = [
+  { title: "Type Scale", desc: "Consistent hierarchy from h1 to body text." },
+  { title: "Three Fonts", desc: "Heading, body, and mono — perfectly matched." },
+  { title: "One Command", desc: "Install with shadcn CLI. No config needed." },
+];
+
+const DOCS_NAV_ITEMS = ["Installation", "Configuration", "Typography", "Theming"];
+const DOCS_API_ITEMS = ["Components", "Hooks", "Utilities"];
+
 function BlogPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
   return (
     <div className="px-8 lg:px-16 py-12 lg:py-16 max-w-3xl mx-auto space-y-8">
@@ -194,11 +203,7 @@ function LandingPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {[
-          { title: "Type Scale", desc: "Consistent hierarchy from h1 to body text." },
-          { title: "Three Fonts", desc: "Heading, body, and mono — perfectly matched." },
-          { title: "One Command", desc: "Install with shadcn CLI. No config needed." },
-        ].map((f) => (
+        {LANDING_FEATURES.map((f) => (
           <div key={f.title} className="p-6 border border-border rounded-lg space-y-3">
             <h3
               style={{
@@ -234,7 +239,7 @@ function DocsPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
           Getting Started
         </span>
         <nav className="space-y-1">
-          {["Installation", "Configuration", "Typography", "Theming"].map((item, i) => (
+          {DOCS_NAV_ITEMS.map((item, i) => (
             <a
               key={item}
               href="#"
@@ -257,7 +262,7 @@ function DocsPreview({ headingFont, bodyFont, monoFont, scale }: PreviewProps) {
           API
         </span>
         <nav className="space-y-1">
-          {["Components", "Hooks", "Utilities"].map((item) => (
+          {DOCS_API_ITEMS.map((item) => (
             <a
               key={item}
               href="#"

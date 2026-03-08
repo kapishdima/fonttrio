@@ -11,6 +11,8 @@ interface TypographyCustomizerProps {
 
 type HeadingLevel = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
+const HEADING_LEVELS: HeadingLevel[] = ["h1", "h2", "h3", "h4", "h5", "h6"];
+
 export function TypographyCustomizer({
   pairing,
   onScaleChange,
@@ -56,8 +58,6 @@ export function TypographyCustomizer({
   const headingFont = `"${pairing.heading}", ${pairing.headingCategory}`;
   const bodyFont = `"${pairing.body}", ${pairing.bodyCategory}`;
 
-  const headingLevels: HeadingLevel[] = ["h1", "h2", "h3", "h4", "h5", "h6"];
-
   return (
     <div>
       {isCustomized && (
@@ -73,141 +73,181 @@ export function TypographyCustomizer({
       )}
 
       <div className="border border-border rounded-lg overflow-hidden">
-        {headingLevels.map((level, i) => {
-          const data = scale[level];
-          const isOpen = expanded === level;
-          return (
-            <div key={level} className={i > 0 ? "border-t border-border" : ""}>
-              <button
-                onClick={() => setExpanded(isOpen ? null : level)}
-                aria-expanded={isOpen}
-                className="w-full flex items-center justify-between py-4 px-5 text-left hover:bg-muted/50 transition-[background-color]"
-              >
-                <div className="flex items-center gap-5">
-                  <span className="text-xs text-muted-foreground font-mono w-6">
-                    {level}
-                  </span>
-                  <span
-                    style={{
-                      fontFamily: headingFont,
-                      fontSize: `min(${data.size}, 1.5rem)`,
-                      fontWeight: data.weight,
-                      lineHeight: "1.2",
-                      letterSpacing: data.letterSpacing,
-                    }}
-                  >
-                    Heading {level.slice(1)}
-                  </span>
-                </div>
-                <span className="text-xs text-muted-foreground font-mono tabular-nums">
-                  {data.size} / {data.weight}
-                </span>
-              </button>
+        {HEADING_LEVELS.map((level, i) => (
+          <HeadingRow
+            key={level}
+            level={level}
+            data={scale[level]}
+            font={headingFont}
+            isFirst={i === 0}
+            isOpen={expanded === level}
+            onToggle={() => setExpanded(expanded === level ? null : level)}
+            onChange={(field, value) => updateHeading(level, field, value)}
+          />
+        ))}
 
-              {isOpen && (
-                <div className="px-5 pb-5 pt-1 space-y-4 bg-muted/30">
-                  <SliderRow
-                    label="Size" value={parseFloat(data.size)}
-                    min={0.75} max={6} step={0.125} unit="rem"
-                    onChange={(v) => updateHeading(level, "size", `${v}rem`)}
-                  />
-                  <SliderRow
-                    label="Weight" value={data.weight}
-                    min={100} max={900} step={100}
-                    onChange={(v) => updateHeading(level, "weight", v)}
-                  />
-                  <SliderRow
-                    label="Leading" value={parseFloat(data.lineHeight)}
-                    min={0.8} max={2} step={0.05}
-                    onChange={(v) => updateHeading(level, "lineHeight", v.toString())}
-                  />
-                  <SliderRow
-                    label="Tracking" value={parseFloat(data.letterSpacing)}
-                    min={-0.05} max={0.1} step={0.005} unit="em"
-                    onChange={(v) => updateHeading(level, "letterSpacing", `${v}em`)}
-                  />
-                  <div className="pt-4 border-t border-border">
-                    <p
-                      style={{
-                        fontFamily: headingFont,
-                        fontSize: data.size,
-                        fontWeight: data.weight,
-                        lineHeight: data.lineHeight,
-                        letterSpacing: data.letterSpacing,
-                      }}
-                      className="truncate"
-                    >
-                      The quick brown fox
-                    </p>
-                  </div>
-                </div>
-              )}
-            </div>
-          );
-        })}
-
-        {/* Body */}
-        <div className="border-t border-border">
-          <button
-            onClick={() => setExpanded(expanded === "body" ? null : "body")}
-            aria-expanded={expanded === "body"}
-            className="w-full flex items-center justify-between py-4 px-5 text-left hover:bg-muted/50 transition-[background-color]"
-          >
-            <div className="flex items-center gap-5">
-              <span className="text-xs text-muted-foreground font-mono w-6">
-                p
-              </span>
-              <span
-                style={{
-                  fontFamily: bodyFont,
-                  fontSize: scale.body.size,
-                  fontWeight: scale.body.weight,
-                  lineHeight: "1.4",
-                }}
-              >
-                Body text
-              </span>
-            </div>
-            <span className="text-xs text-muted-foreground font-mono tabular-nums">
-              {scale.body.size} / {scale.body.lineHeight}
-            </span>
-          </button>
-
-          {expanded === "body" && (
-            <div className="px-5 pb-5 pt-1 space-y-4 bg-muted/30">
-              <SliderRow
-                label="Size" value={parseFloat(scale.body.size)}
-                min={0.75} max={1.5} step={0.0625} unit="rem"
-                onChange={(v) => updateBody("size", `${v}rem`)}
-              />
-              <SliderRow
-                label="Leading" value={parseFloat(scale.body.lineHeight)}
-                min={1.2} max={2.2} step={0.05}
-                onChange={(v) => updateBody("lineHeight", v.toString())}
-              />
-              <SliderRow
-                label="Weight" value={scale.body.weight}
-                min={300} max={500} step={100}
-                onChange={(v) => updateBody("weight", v)}
-              />
-              <div className="pt-4 border-t border-border">
-                <p
-                  style={{
-                    fontFamily: bodyFont,
-                    fontSize: scale.body.size,
-                    fontWeight: scale.body.weight,
-                    lineHeight: scale.body.lineHeight,
-                  }}
-                  className="text-muted-foreground"
-                >
-                  Typography exists to honor content. Good typography is
-                  invisible; bad typography is everywhere.
-                </p>
-              </div>
-            </div>
-          )}
-        </div>
+        <BodyRow
+          data={scale.body}
+          font={bodyFont}
+          isOpen={expanded === "body"}
+          onToggle={() => setExpanded(expanded === "body" ? null : "body")}
+          onChange={updateBody}
+        />
       </div>
+    </div>
+  );
+}
+
+interface HeadingRowProps {
+  level: HeadingLevel;
+  data: TypographyScale[HeadingLevel];
+  font: string;
+  isFirst: boolean;
+  isOpen: boolean;
+  onToggle: () => void;
+  onChange: (field: "size" | "weight" | "lineHeight" | "letterSpacing", value: string | number) => void;
+}
+
+function HeadingRow({ level, data, font, isFirst, isOpen, onToggle, onChange }: HeadingRowProps) {
+  return (
+    <div className={isFirst ? "" : "border-t border-border"}>
+      <button
+        onClick={onToggle}
+        aria-expanded={isOpen}
+        className="w-full flex items-center justify-between py-4 px-5 text-left hover:bg-muted/50 transition-[background-color]"
+      >
+        <div className="flex items-center gap-5">
+          <span className="text-xs text-muted-foreground font-mono w-6">
+            {level}
+          </span>
+          <span
+            style={{
+              fontFamily: font,
+              fontSize: `min(${data.size}, 1.5rem)`,
+              fontWeight: data.weight,
+              lineHeight: "1.2",
+              letterSpacing: data.letterSpacing,
+            }}
+          >
+            Heading {level.slice(1)}
+          </span>
+        </div>
+        <span className="text-xs text-muted-foreground font-mono tabular-nums">
+          {data.size} / {data.weight}
+        </span>
+      </button>
+
+      {isOpen && (
+        <div className="px-5 pb-5 pt-1 space-y-4 bg-muted/30">
+          <SliderRow
+            label="Size" value={parseFloat(data.size)}
+            min={0.75} max={6} step={0.125} unit="rem"
+            onChange={(v) => onChange("size", `${v}rem`)}
+          />
+          <SliderRow
+            label="Weight" value={data.weight}
+            min={100} max={900} step={100}
+            onChange={(v) => onChange("weight", v)}
+          />
+          <SliderRow
+            label="Leading" value={parseFloat(data.lineHeight)}
+            min={0.8} max={2} step={0.05}
+            onChange={(v) => onChange("lineHeight", v.toString())}
+          />
+          <SliderRow
+            label="Tracking" value={parseFloat(data.letterSpacing)}
+            min={-0.05} max={0.1} step={0.005} unit="em"
+            onChange={(v) => onChange("letterSpacing", `${v}em`)}
+          />
+          <div className="pt-4 border-t border-border">
+            <p
+              style={{
+                fontFamily: font,
+                fontSize: data.size,
+                fontWeight: data.weight,
+                lineHeight: data.lineHeight,
+                letterSpacing: data.letterSpacing,
+              }}
+              className="truncate"
+            >
+              The quick brown fox
+            </p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+interface BodyRowProps {
+  data: TypographyScale["body"];
+  font: string;
+  isOpen: boolean;
+  onToggle: () => void;
+  onChange: (field: "size" | "lineHeight" | "weight", value: string | number) => void;
+}
+
+function BodyRow({ data, font, isOpen, onToggle, onChange }: BodyRowProps) {
+  return (
+    <div className="border-t border-border">
+      <button
+        onClick={onToggle}
+        aria-expanded={isOpen}
+        className="w-full flex items-center justify-between py-4 px-5 text-left hover:bg-muted/50 transition-[background-color]"
+      >
+        <div className="flex items-center gap-5">
+          <span className="text-xs text-muted-foreground font-mono w-6">
+            p
+          </span>
+          <span
+            style={{
+              fontFamily: font,
+              fontSize: data.size,
+              fontWeight: data.weight,
+              lineHeight: "1.4",
+            }}
+          >
+            Body text
+          </span>
+        </div>
+        <span className="text-xs text-muted-foreground font-mono tabular-nums">
+          {data.size} / {data.lineHeight}
+        </span>
+      </button>
+
+      {isOpen && (
+        <div className="px-5 pb-5 pt-1 space-y-4 bg-muted/30">
+          <SliderRow
+            label="Size" value={parseFloat(data.size)}
+            min={0.75} max={1.5} step={0.0625} unit="rem"
+            onChange={(v) => onChange("size", `${v}rem`)}
+          />
+          <SliderRow
+            label="Leading" value={parseFloat(data.lineHeight)}
+            min={1.2} max={2.2} step={0.05}
+            onChange={(v) => onChange("lineHeight", v.toString())}
+          />
+          <SliderRow
+            label="Weight" value={data.weight}
+            min={300} max={500} step={100}
+            onChange={(v) => onChange("weight", v)}
+          />
+          <div className="pt-4 border-t border-border">
+            <p
+              style={{
+                fontFamily: font,
+                fontSize: data.size,
+                fontWeight: data.weight,
+                lineHeight: data.lineHeight,
+              }}
+              className="text-muted-foreground"
+            >
+              Typography exists to honor content. Good typography is
+              invisible; bad typography is everywhere.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

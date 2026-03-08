@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { PairingData } from "@/lib/pairings";
 import { ArrowLeft } from "lucide-react";
@@ -15,9 +15,11 @@ export function StickyDetailHeader({ pairing }: StickyDetailHeaderProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show sticky header after scrolling past 100px
-      const scrollY = window.scrollY;
-      setIsVisible(scrollY > 100);
+      const visible = window.scrollY > 100;
+      setIsVisible((prev) => {
+        if (prev === visible) return prev;
+        return visible;
+      });
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -35,11 +37,13 @@ export function StickyDetailHeader({ pairing }: StickyDetailHeaderProps) {
           <span className="hidden sm:inline">Back to pairings</span>
         </Link>
 
-        {/* Title with parallax animation */}
+        {/* Title with slide animation */}
         <div className="overflow-hidden ml-4 flex-1">
           <h2
             className={`text-xl tracking-tight transition-all duration-300 ease-out ${
-              isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+              isVisible
+                ? "translate-y-0 opacity-100"
+                : "-translate-y-full opacity-0"
             }`}
             style={{
               fontFamily: headingFont,

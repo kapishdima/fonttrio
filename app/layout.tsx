@@ -3,8 +3,9 @@ import { Bebas_Neue, Heebo } from "next/font/google";
 import "./globals.css";
 import { AllFontsLoader } from "./components/all-fonts-loader";
 import { ThemeProvider } from "./components/theme-provider";
+import { PackageManagerProvider } from "@/lib/contexts/package-manager-context";
 
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 
 const bebasNeue = Bebas_Neue({
@@ -48,13 +49,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:border focus:border-border"
-          >
-            Skip to main content
-          </a>
-          {children}
+          <PackageManagerProvider>
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:border focus:border-border"
+            >
+              Skip to main content
+            </a>
+            {children}
+          </PackageManagerProvider>
         </ThemeProvider>
         <Analytics/>
       </body>

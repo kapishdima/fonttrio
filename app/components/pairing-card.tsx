@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { PairingData } from "@/lib/pairings";
 import { ArrowRight, Check, Copy } from "lucide-react";
 import { useCopyToClipboard } from "@/lib/hooks/use-copy-to-clipboard";
-import { usePackageManager } from "@/lib/hooks/use-package-manager";
+import { usePackageManagerContext } from "@/lib/contexts/package-manager-context";
 import { buildInstallCommand } from "@/lib/package-managers";
 import { SectionLabel } from "./section-label";
 
@@ -16,7 +16,7 @@ export function PairingCard({ pairing }: PairingCardProps) {
   const headingFont = `"${pairing.heading}", ${pairing.headingCategory}`;
   const bodyFont = `"${pairing.body}", ${pairing.bodyCategory}`;
   const monoFont = `"${pairing.mono}", monospace`;
-  const { packageManager } = usePackageManager();
+  const { packageManager } = usePackageManagerContext();
   const command = buildInstallCommand(pairing.name, packageManager);
   const { copied, copy } = useCopyToClipboard(command);
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { Check, Copy } from "lucide-react";
-import { usePackageManager } from "@/lib/hooks/use-package-manager";
+import { usePackageManagerContext } from "@/lib/contexts/package-manager-context";
 import { useCopyToClipboard } from "@/lib/hooks/use-copy-to-clipboard";
 import { buildInstallCommand } from "@/lib/package-managers";
 
@@ -10,7 +10,7 @@ interface CopyCommandProps {
 }
 
 export function CopyCommand({ pairingName }: CopyCommandProps) {
-  const { packageManager } = usePackageManager();
+  const { packageManager } = usePackageManagerContext();
   const command = buildInstallCommand(pairingName, packageManager);
   const { copied, copy } = useCopyToClipboard(command);
 

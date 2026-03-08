@@ -34,6 +34,11 @@ export function SideBySide({ current }: SideBySideProps) {
     dragging.current = true;
   }, []);
 
+  const onKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === "ArrowLeft") setSplit((s) => Math.max(15, s - 2));
+    if (e.key === "ArrowRight") setSplit((s) => Math.min(85, s + 2));
+  }, []);
+
   useEffect(() => {
     const onMouseMove = (e: MouseEvent) => {
       if (!dragging.current || !containerRef.current) return;
@@ -45,8 +50,8 @@ export function SideBySide({ current }: SideBySideProps) {
     const onMouseUp = () => {
       dragging.current = false;
     };
-    window.addEventListener("mousemove", onMouseMove);
-    window.addEventListener("mouseup", onMouseUp);
+    window.addEventListener("mousemove", onMouseMove, { passive: true });
+    window.addEventListener("mouseup", onMouseUp, { passive: true });
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("mouseup", onMouseUp);
@@ -106,10 +111,7 @@ export function SideBySide({ current }: SideBySideProps) {
           aria-valuetext={`${Math.round(split)}% ${current.name}, ${Math.round(100 - split)}% ${compare?.name ?? ""}`}
           tabIndex={0}
           onMouseDown={onMouseDown}
-          onKeyDown={(e) => {
-            if (e.key === "ArrowLeft") setSplit((s) => Math.max(15, s - 2));
-            if (e.key === "ArrowRight") setSplit((s) => Math.min(85, s + 2));
-          }}
+          onKeyDown={onKeyDown}
           className="drag-handle absolute inset-y-0 z-10 flex items-center justify-center"
           style={{ left: `${split}%`, width: 24, marginLeft: -12 }}
         >

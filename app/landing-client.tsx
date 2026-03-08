@@ -6,6 +6,7 @@ import { usePairingFilters } from "@/lib/hooks/use-pairing-filters";
 import { FontSwitcher, AnimatedSubtitle } from "./components/font-switcher";
 import { AnimatedLayout } from "./components/animated-layout";
 import { InstallCommand } from "./components/install-command";
+
 import { SiteHeader } from "./components/site-header";
 import { SiteFooter } from "./components/site-footer";
 import { GridBackground } from "./components/grid-background";
@@ -83,7 +84,9 @@ export function LandingClient({
             </div>
 
             <div className="mt-8 sm:mt-16 lg:mt-24 ml-0 sm:ml-5 max-w-full sm:max-w-2xl">
-              <InstallCommand pairingName={featured.name} showPackageManagerSelector showFeatures />
+              <InstallCommand.Full pairingName={featured.name}>
+                <InstallCommand.Features />
+              </InstallCommand.Full>
             </div>
 
           </AnimatedLayout>

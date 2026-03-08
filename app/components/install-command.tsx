@@ -2,30 +2,57 @@
 
 import { useState, useCallback } from "react";
 import { Check, Copy, ChevronDown } from "lucide-react";
-import { usePackageManager } from "@/lib/hooks/use-package-manager";
+import { usePackageManagerContext } from "@/lib/contexts/package-manager-context";
 import { buildInstallCommand, type PackageManager } from "@/lib/package-managers";
 
-interface InstallCommandProps {
+interface InstallCommandBaseProps {
   pairingName: string;
-  isCustomized?: boolean;
-  compact?: boolean;
-  showPackageManagerSelector?: boolean;
-  showFeatures?: boolean;
 }
 
-export function InstallCommand({
+export function InstallCommandCompact({ pairingName }: InstallCommandBaseProps) {
+  const { packageManager } = usePackageManagerContext();
+  const [copied, setCopied] = useState(false);
+
+  const command = buildInstallCommand(pairingName, packageManager);
+  const displayCommand = `shadcn add ${pairingName}`;
+
+  const copy = useCallback(() => {
+    navigator.clipboard.writeText(command);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }, [command]);
+
+  return (
+    <button
+      onClick={copy}
+      className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-[color] font-mono"
+      aria-label="Copy install command"
+    >
+      <span className="truncate max-w-70">{displayCommand}</span>
+      {copied ? (
+        <Check className="size-3.5" aria-hidden="true" />
+      ) : (
+        <Copy className="size-3.5" aria-hidden="true" />
+      )}
+    </button>
+  );
+}
+
+interface InstallCommandFullProps extends InstallCommandBaseProps {
+  isCustomized?: boolean;
+  children?: React.ReactNode;
+}
+
+export function InstallCommandFull({
   pairingName,
   isCustomized = false,
-  compact = false,
-  showPackageManagerSelector = true,
-  showFeatures = true,
-}: InstallCommandProps) {
-  const { packageManager, setPackageManager, packageManagers } = usePackageManager();
+  children,
+}: InstallCommandFullProps) {
+  const { packageManager, setPackageManager, packageManagers } = usePackageManagerContext();
   const [copied, setCopied] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const command = buildInstallCommand(pairingName, packageManager);
-  const displayCommand = `shadcn add ${pairingName}`;
 
   const copy = useCallback(() => {
     navigator.clipboard.writeText(command);
@@ -38,23 +65,6 @@ export function InstallCommand({
     setIsOpen(false);
   };
 
-  if (compact) {
-    return (
-      <button
-        onClick={copy}
-        className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-[color] font-mono"
-        aria-label="Copy install command"
-      >
-        <span className="truncate max-w-70">{displayCommand}</span>
-        {copied ? (
-          <Check className="size-3.5" aria-hidden="true" />
-        ) : (
-          <Copy className="size-3.5" aria-hidden="true" />
-        )}
-      </button>
-    );
-  }
-
   return (
     <div className="space-y-5">
       {isCustomized && (
@@ -63,71 +73,54 @@ export function InstallCommand({
         </p>
       )}
 
-      {showFeatures && (
-        <div className="grid grid-cols-3 gap-2 text-sm text-muted-foreground pb-4 border-b border-border">
-          <div>
-            <p className="text-foreground font-medium">3 Fonts</p>
-            <p className="text-xs mt-1">Heading, body, mono</p>
-          </div>
-          <div>
-            <p className="text-foreground font-medium">Typography Scale</p>
-            <p className="text-xs mt-1">h1 through body</p>
-          </div>
-          <div>
-            <p className="text-foreground font-medium">CSS Variables</p>
-            <p className="text-xs mt-1">Ready to use</p>
-          </div>
-        </div>
-      )}
+      {children}
 
-      {showPackageManagerSelector && (
-        <div className="flex items-center gap-2">
-          <span className="text-xs text-muted-foreground uppercase tracking-wider">
-            Package Manager
-          </span>
-          <div className="relative">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center gap-1 px-2 py-1 text-xs uppercase tracking-wider border border-border bg-surface hover:bg-surface-hover transition-colors"
-              aria-haspopup="listbox"
-              aria-expanded={isOpen}
-            >
-              {packageManager}
-              <ChevronDown className="size-3" />
-            </button>
+      <div className="flex items-center gap-2">
+        <span className="text-xs text-muted-foreground uppercase tracking-wider">
+          Package Manager
+        </span>
+        <div className="relative">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="flex items-center gap-1 px-2 py-1 text-xs uppercase tracking-wider border border-border bg-surface hover:bg-surface-hover transition-colors"
+            aria-haspopup="listbox"
+            aria-expanded={isOpen}
+          >
+            {packageManager}
+            <ChevronDown className="size-3" />
+          </button>
 
-            {isOpen && (
-              <>
-                <div
-                  className="fixed inset-0 z-40"
-                  onClick={() => setIsOpen(false)}
-                />
-                <ul
-                  className="absolute top-full left-0 mt-1 z-50 min-w-[100px] bg-background border border-border shadow-lg"
-                  role="listbox"
-                >
-                  {packageManagers.map((pm) => (
-                    <li key={pm.key}>
-                      <button
-                        onClick={() => handleSelect(pm.key)}
-                        className={`w-full px-3 py-2 text-xs uppercase tracking-wider text-left hover:bg-surface transition-colors ${
-                          packageManager === pm.key
-                            ? "bg-surface text-foreground"
-                            : "text-muted-foreground"
-                        }`}
-                        role="option"
-                        aria-selected={packageManager === pm.key}
-                      >
-                        {pm.label}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-          </div>
+          {isOpen && (
+            <>
+              <div
+                className="fixed inset-0 z-40"
+                onClick={() => setIsOpen(false)}
+              />
+              <ul
+                className="absolute top-full left-0 mt-1 z-50 min-w-[100px] bg-background border border-border shadow-lg"
+                role="listbox"
+              >
+                {packageManagers.map((pm) => (
+                  <li key={pm.key}>
+                    <button
+                      onClick={() => handleSelect(pm.key)}
+                      className={`w-full px-3 py-2 text-xs uppercase tracking-wider text-left hover:bg-surface transition-colors ${
+                        packageManager === pm.key
+                          ? "bg-surface text-foreground"
+                          : "text-muted-foreground"
+                      }`}
+                      role="option"
+                      aria-selected={packageManager === pm.key}
+                    >
+                      {pm.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
-      )}
+      </div>
 
       <button
         onClick={copy}
@@ -150,3 +143,28 @@ export function InstallCommand({
     </div>
   );
 }
+
+function InstallFeatures() {
+  return (
+    <div className="grid grid-cols-3 gap-2 text-sm text-muted-foreground pb-4 border-b border-border">
+      <div>
+        <p className="text-foreground font-medium">3 Fonts</p>
+        <p className="text-xs mt-1">Heading, body, mono</p>
+      </div>
+      <div>
+        <p className="text-foreground font-medium">Typography Scale</p>
+        <p className="text-xs mt-1">h1 through body</p>
+      </div>
+      <div>
+        <p className="text-foreground font-medium">CSS Variables</p>
+        <p className="text-xs mt-1">Ready to use</p>
+      </div>
+    </div>
+  );
+}
+
+export const InstallCommand = {
+  Compact: InstallCommandCompact,
+  Full: InstallCommandFull,
+  Features: InstallFeatures,
+};
