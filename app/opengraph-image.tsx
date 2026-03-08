@@ -116,7 +116,7 @@ export default function Image() {
               fontFamily: "monospace",
             }}
           >
-            npx shadcn@latest add https://fonttrio.dev/r/editorial.json
+            npx shadcn@latest add @fonttrio/r/editorial.json
           </span>
         </div>
       </div>

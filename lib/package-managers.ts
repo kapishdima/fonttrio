@@ -1,7 +1,7 @@
 // Registry prefix - can be easily changed from URL to npm scope
 // Current: https://www.fonttrio.xyz/r/
 // Future: @fonttrio/
-export const REGISTRY_PREFIX = "https://www.fonttrio.xyz/r/";
+export const REGISTRY_PREFIX = "@fonttrio/";
 
 // Package managers
 export type PackageManager = "npm" | "yarn" | "pnpm" | "bun";

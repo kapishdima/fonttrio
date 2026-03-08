@@ -79,8 +79,9 @@ export function SiteHeader({ subtitle = "Font pairings for shadcn/ui" }: SiteHea
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 border-b border-border backdrop-blur-sm">
       <div className="px-4 lg:px-12 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
+        <Link href="/" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
           <Logo size="sm" variant="text" />
+          
         </Link>
         
         {/* Desktop Navigation */}
