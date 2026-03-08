@@ -3,6 +3,7 @@ import { SPONSORS, SPONSOR_TIERS, SPONSORS_PAGE } from "@/lib/sponsors";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { Heart, ExternalLink } from "lucide-react";
+import { SponsorLogo } from "../components/sponsor-logo";
 import { SponsorTiers } from "./sponsor-tiers";
 
 export const metadata: Metadata = {
@@ -76,13 +77,12 @@ export default function SponsorsPage() {
                         href={sponsor.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex items-center gap-6 p-6 border border-border bg-surface hover:bg-surface-hover transition-colors w-full sm:w-[calc(50%-1rem)] max-w-xl"
+                        className="group flex items-center justify-center gap-6 p-6 border border-border bg-surface transition-colors w-full sm:w-[calc(30%-1rem)] max-w-xl"
                       >
-                        <div className="size-20 bg-muted rounded-lg flex items-center justify-center shrink-0 overflow-hidden">
+                        <div className="max-w-40 flex items-center justify-center shrink-0 overflow-hidden">
                           {sponsor.logo ? (
-                            <img
-                              src={sponsor.logo}
-                              alt={sponsor.name}
+                            <SponsorLogo
+                              sponsor={sponsor}
                               className="size-full object-contain"
                             />
                           ) : (
@@ -91,11 +91,11 @@ export default function SponsorsPage() {
                             </span>
                           )}
                         </div>
-                        <div className="flex-1 min-w-0">
+                        {sponsor.name && sponsor.name.length > 0 && <div className="flex-1 min-w-0">
                           <div className="text-xl font-medium truncate">
                             {sponsor.name}
                           </div>
-                        </div>
+                        </div>}
                         <ExternalLink className="size-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
                       </a>
                     ))}
@@ -119,9 +119,8 @@ export default function SponsorsPage() {
                       >
                         <div className="size-12 bg-muted rounded flex items-center justify-center shrink-0">
                           {sponsor.logo ? (
-                            <img
-                              src={sponsor.logo}
-                              alt={sponsor.name}
+                            <SponsorLogo
+                              sponsor={sponsor}
                               className="size-7 object-contain"
                             />
                           ) : (

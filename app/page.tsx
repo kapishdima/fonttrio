@@ -1,4 +1,5 @@
 import { getAllPairings, getPairing, getAllMoods } from "@/lib/pairings";
+import { SPONSORS } from "@/lib/sponsors";
 import { LandingClient } from "./landing-client";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
   const featured = getPairing("editorial")!;
   const rest = allPairings.filter((p) => p.name !== "editorial");
   const moods = getAllMoods();
+  const goldSponsors = SPONSORS.filter((s) => s.tier === "gold");
 
   return (
     <LandingClient
@@ -13,6 +15,7 @@ export default function Home() {
       pairings={rest}
       allPairings={allPairings}
       moods={moods}
+      goldSponsors={goldSponsors}
     />
   );
 }

@@ -1,7 +1,10 @@
 export interface Sponsor {
   id: string;
   name: string;
+  /** Logo for light theme (or universal if logoDark is not set) */
   logo: string;
+  /** Optional logo variant for dark theme — use when the default logo has dark fills that disappear on dark backgrounds */
+  logoDark?: string;
   url: string;
   tier: "bronze" | "silver" | "gold";
 }
@@ -10,9 +13,10 @@ export const SPONSORS: Sponsor[] = [
   // Add your sponsors here
   {
     id: "1",
-    name: "Anurag Bhagsain",
-    logo: "https://pbs.twimg.com/profile_images/1900815592627773440/puv7i2e3_400x400.jpg",
-    url: "https://abhagsain.com/",
+    name: "",
+    logo: "/sponsors/slidesai-logo.svg",
+    logoDark: "/sponsors/slidesai-logo-dark.svg",
+    url: "https://www.slidesai.io?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "gold"
   }
 ];

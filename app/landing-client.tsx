@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { PairingData } from "@/lib/pairings";
+import type { Sponsor } from "@/lib/sponsors";
 import { usePairingFilters } from "@/lib/hooks/use-pairing-filters";
 import { FontSwitcher, AnimatedSubtitle } from "./components/font-switcher";
 import { AnimatedLayout } from "./components/animated-layout";
@@ -12,12 +13,14 @@ import { SiteFooter } from "./components/site-footer";
 import { GridBackground } from "./components/grid-background";
 import { MetricLines } from "./components/metric-lines";
 import { PairingCard } from "./components/pairing-card";
+import { SponsorLogo } from "./components/sponsor-logo";
 
 interface LandingClientProps {
   featured: PairingData;
   pairings: PairingData[];
   allPairings: PairingData[];
   moods: string[];
+  goldSponsors: Sponsor[];
 }
 
 export function LandingClient({
@@ -25,6 +28,7 @@ export function LandingClient({
   pairings,
   allPairings,
   moods,
+  goldSponsors,
 }: LandingClientProps) {
   const [currentFontIndex, setCurrentFontIndex] = useState(0);
   
@@ -88,6 +92,34 @@ export function LandingClient({
                 <InstallCommand.Features />
               </InstallCommand.Full>
             </div>
+
+            {goldSponsors.length > 0 && (
+              <div className="mt-8 sm:mt-12 ml-0 sm:ml-5 flex items-center gap-3">
+                <span className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                  Backed by
+                </span>
+                <span className="w-px h-3 bg-border" />
+                <div className="flex items-center gap-4">
+                  {goldSponsors.map((sponsor) => (
+                    <a
+                      key={sponsor.id}
+                      href={sponsor.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      <SponsorLogo
+                        sponsor={sponsor}
+                        className="w-auto h-10 object-cover "
+                      />
+                      <span className="text-xs font-medium">
+                        {sponsor.name}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
 
           </AnimatedLayout>
         </div>
