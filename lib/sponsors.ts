@@ -17,13 +17,32 @@ export const SPONSORS: Sponsor[] = [
   // }
 ];
 
+// ─── Billing cycles ───────────────────────────────────────────────
+
+export type BillingCycle = "monthly" | "one-time";
+
+export interface BillingOption {
+  key: BillingCycle;
+  label: string;
+  suffix: string;
+}
+
+export const BILLING_OPTIONS: BillingOption[] = [
+  { key: "monthly", label: "Monthly", suffix: "/month" },
+  { key: "one-time", label: "One-time", suffix: "" },
+];
+
+export const DEFAULT_BILLING_CYCLE: BillingCycle = "monthly";
+
+// ─── Tiers ────────────────────────────────────────────────────────
+
 export interface SponsorTier {
   key: "bronze" | "silver" | "gold";
   name: string;
   price: number;
   description: string;
   benefits: string[];
-  paymentUrl: string;
+  paymentUrls: Record<BillingCycle, string>;
 }
 
 export const SPONSOR_TIERS: SponsorTier[] = [
@@ -35,9 +54,12 @@ export const SPONSOR_TIERS: SponsorTier[] = [
     benefits: [
       "Name listed on sponsors page",
       "Twitter shoutout",
-      "Good karma"
+      "Good karma",
     ],
-    paymentUrl: "https://www.creem.io/payment/prod_rwG87qt0R1UuhPLyL2WGg"
+    paymentUrls: {
+      monthly: "https://www.creem.io/payment/prod_rwG87qt0R1UuhPLyL2WGg",
+      "one-time": "https://www.creem.io/payment/prod_1a5aJmM7LZ1xyPilOVX7fw",
+    },
   },
   {
     key: "silver",
@@ -48,55 +70,70 @@ export const SPONSOR_TIERS: SponsorTier[] = [
       "Logo on sponsors page",
       "Name listed on sponsors page",
       "Twitter shoutout",
-      "Good karma"
+      "Good karma",
     ],
-    paymentUrl: "https://www.creem.io/payment/prod_1Js8kckF3HRNEAGRmKp3g"
+    paymentUrls: {
+      monthly: "https://www.creem.io/payment/prod_1Js8kckF3HRNEAGRmKp3g",
+      "one-time": "https://www.creem.io/payment/prod_7Na4t7X6YTDFvJ2P4m65t8",
+    },
   },
   {
     key: "gold",
     name: "Gold",
     price: 50,
-    description: "Everything in Silver, plus prominent placement and link to your site",
+    description:
+      "Everything in Silver, plus prominent placement and link to your site",
     benefits: [
       "Prominent placement on sponsors page",
       "Link to your website",
       "Logo on sponsors page",
       "Name listed on sponsors page",
       "Twitter shoutout",
-      "Good karma"
+      "Good karma",
     ],
-    paymentUrl: "https://www.creem.io/payment/prod_kvmcaM5AWH5VIRMiJ7Asz" 
-  }
+    paymentUrls: {
+      monthly: "https://www.creem.io/payment/prod_kvmcaM5AWH5VIRMiJ7Asz",
+      "one-time": "https://www.creem.io/payment/prod_6jqT12WZiYYGBY2NUxchb8",
+    },
+  },
 ];
 
-// Page content constants
+// ─── Page content ─────────────────────────────────────────────────
+
 export const SPONSORS_PAGE = {
   title: "Support Fonttrio",
-  description: "Fonttrio is an open-source project. Your support helps us maintain the registry, add new font pairings, and keep the service running.",
-  
+  description:
+    "Fonttrio is an open-source project. Your support helps us maintain the registry, add new font pairings, and keep the service running.",
+
   sectionTitles: {
     sponsors: "Our Sponsors",
-    whySponsor: "Why Sponsor Fonttrio?"
+    whySponsor: "Why Sponsor Fonttrio?",
   },
-  
+
   emptyState: {
     title: "No sponsors yet",
-    description: "Be the first to support Fonttrio and help us continue building the best font pairing registry for the shadcn/ui community.",
-    cta: "Become a Sponsor"
+    description:
+      "Be the first to support Fonttrio and help us continue building the best font pairing registry for the shadcn/ui community.",
+    cta: "Become a Sponsor",
   },
-  
+
   whySponsor: {
     openSource: {
       title: "Open Source",
-      description: "All pairings are free and open source. Your support keeps it that way."
+      description:
+        "All pairings are free and open source. Your support keeps it that way.",
     },
     community: {
       title: "Community Driven",
-      description: "Help us grow the collection and improve the service for everyone."
+      description:
+        "Help us grow the collection and improve the service for everyone.",
     },
     brand: {
       title: "Showcase Your Brand",
-      description: "Get visibility among developers and designers using shadcn/ui."
-    }
-  }
+      description:
+        "Get visibility among developers and designers using shadcn/ui.",
+    },
+  },
+
+  ctaLabel: "Become a {tier} Sponsor",
 } as const;
