@@ -1,7 +1,17 @@
+import type { Metadata } from "next";
 import { SPONSORS, SPONSOR_TIERS, SPONSORS_PAGE } from "@/lib/sponsors";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { Heart, ExternalLink } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Sponsors",
+  description:
+    "Support Fonttrio, the open-source font pairing registry for shadcn/ui. Become a sponsor and get your brand in front of developers.",
+  alternates: {
+    canonical: "https://www.fonttrio.xyz/sponsors",
+  },
+};
 
 export default function SponsorsPage() {
   const goldSponsors = SPONSORS.filter((s) => s.tier === "gold");

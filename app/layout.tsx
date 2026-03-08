@@ -17,10 +17,32 @@ const bebasNeue = Bebas_Neue({
 
 
 export const metadata: Metadata = {
-  title: "Fonttrio - Font Pairings for shadcn",
-  description: "Three fonts. One command. Curated font pairings for shadcn/ui.",
+  metadataBase: new URL("https://www.fonttrio.xyz"),
+  title: {
+    default: "Fonttrio - Font Pairings for shadcn",
+    template: "%s | Fonttrio",
+  },
+  description:
+    "Three fonts. One command. Curated font pairings for shadcn/ui. Install heading, body, and mono fonts with a single CLI command.",
   icons: {
     icon: "/logo/logo-square.svg",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Fonttrio",
+    title: "Fonttrio - Font Pairings for shadcn",
+    description:
+      "Three fonts. One command. Curated font pairings for shadcn/ui.",
+    url: "https://www.fonttrio.xyz",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fonttrio - Font Pairings for shadcn",
+    description:
+      "Three fonts. One command. Curated font pairings for shadcn/ui.",
+  },
+  alternates: {
+    canonical: "https://www.fonttrio.xyz",
   },
 };
 
@@ -43,6 +65,26 @@ export default function RootLayout({
         <AllFontsLoader />
       </head>
       <body className={`${bebasNeue.variable}  antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              name: "Fonttrio",
+              url: "https://www.fonttrio.xyz",
+              description:
+                "Curated font pairings for shadcn/ui. Install heading, body, and mono fonts with a single CLI command.",
+              applicationCategory: "DeveloperApplication",
+              operatingSystem: "Any",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+            }),
+          }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

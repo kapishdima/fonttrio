@@ -63,12 +63,12 @@ export function LandingClient({
 
               {/* Text — above lines */}
               <div className="relative z-10 h-[clamp(3.5rem,12vw,10rem)] sm:h-[clamp(4rem,16vw,13rem)] flex items-center">
-                <div className="text-[clamp(2.5rem,11vw,8rem)] sm:text-[clamp(3.5rem,15vw,12rem)] leading-[1.05] sm:leading-[1.1] tracking-tight w-full">
-                  <FontSwitcher 
-                    pairings={allPairings} 
+                <h1 className="text-[clamp(2.5rem,11vw,8rem)] sm:text-[clamp(3.5rem,15vw,12rem)] leading-[1.05] sm:leading-[1.1] tracking-tight w-full">
+                  <FontSwitcher
+                    pairings={allPairings}
                     onIndexChange={setCurrentFontIndex}
                   />
-                </div>
+                </h1>
               </div>
             </div>
 
