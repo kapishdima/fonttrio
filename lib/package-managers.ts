@@ -30,7 +30,7 @@ export function buildInstallCommand(
   packageManager: PackageManager = "npm"
 ): string {
   const pm = PACKAGE_MANAGERS.find((p) => p.key === packageManager) || PACKAGE_MANAGERS[0];
-  return `${pm.command} shadcn@latest add ${REGISTRY_PREFIX}${pairingName}.json`;
+  return `${pm.command} shadcn@latest add ${REGISTRY_PREFIX}${pairingName}`;
 }
 
 // Build short command for display (without full URL)
