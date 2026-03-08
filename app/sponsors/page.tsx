@@ -78,12 +78,12 @@ export default function SponsorsPage() {
                         rel="noopener noreferrer"
                         className="group flex items-center gap-6 p-6 border border-border bg-surface hover:bg-surface-hover transition-colors w-full sm:w-[calc(50%-1rem)] max-w-xl"
                       >
-                        <div className="size-20 bg-muted rounded-lg flex items-center justify-center shrink-0">
+                        <div className="size-20 bg-muted rounded-lg flex items-center justify-center shrink-0 overflow-hidden">
                           {sponsor.logo ? (
                             <img
                               src={sponsor.logo}
                               alt={sponsor.name}
-                              className="size-12 object-contain"
+                              className="size-full object-contain"
                             />
                           ) : (
                             <span className="text-2xl font-bold">

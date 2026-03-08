@@ -8,13 +8,13 @@ export interface Sponsor {
 
 export const SPONSORS: Sponsor[] = [
   // Add your sponsors here
-  // {
-  //   id: "1",
-  //   name: "Your Company",
-  //   logo: "/sponsors/logo.svg",
-  //   url: "https://yourcompany.com",
-  //   tier: "gold"
-  // }
+  {
+    id: "1",
+    name: "Anurag Bhagsain",
+    logo: "https://pbs.twimg.com/profile_images/1900815592627773440/puv7i2e3_400x400.jpg",
+    url: "https://abhagsain.com/",
+    tier: "gold"
+  }
 ];
 
 // ─── Billing cycles ───────────────────────────────────────────────
