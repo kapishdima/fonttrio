@@ -1,6 +1,7 @@
 {
   "name": "ibm-plex-mono",
   "type": "registry:font",
+  "category": "Monospace",
   "title": "IBM Plex Mono",
   "description": "IBM Plex Mono — Monospace font.",
   "font": {

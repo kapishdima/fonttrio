@@ -1,6 +1,7 @@
 {
   "name": "roboto",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Roboto",
   "description": "Roboto — Sans Serif font.",
   "font": {

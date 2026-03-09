@@ -1,6 +1,7 @@
 {
   "name": "fira-code",
   "type": "registry:font",
+  "category": "Monospace",
   "title": "Fira Code",
   "description": "Fira Code — Monospace font.",
   "font": {

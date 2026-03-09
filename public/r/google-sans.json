@@ -1,6 +1,7 @@
 {
   "name": "google-sans",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Google Sans",
   "description": "Google Sans — Sans Serif font.",
   "font": {

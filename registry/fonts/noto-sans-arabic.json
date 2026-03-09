@@ -1,6 +1,7 @@
 {
   "name": "noto-sans-arabic",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Noto Sans Arabic",
   "description": "Noto Sans Arabic — Sans Serif font.",
   "font": {

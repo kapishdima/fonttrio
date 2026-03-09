@@ -1,6 +1,7 @@
 {
   "name": "noto-serif",
   "type": "registry:font",
+  "category": "Serif",
   "title": "Noto Serif",
   "description": "Noto Serif — Serif font.",
   "font": {

@@ -1,6 +1,7 @@
 {
   "name": "pt-sans",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "PT Sans",
   "description": "PT Sans — Sans Serif font.",
   "font": {

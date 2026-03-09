@@ -1,6 +1,7 @@
 {
   "name": "geist-mono",
   "type": "registry:font",
+  "category": "Monospace",
   "title": "Geist Mono",
   "description": "Geist Mono — Monospace font.",
   "font": {

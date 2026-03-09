@@ -1,6 +1,7 @@
 {
   "name": "cormorant-garamond",
   "type": "registry:font",
+  "category": "Serif",
   "title": "Cormorant Garamond",
   "description": "Cormorant Garamond — Serif font.",
   "font": {

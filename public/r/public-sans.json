@@ -1,6 +1,7 @@
 {
   "name": "public-sans",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Public Sans",
   "description": "Public Sans — Sans Serif font.",
   "font": {

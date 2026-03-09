@@ -1,6 +1,7 @@
 {
   "name": "fira-sans",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Fira Sans",
   "description": "Fira Sans — Sans Serif font.",
   "font": {

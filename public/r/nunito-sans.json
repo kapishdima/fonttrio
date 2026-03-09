@@ -1,6 +1,7 @@
 {
   "name": "nunito-sans",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Nunito Sans",
   "description": "Nunito Sans — Sans Serif font.",
   "font": {

@@ -56,6 +56,18 @@ export function SiteHeader() {
 
         {/* Desktop Navigation */}
         <div className="hidden sm:flex items-center gap-2">
+          <Link
+            href="/pairings"
+            className="flex items-center justify-center gap-2 px-4 py-3 text-sm sm:text-xs uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors min-h-[44px]"
+          >
+            Pairings
+          </Link>
+          <Link
+            href="/fonts"
+            className="flex items-center justify-center gap-2 px-4 py-3 text-sm sm:text-xs uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors min-h-[44px]"
+          >
+            Fonts
+          </Link>
           <SponsorButton />
           <SocialLinks />
           <ThemeToggle />
@@ -79,6 +91,20 @@ export function SiteHeader() {
       {mobileMenuOpen && (
         <div className="sm:hidden border-t border-border bg-background/95 backdrop-blur-sm">
           <div className="px-4 py-4 space-y-4">
+            <Link
+              href="/pairings"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-center w-full px-4 py-3 text-sm uppercase tracking-wider border border-border hover:bg-surface transition-colors min-h-[44px]"
+            >
+              Browse Pairings
+            </Link>
+            <Link
+              href="/fonts"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-center w-full px-4 py-3 text-sm uppercase tracking-wider border border-border hover:bg-surface transition-colors min-h-[44px]"
+            >
+              Browse Fonts
+            </Link>
             <SponsorButton className="w-full" />
             <div className="flex items-center justify-center gap-4 pt-2 border-t border-border">
               <SocialLinks />

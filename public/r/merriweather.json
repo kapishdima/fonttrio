@@ -1,6 +1,7 @@
 {
   "name": "merriweather",
   "type": "registry:font",
+  "category": "Serif",
   "title": "Merriweather",
   "description": "Merriweather — Serif font.",
   "font": {

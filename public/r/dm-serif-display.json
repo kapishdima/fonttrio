@@ -1,6 +1,7 @@
 {
   "name": "dm-serif-display",
   "type": "registry:font",
+  "category": "Serif",
   "title": "DM Serif Display",
   "description": "DM Serif Display — Serif font.",
   "font": {

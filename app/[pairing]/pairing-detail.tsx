@@ -17,7 +17,15 @@ export function PairingDetail({ pairing }: PairingDetailProps) {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
-      <StickyDetailHeader pairing={pairing} />
+      <StickyDetailHeader
+        title={pairing.name}
+        titleStyle={{
+          fontFamily: `"${pairing.heading}", ${pairing.headingCategory}`,
+          fontWeight: pairing.scale.h1.weight,
+        }}
+        backHref="/"
+        backLabel="Back to pairings"
+      />
       
       <HeroSection pairing={pairing} />
       <PreviewSection pairing={pairing} />

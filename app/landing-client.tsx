@@ -151,16 +151,16 @@ export function LandingClient({
             <span className="w-px h-6 bg-border shrink-0 hidden sm:block" />
 
             {/* Style groups — horizontal scroll */}
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-0">
               {styleGroups.map((group) => (
                 <button
                   key={group.key}
                   onClick={() => toggleStyleFilter(group.key)}
                   aria-pressed={styleFilter === group.key}
-                  className={`px-3 py-2 text-[11px] uppercase tracking-wider whitespace-nowrap transition-[background-color,color,border-color] border shrink-0 min-h-[44px] flex items-center ${
+                  className={`px-3 py-2 text-[11px] uppercase tracking-wider border-b-2 transition-[color,border-color] min-h-[44px] flex items-center whitespace-nowrap ${
                     styleFilter === group.key
-                      ? "bg-foreground text-background border-foreground"
-                      : "bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground"
+                      ? "border-foreground text-foreground"
+                      : "border-transparent text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {group.label}

@@ -1,6 +1,7 @@
 {
   "name": "ibm-plex-sans",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "IBM Plex Sans",
   "description": "IBM Plex Sans — Sans Serif font.",
   "font": {

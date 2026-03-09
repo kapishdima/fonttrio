@@ -102,6 +102,7 @@ function writeFont(opts: {
   const registryFont: Record<string, unknown> = {
     name: kebab,
     type: "registry:font",
+    category: opts.category,
     title: opts.family,
     description: `${opts.family} — ${opts.category} font.`,
     font: {

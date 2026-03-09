@@ -1,6 +1,7 @@
 {
   "name": "cairo",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Cairo",
   "description": "Cairo — Sans Serif font.",
   "font": {

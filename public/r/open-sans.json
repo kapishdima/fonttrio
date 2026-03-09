@@ -1,6 +1,7 @@
 {
   "name": "open-sans",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Open Sans",
   "description": "Open Sans — Sans Serif font.",
   "font": {

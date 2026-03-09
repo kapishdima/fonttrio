@@ -2,16 +2,22 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import type { PairingData } from "@/lib/pairings";
 import { ArrowLeft } from "lucide-react";
 
 interface StickyDetailHeaderProps {
-  pairing: PairingData;
+  title: string;
+  titleStyle?: React.CSSProperties;
+  backHref: string;
+  backLabel: string;
 }
 
-export function StickyDetailHeader({ pairing }: StickyDetailHeaderProps) {
+export function StickyDetailHeader({
+  title,
+  titleStyle,
+  backHref,
+  backLabel,
+}: StickyDetailHeaderProps) {
   const [isVisible, setIsVisible] = useState(false);
-  const headingFont = `"${pairing.heading}", ${pairing.headingCategory}`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,11 +36,11 @@ export function StickyDetailHeader({ pairing }: StickyDetailHeaderProps) {
     <div className="fixed top-16 left-0 right-0 z-40 bg-background/95 border-b border-border backdrop-blur-sm">
       <div className="px-4 lg:px-8 h-14 flex items-center">
         <Link
-          href="/"
+          href={backHref}
           className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors shrink-0"
         >
           <ArrowLeft className="size-4" />
-          <span className="hidden sm:inline">Back to pairings</span>
+          <span className="hidden sm:inline">{backLabel}</span>
         </Link>
 
         {/* Title with slide animation */}
@@ -45,12 +51,9 @@ export function StickyDetailHeader({ pairing }: StickyDetailHeaderProps) {
                 ? "translate-y-0 opacity-100"
                 : "-translate-y-full opacity-0"
             }`}
-            style={{
-              fontFamily: headingFont,
-              fontWeight: pairing.scale.h1.weight,
-            }}
+            style={titleStyle}
           >
-            {pairing.name}
+            {title}
           </h2>
         </div>
       </div>

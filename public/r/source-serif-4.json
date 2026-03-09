@@ -1,6 +1,7 @@
 {
   "name": "source-serif-4",
   "type": "registry:font",
+  "category": "Serif",
   "title": "Source Serif 4",
   "description": "Source Serif 4 — Serif font.",
   "font": {

@@ -1,6 +1,7 @@
 {
   "name": "noto-sans-sc",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Noto Sans SC",
   "description": "Noto Sans SC — Sans Serif font.",
   "font": {

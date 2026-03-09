@@ -622,12 +622,14 @@ function buildPairingJson(recipe: PairingRecipe) {
       },
     },
     css: {
-      h1: { "font-family": "var(--font-heading)", ...scale.h1 },
-      h2: { "font-family": "var(--font-heading)", ...scale.h2 },
-      h3: { "font-family": "var(--font-heading)", ...scale.h3 },
-      "h4, h5, h6": { "font-family": "var(--font-heading)", ...scale.h4h5h6 },
-      "body, p": { "font-family": "var(--font-body)", ...scale.body },
-      "code, pre": { "font-family": "var(--font-mono)" },
+      "@layer base": {
+        h1: { "font-family": "var(--font-heading)", ...scale.h1 },
+        h2: { "font-family": "var(--font-heading)", ...scale.h2 },
+        h3: { "font-family": "var(--font-heading)", ...scale.h3 },
+        "h4, h5, h6": { "font-family": "var(--font-heading)", ...scale.h4h5h6 },
+        "body, p": { "font-family": "var(--font-body)", ...scale.body },
+        "code, pre": { "font-family": "var(--font-mono)" },
+      },
     },
     meta: {
       preview: "The quick brown fox jumps over the lazy dog",

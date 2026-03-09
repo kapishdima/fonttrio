@@ -22,37 +22,39 @@
     }
   },
   "css": {
-    "h1": {
-      "font-family": "var(--font-heading)",
-      "font-size": "2.5rem",
-      "line-height": "1.15",
-      "letter-spacing": "-0.015em",
-      "font-weight": "400"
-    },
-    "h2": {
-      "font-family": "var(--font-heading)",
-      "font-size": "2rem",
-      "line-height": "1.2",
-      "letter-spacing": "-0.01em",
-      "font-weight": "400"
-    },
-    "h3": {
-      "font-family": "var(--font-heading)",
-      "font-size": "1.5rem",
-      "line-height": "1.3",
-      "letter-spacing": "0em",
-      "font-weight": "400"
-    },
-    "h4, h5, h6": {
-      "font-family": "var(--font-heading)",
-      "letter-spacing": "0em"
-    },
-    "body, p": {
-      "font-family": "var(--font-body)",
-      "line-height": "1.75"
-    },
-    "code, pre": {
-      "font-family": "var(--font-mono)"
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.5rem",
+        "line-height": "1.15",
+        "letter-spacing": "-0.015em",
+        "font-weight": "400"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.01em",
+        "font-weight": "400"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.5rem",
+        "line-height": "1.3",
+        "letter-spacing": "0em",
+        "font-weight": "400"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "0em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.75"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
     }
   },
   "meta": {

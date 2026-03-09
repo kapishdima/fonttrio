@@ -8,6 +8,7 @@ const PAIRINGS_DIR = join(REGISTRY_DIR, "pairings");
 export interface FontItem {
   name: string;
   type: "registry:font";
+  category?: string;
   title: string;
   description: string;
   font: {

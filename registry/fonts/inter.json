@@ -1,6 +1,7 @@
 {
   "name": "inter",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Inter",
   "description": "Inter — Sans Serif font.",
   "font": {

@@ -1,6 +1,7 @@
 {
   "name": "crimson-text",
   "type": "registry:font",
+  "category": "Serif",
   "title": "Crimson Text",
   "description": "Crimson Text — Serif font.",
   "font": {

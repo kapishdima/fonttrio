@@ -1,6 +1,7 @@
 {
   "name": "noto-sans-telugu",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Noto Sans Telugu",
   "description": "Noto Sans Telugu — Sans Serif font.",
   "font": {

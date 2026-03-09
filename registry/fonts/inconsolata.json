@@ -1,6 +1,7 @@
 {
   "name": "inconsolata",
   "type": "registry:font",
+  "category": "Monospace",
   "title": "Inconsolata",
   "description": "Inconsolata — Monospace font.",
   "font": {

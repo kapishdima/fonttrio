@@ -1,6 +1,7 @@
 {
   "name": "lobster-two",
   "type": "registry:font",
+  "category": "Display",
   "title": "Lobster Two",
   "description": "Lobster Two — Display font.",
   "font": {

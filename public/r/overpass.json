@@ -1,6 +1,7 @@
 {
   "name": "overpass",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Overpass",
   "description": "Overpass — Sans Serif font.",
   "font": {

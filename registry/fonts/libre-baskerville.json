@@ -1,6 +1,7 @@
 {
   "name": "libre-baskerville",
   "type": "registry:font",
+  "category": "Serif",
   "title": "Libre Baskerville",
   "description": "Libre Baskerville — Serif font.",
   "font": {

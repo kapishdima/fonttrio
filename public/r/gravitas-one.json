@@ -1,6 +1,7 @@
 {
   "name": "gravitas-one",
   "type": "registry:font",
+  "category": "Display",
   "title": "Gravitas One",
   "description": "Gravitas One — Display font.",
   "font": {

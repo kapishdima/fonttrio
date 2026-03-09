@@ -1,6 +1,7 @@
 {
   "name": "red-hat-display",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Red Hat Display",
   "description": "Red Hat Display — Sans Serif font.",
   "font": {

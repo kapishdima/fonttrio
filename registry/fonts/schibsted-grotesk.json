@@ -1,6 +1,7 @@
 {
   "name": "schibsted-grotesk",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Schibsted Grotesk",
   "description": "Schibsted Grotesk — Sans Serif font.",
   "font": {

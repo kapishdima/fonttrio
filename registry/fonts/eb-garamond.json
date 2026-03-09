@@ -1,6 +1,7 @@
 {
   "name": "eb-garamond",
   "type": "registry:font",
+  "category": "Serif",
   "title": "EB Garamond",
   "description": "EB Garamond — Serif font.",
   "font": {

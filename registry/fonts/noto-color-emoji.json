@@ -1,6 +1,7 @@
 {
   "name": "noto-color-emoji",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Noto Color Emoji",
   "description": "Noto Color Emoji — Sans Serif font.",
   "font": {

@@ -1,6 +1,7 @@
 {
   "name": "jetbrains-mono",
   "type": "registry:font",
+  "category": "Monospace",
   "title": "JetBrains Mono",
   "description": "JetBrains Mono — Monospace font.",
   "font": {

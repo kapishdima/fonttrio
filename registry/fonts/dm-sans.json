@@ -1,6 +1,7 @@
 {
   "name": "dm-sans",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "DM Sans",
   "description": "DM Sans — Sans Serif font.",
   "font": {

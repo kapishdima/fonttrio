@@ -1,6 +1,7 @@
 {
   "name": "libre-franklin",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Libre Franklin",
   "description": "Libre Franklin — Sans Serif font.",
   "font": {

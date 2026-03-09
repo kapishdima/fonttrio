@@ -1,6 +1,7 @@
 {
   "name": "ubuntu",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Ubuntu",
   "description": "Ubuntu — Sans Serif font.",
   "font": {

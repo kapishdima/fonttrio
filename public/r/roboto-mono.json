@@ -1,6 +1,7 @@
 {
   "name": "roboto-mono",
   "type": "registry:font",
+  "category": "Monospace",
   "title": "Roboto Mono",
   "description": "Roboto Mono — Monospace font.",
   "font": {

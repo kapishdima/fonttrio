@@ -1,6 +1,7 @@
 {
   "name": "titillium-web",
   "type": "registry:font",
+  "category": "Sans Serif",
   "title": "Titillium Web",
   "description": "Titillium Web — Sans Serif font.",
   "font": {

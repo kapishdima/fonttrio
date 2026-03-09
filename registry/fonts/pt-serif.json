@@ -1,6 +1,7 @@
 {
   "name": "pt-serif",
   "type": "registry:font",
+  "category": "Serif",
   "title": "PT Serif",
   "description": "PT Serif — Serif font.",
   "font": {
