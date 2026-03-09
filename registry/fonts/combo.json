@@ -1,0 +1,21 @@
+{
+  "name": "combo",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Combo",
+  "description": "Combo — Display font.",
+  "font": {
+    "family": "Combo",
+    "provider": "google",
+    "import": "Combo",
+    "variable": "--font-combo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

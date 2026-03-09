@@ -1,0 +1,22 @@
+{
+  "name": "francois-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Francois One",
+  "description": "Francois One — Sans Serif font.",
+  "font": {
+    "family": "Francois One",
+    "provider": "google",
+    "import": "Francois_One",
+    "variable": "--font-francois-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

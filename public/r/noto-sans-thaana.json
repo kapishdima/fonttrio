@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-thaana",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Thaana",
+  "description": "Noto Sans Thaana — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Thaana",
+    "provider": "google",
+    "import": "Noto_Sans_Thaana",
+    "variable": "--font-noto-sans-thaana",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thaana"
+    ]
+  }
+}

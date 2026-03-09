@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-pau-cin-hau",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Pau Cin Hau",
+  "description": "Noto Sans Pau Cin Hau — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Pau Cin Hau",
+    "provider": "google",
+    "import": "Noto_Sans_Pau_Cin_Hau",
+    "variable": "--font-noto-sans-pau-cin-hau",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "pau-cin-hau"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-indic-siyaq-numbers",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Indic Siyaq Numbers",
+  "description": "Noto Sans Indic Siyaq Numbers — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Indic Siyaq Numbers",
+    "provider": "google",
+    "import": "Noto_Sans_Indic_Siyaq_Numbers",
+    "variable": "--font-noto-sans-indic-siyaq-numbers",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "indic-siyaq-numbers",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

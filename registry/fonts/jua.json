@@ -1,0 +1,21 @@
+{
+  "name": "jua",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Jua",
+  "description": "Jua — Sans Serif font.",
+  "font": {
+    "family": "Jua",
+    "provider": "google",
+    "import": "Jua",
+    "variable": "--font-jua",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

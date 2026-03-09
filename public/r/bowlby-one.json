@@ -1,0 +1,20 @@
+{
+  "name": "bowlby-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bowlby One",
+  "description": "Bowlby One — Display font.",
+  "font": {
+    "family": "Bowlby One",
+    "provider": "google",
+    "import": "Bowlby_One",
+    "variable": "--font-bowlby-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

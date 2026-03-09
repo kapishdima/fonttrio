@@ -1,0 +1,22 @@
+{
+  "name": "tiro-tamil",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Tiro Tamil",
+  "description": "Tiro Tamil — Serif font.",
+  "font": {
+    "family": "Tiro Tamil",
+    "provider": "google",
+    "import": "Tiro_Tamil",
+    "variable": "--font-tiro-tamil",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tamil"
+    ]
+  }
+}

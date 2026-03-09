@@ -1,0 +1,21 @@
+{
+  "name": "average",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Average",
+  "description": "Average — Serif font.",
+  "font": {
+    "family": "Average",
+    "provider": "google",
+    "import": "Average",
+    "variable": "--font-average",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

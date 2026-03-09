@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-inscriptional-pahlavi",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Inscriptional Pahlavi",
+  "description": "Noto Sans Inscriptional Pahlavi — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Inscriptional Pahlavi",
+    "provider": "google",
+    "import": "Noto_Sans_Inscriptional_Pahlavi",
+    "variable": "--font-noto-sans-inscriptional-pahlavi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "inscriptional-pahlavi",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

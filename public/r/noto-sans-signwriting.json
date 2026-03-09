@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-signwriting",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans SignWriting",
+  "description": "Noto Sans SignWriting — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans SignWriting",
+    "provider": "google",
+    "import": "Noto_Sans_SignWriting",
+    "variable": "--font-noto-sans-signwriting",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "signwriting"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "grenze-gotisch",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Grenze Gotisch",
+  "description": "Grenze Gotisch — Display font.",
+  "font": {
+    "family": "Grenze Gotisch",
+    "provider": "google",
+    "import": "Grenze_Gotisch",
+    "variable": "--font-grenze-gotisch",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

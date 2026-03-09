@@ -1,0 +1,21 @@
+{
+  "name": "karla-tamil-upright",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Karla Tamil Upright",
+  "description": "Karla Tamil Upright — Sans Serif font.",
+  "font": {
+    "family": "Karla Tamil Upright",
+    "provider": "google",
+    "import": "Karla_Tamil_Upright",
+    "variable": "--font-karla-tamil-upright",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "tamil"
+    ]
+  }
+}

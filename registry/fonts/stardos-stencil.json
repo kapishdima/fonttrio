@@ -1,0 +1,21 @@
+{
+  "name": "stardos-stencil",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Stardos Stencil",
+  "description": "Stardos Stencil — Display font.",
+  "font": {
+    "family": "Stardos Stencil",
+    "provider": "google",
+    "import": "Stardos_Stencil",
+    "variable": "--font-stardos-stencil",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

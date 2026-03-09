@@ -1,0 +1,26 @@
+{
+  "name": "mozilla-text",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mozilla Text",
+  "description": "Mozilla Text — Sans Serif font.",
+  "font": {
+    "family": "Mozilla Text",
+    "provider": "google",
+    "import": "Mozilla_Text",
+    "variable": "--font-mozilla-text",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

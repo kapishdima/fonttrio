@@ -1,0 +1,31 @@
+{
+  "name": "playpen-sans-arabic",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playpen Sans Arabic",
+  "description": "Playpen Sans Arabic — Handwriting font.",
+  "font": {
+    "family": "Playpen Sans Arabic",
+    "provider": "google",
+    "import": "Playpen_Sans_Arabic",
+    "variable": "--font-playpen-sans-arabic",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "emoji",
+      "latin",
+      "latin-ext",
+      "math"
+    ]
+  }
+}

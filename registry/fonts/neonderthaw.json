@@ -1,0 +1,22 @@
+{
+  "name": "neonderthaw",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Neonderthaw",
+  "description": "Neonderthaw — Handwriting font.",
+  "font": {
+    "family": "Neonderthaw",
+    "provider": "google",
+    "import": "Neonderthaw",
+    "variable": "--font-neonderthaw",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

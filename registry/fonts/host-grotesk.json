@@ -1,0 +1,26 @@
+{
+  "name": "host-grotesk",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Host Grotesk",
+  "description": "Host Grotesk — Sans Serif font.",
+  "font": {
+    "family": "Host Grotesk",
+    "provider": "google",
+    "import": "Host_Grotesk",
+    "variable": "--font-host-grotesk",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

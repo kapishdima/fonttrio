@@ -1,0 +1,34 @@
+{
+  "name": "noto-sans-mono",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Mono",
+  "description": "Noto Sans Mono — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Mono",
+    "provider": "google",
+    "import": "Noto_Sans_Mono",
+    "variable": "--font-noto-sans-mono",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

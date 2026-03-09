@@ -1,0 +1,21 @@
+{
+  "name": "jacquard-24",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Jacquard 24",
+  "description": "Jacquard 24 — Display font.",
+  "font": {
+    "family": "Jacquard 24",
+    "provider": "google",
+    "import": "Jacquard_24",
+    "variable": "--font-jacquard-24",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

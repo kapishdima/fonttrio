@@ -1,0 +1,22 @@
+{
+  "name": "montecarlo",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "MonteCarlo",
+  "description": "MonteCarlo — Handwriting font.",
+  "font": {
+    "family": "MonteCarlo",
+    "provider": "google",
+    "import": "MonteCarlo",
+    "variable": "--font-montecarlo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

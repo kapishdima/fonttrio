@@ -1,0 +1,21 @@
+{
+  "name": "sedan",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Sedan",
+  "description": "Sedan — Serif font.",
+  "font": {
+    "family": "Sedan",
+    "provider": "google",
+    "import": "Sedan",
+    "variable": "--font-sedan",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

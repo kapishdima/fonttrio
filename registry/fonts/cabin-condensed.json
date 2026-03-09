@@ -1,0 +1,25 @@
+{
+  "name": "cabin-condensed",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Cabin Condensed",
+  "description": "Cabin Condensed — Sans Serif font.",
+  "font": {
+    "family": "Cabin Condensed",
+    "provider": "google",
+    "import": "Cabin_Condensed",
+    "variable": "--font-cabin-condensed",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

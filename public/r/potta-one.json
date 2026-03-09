@@ -1,0 +1,23 @@
+{
+  "name": "potta-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Potta One",
+  "description": "Potta One — Display font.",
+  "font": {
+    "family": "Potta One",
+    "provider": "google",
+    "import": "Potta_One",
+    "variable": "--font-potta-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

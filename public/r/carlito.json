@@ -1,0 +1,27 @@
+{
+  "name": "carlito",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Carlito",
+  "description": "Carlito — Sans Serif font.",
+  "font": {
+    "family": "Carlito",
+    "provider": "google",
+    "import": "Carlito",
+    "variable": "--font-carlito",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "bitcount-single",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bitcount Single",
+  "description": "Bitcount Single — Display font.",
+  "font": {
+    "family": "Bitcount Single",
+    "provider": "google",
+    "import": "Bitcount_Single",
+    "variable": "--font-bitcount-single",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

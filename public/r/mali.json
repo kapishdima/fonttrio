@@ -1,0 +1,28 @@
+{
+  "name": "mali",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Mali",
+  "description": "Mali — Handwriting font.",
+  "font": {
+    "family": "Mali",
+    "provider": "google",
+    "import": "Mali",
+    "variable": "--font-mali",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

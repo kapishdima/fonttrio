@@ -5,11 +5,11 @@ import { FontsClient } from "./fonts-client";
 export const metadata: Metadata = {
   title: "Fonts — Fonttrio",
   description:
-    "Browse 100+ fonts from the Fonttrio registry. Install any font with a single shadcn command.",
+    "Browse 1700+ fonts from the Fonttrio registry. Install any font with a single shadcn command.",
   openGraph: {
     title: "Fonts — Fonttrio",
     description:
-      "Browse 100+ fonts from the Fonttrio registry. Install any font with a single shadcn command.",
+      "Browse 1700+ fonts from the Fonttrio registry. Install any font with a single shadcn command.",
   },
 };
 

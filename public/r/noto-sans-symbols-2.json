@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-symbols-2",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Symbols 2",
+  "description": "Noto Sans Symbols 2 — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Symbols 2",
+    "provider": "google",
+    "import": "Noto_Sans_Symbols_2",
+    "variable": "--font-noto-sans-symbols-2",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "braille",
+      "latin",
+      "latin-ext",
+      "math",
+      "mayan-numerals",
+      "symbols"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-us-modern-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite US Modern Guides",
+  "description": "Playwrite US Modern Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite US Modern Guides",
+    "provider": "google",
+    "import": "Playwrite_US_Modern_Guides",
+    "variable": "--font-playwrite-us-modern-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

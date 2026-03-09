@@ -1,0 +1,27 @@
+{
+  "name": "baloo-bhai-2",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Baloo Bhai 2",
+  "description": "Baloo Bhai 2 — Display font.",
+  "font": {
+    "family": "Baloo Bhai 2",
+    "provider": "google",
+    "import": "Baloo_Bhai_2",
+    "variable": "--font-baloo-bhai-2",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "gujarati",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

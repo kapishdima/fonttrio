@@ -1,0 +1,20 @@
+{
+  "name": "delius-swash-caps",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Delius Swash Caps",
+  "description": "Delius Swash Caps — Handwriting font.",
+  "font": {
+    "family": "Delius Swash Caps",
+    "provider": "google",
+    "import": "Delius_Swash_Caps",
+    "variable": "--font-delius-swash-caps",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

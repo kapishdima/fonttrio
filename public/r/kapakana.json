@@ -1,0 +1,23 @@
+{
+  "name": "kapakana",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Kapakana",
+  "description": "Kapakana — Handwriting font.",
+  "font": {
+    "family": "Kapakana",
+    "provider": "google",
+    "import": "Kapakana",
+    "variable": "--font-kapakana",
+    "weight": [
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

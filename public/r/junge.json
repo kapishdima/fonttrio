@@ -1,0 +1,20 @@
+{
+  "name": "junge",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Junge",
+  "description": "Junge — Serif font.",
+  "font": {
+    "family": "Junge",
+    "provider": "google",
+    "import": "Junge",
+    "variable": "--font-junge",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

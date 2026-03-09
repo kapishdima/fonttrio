@@ -1,0 +1,24 @@
+{
+  "name": "wdxl-lubrifont-jp-n",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "WDXL Lubrifont JP N",
+  "description": "WDXL Lubrifont JP N — Sans Serif font.",
+  "font": {
+    "family": "WDXL Lubrifont JP N",
+    "provider": "google",
+    "import": "WDXL_Lubrifont_JP_N",
+    "variable": "--font-wdxl-lubrifont-jp-n",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "symbols2"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "baloo-2",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Baloo 2",
+  "description": "Baloo 2 — Display font.",
+  "font": {
+    "family": "Baloo 2",
+    "provider": "google",
+    "import": "Baloo_2",
+    "variable": "--font-baloo-2",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

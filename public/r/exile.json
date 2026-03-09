@@ -1,0 +1,21 @@
+{
+  "name": "exile",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Exile",
+  "description": "Exile — Display font.",
+  "font": {
+    "family": "Exile",
+    "provider": "google",
+    "import": "Exile",
+    "variable": "--font-exile",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "national-park",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "National Park",
+  "description": "National Park — Sans Serif font.",
+  "font": {
+    "family": "National Park",
+    "provider": "google",
+    "import": "National_Park",
+    "variable": "--font-national-park",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-de-va",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite DE VA",
+  "description": "Playwrite DE VA — Handwriting font.",
+  "font": {
+    "family": "Playwrite DE VA",
+    "provider": "google",
+    "import": "Playwrite_DE_VA",
+    "variable": "--font-playwrite-de-va",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

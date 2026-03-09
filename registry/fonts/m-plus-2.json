@@ -1,0 +1,31 @@
+{
+  "name": "m-plus-2",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "M PLUS 2",
+  "description": "M PLUS 2 — Sans Serif font.",
+  "font": {
+    "family": "M PLUS 2",
+    "provider": "google",
+    "import": "M_PLUS_2",
+    "variable": "--font-m-plus-2",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

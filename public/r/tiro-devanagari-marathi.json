@@ -1,0 +1,22 @@
+{
+  "name": "tiro-devanagari-marathi",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Tiro Devanagari Marathi",
+  "description": "Tiro Devanagari Marathi — Serif font.",
+  "font": {
+    "family": "Tiro Devanagari Marathi",
+    "provider": "google",
+    "import": "Tiro_Devanagari_Marathi",
+    "variable": "--font-tiro-devanagari-marathi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "mukta-mahee",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mukta Mahee",
+  "description": "Mukta Mahee — Sans Serif font.",
+  "font": {
+    "family": "Mukta Mahee",
+    "provider": "google",
+    "import": "Mukta_Mahee",
+    "variable": "--font-mukta-mahee",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "gurmukhi",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

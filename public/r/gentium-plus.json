@@ -1,0 +1,27 @@
+{
+  "name": "gentium-plus",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Gentium Plus",
+  "description": "Gentium Plus — Serif font.",
+  "font": {
+    "family": "Gentium Plus",
+    "provider": "google",
+    "import": "Gentium_Plus",
+    "variable": "--font-gentium-plus",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

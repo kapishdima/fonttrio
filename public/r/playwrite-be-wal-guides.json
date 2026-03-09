@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-be-wal-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite BE WAL Guides",
+  "description": "Playwrite BE WAL Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite BE WAL Guides",
+    "provider": "google",
+    "import": "Playwrite_BE_WAL_Guides",
+    "variable": "--font-playwrite-be-wal-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

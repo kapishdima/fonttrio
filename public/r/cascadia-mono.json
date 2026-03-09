@@ -1,0 +1,34 @@
+{
+  "name": "cascadia-mono",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Cascadia Mono",
+  "description": "Cascadia Mono — Sans Serif font.",
+  "font": {
+    "family": "Cascadia Mono",
+    "provider": "google",
+    "import": "Cascadia_Mono",
+    "variable": "--font-cascadia-mono",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "braille",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "symbols2",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "gabriela",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Gabriela",
+  "description": "Gabriela — Serif font.",
+  "font": {
+    "family": "Gabriela",
+    "provider": "google",
+    "import": "Gabriela",
+    "variable": "--font-gabriela",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

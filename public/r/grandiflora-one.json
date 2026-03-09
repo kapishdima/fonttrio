@@ -1,0 +1,22 @@
+{
+  "name": "grandiflora-one",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Grandiflora One",
+  "description": "Grandiflora One — Serif font.",
+  "font": {
+    "family": "Grandiflora One",
+    "provider": "google",
+    "import": "Grandiflora_One",
+    "variable": "--font-grandiflora-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

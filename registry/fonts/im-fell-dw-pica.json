@@ -1,0 +1,20 @@
+{
+  "name": "im-fell-dw-pica",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "IM Fell DW Pica",
+  "description": "IM Fell DW Pica — Serif font.",
+  "font": {
+    "family": "IM Fell DW Pica",
+    "provider": "google",
+    "import": "IM_Fell_DW_Pica",
+    "variable": "--font-im-fell-dw-pica",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

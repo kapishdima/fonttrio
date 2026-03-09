@@ -1,0 +1,20 @@
+{
+  "name": "spirax",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Spirax",
+  "description": "Spirax — Display font.",
+  "font": {
+    "family": "Spirax",
+    "provider": "google",
+    "import": "Spirax",
+    "variable": "--font-spirax",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

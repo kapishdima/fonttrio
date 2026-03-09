@@ -1,0 +1,22 @@
+{
+  "name": "sintony",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sintony",
+  "description": "Sintony — Sans Serif font.",
+  "font": {
+    "family": "Sintony",
+    "provider": "google",
+    "import": "Sintony",
+    "variable": "--font-sintony",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

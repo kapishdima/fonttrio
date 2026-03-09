@@ -1,0 +1,28 @@
+{
+  "name": "zalando-sans-semiexpanded",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Zalando Sans SemiExpanded",
+  "description": "Zalando Sans SemiExpanded — Sans Serif font.",
+  "font": {
+    "family": "Zalando Sans SemiExpanded",
+    "provider": "google",
+    "import": "Zalando_Sans_SemiExpanded",
+    "variable": "--font-zalando-sans-semiexpanded",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

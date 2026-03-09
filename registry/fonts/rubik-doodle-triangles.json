@@ -1,0 +1,26 @@
+{
+  "name": "rubik-doodle-triangles",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Doodle Triangles",
+  "description": "Rubik Doodle Triangles — Display font.",
+  "font": {
+    "family": "Rubik Doodle Triangles",
+    "provider": "google",
+    "import": "Rubik_Doodle_Triangles",
+    "variable": "--font-rubik-doodle-triangles",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

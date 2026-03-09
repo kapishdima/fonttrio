@@ -1,0 +1,21 @@
+{
+  "name": "mandali",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mandali",
+  "description": "Mandali — Sans Serif font.",
+  "font": {
+    "family": "Mandali",
+    "provider": "google",
+    "import": "Mandali",
+    "variable": "--font-mandali",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

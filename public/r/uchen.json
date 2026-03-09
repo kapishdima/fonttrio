@@ -1,0 +1,21 @@
+{
+  "name": "uchen",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Uchen",
+  "description": "Uchen — Serif font.",
+  "font": {
+    "family": "Uchen",
+    "provider": "google",
+    "import": "Uchen",
+    "variable": "--font-uchen",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "tibetan"
+    ]
+  }
+}

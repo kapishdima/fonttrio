@@ -1,0 +1,25 @@
+{
+  "name": "noto-nastaliq-urdu",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Nastaliq Urdu",
+  "description": "Noto Nastaliq Urdu — Serif font.",
+  "font": {
+    "family": "Noto Nastaliq Urdu",
+    "provider": "google",
+    "import": "Noto_Nastaliq_Urdu",
+    "variable": "--font-noto-nastaliq-urdu",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

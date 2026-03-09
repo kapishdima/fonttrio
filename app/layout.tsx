@@ -6,6 +6,8 @@ import { ThemeProvider } from "./components/theme-provider";
 import { PackageManagerProvider } from "@/lib/contexts/package-manager-context";
 
 import { Analytics } from "@vercel/analytics/next";
+import { NuqsAdapter } from "nuqs/adapters/next";
+import { Suspense } from "react";
 
 
 const bebasNeue = Bebas_Neue({
@@ -91,6 +93,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <NuqsAdapter>
+      <Suspense fallback={null}>
           <PackageManagerProvider>
             <a
               href="#main-content"
@@ -100,6 +104,8 @@ export default function RootLayout({
             </a>
             {children}
           </PackageManagerProvider>
+          </Suspense>
+          </NuqsAdapter>
         </ThemeProvider>
         <Analytics/>
       </body>

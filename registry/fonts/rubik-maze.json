@@ -1,0 +1,24 @@
+{
+  "name": "rubik-maze",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Maze",
+  "description": "Rubik Maze — Display font.",
+  "font": {
+    "family": "Rubik Maze",
+    "provider": "google",
+    "import": "Rubik_Maze",
+    "variable": "--font-rubik-maze",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-inscriptional-parthian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Inscriptional Parthian",
+  "description": "Noto Sans Inscriptional Parthian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Inscriptional Parthian",
+    "provider": "google",
+    "import": "Noto_Sans_Inscriptional_Parthian",
+    "variable": "--font-noto-sans-inscriptional-parthian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "inscriptional-parthian",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

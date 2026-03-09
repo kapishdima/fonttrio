@@ -1,0 +1,21 @@
+{
+  "name": "kite-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Kite One",
+  "description": "Kite One — Sans Serif font.",
+  "font": {
+    "family": "Kite One",
+    "provider": "google",
+    "import": "Kite_One",
+    "variable": "--font-kite-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

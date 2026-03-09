@@ -1,0 +1,20 @@
+{
+  "name": "unifrakturmaguntia",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "UnifrakturMaguntia",
+  "description": "UnifrakturMaguntia — Display font.",
+  "font": {
+    "family": "UnifrakturMaguntia",
+    "provider": "google",
+    "import": "UnifrakturMaguntia",
+    "variable": "--font-unifrakturmaguntia",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

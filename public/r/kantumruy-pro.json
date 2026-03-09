@@ -1,0 +1,28 @@
+{
+  "name": "kantumruy-pro",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Kantumruy Pro",
+  "description": "Kantumruy Pro — Sans Serif font.",
+  "font": {
+    "family": "Kantumruy Pro",
+    "provider": "google",
+    "import": "Kantumruy_Pro",
+    "variable": "--font-kantumruy-pro",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "cormorant-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Cormorant SC",
+  "description": "Cormorant SC — Serif font.",
+  "font": {
+    "family": "Cormorant SC",
+    "provider": "google",
+    "import": "Cormorant_SC",
+    "variable": "--font-cormorant-sc",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

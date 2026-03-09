@@ -1,0 +1,22 @@
+{
+  "name": "poiret-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Poiret One",
+  "description": "Poiret One — Display font.",
+  "font": {
+    "family": "Poiret One",
+    "provider": "google",
+    "import": "Poiret_One",
+    "variable": "--font-poiret-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

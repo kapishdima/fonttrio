@@ -1,0 +1,20 @@
+{
+  "name": "sofadi-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Sofadi One",
+  "description": "Sofadi One — Display font.",
+  "font": {
+    "family": "Sofadi One",
+    "provider": "google",
+    "import": "Sofadi_One",
+    "variable": "--font-sofadi-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

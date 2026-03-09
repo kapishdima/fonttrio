@@ -1,0 +1,21 @@
+{
+  "name": "mr-de-haviland",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Mr De Haviland",
+  "description": "Mr De Haviland — Handwriting font.",
+  "font": {
+    "family": "Mr De Haviland",
+    "provider": "google",
+    "import": "Mr_De_Haviland",
+    "variable": "--font-mr-de-haviland",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

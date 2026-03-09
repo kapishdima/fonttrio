@@ -1,0 +1,21 @@
+{
+  "name": "oxygen-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Oxygen Mono",
+  "description": "Oxygen Mono — Monospace font.",
+  "font": {
+    "family": "Oxygen Mono",
+    "provider": "google",
+    "import": "Oxygen_Mono",
+    "variable": "--font-oxygen-mono",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

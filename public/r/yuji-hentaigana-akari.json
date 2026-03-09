@@ -1,0 +1,22 @@
+{
+  "name": "yuji-hentaigana-akari",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Yuji Hentaigana Akari",
+  "description": "Yuji Hentaigana Akari — Handwriting font.",
+  "font": {
+    "family": "Yuji Hentaigana Akari",
+    "provider": "google",
+    "import": "Yuji_Hentaigana_Akari",
+    "variable": "--font-yuji-hentaigana-akari",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

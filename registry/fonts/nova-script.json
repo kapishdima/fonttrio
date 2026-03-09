@@ -1,0 +1,21 @@
+{
+  "name": "nova-script",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Nova Script",
+  "description": "Nova Script — Display font.",
+  "font": {
+    "family": "Nova Script",
+    "provider": "google",
+    "import": "Nova_Script",
+    "variable": "--font-nova-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "dynalight",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Dynalight",
+  "description": "Dynalight — Display font.",
+  "font": {
+    "family": "Dynalight",
+    "provider": "google",
+    "import": "Dynalight",
+    "variable": "--font-dynalight",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

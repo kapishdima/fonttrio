@@ -1,0 +1,22 @@
+{
+  "name": "noto-serif-tangut",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Tangut",
+  "description": "Noto Serif Tangut — Serif font.",
+  "font": {
+    "family": "Noto Serif Tangut",
+    "provider": "google",
+    "import": "Noto_Serif_Tangut",
+    "variable": "--font-noto-serif-tangut",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tangut"
+    ]
+  }
+}

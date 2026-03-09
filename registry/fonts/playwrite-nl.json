@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-nl",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite NL",
+  "description": "Playwrite NL — Handwriting font.",
+  "font": {
+    "family": "Playwrite NL",
+    "provider": "google",
+    "import": "Playwrite_NL",
+    "variable": "--font-playwrite-nl",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

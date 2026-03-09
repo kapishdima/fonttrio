@@ -1,0 +1,20 @@
+{
+  "name": "league-script",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "League Script",
+  "description": "League Script — Handwriting font.",
+  "font": {
+    "family": "League Script",
+    "provider": "google",
+    "import": "League_Script",
+    "variable": "--font-league-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

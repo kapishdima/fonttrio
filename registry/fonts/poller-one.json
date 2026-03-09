@@ -1,0 +1,20 @@
+{
+  "name": "poller-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Poller One",
+  "description": "Poller One — Display font.",
+  "font": {
+    "family": "Poller One",
+    "provider": "google",
+    "import": "Poller_One",
+    "variable": "--font-poller-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

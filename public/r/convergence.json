@@ -1,0 +1,21 @@
+{
+  "name": "convergence",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Convergence",
+  "description": "Convergence — Sans Serif font.",
+  "font": {
+    "family": "Convergence",
+    "provider": "google",
+    "import": "Convergence",
+    "variable": "--font-convergence",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "patrick-hand",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Patrick Hand",
+  "description": "Patrick Hand — Handwriting font.",
+  "font": {
+    "family": "Patrick Hand",
+    "provider": "google",
+    "import": "Patrick_Hand",
+    "variable": "--font-patrick-hand",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

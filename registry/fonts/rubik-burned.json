@@ -1,0 +1,24 @@
+{
+  "name": "rubik-burned",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Burned",
+  "description": "Rubik Burned — Display font.",
+  "font": {
+    "family": "Rubik Burned",
+    "provider": "google",
+    "import": "Rubik_Burned",
+    "variable": "--font-rubik-burned",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

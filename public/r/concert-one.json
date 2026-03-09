@@ -1,0 +1,21 @@
+{
+  "name": "concert-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Concert One",
+  "description": "Concert One — Display font.",
+  "font": {
+    "family": "Concert One",
+    "provider": "google",
+    "import": "Concert_One",
+    "variable": "--font-concert-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

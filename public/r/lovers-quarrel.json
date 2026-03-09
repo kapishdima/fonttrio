@@ -1,0 +1,22 @@
+{
+  "name": "lovers-quarrel",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Lovers Quarrel",
+  "description": "Lovers Quarrel — Handwriting font.",
+  "font": {
+    "family": "Lovers Quarrel",
+    "provider": "google",
+    "import": "Lovers_Quarrel",
+    "variable": "--font-lovers-quarrel",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

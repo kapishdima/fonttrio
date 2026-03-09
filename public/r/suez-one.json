@@ -1,0 +1,22 @@
+{
+  "name": "suez-one",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Suez One",
+  "description": "Suez One — Serif font.",
+  "font": {
+    "family": "Suez One",
+    "provider": "google",
+    "import": "Suez_One",
+    "variable": "--font-suez-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

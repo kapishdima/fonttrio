@@ -1,0 +1,21 @@
+{
+  "name": "herr-von-muellerhoff",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Herr Von Muellerhoff",
+  "description": "Herr Von Muellerhoff — Handwriting font.",
+  "font": {
+    "family": "Herr Von Muellerhoff",
+    "provider": "google",
+    "import": "Herr_Von_Muellerhoff",
+    "variable": "--font-herr-von-muellerhoff",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

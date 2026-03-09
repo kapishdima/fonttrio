@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-caucasian-albanian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Caucasian Albanian",
+  "description": "Noto Sans Caucasian Albanian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Caucasian Albanian",
+    "provider": "google",
+    "import": "Noto_Sans_Caucasian_Albanian",
+    "variable": "--font-noto-sans-caucasian-albanian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "caucasian-albanian",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

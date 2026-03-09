@@ -1,0 +1,21 @@
+{
+  "name": "ponnala",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Ponnala",
+  "description": "Ponnala — Display font.",
+  "font": {
+    "family": "Ponnala",
+    "provider": "google",
+    "import": "Ponnala",
+    "variable": "--font-ponnala",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

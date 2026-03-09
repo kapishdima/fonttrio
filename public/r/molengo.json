@@ -1,0 +1,21 @@
+{
+  "name": "molengo",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Molengo",
+  "description": "Molengo — Sans Serif font.",
+  "font": {
+    "family": "Molengo",
+    "provider": "google",
+    "import": "Molengo",
+    "variable": "--font-molengo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

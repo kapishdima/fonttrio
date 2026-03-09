@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-miao",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Miao",
+  "description": "Noto Sans Miao — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Miao",
+    "provider": "google",
+    "import": "Noto_Sans_Miao",
+    "variable": "--font-noto-sans-miao",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "miao"
+    ]
+  }
+}

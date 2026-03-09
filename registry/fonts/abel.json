@@ -1,0 +1,20 @@
+{
+  "name": "abel",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Abel",
+  "description": "Abel — Sans Serif font.",
+  "font": {
+    "family": "Abel",
+    "provider": "google",
+    "import": "Abel",
+    "variable": "--font-abel",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

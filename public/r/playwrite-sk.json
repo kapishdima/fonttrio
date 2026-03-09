@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-sk",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite SK",
+  "description": "Playwrite SK — Handwriting font.",
+  "font": {
+    "family": "Playwrite SK",
+    "provider": "google",
+    "import": "Playwrite_SK",
+    "variable": "--font-playwrite-sk",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

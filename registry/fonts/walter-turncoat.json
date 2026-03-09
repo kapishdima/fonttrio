@@ -1,0 +1,20 @@
+{
+  "name": "walter-turncoat",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Walter Turncoat",
+  "description": "Walter Turncoat — Handwriting font.",
+  "font": {
+    "family": "Walter Turncoat",
+    "provider": "google",
+    "import": "Walter_Turncoat",
+    "variable": "--font-walter-turncoat",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

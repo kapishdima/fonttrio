@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-gb-s",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite GB S",
+  "description": "Playwrite GB S — Handwriting font.",
+  "font": {
+    "family": "Playwrite GB S",
+    "provider": "google",
+    "import": "Playwrite_GB_S",
+    "variable": "--font-playwrite-gb-s",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

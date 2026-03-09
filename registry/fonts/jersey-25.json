@@ -1,0 +1,21 @@
+{
+  "name": "jersey-25",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Jersey 25",
+  "description": "Jersey 25 — Display font.",
+  "font": {
+    "family": "Jersey 25",
+    "provider": "google",
+    "import": "Jersey_25",
+    "variable": "--font-jersey-25",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

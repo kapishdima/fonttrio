@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-chakma",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Chakma",
+  "description": "Noto Sans Chakma — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Chakma",
+    "provider": "google",
+    "import": "Noto_Sans_Chakma",
+    "variable": "--font-noto-sans-chakma",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chakma",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

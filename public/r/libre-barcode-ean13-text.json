@@ -1,0 +1,20 @@
+{
+  "name": "libre-barcode-ean13-text",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Libre Barcode EAN13 Text",
+  "description": "Libre Barcode EAN13 Text — Display font.",
+  "font": {
+    "family": "Libre Barcode EAN13 Text",
+    "provider": "google",
+    "import": "Libre_Barcode_EAN13_Text",
+    "variable": "--font-libre-barcode-ean13-text",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

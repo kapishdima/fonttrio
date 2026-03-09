@@ -1,0 +1,30 @@
+{
+  "name": "big-shoulders",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Big Shoulders",
+  "description": "Big Shoulders — Display font.",
+  "font": {
+    "family": "Big Shoulders",
+    "provider": "google",
+    "import": "Big_Shoulders",
+    "variable": "--font-big-shoulders",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

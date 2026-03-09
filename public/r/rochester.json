@@ -1,0 +1,20 @@
+{
+  "name": "rochester",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Rochester",
+  "description": "Rochester — Handwriting font.",
+  "font": {
+    "family": "Rochester",
+    "provider": "google",
+    "import": "Rochester",
+    "variable": "--font-rochester",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

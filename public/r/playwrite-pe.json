@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-pe",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite PE",
+  "description": "Playwrite PE — Handwriting font.",
+  "font": {
+    "family": "Playwrite PE",
+    "provider": "google",
+    "import": "Playwrite_PE",
+    "variable": "--font-playwrite-pe",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

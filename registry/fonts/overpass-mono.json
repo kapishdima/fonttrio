@@ -1,0 +1,28 @@
+{
+  "name": "overpass-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Overpass Mono",
+  "description": "Overpass Mono — Monospace font.",
+  "font": {
+    "family": "Overpass Mono",
+    "provider": "google",
+    "import": "Overpass_Mono",
+    "variable": "--font-overpass-mono",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

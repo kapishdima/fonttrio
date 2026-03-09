@@ -1,0 +1,22 @@
+{
+  "name": "mogra",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Mogra",
+  "description": "Mogra — Display font.",
+  "font": {
+    "family": "Mogra",
+    "provider": "google",
+    "import": "Mogra",
+    "variable": "--font-mogra",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "gujarati",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

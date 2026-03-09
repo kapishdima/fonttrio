@@ -1,0 +1,26 @@
+{
+  "name": "anaheim",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anaheim",
+  "description": "Anaheim — Sans Serif font.",
+  "font": {
+    "family": "Anaheim",
+    "provider": "google",
+    "import": "Anaheim",
+    "variable": "--font-anaheim",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

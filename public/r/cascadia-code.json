@@ -1,0 +1,34 @@
+{
+  "name": "cascadia-code",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Cascadia Code",
+  "description": "Cascadia Code — Sans Serif font.",
+  "font": {
+    "family": "Cascadia Code",
+    "provider": "google",
+    "import": "Cascadia_Code",
+    "variable": "--font-cascadia-code",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "braille",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "symbols2",
+      "vietnamese"
+    ]
+  }
+}

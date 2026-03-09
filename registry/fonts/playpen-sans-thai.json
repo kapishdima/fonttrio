@@ -1,0 +1,31 @@
+{
+  "name": "playpen-sans-thai",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playpen Sans Thai",
+  "description": "Playpen Sans Thai — Handwriting font.",
+  "font": {
+    "family": "Playpen Sans Thai",
+    "provider": "google",
+    "import": "Playpen_Sans_Thai",
+    "variable": "--font-playpen-sans-thai",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "emoji",
+      "latin",
+      "latin-ext",
+      "math",
+      "thai"
+    ]
+  }
+}

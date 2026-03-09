@@ -1,0 +1,26 @@
+{
+  "name": "andada-pro",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Andada Pro",
+  "description": "Andada Pro — Serif font.",
+  "font": {
+    "family": "Andada Pro",
+    "provider": "google",
+    "import": "Andada_Pro",
+    "variable": "--font-andada-pro",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

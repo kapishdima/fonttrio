@@ -1,0 +1,21 @@
+{
+  "name": "swanky-and-moo-moo",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Swanky and Moo Moo",
+  "description": "Swanky and Moo Moo — Handwriting font.",
+  "font": {
+    "family": "Swanky and Moo Moo",
+    "provider": "google",
+    "import": "Swanky_and_Moo_Moo",
+    "variable": "--font-swanky-and-moo-moo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

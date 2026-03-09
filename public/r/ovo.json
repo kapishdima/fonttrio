@@ -1,0 +1,20 @@
+{
+  "name": "ovo",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Ovo",
+  "description": "Ovo — Serif font.",
+  "font": {
+    "family": "Ovo",
+    "provider": "google",
+    "import": "Ovo",
+    "variable": "--font-ovo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

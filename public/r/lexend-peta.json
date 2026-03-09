@@ -1,0 +1,30 @@
+{
+  "name": "lexend-peta",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Lexend Peta",
+  "description": "Lexend Peta — Sans Serif font.",
+  "font": {
+    "family": "Lexend Peta",
+    "provider": "google",
+    "import": "Lexend_Peta",
+    "variable": "--font-lexend-peta",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "cambo",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Cambo",
+  "description": "Cambo — Serif font.",
+  "font": {
+    "family": "Cambo",
+    "provider": "google",
+    "import": "Cambo",
+    "variable": "--font-cambo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

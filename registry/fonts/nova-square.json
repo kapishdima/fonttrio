@@ -1,0 +1,21 @@
+{
+  "name": "nova-square",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Nova Square",
+  "description": "Nova Square — Display font.",
+  "font": {
+    "family": "Nova Square",
+    "provider": "google",
+    "import": "Nova_Square",
+    "variable": "--font-nova-square",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

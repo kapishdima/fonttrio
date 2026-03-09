@@ -1,0 +1,20 @@
+{
+  "name": "carme",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Carme",
+  "description": "Carme — Sans Serif font.",
+  "font": {
+    "family": "Carme",
+    "provider": "google",
+    "import": "Carme",
+    "variable": "--font-carme",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-devanagari",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Devanagari",
+  "description": "Noto Sans Devanagari — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Devanagari",
+    "provider": "google",
+    "import": "Noto_Sans_Devanagari",
+    "variable": "--font-noto-sans-devanagari",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "nova-oval",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Nova Oval",
+  "description": "Nova Oval — Display font.",
+  "font": {
+    "family": "Nova Oval",
+    "provider": "google",
+    "import": "Nova_Oval",
+    "variable": "--font-nova-oval",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "licorice",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Licorice",
+  "description": "Licorice — Handwriting font.",
+  "font": {
+    "family": "Licorice",
+    "provider": "google",
+    "import": "Licorice",
+    "variable": "--font-licorice",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

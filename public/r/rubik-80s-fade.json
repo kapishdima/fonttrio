@@ -1,0 +1,24 @@
+{
+  "name": "rubik-80s-fade",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik 80s Fade",
+  "description": "Rubik 80s Fade — Display font.",
+  "font": {
+    "family": "Rubik 80s Fade",
+    "provider": "google",
+    "import": "Rubik_80s_Fade",
+    "variable": "--font-rubik-80s-fade",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "comme",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Comme",
+  "description": "Comme — Sans Serif font.",
+  "font": {
+    "family": "Comme",
+    "provider": "google",
+    "import": "Comme",
+    "variable": "--font-comme",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

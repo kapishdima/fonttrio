@@ -1,0 +1,25 @@
+{
+  "name": "ruwudu",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Ruwudu",
+  "description": "Ruwudu — Serif font.",
+  "font": {
+    "family": "Ruwudu",
+    "provider": "google",
+    "import": "Ruwudu",
+    "variable": "--font-ruwudu",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

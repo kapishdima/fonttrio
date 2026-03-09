@@ -1,0 +1,22 @@
+{
+  "name": "moon-dance",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Moon Dance",
+  "description": "Moon Dance — Handwriting font.",
+  "font": {
+    "family": "Moon Dance",
+    "provider": "google",
+    "import": "Moon_Dance",
+    "variable": "--font-moon-dance",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

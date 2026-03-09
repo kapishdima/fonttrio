@@ -1,0 +1,21 @@
+{
+  "name": "zcool-kuaile",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "ZCOOL KuaiLe",
+  "description": "ZCOOL KuaiLe — Sans Serif font.",
+  "font": {
+    "family": "ZCOOL KuaiLe",
+    "provider": "google",
+    "import": "ZCOOL_KuaiLe",
+    "variable": "--font-zcool-kuaile",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-simplified",
+      "latin"
+    ]
+  }
+}

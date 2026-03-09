@@ -1,0 +1,22 @@
+{
+  "name": "langar",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Langar",
+  "description": "Langar — Display font.",
+  "font": {
+    "family": "Langar",
+    "provider": "google",
+    "import": "Langar",
+    "variable": "--font-langar",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "gurmukhi",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

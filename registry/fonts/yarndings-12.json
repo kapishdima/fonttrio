@@ -1,0 +1,22 @@
+{
+  "name": "yarndings-12",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Yarndings 12",
+  "description": "Yarndings 12 — Display font.",
+  "font": {
+    "family": "Yarndings 12",
+    "provider": "google",
+    "import": "Yarndings_12",
+    "variable": "--font-yarndings-12",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "math",
+      "symbols"
+    ]
+  }
+}

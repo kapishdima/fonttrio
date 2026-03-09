@@ -1,0 +1,22 @@
+{
+  "name": "bevan",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Bevan",
+  "description": "Bevan — Serif font.",
+  "font": {
+    "family": "Bevan",
+    "provider": "google",
+    "import": "Bevan",
+    "variable": "--font-bevan",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

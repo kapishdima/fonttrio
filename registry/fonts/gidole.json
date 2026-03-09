@@ -1,0 +1,24 @@
+{
+  "name": "gidole",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Gidole",
+  "description": "Gidole — Sans Serif font.",
+  "font": {
+    "family": "Gidole",
+    "provider": "google",
+    "import": "Gidole",
+    "variable": "--font-gidole",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

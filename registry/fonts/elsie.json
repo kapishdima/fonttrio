@@ -1,0 +1,22 @@
+{
+  "name": "elsie",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Elsie",
+  "description": "Elsie — Display font.",
+  "font": {
+    "family": "Elsie",
+    "provider": "google",
+    "import": "Elsie",
+    "variable": "--font-elsie",
+    "weight": [
+      "400",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

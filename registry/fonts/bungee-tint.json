@@ -1,0 +1,22 @@
+{
+  "name": "bungee-tint",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bungee Tint",
+  "description": "Bungee Tint — Display font.",
+  "font": {
+    "family": "Bungee Tint",
+    "provider": "google",
+    "import": "Bungee_Tint",
+    "variable": "--font-bungee-tint",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

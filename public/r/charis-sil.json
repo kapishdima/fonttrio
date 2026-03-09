@@ -1,0 +1,25 @@
+{
+  "name": "charis-sil",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Charis SIL",
+  "description": "Charis SIL — Serif font.",
+  "font": {
+    "family": "Charis SIL",
+    "provider": "google",
+    "import": "Charis_SIL",
+    "variable": "--font-charis-sil",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

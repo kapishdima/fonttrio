@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-au-tas",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite AU TAS",
+  "description": "Playwrite AU TAS — Handwriting font.",
+  "font": {
+    "family": "Playwrite AU TAS",
+    "provider": "google",
+    "import": "Playwrite_AU_TAS",
+    "variable": "--font-playwrite-au-tas",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

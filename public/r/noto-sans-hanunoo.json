@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-hanunoo",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Hanunoo",
+  "description": "Noto Sans Hanunoo — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Hanunoo",
+    "provider": "google",
+    "import": "Noto_Sans_Hanunoo",
+    "variable": "--font-noto-sans-hanunoo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "hanunoo",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

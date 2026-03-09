@@ -1,0 +1,31 @@
+{
+  "name": "playpen-sans-hebrew",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playpen Sans Hebrew",
+  "description": "Playpen Sans Hebrew — Handwriting font.",
+  "font": {
+    "family": "Playpen Sans Hebrew",
+    "provider": "google",
+    "import": "Playpen_Sans_Hebrew",
+    "variable": "--font-playpen-sans-hebrew",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "emoji",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "math"
+    ]
+  }
+}

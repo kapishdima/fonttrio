@@ -1,0 +1,26 @@
+{
+  "name": "el-messiri",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "El Messiri",
+  "description": "El Messiri — Sans Serif font.",
+  "font": {
+    "family": "El Messiri",
+    "provider": "google",
+    "import": "El_Messiri",
+    "variable": "--font-el-messiri",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

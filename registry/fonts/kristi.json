@@ -1,0 +1,20 @@
+{
+  "name": "kristi",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Kristi",
+  "description": "Kristi — Handwriting font.",
+  "font": {
+    "family": "Kristi",
+    "provider": "google",
+    "import": "Kristi",
+    "variable": "--font-kristi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

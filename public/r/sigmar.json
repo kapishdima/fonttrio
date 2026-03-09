@@ -1,0 +1,22 @@
+{
+  "name": "sigmar",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Sigmar",
+  "description": "Sigmar — Display font.",
+  "font": {
+    "family": "Sigmar",
+    "provider": "google",
+    "import": "Sigmar",
+    "variable": "--font-sigmar",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

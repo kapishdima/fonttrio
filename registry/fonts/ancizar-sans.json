@@ -1,0 +1,31 @@
+{
+  "name": "ancizar-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Ancizar Sans",
+  "description": "Ancizar Sans — Sans Serif font.",
+  "font": {
+    "family": "Ancizar Sans",
+    "provider": "google",
+    "import": "Ancizar_Sans",
+    "variable": "--font-ancizar-sans",
+    "weight": [
+      "100",
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "greek",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

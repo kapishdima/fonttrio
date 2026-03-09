@@ -1,0 +1,23 @@
+{
+  "name": "train-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Train One",
+  "description": "Train One — Display font.",
+  "font": {
+    "family": "Train One",
+    "provider": "google",
+    "import": "Train_One",
+    "variable": "--font-train-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

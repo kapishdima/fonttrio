@@ -1,0 +1,23 @@
+{
+  "name": "jacquarda-bastarda-9-charted",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Jacquarda Bastarda 9 Charted",
+  "description": "Jacquarda Bastarda 9 Charted — Display font.",
+  "font": {
+    "family": "Jacquarda Bastarda 9 Charted",
+    "provider": "google",
+    "import": "Jacquarda_Bastarda_9_Charted",
+    "variable": "--font-jacquarda-bastarda-9-charted",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

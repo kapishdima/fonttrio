@@ -1,0 +1,30 @@
+{
+  "name": "lexend-exa",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Lexend Exa",
+  "description": "Lexend Exa — Sans Serif font.",
+  "font": {
+    "family": "Lexend Exa",
+    "provider": "google",
+    "import": "Lexend_Exa",
+    "variable": "--font-lexend-exa",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

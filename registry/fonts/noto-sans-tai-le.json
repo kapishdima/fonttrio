@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-tai-le",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Tai Le",
+  "description": "Noto Sans Tai Le — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Tai Le",
+    "provider": "google",
+    "import": "Noto_Sans_Tai_Le",
+    "variable": "--font-noto-sans-tai-le",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tai-le"
+    ]
+  }
+}

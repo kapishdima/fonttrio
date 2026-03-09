@@ -1,0 +1,25 @@
+{
+  "name": "kablammo",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Kablammo",
+  "description": "Kablammo — Display font.",
+  "font": {
+    "family": "Kablammo",
+    "provider": "google",
+    "import": "Kablammo",
+    "variable": "--font-kablammo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "emoji",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

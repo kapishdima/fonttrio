@@ -1,0 +1,30 @@
+{
+  "name": "saira-semi-condensed",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Saira Semi Condensed",
+  "description": "Saira Semi Condensed — Sans Serif font.",
+  "font": {
+    "family": "Saira Semi Condensed",
+    "provider": "google",
+    "import": "Saira_Semi_Condensed",
+    "variable": "--font-saira-semi-condensed",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

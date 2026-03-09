@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-es-deco",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite ES Deco",
+  "description": "Playwrite ES Deco — Handwriting font.",
+  "font": {
+    "family": "Playwrite ES Deco",
+    "provider": "google",
+    "import": "Playwrite_ES_Deco",
+    "variable": "--font-playwrite-es-deco",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

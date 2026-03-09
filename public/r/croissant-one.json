@@ -1,0 +1,21 @@
+{
+  "name": "croissant-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Croissant One",
+  "description": "Croissant One — Display font.",
+  "font": {
+    "family": "Croissant One",
+    "provider": "google",
+    "import": "Croissant_One",
+    "variable": "--font-croissant-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

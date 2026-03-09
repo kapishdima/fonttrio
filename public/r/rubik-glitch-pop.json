@@ -1,0 +1,26 @@
+{
+  "name": "rubik-glitch-pop",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Glitch Pop",
+  "description": "Rubik Glitch Pop — Display font.",
+  "font": {
+    "family": "Rubik Glitch Pop",
+    "provider": "google",
+    "import": "Rubik_Glitch_Pop",
+    "variable": "--font-rubik-glitch-pop",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

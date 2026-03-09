@@ -1,0 +1,23 @@
+{
+  "name": "idiqlat",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Idiqlat",
+  "description": "Idiqlat — Serif font.",
+  "font": {
+    "family": "Idiqlat",
+    "provider": "google",
+    "import": "Idiqlat",
+    "variable": "--font-idiqlat",
+    "weight": [
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "syriac"
+    ]
+  }
+}

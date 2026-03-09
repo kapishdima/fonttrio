@@ -1,0 +1,22 @@
+{
+  "name": "allison",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Allison",
+  "description": "Allison — Handwriting font.",
+  "font": {
+    "family": "Allison",
+    "provider": "google",
+    "import": "Allison",
+    "variable": "--font-allison",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

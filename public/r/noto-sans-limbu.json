@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-limbu",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Limbu",
+  "description": "Noto Sans Limbu — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Limbu",
+    "provider": "google",
+    "import": "Noto_Sans_Limbu",
+    "variable": "--font-noto-sans-limbu",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "limbu"
+    ]
+  }
+}

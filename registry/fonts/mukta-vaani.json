@@ -1,0 +1,28 @@
+{
+  "name": "mukta-vaani",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mukta Vaani",
+  "description": "Mukta Vaani — Sans Serif font.",
+  "font": {
+    "family": "Mukta Vaani",
+    "provider": "google",
+    "import": "Mukta_Vaani",
+    "variable": "--font-mukta-vaani",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "gujarati",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

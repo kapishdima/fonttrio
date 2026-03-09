@@ -1,0 +1,21 @@
+{
+  "name": "mooli",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mooli",
+  "description": "Mooli — Sans Serif font.",
+  "font": {
+    "family": "Mooli",
+    "provider": "google",
+    "import": "Mooli",
+    "variable": "--font-mooli",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "noto-serif-gurmukhi",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Gurmukhi",
+  "description": "Noto Serif Gurmukhi — Serif font.",
+  "font": {
+    "family": "Noto Serif Gurmukhi",
+    "provider": "google",
+    "import": "Noto_Serif_Gurmukhi",
+    "variable": "--font-noto-serif-gurmukhi",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "gurmukhi",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "libre-barcode-39-extended-text",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Libre Barcode 39 Extended Text",
+  "description": "Libre Barcode 39 Extended Text — Display font.",
+  "font": {
+    "family": "Libre Barcode 39 Extended Text",
+    "provider": "google",
+    "import": "Libre_Barcode_39_Extended_Text",
+    "variable": "--font-libre-barcode-39-extended-text",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

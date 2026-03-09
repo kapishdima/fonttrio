@@ -1,0 +1,21 @@
+{
+  "name": "esteban",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Esteban",
+  "description": "Esteban — Serif font.",
+  "font": {
+    "family": "Esteban",
+    "provider": "google",
+    "import": "Esteban",
+    "variable": "--font-esteban",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

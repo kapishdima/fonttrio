@@ -1,0 +1,20 @@
+{
+  "name": "geostar-fill",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Geostar Fill",
+  "description": "Geostar Fill — Display font.",
+  "font": {
+    "family": "Geostar Fill",
+    "provider": "google",
+    "import": "Geostar_Fill",
+    "variable": "--font-geostar-fill",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "flow-rounded",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Flow Rounded",
+  "description": "Flow Rounded — Display font.",
+  "font": {
+    "family": "Flow Rounded",
+    "provider": "google",
+    "import": "Flow_Rounded",
+    "variable": "--font-flow-rounded",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

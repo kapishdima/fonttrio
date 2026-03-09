@@ -1,0 +1,24 @@
+{
+  "name": "nabla",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Nabla",
+  "description": "Nabla — Display font.",
+  "font": {
+    "family": "Nabla",
+    "provider": "google",
+    "import": "Nabla",
+    "variable": "--font-nabla",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "vietnamese"
+    ]
+  }
+}

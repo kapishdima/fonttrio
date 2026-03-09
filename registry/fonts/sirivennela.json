@@ -1,0 +1,21 @@
+{
+  "name": "sirivennela",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sirivennela",
+  "description": "Sirivennela — Sans Serif font.",
+  "font": {
+    "family": "Sirivennela",
+    "provider": "google",
+    "import": "Sirivennela",
+    "variable": "--font-sirivennela",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

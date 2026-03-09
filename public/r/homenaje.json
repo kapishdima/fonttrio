@@ -1,0 +1,20 @@
+{
+  "name": "homenaje",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Homenaje",
+  "description": "Homenaje — Sans Serif font.",
+  "font": {
+    "family": "Homenaje",
+    "provider": "google",
+    "import": "Homenaje",
+    "variable": "--font-homenaje",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

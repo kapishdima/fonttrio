@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-nandinagari",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Nandinagari",
+  "description": "Noto Sans Nandinagari — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Nandinagari",
+    "provider": "google",
+    "import": "Noto_Sans_Nandinagari",
+    "variable": "--font-noto-sans-nandinagari",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "nandinagari"
+    ]
+  }
+}

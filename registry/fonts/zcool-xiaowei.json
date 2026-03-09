@@ -1,0 +1,21 @@
+{
+  "name": "zcool-xiaowei",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "ZCOOL XiaoWei",
+  "description": "ZCOOL XiaoWei — Sans Serif font.",
+  "font": {
+    "family": "ZCOOL XiaoWei",
+    "provider": "google",
+    "import": "ZCOOL_XiaoWei",
+    "variable": "--font-zcool-xiaowei",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-simplified",
+      "latin"
+    ]
+  }
+}

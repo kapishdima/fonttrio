@@ -1,0 +1,21 @@
+{
+  "name": "oregano",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Oregano",
+  "description": "Oregano — Display font.",
+  "font": {
+    "family": "Oregano",
+    "provider": "google",
+    "import": "Oregano",
+    "variable": "--font-oregano",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

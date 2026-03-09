@@ -1,0 +1,22 @@
+{
+  "name": "waterfall",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Waterfall",
+  "description": "Waterfall — Handwriting font.",
+  "font": {
+    "family": "Waterfall",
+    "provider": "google",
+    "import": "Waterfall",
+    "variable": "--font-waterfall",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

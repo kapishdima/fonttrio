@@ -1,0 +1,23 @@
+{
+  "name": "pt-serif-caption",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "PT Serif Caption",
+  "description": "PT Serif Caption — Serif font.",
+  "font": {
+    "family": "PT Serif Caption",
+    "provider": "google",
+    "import": "PT_Serif_Caption",
+    "variable": "--font-pt-serif-caption",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

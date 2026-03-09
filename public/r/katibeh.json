@@ -1,0 +1,22 @@
+{
+  "name": "katibeh",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Katibeh",
+  "description": "Katibeh — Display font.",
+  "font": {
+    "family": "Katibeh",
+    "provider": "google",
+    "import": "Katibeh",
+    "variable": "--font-katibeh",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

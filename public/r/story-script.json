@@ -1,0 +1,22 @@
+{
+  "name": "story-script",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Story Script",
+  "description": "Story Script — Sans Serif font.",
+  "font": {
+    "family": "Story Script",
+    "provider": "google",
+    "import": "Story_Script",
+    "variable": "--font-story-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

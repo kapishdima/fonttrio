@@ -1,0 +1,22 @@
+{
+  "name": "allura",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Allura",
+  "description": "Allura — Handwriting font.",
+  "font": {
+    "family": "Allura",
+    "provider": "google",
+    "import": "Allura",
+    "variable": "--font-allura",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

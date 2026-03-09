@@ -1,0 +1,28 @@
+{
+  "name": "gemunu-libre",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Gemunu Libre",
+  "description": "Gemunu Libre — Sans Serif font.",
+  "font": {
+    "family": "Gemunu Libre",
+    "provider": "google",
+    "import": "Gemunu_Libre",
+    "variable": "--font-gemunu-libre",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "sinhala"
+    ]
+  }
+}

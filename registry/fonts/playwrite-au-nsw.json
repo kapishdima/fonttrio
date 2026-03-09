@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-au-nsw",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite AU NSW",
+  "description": "Playwrite AU NSW — Handwriting font.",
+  "font": {
+    "family": "Playwrite AU NSW",
+    "provider": "google",
+    "import": "Playwrite_AU_NSW",
+    "variable": "--font-playwrite-au-nsw",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

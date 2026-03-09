@@ -1,0 +1,30 @@
+{
+  "name": "exo",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Exo",
+  "description": "Exo — Sans Serif font.",
+  "font": {
+    "family": "Exo",
+    "provider": "google",
+    "import": "Exo",
+    "variable": "--font-exo",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "caveat-brush",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Caveat Brush",
+  "description": "Caveat Brush — Handwriting font.",
+  "font": {
+    "family": "Caveat Brush",
+    "provider": "google",
+    "import": "Caveat_Brush",
+    "variable": "--font-caveat-brush",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

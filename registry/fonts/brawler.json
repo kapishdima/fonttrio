@@ -1,0 +1,21 @@
+{
+  "name": "brawler",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Brawler",
+  "description": "Brawler — Serif font.",
+  "font": {
+    "family": "Brawler",
+    "provider": "google",
+    "import": "Brawler",
+    "variable": "--font-brawler",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "pavanam",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Pavanam",
+  "description": "Pavanam — Sans Serif font.",
+  "font": {
+    "family": "Pavanam",
+    "provider": "google",
+    "import": "Pavanam",
+    "variable": "--font-pavanam",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tamil"
+    ]
+  }
+}

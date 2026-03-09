@@ -1,0 +1,21 @@
+{
+  "name": "ravi-prakash",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Ravi Prakash",
+  "description": "Ravi Prakash — Display font.",
+  "font": {
+    "family": "Ravi Prakash",
+    "provider": "google",
+    "import": "Ravi_Prakash",
+    "variable": "--font-ravi-prakash",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

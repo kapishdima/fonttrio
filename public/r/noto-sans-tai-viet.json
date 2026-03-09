@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-tai-viet",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Tai Viet",
+  "description": "Noto Sans Tai Viet — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Tai Viet",
+    "provider": "google",
+    "import": "Noto_Sans_Tai_Viet",
+    "variable": "--font-noto-sans-tai-viet",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tai-viet"
+    ]
+  }
+}

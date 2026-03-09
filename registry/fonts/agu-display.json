@@ -1,0 +1,22 @@
+{
+  "name": "agu-display",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Agu Display",
+  "description": "Agu Display — Display font.",
+  "font": {
+    "family": "Agu Display",
+    "provider": "google",
+    "import": "Agu_Display",
+    "variable": "--font-agu-display",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

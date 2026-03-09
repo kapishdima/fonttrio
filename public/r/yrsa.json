@@ -1,0 +1,26 @@
+{
+  "name": "yrsa",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Yrsa",
+  "description": "Yrsa — Serif font.",
+  "font": {
+    "family": "Yrsa",
+    "provider": "google",
+    "import": "Yrsa",
+    "variable": "--font-yrsa",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

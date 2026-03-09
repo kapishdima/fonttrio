@@ -1,0 +1,33 @@
+{
+  "name": "commissioner",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Commissioner",
+  "description": "Commissioner — Sans Serif font.",
+  "font": {
+    "family": "Commissioner",
+    "provider": "google",
+    "import": "Commissioner",
+    "variable": "--font-commissioner",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

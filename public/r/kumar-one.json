@@ -1,0 +1,22 @@
+{
+  "name": "kumar-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Kumar One",
+  "description": "Kumar One — Display font.",
+  "font": {
+    "family": "Kumar One",
+    "provider": "google",
+    "import": "Kumar_One",
+    "variable": "--font-kumar-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "gujarati",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

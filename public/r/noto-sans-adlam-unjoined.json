@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-adlam-unjoined",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Adlam Unjoined",
+  "description": "Noto Sans Adlam Unjoined — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Adlam Unjoined",
+    "provider": "google",
+    "import": "Noto_Sans_Adlam_Unjoined",
+    "variable": "--font-noto-sans-adlam-unjoined",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "adlam",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

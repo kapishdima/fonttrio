@@ -1,0 +1,29 @@
+{
+  "name": "anek-kannada",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anek Kannada",
+  "description": "Anek Kannada — Sans Serif font.",
+  "font": {
+    "family": "Anek Kannada",
+    "provider": "google",
+    "import": "Anek_Kannada",
+    "variable": "--font-anek-kannada",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "kannada",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

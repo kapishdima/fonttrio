@@ -1,0 +1,21 @@
+{
+  "name": "moulpali",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Moulpali",
+  "description": "Moulpali — Sans Serif font.",
+  "font": {
+    "family": "Moulpali",
+    "provider": "google",
+    "import": "Moulpali",
+    "variable": "--font-moulpali",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin"
+    ]
+  }
+}

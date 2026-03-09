@@ -1,0 +1,23 @@
+{
+  "name": "reggae-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Reggae One",
+  "description": "Reggae One — Display font.",
+  "font": {
+    "family": "Reggae One",
+    "provider": "google",
+    "import": "Reggae_One",
+    "variable": "--font-reggae-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

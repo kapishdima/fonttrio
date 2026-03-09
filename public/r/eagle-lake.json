@@ -1,0 +1,21 @@
+{
+  "name": "eagle-lake",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Eagle Lake",
+  "description": "Eagle Lake — Handwriting font.",
+  "font": {
+    "family": "Eagle Lake",
+    "provider": "google",
+    "import": "Eagle_Lake",
+    "variable": "--font-eagle-lake",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

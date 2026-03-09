@@ -1,0 +1,23 @@
+{
+  "name": "corinthia",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Corinthia",
+  "description": "Corinthia — Handwriting font.",
+  "font": {
+    "family": "Corinthia",
+    "provider": "google",
+    "import": "Corinthia",
+    "variable": "--font-corinthia",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

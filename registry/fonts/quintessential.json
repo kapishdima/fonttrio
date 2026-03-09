@@ -1,0 +1,21 @@
+{
+  "name": "quintessential",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Quintessential",
+  "description": "Quintessential — Handwriting font.",
+  "font": {
+    "family": "Quintessential",
+    "provider": "google",
+    "import": "Quintessential",
+    "variable": "--font-quintessential",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-br-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite BR Guides",
+  "description": "Playwrite BR Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite BR Guides",
+    "provider": "google",
+    "import": "Playwrite_BR_Guides",
+    "variable": "--font-playwrite-br-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

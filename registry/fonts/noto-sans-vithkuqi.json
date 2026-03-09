@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-vithkuqi",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Vithkuqi",
+  "description": "Noto Sans Vithkuqi — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Vithkuqi",
+    "provider": "google",
+    "import": "Noto_Sans_Vithkuqi",
+    "variable": "--font-noto-sans-vithkuqi",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vithkuqi"
+    ]
+  }
+}

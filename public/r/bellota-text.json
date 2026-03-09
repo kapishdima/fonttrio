@@ -1,0 +1,25 @@
+{
+  "name": "bellota-text",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bellota Text",
+  "description": "Bellota Text — Display font.",
+  "font": {
+    "family": "Bellota Text",
+    "provider": "google",
+    "import": "Bellota_Text",
+    "variable": "--font-bellota-text",
+    "weight": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

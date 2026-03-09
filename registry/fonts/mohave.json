@@ -1,0 +1,25 @@
+{
+  "name": "mohave",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mohave",
+  "description": "Mohave — Sans Serif font.",
+  "font": {
+    "family": "Mohave",
+    "provider": "google",
+    "import": "Mohave",
+    "variable": "--font-mohave",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

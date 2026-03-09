@@ -1,0 +1,20 @@
+{
+  "name": "khmer",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Khmer",
+  "description": "Khmer — Sans Serif font.",
+  "font": {
+    "family": "Khmer",
+    "provider": "google",
+    "import": "Khmer",
+    "variable": "--font-khmer",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer"
+    ]
+  }
+}

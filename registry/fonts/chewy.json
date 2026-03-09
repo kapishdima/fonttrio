@@ -1,0 +1,20 @@
+{
+  "name": "chewy",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Chewy",
+  "description": "Chewy — Display font.",
+  "font": {
+    "family": "Chewy",
+    "provider": "google",
+    "import": "Chewy",
+    "variable": "--font-chewy",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

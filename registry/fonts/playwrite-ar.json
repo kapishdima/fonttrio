@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-ar",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite AR",
+  "description": "Playwrite AR — Handwriting font.",
+  "font": {
+    "family": "Playwrite AR",
+    "provider": "google",
+    "import": "Playwrite_AR",
+    "variable": "--font-playwrite-ar",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

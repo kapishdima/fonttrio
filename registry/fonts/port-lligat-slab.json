@@ -1,0 +1,20 @@
+{
+  "name": "port-lligat-slab",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Port Lligat Slab",
+  "description": "Port Lligat Slab — Serif font.",
+  "font": {
+    "family": "Port Lligat Slab",
+    "provider": "google",
+    "import": "Port_Lligat_Slab",
+    "variable": "--font-port-lligat-slab",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

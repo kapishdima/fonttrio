@@ -1,0 +1,20 @@
+{
+  "name": "germania-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Germania One",
+  "description": "Germania One — Display font.",
+  "font": {
+    "family": "Germania One",
+    "provider": "google",
+    "import": "Germania_One",
+    "variable": "--font-germania-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

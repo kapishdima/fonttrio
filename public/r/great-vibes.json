@@ -1,0 +1,25 @@
+{
+  "name": "great-vibes",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Great Vibes",
+  "description": "Great Vibes — Handwriting font.",
+  "font": {
+    "family": "Great Vibes",
+    "provider": "google",
+    "import": "Great_Vibes",
+    "variable": "--font-great-vibes",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

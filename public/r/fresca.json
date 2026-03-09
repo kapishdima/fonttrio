@@ -1,0 +1,21 @@
+{
+  "name": "fresca",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Fresca",
+  "description": "Fresca — Sans Serif font.",
+  "font": {
+    "family": "Fresca",
+    "provider": "google",
+    "import": "Fresca",
+    "variable": "--font-fresca",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "oooh-baby",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Oooh Baby",
+  "description": "Oooh Baby — Handwriting font.",
+  "font": {
+    "family": "Oooh Baby",
+    "provider": "google",
+    "import": "Oooh_Baby",
+    "variable": "--font-oooh-baby",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

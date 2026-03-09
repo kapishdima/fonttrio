@@ -1,0 +1,30 @@
+{
+  "name": "noto-serif-ethiopic",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Ethiopic",
+  "description": "Noto Serif Ethiopic — Serif font.",
+  "font": {
+    "family": "Noto Serif Ethiopic",
+    "provider": "google",
+    "import": "Noto_Serif_Ethiopic",
+    "variable": "--font-noto-serif-ethiopic",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "ethiopic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

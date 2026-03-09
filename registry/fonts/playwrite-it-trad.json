@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-it-trad",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite IT Trad",
+  "description": "Playwrite IT Trad — Handwriting font.",
+  "font": {
+    "family": "Playwrite IT Trad",
+    "provider": "google",
+    "import": "Playwrite_IT_Trad",
+    "variable": "--font-playwrite-it-trad",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

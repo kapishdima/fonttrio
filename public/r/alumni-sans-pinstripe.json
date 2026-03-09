@@ -1,0 +1,24 @@
+{
+  "name": "alumni-sans-pinstripe",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Alumni Sans Pinstripe",
+  "description": "Alumni Sans Pinstripe — Sans Serif font.",
+  "font": {
+    "family": "Alumni Sans Pinstripe",
+    "provider": "google",
+    "import": "Alumni_Sans_Pinstripe",
+    "variable": "--font-alumni-sans-pinstripe",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

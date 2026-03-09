@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-anatolian-hieroglyphs",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Anatolian Hieroglyphs",
+  "description": "Noto Sans Anatolian Hieroglyphs — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Anatolian Hieroglyphs",
+    "provider": "google",
+    "import": "Noto_Sans_Anatolian_Hieroglyphs",
+    "variable": "--font-noto-sans-anatolian-hieroglyphs",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "anatolian-hieroglyphs",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

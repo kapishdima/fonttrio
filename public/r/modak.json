@@ -1,0 +1,22 @@
+{
+  "name": "modak",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Modak",
+  "description": "Modak — Display font.",
+  "font": {
+    "family": "Modak",
+    "provider": "google",
+    "import": "Modak",
+    "variable": "--font-modak",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

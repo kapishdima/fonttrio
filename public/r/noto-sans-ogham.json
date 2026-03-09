@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-ogham",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Ogham",
+  "description": "Noto Sans Ogham — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Ogham",
+    "provider": "google",
+    "import": "Noto_Sans_Ogham",
+    "variable": "--font-noto-sans-ogham",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "ogham"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "doppio-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Doppio One",
+  "description": "Doppio One — Sans Serif font.",
+  "font": {
+    "family": "Doppio One",
+    "provider": "google",
+    "import": "Doppio_One",
+    "variable": "--font-doppio-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

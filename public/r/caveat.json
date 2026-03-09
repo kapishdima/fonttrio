@@ -1,8 +1,9 @@
 {
   "name": "caveat",
   "type": "registry:font",
+  "category": "Handwriting",
   "title": "Caveat",
-  "description": "Caveat — Handwriting font from Google Fonts.",
+  "description": "Caveat — Handwriting font.",
   "font": {
     "family": "Caveat",
     "provider": "google",

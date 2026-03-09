@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-symbols",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Symbols",
+  "description": "Noto Sans Symbols — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Symbols",
+    "provider": "google",
+    "import": "Noto_Sans_Symbols",
+    "variable": "--font-noto-sans-symbols",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "symbols"
+    ]
+  }
+}

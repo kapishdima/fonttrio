@@ -1,0 +1,28 @@
+{
+  "name": "stick-no-bills",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Stick No Bills",
+  "description": "Stick No Bills — Sans Serif font.",
+  "font": {
+    "family": "Stick No Bills",
+    "provider": "google",
+    "import": "Stick_No_Bills",
+    "variable": "--font-stick-no-bills",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "sinhala"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "asul",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Asul",
+  "description": "Asul — Serif font.",
+  "font": {
+    "family": "Asul",
+    "provider": "google",
+    "import": "Asul",
+    "variable": "--font-asul",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

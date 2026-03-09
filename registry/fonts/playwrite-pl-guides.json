@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-pl-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite PL Guides",
+  "description": "Playwrite PL Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite PL Guides",
+    "provider": "google",
+    "import": "Playwrite_PL_Guides",
+    "variable": "--font-playwrite-pl-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "chicle",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Chicle",
+  "description": "Chicle — Display font.",
+  "font": {
+    "family": "Chicle",
+    "provider": "google",
+    "import": "Chicle",
+    "variable": "--font-chicle",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "kolker-brush",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Kolker Brush",
+  "description": "Kolker Brush — Handwriting font.",
+  "font": {
+    "family": "Kolker Brush",
+    "provider": "google",
+    "import": "Kolker_Brush",
+    "variable": "--font-kolker-brush",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

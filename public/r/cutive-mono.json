@@ -1,0 +1,21 @@
+{
+  "name": "cutive-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Cutive Mono",
+  "description": "Cutive Mono — Monospace font.",
+  "font": {
+    "family": "Cutive Mono",
+    "provider": "google",
+    "import": "Cutive_Mono",
+    "variable": "--font-cutive-mono",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

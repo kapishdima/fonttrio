@@ -1,0 +1,22 @@
+{
+  "name": "road-rage",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Road Rage",
+  "description": "Road Rage — Display font.",
+  "font": {
+    "family": "Road Rage",
+    "provider": "google",
+    "import": "Road_Rage",
+    "variable": "--font-road-rage",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

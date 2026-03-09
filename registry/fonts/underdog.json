@@ -1,0 +1,22 @@
+{
+  "name": "underdog",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Underdog",
+  "description": "Underdog — Display font.",
+  "font": {
+    "family": "Underdog",
+    "provider": "google",
+    "import": "Underdog",
+    "variable": "--font-underdog",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

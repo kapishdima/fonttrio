@@ -1,0 +1,24 @@
+{
+  "name": "flow-block",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Flow Block",
+  "description": "Flow Block — Display font.",
+  "font": {
+    "family": "Flow Block",
+    "provider": "google",
+    "import": "Flow_Block",
+    "variable": "--font-flow-block",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

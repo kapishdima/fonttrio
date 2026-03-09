@@ -1,0 +1,23 @@
+{
+  "name": "goldman",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Goldman",
+  "description": "Goldman — Display font.",
+  "font": {
+    "family": "Goldman",
+    "provider": "google",
+    "import": "Goldman",
+    "variable": "--font-goldman",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

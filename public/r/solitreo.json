@@ -1,0 +1,22 @@
+{
+  "name": "solitreo",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Solitreo",
+  "description": "Solitreo — Handwriting font.",
+  "font": {
+    "family": "Solitreo",
+    "provider": "google",
+    "import": "Solitreo",
+    "variable": "--font-solitreo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

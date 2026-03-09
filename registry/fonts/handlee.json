@@ -1,0 +1,20 @@
+{
+  "name": "handlee",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Handlee",
+  "description": "Handlee — Handwriting font.",
+  "font": {
+    "family": "Handlee",
+    "provider": "google",
+    "import": "Handlee",
+    "variable": "--font-handlee",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

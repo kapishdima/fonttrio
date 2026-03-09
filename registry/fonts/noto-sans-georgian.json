@@ -1,0 +1,34 @@
+{
+  "name": "noto-sans-georgian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Georgian",
+  "description": "Noto Sans Georgian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Georgian",
+    "provider": "google",
+    "import": "Noto_Sans_Georgian",
+    "variable": "--font-noto-sans-georgian",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "georgian",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sankofa-display",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sankofa Display",
+  "description": "Sankofa Display — Sans Serif font.",
+  "font": {
+    "family": "Sankofa Display",
+    "provider": "google",
+    "import": "Sankofa_Display",
+    "variable": "--font-sankofa-display",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

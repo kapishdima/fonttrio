@@ -1,0 +1,28 @@
+{
+  "name": "bodoni-moda",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Bodoni Moda",
+  "description": "Bodoni Moda — Serif font.",
+  "font": {
+    "family": "Bodoni Moda",
+    "provider": "google",
+    "import": "Bodoni_Moda",
+    "variable": "--font-bodoni-moda",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

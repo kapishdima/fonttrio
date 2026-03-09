@@ -1,0 +1,21 @@
+{
+  "name": "b612",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "B612",
+  "description": "B612 — Sans Serif font.",
+  "font": {
+    "family": "B612",
+    "provider": "google",
+    "import": "B612",
+    "variable": "--font-b612",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

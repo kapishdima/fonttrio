@@ -1,0 +1,22 @@
+{
+  "name": "bungee-spice",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bungee Spice",
+  "description": "Bungee Spice — Display font.",
+  "font": {
+    "family": "Bungee Spice",
+    "provider": "google",
+    "import": "Bungee_Spice",
+    "variable": "--font-bungee-spice",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

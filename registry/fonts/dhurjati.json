@@ -1,0 +1,21 @@
+{
+  "name": "dhurjati",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Dhurjati",
+  "description": "Dhurjati — Sans Serif font.",
+  "font": {
+    "family": "Dhurjati",
+    "provider": "google",
+    "import": "Dhurjati",
+    "variable": "--font-dhurjati",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

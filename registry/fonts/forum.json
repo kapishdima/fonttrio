@@ -1,0 +1,23 @@
+{
+  "name": "forum",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Forum",
+  "description": "Forum — Display font.",
+  "font": {
+    "family": "Forum",
+    "provider": "google",
+    "import": "Forum",
+    "variable": "--font-forum",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

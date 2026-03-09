@@ -1,0 +1,23 @@
+{
+  "name": "edu-tas-beginner",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Edu TAS Beginner",
+  "description": "Edu TAS Beginner — Handwriting font.",
+  "font": {
+    "family": "Edu TAS Beginner",
+    "provider": "google",
+    "import": "Edu_TAS_Beginner",
+    "variable": "--font-edu-tas-beginner",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

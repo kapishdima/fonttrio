@@ -1,0 +1,31 @@
+{
+  "name": "onest",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Onest",
+  "description": "Onest — Sans Serif font.",
+  "font": {
+    "family": "Onest",
+    "provider": "google",
+    "import": "Onest",
+    "variable": "--font-onest",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

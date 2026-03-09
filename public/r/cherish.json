@@ -1,0 +1,22 @@
+{
+  "name": "cherish",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Cherish",
+  "description": "Cherish — Handwriting font.",
+  "font": {
+    "family": "Cherish",
+    "provider": "google",
+    "import": "Cherish",
+    "variable": "--font-cherish",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

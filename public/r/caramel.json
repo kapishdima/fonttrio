@@ -1,0 +1,22 @@
+{
+  "name": "caramel",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Caramel",
+  "description": "Caramel — Handwriting font.",
+  "font": {
+    "family": "Caramel",
+    "provider": "google",
+    "import": "Caramel",
+    "variable": "--font-caramel",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

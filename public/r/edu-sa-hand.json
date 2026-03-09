@@ -1,0 +1,24 @@
+{
+  "name": "edu-sa-hand",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Edu SA Hand",
+  "description": "Edu SA Hand — Handwriting font.",
+  "font": {
+    "family": "Edu SA Hand",
+    "provider": "google",
+    "import": "Edu_SA_Hand",
+    "variable": "--font-edu-sa-hand",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

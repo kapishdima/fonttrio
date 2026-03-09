@@ -1,0 +1,22 @@
+{
+  "name": "rocknroll-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "RocknRoll One",
+  "description": "RocknRoll One — Sans Serif font.",
+  "font": {
+    "family": "RocknRoll One",
+    "provider": "google",
+    "import": "RocknRoll_One",
+    "variable": "--font-rocknroll-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

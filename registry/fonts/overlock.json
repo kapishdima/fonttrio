@@ -1,0 +1,23 @@
+{
+  "name": "overlock",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Overlock",
+  "description": "Overlock — Display font.",
+  "font": {
+    "family": "Overlock",
+    "provider": "google",
+    "import": "Overlock",
+    "variable": "--font-overlock",
+    "weight": [
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

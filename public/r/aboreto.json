@@ -1,0 +1,21 @@
+{
+  "name": "aboreto",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Aboreto",
+  "description": "Aboreto — Display font.",
+  "font": {
+    "family": "Aboreto",
+    "provider": "google",
+    "import": "Aboreto",
+    "variable": "--font-aboreto",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

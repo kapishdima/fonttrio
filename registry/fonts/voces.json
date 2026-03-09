@@ -1,0 +1,21 @@
+{
+  "name": "voces",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Voces",
+  "description": "Voces — Sans Serif font.",
+  "font": {
+    "family": "Voces",
+    "provider": "google",
+    "import": "Voces",
+    "variable": "--font-voces",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

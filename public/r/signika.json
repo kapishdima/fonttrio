@@ -1,0 +1,26 @@
+{
+  "name": "signika",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Signika",
+  "description": "Signika — Sans Serif font.",
+  "font": {
+    "family": "Signika",
+    "provider": "google",
+    "import": "Signika",
+    "variable": "--font-signika",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

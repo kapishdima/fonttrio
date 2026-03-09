@@ -1,0 +1,29 @@
+{
+  "name": "anek-gurmukhi",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anek Gurmukhi",
+  "description": "Anek Gurmukhi — Sans Serif font.",
+  "font": {
+    "family": "Anek Gurmukhi",
+    "provider": "google",
+    "import": "Anek_Gurmukhi",
+    "variable": "--font-anek-gurmukhi",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "gurmukhi",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

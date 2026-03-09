@@ -1,0 +1,26 @@
+{
+  "name": "ubuntu-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Ubuntu Mono",
+  "description": "Ubuntu Mono — Monospace font.",
+  "font": {
+    "family": "Ubuntu Mono",
+    "provider": "google",
+    "import": "Ubuntu_Mono",
+    "variable": "--font-ubuntu-mono",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

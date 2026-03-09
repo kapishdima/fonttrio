@@ -1,0 +1,22 @@
+{
+  "name": "gloock",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Gloock",
+  "description": "Gloock — Serif font.",
+  "font": {
+    "family": "Gloock",
+    "provider": "google",
+    "import": "Gloock",
+    "variable": "--font-gloock",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

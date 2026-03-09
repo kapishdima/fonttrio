@@ -1,0 +1,21 @@
+{
+  "name": "fanwood-text",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Fanwood Text",
+  "description": "Fanwood Text — Serif font.",
+  "font": {
+    "family": "Fanwood Text",
+    "provider": "google",
+    "import": "Fanwood_Text",
+    "variable": "--font-fanwood-text",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

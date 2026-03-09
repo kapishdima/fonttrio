@@ -1,0 +1,22 @@
+{
+  "name": "anton-sc",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anton SC",
+  "description": "Anton SC — Sans Serif font.",
+  "font": {
+    "family": "Anton SC",
+    "provider": "google",
+    "import": "Anton_SC",
+    "variable": "--font-anton-sc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

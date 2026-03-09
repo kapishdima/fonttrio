@@ -1,0 +1,21 @@
+{
+  "name": "ribeye",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Ribeye",
+  "description": "Ribeye — Display font.",
+  "font": {
+    "family": "Ribeye",
+    "provider": "google",
+    "import": "Ribeye",
+    "variable": "--font-ribeye",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

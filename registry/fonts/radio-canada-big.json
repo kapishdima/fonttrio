@@ -1,0 +1,24 @@
+{
+  "name": "radio-canada-big",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Radio Canada Big",
+  "description": "Radio Canada Big — Sans Serif font.",
+  "font": {
+    "family": "Radio Canada Big",
+    "provider": "google",
+    "import": "Radio_Canada_Big",
+    "variable": "--font-radio-canada-big",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "nova-round",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Nova Round",
+  "description": "Nova Round — Display font.",
+  "font": {
+    "family": "Nova Round",
+    "provider": "google",
+    "import": "Nova_Round",
+    "variable": "--font-nova-round",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

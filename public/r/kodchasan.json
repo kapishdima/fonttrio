@@ -1,0 +1,28 @@
+{
+  "name": "kodchasan",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Kodchasan",
+  "description": "Kodchasan — Sans Serif font.",
+  "font": {
+    "family": "Kodchasan",
+    "provider": "google",
+    "import": "Kodchasan",
+    "variable": "--font-kodchasan",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

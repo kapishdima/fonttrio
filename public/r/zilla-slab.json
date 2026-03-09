@@ -1,0 +1,25 @@
+{
+  "name": "zilla-slab",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Zilla Slab",
+  "description": "Zilla Slab — Serif font.",
+  "font": {
+    "family": "Zilla Slab",
+    "provider": "google",
+    "import": "Zilla_Slab",
+    "variable": "--font-zilla-slab",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

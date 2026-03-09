@@ -1,0 +1,21 @@
+{
+  "name": "raleway-dots",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Raleway Dots",
+  "description": "Raleway Dots — Display font.",
+  "font": {
+    "family": "Raleway Dots",
+    "provider": "google",
+    "import": "Raleway_Dots",
+    "variable": "--font-raleway-dots",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

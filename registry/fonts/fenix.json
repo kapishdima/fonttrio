@@ -1,0 +1,21 @@
+{
+  "name": "fenix",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Fenix",
+  "description": "Fenix — Serif font.",
+  "font": {
+    "family": "Fenix",
+    "provider": "google",
+    "import": "Fenix",
+    "variable": "--font-fenix",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

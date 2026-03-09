@@ -1,0 +1,23 @@
+{
+  "name": "chonburi",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Chonburi",
+  "description": "Chonburi — Display font.",
+  "font": {
+    "family": "Chonburi",
+    "provider": "google",
+    "import": "Chonburi",
+    "variable": "--font-chonburi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ar-one-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "AR One Sans",
+  "description": "AR One Sans — Sans Serif font.",
+  "font": {
+    "family": "AR One Sans",
+    "provider": "google",
+    "import": "AR_One_Sans",
+    "variable": "--font-ar-one-sans",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "aleo",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Aleo",
+  "description": "Aleo — Serif font.",
+  "font": {
+    "family": "Aleo",
+    "provider": "google",
+    "import": "Aleo",
+    "variable": "--font-aleo",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

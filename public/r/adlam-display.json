@@ -1,0 +1,22 @@
+{
+  "name": "adlam-display",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "ADLaM Display",
+  "description": "ADLaM Display — Display font.",
+  "font": {
+    "family": "ADLaM Display",
+    "provider": "google",
+    "import": "ADLaM_Display",
+    "variable": "--font-adlam-display",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "adlam",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

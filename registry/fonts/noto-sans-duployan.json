@@ -1,0 +1,23 @@
+{
+  "name": "noto-sans-duployan",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Duployan",
+  "description": "Noto Sans Duployan — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Duployan",
+    "provider": "google",
+    "import": "Noto_Sans_Duployan",
+    "variable": "--font-noto-sans-duployan",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "duployan",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

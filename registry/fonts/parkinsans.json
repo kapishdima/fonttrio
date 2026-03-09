@@ -1,0 +1,26 @@
+{
+  "name": "parkinsans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Parkinsans",
+  "description": "Parkinsans — Sans Serif font.",
+  "font": {
+    "family": "Parkinsans",
+    "provider": "google",
+    "import": "Parkinsans",
+    "variable": "--font-parkinsans",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

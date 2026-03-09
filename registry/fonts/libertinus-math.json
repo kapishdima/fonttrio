@@ -1,0 +1,27 @@
+{
+  "name": "libertinus-math",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Libertinus Math",
+  "description": "Libertinus Math — Display font.",
+  "font": {
+    "family": "Libertinus Math",
+    "provider": "google",
+    "import": "Libertinus_Math",
+    "variable": "--font-libertinus-math",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "vietnamese"
+    ]
+  }
+}

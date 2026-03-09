@@ -1,0 +1,22 @@
+{
+  "name": "sunflower",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sunflower",
+  "description": "Sunflower — Sans Serif font.",
+  "font": {
+    "family": "Sunflower",
+    "provider": "google",
+    "import": "Sunflower",
+    "variable": "--font-sunflower",
+    "weight": [
+      "300",
+      "500",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "korean"
+    ]
+  }
+}

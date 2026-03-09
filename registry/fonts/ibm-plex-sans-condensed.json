@@ -1,0 +1,29 @@
+{
+  "name": "ibm-plex-sans-condensed",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "IBM Plex Sans Condensed",
+  "description": "IBM Plex Sans Condensed — Sans Serif font.",
+  "font": {
+    "family": "IBM Plex Sans Condensed",
+    "provider": "google",
+    "import": "IBM_Plex_Sans_Condensed",
+    "variable": "--font-ibm-plex-sans-condensed",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

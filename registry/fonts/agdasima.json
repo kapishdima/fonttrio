@@ -1,0 +1,22 @@
+{
+  "name": "agdasima",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Agdasima",
+  "description": "Agdasima — Sans Serif font.",
+  "font": {
+    "family": "Agdasima",
+    "provider": "google",
+    "import": "Agdasima",
+    "variable": "--font-agdasima",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "baloo-da-2",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Baloo Da 2",
+  "description": "Baloo Da 2 — Display font.",
+  "font": {
+    "family": "Baloo Da 2",
+    "provider": "google",
+    "import": "Baloo_Da_2",
+    "variable": "--font-baloo-da-2",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "bengali",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

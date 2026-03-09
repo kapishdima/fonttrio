@@ -1,0 +1,29 @@
+{
+  "name": "anek-bangla",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anek Bangla",
+  "description": "Anek Bangla — Sans Serif font.",
+  "font": {
+    "family": "Anek Bangla",
+    "provider": "google",
+    "import": "Anek_Bangla",
+    "variable": "--font-anek-bangla",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "bengali",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

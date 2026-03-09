@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-kayah-li",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Kayah Li",
+  "description": "Noto Sans Kayah Li — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Kayah Li",
+    "provider": "google",
+    "import": "Noto_Sans_Kayah_Li",
+    "variable": "--font-noto-sans-kayah-li",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "kayah-li",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

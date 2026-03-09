@@ -1,0 +1,27 @@
+{
+  "name": "baloo-bhaina-2",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Baloo Bhaina 2",
+  "description": "Baloo Bhaina 2 — Display font.",
+  "font": {
+    "family": "Baloo Bhaina 2",
+    "provider": "google",
+    "import": "Baloo_Bhaina_2",
+    "variable": "--font-baloo-bhaina-2",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "oriya",
+      "vietnamese"
+    ]
+  }
+}

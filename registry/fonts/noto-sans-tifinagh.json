@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-tifinagh",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Tifinagh",
+  "description": "Noto Sans Tifinagh — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Tifinagh",
+    "provider": "google",
+    "import": "Noto_Sans_Tifinagh",
+    "variable": "--font-noto-sans-tifinagh",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tifinagh"
+    ]
+  }
+}

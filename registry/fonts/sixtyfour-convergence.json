@@ -1,0 +1,23 @@
+{
+  "name": "sixtyfour-convergence",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Sixtyfour Convergence",
+  "description": "Sixtyfour Convergence — Monospace font.",
+  "font": {
+    "family": "Sixtyfour Convergence",
+    "provider": "google",
+    "import": "Sixtyfour_Convergence",
+    "variable": "--font-sixtyfour-convergence",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

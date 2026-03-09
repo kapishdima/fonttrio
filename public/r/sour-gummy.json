@@ -1,0 +1,29 @@
+{
+  "name": "sour-gummy",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sour Gummy",
+  "description": "Sour Gummy — Sans Serif font.",
+  "font": {
+    "family": "Sour Gummy",
+    "provider": "google",
+    "import": "Sour_Gummy",
+    "variable": "--font-sour-gummy",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

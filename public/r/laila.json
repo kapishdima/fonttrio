@@ -1,0 +1,26 @@
+{
+  "name": "laila",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Laila",
+  "description": "Laila — Serif font.",
+  "font": {
+    "family": "Laila",
+    "provider": "google",
+    "import": "Laila",
+    "variable": "--font-laila",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

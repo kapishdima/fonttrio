@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-saurashtra",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Saurashtra",
+  "description": "Noto Sans Saurashtra — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Saurashtra",
+    "provider": "google",
+    "import": "Noto_Sans_Saurashtra",
+    "variable": "--font-noto-sans-saurashtra",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "saurashtra"
+    ]
+  }
+}

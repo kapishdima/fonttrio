@@ -1,0 +1,21 @@
+{
+  "name": "luckiest-guy",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Luckiest Guy",
+  "description": "Luckiest Guy — Display font.",
+  "font": {
+    "family": "Luckiest Guy",
+    "provider": "google",
+    "import": "Luckiest_Guy",
+    "variable": "--font-luckiest-guy",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

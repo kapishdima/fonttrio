@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-lao-looped",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Lao Looped",
+  "description": "Noto Sans Lao Looped — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Lao Looped",
+    "provider": "google",
+    "import": "Noto_Sans_Lao_Looped",
+    "variable": "--font-noto-sans-lao-looped",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "lao",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

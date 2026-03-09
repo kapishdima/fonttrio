@@ -1,0 +1,23 @@
+{
+  "name": "belanosima",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Belanosima",
+  "description": "Belanosima — Sans Serif font.",
+  "font": {
+    "family": "Belanosima",
+    "provider": "google",
+    "import": "Belanosima",
+    "variable": "--font-belanosima",
+    "weight": [
+      "400",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

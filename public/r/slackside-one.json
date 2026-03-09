@@ -1,0 +1,22 @@
+{
+  "name": "slackside-one",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Slackside One",
+  "description": "Slackside One — Handwriting font.",
+  "font": {
+    "family": "Slackside One",
+    "provider": "google",
+    "import": "Slackside_One",
+    "variable": "--font-slackside-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

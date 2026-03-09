@@ -1,0 +1,28 @@
+{
+  "name": "martel",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Martel",
+  "description": "Martel — Serif font.",
+  "font": {
+    "family": "Martel",
+    "provider": "google",
+    "import": "Martel",
+    "variable": "--font-martel",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

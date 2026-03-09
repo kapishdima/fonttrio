@@ -1,0 +1,22 @@
+{
+  "name": "courier-prime",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Courier Prime",
+  "description": "Courier Prime — Monospace font.",
+  "font": {
+    "family": "Courier Prime",
+    "provider": "google",
+    "import": "Courier_Prime",
+    "variable": "--font-courier-prime",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "league-gothic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "League Gothic",
+  "description": "League Gothic — Sans Serif font.",
+  "font": {
+    "family": "League Gothic",
+    "provider": "google",
+    "import": "League_Gothic",
+    "variable": "--font-league-gothic",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

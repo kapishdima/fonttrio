@@ -1,0 +1,21 @@
+{
+  "name": "instrument-serif",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Instrument Serif",
+  "description": "Instrument Serif — Serif font.",
+  "font": {
+    "family": "Instrument Serif",
+    "provider": "google",
+    "import": "Instrument_Serif",
+    "variable": "--font-instrument-serif",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

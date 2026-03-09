@@ -1,0 +1,21 @@
+{
+  "name": "megrim",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Megrim",
+  "description": "Megrim — Display font.",
+  "font": {
+    "family": "Megrim",
+    "provider": "google",
+    "import": "Megrim",
+    "variable": "--font-megrim",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

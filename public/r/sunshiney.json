@@ -1,0 +1,20 @@
+{
+  "name": "sunshiney",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Sunshiney",
+  "description": "Sunshiney — Handwriting font.",
+  "font": {
+    "family": "Sunshiney",
+    "provider": "google",
+    "import": "Sunshiney",
+    "variable": "--font-sunshiney",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

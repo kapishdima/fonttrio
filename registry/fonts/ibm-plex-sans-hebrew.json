@@ -1,0 +1,29 @@
+{
+  "name": "ibm-plex-sans-hebrew",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "IBM Plex Sans Hebrew",
+  "description": "IBM Plex Sans Hebrew — Sans Serif font.",
+  "font": {
+    "family": "IBM Plex Sans Hebrew",
+    "provider": "google",
+    "import": "IBM_Plex_Sans_Hebrew",
+    "variable": "--font-ibm-plex-sans-hebrew",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

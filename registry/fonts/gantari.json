@@ -1,0 +1,29 @@
+{
+  "name": "gantari",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Gantari",
+  "description": "Gantari — Sans Serif font.",
+  "font": {
+    "family": "Gantari",
+    "provider": "google",
+    "import": "Gantari",
+    "variable": "--font-gantari",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

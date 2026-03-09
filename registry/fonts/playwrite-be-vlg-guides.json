@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-be-vlg-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite BE VLG Guides",
+  "description": "Playwrite BE VLG Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite BE VLG Guides",
+    "provider": "google",
+    "import": "Playwrite_BE_VLG_Guides",
+    "variable": "--font-playwrite-be-vlg-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

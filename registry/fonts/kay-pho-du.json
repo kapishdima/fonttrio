@@ -1,0 +1,25 @@
+{
+  "name": "kay-pho-du",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Kay Pho Du",
+  "description": "Kay Pho Du — Serif font.",
+  "font": {
+    "family": "Kay Pho Du",
+    "provider": "google",
+    "import": "Kay_Pho_Du",
+    "variable": "--font-kay-pho-du",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "kayah-li",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

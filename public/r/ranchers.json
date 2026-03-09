@@ -1,0 +1,21 @@
+{
+  "name": "ranchers",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Ranchers",
+  "description": "Ranchers — Display font.",
+  "font": {
+    "family": "Ranchers",
+    "provider": "google",
+    "import": "Ranchers",
+    "variable": "--font-ranchers",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

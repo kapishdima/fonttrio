@@ -1,0 +1,26 @@
+{
+  "name": "rubik-maps",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Maps",
+  "description": "Rubik Maps — Display font.",
+  "font": {
+    "family": "Rubik Maps",
+    "provider": "google",
+    "import": "Rubik_Maps",
+    "variable": "--font-rubik-maps",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

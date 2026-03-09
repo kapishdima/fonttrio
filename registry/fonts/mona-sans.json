@@ -1,0 +1,29 @@
+{
+  "name": "mona-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mona Sans",
+  "description": "Mona Sans — Sans Serif font.",
+  "font": {
+    "family": "Mona Sans",
+    "provider": "google",
+    "import": "Mona_Sans",
+    "variable": "--font-mona-sans",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

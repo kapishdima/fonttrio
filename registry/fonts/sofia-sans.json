@@ -1,0 +1,34 @@
+{
+  "name": "sofia-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sofia Sans",
+  "description": "Sofia Sans — Sans Serif font.",
+  "font": {
+    "family": "Sofia Sans",
+    "provider": "google",
+    "import": "Sofia_Sans",
+    "variable": "--font-sofia-sans",
+    "weight": [
+      "1",
+      "100",
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

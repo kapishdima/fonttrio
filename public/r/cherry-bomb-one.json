@@ -1,0 +1,23 @@
+{
+  "name": "cherry-bomb-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Cherry Bomb One",
+  "description": "Cherry Bomb One — Display font.",
+  "font": {
+    "family": "Cherry Bomb One",
+    "provider": "google",
+    "import": "Cherry_Bomb_One",
+    "variable": "--font-cherry-bomb-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

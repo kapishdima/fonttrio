@@ -1,0 +1,22 @@
+{
+  "name": "noto-serif-makasar",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Makasar",
+  "description": "Noto Serif Makasar — Serif font.",
+  "font": {
+    "family": "Noto Serif Makasar",
+    "provider": "google",
+    "import": "Noto_Serif_Makasar",
+    "variable": "--font-noto-serif-makasar",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "makasar"
+    ]
+  }
+}

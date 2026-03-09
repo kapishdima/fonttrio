@@ -1,0 +1,20 @@
+{
+  "name": "vast-shadow",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Vast Shadow",
+  "description": "Vast Shadow — Serif font.",
+  "font": {
+    "family": "Vast Shadow",
+    "provider": "google",
+    "import": "Vast_Shadow",
+    "variable": "--font-vast-shadow",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

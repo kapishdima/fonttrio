@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-old-south-arabian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Old South Arabian",
+  "description": "Noto Sans Old South Arabian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Old South Arabian",
+    "provider": "google",
+    "import": "Noto_Sans_Old_South_Arabian",
+    "variable": "--font-noto-sans-old-south-arabian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "old-south-arabian"
+    ]
+  }
+}

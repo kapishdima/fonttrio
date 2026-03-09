@@ -1,0 +1,23 @@
+{
+  "name": "hedvig-letters-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Hedvig Letters Sans",
+  "description": "Hedvig Letters Sans — Sans Serif font.",
+  "font": {
+    "family": "Hedvig Letters Sans",
+    "provider": "google",
+    "import": "Hedvig_Letters_Sans",
+    "variable": "--font-hedvig-letters-sans",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

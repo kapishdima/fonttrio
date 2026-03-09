@@ -1,0 +1,29 @@
+{
+  "name": "albert-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Albert Sans",
+  "description": "Albert Sans — Sans Serif font.",
+  "font": {
+    "family": "Albert Sans",
+    "provider": "google",
+    "import": "Albert_Sans",
+    "variable": "--font-albert-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

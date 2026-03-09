@@ -1,0 +1,22 @@
+{
+  "name": "noto-serif-balinese",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Balinese",
+  "description": "Noto Serif Balinese — Serif font.",
+  "font": {
+    "family": "Noto Serif Balinese",
+    "provider": "google",
+    "import": "Noto_Serif_Balinese",
+    "variable": "--font-noto-serif-balinese",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "balinese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

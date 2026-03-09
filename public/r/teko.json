@@ -1,0 +1,26 @@
+{
+  "name": "teko",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Teko",
+  "description": "Teko — Sans Serif font.",
+  "font": {
+    "family": "Teko",
+    "provider": "google",
+    "import": "Teko",
+    "variable": "--font-teko",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

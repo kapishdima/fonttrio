@@ -1,0 +1,28 @@
+{
+  "name": "narnoor",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Narnoor",
+  "description": "Narnoor — Sans Serif font.",
+  "font": {
+    "family": "Narnoor",
+    "provider": "google",
+    "import": "Narnoor",
+    "variable": "--font-narnoor",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "gunjala-gondi",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-tagbanwa",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Tagbanwa",
+  "description": "Noto Sans Tagbanwa — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Tagbanwa",
+    "provider": "google",
+    "import": "Noto_Sans_Tagbanwa",
+    "variable": "--font-noto-sans-tagbanwa",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tagbanwa"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "glass-antiqua",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Glass Antiqua",
+  "description": "Glass Antiqua — Display font.",
+  "font": {
+    "family": "Glass Antiqua",
+    "provider": "google",
+    "import": "Glass_Antiqua",
+    "variable": "--font-glass-antiqua",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "medievalsharp",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "MedievalSharp",
+  "description": "MedievalSharp — Display font.",
+  "font": {
+    "family": "MedievalSharp",
+    "provider": "google",
+    "import": "MedievalSharp",
+    "variable": "--font-medievalsharp",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

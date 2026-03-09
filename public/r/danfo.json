@@ -1,0 +1,22 @@
+{
+  "name": "danfo",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Danfo",
+  "description": "Danfo — Serif font.",
+  "font": {
+    "family": "Danfo",
+    "provider": "google",
+    "import": "Danfo",
+    "variable": "--font-danfo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

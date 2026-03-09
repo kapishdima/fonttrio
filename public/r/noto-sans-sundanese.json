@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-sundanese",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Sundanese",
+  "description": "Noto Sans Sundanese — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Sundanese",
+    "provider": "google",
+    "import": "Noto_Sans_Sundanese",
+    "variable": "--font-noto-sans-sundanese",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "sundanese"
+    ]
+  }
+}

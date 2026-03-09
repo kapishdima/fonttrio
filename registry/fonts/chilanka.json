@@ -1,0 +1,22 @@
+{
+  "name": "chilanka",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Chilanka",
+  "description": "Chilanka — Handwriting font.",
+  "font": {
+    "family": "Chilanka",
+    "provider": "google",
+    "import": "Chilanka",
+    "variable": "--font-chilanka",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "malayalam"
+    ]
+  }
+}

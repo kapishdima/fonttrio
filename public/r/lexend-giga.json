@@ -1,0 +1,30 @@
+{
+  "name": "lexend-giga",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Lexend Giga",
+  "description": "Lexend Giga — Sans Serif font.",
+  "font": {
+    "family": "Lexend Giga",
+    "provider": "google",
+    "import": "Lexend_Giga",
+    "variable": "--font-lexend-giga",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

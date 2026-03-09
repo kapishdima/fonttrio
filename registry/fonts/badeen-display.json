@@ -1,0 +1,22 @@
+{
+  "name": "badeen-display",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Badeen Display",
+  "description": "Badeen Display — Display font.",
+  "font": {
+    "family": "Badeen Display",
+    "provider": "google",
+    "import": "Badeen_Display",
+    "variable": "--font-badeen-display",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

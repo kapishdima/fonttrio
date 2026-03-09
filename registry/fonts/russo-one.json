@@ -1,0 +1,22 @@
+{
+  "name": "russo-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Russo One",
+  "description": "Russo One — Sans Serif font.",
+  "font": {
+    "family": "Russo One",
+    "provider": "google",
+    "import": "Russo_One",
+    "variable": "--font-russo-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

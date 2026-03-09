@@ -1,0 +1,27 @@
+{
+  "name": "alan-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Alan Sans",
+  "description": "Alan Sans — Sans Serif font.",
+  "font": {
+    "family": "Alan Sans",
+    "provider": "google",
+    "import": "Alan_Sans",
+    "variable": "--font-alan-sans",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

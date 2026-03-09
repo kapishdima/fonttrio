@@ -1,0 +1,21 @@
+{
+  "name": "shizuru",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Shizuru",
+  "description": "Shizuru — Display font.",
+  "font": {
+    "family": "Shizuru",
+    "provider": "google",
+    "import": "Shizuru",
+    "variable": "--font-shizuru",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin"
+    ]
+  }
+}

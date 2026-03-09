@@ -1,0 +1,21 @@
+{
+  "name": "abril-fatface",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Abril Fatface",
+  "description": "Abril Fatface — Display font.",
+  "font": {
+    "family": "Abril Fatface",
+    "provider": "google",
+    "import": "Abril_Fatface",
+    "variable": "--font-abril-fatface",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

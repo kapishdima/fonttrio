@@ -1,0 +1,21 @@
+{
+  "name": "belleza",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Belleza",
+  "description": "Belleza — Sans Serif font.",
+  "font": {
+    "family": "Belleza",
+    "provider": "google",
+    "import": "Belleza",
+    "variable": "--font-belleza",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

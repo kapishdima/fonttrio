@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-dk-loopet",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite DK Loopet",
+  "description": "Playwrite DK Loopet — Handwriting font.",
+  "font": {
+    "family": "Playwrite DK Loopet",
+    "provider": "google",
+    "import": "Playwrite_DK_Loopet",
+    "variable": "--font-playwrite-dk-loopet",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

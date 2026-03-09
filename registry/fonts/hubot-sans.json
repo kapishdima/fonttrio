@@ -1,0 +1,29 @@
+{
+  "name": "hubot-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Hubot Sans",
+  "description": "Hubot Sans — Sans Serif font.",
+  "font": {
+    "family": "Hubot Sans",
+    "provider": "google",
+    "import": "Hubot_Sans",
+    "variable": "--font-hubot-sans",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

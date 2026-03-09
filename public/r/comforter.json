@@ -1,0 +1,23 @@
+{
+  "name": "comforter",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Comforter",
+  "description": "Comforter — Handwriting font.",
+  "font": {
+    "family": "Comforter",
+    "provider": "google",
+    "import": "Comforter",
+    "variable": "--font-comforter",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

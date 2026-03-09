@@ -1,0 +1,24 @@
+{
+  "name": "kalam",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Kalam",
+  "description": "Kalam — Handwriting font.",
+  "font": {
+    "family": "Kalam",
+    "provider": "google",
+    "import": "Kalam",
+    "variable": "--font-kalam",
+    "weight": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

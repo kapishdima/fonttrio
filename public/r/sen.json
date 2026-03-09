@@ -1,0 +1,25 @@
+{
+  "name": "sen",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sen",
+  "description": "Sen — Sans Serif font.",
+  "font": {
+    "family": "Sen",
+    "provider": "google",
+    "import": "Sen",
+    "variable": "--font-sen",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

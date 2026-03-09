@@ -1,0 +1,22 @@
+{
+  "name": "yarndings-12-charted",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Yarndings 12 Charted",
+  "description": "Yarndings 12 Charted — Display font.",
+  "font": {
+    "family": "Yarndings 12 Charted",
+    "provider": "google",
+    "import": "Yarndings_12_Charted",
+    "variable": "--font-yarndings-12-charted",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "math",
+      "symbols"
+    ]
+  }
+}

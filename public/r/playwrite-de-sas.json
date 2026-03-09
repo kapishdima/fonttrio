@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-de-sas",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite DE SAS",
+  "description": "Playwrite DE SAS — Handwriting font.",
+  "font": {
+    "family": "Playwrite DE SAS",
+    "provider": "google",
+    "import": "Playwrite_DE_SAS",
+    "variable": "--font-playwrite-de-sas",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

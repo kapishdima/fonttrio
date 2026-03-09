@@ -1,0 +1,24 @@
+{
+  "name": "bad-script",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Bad Script",
+  "description": "Bad Script — Handwriting font.",
+  "font": {
+    "family": "Bad Script",
+    "provider": "google",
+    "import": "Bad_Script",
+    "variable": "--font-bad-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

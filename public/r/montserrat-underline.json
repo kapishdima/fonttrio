@@ -1,0 +1,32 @@
+{
+  "name": "montserrat-underline",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Montserrat Underline",
+  "description": "Montserrat Underline — Sans Serif font.",
+  "font": {
+    "family": "Montserrat Underline",
+    "provider": "google",
+    "import": "Montserrat_Underline",
+    "variable": "--font-montserrat-underline",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

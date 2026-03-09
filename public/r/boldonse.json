@@ -1,0 +1,21 @@
+{
+  "name": "boldonse",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Boldonse",
+  "description": "Boldonse — Display font.",
+  "font": {
+    "family": "Boldonse",
+    "provider": "google",
+    "import": "Boldonse",
+    "variable": "--font-boldonse",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

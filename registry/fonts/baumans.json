@@ -1,0 +1,20 @@
+{
+  "name": "baumans",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Baumans",
+  "description": "Baumans — Display font.",
+  "font": {
+    "family": "Baumans",
+    "provider": "google",
+    "import": "Baumans",
+    "variable": "--font-baumans",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

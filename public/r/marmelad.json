@@ -1,0 +1,24 @@
+{
+  "name": "marmelad",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Marmelad",
+  "description": "Marmelad — Sans Serif font.",
+  "font": {
+    "family": "Marmelad",
+    "provider": "google",
+    "import": "Marmelad",
+    "variable": "--font-marmelad",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

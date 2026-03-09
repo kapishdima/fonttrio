@@ -1,0 +1,37 @@
+{
+  "name": "ysabeau-sc",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Ysabeau SC",
+  "description": "Ysabeau SC — Sans Serif font.",
+  "font": {
+    "family": "Ysabeau SC",
+    "provider": "google",
+    "import": "Ysabeau_SC",
+    "variable": "--font-ysabeau-sc",
+    "weight": [
+      "1",
+      "100",
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "text-me-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Text Me One",
+  "description": "Text Me One — Sans Serif font.",
+  "font": {
+    "family": "Text Me One",
+    "provider": "google",
+    "import": "Text_Me_One",
+    "variable": "--font-text-me-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "vujahday-script",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Vujahday Script",
+  "description": "Vujahday Script — Handwriting font.",
+  "font": {
+    "family": "Vujahday Script",
+    "provider": "google",
+    "import": "Vujahday_Script",
+    "variable": "--font-vujahday-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "galada",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Galada",
+  "description": "Galada — Display font.",
+  "font": {
+    "family": "Galada",
+    "provider": "google",
+    "import": "Galada",
+    "variable": "--font-galada",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "bengali",
+      "latin"
+    ]
+  }
+}

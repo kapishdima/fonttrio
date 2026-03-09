@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-za",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite ZA",
+  "description": "Playwrite ZA — Handwriting font.",
+  "font": {
+    "family": "Playwrite ZA",
+    "provider": "google",
+    "import": "Playwrite_ZA",
+    "variable": "--font-playwrite-za",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

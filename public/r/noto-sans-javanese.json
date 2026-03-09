@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-javanese",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Javanese",
+  "description": "Noto Sans Javanese — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Javanese",
+    "provider": "google",
+    "import": "Noto_Sans_Javanese",
+    "variable": "--font-noto-sans-javanese",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "javanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

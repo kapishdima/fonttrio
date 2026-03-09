@@ -1,6 +1,6 @@
 /**
  * Fetches Google Fonts metadata and generates registry:font JSON files
- * for the top ~100 most popular fonts + all fonts required by pairings.
+ * for ALL available Google Fonts (~1700+ families).
  *
  * Usage: bun run scripts/generate-fonts.ts
  */
@@ -10,7 +10,6 @@ import { join } from "path";
 
 const FONTS_DIR = join(import.meta.dir, "..", "registry", "fonts");
 const PAIRINGS_DIR = join(import.meta.dir, "..", "registry", "pairings");
-const TOP_N = 100;
 
 /**
  * Fonts required by pairings that must be included regardless of popularity.
@@ -161,33 +160,11 @@ async function main() {
     familyByKebab.set(toKebab(f.family), f);
   }
 
-  // Sort by popularity (lower number = more popular)
-  families.sort((a, b) => a.popularity - b.popularity);
-  const top = families.slice(0, TOP_N);
-
-  // Collect the set of fonts to generate (top N + required by pairings)
-  const toGenerate = new Map<string, (typeof families)[0]>();
-  for (const font of top) {
-    toGenerate.set(toKebab(font.family), font);
-  }
-
-  // Add required fonts that aren't already in top N
-  let extraCount = 0;
-  for (const kebab of REQUIRED_FAMILIES) {
-    if (!toGenerate.has(kebab)) {
-      const font = familyByKebab.get(kebab);
-      if (font) {
-        toGenerate.set(kebab, font);
-        extraCount++;
-      }
-    }
-  }
-
   mkdirSync(FONTS_DIR, { recursive: true });
 
-  // Generate Google Fonts
+  // Generate ALL Google Fonts
   let count = 0;
-  for (const [, font] of toGenerate) {
+  for (const font of families) {
     writeFont({
       family: font.family,
       category: font.category,
@@ -201,8 +178,8 @@ async function main() {
   // Generate manual fonts (npm-based, e.g. Geist)
   for (const manual of MANUAL_FONTS) {
     const kebab = toKebab(manual.family);
-    // Skip if already required and generated from Google Fonts
-    if (toGenerate.has(kebab)) continue;
+    // Skip if already generated from Google Fonts
+    if (families.some((f) => toKebab(f.family) === kebab)) continue;
 
     writeFont({
       family: manual.family,
@@ -216,7 +193,7 @@ async function main() {
   }
 
   console.log(
-    `Generated ${count} font registry items (top ${TOP_N} + ${extraCount} from pairings + ${MANUAL_FONTS.length} manual)`
+    `Generated ${count} font registry items (${families.length} from Google Fonts + manual)`
   );
 }
 

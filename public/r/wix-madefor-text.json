@@ -1,0 +1,28 @@
+{
+  "name": "wix-madefor-text",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Wix Madefor Text",
+  "description": "Wix Madefor Text — Sans Serif font.",
+  "font": {
+    "family": "Wix Madefor Text",
+    "provider": "google",
+    "import": "Wix_Madefor_Text",
+    "variable": "--font-wix-madefor-text",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

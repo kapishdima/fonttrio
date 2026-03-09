@@ -1,0 +1,24 @@
+{
+  "name": "tiny5",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Tiny5",
+  "description": "Tiny5 — Sans Serif font.",
+  "font": {
+    "family": "Tiny5",
+    "provider": "google",
+    "import": "Tiny5",
+    "variable": "--font-tiny5",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

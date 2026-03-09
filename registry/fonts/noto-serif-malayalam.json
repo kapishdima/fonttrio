@@ -1,0 +1,30 @@
+{
+  "name": "noto-serif-malayalam",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Malayalam",
+  "description": "Noto Serif Malayalam — Serif font.",
+  "font": {
+    "family": "Noto Serif Malayalam",
+    "provider": "google",
+    "import": "Noto_Serif_Malayalam",
+    "variable": "--font-noto-serif-malayalam",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "malayalam"
+    ]
+  }
+}

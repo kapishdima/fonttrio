@@ -1,0 +1,25 @@
+{
+  "name": "vend-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Vend Sans",
+  "description": "Vend Sans — Sans Serif font.",
+  "font": {
+    "family": "Vend Sans",
+    "provider": "google",
+    "import": "Vend_Sans",
+    "variable": "--font-vend-sans",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "noto-serif-armenian",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Armenian",
+  "description": "Noto Serif Armenian — Serif font.",
+  "font": {
+    "family": "Noto Serif Armenian",
+    "provider": "google",
+    "import": "Noto_Serif_Armenian",
+    "variable": "--font-noto-serif-armenian",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "armenian",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

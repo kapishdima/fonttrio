@@ -1,0 +1,25 @@
+{
+  "name": "philosopher",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Philosopher",
+  "description": "Philosopher — Sans Serif font.",
+  "font": {
+    "family": "Philosopher",
+    "provider": "google",
+    "import": "Philosopher",
+    "variable": "--font-philosopher",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

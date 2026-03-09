@@ -1,0 +1,21 @@
+{
+  "name": "betania-patmos-in-gdl",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Betania Patmos In GDL",
+  "description": "Betania Patmos In GDL — Handwriting font.",
+  "font": {
+    "family": "Betania Patmos In GDL",
+    "provider": "google",
+    "import": "Betania_Patmos_In_GDL",
+    "variable": "--font-betania-patmos-in-gdl",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

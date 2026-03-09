@@ -1,0 +1,31 @@
+{
+  "name": "noto-serif-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif SC",
+  "description": "Noto Serif SC — Serif font.",
+  "font": {
+    "family": "Noto Serif SC",
+    "provider": "google",
+    "import": "Noto_Serif_SC",
+    "variable": "--font-noto-serif-sc",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-simplified",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

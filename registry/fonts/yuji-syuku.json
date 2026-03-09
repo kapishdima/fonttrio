@@ -1,0 +1,23 @@
+{
+  "name": "yuji-syuku",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Yuji Syuku",
+  "description": "Yuji Syuku — Serif font.",
+  "font": {
+    "family": "Yuji Syuku",
+    "provider": "google",
+    "import": "Yuji_Syuku",
+    "variable": "--font-yuji-syuku",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

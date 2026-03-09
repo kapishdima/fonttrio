@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-bengali",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Bengali",
+  "description": "Noto Sans Bengali — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Bengali",
+    "provider": "google",
+    "import": "Noto_Sans_Bengali",
+    "variable": "--font-noto-sans-bengali",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "bengali",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

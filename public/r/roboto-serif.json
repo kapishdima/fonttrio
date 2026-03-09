@@ -1,0 +1,32 @@
+{
+  "name": "roboto-serif",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Roboto Serif",
+  "description": "Roboto Serif — Serif font.",
+  "font": {
+    "family": "Roboto Serif",
+    "provider": "google",
+    "import": "Roboto_Serif",
+    "variable": "--font-roboto-serif",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

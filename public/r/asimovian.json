@@ -1,0 +1,22 @@
+{
+  "name": "asimovian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Asimovian",
+  "description": "Asimovian — Sans Serif font.",
+  "font": {
+    "family": "Asimovian",
+    "provider": "google",
+    "import": "Asimovian",
+    "variable": "--font-asimovian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

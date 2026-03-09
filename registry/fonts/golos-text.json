@@ -1,0 +1,28 @@
+{
+  "name": "golos-text",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Golos Text",
+  "description": "Golos Text — Sans Serif font.",
+  "font": {
+    "family": "Golos Text",
+    "provider": "google",
+    "import": "Golos_Text",
+    "variable": "--font-golos-text",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

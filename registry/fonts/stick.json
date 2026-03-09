@@ -1,0 +1,23 @@
+{
+  "name": "stick",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Stick",
+  "description": "Stick — Sans Serif font.",
+  "font": {
+    "family": "Stick",
+    "provider": "google",
+    "import": "Stick",
+    "variable": "--font-stick",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

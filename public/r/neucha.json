@@ -1,0 +1,21 @@
+{
+  "name": "neucha",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Neucha",
+  "description": "Neucha — Handwriting font.",
+  "font": {
+    "family": "Neucha",
+    "provider": "google",
+    "import": "Neucha",
+    "variable": "--font-neucha",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-it-moderna",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite IT Moderna",
+  "description": "Playwrite IT Moderna — Handwriting font.",
+  "font": {
+    "family": "Playwrite IT Moderna",
+    "provider": "google",
+    "import": "Playwrite_IT_Moderna",
+    "variable": "--font-playwrite-it-moderna",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

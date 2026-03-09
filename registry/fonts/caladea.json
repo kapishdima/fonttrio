@@ -1,0 +1,22 @@
+{
+  "name": "caladea",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Caladea",
+  "description": "Caladea — Serif font.",
+  "font": {
+    "family": "Caladea",
+    "provider": "google",
+    "import": "Caladea",
+    "variable": "--font-caladea",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

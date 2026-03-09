@@ -1,0 +1,23 @@
+{
+  "name": "space-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Space Mono",
+  "description": "Space Mono — Monospace font.",
+  "font": {
+    "family": "Space Mono",
+    "provider": "google",
+    "import": "Space_Mono",
+    "variable": "--font-space-mono",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

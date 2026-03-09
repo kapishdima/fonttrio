@@ -1,0 +1,28 @@
+{
+  "name": "readex-pro",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Readex Pro",
+  "description": "Readex Pro — Sans Serif font.",
+  "font": {
+    "family": "Readex Pro",
+    "provider": "google",
+    "import": "Readex_Pro",
+    "variable": "--font-readex-pro",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

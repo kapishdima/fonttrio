@@ -1,0 +1,23 @@
+{
+  "name": "jacquard-12",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Jacquard 12",
+  "description": "Jacquard 12 — Display font.",
+  "font": {
+    "family": "Jacquard 12",
+    "provider": "google",
+    "import": "Jacquard_12",
+    "variable": "--font-jacquard-12",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

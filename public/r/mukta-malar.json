@@ -1,0 +1,28 @@
+{
+  "name": "mukta-malar",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mukta Malar",
+  "description": "Mukta Malar — Sans Serif font.",
+  "font": {
+    "family": "Mukta Malar",
+    "provider": "google",
+    "import": "Mukta_Malar",
+    "variable": "--font-mukta-malar",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tamil"
+    ]
+  }
+}

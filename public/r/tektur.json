@@ -1,0 +1,30 @@
+{
+  "name": "tektur",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Tektur",
+  "description": "Tektur — Display font.",
+  "font": {
+    "family": "Tektur",
+    "provider": "google",
+    "import": "Tektur",
+    "variable": "--font-tektur",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

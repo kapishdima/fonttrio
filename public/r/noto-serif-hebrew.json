@@ -1,0 +1,30 @@
+{
+  "name": "noto-serif-hebrew",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Hebrew",
+  "description": "Noto Serif Hebrew — Serif font.",
+  "font": {
+    "family": "Noto Serif Hebrew",
+    "provider": "google",
+    "import": "Noto_Serif_Hebrew",
+    "variable": "--font-noto-serif-hebrew",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "baskervville",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Baskervville",
+  "description": "Baskervville — Serif font.",
+  "font": {
+    "family": "Baskervville",
+    "provider": "google",
+    "import": "Baskervville",
+    "variable": "--font-baskervville",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

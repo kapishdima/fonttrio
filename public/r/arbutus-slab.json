@@ -1,0 +1,21 @@
+{
+  "name": "arbutus-slab",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Arbutus Slab",
+  "description": "Arbutus Slab — Serif font.",
+  "font": {
+    "family": "Arbutus Slab",
+    "provider": "google",
+    "import": "Arbutus_Slab",
+    "variable": "--font-arbutus-slab",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

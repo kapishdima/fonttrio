@@ -1,0 +1,28 @@
+{
+  "name": "darker-grotesque",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Darker Grotesque",
+  "description": "Darker Grotesque — Sans Serif font.",
+  "font": {
+    "family": "Darker Grotesque",
+    "provider": "google",
+    "import": "Darker_Grotesque",
+    "variable": "--font-darker-grotesque",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

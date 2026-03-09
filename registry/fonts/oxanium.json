@@ -1,0 +1,27 @@
+{
+  "name": "oxanium",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Oxanium",
+  "description": "Oxanium — Display font.",
+  "font": {
+    "family": "Oxanium",
+    "provider": "google",
+    "import": "Oxanium",
+    "variable": "--font-oxanium",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

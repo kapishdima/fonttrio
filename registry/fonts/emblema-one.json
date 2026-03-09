@@ -1,0 +1,21 @@
+{
+  "name": "emblema-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Emblema One",
+  "description": "Emblema One — Display font.",
+  "font": {
+    "family": "Emblema One",
+    "provider": "google",
+    "import": "Emblema_One",
+    "variable": "--font-emblema-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

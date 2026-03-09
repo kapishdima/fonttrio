@@ -1,0 +1,22 @@
+{
+  "name": "skranji",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Skranji",
+  "description": "Skranji — Display font.",
+  "font": {
+    "family": "Skranji",
+    "provider": "google",
+    "import": "Skranji",
+    "variable": "--font-skranji",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

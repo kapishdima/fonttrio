@@ -1,0 +1,25 @@
+{
+  "name": "poltawski-nowy",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Poltawski Nowy",
+  "description": "Poltawski Nowy — Serif font.",
+  "font": {
+    "family": "Poltawski Nowy",
+    "provider": "google",
+    "import": "Poltawski_Nowy",
+    "variable": "--font-poltawski-nowy",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

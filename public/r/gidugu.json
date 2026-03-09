@@ -1,0 +1,22 @@
+{
+  "name": "gidugu",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Gidugu",
+  "description": "Gidugu — Sans Serif font.",
+  "font": {
+    "family": "Gidugu",
+    "provider": "google",
+    "import": "Gidugu",
+    "variable": "--font-gidugu",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "telugu"
+    ]
+  }
+}

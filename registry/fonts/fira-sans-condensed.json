@@ -1,0 +1,34 @@
+{
+  "name": "fira-sans-condensed",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Fira Sans Condensed",
+  "description": "Fira Sans Condensed — Sans Serif font.",
+  "font": {
+    "family": "Fira Sans Condensed",
+    "provider": "google",
+    "import": "Fira_Sans_Condensed",
+    "variable": "--font-fira-sans-condensed",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "alkatra",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Alkatra",
+  "description": "Alkatra — Display font.",
+  "font": {
+    "family": "Alkatra",
+    "provider": "google",
+    "import": "Alkatra",
+    "variable": "--font-alkatra",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "bengali",
+      "devanagari",
+      "latin",
+      "latin-ext",
+      "oriya"
+    ]
+  }
+}

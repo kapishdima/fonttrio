@@ -1,0 +1,28 @@
+{
+  "name": "mitr",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mitr",
+  "description": "Mitr — Sans Serif font.",
+  "font": {
+    "family": "Mitr",
+    "provider": "google",
+    "import": "Mitr",
+    "variable": "--font-mitr",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

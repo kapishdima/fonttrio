@@ -1,0 +1,35 @@
+{
+  "name": "google-sans-code",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Google Sans Code",
+  "description": "Google Sans Code — Monospace font.",
+  "font": {
+    "family": "Google Sans Code",
+    "provider": "google",
+    "import": "Google_Sans_Code",
+    "variable": "--font-google-sans-code",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "adlam",
+      "canadian-aboriginal",
+      "cherokee",
+      "latin",
+      "latin-ext",
+      "math",
+      "old-permic",
+      "symbols",
+      "symbols2",
+      "syriac",
+      "vietnamese"
+    ]
+  }
+}

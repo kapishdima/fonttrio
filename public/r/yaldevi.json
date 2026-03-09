@@ -1,0 +1,27 @@
+{
+  "name": "yaldevi",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Yaldevi",
+  "description": "Yaldevi — Sans Serif font.",
+  "font": {
+    "family": "Yaldevi",
+    "provider": "google",
+    "import": "Yaldevi",
+    "variable": "--font-yaldevi",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "sinhala"
+    ]
+  }
+}

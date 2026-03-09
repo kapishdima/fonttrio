@@ -1,0 +1,24 @@
+{
+  "name": "viaoda-libre",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Viaoda Libre",
+  "description": "Viaoda Libre — Display font.",
+  "font": {
+    "family": "Viaoda Libre",
+    "provider": "google",
+    "import": "Viaoda_Libre",
+    "variable": "--font-viaoda-libre",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

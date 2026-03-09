@@ -1,0 +1,29 @@
+{
+  "name": "phudu",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Phudu",
+  "description": "Phudu — Display font.",
+  "font": {
+    "family": "Phudu",
+    "provider": "google",
+    "import": "Phudu",
+    "variable": "--font-phudu",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

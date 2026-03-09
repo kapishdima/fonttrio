@@ -1,0 +1,22 @@
+{
+  "name": "sahitya",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Sahitya",
+  "description": "Sahitya — Serif font.",
+  "font": {
+    "family": "Sahitya",
+    "provider": "google",
+    "import": "Sahitya",
+    "variable": "--font-sahitya",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin"
+    ]
+  }
+}

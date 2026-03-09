@@ -1,0 +1,20 @@
+{
+  "name": "adamina",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Adamina",
+  "description": "Adamina — Serif font.",
+  "font": {
+    "family": "Adamina",
+    "provider": "google",
+    "import": "Adamina",
+    "variable": "--font-adamina",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

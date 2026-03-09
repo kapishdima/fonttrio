@@ -1,0 +1,21 @@
+{
+  "name": "chela-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Chela One",
+  "description": "Chela One — Display font.",
+  "font": {
+    "family": "Chela One",
+    "provider": "google",
+    "import": "Chela_One",
+    "variable": "--font-chela-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

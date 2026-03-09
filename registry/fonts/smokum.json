@@ -1,0 +1,21 @@
+{
+  "name": "smokum",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Smokum",
+  "description": "Smokum — Display font.",
+  "font": {
+    "family": "Smokum",
+    "provider": "google",
+    "import": "Smokum",
+    "variable": "--font-smokum",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

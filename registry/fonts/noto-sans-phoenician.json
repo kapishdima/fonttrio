@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-phoenician",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Phoenician",
+  "description": "Noto Sans Phoenician — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Phoenician",
+    "provider": "google",
+    "import": "Noto_Sans_Phoenician",
+    "variable": "--font-noto-sans-phoenician",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "phoenician"
+    ]
+  }
+}

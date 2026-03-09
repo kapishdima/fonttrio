@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-kaithi",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Kaithi",
+  "description": "Noto Sans Kaithi — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Kaithi",
+    "provider": "google",
+    "import": "Noto_Sans_Kaithi",
+    "variable": "--font-noto-sans-kaithi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "kaithi",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

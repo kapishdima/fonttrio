@@ -1,0 +1,21 @@
+{
+  "name": "quantico",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Quantico",
+  "description": "Quantico — Sans Serif font.",
+  "font": {
+    "family": "Quantico",
+    "provider": "google",
+    "import": "Quantico",
+    "variable": "--font-quantico",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

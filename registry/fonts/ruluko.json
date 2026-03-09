@@ -1,0 +1,21 @@
+{
+  "name": "ruluko",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Ruluko",
+  "description": "Ruluko — Sans Serif font.",
+  "font": {
+    "family": "Ruluko",
+    "provider": "google",
+    "import": "Ruluko",
+    "variable": "--font-ruluko",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

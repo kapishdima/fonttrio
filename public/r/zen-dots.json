@@ -1,0 +1,21 @@
+{
+  "name": "zen-dots",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Zen Dots",
+  "description": "Zen Dots — Display font.",
+  "font": {
+    "family": "Zen Dots",
+    "provider": "google",
+    "import": "Zen_Dots",
+    "variable": "--font-zen-dots",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "alumni-sans-sc",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Alumni Sans SC",
+  "description": "Alumni Sans SC — Sans Serif font.",
+  "font": {
+    "family": "Alumni Sans SC",
+    "provider": "google",
+    "import": "Alumni_Sans_SC",
+    "variable": "--font-alumni-sans-sc",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "itim",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Itim",
+  "description": "Itim — Handwriting font.",
+  "font": {
+    "family": "Itim",
+    "provider": "google",
+    "import": "Itim",
+    "variable": "--font-itim",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

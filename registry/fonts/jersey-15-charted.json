@@ -1,0 +1,21 @@
+{
+  "name": "jersey-15-charted",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Jersey 15 Charted",
+  "description": "Jersey 15 Charted — Display font.",
+  "font": {
+    "family": "Jersey 15 Charted",
+    "provider": "google",
+    "import": "Jersey_15_Charted",
+    "variable": "--font-jersey-15-charted",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

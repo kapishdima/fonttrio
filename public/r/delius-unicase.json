@@ -1,0 +1,21 @@
+{
+  "name": "delius-unicase",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Delius Unicase",
+  "description": "Delius Unicase — Handwriting font.",
+  "font": {
+    "family": "Delius Unicase",
+    "provider": "google",
+    "import": "Delius_Unicase",
+    "variable": "--font-delius-unicase",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

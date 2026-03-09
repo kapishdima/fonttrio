@@ -1,0 +1,21 @@
+{
+  "name": "jersey-20",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Jersey 20",
+  "description": "Jersey 20 — Display font.",
+  "font": {
+    "family": "Jersey 20",
+    "provider": "google",
+    "import": "Jersey_20",
+    "variable": "--font-jersey-20",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "kirang-haerang",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Kirang Haerang",
+  "description": "Kirang Haerang — Display font.",
+  "font": {
+    "family": "Kirang Haerang",
+    "provider": "google",
+    "import": "Kirang_Haerang",
+    "variable": "--font-kirang-haerang",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

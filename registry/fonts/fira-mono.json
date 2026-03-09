@@ -1,0 +1,28 @@
+{
+  "name": "fira-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Fira Mono",
+  "description": "Fira Mono — Monospace font.",
+  "font": {
+    "family": "Fira Mono",
+    "provider": "google",
+    "import": "Fira_Mono",
+    "variable": "--font-fira-mono",
+    "weight": [
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "symbols2"
+    ]
+  }
+}

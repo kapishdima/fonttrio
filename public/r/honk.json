@@ -1,0 +1,24 @@
+{
+  "name": "honk",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Honk",
+  "description": "Honk — Display font.",
+  "font": {
+    "family": "Honk",
+    "provider": "google",
+    "import": "Honk",
+    "variable": "--font-honk",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ]
+  }
+}

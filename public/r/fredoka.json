@@ -1,0 +1,26 @@
+{
+  "name": "fredoka",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Fredoka",
+  "description": "Fredoka — Sans Serif font.",
+  "font": {
+    "family": "Fredoka",
+    "provider": "google",
+    "import": "Fredoka",
+    "variable": "--font-fredoka",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

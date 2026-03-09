@@ -1,0 +1,21 @@
+{
+  "name": "faculty-glyphic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Faculty Glyphic",
+  "description": "Faculty Glyphic — Sans Serif font.",
+  "font": {
+    "family": "Faculty Glyphic",
+    "provider": "google",
+    "import": "Faculty_Glyphic",
+    "variable": "--font-faculty-glyphic",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

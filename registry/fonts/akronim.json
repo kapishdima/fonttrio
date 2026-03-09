@@ -1,0 +1,21 @@
+{
+  "name": "akronim",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Akronim",
+  "description": "Akronim — Display font.",
+  "font": {
+    "family": "Akronim",
+    "provider": "google",
+    "import": "Akronim",
+    "variable": "--font-akronim",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

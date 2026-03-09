@@ -1,0 +1,21 @@
+{
+  "name": "maiden-orange",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Maiden Orange",
+  "description": "Maiden Orange — Serif font.",
+  "font": {
+    "family": "Maiden Orange",
+    "provider": "google",
+    "import": "Maiden_Orange",
+    "variable": "--font-maiden-orange",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

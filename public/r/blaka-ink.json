@@ -1,0 +1,22 @@
+{
+  "name": "blaka-ink",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Blaka Ink",
+  "description": "Blaka Ink — Display font.",
+  "font": {
+    "family": "Blaka Ink",
+    "provider": "google",
+    "import": "Blaka_Ink",
+    "variable": "--font-blaka-ink",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

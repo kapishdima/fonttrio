@@ -1,0 +1,21 @@
+{
+  "name": "eater",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Eater",
+  "description": "Eater — Display font.",
+  "font": {
+    "family": "Eater",
+    "provider": "google",
+    "import": "Eater",
+    "variable": "--font-eater",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

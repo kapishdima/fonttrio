@@ -1,0 +1,28 @@
+{
+  "name": "wavefont",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Wavefont",
+  "description": "Wavefont — Display font.",
+  "font": {
+    "family": "Wavefont",
+    "provider": "google",
+    "import": "Wavefont",
+    "variable": "--font-wavefont",
+    "weight": [
+      "100",
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

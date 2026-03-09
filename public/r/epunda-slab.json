@@ -1,0 +1,27 @@
+{
+  "name": "epunda-slab",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Epunda Slab",
+  "description": "Epunda Slab — Serif font.",
+  "font": {
+    "family": "Epunda Slab",
+    "provider": "google",
+    "import": "Epunda_Slab",
+    "variable": "--font-epunda-slab",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

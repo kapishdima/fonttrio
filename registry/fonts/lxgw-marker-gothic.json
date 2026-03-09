@@ -1,0 +1,27 @@
+{
+  "name": "lxgw-marker-gothic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "LXGW Marker Gothic",
+  "description": "LXGW Marker Gothic — Sans Serif font.",
+  "font": {
+    "family": "LXGW Marker Gothic",
+    "provider": "google",
+    "import": "LXGW_Marker_Gothic",
+    "variable": "--font-lxgw-marker-gothic",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-traditional",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "symbols2",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "chocolate-classical-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Chocolate Classical Sans",
+  "description": "Chocolate Classical Sans — Sans Serif font.",
+  "font": {
+    "family": "Chocolate Classical Sans",
+    "provider": "google",
+    "import": "Chocolate_Classical_Sans",
+    "variable": "--font-chocolate-classical-sans",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-traditional",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

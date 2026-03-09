@@ -1,0 +1,21 @@
+{
+  "name": "gilda-display",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Gilda Display",
+  "description": "Gilda Display — Serif font.",
+  "font": {
+    "family": "Gilda Display",
+    "provider": "google",
+    "import": "Gilda_Display",
+    "variable": "--font-gilda-display",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

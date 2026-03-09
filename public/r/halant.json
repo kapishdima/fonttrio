@@ -1,0 +1,26 @@
+{
+  "name": "halant",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Halant",
+  "description": "Halant — Serif font.",
+  "font": {
+    "family": "Halant",
+    "provider": "google",
+    "import": "Halant",
+    "variable": "--font-halant",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

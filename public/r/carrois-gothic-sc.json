@@ -1,0 +1,20 @@
+{
+  "name": "carrois-gothic-sc",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Carrois Gothic SC",
+  "description": "Carrois Gothic SC — Sans Serif font.",
+  "font": {
+    "family": "Carrois Gothic SC",
+    "provider": "google",
+    "import": "Carrois_Gothic_SC",
+    "variable": "--font-carrois-gothic-sc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

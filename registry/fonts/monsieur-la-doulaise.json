@@ -1,0 +1,21 @@
+{
+  "name": "monsieur-la-doulaise",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Monsieur La Doulaise",
+  "description": "Monsieur La Doulaise — Handwriting font.",
+  "font": {
+    "family": "Monsieur La Doulaise",
+    "provider": "google",
+    "import": "Monsieur_La_Doulaise",
+    "variable": "--font-monsieur-la-doulaise",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

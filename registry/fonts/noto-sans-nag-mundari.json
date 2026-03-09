@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-nag-mundari",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Nag Mundari",
+  "description": "Noto Sans Nag Mundari — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Nag Mundari",
+    "provider": "google",
+    "import": "Noto_Sans_Nag_Mundari",
+    "variable": "--font-noto-sans-nag-mundari",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "nag-mundari"
+    ]
+  }
+}

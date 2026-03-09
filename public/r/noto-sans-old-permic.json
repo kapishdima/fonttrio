@@ -1,0 +1,23 @@
+{
+  "name": "noto-sans-old-permic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Old Permic",
+  "description": "Noto Sans Old Permic — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Old Permic",
+    "provider": "google",
+    "import": "Noto_Sans_Old_Permic",
+    "variable": "--font-noto-sans-old-permic",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "old-permic"
+    ]
+  }
+}

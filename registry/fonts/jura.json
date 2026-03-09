@@ -1,0 +1,31 @@
+{
+  "name": "jura",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Jura",
+  "description": "Jura — Sans Serif font.",
+  "font": {
+    "family": "Jura",
+    "provider": "google",
+    "import": "Jura",
+    "variable": "--font-jura",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "kayah-li",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

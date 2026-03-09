@@ -1,0 +1,23 @@
+{
+  "name": "varela-round",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Varela Round",
+  "description": "Varela Round — Sans Serif font.",
+  "font": {
+    "family": "Varela Round",
+    "provider": "google",
+    "import": "Varela_Round",
+    "variable": "--font-varela-round",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

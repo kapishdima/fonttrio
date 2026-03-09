@@ -1,0 +1,24 @@
+{
+  "name": "sometype-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Sometype Mono",
+  "description": "Sometype Mono — Monospace font.",
+  "font": {
+    "family": "Sometype Mono",
+    "provider": "google",
+    "import": "Sometype_Mono",
+    "variable": "--font-sometype-mono",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

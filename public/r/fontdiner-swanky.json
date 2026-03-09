@@ -1,0 +1,20 @@
+{
+  "name": "fontdiner-swanky",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Fontdiner Swanky",
+  "description": "Fontdiner Swanky — Display font.",
+  "font": {
+    "family": "Fontdiner Swanky",
+    "provider": "google",
+    "import": "Fontdiner_Swanky",
+    "variable": "--font-fontdiner-swanky",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

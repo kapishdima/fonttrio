@@ -1,0 +1,21 @@
+{
+  "name": "revalia",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Revalia",
+  "description": "Revalia — Display font.",
+  "font": {
+    "family": "Revalia",
+    "provider": "google",
+    "import": "Revalia",
+    "variable": "--font-revalia",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

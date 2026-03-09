@@ -1,0 +1,22 @@
+{
+  "name": "tiro-telugu",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Tiro Telugu",
+  "description": "Tiro Telugu — Serif font.",
+  "font": {
+    "family": "Tiro Telugu",
+    "provider": "google",
+    "import": "Tiro_Telugu",
+    "variable": "--font-tiro-telugu",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "telugu"
+    ]
+  }
+}

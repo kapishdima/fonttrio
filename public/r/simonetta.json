@@ -1,0 +1,22 @@
+{
+  "name": "simonetta",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Simonetta",
+  "description": "Simonetta — Display font.",
+  "font": {
+    "family": "Simonetta",
+    "provider": "google",
+    "import": "Simonetta",
+    "variable": "--font-simonetta",
+    "weight": [
+      "400",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

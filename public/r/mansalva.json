@@ -1,0 +1,23 @@
+{
+  "name": "mansalva",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Mansalva",
+  "description": "Mansalva — Handwriting font.",
+  "font": {
+    "family": "Mansalva",
+    "provider": "google",
+    "import": "Mansalva",
+    "variable": "--font-mansalva",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "hepta-slab",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Hepta Slab",
+  "description": "Hepta Slab — Serif font.",
+  "font": {
+    "family": "Hepta Slab",
+    "provider": "google",
+    "import": "Hepta_Slab",
+    "variable": "--font-hepta-slab",
+    "weight": [
+      "1",
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

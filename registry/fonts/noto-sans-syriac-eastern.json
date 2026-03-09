@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-syriac-eastern",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Syriac Eastern",
+  "description": "Noto Sans Syriac Eastern — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Syriac Eastern",
+    "provider": "google",
+    "import": "Noto_Sans_Syriac_Eastern",
+    "variable": "--font-noto-sans-syriac-eastern",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "syriac"
+    ]
+  }
+}

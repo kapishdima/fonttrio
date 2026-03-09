@@ -1,0 +1,27 @@
+{
+  "name": "tirra",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Tirra",
+  "description": "Tirra — Sans Serif font.",
+  "font": {
+    "family": "Tirra",
+    "provider": "google",
+    "import": "Tirra",
+    "variable": "--font-tirra",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tifinagh"
+    ]
+  }
+}

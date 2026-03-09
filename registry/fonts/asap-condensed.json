@@ -1,0 +1,29 @@
+{
+  "name": "asap-condensed",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Asap Condensed",
+  "description": "Asap Condensed — Sans Serif font.",
+  "font": {
+    "family": "Asap Condensed",
+    "provider": "google",
+    "import": "Asap_Condensed",
+    "variable": "--font-asap-condensed",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

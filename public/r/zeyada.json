@@ -1,0 +1,21 @@
+{
+  "name": "zeyada",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Zeyada",
+  "description": "Zeyada — Handwriting font.",
+  "font": {
+    "family": "Zeyada",
+    "provider": "google",
+    "import": "Zeyada",
+    "variable": "--font-zeyada",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "cause",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Cause",
+  "description": "Cause — Handwriting font.",
+  "font": {
+    "family": "Cause",
+    "provider": "google",
+    "import": "Cause",
+    "variable": "--font-cause",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "mate",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Mate",
+  "description": "Mate — Serif font.",
+  "font": {
+    "family": "Mate",
+    "provider": "google",
+    "import": "Mate",
+    "variable": "--font-mate",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

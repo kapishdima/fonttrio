@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-thai-looped",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Thai Looped",
+  "description": "Noto Sans Thai Looped — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Thai Looped",
+    "provider": "google",
+    "import": "Noto_Sans_Thai_Looped",
+    "variable": "--font-noto-sans-thai-looped",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai"
+    ]
+  }
+}

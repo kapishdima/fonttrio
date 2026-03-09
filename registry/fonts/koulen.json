@@ -1,0 +1,21 @@
+{
+  "name": "koulen",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Koulen",
+  "description": "Koulen — Display font.",
+  "font": {
+    "family": "Koulen",
+    "provider": "google",
+    "import": "Koulen",
+    "variable": "--font-koulen",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin"
+    ]
+  }
+}

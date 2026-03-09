@@ -1,0 +1,22 @@
+{
+  "name": "shippori-antique",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Shippori Antique",
+  "description": "Shippori Antique — Sans Serif font.",
+  "font": {
+    "family": "Shippori Antique",
+    "provider": "google",
+    "import": "Shippori_Antique",
+    "variable": "--font-shippori-antique",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

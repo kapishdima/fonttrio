@@ -1,0 +1,21 @@
+{
+  "name": "meddon",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Meddon",
+  "description": "Meddon — Handwriting font.",
+  "font": {
+    "family": "Meddon",
+    "provider": "google",
+    "import": "Meddon",
+    "variable": "--font-meddon",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

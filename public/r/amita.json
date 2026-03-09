@@ -1,0 +1,23 @@
+{
+  "name": "amita",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Amita",
+  "description": "Amita — Handwriting font.",
+  "font": {
+    "family": "Amita",
+    "provider": "google",
+    "import": "Amita",
+    "variable": "--font-amita",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

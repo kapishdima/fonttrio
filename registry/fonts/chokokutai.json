@@ -1,0 +1,23 @@
+{
+  "name": "chokokutai",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Chokokutai",
+  "description": "Chokokutai — Display font.",
+  "font": {
+    "family": "Chokokutai",
+    "provider": "google",
+    "import": "Chokokutai",
+    "variable": "--font-chokokutai",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

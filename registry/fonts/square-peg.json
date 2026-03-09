@@ -1,0 +1,22 @@
+{
+  "name": "square-peg",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Square Peg",
+  "description": "Square Peg — Handwriting font.",
+  "font": {
+    "family": "Square Peg",
+    "provider": "google",
+    "import": "Square_Peg",
+    "variable": "--font-square-peg",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

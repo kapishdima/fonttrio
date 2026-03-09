@@ -1,0 +1,21 @@
+{
+  "name": "betania-patmos-in",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Betania Patmos In",
+  "description": "Betania Patmos In — Handwriting font.",
+  "font": {
+    "family": "Betania Patmos In",
+    "provider": "google",
+    "import": "Betania_Patmos_In",
+    "variable": "--font-betania-patmos-in",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

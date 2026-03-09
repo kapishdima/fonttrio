@@ -1,0 +1,20 @@
+{
+  "name": "single-day",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Single Day",
+  "description": "Single Day — Display font.",
+  "font": {
+    "family": "Single Day",
+    "provider": "google",
+    "import": "Single_Day",
+    "variable": "--font-single-day",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean"
+    ]
+  }
+}

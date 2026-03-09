@@ -1,0 +1,21 @@
+{
+  "name": "b612-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "B612 Mono",
+  "description": "B612 Mono — Monospace font.",
+  "font": {
+    "family": "B612 Mono",
+    "provider": "google",
+    "import": "B612_Mono",
+    "variable": "--font-b612-mono",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

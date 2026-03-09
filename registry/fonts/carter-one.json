@@ -1,0 +1,20 @@
+{
+  "name": "carter-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Carter One",
+  "description": "Carter One — Display font.",
+  "font": {
+    "family": "Carter One",
+    "provider": "google",
+    "import": "Carter_One",
+    "variable": "--font-carter-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

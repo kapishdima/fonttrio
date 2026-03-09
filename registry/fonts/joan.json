@@ -1,0 +1,21 @@
+{
+  "name": "joan",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Joan",
+  "description": "Joan — Serif font.",
+  "font": {
+    "family": "Joan",
+    "provider": "google",
+    "import": "Joan",
+    "variable": "--font-joan",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

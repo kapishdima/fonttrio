@@ -1,0 +1,20 @@
+{
+  "name": "goudy-bookletter-1911",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Goudy Bookletter 1911",
+  "description": "Goudy Bookletter 1911 — Serif font.",
+  "font": {
+    "family": "Goudy Bookletter 1911",
+    "provider": "google",
+    "import": "Goudy_Bookletter_1911",
+    "variable": "--font-goudy-bookletter-1911",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

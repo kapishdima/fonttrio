@@ -1,0 +1,25 @@
+{
+  "name": "sansation",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sansation",
+  "description": "Sansation — Sans Serif font.",
+  "font": {
+    "family": "Sansation",
+    "provider": "google",
+    "import": "Sansation",
+    "variable": "--font-sansation",
+    "weight": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "greek",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

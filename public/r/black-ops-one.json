@@ -1,0 +1,23 @@
+{
+  "name": "black-ops-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Black Ops One",
+  "description": "Black Ops One — Display font.",
+  "font": {
+    "family": "Black Ops One",
+    "provider": "google",
+    "import": "Black_Ops_One",
+    "variable": "--font-black-ops-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

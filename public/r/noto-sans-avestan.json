@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-avestan",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Avestan",
+  "description": "Noto Sans Avestan — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Avestan",
+    "provider": "google",
+    "import": "Noto_Sans_Avestan",
+    "variable": "--font-noto-sans-avestan",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "avestan",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "magra",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Magra",
+  "description": "Magra — Sans Serif font.",
+  "font": {
+    "family": "Magra",
+    "provider": "google",
+    "import": "Magra",
+    "variable": "--font-magra",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

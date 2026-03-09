@@ -1,0 +1,30 @@
+{
+  "name": "asap",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Asap",
+  "description": "Asap — Sans Serif font.",
+  "font": {
+    "family": "Asap",
+    "provider": "google",
+    "import": "Asap",
+    "variable": "--font-asap",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "yeon-sung",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Yeon Sung",
+  "description": "Yeon Sung — Display font.",
+  "font": {
+    "family": "Yeon Sung",
+    "provider": "google",
+    "import": "Yeon_Sung",
+    "variable": "--font-yeon-sung",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

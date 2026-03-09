@@ -1,0 +1,29 @@
+{
+  "name": "noto-serif-hentaigana",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Hentaigana",
+  "description": "Noto Serif Hentaigana — Serif font.",
+  "font": {
+    "family": "Noto Serif Hentaigana",
+    "provider": "google",
+    "import": "Noto_Serif_Hentaigana",
+    "variable": "--font-noto-serif-hentaigana",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "kana-extended",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

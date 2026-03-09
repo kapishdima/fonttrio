@@ -1,0 +1,22 @@
+{
+  "name": "gideon-roman",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Gideon Roman",
+  "description": "Gideon Roman — Display font.",
+  "font": {
+    "family": "Gideon Roman",
+    "provider": "google",
+    "import": "Gideon_Roman",
+    "variable": "--font-gideon-roman",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

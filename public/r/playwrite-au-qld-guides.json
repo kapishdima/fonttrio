@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-au-qld-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite AU QLD Guides",
+  "description": "Playwrite AU QLD Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite AU QLD Guides",
+    "provider": "google",
+    "import": "Playwrite_AU_QLD_Guides",
+    "variable": "--font-playwrite-au-qld-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

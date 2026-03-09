@@ -1,0 +1,22 @@
+{
+  "name": "tienne",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Tienne",
+  "description": "Tienne — Serif font.",
+  "font": {
+    "family": "Tienne",
+    "provider": "google",
+    "import": "Tienne",
+    "variable": "--font-tienne",
+    "weight": [
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

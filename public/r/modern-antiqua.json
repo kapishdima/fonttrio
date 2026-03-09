@@ -1,0 +1,21 @@
+{
+  "name": "modern-antiqua",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Modern Antiqua",
+  "description": "Modern Antiqua — Display font.",
+  "font": {
+    "family": "Modern Antiqua",
+    "provider": "google",
+    "import": "Modern_Antiqua",
+    "variable": "--font-modern-antiqua",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

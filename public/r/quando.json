@@ -1,0 +1,21 @@
+{
+  "name": "quando",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Quando",
+  "description": "Quando — Serif font.",
+  "font": {
+    "family": "Quando",
+    "provider": "google",
+    "import": "Quando",
+    "variable": "--font-quando",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

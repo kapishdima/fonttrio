@@ -1,0 +1,28 @@
+{
+  "name": "zen-old-mincho",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Zen Old Mincho",
+  "description": "Zen Old Mincho — Serif font.",
+  "font": {
+    "family": "Zen Old Mincho",
+    "provider": "google",
+    "import": "Zen_Old_Mincho",
+    "variable": "--font-zen-old-mincho",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "greek",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

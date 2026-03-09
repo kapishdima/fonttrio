@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-es",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite ES",
+  "description": "Playwrite ES — Handwriting font.",
+  "font": {
+    "family": "Playwrite ES",
+    "provider": "google",
+    "import": "Playwrite_ES",
+    "variable": "--font-playwrite-es",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

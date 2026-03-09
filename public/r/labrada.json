@@ -1,0 +1,30 @@
+{
+  "name": "labrada",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Labrada",
+  "description": "Labrada — Serif font.",
+  "font": {
+    "family": "Labrada",
+    "provider": "google",
+    "import": "Labrada",
+    "variable": "--font-labrada",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

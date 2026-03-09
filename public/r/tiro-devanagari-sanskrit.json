@@ -1,0 +1,22 @@
+{
+  "name": "tiro-devanagari-sanskrit",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Tiro Devanagari Sanskrit",
+  "description": "Tiro Devanagari Sanskrit — Serif font.",
+  "font": {
+    "family": "Tiro Devanagari Sanskrit",
+    "provider": "google",
+    "import": "Tiro_Devanagari_Sanskrit",
+    "variable": "--font-tiro-devanagari-sanskrit",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

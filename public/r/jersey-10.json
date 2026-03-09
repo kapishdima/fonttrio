@@ -1,0 +1,21 @@
+{
+  "name": "jersey-10",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Jersey 10",
+  "description": "Jersey 10 — Display font.",
+  "font": {
+    "family": "Jersey 10",
+    "provider": "google",
+    "import": "Jersey_10",
+    "variable": "--font-jersey-10",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

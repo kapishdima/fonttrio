@@ -1,0 +1,24 @@
+{
+  "name": "protest-guerrilla",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Protest Guerrilla",
+  "description": "Protest Guerrilla — Display font.",
+  "font": {
+    "family": "Protest Guerrilla",
+    "provider": "google",
+    "import": "Protest_Guerrilla",
+    "variable": "--font-protest-guerrilla",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ]
+  }
+}

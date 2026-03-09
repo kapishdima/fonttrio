@@ -1,0 +1,21 @@
+{
+  "name": "just-another-hand",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Just Another Hand",
+  "description": "Just Another Hand — Handwriting font.",
+  "font": {
+    "family": "Just Another Hand",
+    "provider": "google",
+    "import": "Just_Another_Hand",
+    "variable": "--font-just-another-hand",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

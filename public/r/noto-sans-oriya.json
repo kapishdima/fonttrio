@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-oriya",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Oriya",
+  "description": "Noto Sans Oriya — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Oriya",
+    "provider": "google",
+    "import": "Noto_Sans_Oriya",
+    "variable": "--font-noto-sans-oriya",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "oriya"
+    ]
+  }
+}

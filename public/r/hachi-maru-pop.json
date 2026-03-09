@@ -1,0 +1,23 @@
+{
+  "name": "hachi-maru-pop",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Hachi Maru Pop",
+  "description": "Hachi Maru Pop — Handwriting font.",
+  "font": {
+    "family": "Hachi Maru Pop",
+    "provider": "google",
+    "import": "Hachi_Maru_Pop",
+    "variable": "--font-hachi-maru-pop",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

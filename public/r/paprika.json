@@ -1,0 +1,21 @@
+{
+  "name": "paprika",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Paprika",
+  "description": "Paprika — Display font.",
+  "font": {
+    "family": "Paprika",
+    "provider": "google",
+    "import": "Paprika",
+    "variable": "--font-paprika",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

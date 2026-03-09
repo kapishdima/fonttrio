@@ -1,0 +1,21 @@
+{
+  "name": "hanalei",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Hanalei",
+  "description": "Hanalei — Display font.",
+  "font": {
+    "family": "Hanalei",
+    "provider": "google",
+    "import": "Hanalei",
+    "variable": "--font-hanalei",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

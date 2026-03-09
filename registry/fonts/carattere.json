@@ -1,0 +1,22 @@
+{
+  "name": "carattere",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Carattere",
+  "description": "Carattere — Handwriting font.",
+  "font": {
+    "family": "Carattere",
+    "provider": "google",
+    "import": "Carattere",
+    "variable": "--font-carattere",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

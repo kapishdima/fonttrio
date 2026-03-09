@@ -1,0 +1,20 @@
+{
+  "name": "im-fell-french-canon-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "IM Fell French Canon SC",
+  "description": "IM Fell French Canon SC — Serif font.",
+  "font": {
+    "family": "IM Fell French Canon SC",
+    "provider": "google",
+    "import": "IM_Fell_French_Canon_SC",
+    "variable": "--font-im-fell-french-canon-sc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

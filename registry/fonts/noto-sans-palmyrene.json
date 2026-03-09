@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-palmyrene",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Palmyrene",
+  "description": "Noto Sans Palmyrene — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Palmyrene",
+    "provider": "google",
+    "import": "Noto_Sans_Palmyrene",
+    "variable": "--font-noto-sans-palmyrene",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "palmyrene"
+    ]
+  }
+}

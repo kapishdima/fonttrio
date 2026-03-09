@@ -1,0 +1,26 @@
+{
+  "name": "stack-sans-notch",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Stack Sans Notch",
+  "description": "Stack Sans Notch — Sans Serif font.",
+  "font": {
+    "family": "Stack Sans Notch",
+    "provider": "google",
+    "import": "Stack_Sans_Notch",
+    "variable": "--font-stack-sans-notch",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

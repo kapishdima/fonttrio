@@ -1,0 +1,26 @@
+{
+  "name": "hind-vadodara",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Hind Vadodara",
+  "description": "Hind Vadodara — Sans Serif font.",
+  "font": {
+    "family": "Hind Vadodara",
+    "provider": "google",
+    "import": "Hind_Vadodara",
+    "variable": "--font-hind-vadodara",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "gujarati",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

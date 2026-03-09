@@ -1,0 +1,30 @@
+{
+  "name": "recursive",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Recursive",
+  "description": "Recursive — Sans Serif font.",
+  "font": {
+    "family": "Recursive",
+    "provider": "google",
+    "import": "Recursive",
+    "variable": "--font-recursive",
+    "weight": [
+      "1000",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

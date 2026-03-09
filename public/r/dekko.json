@@ -1,0 +1,22 @@
+{
+  "name": "dekko",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Dekko",
+  "description": "Dekko — Handwriting font.",
+  "font": {
+    "family": "Dekko",
+    "provider": "google",
+    "import": "Dekko",
+    "variable": "--font-dekko",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

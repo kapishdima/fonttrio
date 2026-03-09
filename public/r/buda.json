@@ -1,0 +1,20 @@
+{
+  "name": "buda",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Buda",
+  "description": "Buda — Display font.",
+  "font": {
+    "family": "Buda",
+    "provider": "google",
+    "import": "Buda",
+    "variable": "--font-buda",
+    "weight": [
+      "300"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

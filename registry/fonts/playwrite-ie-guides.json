@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-ie-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite IE Guides",
+  "description": "Playwrite IE Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite IE Guides",
+    "provider": "google",
+    "import": "Playwrite_IE_Guides",
+    "variable": "--font-playwrite-ie-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

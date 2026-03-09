@@ -1,0 +1,22 @@
+{
+  "name": "ingrid-darling",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Ingrid Darling",
+  "description": "Ingrid Darling — Handwriting font.",
+  "font": {
+    "family": "Ingrid Darling",
+    "provider": "google",
+    "import": "Ingrid_Darling",
+    "variable": "--font-ingrid-darling",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

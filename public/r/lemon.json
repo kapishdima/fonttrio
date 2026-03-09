@@ -1,0 +1,21 @@
+{
+  "name": "lemon",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Lemon",
+  "description": "Lemon — Display font.",
+  "font": {
+    "family": "Lemon",
+    "provider": "google",
+    "import": "Lemon",
+    "variable": "--font-lemon",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

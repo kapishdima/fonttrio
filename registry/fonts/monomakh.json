@@ -1,0 +1,23 @@
+{
+  "name": "monomakh",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Monomakh",
+  "description": "Monomakh — Display font.",
+  "font": {
+    "family": "Monomakh",
+    "provider": "google",
+    "import": "Monomakh",
+    "variable": "--font-monomakh",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

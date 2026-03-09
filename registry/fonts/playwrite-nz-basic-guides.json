@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-nz-basic-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite NZ Basic Guides",
+  "description": "Playwrite NZ Basic Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite NZ Basic Guides",
+    "provider": "google",
+    "import": "Playwrite_NZ_Basic_Guides",
+    "variable": "--font-playwrite-nz-basic-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

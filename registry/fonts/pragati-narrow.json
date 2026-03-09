@@ -1,0 +1,23 @@
+{
+  "name": "pragati-narrow",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Pragati Narrow",
+  "description": "Pragati Narrow — Sans Serif font.",
+  "font": {
+    "family": "Pragati Narrow",
+    "provider": "google",
+    "import": "Pragati_Narrow",
+    "variable": "--font-pragati-narrow",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

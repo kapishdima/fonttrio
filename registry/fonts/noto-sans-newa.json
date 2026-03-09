@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-newa",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Newa",
+  "description": "Noto Sans Newa — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Newa",
+    "provider": "google",
+    "import": "Noto_Sans_Newa",
+    "variable": "--font-noto-sans-newa",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "newa"
+    ]
+  }
+}

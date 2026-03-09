@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-lisu",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Lisu",
+  "description": "Noto Sans Lisu — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Lisu",
+    "provider": "google",
+    "import": "Noto_Sans_Lisu",
+    "variable": "--font-noto-sans-lisu",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "lisu"
+    ]
+  }
+}

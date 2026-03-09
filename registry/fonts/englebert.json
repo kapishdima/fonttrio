@@ -1,0 +1,21 @@
+{
+  "name": "englebert",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Englebert",
+  "description": "Englebert — Sans Serif font.",
+  "font": {
+    "family": "Englebert",
+    "provider": "google",
+    "import": "Englebert",
+    "variable": "--font-englebert",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

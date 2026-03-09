@@ -1,0 +1,25 @@
+{
+  "name": "proza-libre",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Proza Libre",
+  "description": "Proza Libre — Sans Serif font.",
+  "font": {
+    "family": "Proza Libre",
+    "provider": "google",
+    "import": "Proza_Libre",
+    "variable": "--font-proza-libre",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-za-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite ZA Guides",
+  "description": "Playwrite ZA Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite ZA Guides",
+    "provider": "google",
+    "import": "Playwrite_ZA_Guides",
+    "variable": "--font-playwrite-za-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

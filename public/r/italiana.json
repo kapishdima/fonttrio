@@ -1,0 +1,20 @@
+{
+  "name": "italiana",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Italiana",
+  "description": "Italiana — Sans Serif font.",
+  "font": {
+    "family": "Italiana",
+    "provider": "google",
+    "import": "Italiana",
+    "variable": "--font-italiana",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

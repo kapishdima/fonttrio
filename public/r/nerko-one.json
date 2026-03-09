@@ -1,0 +1,21 @@
+{
+  "name": "nerko-one",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Nerko One",
+  "description": "Nerko One — Handwriting font.",
+  "font": {
+    "family": "Nerko One",
+    "provider": "google",
+    "import": "Nerko_One",
+    "variable": "--font-nerko-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

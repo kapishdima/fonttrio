@@ -1,0 +1,25 @@
+{
+  "name": "palanquin-dark",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Palanquin Dark",
+  "description": "Palanquin Dark — Sans Serif font.",
+  "font": {
+    "family": "Palanquin Dark",
+    "provider": "google",
+    "import": "Palanquin_Dark",
+    "variable": "--font-palanquin-dark",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

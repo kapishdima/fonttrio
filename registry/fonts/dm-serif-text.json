@@ -1,0 +1,21 @@
+{
+  "name": "dm-serif-text",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "DM Serif Text",
+  "description": "DM Serif Text — Serif font.",
+  "font": {
+    "family": "DM Serif Text",
+    "provider": "google",
+    "import": "DM_Serif_Text",
+    "variable": "--font-dm-serif-text",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

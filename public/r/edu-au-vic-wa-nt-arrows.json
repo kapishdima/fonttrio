@@ -1,0 +1,24 @@
+{
+  "name": "edu-au-vic-wa-nt-arrows",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Edu AU VIC WA NT Arrows",
+  "description": "Edu AU VIC WA NT Arrows — Handwriting font.",
+  "font": {
+    "family": "Edu AU VIC WA NT Arrows",
+    "provider": "google",
+    "import": "Edu_AU_VIC_WA_NT_Arrows",
+    "variable": "--font-edu-au-vic-wa-nt-arrows",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

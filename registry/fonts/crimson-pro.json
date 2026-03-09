@@ -1,0 +1,29 @@
+{
+  "name": "crimson-pro",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Crimson Pro",
+  "description": "Crimson Pro — Serif font.",
+  "font": {
+    "family": "Crimson Pro",
+    "provider": "google",
+    "import": "Crimson_Pro",
+    "variable": "--font-crimson-pro",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

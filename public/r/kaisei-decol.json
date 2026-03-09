@@ -1,0 +1,25 @@
+{
+  "name": "kaisei-decol",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Kaisei Decol",
+  "description": "Kaisei Decol — Serif font.",
+  "font": {
+    "family": "Kaisei Decol",
+    "provider": "google",
+    "import": "Kaisei_Decol",
+    "variable": "--font-kaisei-decol",
+    "weight": [
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "zen-kaku-gothic-antique",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Zen Kaku Gothic Antique",
+  "description": "Zen Kaku Gothic Antique — Sans Serif font.",
+  "font": {
+    "family": "Zen Kaku Gothic Antique",
+    "provider": "google",
+    "import": "Zen_Kaku_Gothic_Antique",
+    "variable": "--font-zen-kaku-gothic-antique",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

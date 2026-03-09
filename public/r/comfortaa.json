@@ -1,0 +1,29 @@
+{
+  "name": "comfortaa",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Comfortaa",
+  "description": "Comfortaa — Display font.",
+  "font": {
+    "family": "Comfortaa",
+    "provider": "google",
+    "import": "Comfortaa",
+    "variable": "--font-comfortaa",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

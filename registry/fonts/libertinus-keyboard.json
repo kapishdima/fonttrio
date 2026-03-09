@@ -1,0 +1,21 @@
+{
+  "name": "libertinus-keyboard",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Libertinus Keyboard",
+  "description": "Libertinus Keyboard — Display font.",
+  "font": {
+    "family": "Libertinus Keyboard",
+    "provider": "google",
+    "import": "Libertinus_Keyboard",
+    "variable": "--font-libertinus-keyboard",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

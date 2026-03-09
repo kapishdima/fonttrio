@@ -1,0 +1,28 @@
+{
+  "name": "fustat",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Fustat",
+  "description": "Fustat — Sans Serif font.",
+  "font": {
+    "family": "Fustat",
+    "provider": "google",
+    "import": "Fustat",
+    "variable": "--font-fustat",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

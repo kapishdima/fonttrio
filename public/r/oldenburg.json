@@ -1,0 +1,21 @@
+{
+  "name": "oldenburg",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Oldenburg",
+  "description": "Oldenburg — Display font.",
+  "font": {
+    "family": "Oldenburg",
+    "provider": "google",
+    "import": "Oldenburg",
+    "variable": "--font-oldenburg",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

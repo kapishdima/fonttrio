@@ -1,0 +1,23 @@
+{
+  "name": "edu-vic-wa-nt-beginner",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Edu VIC WA NT Beginner",
+  "description": "Edu VIC WA NT Beginner — Handwriting font.",
+  "font": {
+    "family": "Edu VIC WA NT Beginner",
+    "provider": "google",
+    "import": "Edu_VIC_WA_NT_Beginner",
+    "variable": "--font-edu-vic-wa-nt-beginner",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

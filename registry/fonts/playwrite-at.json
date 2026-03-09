@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-at",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite AT",
+  "description": "Playwrite AT — Handwriting font.",
+  "font": {
+    "family": "Playwrite AT",
+    "provider": "google",
+    "import": "Playwrite_AT",
+    "variable": "--font-playwrite-at",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

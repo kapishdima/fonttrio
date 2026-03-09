@@ -1,0 +1,23 @@
+{
+  "name": "dotgothic16",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "DotGothic16",
+  "description": "DotGothic16 — Sans Serif font.",
+  "font": {
+    "family": "DotGothic16",
+    "provider": "google",
+    "import": "DotGothic16",
+    "variable": "--font-dotgothic16",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

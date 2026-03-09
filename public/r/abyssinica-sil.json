@@ -1,0 +1,22 @@
+{
+  "name": "abyssinica-sil",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Abyssinica SIL",
+  "description": "Abyssinica SIL — Serif font.",
+  "font": {
+    "family": "Abyssinica SIL",
+    "provider": "google",
+    "import": "Abyssinica_SIL",
+    "variable": "--font-abyssinica-sil",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "ethiopic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

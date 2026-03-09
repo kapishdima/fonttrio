@@ -1,0 +1,25 @@
+{
+  "name": "mirza",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Mirza",
+  "description": "Mirza — Serif font.",
+  "font": {
+    "family": "Mirza",
+    "provider": "google",
+    "import": "Mirza",
+    "variable": "--font-mirza",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

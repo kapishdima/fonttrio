@@ -1,0 +1,21 @@
+{
+  "name": "covered-by-your-grace",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Covered By Your Grace",
+  "description": "Covered By Your Grace — Handwriting font.",
+  "font": {
+    "family": "Covered By Your Grace",
+    "provider": "google",
+    "import": "Covered_By_Your_Grace",
+    "variable": "--font-covered-by-your-grace",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

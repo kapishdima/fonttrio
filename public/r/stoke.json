@@ -1,0 +1,22 @@
+{
+  "name": "stoke",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Stoke",
+  "description": "Stoke — Serif font.",
+  "font": {
+    "family": "Stoke",
+    "provider": "google",
+    "import": "Stoke",
+    "variable": "--font-stoke",
+    "weight": [
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

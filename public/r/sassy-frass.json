@@ -1,0 +1,22 @@
+{
+  "name": "sassy-frass",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Sassy Frass",
+  "description": "Sassy Frass — Handwriting font.",
+  "font": {
+    "family": "Sassy Frass",
+    "provider": "google",
+    "import": "Sassy_Frass",
+    "variable": "--font-sassy-frass",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "clicker-script",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Clicker Script",
+  "description": "Clicker Script — Handwriting font.",
+  "font": {
+    "family": "Clicker Script",
+    "provider": "google",
+    "import": "Clicker_Script",
+    "variable": "--font-clicker-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

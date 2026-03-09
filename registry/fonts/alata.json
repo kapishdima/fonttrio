@@ -1,0 +1,22 @@
+{
+  "name": "alata",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Alata",
+  "description": "Alata — Sans Serif font.",
+  "font": {
+    "family": "Alata",
+    "provider": "google",
+    "import": "Alata",
+    "variable": "--font-alata",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

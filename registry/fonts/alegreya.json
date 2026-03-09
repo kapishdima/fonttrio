@@ -1,0 +1,31 @@
+{
+  "name": "alegreya",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Alegreya",
+  "description": "Alegreya — Serif font.",
+  "font": {
+    "family": "Alegreya",
+    "provider": "google",
+    "import": "Alegreya",
+    "variable": "--font-alegreya",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

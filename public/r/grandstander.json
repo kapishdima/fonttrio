@@ -1,0 +1,30 @@
+{
+  "name": "grandstander",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Grandstander",
+  "description": "Grandstander — Display font.",
+  "font": {
+    "family": "Grandstander",
+    "provider": "google",
+    "import": "Grandstander",
+    "variable": "--font-grandstander",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

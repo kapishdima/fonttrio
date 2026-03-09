@@ -1,0 +1,20 @@
+{
+  "name": "patua-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Patua One",
+  "description": "Patua One — Display font.",
+  "font": {
+    "family": "Patua One",
+    "provider": "google",
+    "import": "Patua_One",
+    "variable": "--font-patua-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

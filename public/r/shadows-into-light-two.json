@@ -1,0 +1,21 @@
+{
+  "name": "shadows-into-light-two",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Shadows Into Light Two",
+  "description": "Shadows Into Light Two — Handwriting font.",
+  "font": {
+    "family": "Shadows Into Light Two",
+    "provider": "google",
+    "import": "Shadows_Into_Light_Two",
+    "variable": "--font-shadows-into-light-two",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

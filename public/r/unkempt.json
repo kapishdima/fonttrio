@@ -1,0 +1,21 @@
+{
+  "name": "unkempt",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Unkempt",
+  "description": "Unkempt — Display font.",
+  "font": {
+    "family": "Unkempt",
+    "provider": "google",
+    "import": "Unkempt",
+    "variable": "--font-unkempt",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

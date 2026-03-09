@@ -1,0 +1,24 @@
+{
+  "name": "rubik-pixels",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Pixels",
+  "description": "Rubik Pixels — Display font.",
+  "font": {
+    "family": "Rubik Pixels",
+    "provider": "google",
+    "import": "Rubik_Pixels",
+    "variable": "--font-rubik-pixels",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

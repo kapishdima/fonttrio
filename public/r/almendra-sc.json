@@ -1,0 +1,20 @@
+{
+  "name": "almendra-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Almendra SC",
+  "description": "Almendra SC — Serif font.",
+  "font": {
+    "family": "Almendra SC",
+    "provider": "google",
+    "import": "Almendra_SC",
+    "variable": "--font-almendra-sc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

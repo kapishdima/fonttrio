@@ -1,0 +1,24 @@
+{
+  "name": "zen-kurenaido",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Zen Kurenaido",
+  "description": "Zen Kurenaido — Sans Serif font.",
+  "font": {
+    "family": "Zen Kurenaido",
+    "provider": "google",
+    "import": "Zen_Kurenaido",
+    "variable": "--font-zen-kurenaido",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "greek",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

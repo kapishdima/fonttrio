@@ -1,0 +1,21 @@
+{
+  "name": "krona-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Krona One",
+  "description": "Krona One — Sans Serif font.",
+  "font": {
+    "family": "Krona One",
+    "provider": "google",
+    "import": "Krona_One",
+    "variable": "--font-krona-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

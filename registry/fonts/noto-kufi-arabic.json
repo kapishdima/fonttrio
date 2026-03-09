@@ -1,0 +1,32 @@
+{
+  "name": "noto-kufi-arabic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Kufi Arabic",
+  "description": "Noto Kufi Arabic — Sans Serif font.",
+  "font": {
+    "family": "Noto Kufi Arabic",
+    "provider": "google",
+    "import": "Noto_Kufi_Arabic",
+    "variable": "--font-noto-kufi-arabic",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

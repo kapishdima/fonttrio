@@ -1,0 +1,24 @@
+{
+  "name": "rubik-spray-paint",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Spray Paint",
+  "description": "Rubik Spray Paint — Display font.",
+  "font": {
+    "family": "Rubik Spray Paint",
+    "provider": "google",
+    "import": "Rubik_Spray_Paint",
+    "variable": "--font-rubik-spray-paint",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

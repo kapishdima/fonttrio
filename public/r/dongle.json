@@ -1,0 +1,25 @@
+{
+  "name": "dongle",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Dongle",
+  "description": "Dongle — Sans Serif font.",
+  "font": {
+    "family": "Dongle",
+    "provider": "google",
+    "import": "Dongle",
+    "variable": "--font-dongle",
+    "weight": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

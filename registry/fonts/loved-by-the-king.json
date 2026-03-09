@@ -1,0 +1,21 @@
+{
+  "name": "loved-by-the-king",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Loved by the King",
+  "description": "Loved by the King — Handwriting font.",
+  "font": {
+    "family": "Loved by the King",
+    "provider": "google",
+    "import": "Loved_by_the_King",
+    "variable": "--font-loved-by-the-king",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

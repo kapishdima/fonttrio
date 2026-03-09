@@ -1,0 +1,30 @@
+{
+  "name": "fraunces",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Fraunces",
+  "description": "Fraunces — Serif font.",
+  "font": {
+    "family": "Fraunces",
+    "provider": "google",
+    "import": "Fraunces",
+    "variable": "--font-fraunces",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

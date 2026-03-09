@@ -1,0 +1,25 @@
+{
+  "name": "miriam-libre",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Miriam Libre",
+  "description": "Miriam Libre — Sans Serif font.",
+  "font": {
+    "family": "Miriam Libre",
+    "provider": "google",
+    "import": "Miriam_Libre",
+    "variable": "--font-miriam-libre",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

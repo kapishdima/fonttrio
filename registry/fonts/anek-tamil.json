@@ -1,0 +1,29 @@
+{
+  "name": "anek-tamil",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anek Tamil",
+  "description": "Anek Tamil — Sans Serif font.",
+  "font": {
+    "family": "Anek Tamil",
+    "provider": "google",
+    "import": "Anek_Tamil",
+    "variable": "--font-anek-tamil",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tamil"
+    ]
+  }
+}

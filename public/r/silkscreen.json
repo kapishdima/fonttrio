@@ -1,0 +1,22 @@
+{
+  "name": "silkscreen",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Silkscreen",
+  "description": "Silkscreen — Display font.",
+  "font": {
+    "family": "Silkscreen",
+    "provider": "google",
+    "import": "Silkscreen",
+    "variable": "--font-silkscreen",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "zcool-qingke-huangyou",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "ZCOOL QingKe HuangYou",
+  "description": "ZCOOL QingKe HuangYou — Sans Serif font.",
+  "font": {
+    "family": "ZCOOL QingKe HuangYou",
+    "provider": "google",
+    "import": "ZCOOL_QingKe_HuangYou",
+    "variable": "--font-zcool-qingke-huangyou",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-simplified",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "sulphur-point",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sulphur Point",
+  "description": "Sulphur Point — Sans Serif font.",
+  "font": {
+    "family": "Sulphur Point",
+    "provider": "google",
+    "import": "Sulphur_Point",
+    "variable": "--font-sulphur-point",
+    "weight": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

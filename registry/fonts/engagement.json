@@ -1,0 +1,21 @@
+{
+  "name": "engagement",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Engagement",
+  "description": "Engagement — Handwriting font.",
+  "font": {
+    "family": "Engagement",
+    "provider": "google",
+    "import": "Engagement",
+    "variable": "--font-engagement",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

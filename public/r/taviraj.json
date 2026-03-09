@@ -1,0 +1,31 @@
+{
+  "name": "taviraj",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Taviraj",
+  "description": "Taviraj — Serif font.",
+  "font": {
+    "family": "Taviraj",
+    "provider": "google",
+    "import": "Taviraj",
+    "variable": "--font-taviraj",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ramaraja",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Ramaraja",
+  "description": "Ramaraja — Serif font.",
+  "font": {
+    "family": "Ramaraja",
+    "provider": "google",
+    "import": "Ramaraja",
+    "variable": "--font-ramaraja",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

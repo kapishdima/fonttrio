@@ -1,0 +1,21 @@
+{
+  "name": "sree-krushnadevaraya",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Sree Krushnadevaraya",
+  "description": "Sree Krushnadevaraya — Serif font.",
+  "font": {
+    "family": "Sree Krushnadevaraya",
+    "provider": "google",
+    "import": "Sree_Krushnadevaraya",
+    "variable": "--font-sree-krushnadevaraya",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

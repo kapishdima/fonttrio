@@ -1,0 +1,21 @@
+{
+  "name": "black-han-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Black Han Sans",
+  "description": "Black Han Sans — Sans Serif font.",
+  "font": {
+    "family": "Black Han Sans",
+    "provider": "google",
+    "import": "Black_Han_Sans",
+    "variable": "--font-black-han-sans",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

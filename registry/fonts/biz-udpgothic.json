@@ -1,0 +1,25 @@
+{
+  "name": "biz-udpgothic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "BIZ UDPGothic",
+  "description": "BIZ UDPGothic — Sans Serif font.",
+  "font": {
+    "family": "BIZ UDPGothic",
+    "provider": "google",
+    "import": "BIZ_UDPGothic",
+    "variable": "--font-biz-udpgothic",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "greek-ext",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

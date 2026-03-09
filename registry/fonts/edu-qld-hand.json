@@ -1,0 +1,25 @@
+{
+  "name": "edu-qld-hand",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Edu QLD Hand",
+  "description": "Edu QLD Hand — Handwriting font.",
+  "font": {
+    "family": "Edu QLD Hand",
+    "provider": "google",
+    "import": "Edu_QLD_Hand",
+    "variable": "--font-edu-qld-hand",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

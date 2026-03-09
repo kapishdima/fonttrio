@@ -1,0 +1,21 @@
+{
+  "name": "zen-loop",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Zen Loop",
+  "description": "Zen Loop — Display font.",
+  "font": {
+    "family": "Zen Loop",
+    "provider": "google",
+    "import": "Zen_Loop",
+    "variable": "--font-zen-loop",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

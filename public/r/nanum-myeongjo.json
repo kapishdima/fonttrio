@@ -1,0 +1,23 @@
+{
+  "name": "nanum-myeongjo",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Nanum Myeongjo",
+  "description": "Nanum Myeongjo — Serif font.",
+  "font": {
+    "family": "Nanum Myeongjo",
+    "provider": "google",
+    "import": "Nanum_Myeongjo",
+    "variable": "--font-nanum-myeongjo",
+    "weight": [
+      "400",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

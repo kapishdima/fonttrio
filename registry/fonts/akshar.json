@@ -1,0 +1,26 @@
+{
+  "name": "akshar",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Akshar",
+  "description": "Akshar — Sans Serif font.",
+  "font": {
+    "family": "Akshar",
+    "provider": "google",
+    "import": "Akshar",
+    "variable": "--font-akshar",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "playpen-sans-deva",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playpen Sans Deva",
+  "description": "Playpen Sans Deva — Handwriting font.",
+  "font": {
+    "family": "Playpen Sans Deva",
+    "provider": "google",
+    "import": "Playpen_Sans_Deva",
+    "variable": "--font-playpen-sans-deva",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "emoji",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

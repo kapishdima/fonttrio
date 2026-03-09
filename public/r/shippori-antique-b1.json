@@ -1,0 +1,22 @@
+{
+  "name": "shippori-antique-b1",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Shippori Antique B1",
+  "description": "Shippori Antique B1 — Sans Serif font.",
+  "font": {
+    "family": "Shippori Antique B1",
+    "provider": "google",
+    "import": "Shippori_Antique_B1",
+    "variable": "--font-shippori-antique-b1",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

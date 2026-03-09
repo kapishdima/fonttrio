@@ -1,0 +1,24 @@
+{
+  "name": "rubik-bubbles",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Bubbles",
+  "description": "Rubik Bubbles — Display font.",
+  "font": {
+    "family": "Rubik Bubbles",
+    "provider": "google",
+    "import": "Rubik_Bubbles",
+    "variable": "--font-rubik-bubbles",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

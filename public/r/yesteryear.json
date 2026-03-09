@@ -1,0 +1,21 @@
+{
+  "name": "yesteryear",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Yesteryear",
+  "description": "Yesteryear — Handwriting font.",
+  "font": {
+    "family": "Yesteryear",
+    "provider": "google",
+    "import": "Yesteryear",
+    "variable": "--font-yesteryear",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

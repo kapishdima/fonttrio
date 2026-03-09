@@ -1,0 +1,30 @@
+{
+  "name": "martian-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Martian Mono",
+  "description": "Martian Mono — Monospace font.",
+  "font": {
+    "family": "Martian Mono",
+    "provider": "google",
+    "import": "Martian_Mono",
+    "variable": "--font-martian-mono",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "cossette-titre",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Cossette Titre",
+  "description": "Cossette Titre — Sans Serif font.",
+  "font": {
+    "family": "Cossette Titre",
+    "provider": "google",
+    "import": "Cossette_Titre",
+    "variable": "--font-cossette-titre",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

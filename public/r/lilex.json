@@ -1,0 +1,32 @@
+{
+  "name": "lilex",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Lilex",
+  "description": "Lilex — Monospace font.",
+  "font": {
+    "family": "Lilex",
+    "provider": "google",
+    "import": "Lilex",
+    "variable": "--font-lilex",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "symbols2",
+      "vietnamese"
+    ]
+  }
+}

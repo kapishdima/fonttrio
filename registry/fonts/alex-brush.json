@@ -1,0 +1,22 @@
+{
+  "name": "alex-brush",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Alex Brush",
+  "description": "Alex Brush — Handwriting font.",
+  "font": {
+    "family": "Alex Brush",
+    "provider": "google",
+    "import": "Alex_Brush",
+    "variable": "--font-alex-brush",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

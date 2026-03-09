@@ -1,0 +1,27 @@
+{
+  "name": "baloo-tammudu-2",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Baloo Tammudu 2",
+  "description": "Baloo Tammudu 2 — Display font.",
+  "font": {
+    "family": "Baloo Tammudu 2",
+    "provider": "google",
+    "import": "Baloo_Tammudu_2",
+    "variable": "--font-baloo-tammudu-2",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "telugu",
+      "vietnamese"
+    ]
+  }
+}

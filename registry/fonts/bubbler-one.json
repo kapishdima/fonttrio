@@ -1,0 +1,21 @@
+{
+  "name": "bubbler-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Bubbler One",
+  "description": "Bubbler One — Sans Serif font.",
+  "font": {
+    "family": "Bubbler One",
+    "provider": "google",
+    "import": "Bubbler_One",
+    "variable": "--font-bubbler-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

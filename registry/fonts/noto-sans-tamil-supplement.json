@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-tamil-supplement",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Tamil Supplement",
+  "description": "Noto Sans Tamil Supplement — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Tamil Supplement",
+    "provider": "google",
+    "import": "Noto_Sans_Tamil_Supplement",
+    "variable": "--font-noto-sans-tamil-supplement",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tamil-supplement"
+    ]
+  }
+}

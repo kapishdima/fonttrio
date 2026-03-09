@@ -1,0 +1,20 @@
+{
+  "name": "noto-sans-lycian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Lycian",
+  "description": "Noto Sans Lycian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Lycian",
+    "provider": "google",
+    "import": "Noto_Sans_Lycian",
+    "variable": "--font-noto-sans-lycian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "lycian"
+    ]
+  }
+}

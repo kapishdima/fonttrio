@@ -1,0 +1,21 @@
+{
+  "name": "do-hyeon",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Do Hyeon",
+  "description": "Do Hyeon — Sans Serif font.",
+  "font": {
+    "family": "Do Hyeon",
+    "provider": "google",
+    "import": "Do_Hyeon",
+    "variable": "--font-do-hyeon",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "cardo",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Cardo",
+  "description": "Cardo — Serif font.",
+  "font": {
+    "family": "Cardo",
+    "provider": "google",
+    "import": "Cardo",
+    "variable": "--font-cardo",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "gothic",
+      "greek",
+      "greek-ext",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "old-italic",
+      "runic"
+    ]
+  }
+}

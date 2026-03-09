@@ -1,0 +1,20 @@
+{
+  "name": "graduate",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Graduate",
+  "description": "Graduate — Serif font.",
+  "font": {
+    "family": "Graduate",
+    "provider": "google",
+    "import": "Graduate",
+    "variable": "--font-graduate",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

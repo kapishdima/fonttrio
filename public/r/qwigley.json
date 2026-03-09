@@ -1,0 +1,22 @@
+{
+  "name": "qwigley",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Qwigley",
+  "description": "Qwigley — Handwriting font.",
+  "font": {
+    "family": "Qwigley",
+    "provider": "google",
+    "import": "Qwigley",
+    "variable": "--font-qwigley",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

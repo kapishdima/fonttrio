@@ -1,0 +1,24 @@
+{
+  "name": "yeseva-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Yeseva One",
+  "description": "Yeseva One — Display font.",
+  "font": {
+    "family": "Yeseva One",
+    "provider": "google",
+    "import": "Yeseva_One",
+    "variable": "--font-yeseva-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

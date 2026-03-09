@@ -1,0 +1,27 @@
+{
+  "name": "zen-kaku-gothic-new",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Zen Kaku Gothic New",
+  "description": "Zen Kaku Gothic New — Sans Serif font.",
+  "font": {
+    "family": "Zen Kaku Gothic New",
+    "provider": "google",
+    "import": "Zen_Kaku_Gothic_New",
+    "variable": "--font-zen-kaku-gothic-new",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

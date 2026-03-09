@@ -1,0 +1,24 @@
+{
+  "name": "kode-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Kode Mono",
+  "description": "Kode Mono — Monospace font.",
+  "font": {
+    "family": "Kode Mono",
+    "provider": "google",
+    "import": "Kode_Mono",
+    "variable": "--font-kode-mono",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

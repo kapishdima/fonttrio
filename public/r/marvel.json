@@ -1,0 +1,21 @@
+{
+  "name": "marvel",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Marvel",
+  "description": "Marvel — Sans Serif font.",
+  "font": {
+    "family": "Marvel",
+    "provider": "google",
+    "import": "Marvel",
+    "variable": "--font-marvel",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

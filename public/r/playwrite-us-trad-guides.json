@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-us-trad-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite US Trad Guides",
+  "description": "Playwrite US Trad Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite US Trad Guides",
+    "provider": "google",
+    "import": "Playwrite_US_Trad_Guides",
+    "variable": "--font-playwrite-us-trad-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

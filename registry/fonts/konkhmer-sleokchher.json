@@ -1,0 +1,22 @@
+{
+  "name": "konkhmer-sleokchher",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Konkhmer Sleokchher",
+  "description": "Konkhmer Sleokchher — Display font.",
+  "font": {
+    "family": "Konkhmer Sleokchher",
+    "provider": "google",
+    "import": "Konkhmer_Sleokchher",
+    "variable": "--font-konkhmer-sleokchher",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

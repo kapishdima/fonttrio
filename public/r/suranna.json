@@ -1,0 +1,21 @@
+{
+  "name": "suranna",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Suranna",
+  "description": "Suranna — Serif font.",
+  "font": {
+    "family": "Suranna",
+    "provider": "google",
+    "import": "Suranna",
+    "variable": "--font-suranna",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "pathway-gothic-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Pathway Gothic One",
+  "description": "Pathway Gothic One — Sans Serif font.",
+  "font": {
+    "family": "Pathway Gothic One",
+    "provider": "google",
+    "import": "Pathway_Gothic_One",
+    "variable": "--font-pathway-gothic-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

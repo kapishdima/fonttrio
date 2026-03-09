@@ -1,0 +1,22 @@
+{
+  "name": "moo-lah-lah",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Moo Lah Lah",
+  "description": "Moo Lah Lah — Display font.",
+  "font": {
+    "family": "Moo Lah Lah",
+    "provider": "google",
+    "import": "Moo_Lah_Lah",
+    "variable": "--font-moo-lah-lah",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

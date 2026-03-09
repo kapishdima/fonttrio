@@ -1,0 +1,21 @@
+{
+  "name": "phetsarath",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Phetsarath",
+  "description": "Phetsarath — Sans Serif font.",
+  "font": {
+    "family": "Phetsarath",
+    "provider": "google",
+    "import": "Phetsarath",
+    "variable": "--font-phetsarath",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "lao"
+    ]
+  }
+}

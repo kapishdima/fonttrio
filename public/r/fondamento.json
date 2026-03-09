@@ -1,0 +1,21 @@
+{
+  "name": "fondamento",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Fondamento",
+  "description": "Fondamento — Handwriting font.",
+  "font": {
+    "family": "Fondamento",
+    "provider": "google",
+    "import": "Fondamento",
+    "variable": "--font-fondamento",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

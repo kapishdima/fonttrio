@@ -1,0 +1,23 @@
+{
+  "name": "alike",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Alike",
+  "description": "Alike — Serif font.",
+  "font": {
+    "family": "Alike",
+    "provider": "google",
+    "import": "Alike",
+    "variable": "--font-alike",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

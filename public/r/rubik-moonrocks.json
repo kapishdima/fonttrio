@@ -1,0 +1,24 @@
+{
+  "name": "rubik-moonrocks",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Moonrocks",
+  "description": "Rubik Moonrocks — Display font.",
+  "font": {
+    "family": "Rubik Moonrocks",
+    "provider": "google",
+    "import": "Rubik_Moonrocks",
+    "variable": "--font-rubik-moonrocks",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

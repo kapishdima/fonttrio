@@ -1,0 +1,20 @@
+{
+  "name": "acme",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Acme",
+  "description": "Acme — Sans Serif font.",
+  "font": {
+    "family": "Acme",
+    "provider": "google",
+    "import": "Acme",
+    "variable": "--font-acme",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

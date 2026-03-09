@@ -1,0 +1,23 @@
+{
+  "name": "rampart-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rampart One",
+  "description": "Rampart One — Display font.",
+  "font": {
+    "family": "Rampart One",
+    "provider": "google",
+    "import": "Rampart_One",
+    "variable": "--font-rampart-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

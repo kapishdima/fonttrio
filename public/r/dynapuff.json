@@ -1,0 +1,25 @@
+{
+  "name": "dynapuff",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "DynaPuff",
+  "description": "DynaPuff — Display font.",
+  "font": {
+    "family": "DynaPuff",
+    "provider": "google",
+    "import": "DynaPuff",
+    "variable": "--font-dynapuff",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

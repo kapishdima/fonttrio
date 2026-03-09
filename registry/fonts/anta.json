@@ -1,0 +1,23 @@
+{
+  "name": "anta",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anta",
+  "description": "Anta — Sans Serif font.",
+  "font": {
+    "family": "Anta",
+    "provider": "google",
+    "import": "Anta",
+    "variable": "--font-anta",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

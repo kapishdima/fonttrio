@@ -1,0 +1,29 @@
+{
+  "name": "bitcount-grid-double-ink",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bitcount Grid Double Ink",
+  "description": "Bitcount Grid Double Ink — Display font.",
+  "font": {
+    "family": "Bitcount Grid Double Ink",
+    "provider": "google",
+    "import": "Bitcount_Grid_Double_Ink",
+    "variable": "--font-bitcount-grid-double-ink",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

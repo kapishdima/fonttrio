@@ -1,0 +1,24 @@
+{
+  "name": "sansita",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Sansita",
+  "description": "Sansita — Sans Serif font.",
+  "font": {
+    "family": "Sansita",
+    "provider": "google",
+    "import": "Sansita",
+    "variable": "--font-sansita",
+    "weight": [
+      "400",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

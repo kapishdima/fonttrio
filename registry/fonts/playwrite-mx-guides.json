@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-mx-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite MX Guides",
+  "description": "Playwrite MX Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite MX Guides",
+    "provider": "google",
+    "import": "Playwrite_MX_Guides",
+    "variable": "--font-playwrite-mx-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

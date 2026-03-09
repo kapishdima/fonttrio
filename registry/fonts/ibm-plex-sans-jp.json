@@ -1,0 +1,29 @@
+{
+  "name": "ibm-plex-sans-jp",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "IBM Plex Sans JP",
+  "description": "IBM Plex Sans JP — Sans Serif font.",
+  "font": {
+    "family": "IBM Plex Sans JP",
+    "provider": "google",
+    "import": "IBM_Plex_Sans_JP",
+    "variable": "--font-ibm-plex-sans-jp",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

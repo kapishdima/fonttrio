@@ -1,0 +1,22 @@
+{
+  "name": "tiro-gurmukhi",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Tiro Gurmukhi",
+  "description": "Tiro Gurmukhi — Serif font.",
+  "font": {
+    "family": "Tiro Gurmukhi",
+    "provider": "google",
+    "import": "Tiro_Gurmukhi",
+    "variable": "--font-tiro-gurmukhi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "gurmukhi",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

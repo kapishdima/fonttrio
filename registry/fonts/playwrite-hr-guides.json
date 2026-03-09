@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-hr-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite HR Guides",
+  "description": "Playwrite HR Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite HR Guides",
+    "provider": "google",
+    "import": "Playwrite_HR_Guides",
+    "variable": "--font-playwrite-hr-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

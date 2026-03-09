@@ -1,0 +1,21 @@
+{
+  "name": "meera-inimai",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Meera Inimai",
+  "description": "Meera Inimai — Sans Serif font.",
+  "font": {
+    "family": "Meera Inimai",
+    "provider": "google",
+    "import": "Meera_Inimai",
+    "variable": "--font-meera-inimai",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "tamil"
+    ]
+  }
+}

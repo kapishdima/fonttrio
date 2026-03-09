@@ -1,0 +1,20 @@
+{
+  "name": "stylish",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Stylish",
+  "description": "Stylish — Sans Serif font.",
+  "font": {
+    "family": "Stylish",
+    "provider": "google",
+    "import": "Stylish",
+    "variable": "--font-stylish",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean"
+    ]
+  }
+}

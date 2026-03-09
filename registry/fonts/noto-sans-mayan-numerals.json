@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-mayan-numerals",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Mayan Numerals",
+  "description": "Noto Sans Mayan Numerals — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Mayan Numerals",
+    "provider": "google",
+    "import": "Noto_Sans_Mayan_Numerals",
+    "variable": "--font-noto-sans-mayan-numerals",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "mayan-numerals"
+    ]
+  }
+}

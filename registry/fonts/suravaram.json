@@ -1,0 +1,21 @@
+{
+  "name": "suravaram",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Suravaram",
+  "description": "Suravaram — Serif font.",
+  "font": {
+    "family": "Suravaram",
+    "provider": "google",
+    "import": "Suravaram",
+    "variable": "--font-suravaram",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

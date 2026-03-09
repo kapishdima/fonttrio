@@ -1,0 +1,22 @@
+{
+  "name": "ballet",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Ballet",
+  "description": "Ballet — Handwriting font.",
+  "font": {
+    "family": "Ballet",
+    "provider": "google",
+    "import": "Ballet",
+    "variable": "--font-ballet",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

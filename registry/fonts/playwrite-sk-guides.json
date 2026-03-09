@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-sk-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite SK Guides",
+  "description": "Playwrite SK Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite SK Guides",
+    "provider": "google",
+    "import": "Playwrite_SK_Guides",
+    "variable": "--font-playwrite-sk-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

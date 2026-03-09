@@ -1,0 +1,29 @@
+{
+  "name": "suse-mono",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "SUSE Mono",
+  "description": "SUSE Mono — Sans Serif font.",
+  "font": {
+    "family": "SUSE Mono",
+    "provider": "google",
+    "import": "SUSE_Mono",
+    "variable": "--font-suse-mono",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "la-belle-aurore",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "La Belle Aurore",
+  "description": "La Belle Aurore — Handwriting font.",
+  "font": {
+    "family": "La Belle Aurore",
+    "provider": "google",
+    "import": "La_Belle_Aurore",
+    "variable": "--font-la-belle-aurore",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

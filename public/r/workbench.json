@@ -1,0 +1,22 @@
+{
+  "name": "workbench",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Workbench",
+  "description": "Workbench — Monospace font.",
+  "font": {
+    "family": "Workbench",
+    "provider": "google",
+    "import": "Workbench",
+    "variable": "--font-workbench",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "math",
+      "symbols"
+    ]
+  }
+}

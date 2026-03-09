@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-buginese",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Buginese",
+  "description": "Noto Sans Buginese — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Buginese",
+    "provider": "google",
+    "import": "Noto_Sans_Buginese",
+    "variable": "--font-noto-sans-buginese",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "buginese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "biz-udpmincho",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "BIZ UDPMincho",
+  "description": "BIZ UDPMincho — Serif font.",
+  "font": {
+    "family": "BIZ UDPMincho",
+    "provider": "google",
+    "import": "BIZ_UDPMincho",
+    "variable": "--font-biz-udpmincho",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "greek-ext",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

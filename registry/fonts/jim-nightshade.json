@@ -1,0 +1,21 @@
+{
+  "name": "jim-nightshade",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Jim Nightshade",
+  "description": "Jim Nightshade — Handwriting font.",
+  "font": {
+    "family": "Jim Nightshade",
+    "provider": "google",
+    "import": "Jim_Nightshade",
+    "variable": "--font-jim-nightshade",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

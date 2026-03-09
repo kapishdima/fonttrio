@@ -1,0 +1,22 @@
+{
+  "name": "bungee-outline",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bungee Outline",
+  "description": "Bungee Outline — Display font.",
+  "font": {
+    "family": "Bungee Outline",
+    "provider": "google",
+    "import": "Bungee_Outline",
+    "variable": "--font-bungee-outline",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

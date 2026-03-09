@@ -1,0 +1,26 @@
+{
+  "name": "tillana",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Tillana",
+  "description": "Tillana — Display font.",
+  "font": {
+    "family": "Tillana",
+    "provider": "google",
+    "import": "Tillana",
+    "variable": "--font-tillana",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

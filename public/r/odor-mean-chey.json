@@ -1,0 +1,21 @@
+{
+  "name": "odor-mean-chey",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Odor Mean Chey",
+  "description": "Odor Mean Chey — Serif font.",
+  "font": {
+    "family": "Odor Mean Chey",
+    "provider": "google",
+    "import": "Odor_Mean_Chey",
+    "variable": "--font-odor-mean-chey",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin"
+    ]
+  }
+}

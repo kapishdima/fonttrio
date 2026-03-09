@@ -1,0 +1,24 @@
+{
+  "name": "shafarik",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Shafarik",
+  "description": "Shafarik — Display font.",
+  "font": {
+    "family": "Shafarik",
+    "provider": "google",
+    "import": "Shafarik",
+    "variable": "--font-shafarik",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "glagolitic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

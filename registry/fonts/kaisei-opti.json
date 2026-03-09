@@ -1,0 +1,25 @@
+{
+  "name": "kaisei-opti",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Kaisei Opti",
+  "description": "Kaisei Opti — Serif font.",
+  "font": {
+    "family": "Kaisei Opti",
+    "provider": "google",
+    "import": "Kaisei_Opti",
+    "variable": "--font-kaisei-opti",
+    "weight": [
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

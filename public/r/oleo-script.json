@@ -1,0 +1,22 @@
+{
+  "name": "oleo-script",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Oleo Script",
+  "description": "Oleo Script — Display font.",
+  "font": {
+    "family": "Oleo Script",
+    "provider": "google",
+    "import": "Oleo_Script",
+    "variable": "--font-oleo-script",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

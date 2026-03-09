@@ -1,0 +1,26 @@
+{
+  "name": "khula",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Khula",
+  "description": "Khula — Sans Serif font.",
+  "font": {
+    "family": "Khula",
+    "provider": "google",
+    "import": "Khula",
+    "variable": "--font-khula",
+    "weight": [
+      "300",
+      "400",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

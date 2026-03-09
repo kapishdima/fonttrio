@@ -1,0 +1,21 @@
+{
+  "name": "caprasimo",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Caprasimo",
+  "description": "Caprasimo — Display font.",
+  "font": {
+    "family": "Caprasimo",
+    "provider": "google",
+    "import": "Caprasimo",
+    "variable": "--font-caprasimo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

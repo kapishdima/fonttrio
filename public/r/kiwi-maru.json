@@ -1,0 +1,25 @@
+{
+  "name": "kiwi-maru",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Kiwi Maru",
+  "description": "Kiwi Maru — Serif font.",
+  "font": {
+    "family": "Kiwi Maru",
+    "provider": "google",
+    "import": "Kiwi_Maru",
+    "variable": "--font-kiwi-maru",
+    "weight": [
+      "300",
+      "400",
+      "500"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

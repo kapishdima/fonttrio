@@ -1,0 +1,22 @@
+{
+  "name": "style-script",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Style Script",
+  "description": "Style Script — Handwriting font.",
+  "font": {
+    "family": "Style Script",
+    "provider": "google",
+    "import": "Style_Script",
+    "variable": "--font-style-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

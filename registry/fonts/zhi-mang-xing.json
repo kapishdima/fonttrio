@@ -1,0 +1,21 @@
+{
+  "name": "zhi-mang-xing",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Zhi Mang Xing",
+  "description": "Zhi Mang Xing — Handwriting font.",
+  "font": {
+    "family": "Zhi Mang Xing",
+    "provider": "google",
+    "import": "Zhi_Mang_Xing",
+    "variable": "--font-zhi-mang-xing",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-simplified",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "jacques-francois",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Jacques Francois",
+  "description": "Jacques Francois — Serif font.",
+  "font": {
+    "family": "Jacques Francois",
+    "provider": "google",
+    "import": "Jacques_Francois",
+    "variable": "--font-jacques-francois",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

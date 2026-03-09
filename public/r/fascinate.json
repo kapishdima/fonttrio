@@ -1,0 +1,21 @@
+{
+  "name": "fascinate",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Fascinate",
+  "description": "Fascinate — Display font.",
+  "font": {
+    "family": "Fascinate",
+    "provider": "google",
+    "import": "Fascinate",
+    "variable": "--font-fascinate",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

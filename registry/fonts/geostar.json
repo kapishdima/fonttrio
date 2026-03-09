@@ -1,0 +1,20 @@
+{
+  "name": "geostar",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Geostar",
+  "description": "Geostar — Display font.",
+  "font": {
+    "family": "Geostar",
+    "provider": "google",
+    "import": "Geostar",
+    "variable": "--font-geostar",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

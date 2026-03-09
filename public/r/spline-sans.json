@@ -1,0 +1,25 @@
+{
+  "name": "spline-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Spline Sans",
+  "description": "Spline Sans — Sans Serif font.",
+  "font": {
+    "family": "Spline Sans",
+    "provider": "google",
+    "import": "Spline_Sans",
+    "variable": "--font-spline-sans",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

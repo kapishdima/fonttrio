@@ -1,0 +1,24 @@
+{
+  "name": "farro",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Farro",
+  "description": "Farro — Sans Serif font.",
+  "font": {
+    "family": "Farro",
+    "provider": "google",
+    "import": "Farro",
+    "variable": "--font-farro",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

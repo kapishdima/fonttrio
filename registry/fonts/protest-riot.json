@@ -1,0 +1,24 @@
+{
+  "name": "protest-riot",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Protest Riot",
+  "description": "Protest Riot — Display font.",
+  "font": {
+    "family": "Protest Riot",
+    "provider": "google",
+    "import": "Protest_Riot",
+    "variable": "--font-protest-riot",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ]
+  }
+}

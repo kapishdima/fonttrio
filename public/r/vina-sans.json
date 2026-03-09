@@ -1,0 +1,22 @@
+{
+  "name": "vina-sans",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Vina Sans",
+  "description": "Vina Sans — Display font.",
+  "font": {
+    "family": "Vina Sans",
+    "provider": "google",
+    "import": "Vina_Sans",
+    "variable": "--font-vina-sans",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

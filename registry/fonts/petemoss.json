@@ -1,0 +1,22 @@
+{
+  "name": "petemoss",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Petemoss",
+  "description": "Petemoss — Handwriting font.",
+  "font": {
+    "family": "Petemoss",
+    "provider": "google",
+    "import": "Petemoss",
+    "variable": "--font-petemoss",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

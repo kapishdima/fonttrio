@@ -1,0 +1,22 @@
+{
+  "name": "ledger",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Ledger",
+  "description": "Ledger — Serif font.",
+  "font": {
+    "family": "Ledger",
+    "provider": "google",
+    "import": "Ledger",
+    "variable": "--font-ledger",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "baskervville-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Baskervville SC",
+  "description": "Baskervville SC — Serif font.",
+  "font": {
+    "family": "Baskervville SC",
+    "provider": "google",
+    "import": "Baskervville_SC",
+    "variable": "--font-baskervville-sc",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

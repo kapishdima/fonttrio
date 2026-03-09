@@ -1,0 +1,22 @@
+{
+  "name": "fleur-de-leah",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Fleur De Leah",
+  "description": "Fleur De Leah — Handwriting font.",
+  "font": {
+    "family": "Fleur De Leah",
+    "provider": "google",
+    "import": "Fleur_De_Leah",
+    "variable": "--font-fleur-de-leah",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

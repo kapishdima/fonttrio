@@ -1,0 +1,22 @@
+{
+  "name": "triodion",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Triodion",
+  "description": "Triodion — Display font.",
+  "font": {
+    "family": "Triodion",
+    "provider": "google",
+    "import": "Triodion",
+    "variable": "--font-triodion",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin"
+    ]
+  }
+}

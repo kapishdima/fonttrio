@@ -1,0 +1,21 @@
+{
+  "name": "aclonica",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Aclonica",
+  "description": "Aclonica — Sans Serif font.",
+  "font": {
+    "family": "Aclonica",
+    "provider": "google",
+    "import": "Aclonica",
+    "variable": "--font-aclonica",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

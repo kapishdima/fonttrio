@@ -1,0 +1,23 @@
+{
+  "name": "aref-ruqaa",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Aref Ruqaa",
+  "description": "Aref Ruqaa — Serif font.",
+  "font": {
+    "family": "Aref Ruqaa",
+    "provider": "google",
+    "import": "Aref_Ruqaa",
+    "variable": "--font-aref-ruqaa",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "noticia-text",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noticia Text",
+  "description": "Noticia Text — Serif font.",
+  "font": {
+    "family": "Noticia Text",
+    "provider": "google",
+    "import": "Noticia_Text",
+    "variable": "--font-noticia-text",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

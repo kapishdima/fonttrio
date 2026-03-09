@@ -1,0 +1,29 @@
+{
+  "name": "bitcount-prop-single-ink",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bitcount Prop Single Ink",
+  "description": "Bitcount Prop Single Ink — Display font.",
+  "font": {
+    "family": "Bitcount Prop Single Ink",
+    "provider": "google",
+    "import": "Bitcount_Prop_Single_Ink",
+    "variable": "--font-bitcount-prop-single-ink",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

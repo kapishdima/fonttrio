@@ -1,0 +1,26 @@
+{
+  "name": "finlandica",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Finlandica",
+  "description": "Finlandica — Sans Serif font.",
+  "font": {
+    "family": "Finlandica",
+    "provider": "google",
+    "import": "Finlandica",
+    "variable": "--font-finlandica",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

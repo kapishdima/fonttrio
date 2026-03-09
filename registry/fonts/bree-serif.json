@@ -1,0 +1,21 @@
+{
+  "name": "bree-serif",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Bree Serif",
+  "description": "Bree Serif — Serif font.",
+  "font": {
+    "family": "Bree Serif",
+    "provider": "google",
+    "import": "Bree_Serif",
+    "variable": "--font-bree-serif",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

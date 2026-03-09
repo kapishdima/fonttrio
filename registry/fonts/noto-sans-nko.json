@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-nko",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans NKo",
+  "description": "Noto Sans NKo — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans NKo",
+    "provider": "google",
+    "import": "Noto_Sans_NKo",
+    "variable": "--font-noto-sans-nko",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "nko"
+    ]
+  }
+}

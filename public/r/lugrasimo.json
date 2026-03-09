@@ -1,0 +1,21 @@
+{
+  "name": "lugrasimo",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Lugrasimo",
+  "description": "Lugrasimo — Handwriting font.",
+  "font": {
+    "family": "Lugrasimo",
+    "provider": "google",
+    "import": "Lugrasimo",
+    "variable": "--font-lugrasimo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

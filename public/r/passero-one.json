@@ -1,0 +1,21 @@
+{
+  "name": "passero-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Passero One",
+  "description": "Passero One — Display font.",
+  "font": {
+    "family": "Passero One",
+    "provider": "google",
+    "import": "Passero_One",
+    "variable": "--font-passero-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

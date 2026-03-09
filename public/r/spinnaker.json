@@ -1,0 +1,21 @@
+{
+  "name": "spinnaker",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Spinnaker",
+  "description": "Spinnaker — Sans Serif font.",
+  "font": {
+    "family": "Spinnaker",
+    "provider": "google",
+    "import": "Spinnaker",
+    "variable": "--font-spinnaker",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

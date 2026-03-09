@@ -1,0 +1,21 @@
+{
+  "name": "plaster",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Plaster",
+  "description": "Plaster — Display font.",
+  "font": {
+    "family": "Plaster",
+    "provider": "google",
+    "import": "Plaster",
+    "variable": "--font-plaster",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

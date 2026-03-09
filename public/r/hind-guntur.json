@@ -1,0 +1,26 @@
+{
+  "name": "hind-guntur",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Hind Guntur",
+  "description": "Hind Guntur — Sans Serif font.",
+  "font": {
+    "family": "Hind Guntur",
+    "provider": "google",
+    "import": "Hind_Guntur",
+    "variable": "--font-hind-guntur",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "telugu"
+    ]
+  }
+}

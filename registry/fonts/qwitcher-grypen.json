@@ -1,0 +1,23 @@
+{
+  "name": "qwitcher-grypen",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Qwitcher Grypen",
+  "description": "Qwitcher Grypen — Handwriting font.",
+  "font": {
+    "family": "Qwitcher Grypen",
+    "provider": "google",
+    "import": "Qwitcher_Grypen",
+    "variable": "--font-qwitcher-grypen",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

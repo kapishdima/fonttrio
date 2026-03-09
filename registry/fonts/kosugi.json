@@ -1,0 +1,23 @@
+{
+  "name": "kosugi",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Kosugi",
+  "description": "Kosugi — Sans Serif font.",
+  "font": {
+    "family": "Kosugi",
+    "provider": "google",
+    "import": "Kosugi",
+    "variable": "--font-kosugi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

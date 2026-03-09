@@ -1,0 +1,33 @@
+{
+  "name": "murecho",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Murecho",
+  "description": "Murecho — Sans Serif font.",
+  "font": {
+    "family": "Murecho",
+    "provider": "google",
+    "import": "Murecho",
+    "variable": "--font-murecho",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

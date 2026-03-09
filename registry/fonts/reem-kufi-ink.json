@@ -1,0 +1,23 @@
+{
+  "name": "reem-kufi-ink",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Reem Kufi Ink",
+  "description": "Reem Kufi Ink — Sans Serif font.",
+  "font": {
+    "family": "Reem Kufi Ink",
+    "provider": "google",
+    "import": "Reem_Kufi_Ink",
+    "variable": "--font-reem-kufi-ink",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

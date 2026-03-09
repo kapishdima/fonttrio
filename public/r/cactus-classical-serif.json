@@ -1,0 +1,24 @@
+{
+  "name": "cactus-classical-serif",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Cactus Classical Serif",
+  "description": "Cactus Classical Serif — Serif font.",
+  "font": {
+    "family": "Cactus Classical Serif",
+    "provider": "google",
+    "import": "Cactus_Classical_Serif",
+    "variable": "--font-cactus-classical-serif",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-traditional",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

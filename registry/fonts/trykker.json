@@ -1,0 +1,21 @@
+{
+  "name": "trykker",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Trykker",
+  "description": "Trykker — Serif font.",
+  "font": {
+    "family": "Trykker",
+    "provider": "google",
+    "import": "Trykker",
+    "variable": "--font-trykker",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

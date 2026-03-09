@@ -1,0 +1,21 @@
+{
+  "name": "redressed",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Redressed",
+  "description": "Redressed — Handwriting font.",
+  "font": {
+    "family": "Redressed",
+    "provider": "google",
+    "import": "Redressed",
+    "variable": "--font-redressed",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

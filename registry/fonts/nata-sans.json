@@ -1,0 +1,32 @@
+{
+  "name": "nata-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Nata Sans",
+  "description": "Nata Sans — Sans Serif font.",
+  "font": {
+    "family": "Nata Sans",
+    "provider": "google",
+    "import": "Nata_Sans",
+    "variable": "--font-nata-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

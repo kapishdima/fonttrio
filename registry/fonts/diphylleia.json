@@ -1,0 +1,22 @@
+{
+  "name": "diphylleia",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Diphylleia",
+  "description": "Diphylleia — Serif font.",
+  "font": {
+    "family": "Diphylleia",
+    "provider": "google",
+    "import": "Diphylleia",
+    "variable": "--font-diphylleia",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

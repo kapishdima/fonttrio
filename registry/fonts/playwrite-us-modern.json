@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-us-modern",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite US Modern",
+  "description": "Playwrite US Modern — Handwriting font.",
+  "font": {
+    "family": "Playwrite US Modern",
+    "provider": "google",
+    "import": "Playwrite_US_Modern",
+    "variable": "--font-playwrite-us-modern",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

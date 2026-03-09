@@ -1,0 +1,23 @@
+{
+  "name": "fuzzy-bubbles",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Fuzzy Bubbles",
+  "description": "Fuzzy Bubbles — Handwriting font.",
+  "font": {
+    "family": "Fuzzy Bubbles",
+    "provider": "google",
+    "import": "Fuzzy_Bubbles",
+    "variable": "--font-fuzzy-bubbles",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "quattrocento",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Quattrocento",
+  "description": "Quattrocento — Serif font.",
+  "font": {
+    "family": "Quattrocento",
+    "provider": "google",
+    "import": "Quattrocento",
+    "variable": "--font-quattrocento",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

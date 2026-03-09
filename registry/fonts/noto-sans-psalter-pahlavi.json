@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-psalter-pahlavi",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Psalter Pahlavi",
+  "description": "Noto Sans Psalter Pahlavi — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Psalter Pahlavi",
+    "provider": "google",
+    "import": "Noto_Sans_Psalter_Pahlavi",
+    "variable": "--font-noto-sans-psalter-pahlavi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "psalter-pahlavi"
+    ]
+  }
+}

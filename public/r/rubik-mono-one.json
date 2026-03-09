@@ -1,0 +1,22 @@
+{
+  "name": "rubik-mono-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Rubik Mono One",
+  "description": "Rubik Mono One — Sans Serif font.",
+  "font": {
+    "family": "Rubik Mono One",
+    "provider": "google",
+    "import": "Rubik_Mono_One",
+    "variable": "--font-rubik-mono-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "mallanna",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mallanna",
+  "description": "Mallanna — Sans Serif font.",
+  "font": {
+    "family": "Mallanna",
+    "provider": "google",
+    "import": "Mallanna",
+    "variable": "--font-mallanna",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

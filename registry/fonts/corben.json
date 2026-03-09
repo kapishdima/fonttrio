@@ -1,0 +1,22 @@
+{
+  "name": "corben",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Corben",
+  "description": "Corben — Display font.",
+  "font": {
+    "family": "Corben",
+    "provider": "google",
+    "import": "Corben",
+    "variable": "--font-corben",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

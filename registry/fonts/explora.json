@@ -1,0 +1,23 @@
+{
+  "name": "explora",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Explora",
+  "description": "Explora — Handwriting font.",
+  "font": {
+    "family": "Explora",
+    "provider": "google",
+    "import": "Explora",
+    "variable": "--font-explora",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cherokee",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

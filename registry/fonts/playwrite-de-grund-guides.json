@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-de-grund-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite DE Grund Guides",
+  "description": "Playwrite DE Grund Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite DE Grund Guides",
+    "provider": "google",
+    "import": "Playwrite_DE_Grund_Guides",
+    "variable": "--font-playwrite-de-grund-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

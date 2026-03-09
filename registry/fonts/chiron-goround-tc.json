@@ -1,0 +1,32 @@
+{
+  "name": "chiron-goround-tc",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Chiron GoRound TC",
+  "description": "Chiron GoRound TC — Sans Serif font.",
+  "font": {
+    "family": "Chiron GoRound TC",
+    "provider": "google",
+    "import": "Chiron_GoRound_TC",
+    "variable": "--font-chiron-goround-tc",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-traditional",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

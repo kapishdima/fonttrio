@@ -1,0 +1,30 @@
+{
+  "name": "anybody",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Anybody",
+  "description": "Anybody — Display font.",
+  "font": {
+    "family": "Anybody",
+    "provider": "google",
+    "import": "Anybody",
+    "variable": "--font-anybody",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

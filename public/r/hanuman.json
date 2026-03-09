@@ -1,0 +1,29 @@
+{
+  "name": "hanuman",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Hanuman",
+  "description": "Hanuman — Serif font.",
+  "font": {
+    "family": "Hanuman",
+    "provider": "google",
+    "import": "Hanuman",
+    "variable": "--font-hanuman",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin"
+    ]
+  }
+}

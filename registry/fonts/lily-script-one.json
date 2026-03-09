@@ -1,0 +1,21 @@
+{
+  "name": "lily-script-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Lily Script One",
+  "description": "Lily Script One — Display font.",
+  "font": {
+    "family": "Lily Script One",
+    "provider": "google",
+    "import": "Lily_Script_One",
+    "variable": "--font-lily-script-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

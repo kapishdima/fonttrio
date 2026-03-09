@@ -1,0 +1,20 @@
+{
+  "name": "sue-ellen-francisco",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Sue Ellen Francisco",
+  "description": "Sue Ellen Francisco — Handwriting font.",
+  "font": {
+    "family": "Sue Ellen Francisco",
+    "provider": "google",
+    "import": "Sue_Ellen_Francisco",
+    "variable": "--font-sue-ellen-francisco",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

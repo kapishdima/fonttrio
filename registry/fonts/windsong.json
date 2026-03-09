@@ -1,0 +1,23 @@
+{
+  "name": "windsong",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "WindSong",
+  "description": "WindSong — Handwriting font.",
+  "font": {
+    "family": "WindSong",
+    "provider": "google",
+    "import": "WindSong",
+    "variable": "--font-windsong",
+    "weight": [
+      "400",
+      "500"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "vesper-libre",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Vesper Libre",
+  "description": "Vesper Libre — Serif font.",
+  "font": {
+    "family": "Vesper Libre",
+    "provider": "google",
+    "import": "Vesper_Libre",
+    "variable": "--font-vesper-libre",
+    "weight": [
+      "400",
+      "500",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

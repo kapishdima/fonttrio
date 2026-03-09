@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-cz",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite CZ",
+  "description": "Playwrite CZ — Handwriting font.",
+  "font": {
+    "family": "Playwrite CZ",
+    "provider": "google",
+    "import": "Playwrite_CZ",
+    "variable": "--font-playwrite-cz",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

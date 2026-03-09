@@ -1,0 +1,24 @@
+{
+  "name": "instrument-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Instrument Sans",
+  "description": "Instrument Sans — Sans Serif font.",
+  "font": {
+    "family": "Instrument Sans",
+    "provider": "google",
+    "import": "Instrument_Sans",
+    "variable": "--font-instrument-sans",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

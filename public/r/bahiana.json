@@ -1,0 +1,21 @@
+{
+  "name": "bahiana",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bahiana",
+  "description": "Bahiana — Display font.",
+  "font": {
+    "family": "Bahiana",
+    "provider": "google",
+    "import": "Bahiana",
+    "variable": "--font-bahiana",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

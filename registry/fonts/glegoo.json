@@ -1,0 +1,23 @@
+{
+  "name": "glegoo",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Glegoo",
+  "description": "Glegoo — Serif font.",
+  "font": {
+    "family": "Glegoo",
+    "provider": "google",
+    "import": "Glegoo",
+    "variable": "--font-glegoo",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

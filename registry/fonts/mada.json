@@ -1,0 +1,29 @@
+{
+  "name": "mada",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mada",
+  "description": "Mada — Sans Serif font.",
+  "font": {
+    "family": "Mada",
+    "provider": "google",
+    "import": "Mada",
+    "variable": "--font-mada",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

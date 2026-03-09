@@ -1,0 +1,24 @@
+{
+  "name": "flow-circular",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Flow Circular",
+  "description": "Flow Circular — Display font.",
+  "font": {
+    "family": "Flow Circular",
+    "provider": "google",
+    "import": "Flow_Circular",
+    "variable": "--font-flow-circular",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

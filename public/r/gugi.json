@@ -1,0 +1,21 @@
+{
+  "name": "gugi",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Gugi",
+  "description": "Gugi — Display font.",
+  "font": {
+    "family": "Gugi",
+    "provider": "google",
+    "import": "Gugi",
+    "variable": "--font-gugi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "arsenal",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Arsenal",
+  "description": "Arsenal — Sans Serif font.",
+  "font": {
+    "family": "Arsenal",
+    "provider": "google",
+    "import": "Arsenal",
+    "variable": "--font-arsenal",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "uncial-antiqua",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Uncial Antiqua",
+  "description": "Uncial Antiqua — Display font.",
+  "font": {
+    "family": "Uncial Antiqua",
+    "provider": "google",
+    "import": "Uncial_Antiqua",
+    "variable": "--font-uncial-antiqua",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

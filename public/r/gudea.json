@@ -1,0 +1,22 @@
+{
+  "name": "gudea",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Gudea",
+  "description": "Gudea — Sans Serif font.",
+  "font": {
+    "family": "Gudea",
+    "provider": "google",
+    "import": "Gudea",
+    "variable": "--font-gudea",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

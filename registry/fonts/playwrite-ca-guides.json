@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-ca-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite CA Guides",
+  "description": "Playwrite CA Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite CA Guides",
+    "provider": "google",
+    "import": "Playwrite_CA_Guides",
+    "variable": "--font-playwrite-ca-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

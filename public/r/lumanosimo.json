@@ -1,0 +1,21 @@
+{
+  "name": "lumanosimo",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Lumanosimo",
+  "description": "Lumanosimo — Handwriting font.",
+  "font": {
+    "family": "Lumanosimo",
+    "provider": "google",
+    "import": "Lumanosimo",
+    "variable": "--font-lumanosimo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

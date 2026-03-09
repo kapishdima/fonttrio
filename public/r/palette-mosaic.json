@@ -1,0 +1,21 @@
+{
+  "name": "palette-mosaic",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Palette Mosaic",
+  "description": "Palette Mosaic — Display font.",
+  "font": {
+    "family": "Palette Mosaic",
+    "provider": "google",
+    "import": "Palette_Mosaic",
+    "variable": "--font-palette-mosaic",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin"
+    ]
+  }
+}

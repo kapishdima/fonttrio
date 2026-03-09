@@ -1,0 +1,21 @@
+{
+  "name": "berkshire-swash",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Berkshire Swash",
+  "description": "Berkshire Swash — Handwriting font.",
+  "font": {
+    "family": "Berkshire Swash",
+    "provider": "google",
+    "import": "Berkshire_Swash",
+    "variable": "--font-berkshire-swash",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "lexend-tera",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Lexend Tera",
+  "description": "Lexend Tera — Sans Serif font.",
+  "font": {
+    "family": "Lexend Tera",
+    "provider": "google",
+    "import": "Lexend_Tera",
+    "variable": "--font-lexend-tera",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

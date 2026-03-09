@@ -1,0 +1,21 @@
+{
+  "name": "metal-mania",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Metal Mania",
+  "description": "Metal Mania — Display font.",
+  "font": {
+    "family": "Metal Mania",
+    "provider": "google",
+    "import": "Metal_Mania",
+    "variable": "--font-metal-mania",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

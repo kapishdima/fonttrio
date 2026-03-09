@@ -1,0 +1,24 @@
+{
+  "name": "manjari",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Manjari",
+  "description": "Manjari — Sans Serif font.",
+  "font": {
+    "family": "Manjari",
+    "provider": "google",
+    "import": "Manjari",
+    "variable": "--font-manjari",
+    "weight": [
+      "100",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "malayalam"
+    ]
+  }
+}

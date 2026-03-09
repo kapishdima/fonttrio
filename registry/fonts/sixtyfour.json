@@ -1,0 +1,23 @@
+{
+  "name": "sixtyfour",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Sixtyfour",
+  "description": "Sixtyfour — Monospace font.",
+  "font": {
+    "family": "Sixtyfour",
+    "provider": "google",
+    "import": "Sixtyfour",
+    "variable": "--font-sixtyfour",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

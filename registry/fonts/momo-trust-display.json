@@ -1,0 +1,22 @@
+{
+  "name": "momo-trust-display",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Momo Trust Display",
+  "description": "Momo Trust Display — Sans Serif font.",
+  "font": {
+    "family": "Momo Trust Display",
+    "provider": "google",
+    "import": "Momo_Trust_Display",
+    "variable": "--font-momo-trust-display",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ephesis",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Ephesis",
+  "description": "Ephesis — Handwriting font.",
+  "font": {
+    "family": "Ephesis",
+    "provider": "google",
+    "import": "Ephesis",
+    "variable": "--font-ephesis",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

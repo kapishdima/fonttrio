@@ -1,0 +1,21 @@
+{
+  "name": "bruno-ace",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bruno Ace",
+  "description": "Bruno Ace — Display font.",
+  "font": {
+    "family": "Bruno Ace",
+    "provider": "google",
+    "import": "Bruno_Ace",
+    "variable": "--font-bruno-ace",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

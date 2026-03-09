@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-dk-uloopet-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite DK Uloopet Guides",
+  "description": "Playwrite DK Uloopet Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite DK Uloopet Guides",
+    "provider": "google",
+    "import": "Playwrite_DK_Uloopet_Guides",
+    "variable": "--font-playwrite-dk-uloopet-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "seaweed-script",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Seaweed Script",
+  "description": "Seaweed Script — Display font.",
+  "font": {
+    "family": "Seaweed Script",
+    "provider": "google",
+    "import": "Seaweed_Script",
+    "variable": "--font-seaweed-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

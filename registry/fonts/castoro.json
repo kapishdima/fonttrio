@@ -1,0 +1,21 @@
+{
+  "name": "castoro",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Castoro",
+  "description": "Castoro — Serif font.",
+  "font": {
+    "family": "Castoro",
+    "provider": "google",
+    "import": "Castoro",
+    "variable": "--font-castoro",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

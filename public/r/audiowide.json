@@ -1,0 +1,21 @@
+{
+  "name": "audiowide",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Audiowide",
+  "description": "Audiowide — Display font.",
+  "font": {
+    "family": "Audiowide",
+    "provider": "google",
+    "import": "Audiowide",
+    "variable": "--font-audiowide",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

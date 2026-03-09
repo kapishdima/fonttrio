@@ -1,0 +1,21 @@
+{
+  "name": "titan-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Titan One",
+  "description": "Titan One — Display font.",
+  "font": {
+    "family": "Titan One",
+    "provider": "google",
+    "import": "Titan_One",
+    "variable": "--font-titan-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

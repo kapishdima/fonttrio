@@ -1,0 +1,25 @@
+{
+  "name": "red-hat-text",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Red Hat Text",
+  "description": "Red Hat Text — Sans Serif font.",
+  "font": {
+    "family": "Red Hat Text",
+    "provider": "google",
+    "import": "Red_Hat_Text",
+    "variable": "--font-red-hat-text",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

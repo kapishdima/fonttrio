@@ -1,0 +1,32 @@
+{
+  "name": "alegreya-sans-sc",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Alegreya Sans SC",
+  "description": "Alegreya Sans SC — Sans Serif font.",
+  "font": {
+    "family": "Alegreya Sans SC",
+    "provider": "google",
+    "import": "Alegreya_Sans_SC",
+    "variable": "--font-alegreya-sans-sc",
+    "weight": [
+      "100",
+      "300",
+      "400",
+      "500",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

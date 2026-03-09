@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-medefaidrin",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Medefaidrin",
+  "description": "Noto Sans Medefaidrin — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Medefaidrin",
+    "provider": "google",
+    "import": "Noto_Sans_Medefaidrin",
+    "variable": "--font-noto-sans-medefaidrin",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "medefaidrin"
+    ]
+  }
+}

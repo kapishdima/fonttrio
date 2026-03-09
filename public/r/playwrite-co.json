@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-co",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite CO",
+  "description": "Playwrite CO — Handwriting font.",
+  "font": {
+    "family": "Playwrite CO",
+    "provider": "google",
+    "import": "Playwrite_CO",
+    "variable": "--font-playwrite-co",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

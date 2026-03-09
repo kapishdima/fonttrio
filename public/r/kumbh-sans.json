@@ -1,0 +1,31 @@
+{
+  "name": "kumbh-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Kumbh Sans",
+  "description": "Kumbh Sans — Sans Serif font.",
+  "font": {
+    "family": "Kumbh Sans",
+    "provider": "google",
+    "import": "Kumbh_Sans",
+    "variable": "--font-kumbh-sans",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

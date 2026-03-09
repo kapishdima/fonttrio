@@ -1,0 +1,23 @@
+{
+  "name": "passion-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Passion One",
+  "description": "Passion One — Display font.",
+  "font": {
+    "family": "Passion One",
+    "provider": "google",
+    "import": "Passion_One",
+    "variable": "--font-passion-one",
+    "weight": [
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

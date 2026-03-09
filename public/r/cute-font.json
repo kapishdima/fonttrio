@@ -1,0 +1,21 @@
+{
+  "name": "cute-font",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Cute Font",
+  "description": "Cute Font — Display font.",
+  "font": {
+    "family": "Cute Font",
+    "provider": "google",
+    "import": "Cute_Font",
+    "variable": "--font-cute-font",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

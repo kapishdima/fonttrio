@@ -1,0 +1,29 @@
+{
+  "name": "livvic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Livvic",
+  "description": "Livvic — Sans Serif font.",
+  "font": {
+    "family": "Livvic",
+    "provider": "google",
+    "import": "Livvic",
+    "variable": "--font-livvic",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

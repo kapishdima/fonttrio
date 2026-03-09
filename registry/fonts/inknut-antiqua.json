@@ -1,0 +1,28 @@
+{
+  "name": "inknut-antiqua",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Inknut Antiqua",
+  "description": "Inknut Antiqua — Serif font.",
+  "font": {
+    "family": "Inknut Antiqua",
+    "provider": "google",
+    "import": "Inknut_Antiqua",
+    "variable": "--font-inknut-antiqua",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-tz-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite TZ Guides",
+  "description": "Playwrite TZ Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite TZ Guides",
+    "provider": "google",
+    "import": "Playwrite_TZ_Guides",
+    "variable": "--font-playwrite-tz-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

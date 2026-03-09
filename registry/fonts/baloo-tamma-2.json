@@ -1,0 +1,27 @@
+{
+  "name": "baloo-tamma-2",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Baloo Tamma 2",
+  "description": "Baloo Tamma 2 — Display font.",
+  "font": {
+    "family": "Baloo Tamma 2",
+    "provider": "google",
+    "import": "Baloo_Tamma_2",
+    "variable": "--font-baloo-tamma-2",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "kannada",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

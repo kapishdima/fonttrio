@@ -1,0 +1,21 @@
+{
+  "name": "marcellus-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Marcellus SC",
+  "description": "Marcellus SC — Serif font.",
+  "font": {
+    "family": "Marcellus SC",
+    "provider": "google",
+    "import": "Marcellus_SC",
+    "variable": "--font-marcellus-sc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-cu",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite CU",
+  "description": "Playwrite CU — Handwriting font.",
+  "font": {
+    "family": "Playwrite CU",
+    "provider": "google",
+    "import": "Playwrite_CU",
+    "variable": "--font-playwrite-cu",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

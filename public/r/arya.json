@@ -1,0 +1,23 @@
+{
+  "name": "arya",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Arya",
+  "description": "Arya — Sans Serif font.",
+  "font": {
+    "family": "Arya",
+    "provider": "google",
+    "import": "Arya",
+    "variable": "--font-arya",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

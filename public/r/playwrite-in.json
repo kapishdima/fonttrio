@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-in",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite IN",
+  "description": "Playwrite IN — Handwriting font.",
+  "font": {
+    "family": "Playwrite IN",
+    "provider": "google",
+    "import": "Playwrite_IN",
+    "variable": "--font-playwrite-in",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "chiron-hei-hk",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Chiron Hei HK",
+  "description": "Chiron Hei HK — Sans Serif font.",
+  "font": {
+    "family": "Chiron Hei HK",
+    "provider": "google",
+    "import": "Chiron_Hei_HK",
+    "variable": "--font-chiron-hei-hk",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-traditional",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "symbols2",
+      "vietnamese"
+    ]
+  }
+}

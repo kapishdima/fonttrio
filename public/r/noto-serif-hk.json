@@ -1,0 +1,31 @@
+{
+  "name": "noto-serif-hk",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif HK",
+  "description": "Noto Serif HK — Serif font.",
+  "font": {
+    "family": "Noto Serif HK",
+    "provider": "google",
+    "import": "Noto_Serif_HK",
+    "variable": "--font-noto-serif-hk",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-hongkong",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

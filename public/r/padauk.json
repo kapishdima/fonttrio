@@ -1,0 +1,23 @@
+{
+  "name": "padauk",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Padauk",
+  "description": "Padauk — Sans Serif font.",
+  "font": {
+    "family": "Padauk",
+    "provider": "google",
+    "import": "Padauk",
+    "variable": "--font-padauk",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "myanmar"
+    ]
+  }
+}

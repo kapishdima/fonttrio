@@ -1,0 +1,26 @@
+{
+  "name": "karma",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Karma",
+  "description": "Karma — Serif font.",
+  "font": {
+    "family": "Karma",
+    "provider": "google",
+    "import": "Karma",
+    "variable": "--font-karma",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

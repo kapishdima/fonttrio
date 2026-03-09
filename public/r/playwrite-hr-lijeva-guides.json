@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-hr-lijeva-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite HR Lijeva Guides",
+  "description": "Playwrite HR Lijeva Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite HR Lijeva Guides",
+    "provider": "google",
+    "import": "Playwrite_HR_Lijeva_Guides",
+    "variable": "--font-playwrite-hr-lijeva-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

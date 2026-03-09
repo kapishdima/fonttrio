@@ -1,0 +1,30 @@
+{
+  "name": "cairo-play",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Cairo Play",
+  "description": "Cairo Play — Sans Serif font.",
+  "font": {
+    "family": "Cairo Play",
+    "provider": "google",
+    "import": "Cairo_Play",
+    "variable": "--font-cairo-play",
+    "weight": [
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

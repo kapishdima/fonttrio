@@ -1,0 +1,25 @@
+{
+  "name": "klee-one",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Klee One",
+  "description": "Klee One — Handwriting font.",
+  "font": {
+    "family": "Klee One",
+    "provider": "google",
+    "import": "Klee_One",
+    "variable": "--font-klee-one",
+    "weight": [
+      "400",
+      "600"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "greek-ext",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

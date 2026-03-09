@@ -1,0 +1,26 @@
+{
+  "name": "rubik-scribble",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Scribble",
+  "description": "Rubik Scribble — Display font.",
+  "font": {
+    "family": "Rubik Scribble",
+    "provider": "google",
+    "import": "Rubik_Scribble",
+    "variable": "--font-rubik-scribble",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

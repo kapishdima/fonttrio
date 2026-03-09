@@ -1,0 +1,24 @@
+{
+  "name": "istok-web",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Istok Web",
+  "description": "Istok Web — Sans Serif font.",
+  "font": {
+    "family": "Istok Web",
+    "provider": "google",
+    "import": "Istok_Web",
+    "variable": "--font-istok-web",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

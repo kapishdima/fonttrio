@@ -1,0 +1,22 @@
+{
+  "name": "yarndings-20-charted",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Yarndings 20 Charted",
+  "description": "Yarndings 20 Charted — Display font.",
+  "font": {
+    "family": "Yarndings 20 Charted",
+    "provider": "google",
+    "import": "Yarndings_20_Charted",
+    "variable": "--font-yarndings-20-charted",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "math",
+      "symbols"
+    ]
+  }
+}

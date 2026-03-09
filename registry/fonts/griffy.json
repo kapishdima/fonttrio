@@ -1,0 +1,21 @@
+{
+  "name": "griffy",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Griffy",
+  "description": "Griffy — Display font.",
+  "font": {
+    "family": "Griffy",
+    "provider": "google",
+    "import": "Griffy",
+    "variable": "--font-griffy",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

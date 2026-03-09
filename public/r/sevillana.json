@@ -1,0 +1,21 @@
+{
+  "name": "sevillana",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Sevillana",
+  "description": "Sevillana — Display font.",
+  "font": {
+    "family": "Sevillana",
+    "provider": "google",
+    "import": "Sevillana",
+    "variable": "--font-sevillana",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

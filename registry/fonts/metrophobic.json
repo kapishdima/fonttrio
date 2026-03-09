@@ -1,0 +1,22 @@
+{
+  "name": "metrophobic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Metrophobic",
+  "description": "Metrophobic — Sans Serif font.",
+  "font": {
+    "family": "Metrophobic",
+    "provider": "google",
+    "import": "Metrophobic",
+    "variable": "--font-metrophobic",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

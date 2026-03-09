@@ -1,0 +1,22 @@
+{
+  "name": "elsie-swash-caps",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Elsie Swash Caps",
+  "description": "Elsie Swash Caps — Display font.",
+  "font": {
+    "family": "Elsie Swash Caps",
+    "provider": "google",
+    "import": "Elsie_Swash_Caps",
+    "variable": "--font-elsie-swash-caps",
+    "weight": [
+      "400",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

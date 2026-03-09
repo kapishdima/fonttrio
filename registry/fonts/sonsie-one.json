@@ -1,0 +1,21 @@
+{
+  "name": "sonsie-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Sonsie One",
+  "description": "Sonsie One — Display font.",
+  "font": {
+    "family": "Sonsie One",
+    "provider": "google",
+    "import": "Sonsie_One",
+    "variable": "--font-sonsie-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

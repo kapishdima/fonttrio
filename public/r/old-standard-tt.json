@@ -1,0 +1,25 @@
+{
+  "name": "old-standard-tt",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Old Standard TT",
+  "description": "Old Standard TT — Serif font.",
+  "font": {
+    "family": "Old Standard TT",
+    "provider": "google",
+    "import": "Old_Standard_TT",
+    "variable": "--font-old-standard-tt",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

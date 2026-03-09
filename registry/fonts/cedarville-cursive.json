@@ -1,0 +1,20 @@
+{
+  "name": "cedarville-cursive",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Cedarville Cursive",
+  "description": "Cedarville Cursive — Handwriting font.",
+  "font": {
+    "family": "Cedarville Cursive",
+    "provider": "google",
+    "import": "Cedarville_Cursive",
+    "variable": "--font-cedarville-cursive",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

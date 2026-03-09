@@ -1,0 +1,21 @@
+{
+  "name": "wendy-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Wendy One",
+  "description": "Wendy One — Sans Serif font.",
+  "font": {
+    "family": "Wendy One",
+    "provider": "google",
+    "import": "Wendy_One",
+    "variable": "--font-wendy-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

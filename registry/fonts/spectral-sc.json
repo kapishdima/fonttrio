@@ -1,0 +1,30 @@
+{
+  "name": "spectral-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Spectral SC",
+  "description": "Spectral SC — Serif font.",
+  "font": {
+    "family": "Spectral SC",
+    "provider": "google",
+    "import": "Spectral_SC",
+    "variable": "--font-spectral-sc",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

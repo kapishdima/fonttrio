@@ -1,0 +1,21 @@
+{
+  "name": "monoton",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Monoton",
+  "description": "Monoton — Display font.",
+  "font": {
+    "family": "Monoton",
+    "provider": "google",
+    "import": "Monoton",
+    "variable": "--font-monoton",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

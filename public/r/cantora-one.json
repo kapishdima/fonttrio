@@ -1,0 +1,21 @@
+{
+  "name": "cantora-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Cantora One",
+  "description": "Cantora One — Sans Serif font.",
+  "font": {
+    "family": "Cantora One",
+    "provider": "google",
+    "import": "Cantora_One",
+    "variable": "--font-cantora-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

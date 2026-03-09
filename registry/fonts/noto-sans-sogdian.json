@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-sogdian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Sogdian",
+  "description": "Noto Sans Sogdian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Sogdian",
+    "provider": "google",
+    "import": "Noto_Sans_Sogdian",
+    "variable": "--font-noto-sans-sogdian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "sogdian"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-ethiopic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Ethiopic",
+  "description": "Noto Sans Ethiopic — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Ethiopic",
+    "provider": "google",
+    "import": "Noto_Sans_Ethiopic",
+    "variable": "--font-noto-sans-ethiopic",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "ethiopic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

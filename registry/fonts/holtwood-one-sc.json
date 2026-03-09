@@ -1,0 +1,21 @@
+{
+  "name": "holtwood-one-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Holtwood One SC",
+  "description": "Holtwood One SC — Serif font.",
+  "font": {
+    "family": "Holtwood One SC",
+    "provider": "google",
+    "import": "Holtwood_One_SC",
+    "variable": "--font-holtwood-one-sc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

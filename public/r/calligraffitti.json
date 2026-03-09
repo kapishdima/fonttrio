@@ -1,0 +1,20 @@
+{
+  "name": "calligraffitti",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Calligraffitti",
+  "description": "Calligraffitti — Handwriting font.",
+  "font": {
+    "family": "Calligraffitti",
+    "provider": "google",
+    "import": "Calligraffitti",
+    "variable": "--font-calligraffitti",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

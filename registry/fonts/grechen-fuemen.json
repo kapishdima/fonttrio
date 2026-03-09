@@ -1,0 +1,22 @@
+{
+  "name": "grechen-fuemen",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Grechen Fuemen",
+  "description": "Grechen Fuemen — Handwriting font.",
+  "font": {
+    "family": "Grechen Fuemen",
+    "provider": "google",
+    "import": "Grechen_Fuemen",
+    "variable": "--font-grechen-fuemen",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "new-rocker",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "New Rocker",
+  "description": "New Rocker — Display font.",
+  "font": {
+    "family": "New Rocker",
+    "provider": "google",
+    "import": "New_Rocker",
+    "variable": "--font-new-rocker",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "braah-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Braah One",
+  "description": "Braah One — Sans Serif font.",
+  "font": {
+    "family": "Braah One",
+    "provider": "google",
+    "import": "Braah_One",
+    "variable": "--font-braah-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "gurmukhi",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

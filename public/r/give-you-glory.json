@@ -1,0 +1,21 @@
+{
+  "name": "give-you-glory",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Give You Glory",
+  "description": "Give You Glory — Handwriting font.",
+  "font": {
+    "family": "Give You Glory",
+    "provider": "google",
+    "import": "Give_You_Glory",
+    "variable": "--font-give-you-glory",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

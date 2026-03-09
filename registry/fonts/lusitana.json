@@ -1,0 +1,21 @@
+{
+  "name": "lusitana",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Lusitana",
+  "description": "Lusitana — Serif font.",
+  "font": {
+    "family": "Lusitana",
+    "provider": "google",
+    "import": "Lusitana",
+    "variable": "--font-lusitana",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

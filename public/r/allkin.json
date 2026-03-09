@@ -1,0 +1,19 @@
+{
+  "name": "allkin",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Allkin",
+  "description": "Allkin — Display font.",
+  "font": {
+    "family": "Allkin",
+    "provider": "google",
+    "import": "Allkin",
+    "variable": "--font-allkin",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

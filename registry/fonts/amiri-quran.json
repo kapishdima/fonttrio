@@ -1,0 +1,21 @@
+{
+  "name": "amiri-quran",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Amiri Quran",
+  "description": "Amiri Quran — Serif font.",
+  "font": {
+    "family": "Amiri Quran",
+    "provider": "google",
+    "import": "Amiri_Quran",
+    "variable": "--font-amiri-quran",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin"
+    ]
+  }
+}

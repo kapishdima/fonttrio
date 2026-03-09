@@ -1,0 +1,30 @@
+{
+  "name": "vazirmatn",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Vazirmatn",
+  "description": "Vazirmatn — Sans Serif font.",
+  "font": {
+    "family": "Vazirmatn",
+    "provider": "google",
+    "import": "Vazirmatn",
+    "variable": "--font-vazirmatn",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

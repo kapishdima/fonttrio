@@ -1,0 +1,20 @@
+{
+  "name": "macondo-swash-caps",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Macondo Swash Caps",
+  "description": "Macondo Swash Caps — Display font.",
+  "font": {
+    "family": "Macondo Swash Caps",
+    "provider": "google",
+    "import": "Macondo_Swash_Caps",
+    "variable": "--font-macondo-swash-caps",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

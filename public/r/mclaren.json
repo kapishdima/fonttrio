@@ -1,0 +1,21 @@
+{
+  "name": "mclaren",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "McLaren",
+  "description": "McLaren — Display font.",
+  "font": {
+    "family": "McLaren",
+    "provider": "google",
+    "import": "McLaren",
+    "variable": "--font-mclaren",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

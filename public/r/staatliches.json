@@ -1,0 +1,21 @@
+{
+  "name": "staatliches",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Staatliches",
+  "description": "Staatliches — Display font.",
+  "font": {
+    "family": "Staatliches",
+    "provider": "google",
+    "import": "Staatliches",
+    "variable": "--font-staatliches",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

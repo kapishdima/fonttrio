@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-de-va-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite DE VA Guides",
+  "description": "Playwrite DE VA Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite DE VA Guides",
+    "provider": "google",
+    "import": "Playwrite_DE_VA_Guides",
+    "variable": "--font-playwrite-de-va-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

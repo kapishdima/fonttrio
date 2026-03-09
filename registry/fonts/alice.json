@@ -1,0 +1,23 @@
+{
+  "name": "alice",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Alice",
+  "description": "Alice — Serif font.",
+  "font": {
+    "family": "Alice",
+    "provider": "google",
+    "import": "Alice",
+    "variable": "--font-alice",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

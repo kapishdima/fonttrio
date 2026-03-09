@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-pahawh-hmong",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Pahawh Hmong",
+  "description": "Noto Sans Pahawh Hmong — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Pahawh Hmong",
+    "provider": "google",
+    "import": "Noto_Sans_Pahawh_Hmong",
+    "variable": "--font-noto-sans-pahawh-hmong",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "pahawh-hmong"
+    ]
+  }
+}

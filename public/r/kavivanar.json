@@ -1,0 +1,22 @@
+{
+  "name": "kavivanar",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Kavivanar",
+  "description": "Kavivanar — Handwriting font.",
+  "font": {
+    "family": "Kavivanar",
+    "provider": "google",
+    "import": "Kavivanar",
+    "variable": "--font-kavivanar",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tamil"
+    ]
+  }
+}

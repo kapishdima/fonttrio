@@ -1,0 +1,20 @@
+{
+  "name": "electrolize",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Electrolize",
+  "description": "Electrolize — Sans Serif font.",
+  "font": {
+    "family": "Electrolize",
+    "provider": "google",
+    "import": "Electrolize",
+    "variable": "--font-electrolize",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

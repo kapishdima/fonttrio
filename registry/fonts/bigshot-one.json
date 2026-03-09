@@ -1,0 +1,20 @@
+{
+  "name": "bigshot-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bigshot One",
+  "description": "Bigshot One — Display font.",
+  "font": {
+    "family": "Bigshot One",
+    "provider": "google",
+    "import": "Bigshot_One",
+    "variable": "--font-bigshot-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

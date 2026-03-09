@@ -1,0 +1,21 @@
+{
+  "name": "damion",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Damion",
+  "description": "Damion — Handwriting font.",
+  "font": {
+    "family": "Damion",
+    "provider": "google",
+    "import": "Damion",
+    "variable": "--font-damion",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

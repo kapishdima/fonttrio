@@ -1,0 +1,21 @@
+{
+  "name": "capriola",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Capriola",
+  "description": "Capriola — Sans Serif font.",
+  "font": {
+    "family": "Capriola",
+    "provider": "google",
+    "import": "Capriola",
+    "variable": "--font-capriola",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "anuphan",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anuphan",
+  "description": "Anuphan — Sans Serif font.",
+  "font": {
+    "family": "Anuphan",
+    "provider": "google",
+    "import": "Anuphan",
+    "variable": "--font-anuphan",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

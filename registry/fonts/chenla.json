@@ -1,0 +1,20 @@
+{
+  "name": "chenla",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Chenla",
+  "description": "Chenla — Display font.",
+  "font": {
+    "family": "Chenla",
+    "provider": "google",
+    "import": "Chenla",
+    "variable": "--font-chenla",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer"
+    ]
+  }
+}

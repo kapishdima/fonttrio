@@ -1,0 +1,20 @@
+{
+  "name": "irish-grover",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Irish Grover",
+  "description": "Irish Grover — Display font.",
+  "font": {
+    "family": "Irish Grover",
+    "provider": "google",
+    "import": "Irish_Grover",
+    "variable": "--font-irish-grover",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

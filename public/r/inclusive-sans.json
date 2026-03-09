@@ -1,0 +1,26 @@
+{
+  "name": "inclusive-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Inclusive Sans",
+  "description": "Inclusive Sans — Sans Serif font.",
+  "font": {
+    "family": "Inclusive Sans",
+    "provider": "google",
+    "import": "Inclusive_Sans",
+    "variable": "--font-inclusive-sans",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

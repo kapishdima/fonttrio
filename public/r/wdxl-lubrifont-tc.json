@@ -1,0 +1,24 @@
+{
+  "name": "wdxl-lubrifont-tc",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "WDXL Lubrifont TC",
+  "description": "WDXL Lubrifont TC — Sans Serif font.",
+  "font": {
+    "family": "WDXL Lubrifont TC",
+    "provider": "google",
+    "import": "WDXL_Lubrifont_TC",
+    "variable": "--font-wdxl-lubrifont-tc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-traditional",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "symbols2"
+    ]
+  }
+}

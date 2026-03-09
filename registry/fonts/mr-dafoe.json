@@ -1,0 +1,21 @@
+{
+  "name": "mr-dafoe",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Mr Dafoe",
+  "description": "Mr Dafoe — Handwriting font.",
+  "font": {
+    "family": "Mr Dafoe",
+    "provider": "google",
+    "import": "Mr_Dafoe",
+    "variable": "--font-mr-dafoe",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

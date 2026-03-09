@@ -1,0 +1,21 @@
+{
+  "name": "bayon",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Bayon",
+  "description": "Bayon — Sans Serif font.",
+  "font": {
+    "family": "Bayon",
+    "provider": "google",
+    "import": "Bayon",
+    "variable": "--font-bayon",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin"
+    ]
+  }
+}

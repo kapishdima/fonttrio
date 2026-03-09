@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-hr",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite HR",
+  "description": "Playwrite HR — Handwriting font.",
+  "font": {
+    "family": "Playwrite HR",
+    "provider": "google",
+    "import": "Playwrite_HR",
+    "variable": "--font-playwrite-hr",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

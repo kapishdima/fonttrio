@@ -1,0 +1,24 @@
+{
+  "name": "noto-znamenny-musical-notation",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Znamenny Musical Notation",
+  "description": "Noto Znamenny Musical Notation — Sans Serif font.",
+  "font": {
+    "family": "Noto Znamenny Musical Notation",
+    "provider": "google",
+    "import": "Noto_Znamenny_Musical_Notation",
+    "variable": "--font-noto-znamenny-musical-notation",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "znamenny"
+    ]
+  }
+}

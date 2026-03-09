@@ -1,0 +1,21 @@
+{
+  "name": "shojumaru",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Shojumaru",
+  "description": "Shojumaru — Display font.",
+  "font": {
+    "family": "Shojumaru",
+    "provider": "google",
+    "import": "Shojumaru",
+    "variable": "--font-shojumaru",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "blaka-hollow",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Blaka Hollow",
+  "description": "Blaka Hollow — Display font.",
+  "font": {
+    "family": "Blaka Hollow",
+    "provider": "google",
+    "import": "Blaka_Hollow",
+    "variable": "--font-blaka-hollow",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

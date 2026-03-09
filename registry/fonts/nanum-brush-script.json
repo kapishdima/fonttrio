@@ -1,0 +1,21 @@
+{
+  "name": "nanum-brush-script",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Nanum Brush Script",
+  "description": "Nanum Brush Script — Handwriting font.",
+  "font": {
+    "family": "Nanum Brush Script",
+    "provider": "google",
+    "import": "Nanum_Brush_Script",
+    "variable": "--font-nanum-brush-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

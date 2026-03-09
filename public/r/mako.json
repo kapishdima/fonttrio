@@ -1,0 +1,21 @@
+{
+  "name": "mako",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mako",
+  "description": "Mako — Sans Serif font.",
+  "font": {
+    "family": "Mako",
+    "provider": "google",
+    "import": "Mako",
+    "variable": "--font-mako",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

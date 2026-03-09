@@ -1,0 +1,23 @@
+{
+  "name": "maname",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Maname",
+  "description": "Maname — Serif font.",
+  "font": {
+    "family": "Maname",
+    "provider": "google",
+    "import": "Maname",
+    "variable": "--font-maname",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "sinhala",
+      "vietnamese"
+    ]
+  }
+}

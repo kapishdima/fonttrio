@@ -1,0 +1,28 @@
+{
+  "name": "sansita-swashed",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Sansita Swashed",
+  "description": "Sansita Swashed — Display font.",
+  "font": {
+    "family": "Sansita Swashed",
+    "provider": "google",
+    "import": "Sansita_Swashed",
+    "variable": "--font-sansita-swashed",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

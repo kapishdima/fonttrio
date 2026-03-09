@@ -1,0 +1,26 @@
+{
+  "name": "rajdhani",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Rajdhani",
+  "description": "Rajdhani — Sans Serif font.",
+  "font": {
+    "family": "Rajdhani",
+    "provider": "google",
+    "import": "Rajdhani",
+    "variable": "--font-rajdhani",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

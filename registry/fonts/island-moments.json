@@ -1,0 +1,22 @@
+{
+  "name": "island-moments",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Island Moments",
+  "description": "Island Moments — Handwriting font.",
+  "font": {
+    "family": "Island Moments",
+    "provider": "google",
+    "import": "Island_Moments",
+    "variable": "--font-island-moments",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

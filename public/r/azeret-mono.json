@@ -1,0 +1,29 @@
+{
+  "name": "azeret-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Azeret Mono",
+  "description": "Azeret Mono — Monospace font.",
+  "font": {
+    "family": "Azeret Mono",
+    "provider": "google",
+    "import": "Azeret_Mono",
+    "variable": "--font-azeret-mono",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

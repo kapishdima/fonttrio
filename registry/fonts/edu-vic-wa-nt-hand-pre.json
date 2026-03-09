@@ -1,0 +1,24 @@
+{
+  "name": "edu-vic-wa-nt-hand-pre",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Edu VIC WA NT Hand Pre",
+  "description": "Edu VIC WA NT Hand Pre — Handwriting font.",
+  "font": {
+    "family": "Edu VIC WA NT Hand Pre",
+    "provider": "google",
+    "import": "Edu_VIC_WA_NT_Hand_Pre",
+    "variable": "--font-edu-vic-wa-nt-hand-pre",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

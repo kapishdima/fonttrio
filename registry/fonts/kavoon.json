@@ -1,0 +1,21 @@
+{
+  "name": "kavoon",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Kavoon",
+  "description": "Kavoon — Display font.",
+  "font": {
+    "family": "Kavoon",
+    "provider": "google",
+    "import": "Kavoon",
+    "variable": "--font-kavoon",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "yatra-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Yatra One",
+  "description": "Yatra One — Display font.",
+  "font": {
+    "family": "Yatra One",
+    "provider": "google",
+    "import": "Yatra_One",
+    "variable": "--font-yatra-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

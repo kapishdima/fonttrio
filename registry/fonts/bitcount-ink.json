@@ -1,0 +1,29 @@
+{
+  "name": "bitcount-ink",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bitcount Ink",
+  "description": "Bitcount Ink — Display font.",
+  "font": {
+    "family": "Bitcount Ink",
+    "provider": "google",
+    "import": "Bitcount_Ink",
+    "variable": "--font-bitcount-ink",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cuprum",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Cuprum",
+  "description": "Cuprum — Sans Serif font.",
+  "font": {
+    "family": "Cuprum",
+    "provider": "google",
+    "import": "Cuprum",
+    "variable": "--font-cuprum",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

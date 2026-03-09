@@ -1,0 +1,21 @@
+{
+  "name": "vibes",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Vibes",
+  "description": "Vibes — Display font.",
+  "font": {
+    "family": "Vibes",
+    "provider": "google",
+    "import": "Vibes",
+    "variable": "--font-vibes",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin"
+    ]
+  }
+}

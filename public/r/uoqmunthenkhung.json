@@ -1,0 +1,23 @@
+{
+  "name": "uoqmunthenkhung",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "UoqMunThenKhung",
+  "description": "UoqMunThenKhung — Serif font.",
+  "font": {
+    "family": "UoqMunThenKhung",
+    "provider": "google",
+    "import": "UoqMunThenKhung",
+    "variable": "--font-uoqmunthenkhung",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-traditional",
+      "cyrillic",
+      "latin",
+      "symbols2"
+    ]
+  }
+}

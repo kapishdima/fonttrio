@@ -1,0 +1,27 @@
+{
+  "name": "oi",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Oi",
+  "description": "Oi — Display font.",
+  "font": {
+    "family": "Oi",
+    "provider": "google",
+    "import": "Oi",
+    "variable": "--font-oi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "tamil",
+      "vietnamese"
+    ]
+  }
+}

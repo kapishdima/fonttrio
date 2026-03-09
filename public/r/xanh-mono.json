@@ -1,0 +1,22 @@
+{
+  "name": "xanh-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Xanh Mono",
+  "description": "Xanh Mono — Monospace font.",
+  "font": {
+    "family": "Xanh Mono",
+    "provider": "google",
+    "import": "Xanh_Mono",
+    "variable": "--font-xanh-mono",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

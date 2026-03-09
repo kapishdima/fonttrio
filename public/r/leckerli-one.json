@@ -1,0 +1,20 @@
+{
+  "name": "leckerli-one",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Leckerli One",
+  "description": "Leckerli One — Handwriting font.",
+  "font": {
+    "family": "Leckerli One",
+    "provider": "google",
+    "import": "Leckerli_One",
+    "variable": "--font-leckerli-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

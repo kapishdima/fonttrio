@@ -1,0 +1,22 @@
+{
+  "name": "aoboshi-one",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Aoboshi One",
+  "description": "Aoboshi One — Serif font.",
+  "font": {
+    "family": "Aoboshi One",
+    "provider": "google",
+    "import": "Aoboshi_One",
+    "variable": "--font-aoboshi-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

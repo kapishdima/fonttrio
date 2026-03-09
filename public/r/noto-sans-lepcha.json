@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-lepcha",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Lepcha",
+  "description": "Noto Sans Lepcha — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Lepcha",
+    "provider": "google",
+    "import": "Noto_Sans_Lepcha",
+    "variable": "--font-noto-sans-lepcha",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "lepcha"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "indie-flower",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Indie Flower",
+  "description": "Indie Flower — Handwriting font.",
+  "font": {
+    "family": "Indie Flower",
+    "provider": "google",
+    "import": "Indie_Flower",
+    "variable": "--font-indie-flower",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "noto-music",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Music",
+  "description": "Noto Music — Sans Serif font.",
+  "font": {
+    "family": "Noto Music",
+    "provider": "google",
+    "import": "Noto_Music",
+    "variable": "--font-noto-music",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "music"
+    ]
+  }
+}

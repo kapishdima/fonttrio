@@ -1,0 +1,27 @@
+{
+  "name": "amarna",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Amarna",
+  "description": "Amarna — Sans Serif font.",
+  "font": {
+    "family": "Amarna",
+    "provider": "google",
+    "import": "Amarna",
+    "variable": "--font-amarna",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

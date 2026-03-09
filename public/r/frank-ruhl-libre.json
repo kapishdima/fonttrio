@@ -1,0 +1,28 @@
+{
+  "name": "frank-ruhl-libre",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Frank Ruhl Libre",
+  "description": "Frank Ruhl Libre — Serif font.",
+  "font": {
+    "family": "Frank Ruhl Libre",
+    "provider": "google",
+    "import": "Frank_Ruhl_Libre",
+    "variable": "--font-frank-ruhl-libre",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ropa-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Ropa Sans",
+  "description": "Ropa Sans — Sans Serif font.",
+  "font": {
+    "family": "Ropa Sans",
+    "provider": "google",
+    "import": "Ropa_Sans",
+    "variable": "--font-ropa-sans",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

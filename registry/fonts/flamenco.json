@@ -1,0 +1,21 @@
+{
+  "name": "flamenco",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Flamenco",
+  "description": "Flamenco — Display font.",
+  "font": {
+    "family": "Flamenco",
+    "provider": "google",
+    "import": "Flamenco",
+    "variable": "--font-flamenco",
+    "weight": [
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

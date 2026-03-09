@@ -1,0 +1,26 @@
+{
+  "name": "gabarito",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Gabarito",
+  "description": "Gabarito — Display font.",
+  "font": {
+    "family": "Gabarito",
+    "provider": "google",
+    "import": "Gabarito",
+    "variable": "--font-gabarito",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

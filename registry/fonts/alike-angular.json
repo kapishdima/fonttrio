@@ -1,0 +1,23 @@
+{
+  "name": "alike-angular",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Alike Angular",
+  "description": "Alike Angular — Serif font.",
+  "font": {
+    "family": "Alike Angular",
+    "provider": "google",
+    "import": "Alike_Angular",
+    "variable": "--font-alike-angular",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "zen-antique-soft",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Zen Antique Soft",
+  "description": "Zen Antique Soft — Serif font.",
+  "font": {
+    "family": "Zen Antique Soft",
+    "provider": "google",
+    "import": "Zen_Antique_Soft",
+    "variable": "--font-zen-antique-soft",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "greek",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

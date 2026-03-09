@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-sunuwar",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Sunuwar",
+  "description": "Noto Sans Sunuwar — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Sunuwar",
+    "provider": "google",
+    "import": "Noto_Sans_Sunuwar",
+    "variable": "--font-noto-sans-sunuwar",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "sunuwar"
+    ]
+  }
+}

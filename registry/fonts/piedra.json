@@ -1,0 +1,21 @@
+{
+  "name": "piedra",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Piedra",
+  "description": "Piedra — Display font.",
+  "font": {
+    "family": "Piedra",
+    "provider": "google",
+    "import": "Piedra",
+    "variable": "--font-piedra",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "bahianita",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bahianita",
+  "description": "Bahianita — Display font.",
+  "font": {
+    "family": "Bahianita",
+    "provider": "google",
+    "import": "Bahianita",
+    "variable": "--font-bahianita",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

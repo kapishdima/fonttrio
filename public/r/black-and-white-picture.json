@@ -1,0 +1,21 @@
+{
+  "name": "black-and-white-picture",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Black And White Picture",
+  "description": "Black And White Picture — Display font.",
+  "font": {
+    "family": "Black And White Picture",
+    "provider": "google",
+    "import": "Black_And_White_Picture",
+    "variable": "--font-black-and-white-picture",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

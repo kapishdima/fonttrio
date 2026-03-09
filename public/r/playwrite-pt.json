@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-pt",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite PT",
+  "description": "Playwrite PT — Handwriting font.",
+  "font": {
+    "family": "Playwrite PT",
+    "provider": "google",
+    "import": "Playwrite_PT",
+    "variable": "--font-playwrite-pt",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

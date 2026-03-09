@@ -1,0 +1,26 @@
+{
+  "name": "kaisei-tokumin",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Kaisei Tokumin",
+  "description": "Kaisei Tokumin — Serif font.",
+  "font": {
+    "family": "Kaisei Tokumin",
+    "provider": "google",
+    "import": "Kaisei_Tokumin",
+    "variable": "--font-kaisei-tokumin",
+    "weight": [
+      "400",
+      "500",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

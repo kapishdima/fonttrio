@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-adlam",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Adlam",
+  "description": "Noto Sans Adlam — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Adlam",
+    "provider": "google",
+    "import": "Noto_Sans_Adlam",
+    "variable": "--font-noto-sans-adlam",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "adlam",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

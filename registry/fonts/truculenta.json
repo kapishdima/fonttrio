@@ -1,0 +1,30 @@
+{
+  "name": "truculenta",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Truculenta",
+  "description": "Truculenta — Sans Serif font.",
+  "font": {
+    "family": "Truculenta",
+    "provider": "google",
+    "import": "Truculenta",
+    "variable": "--font-truculenta",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "pinyon-script",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Pinyon Script",
+  "description": "Pinyon Script — Handwriting font.",
+  "font": {
+    "family": "Pinyon Script",
+    "provider": "google",
+    "import": "Pinyon_Script",
+    "variable": "--font-pinyon-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

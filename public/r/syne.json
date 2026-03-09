@@ -1,0 +1,26 @@
+{
+  "name": "syne",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Syne",
+  "description": "Syne — Sans Serif font.",
+  "font": {
+    "family": "Syne",
+    "provider": "google",
+    "import": "Syne",
+    "variable": "--font-syne",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "greek",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

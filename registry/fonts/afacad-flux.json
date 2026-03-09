@@ -1,0 +1,31 @@
+{
+  "name": "afacad-flux",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Afacad Flux",
+  "description": "Afacad Flux — Sans Serif font.",
+  "font": {
+    "family": "Afacad Flux",
+    "provider": "google",
+    "import": "Afacad_Flux",
+    "variable": "--font-afacad-flux",
+    "weight": [
+      "100",
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

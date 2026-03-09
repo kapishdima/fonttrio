@@ -1,0 +1,22 @@
+{
+  "name": "rambla",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Rambla",
+  "description": "Rambla — Sans Serif font.",
+  "font": {
+    "family": "Rambla",
+    "provider": "google",
+    "import": "Rambla",
+    "variable": "--font-rambla",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

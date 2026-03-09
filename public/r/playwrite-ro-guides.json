@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-ro-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite RO Guides",
+  "description": "Playwrite RO Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite RO Guides",
+    "provider": "google",
+    "import": "Playwrite_RO_Guides",
+    "variable": "--font-playwrite-ro-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

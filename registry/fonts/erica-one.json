@@ -1,0 +1,21 @@
+{
+  "name": "erica-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Erica One",
+  "description": "Erica One — Display font.",
+  "font": {
+    "family": "Erica One",
+    "provider": "google",
+    "import": "Erica_One",
+    "variable": "--font-erica-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

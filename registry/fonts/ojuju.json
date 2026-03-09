@@ -1,0 +1,30 @@
+{
+  "name": "ojuju",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Ojuju",
+  "description": "Ojuju — Sans Serif font.",
+  "font": {
+    "family": "Ojuju",
+    "provider": "google",
+    "import": "Ojuju",
+    "variable": "--font-ojuju",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "galdeano",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Galdeano",
+  "description": "Galdeano — Sans Serif font.",
+  "font": {
+    "family": "Galdeano",
+    "provider": "google",
+    "import": "Galdeano",
+    "variable": "--font-galdeano",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

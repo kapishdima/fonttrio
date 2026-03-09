@@ -1,0 +1,21 @@
+{
+  "name": "dr-sugiyama",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Dr Sugiyama",
+  "description": "Dr Sugiyama — Handwriting font.",
+  "font": {
+    "family": "Dr Sugiyama",
+    "provider": "google",
+    "import": "Dr_Sugiyama",
+    "variable": "--font-dr-sugiyama",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "italianno",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Italianno",
+  "description": "Italianno — Handwriting font.",
+  "font": {
+    "family": "Italianno",
+    "provider": "google",
+    "import": "Italianno",
+    "variable": "--font-italianno",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

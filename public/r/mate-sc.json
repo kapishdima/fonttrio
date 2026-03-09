@@ -1,0 +1,21 @@
+{
+  "name": "mate-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Mate SC",
+  "description": "Mate SC — Serif font.",
+  "font": {
+    "family": "Mate SC",
+    "provider": "google",
+    "import": "Mate_SC",
+    "variable": "--font-mate-sc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

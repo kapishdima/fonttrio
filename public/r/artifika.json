@@ -1,0 +1,20 @@
+{
+  "name": "artifika",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Artifika",
+  "description": "Artifika — Serif font.",
+  "font": {
+    "family": "Artifika",
+    "provider": "google",
+    "import": "Artifika",
+    "variable": "--font-artifika",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

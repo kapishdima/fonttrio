@@ -1,0 +1,21 @@
+{
+  "name": "flavors",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Flavors",
+  "description": "Flavors — Display font.",
+  "font": {
+    "family": "Flavors",
+    "provider": "google",
+    "import": "Flavors",
+    "variable": "--font-flavors",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

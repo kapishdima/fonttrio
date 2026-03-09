@@ -1,0 +1,25 @@
+{
+  "name": "arsenal-sc",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Arsenal SC",
+  "description": "Arsenal SC — Sans Serif font.",
+  "font": {
+    "family": "Arsenal SC",
+    "provider": "google",
+    "import": "Arsenal_SC",
+    "variable": "--font-arsenal-sc",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

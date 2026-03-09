@@ -1,0 +1,22 @@
+{
+  "name": "nova-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Nova Mono",
+  "description": "Nova Mono — Monospace font.",
+  "font": {
+    "family": "Nova Mono",
+    "provider": "google",
+    "import": "Nova_Mono",
+    "variable": "--font-nova-mono",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "greek",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "sail",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Sail",
+  "description": "Sail — Display font.",
+  "font": {
+    "family": "Sail",
+    "provider": "google",
+    "import": "Sail",
+    "variable": "--font-sail",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

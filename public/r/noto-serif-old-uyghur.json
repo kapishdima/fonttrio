@@ -1,0 +1,22 @@
+{
+  "name": "noto-serif-old-uyghur",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Old Uyghur",
+  "description": "Noto Serif Old Uyghur — Serif font.",
+  "font": {
+    "family": "Noto Serif Old Uyghur",
+    "provider": "google",
+    "import": "Noto_Serif_Old_Uyghur",
+    "variable": "--font-noto-serif-old-uyghur",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "old-uyghur"
+    ]
+  }
+}

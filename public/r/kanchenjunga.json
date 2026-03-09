@@ -1,0 +1,24 @@
+{
+  "name": "kanchenjunga",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Kanchenjunga",
+  "description": "Kanchenjunga — Sans Serif font.",
+  "font": {
+    "family": "Kanchenjunga",
+    "provider": "google",
+    "import": "Kanchenjunga",
+    "variable": "--font-kanchenjunga",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "kirat-rai",
+      "latin"
+    ]
+  }
+}

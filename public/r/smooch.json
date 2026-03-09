@@ -1,0 +1,22 @@
+{
+  "name": "smooch",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Smooch",
+  "description": "Smooch — Handwriting font.",
+  "font": {
+    "family": "Smooch",
+    "provider": "google",
+    "import": "Smooch",
+    "variable": "--font-smooch",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

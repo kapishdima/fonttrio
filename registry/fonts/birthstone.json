@@ -1,0 +1,22 @@
+{
+  "name": "birthstone",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Birthstone",
+  "description": "Birthstone — Handwriting font.",
+  "font": {
+    "family": "Birthstone",
+    "provider": "google",
+    "import": "Birthstone",
+    "variable": "--font-birthstone",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

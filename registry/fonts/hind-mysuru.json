@@ -1,0 +1,26 @@
+{
+  "name": "hind-mysuru",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Hind Mysuru",
+  "description": "Hind Mysuru — Sans Serif font.",
+  "font": {
+    "family": "Hind Mysuru",
+    "provider": "google",
+    "import": "Hind_Mysuru",
+    "variable": "--font-hind-mysuru",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "kannada",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

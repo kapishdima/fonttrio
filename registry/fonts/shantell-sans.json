@@ -1,0 +1,29 @@
+{
+  "name": "shantell-sans",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Shantell Sans",
+  "description": "Shantell Sans — Display font.",
+  "font": {
+    "family": "Shantell Sans",
+    "provider": "google",
+    "import": "Shantell_Sans",
+    "variable": "--font-shantell-sans",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

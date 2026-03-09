@@ -1,0 +1,21 @@
+{
+  "name": "autour-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Autour One",
+  "description": "Autour One — Display font.",
+  "font": {
+    "family": "Autour One",
+    "provider": "google",
+    "import": "Autour_One",
+    "variable": "--font-autour-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

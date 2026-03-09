@@ -1,0 +1,22 @@
+{
+  "name": "sniglet",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Sniglet",
+  "description": "Sniglet — Display font.",
+  "font": {
+    "family": "Sniglet",
+    "provider": "google",
+    "import": "Sniglet",
+    "variable": "--font-sniglet",
+    "weight": [
+      "400",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

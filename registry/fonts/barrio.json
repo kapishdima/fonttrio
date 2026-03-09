@@ -1,0 +1,21 @@
+{
+  "name": "barrio",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Barrio",
+  "description": "Barrio — Display font.",
+  "font": {
+    "family": "Barrio",
+    "provider": "google",
+    "import": "Barrio",
+    "variable": "--font-barrio",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

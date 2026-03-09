@@ -1,0 +1,26 @@
+{
+  "name": "signika-negative",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Signika Negative",
+  "description": "Signika Negative — Sans Serif font.",
+  "font": {
+    "family": "Signika Negative",
+    "provider": "google",
+    "import": "Signika_Negative",
+    "variable": "--font-signika-negative",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

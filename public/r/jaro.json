@@ -1,0 +1,22 @@
+{
+  "name": "jaro",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Jaro",
+  "description": "Jaro — Sans Serif font.",
+  "font": {
+    "family": "Jaro",
+    "provider": "google",
+    "import": "Jaro",
+    "variable": "--font-jaro",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

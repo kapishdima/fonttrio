@@ -1,0 +1,21 @@
+{
+  "name": "condiment",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Condiment",
+  "description": "Condiment — Handwriting font.",
+  "font": {
+    "family": "Condiment",
+    "provider": "google",
+    "import": "Condiment",
+    "variable": "--font-condiment",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

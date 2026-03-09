@@ -1,0 +1,21 @@
+{
+  "name": "aladin",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Aladin",
+  "description": "Aladin — Display font.",
+  "font": {
+    "family": "Aladin",
+    "provider": "google",
+    "import": "Aladin",
+    "variable": "--font-aladin",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

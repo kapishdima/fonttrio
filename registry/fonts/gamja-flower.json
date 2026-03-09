@@ -1,0 +1,21 @@
+{
+  "name": "gamja-flower",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Gamja Flower",
+  "description": "Gamja Flower — Handwriting font.",
+  "font": {
+    "family": "Gamja Flower",
+    "provider": "google",
+    "import": "Gamja_Flower",
+    "variable": "--font-gamja-flower",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-fr-moderne",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite FR Moderne",
+  "description": "Playwrite FR Moderne — Handwriting font.",
+  "font": {
+    "family": "Playwrite FR Moderne",
+    "provider": "google",
+    "import": "Playwrite_FR_Moderne",
+    "variable": "--font-playwrite-fr-moderne",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

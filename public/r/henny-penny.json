@@ -1,0 +1,20 @@
+{
+  "name": "henny-penny",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Henny Penny",
+  "description": "Henny Penny — Display font.",
+  "font": {
+    "family": "Henny Penny",
+    "provider": "google",
+    "import": "Henny_Penny",
+    "variable": "--font-henny-penny",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

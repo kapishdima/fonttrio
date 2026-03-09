@@ -1,0 +1,22 @@
+{
+  "name": "comic-neue",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Comic Neue",
+  "description": "Comic Neue — Handwriting font.",
+  "font": {
+    "family": "Comic Neue",
+    "provider": "google",
+    "import": "Comic_Neue",
+    "variable": "--font-comic-neue",
+    "weight": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

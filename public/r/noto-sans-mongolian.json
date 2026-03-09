@@ -1,0 +1,24 @@
+{
+  "name": "noto-sans-mongolian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Mongolian",
+  "description": "Noto Sans Mongolian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Mongolian",
+    "provider": "google",
+    "import": "Noto_Sans_Mongolian",
+    "variable": "--font-noto-sans-mongolian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "mongolian",
+      "symbols"
+    ]
+  }
+}

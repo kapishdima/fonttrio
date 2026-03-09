@@ -1,0 +1,24 @@
+{
+  "name": "edu-nsw-act-hand-pre",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Edu NSW ACT Hand Pre",
+  "description": "Edu NSW ACT Hand Pre — Handwriting font.",
+  "font": {
+    "family": "Edu NSW ACT Hand Pre",
+    "provider": "google",
+    "import": "Edu_NSW_ACT_Hand_Pre",
+    "variable": "--font-edu-nsw-act-hand-pre",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

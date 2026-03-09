@@ -1,0 +1,30 @@
+{
+  "name": "encode-sans-condensed",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Encode Sans Condensed",
+  "description": "Encode Sans Condensed — Sans Serif font.",
+  "font": {
+    "family": "Encode Sans Condensed",
+    "provider": "google",
+    "import": "Encode_Sans_Condensed",
+    "variable": "--font-encode-sans-condensed",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "atkinson-hyperlegible-mono",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Atkinson Hyperlegible Mono",
+  "description": "Atkinson Hyperlegible Mono — Sans Serif font.",
+  "font": {
+    "family": "Atkinson Hyperlegible Mono",
+    "provider": "google",
+    "import": "Atkinson_Hyperlegible_Mono",
+    "variable": "--font-atkinson-hyperlegible-mono",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

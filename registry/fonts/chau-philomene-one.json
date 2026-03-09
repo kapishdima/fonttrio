@@ -1,0 +1,21 @@
+{
+  "name": "chau-philomene-one",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Chau Philomene One",
+  "description": "Chau Philomene One — Sans Serif font.",
+  "font": {
+    "family": "Chau Philomene One",
+    "provider": "google",
+    "import": "Chau_Philomene_One",
+    "variable": "--font-chau-philomene-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

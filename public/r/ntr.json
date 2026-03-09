@@ -1,0 +1,21 @@
+{
+  "name": "ntr",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "NTR",
+  "description": "NTR — Sans Serif font.",
+  "font": {
+    "family": "NTR",
+    "provider": "google",
+    "import": "NTR",
+    "variable": "--font-ntr",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

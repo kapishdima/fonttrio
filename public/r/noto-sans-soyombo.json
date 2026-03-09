@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-soyombo",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Soyombo",
+  "description": "Noto Sans Soyombo — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Soyombo",
+    "provider": "google",
+    "import": "Noto_Sans_Soyombo",
+    "variable": "--font-noto-sans-soyombo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "soyombo"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "noto-serif-tc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif TC",
+  "description": "Noto Serif TC — Serif font.",
+  "font": {
+    "family": "Noto Serif TC",
+    "provider": "google",
+    "import": "Noto_Serif_TC",
+    "variable": "--font-noto-serif-tc",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "chinese-traditional",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

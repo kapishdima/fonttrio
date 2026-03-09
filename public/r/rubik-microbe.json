@@ -1,0 +1,24 @@
+{
+  "name": "rubik-microbe",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Microbe",
+  "description": "Rubik Microbe — Display font.",
+  "font": {
+    "family": "Rubik Microbe",
+    "provider": "google",
+    "import": "Rubik_Microbe",
+    "variable": "--font-rubik-microbe",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "kings",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Kings",
+  "description": "Kings — Handwriting font.",
+  "font": {
+    "family": "Kings",
+    "provider": "google",
+    "import": "Kings",
+    "variable": "--font-kings",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

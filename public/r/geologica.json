@@ -1,0 +1,33 @@
+{
+  "name": "geologica",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Geologica",
+  "description": "Geologica — Sans Serif font.",
+  "font": {
+    "family": "Geologica",
+    "provider": "google",
+    "import": "Geologica",
+    "variable": "--font-geologica",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

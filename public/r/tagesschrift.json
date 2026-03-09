@@ -1,0 +1,21 @@
+{
+  "name": "tagesschrift",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Tagesschrift",
+  "description": "Tagesschrift — Display font.",
+  "font": {
+    "family": "Tagesschrift",
+    "provider": "google",
+    "import": "Tagesschrift",
+    "variable": "--font-tagesschrift",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

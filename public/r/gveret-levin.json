@@ -1,0 +1,21 @@
+{
+  "name": "gveret-levin",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Gveret Levin",
+  "description": "Gveret Levin — Handwriting font.",
+  "font": {
+    "family": "Gveret Levin",
+    "provider": "google",
+    "import": "Gveret_Levin",
+    "variable": "--font-gveret-levin",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "hebrew",
+      "latin"
+    ]
+  }
+}

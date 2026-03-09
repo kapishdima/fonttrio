@@ -1,0 +1,21 @@
+{
+  "name": "climate-crisis",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Climate Crisis",
+  "description": "Climate Crisis — Display font.",
+  "font": {
+    "family": "Climate Crisis",
+    "provider": "google",
+    "import": "Climate_Crisis",
+    "variable": "--font-climate-crisis",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

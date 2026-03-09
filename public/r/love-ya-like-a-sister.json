@@ -1,0 +1,21 @@
+{
+  "name": "love-ya-like-a-sister",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Love Ya Like A Sister",
+  "description": "Love Ya Like A Sister — Display font.",
+  "font": {
+    "family": "Love Ya Like A Sister",
+    "provider": "google",
+    "import": "Love_Ya_Like_A_Sister",
+    "variable": "--font-love-ya-like-a-sister",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

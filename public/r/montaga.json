@@ -1,0 +1,20 @@
+{
+  "name": "montaga",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Montaga",
+  "description": "Montaga — Serif font.",
+  "font": {
+    "family": "Montaga",
+    "provider": "google",
+    "import": "Montaga",
+    "variable": "--font-montaga",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

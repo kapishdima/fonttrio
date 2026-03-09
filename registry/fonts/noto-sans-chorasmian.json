@@ -1,0 +1,24 @@
+{
+  "name": "noto-sans-chorasmian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Chorasmian",
+  "description": "Noto Sans Chorasmian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Chorasmian",
+    "provider": "google",
+    "import": "Noto_Sans_Chorasmian",
+    "variable": "--font-noto-sans-chorasmian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "chorasmian",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

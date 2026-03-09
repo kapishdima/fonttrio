@@ -1,0 +1,30 @@
+{
+  "name": "ibm-plex-serif",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "IBM Plex Serif",
+  "description": "IBM Plex Serif — Serif font.",
+  "font": {
+    "family": "IBM Plex Serif",
+    "provider": "google",
+    "import": "IBM_Plex_Serif",
+    "variable": "--font-ibm-plex-serif",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

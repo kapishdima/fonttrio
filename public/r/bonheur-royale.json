@@ -1,0 +1,22 @@
+{
+  "name": "bonheur-royale",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Bonheur Royale",
+  "description": "Bonheur Royale — Handwriting font.",
+  "font": {
+    "family": "Bonheur Royale",
+    "provider": "google",
+    "import": "Bonheur_Royale",
+    "variable": "--font-bonheur-royale",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

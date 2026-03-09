@@ -1,0 +1,32 @@
+{
+  "name": "noto-sans-gujarati",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Gujarati",
+  "description": "Noto Sans Gujarati — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Gujarati",
+    "provider": "google",
+    "import": "Noto_Sans_Gujarati",
+    "variable": "--font-noto-sans-gujarati",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "gujarati",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols"
+    ]
+  }
+}

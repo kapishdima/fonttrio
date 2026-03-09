@@ -1,0 +1,26 @@
+{
+  "name": "teachers",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Teachers",
+  "description": "Teachers — Sans Serif font.",
+  "font": {
+    "family": "Teachers",
+    "provider": "google",
+    "import": "Teachers",
+    "variable": "--font-teachers",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "greek-ext",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

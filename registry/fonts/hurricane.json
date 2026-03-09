@@ -1,0 +1,22 @@
+{
+  "name": "hurricane",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Hurricane",
+  "description": "Hurricane — Handwriting font.",
+  "font": {
+    "family": "Hurricane",
+    "provider": "google",
+    "import": "Hurricane",
+    "variable": "--font-hurricane",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "architects-daughter",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Architects Daughter",
+  "description": "Architects Daughter — Handwriting font.",
+  "font": {
+    "family": "Architects Daughter",
+    "provider": "google",
+    "import": "Architects_Daughter",
+    "variable": "--font-architects-daughter",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

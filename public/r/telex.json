@@ -1,0 +1,21 @@
+{
+  "name": "telex",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Telex",
+  "description": "Telex — Sans Serif font.",
+  "font": {
+    "family": "Telex",
+    "provider": "google",
+    "import": "Telex",
+    "variable": "--font-telex",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

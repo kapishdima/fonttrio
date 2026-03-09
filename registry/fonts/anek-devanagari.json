@@ -1,0 +1,29 @@
+{
+  "name": "anek-devanagari",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anek Devanagari",
+  "description": "Anek Devanagari — Sans Serif font.",
+  "font": {
+    "family": "Anek Devanagari",
+    "provider": "google",
+    "import": "Anek_Devanagari",
+    "variable": "--font-anek-devanagari",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

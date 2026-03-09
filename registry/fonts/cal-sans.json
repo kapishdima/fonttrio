@@ -1,0 +1,22 @@
+{
+  "name": "cal-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Cal Sans",
+  "description": "Cal Sans — Sans Serif font.",
+  "font": {
+    "family": "Cal Sans",
+    "provider": "google",
+    "import": "Cal_Sans",
+    "variable": "--font-cal-sans",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

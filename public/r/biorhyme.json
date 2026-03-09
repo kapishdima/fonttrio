@@ -1,0 +1,27 @@
+{
+  "name": "biorhyme",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "BioRhyme",
+  "description": "BioRhyme — Serif font.",
+  "font": {
+    "family": "BioRhyme",
+    "provider": "google",
+    "import": "BioRhyme",
+    "variable": "--font-biorhyme",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

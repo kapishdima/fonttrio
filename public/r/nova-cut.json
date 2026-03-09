@@ -1,0 +1,21 @@
+{
+  "name": "nova-cut",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Nova Cut",
+  "description": "Nova Cut — Display font.",
+  "font": {
+    "family": "Nova Cut",
+    "provider": "google",
+    "import": "Nova_Cut",
+    "variable": "--font-nova-cut",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

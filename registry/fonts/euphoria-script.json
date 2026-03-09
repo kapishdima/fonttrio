@@ -1,0 +1,21 @@
+{
+  "name": "euphoria-script",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Euphoria Script",
+  "description": "Euphoria Script — Handwriting font.",
+  "font": {
+    "family": "Euphoria Script",
+    "provider": "google",
+    "import": "Euphoria_Script",
+    "variable": "--font-euphoria-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "noto-sans-phagspa",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans PhagsPa",
+  "description": "Noto Sans PhagsPa — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans PhagsPa",
+    "provider": "google",
+    "import": "Noto_Sans_PhagsPa",
+    "variable": "--font-noto-sans-phagspa",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "phags-pa",
+      "symbols"
+    ]
+  }
+}

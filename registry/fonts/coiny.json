@@ -1,0 +1,23 @@
+{
+  "name": "coiny",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Coiny",
+  "description": "Coiny — Display font.",
+  "font": {
+    "family": "Coiny",
+    "provider": "google",
+    "import": "Coiny",
+    "variable": "--font-coiny",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tamil",
+      "vietnamese"
+    ]
+  }
+}

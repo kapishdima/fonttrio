@@ -1,0 +1,21 @@
+{
+  "name": "angkor",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Angkor",
+  "description": "Angkor — Display font.",
+  "font": {
+    "family": "Angkor",
+    "provider": "google",
+    "import": "Angkor",
+    "variable": "--font-angkor",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin"
+    ]
+  }
+}

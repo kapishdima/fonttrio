@@ -1,0 +1,20 @@
+{
+  "name": "permanent-marker",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Permanent Marker",
+  "description": "Permanent Marker — Handwriting font.",
+  "font": {
+    "family": "Permanent Marker",
+    "provider": "google",
+    "import": "Permanent_Marker",
+    "variable": "--font-permanent-marker",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

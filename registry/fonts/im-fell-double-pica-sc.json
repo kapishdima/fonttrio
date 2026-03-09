@@ -1,0 +1,20 @@
+{
+  "name": "im-fell-double-pica-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "IM Fell Double Pica SC",
+  "description": "IM Fell Double Pica SC — Serif font.",
+  "font": {
+    "family": "IM Fell Double Pica SC",
+    "provider": "google",
+    "import": "IM_Fell_Double_Pica_SC",
+    "variable": "--font-im-fell-double-pica-sc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

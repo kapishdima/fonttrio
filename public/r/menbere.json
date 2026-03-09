@@ -1,0 +1,29 @@
+{
+  "name": "menbere",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Menbere",
+  "description": "Menbere — Sans Serif font.",
+  "font": {
+    "family": "Menbere",
+    "provider": "google",
+    "import": "Menbere",
+    "variable": "--font-menbere",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "ethiopic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

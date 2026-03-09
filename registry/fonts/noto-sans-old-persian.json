@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-old-persian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Old Persian",
+  "description": "Noto Sans Old Persian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Old Persian",
+    "provider": "google",
+    "import": "Noto_Sans_Old_Persian",
+    "variable": "--font-noto-sans-old-persian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "old-persian"
+    ]
+  }
+}

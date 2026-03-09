@@ -1,0 +1,27 @@
+{
+  "name": "libertinus-sans",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Libertinus Sans",
+  "description": "Libertinus Sans — Sans Serif font.",
+  "font": {
+    "family": "Libertinus Sans",
+    "provider": "google",
+    "import": "Libertinus_Sans",
+    "variable": "--font-libertinus-sans",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

@@ -9,7 +9,17 @@ import type { PairingData } from "./pairings";
 export type { FontItem } from "./registry";
 
 export function parseFontCategory(font: { category?: string; description: string }): string {
-  if (font.category) return font.category;
+  // Use category field if present, normalize it
+  if (font.category) {
+    const cat = font.category.toLowerCase().replace(/\s+/g, "-");
+    // Map common variations
+    if (cat === "sans-serif" || cat === "sans") return "sans-serif";
+    if (cat === "serif") return "serif";
+    if (cat === "monospace" || cat === "mono") return "monospace";
+    if (cat === "display") return "display";
+    if (cat === "handwriting") return "handwriting";
+    return cat;
+  }
   // Fallback: parse from description "Inter — Sans Serif font."
   const desc = font.description.toLowerCase();
   if (desc.includes("monospace") || desc.includes("mono")) return "monospace";

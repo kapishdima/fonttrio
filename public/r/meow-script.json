@@ -1,0 +1,22 @@
+{
+  "name": "meow-script",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Meow Script",
+  "description": "Meow Script — Handwriting font.",
+  "font": {
+    "family": "Meow Script",
+    "provider": "google",
+    "import": "Meow_Script",
+    "variable": "--font-meow-script",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

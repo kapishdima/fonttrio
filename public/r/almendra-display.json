@@ -1,0 +1,21 @@
+{
+  "name": "almendra-display",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Almendra Display",
+  "description": "Almendra Display — Display font.",
+  "font": {
+    "family": "Almendra Display",
+    "provider": "google",
+    "import": "Almendra_Display",
+    "variable": "--font-almendra-display",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

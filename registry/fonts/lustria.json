@@ -1,0 +1,20 @@
+{
+  "name": "lustria",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Lustria",
+  "description": "Lustria — Serif font.",
+  "font": {
+    "family": "Lustria",
+    "provider": "google",
+    "import": "Lustria",
+    "variable": "--font-lustria",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

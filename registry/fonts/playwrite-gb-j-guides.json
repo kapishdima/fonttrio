@@ -1,0 +1,19 @@
+{
+  "name": "playwrite-gb-j-guides",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite GB J Guides",
+  "description": "Playwrite GB J Guides — Handwriting font.",
+  "font": {
+    "family": "Playwrite GB J Guides",
+    "provider": "google",
+    "import": "Playwrite_GB_J_Guides",
+    "variable": "--font-playwrite-gb-j-guides",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

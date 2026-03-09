@@ -1,0 +1,21 @@
+{
+  "name": "molle",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Molle",
+  "description": "Molle — Handwriting font.",
+  "font": {
+    "family": "Molle",
+    "provider": "google",
+    "import": "Molle",
+    "variable": "--font-molle",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "unbounded",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Unbounded",
+  "description": "Unbounded — Sans Serif font.",
+  "font": {
+    "family": "Unbounded",
+    "provider": "google",
+    "import": "Unbounded",
+    "variable": "--font-unbounded",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

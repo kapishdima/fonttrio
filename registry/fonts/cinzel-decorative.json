@@ -1,0 +1,23 @@
+{
+  "name": "cinzel-decorative",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Cinzel Decorative",
+  "description": "Cinzel Decorative — Display font.",
+  "font": {
+    "family": "Cinzel Decorative",
+    "provider": "google",
+    "import": "Cinzel_Decorative",
+    "variable": "--font-cinzel-decorative",
+    "weight": [
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

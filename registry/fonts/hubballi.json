@@ -1,0 +1,22 @@
+{
+  "name": "hubballi",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Hubballi",
+  "description": "Hubballi — Sans Serif font.",
+  "font": {
+    "family": "Hubballi",
+    "provider": "google",
+    "import": "Hubballi",
+    "variable": "--font-hubballi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "kannada",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

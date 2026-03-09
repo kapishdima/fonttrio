@@ -1,0 +1,21 @@
+{
+  "name": "ultra",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Ultra",
+  "description": "Ultra — Serif font.",
+  "font": {
+    "family": "Ultra",
+    "provider": "google",
+    "import": "Ultra",
+    "variable": "--font-ultra",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

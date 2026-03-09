@@ -1,0 +1,24 @@
+{
+  "name": "rubik-wet-paint",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Wet Paint",
+  "description": "Rubik Wet Paint — Display font.",
+  "font": {
+    "family": "Rubik Wet Paint",
+    "provider": "google",
+    "import": "Rubik_Wet_Paint",
+    "variable": "--font-rubik-wet-paint",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

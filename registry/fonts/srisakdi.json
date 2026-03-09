@@ -1,0 +1,24 @@
+{
+  "name": "srisakdi",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Srisakdi",
+  "description": "Srisakdi — Display font.",
+  "font": {
+    "family": "Srisakdi",
+    "provider": "google",
+    "import": "Srisakdi",
+    "variable": "--font-srisakdi",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

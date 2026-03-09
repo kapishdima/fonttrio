@@ -1,0 +1,23 @@
+{
+  "name": "sura",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Sura",
+  "description": "Sura — Serif font.",
+  "font": {
+    "family": "Sura",
+    "provider": "google",
+    "import": "Sura",
+    "variable": "--font-sura",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "devanagari",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

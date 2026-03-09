@@ -1,0 +1,22 @@
+{
+  "name": "kdam-thmor-pro",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Kdam Thmor Pro",
+  "description": "Kdam Thmor Pro — Sans Serif font.",
+  "font": {
+    "family": "Kdam Thmor Pro",
+    "provider": "google",
+    "import": "Kdam_Thmor_Pro",
+    "variable": "--font-kdam-thmor-pro",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

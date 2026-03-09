@@ -1,0 +1,24 @@
+{
+  "name": "protest-revolution",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Protest Revolution",
+  "description": "Protest Revolution — Display font.",
+  "font": {
+    "family": "Protest Revolution",
+    "provider": "google",
+    "import": "Protest_Revolution",
+    "variable": "--font-protest-revolution",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ]
+  }
+}

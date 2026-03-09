@@ -1,0 +1,25 @@
+{
+  "name": "spline-sans-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Spline Sans Mono",
+  "description": "Spline Sans Mono — Monospace font.",
+  "font": {
+    "family": "Spline Sans Mono",
+    "provider": "google",
+    "import": "Spline_Sans_Mono",
+    "variable": "--font-spline-sans-mono",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

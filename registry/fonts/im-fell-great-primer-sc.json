@@ -1,0 +1,20 @@
+{
+  "name": "im-fell-great-primer-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "IM Fell Great Primer SC",
+  "description": "IM Fell Great Primer SC — Serif font.",
+  "font": {
+    "family": "IM Fell Great Primer SC",
+    "provider": "google",
+    "import": "IM_Fell_Great_Primer_SC",
+    "variable": "--font-im-fell-great-primer-sc",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

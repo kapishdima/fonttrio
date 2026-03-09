@@ -1,0 +1,25 @@
+{
+  "name": "noto-sans-bassa-vah",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Bassa Vah",
+  "description": "Noto Sans Bassa Vah — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Bassa Vah",
+    "provider": "google",
+    "import": "Noto_Sans_Bassa_Vah",
+    "variable": "--font-noto-sans-bassa-vah",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "bassa-vah",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

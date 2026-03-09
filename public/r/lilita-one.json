@@ -1,0 +1,21 @@
+{
+  "name": "lilita-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Lilita One",
+  "description": "Lilita One — Display font.",
+  "font": {
+    "family": "Lilita One",
+    "provider": "google",
+    "import": "Lilita_One",
+    "variable": "--font-lilita-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

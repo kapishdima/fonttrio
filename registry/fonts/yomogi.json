@@ -1,0 +1,24 @@
+{
+  "name": "yomogi",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Yomogi",
+  "description": "Yomogi — Handwriting font.",
+  "font": {
+    "family": "Yomogi",
+    "provider": "google",
+    "import": "Yomogi",
+    "variable": "--font-yomogi",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

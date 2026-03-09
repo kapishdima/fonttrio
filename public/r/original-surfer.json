@@ -1,0 +1,21 @@
+{
+  "name": "original-surfer",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Original Surfer",
+  "description": "Original Surfer — Display font.",
+  "font": {
+    "family": "Original Surfer",
+    "provider": "google",
+    "import": "Original_Surfer",
+    "variable": "--font-original-surfer",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

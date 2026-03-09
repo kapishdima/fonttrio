@@ -1,0 +1,21 @@
+{
+  "name": "slabo-13px",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Slabo 13px",
+  "description": "Slabo 13px — Serif font.",
+  "font": {
+    "family": "Slabo 13px",
+    "provider": "google",
+    "import": "Slabo_13px",
+    "variable": "--font-slabo-13px",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

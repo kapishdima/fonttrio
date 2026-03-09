@@ -1,0 +1,22 @@
+{
+  "name": "yuji-hentaigana-akebono",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Yuji Hentaigana Akebono",
+  "description": "Yuji Hentaigana Akebono — Handwriting font.",
+  "font": {
+    "family": "Yuji Hentaigana Akebono",
+    "provider": "google",
+    "import": "Yuji_Hentaigana_Akebono",
+    "variable": "--font-yuji-hentaigana-akebono",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "japanese",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

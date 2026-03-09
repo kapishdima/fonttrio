@@ -1,0 +1,27 @@
+{
+  "name": "manuale",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Manuale",
+  "description": "Manuale — Serif font.",
+  "font": {
+    "family": "Manuale",
+    "provider": "google",
+    "import": "Manuale",
+    "variable": "--font-manuale",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

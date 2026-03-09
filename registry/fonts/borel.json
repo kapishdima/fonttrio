@@ -1,0 +1,24 @@
+{
+  "name": "borel",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Borel",
+  "description": "Borel — Handwriting font.",
+  "font": {
+    "family": "Borel",
+    "provider": "google",
+    "import": "Borel",
+    "variable": "--font-borel",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ]
+  }
+}

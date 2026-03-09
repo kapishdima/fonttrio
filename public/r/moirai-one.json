@@ -1,0 +1,22 @@
+{
+  "name": "moirai-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Moirai One",
+  "description": "Moirai One — Display font.",
+  "font": {
+    "family": "Moirai One",
+    "provider": "google",
+    "import": "Moirai_One",
+    "variable": "--font-moirai-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

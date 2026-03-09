@@ -1,0 +1,21 @@
+{
+  "name": "amaranth",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Amaranth",
+  "description": "Amaranth — Sans Serif font.",
+  "font": {
+    "family": "Amaranth",
+    "provider": "google",
+    "import": "Amaranth",
+    "variable": "--font-amaranth",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

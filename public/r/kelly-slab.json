@@ -1,0 +1,22 @@
+{
+  "name": "kelly-slab",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Kelly Slab",
+  "description": "Kelly Slab — Display font.",
+  "font": {
+    "family": "Kelly Slab",
+    "provider": "google",
+    "import": "Kelly_Slab",
+    "variable": "--font-kelly-slab",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

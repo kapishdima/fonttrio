@@ -1,0 +1,30 @@
+{
+  "name": "tourney",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Tourney",
+  "description": "Tourney — Display font.",
+  "font": {
+    "family": "Tourney",
+    "provider": "google",
+    "import": "Tourney",
+    "variable": "--font-tourney",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

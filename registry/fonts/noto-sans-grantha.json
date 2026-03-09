@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-grantha",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Grantha",
+  "description": "Noto Sans Grantha — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Grantha",
+    "provider": "google",
+    "import": "Noto_Sans_Grantha",
+    "variable": "--font-noto-sans-grantha",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "grantha",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

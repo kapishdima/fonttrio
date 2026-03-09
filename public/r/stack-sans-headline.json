@@ -1,0 +1,26 @@
+{
+  "name": "stack-sans-headline",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Stack Sans Headline",
+  "description": "Stack Sans Headline — Sans Serif font.",
+  "font": {
+    "family": "Stack Sans Headline",
+    "provider": "google",
+    "import": "Stack_Sans_Headline",
+    "variable": "--font-stack-sans-headline",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

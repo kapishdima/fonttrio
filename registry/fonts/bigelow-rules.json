@@ -1,0 +1,21 @@
+{
+  "name": "bigelow-rules",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Bigelow Rules",
+  "description": "Bigelow Rules — Display font.",
+  "font": {
+    "family": "Bigelow Rules",
+    "provider": "google",
+    "import": "Bigelow_Rules",
+    "variable": "--font-bigelow-rules",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

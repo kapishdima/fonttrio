@@ -1,0 +1,21 @@
+{
+  "name": "averia-gruesa-libre",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Averia Gruesa Libre",
+  "description": "Averia Gruesa Libre — Display font.",
+  "font": {
+    "family": "Averia Gruesa Libre",
+    "provider": "google",
+    "import": "Averia_Gruesa_Libre",
+    "variable": "--font-averia-gruesa-libre",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

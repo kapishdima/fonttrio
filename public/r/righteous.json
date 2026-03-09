@@ -1,0 +1,21 @@
+{
+  "name": "righteous",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Righteous",
+  "description": "Righteous — Display font.",
+  "font": {
+    "family": "Righteous",
+    "provider": "google",
+    "import": "Righteous",
+    "variable": "--font-righteous",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

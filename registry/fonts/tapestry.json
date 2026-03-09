@@ -1,0 +1,22 @@
+{
+  "name": "tapestry",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Tapestry",
+  "description": "Tapestry — Handwriting font.",
+  "font": {
+    "family": "Tapestry",
+    "provider": "google",
+    "import": "Tapestry",
+    "variable": "--font-tapestry",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

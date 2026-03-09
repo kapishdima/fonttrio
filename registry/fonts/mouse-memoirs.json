@@ -1,0 +1,21 @@
+{
+  "name": "mouse-memoirs",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Mouse Memoirs",
+  "description": "Mouse Memoirs — Sans Serif font.",
+  "font": {
+    "family": "Mouse Memoirs",
+    "provider": "google",
+    "import": "Mouse_Memoirs",
+    "variable": "--font-mouse-memoirs",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

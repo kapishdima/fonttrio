@@ -1,0 +1,21 @@
+{
+  "name": "lakki-reddy",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Lakki Reddy",
+  "description": "Lakki Reddy — Handwriting font.",
+  "font": {
+    "family": "Lakki Reddy",
+    "provider": "google",
+    "import": "Lakki_Reddy",
+    "variable": "--font-lakki-reddy",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "telugu"
+    ]
+  }
+}

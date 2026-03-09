@@ -1,0 +1,22 @@
+{
+  "name": "nanum-gothic-coding",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Nanum Gothic Coding",
+  "description": "Nanum Gothic Coding — Handwriting font.",
+  "font": {
+    "family": "Nanum Gothic Coding",
+    "provider": "google",
+    "import": "Nanum_Gothic_Coding",
+    "variable": "--font-nanum-gothic-coding",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "korean",
+      "latin"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "wittgenstein",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Wittgenstein",
+  "description": "Wittgenstein — Serif font.",
+  "font": {
+    "family": "Wittgenstein",
+    "provider": "google",
+    "import": "Wittgenstein",
+    "variable": "--font-wittgenstein",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

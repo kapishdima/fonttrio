@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-tamil",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Tamil",
+  "description": "Noto Sans Tamil — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Tamil",
+    "provider": "google",
+    "import": "Noto_Sans_Tamil",
+    "variable": "--font-noto-sans-tamil",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "tamil"
+    ]
+  }
+}

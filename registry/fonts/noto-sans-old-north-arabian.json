@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-old-north-arabian",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Old North Arabian",
+  "description": "Noto Sans Old North Arabian — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Old North Arabian",
+    "provider": "google",
+    "import": "Noto_Sans_Old_North_Arabian",
+    "variable": "--font-noto-sans-old-north-arabian",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "old-north-arabian"
+    ]
+  }
+}

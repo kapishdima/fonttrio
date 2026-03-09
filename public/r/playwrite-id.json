@@ -1,0 +1,22 @@
+{
+  "name": "playwrite-id",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Playwrite ID",
+  "description": "Playwrite ID — Handwriting font.",
+  "font": {
+    "family": "Playwrite ID",
+    "provider": "google",
+    "import": "Playwrite_ID",
+    "variable": "--font-playwrite-id",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "subsets": [
+      "menu"
+    ]
+  }
+}

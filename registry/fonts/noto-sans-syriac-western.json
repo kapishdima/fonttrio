@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-syriac-western",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Syriac Western",
+  "description": "Noto Sans Syriac Western — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Syriac Western",
+    "provider": "google",
+    "import": "Noto_Sans_Syriac_Western",
+    "variable": "--font-noto-sans-syriac-western",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "syriac"
+    ]
+  }
+}

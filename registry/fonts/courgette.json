@@ -1,0 +1,21 @@
+{
+  "name": "courgette",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Courgette",
+  "description": "Courgette — Handwriting font.",
+  "font": {
+    "family": "Courgette",
+    "provider": "google",
+    "import": "Courgette",
+    "variable": "--font-courgette",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "kumar-one-outline",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Kumar One Outline",
+  "description": "Kumar One Outline — Display font.",
+  "font": {
+    "family": "Kumar One Outline",
+    "provider": "google",
+    "import": "Kumar_One_Outline",
+    "variable": "--font-kumar-one-outline",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "gujarati",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

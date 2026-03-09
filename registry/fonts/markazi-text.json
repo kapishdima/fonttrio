@@ -1,0 +1,26 @@
+{
+  "name": "markazi-text",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Markazi Text",
+  "description": "Markazi Text — Serif font.",
+  "font": {
+    "family": "Markazi Text",
+    "provider": "google",
+    "import": "Markazi_Text",
+    "variable": "--font-markazi-text",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "arabic",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

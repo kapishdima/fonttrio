@@ -1,0 +1,21 @@
+{
+  "name": "ewert",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Ewert",
+  "description": "Ewert — Display font.",
+  "font": {
+    "family": "Ewert",
+    "provider": "google",
+    "import": "Ewert",
+    "variable": "--font-ewert",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

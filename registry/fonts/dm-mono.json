@@ -1,0 +1,23 @@
+{
+  "name": "dm-mono",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "DM Mono",
+  "description": "DM Mono — Monospace font.",
+  "font": {
+    "family": "DM Mono",
+    "provider": "google",
+    "import": "DM_Mono",
+    "variable": "--font-dm-mono",
+    "weight": [
+      "300",
+      "400",
+      "500"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

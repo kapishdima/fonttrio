@@ -1,0 +1,21 @@
+{
+  "name": "bentham",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Bentham",
+  "description": "Bentham — Serif font.",
+  "font": {
+    "family": "Bentham",
+    "provider": "google",
+    "import": "Bentham",
+    "variable": "--font-bentham",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

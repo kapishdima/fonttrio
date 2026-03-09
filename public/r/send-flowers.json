@@ -1,0 +1,22 @@
+{
+  "name": "send-flowers",
+  "type": "registry:font",
+  "category": "Handwriting",
+  "title": "Send Flowers",
+  "description": "Send Flowers — Handwriting font.",
+  "font": {
+    "family": "Send Flowers",
+    "provider": "google",
+    "import": "Send_Flowers",
+    "variable": "--font-send-flowers",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

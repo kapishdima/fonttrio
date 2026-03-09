@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-samaritan",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Samaritan",
+  "description": "Noto Sans Samaritan — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Samaritan",
+    "provider": "google",
+    "import": "Noto_Sans_Samaritan",
+    "variable": "--font-noto-sans-samaritan",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "samaritan"
+    ]
+  }
+}

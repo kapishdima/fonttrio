@@ -1,0 +1,32 @@
+{
+  "name": "arima",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Arima",
+  "description": "Arima — Display font.",
+  "font": {
+    "family": "Arima",
+    "provider": "google",
+    "import": "Arima",
+    "variable": "--font-arima",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "malayalam",
+      "tamil",
+      "vietnamese"
+    ]
+  }
+}

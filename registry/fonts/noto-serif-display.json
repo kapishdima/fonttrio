@@ -1,0 +1,34 @@
+{
+  "name": "noto-serif-display",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Display",
+  "description": "Noto Serif Display — Serif font.",
+  "font": {
+    "family": "Noto Serif Display",
+    "provider": "google",
+    "import": "Noto_Serif_Display",
+    "variable": "--font-noto-serif-display",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

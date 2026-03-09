@@ -1,0 +1,21 @@
+{
+  "name": "rosarivo",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Rosarivo",
+  "description": "Rosarivo — Serif font.",
+  "font": {
+    "family": "Rosarivo",
+    "provider": "google",
+    "import": "Rosarivo",
+    "variable": "--font-rosarivo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "joti-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Joti One",
+  "description": "Joti One — Display font.",
+  "font": {
+    "family": "Joti One",
+    "provider": "google",
+    "import": "Joti_One",
+    "variable": "--font-joti-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "freehand",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Freehand",
+  "description": "Freehand — Display font.",
+  "font": {
+    "family": "Freehand",
+    "provider": "google",
+    "import": "Freehand",
+    "variable": "--font-freehand",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "khmer",
+      "latin"
+    ]
+  }
+}

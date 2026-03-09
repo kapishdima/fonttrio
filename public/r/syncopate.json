@@ -1,0 +1,22 @@
+{
+  "name": "syncopate",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Syncopate",
+  "description": "Syncopate — Sans Serif font.",
+  "font": {
+    "family": "Syncopate",
+    "provider": "google",
+    "import": "Syncopate",
+    "variable": "--font-syncopate",
+    "weight": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

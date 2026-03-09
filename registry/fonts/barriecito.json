@@ -1,0 +1,22 @@
+{
+  "name": "barriecito",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Barriecito",
+  "description": "Barriecito — Display font.",
+  "font": {
+    "family": "Barriecito",
+    "provider": "google",
+    "import": "Barriecito",
+    "variable": "--font-barriecito",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

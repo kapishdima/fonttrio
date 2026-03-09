@@ -1,0 +1,27 @@
+{
+  "name": "vollkorn-sc",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Vollkorn SC",
+  "description": "Vollkorn SC — Serif font.",
+  "font": {
+    "family": "Vollkorn SC",
+    "provider": "google",
+    "import": "Vollkorn_SC",
+    "variable": "--font-vollkorn-sc",
+    "weight": [
+      "400",
+      "600",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

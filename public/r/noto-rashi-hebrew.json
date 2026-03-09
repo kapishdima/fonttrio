@@ -1,0 +1,31 @@
+{
+  "name": "noto-rashi-hebrew",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Rashi Hebrew",
+  "description": "Noto Rashi Hebrew — Serif font.",
+  "font": {
+    "family": "Noto Rashi Hebrew",
+    "provider": "google",
+    "import": "Noto_Rashi_Hebrew",
+    "variable": "--font-noto-rashi-hebrew",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "greek-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

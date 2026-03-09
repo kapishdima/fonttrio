@@ -1,0 +1,29 @@
+{
+  "name": "anek-gujarati",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Anek Gujarati",
+  "description": "Anek Gujarati — Sans Serif font.",
+  "font": {
+    "family": "Anek Gujarati",
+    "provider": "google",
+    "import": "Anek_Gujarati",
+    "variable": "--font-anek-gujarati",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "menu",
+      "gujarati",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

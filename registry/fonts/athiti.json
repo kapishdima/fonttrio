@@ -1,0 +1,28 @@
+{
+  "name": "athiti",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Athiti",
+  "description": "Athiti — Sans Serif font.",
+  "font": {
+    "family": "Athiti",
+    "provider": "google",
+    "import": "Athiti",
+    "variable": "--font-athiti",
+    "weight": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "thai",
+      "vietnamese"
+    ]
+  }
+}

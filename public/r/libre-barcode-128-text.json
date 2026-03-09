@@ -1,0 +1,20 @@
+{
+  "name": "libre-barcode-128-text",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Libre Barcode 128 Text",
+  "description": "Libre Barcode 128 Text — Display font.",
+  "font": {
+    "family": "Libre Barcode 128 Text",
+    "provider": "google",
+    "import": "Libre_Barcode_128_Text",
+    "variable": "--font-libre-barcode-128-text",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin"
+    ]
+  }
+}

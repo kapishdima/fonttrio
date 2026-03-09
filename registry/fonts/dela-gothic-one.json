@@ -1,0 +1,25 @@
+{
+  "name": "dela-gothic-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Dela Gothic One",
+  "description": "Dela Gothic One — Display font.",
+  "font": {
+    "family": "Dela Gothic One",
+    "provider": "google",
+    "import": "Dela_Gothic_One",
+    "variable": "--font-dela-gothic-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "greek",
+      "japanese",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

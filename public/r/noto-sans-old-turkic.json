@@ -1,0 +1,22 @@
+{
+  "name": "noto-sans-old-turkic",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Old Turkic",
+  "description": "Noto Sans Old Turkic — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Old Turkic",
+    "provider": "google",
+    "import": "Noto_Sans_Old_Turkic",
+    "variable": "--font-noto-sans-old-turkic",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "old-turkic"
+    ]
+  }
+}

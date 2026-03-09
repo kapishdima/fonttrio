@@ -1,0 +1,30 @@
+{
+  "name": "noto-sans-cherokee",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Noto Sans Cherokee",
+  "description": "Noto Sans Cherokee — Sans Serif font.",
+  "font": {
+    "family": "Noto Sans Cherokee",
+    "provider": "google",
+    "import": "Noto_Sans_Cherokee",
+    "variable": "--font-noto-sans-cherokee",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cherokee",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "rubik-puddles",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Rubik Puddles",
+  "description": "Rubik Puddles — Display font.",
+  "font": {
+    "family": "Rubik Puddles",
+    "provider": "google",
+    "import": "Rubik_Puddles",
+    "variable": "--font-rubik-puddles",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "hebrew",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

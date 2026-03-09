@@ -1,0 +1,22 @@
+{
+  "name": "major-mono-display",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Major Mono Display",
+  "description": "Major Mono Display — Monospace font.",
+  "font": {
+    "family": "Major Mono Display",
+    "provider": "google",
+    "import": "Major_Mono_Display",
+    "variable": "--font-major-mono-display",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}

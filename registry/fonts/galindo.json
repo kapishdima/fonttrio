@@ -1,0 +1,21 @@
+{
+  "name": "galindo",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Galindo",
+  "description": "Galindo — Display font.",
+  "font": {
+    "family": "Galindo",
+    "provider": "google",
+    "import": "Galindo",
+    "variable": "--font-galindo",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

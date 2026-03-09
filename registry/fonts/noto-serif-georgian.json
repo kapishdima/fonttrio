@@ -1,0 +1,30 @@
+{
+  "name": "noto-serif-georgian",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Georgian",
+  "description": "Noto Serif Georgian — Serif font.",
+  "font": {
+    "family": "Noto Serif Georgian",
+    "provider": "google",
+    "import": "Noto_Serif_Georgian",
+    "variable": "--font-noto-serif-georgian",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "georgian",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

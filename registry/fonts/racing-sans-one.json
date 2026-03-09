@@ -1,0 +1,21 @@
+{
+  "name": "racing-sans-one",
+  "type": "registry:font",
+  "category": "Display",
+  "title": "Racing Sans One",
+  "description": "Racing Sans One — Display font.",
+  "font": {
+    "family": "Racing Sans One",
+    "provider": "google",
+    "import": "Racing_Sans_One",
+    "variable": "--font-racing-sans-one",
+    "weight": [
+      "400"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext"
+    ]
+  }
+}

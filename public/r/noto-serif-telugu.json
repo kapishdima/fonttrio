@@ -1,0 +1,30 @@
+{
+  "name": "noto-serif-telugu",
+  "type": "registry:font",
+  "category": "Serif",
+  "title": "Noto Serif Telugu",
+  "description": "Noto Serif Telugu — Serif font.",
+  "font": {
+    "family": "Noto Serif Telugu",
+    "provider": "google",
+    "import": "Noto_Serif_Telugu",
+    "variable": "--font-noto-serif-telugu",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "latin",
+      "latin-ext",
+      "telugu"
+    ]
+  }
+}
