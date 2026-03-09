@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Plus, Check, AlertCircle } from "lucide-react";
 import type { FontItem } from "@/lib/fonts";
 import { parseFontCategory } from "@/lib/fonts";
 import type { PairingData } from "@/lib/pairings";
@@ -13,6 +14,7 @@ import { SectionLabel } from "@/app/components/section-label";
 import { AnimatedLayout } from "@/app/components/animated-layout";
 import { InstallCommand } from "@/app/components/install-command";
 import { PairingCard } from "@/app/components/pairing-card";
+import { useFontSelection } from "@/lib/hooks/use-font-selection";
 
 const DEFAULT_TEXT =
   "The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs.";
@@ -48,9 +50,22 @@ interface FontDetailProps {
 
 export function FontDetail({ font, relatedPairings, allWeightsUrl }: FontDetailProps) {
   const [size, setSize] = useState(64);
+  const { isSelected, toggleFont, isMaxReached } = useFontSelection();
+  const [showMaxWarning, setShowMaxWarning] = useState(false);
   const category = parseFontCategory(font);
   const fontFamily = `"${font.font.family}", ${category}`;
   const availableWeights = font.font.weight.map(Number);
+  
+  const selected = isSelected(font.name);
+  
+  const handleToggle = () => {
+    const added = toggleFont(font.name);
+    if (!added && !selected) {
+      // Show warning if max limit reached
+      setShowMaxWarning(true);
+      setTimeout(() => setShowMaxWarning(false), 3000);
+    }
+  };
 
   return (
     <>
@@ -102,6 +117,42 @@ export function FontDetail({ font, relatedPairings, allWeightsUrl }: FontDetailP
               {/* Install Command */}
               <div className="p-4">
                 <InstallCommand.Full pairingName={font.name} />
+              </div>
+
+              {/* Add to Selection */}
+              <div className="px-4 pb-4 border-t border-border pt-4">
+                <div className="flex items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={handleToggle}
+                    className={`flex items-center gap-2 px-4 py-2 text-sm font-medium border transition-colors ${
+                      selected
+                        ? "bg-foreground text-background border-foreground hover:bg-foreground/90"
+                        : "bg-transparent text-foreground border-border hover:border-foreground"
+                    }`}
+                    aria-pressed={selected}
+                    aria-label={selected ? "Remove from selection" : "Add to selection"}
+                  >
+                    {selected ? (
+                      <>
+                        <Check className="size-4" aria-hidden="true" />
+                        <span>Added to selection</span>
+                      </>
+                    ) : (
+                      <>
+                        <Plus className="size-4" aria-hidden="true" />
+                        <span>Add to selection</span>
+                      </>
+                    )}
+                  </button>
+                  
+                  {showMaxWarning && (
+                    <span className="flex items-center gap-1.5 text-xs text-destructive">
+                      <AlertCircle className="size-3.5" aria-hidden="true" />
+                      Max {isMaxReached} fonts allowed
+                    </span>
+                  )}
+                </div>
               </div>
 
             </div>

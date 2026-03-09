@@ -4,6 +4,7 @@ import "./globals.css";
 import { AllFontsLoader } from "./components/all-fonts-loader";
 import { ThemeProvider } from "./components/theme-provider";
 import { PackageManagerProvider } from "@/lib/contexts/package-manager-context";
+import { FloatingFontPanel } from "./components/floating-font-panel";
 
 import { Analytics } from "@vercel/analytics/next";
 import { NuqsAdapter } from "nuqs/adapters/next";
@@ -103,6 +104,7 @@ export default function RootLayout({
               Skip to main content
             </a>
             {children}
+            <FloatingFontPanel />
           </PackageManagerProvider>
           </Suspense>
           </NuqsAdapter>

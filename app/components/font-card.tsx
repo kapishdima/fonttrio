@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Check, Copy, ArrowRight } from "lucide-react";
 import type { FontItem } from "@/lib/fonts";
 import { parseFontCategory, getFontGoogleFontsUrl } from "@/lib/fonts";
@@ -21,6 +22,12 @@ export function FontCard({ font }: FontCardProps) {
   const googleFontsUrl = getFontGoogleFontsUrl(font);
   const { ref, loaded } = useLazyFontLoad(googleFontsUrl);
   const category = parseFontCategory(font);
+  const searchParams = useSearchParams();
+  
+  // Preserve query params when navigating
+  const href = searchParams.toString()
+    ? `/fonts/${font.name}?${searchParams.toString()}`
+    : `/fonts/${font.name}`;
 
   const handleCopy = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -32,7 +39,7 @@ export function FontCard({ font }: FontCardProps) {
 
   return (
     <Link
-      href={`/fonts/${font.name}`}
+      href={href}
       className="group flex flex-col border-r border-b border-border hover:bg-surface/40 transition-[background-color] bg-background"
       ref={ref as React.Ref<HTMLAnchorElement>}
     >

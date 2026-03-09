@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Logo } from "./logo";
 import { ThemeToggle } from "./theme-toggle";
 import { XIcon, GitHubIcon } from "./icons";
@@ -44,26 +45,34 @@ function SponsorButton({ className = "" }: { className?: string }) {
   );
 }
 
+function useHrefWithParams(baseHref: string): string {
+  const searchParams = useSearchParams();
+  return searchParams.toString() ? `${baseHref}?${searchParams.toString()}` : baseHref;
+}
+
 export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const homeHref = useHrefWithParams("/");
+  const pairingsHref = useHrefWithParams("/pairings");
+  const fontsHref = useHrefWithParams("/fonts");
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 border-b border-border backdrop-blur-sm">
       <div className="px-4 lg:px-12 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
+        <Link href={homeHref} className="flex items-center gap-3 hover:opacity-70 transition-opacity">
           <Logo.Text size="sm" />
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden sm:flex items-center gap-2">
           <Link
-            href="/pairings"
+            href={pairingsHref}
             className="flex items-center justify-center gap-2 px-4 py-3 text-sm sm:text-xs uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors min-h-[44px]"
           >
             Pairings
           </Link>
           <Link
-            href="/fonts"
+            href={fontsHref}
             className="flex items-center justify-center gap-2 px-4 py-3 text-sm sm:text-xs uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors min-h-[44px]"
           >
             Fonts
@@ -92,14 +101,14 @@ export function SiteHeader() {
         <div className="sm:hidden border-t border-border bg-background/95 backdrop-blur-sm">
           <div className="px-4 py-4 space-y-4">
             <Link
-              href="/pairings"
+              href={pairingsHref}
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center w-full px-4 py-3 text-sm uppercase tracking-wider border border-border hover:bg-surface transition-colors min-h-[44px]"
             >
               Browse Pairings
             </Link>
             <Link
-              href="/fonts"
+              href={fontsHref}
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center w-full px-4 py-3 text-sm uppercase tracking-wider border border-border hover:bg-surface transition-colors min-h-[44px]"
             >

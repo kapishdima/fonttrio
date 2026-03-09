@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import type { PairingData } from "@/lib/pairings";
 import { ArrowRight, Check, Copy } from "lucide-react";
 import { useCopyToClipboard } from "@/lib/hooks/use-copy-to-clipboard";
@@ -19,6 +20,12 @@ export function PairingCard({ pairing }: PairingCardProps) {
   const { packageManager } = usePackageManagerContext();
   const command = buildInstallCommand(pairing.name, packageManager);
   const { copied, copy } = useCopyToClipboard(command);
+  const searchParams = useSearchParams();
+  
+  // Preserve query params when navigating
+  const href = searchParams.toString()
+    ? `/${pairing.name}?${searchParams.toString()}`
+    : `/${pairing.name}`;
 
   const handleCopy = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -28,7 +35,7 @@ export function PairingCard({ pairing }: PairingCardProps) {
 
   return (
     <Link
-      href={`/${pairing.name}`}
+      href={href}
       className="group flex flex-col border-r border-b border-border hover:bg-surface/40 transition-[background-color] bg-background"
     >
       {/* Preview Area — fixed height */}

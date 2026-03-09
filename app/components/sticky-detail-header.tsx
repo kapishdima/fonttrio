@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 
 interface StickyDetailHeaderProps {
@@ -18,6 +19,12 @@ export function StickyDetailHeader({
   backLabel,
 }: StickyDetailHeaderProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const searchParams = useSearchParams();
+  
+  // Preserve query params when navigating back
+  const backHrefWithParams = searchParams.toString() 
+    ? `${backHref}?${searchParams.toString()}` 
+    : backHref;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +43,7 @@ export function StickyDetailHeader({
     <div className="fixed top-16 left-0 right-0 z-40 bg-background/95 border-b border-border backdrop-blur-sm">
       <div className="px-4 lg:px-8 h-14 flex items-center">
         <Link
-          href={backHref}
+          href={backHrefWithParams}
           className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors shrink-0"
         >
           <ArrowLeft className="size-4" />

@@ -37,3 +37,16 @@ export function buildInstallCommand(
 export function buildDisplayCommand(pairingName: string): string {
   return `shadcn add ${pairingName}`;
 }
+
+// Build install command for multiple fonts
+export function buildMultiInstallCommand(
+  fontNames: string[],
+  packageManager: PackageManager = "npm"
+): string {
+  if (fontNames.length === 0) return "";
+  
+  const pm = PACKAGE_MANAGERS.find((p) => p.key === packageManager) || PACKAGE_MANAGERS[0];
+  const fontList = fontNames.map((name) => `${REGISTRY_PREFIX}${name}`).join(" ");
+  
+  return `${pm.command} shadcn@latest add ${fontList}`;
+}
