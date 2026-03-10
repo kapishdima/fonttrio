@@ -110,13 +110,13 @@ export function LandingClient({
 											href={sponsor.url}
 											target="_blank"
 											rel="noopener noreferrer"
-											className="group flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+											className="group flex items-center gap-2 text-foreground font-medium"
 										>
 											<SponsorLogo
 												sponsor={sponsor}
 												className="w-auto h-10 object-cover "
 											/>
-											<span className="text-xs font-medium">
+											<span className="text-xl font-medium">
 												{sponsor.name}
 											</span>
 										</a>

@@ -26,6 +26,14 @@ export const SPONSORS: Sponsor[] = [
     logoDark: "https://shadcnspace.com/images/logo/shadcnspace-white.svg",
     url: "https://shadcnspace.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver"
+  },
+  {
+    id: "3",
+    name: "",
+    logo: "/sponsors/shoogle.svg",
+    logoDark: "/sponsors/shoogle-dark.svg",
+    url: "https://shoogle.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    tier: "silver"
   }
 ];
 

@@ -98,7 +98,7 @@ export default function SponsorsPage() {
 														</div>
 													</div>
 												)}
-												<ExternalLink className="size-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+												{/* <ExternalLink className="size-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" /> */}
 											</a>
 										))}
 									</div>
@@ -117,13 +117,13 @@ export default function SponsorsPage() {
 												href={sponsor.url}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="group flex items-center gap-3 p-4 border border-border bg-surface/50 hover:bg-surface transition-colors"
+												className="group flex items-center justify-center gap-3 p-4 border border-border bg-surface/50 hover:bg-surface transition-colors"
 											>
 												<div className="max-w-40 bg-muted rounded flex items-center justify-center shrink-0">
 													{sponsor.logo ? (
 														<SponsorLogo
 															sponsor={sponsor}
-															className="size-full object-contain"
+															className="size-full object-contain mt-1"
 														/>
 													) : (
 														<span className="text-base font-bold">
@@ -131,11 +131,11 @@ export default function SponsorsPage() {
 														</span>
 													)}
 												</div>
-												<div className="flex-1 min-w-0">
+												{/* <div className="flex-1 min-w-0">
 													<div className="text-sm font-medium truncate">
 														{sponsor.name}
 													</div>
-												</div>
+												</div> */}
 											</a>
 										))}
 									</div>
