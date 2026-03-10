@@ -18,6 +18,14 @@ export const SPONSORS: Sponsor[] = [
     logoDark: "/sponsors/slidesai-logo-dark.svg",
     url: "https://www.slidesai.io?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "gold"
+  },
+  {
+    id: "2",
+    name: "",
+    logo: "https://shadcnspace.com/images/logo/shadcnspace.svg",
+    logoDark: "https://shadcnspace.com/images/logo/shadcnspace-white.svg",
+    url: "https://shadcnspace.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    tier: "silver"
   }
 ];
 
