@@ -13,18 +13,15 @@ Building a typography system from scratch is time-consuming. Finding fonts that 
 ## Features
 
 - **49 Curated Pairings** — From editorial to corporate, minimal to bold
-- **Complete Typography Scale** — Each pairing includes h1 through body sizing
 - **CSS Variables** — Ready-to-use CSS custom properties for easy theming
 - **One Command Install** — Add any pairing to your project instantly
-- **Google Fonts Integration** — All fonts loaded from Google Fonts CDN
-- **Dark Mode Ready** — Works seamlessly with shadcn/ui's theming system
 
 ## Quick Start
 
 ### Install a pairing
 
 ```bash
-npx shadcn@latest add https://www.fonttrio.xyz/r/editorial.json
+npx shadcn@latest add @fonttrio/editorial
 ```
 
 Replace `editorial` with any pairing name from our collection.
@@ -40,15 +37,42 @@ Once installed, the pairing automatically sets up CSS variables:
 --font-mono
 ```
 
-Apply them in your components:
+Automatically apply:
 
-```tsx
-<h1 className="font-[family-name:var(--font-heading)]">
-  Your Heading
-</h1>
-<p className="font-[family-name:var(--font-body)]">
-  Your body text
-</p>
+```css
+h1 {
+  @apply font-fira-code;
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+}
+body, p {
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+code, pre {
+  font-family: var(--font-mono);
+}
 ```
 
 ## Browse Pairings
@@ -56,7 +80,6 @@ Apply them in your components:
 Visit [fonttrio.dev](https://www.fonttrio.xyz) to browse all available pairings. Each pairing page includes:
 
 - Live preview with actual fonts
-- Typography scale visualization
 - Type tester for custom text
 - Context previews (blog, landing, docs)
 - One-click install command
@@ -102,34 +125,6 @@ Fonttrio uses the shadcn/ui registry system to distribute font pairings. When yo
 3. Typography scale is applied through CSS
 4. All components can use the font variables immediately
 
-## Requirements
-
-- Next.js 14+ with App Router
-- shadcn/ui installed
-- Tailwind CSS
-
-## Customization
-
-Each pairing comes with sensible defaults, but you can customize:
-
-### Change scale
-Edit the CSS variables in your `globals.css`:
-
-```css
-:root {
-  --font-heading: var(--font-your-choice);
-  --font-body: var(--font-your-choice);
-  --font-mono: var(--font-your-choice);
-}
-```
-
-### Mix and match
-Install multiple pairings and switch between them:
-
-```bash
-npx shadcn@latest add https://www.fonttrio.xyz/r/minimal.json
-npx shadcn@latest add https://www.fonttrio.xyz/r/editorial.json
-```
 
 ## Contributing
 
@@ -143,6 +138,3 @@ MIT — Use these pairings in any project, commercial or personal.
 
 Built by [Dima Kapish](https://x.com/kapish_dima) for the shadcn/ui community.
 
----
-
-**Fonttrio** — Because life's too short for bad typography.
