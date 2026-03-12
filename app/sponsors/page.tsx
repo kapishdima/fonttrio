@@ -119,7 +119,7 @@ export default function SponsorsPage() {
 												rel="noopener noreferrer"
 												className="group flex items-center justify-center gap-3 p-4 border border-border bg-surface/50 hover:bg-surface transition-colors"
 											>
-												<div className="max-w-40 bg-muted rounded flex items-center justify-center shrink-0">
+												<div className="max-w-40  rounded flex items-center justify-center shrink-0">
 													{sponsor.logo ? (
 														<SponsorLogo
 															sponsor={sponsor}

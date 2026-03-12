@@ -42,6 +42,14 @@ export const SPONSORS: Sponsor[] = [
     logoDark: "/sponsors/shadcnblocks-dark.svg",
     url: "https://shadcnblocks.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver"
+  },
+  {
+    id: "5",
+    name: "",
+    logo: "https://cdn.shadcnstudio.com/ss-assets/marketing/shadcn-studio-logos/shadcn-studio-light-full-logo.png",
+    logoDark: "https://cdn.shadcnstudio.com/ss-assets/marketing/shadcn-studio-logos/shadcn-studio-dark-full-logo.png",
+    url: "https://shadcnstudio.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    tier: "silver"
   }
 ];
 
