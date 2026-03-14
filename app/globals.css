@@ -2,6 +2,11 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@keyframes levitate {
+  0%, 100% { translate: 0 0; }
+  50%       { translate: 0 var(--float-amp); }
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
