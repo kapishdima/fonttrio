@@ -21,6 +21,12 @@ const HERO_DELAY =
 	(SCATTER_CONFIG.count - 1) * CHAOS_STAGGER + CHAOS_DURATION * 0.6;
 const HERO_STAGGER = 0.25;
 
+const EFFECT_RADIUS = 250;
+const MAX_REPULSE = 30;
+const MAX_SCALE = 1.4;
+const BASE_OPACITY = 0.4;
+const MAX_OPACITY = 1.0;
+
 const heroVariants = {
 	hidden: { scale: 0.8, opacity: 0, filter: "blur(12px)" },
 	visible: { scale: 1, opacity: 1, filter: "blur(0px)" },
@@ -122,7 +128,7 @@ export default function Redesign04() {
 		);
 	}, []);
 
-	// Pointer-tracks rotation: no getBoundingClientRect — uses stored x/y as centers.
+	// Pointer-driven repulsion + progressive scale/opacity.
 	// rAF-throttled so at most one DOM write per frame.
 	useEffect(() => {
 		if (!fonts.length) return;
@@ -136,11 +142,30 @@ export default function Redesign04() {
 			elemsRef.current.forEach((el, i) => {
 				const font = fonts[i];
 				if (!el || !font) return;
-				const b = px - font.x;
-				const a = py - font.y;
-				const c = Math.sqrt(a * a + b * b) || 1;
-				const r = ((Math.acos(b / c) * 180) / Math.PI) * (py > font.y ? 1 : -1);
-				el.style.setProperty("--rotate", `${r}deg`);
+				const dx = font.x - px;
+				const dy = font.y - py;
+				const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+
+				if (dist > EFFECT_RADIUS) {
+					el.style.setProperty("--repulse-x", "0px");
+					el.style.setProperty("--repulse-y", "0px");
+					el.style.setProperty("--cursor-scale", "1");
+					el.style.setProperty("--cursor-opacity", `${BASE_OPACITY}`);
+					return;
+				}
+
+				const t = 1 - dist / EFFECT_RADIUS;
+				const eased = 1 - (1 - t) ** 3;
+
+				const repulseX = (dx / dist) * eased * MAX_REPULSE;
+				const repulseY = (dy / dist) * eased * MAX_REPULSE;
+				const scale = 1 + eased * (MAX_SCALE - 1);
+				const opacity = BASE_OPACITY + eased * (MAX_OPACITY - BASE_OPACITY);
+
+				el.style.setProperty("--repulse-x", `${repulseX}px`);
+				el.style.setProperty("--repulse-y", `${repulseY}px`);
+				el.style.setProperty("--cursor-scale", `${scale}`);
+				el.style.setProperty("--cursor-opacity", `${opacity}`);
 			});
 		};
 
@@ -150,9 +175,21 @@ export default function Redesign04() {
 			if (!rafId) rafId = requestAnimationFrame(tick);
 		};
 
+		const onPointerLeave = () => {
+			elemsRef.current.forEach((el) => {
+				if (!el) return;
+				el.style.setProperty("--repulse-x", "0px");
+				el.style.setProperty("--repulse-y", "0px");
+				el.style.setProperty("--cursor-scale", "1");
+				el.style.setProperty("--cursor-opacity", `${BASE_OPACITY}`);
+			});
+		};
+
 		window.addEventListener("pointermove", onPointerMove, { passive: true });
+		document.documentElement.addEventListener("pointerleave", onPointerLeave);
 		return () => {
 			window.removeEventListener("pointermove", onPointerMove);
+			document.documentElement.removeEventListener("pointerleave", onPointerLeave);
 			if (rafId) cancelAnimationFrame(rafId);
 		};
 	}, [fonts]);
@@ -284,11 +321,19 @@ const ChaosFont = React.forwardRef<
 				style={{
 					"--rotate": `${item.rotation}deg`,
 					"--float-amp": `${item.floatAmplitude}px`,
+					"--repulse-x": "0px",
+					"--repulse-y": "0px",
+					"--cursor-scale": "1",
+					"--cursor-opacity": `${BASE_OPACITY}`,
 					animation: `levitate ${item.floatDuration}s ease-in-out ${item.floatDelay}s infinite`,
-					transform: "rotate(var(--rotate))",
+					transform: "rotate(var(--rotate)) translate(var(--repulse-x), var(--repulse-y)) scale(var(--cursor-scale))",
+					transition: "transform 0.3s ease-out",
 				}}
 			>
-				<p className="text-sm text-black/40 whitespace-nowrap select-none">
+				<p
+					className="text-sm text-black whitespace-nowrap select-none"
+					style={{ opacity: "var(--cursor-opacity)", transition: "opacity 0.3s ease-out" }}
+				>
 					{item.label}
 				</p>
 			</div>
