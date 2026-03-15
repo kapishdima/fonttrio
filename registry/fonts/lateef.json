@@ -23,6 +23,7 @@
       "arabic",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/lateef"
   }
 }

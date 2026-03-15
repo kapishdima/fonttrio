@@ -5,7 +5,7 @@
   "title": "Montserrat",
   "description": "Montserrat — Sans Serif font.",
   "font": {
-    "family": "Montserrat",
+    "family": "Montserrat Variable",
     "provider": "google",
     "import": "Montserrat",
     "variable": "--font-montserrat",

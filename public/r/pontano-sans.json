@@ -5,7 +5,7 @@
   "title": "Pontano Sans",
   "description": "Pontano Sans — Sans Serif font.",
   "font": {
-    "family": "Pontano Sans",
+    "family": "Pontano Sans Variable",
     "provider": "google",
     "import": "Pontano_Sans",
     "variable": "--font-pontano-sans",

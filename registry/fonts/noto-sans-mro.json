@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "mro"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-mro"
   }
 }

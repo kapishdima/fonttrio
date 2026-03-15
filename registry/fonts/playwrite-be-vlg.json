@@ -5,7 +5,7 @@
   "title": "Playwrite BE VLG",
   "description": "Playwrite BE VLG — Handwriting font.",
   "font": {
-    "family": "Playwrite BE VLG",
+    "family": "Playwrite BE VLG Variable",
     "provider": "google",
     "import": "Playwrite_BE_VLG",
     "variable": "--font-playwrite-be-vlg",

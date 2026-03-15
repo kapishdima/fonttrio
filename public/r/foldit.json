@@ -5,7 +5,7 @@
   "title": "Foldit",
   "description": "Foldit — Display font.",
   "font": {
-    "family": "Foldit",
+    "family": "Foldit Variable",
     "provider": "google",
     "import": "Foldit",
     "variable": "--font-foldit",

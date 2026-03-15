@@ -17,6 +17,7 @@
       "japanese",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/shippori-antique"
   }
 }

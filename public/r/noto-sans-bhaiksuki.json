@@ -17,6 +17,7 @@
       "bhaiksuki",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-bhaiksuki"
   }
 }

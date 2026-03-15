@@ -5,7 +5,7 @@
   "title": "Noto Sans Kannada",
   "description": "Noto Sans Kannada — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Kannada",
+    "family": "Noto Sans Kannada Variable",
     "provider": "google",
     "import": "Noto_Sans_Kannada",
     "variable": "--font-noto-sans-kannada",

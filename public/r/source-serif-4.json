@@ -5,7 +5,7 @@
   "title": "Source Serif 4",
   "description": "Source Serif 4 — Serif font.",
   "font": {
-    "family": "Source Serif 4",
+    "family": "Source Serif 4 Variable",
     "provider": "google",
     "import": "Source_Serif_4",
     "variable": "--font-source-serif-4",

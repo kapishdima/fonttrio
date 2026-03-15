@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "old-persian"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-old-persian"
   }
 }

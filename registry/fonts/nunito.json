@@ -5,7 +5,7 @@
   "title": "Nunito",
   "description": "Nunito — Sans Serif font.",
   "font": {
-    "family": "Nunito",
+    "family": "Nunito Variable",
     "provider": "google",
     "import": "Nunito",
     "variable": "--font-nunito",

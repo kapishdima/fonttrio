@@ -5,7 +5,7 @@
   "title": "Noto Sans Cham",
   "description": "Noto Sans Cham — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Cham",
+    "family": "Noto Sans Cham Variable",
     "provider": "google",
     "import": "Noto_Sans_Cham",
     "variable": "--font-noto-sans-cham",

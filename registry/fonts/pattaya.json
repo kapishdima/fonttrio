@@ -19,6 +19,7 @@
       "latin-ext",
       "thai",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/pattaya"
   }
 }

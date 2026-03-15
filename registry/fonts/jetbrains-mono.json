@@ -5,7 +5,7 @@
   "title": "JetBrains Mono",
   "description": "JetBrains Mono — Monospace font.",
   "font": {
-    "family": "JetBrains Mono",
+    "family": "JetBrains Mono Variable",
     "provider": "google",
     "import": "JetBrains_Mono",
     "variable": "--font-jetbrains-mono",

@@ -5,7 +5,7 @@
   "title": "Vazirmatn",
   "description": "Vazirmatn — Sans Serif font.",
   "font": {
-    "family": "Vazirmatn",
+    "family": "Vazirmatn Variable",
     "provider": "google",
     "import": "Vazirmatn",
     "variable": "--font-vazirmatn",

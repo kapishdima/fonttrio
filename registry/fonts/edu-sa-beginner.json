@@ -5,7 +5,7 @@
   "title": "Edu SA Beginner",
   "description": "Edu SA Beginner — Handwriting font.",
   "font": {
-    "family": "Edu SA Beginner",
+    "family": "Edu SA Beginner Variable",
     "provider": "google",
     "import": "Edu_SA_Beginner",
     "variable": "--font-edu-sa-beginner",

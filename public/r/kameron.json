@@ -5,7 +5,7 @@
   "title": "Kameron",
   "description": "Kameron — Serif font.",
   "font": {
-    "family": "Kameron",
+    "family": "Kameron Variable",
     "provider": "google",
     "import": "Kameron",
     "variable": "--font-kameron",

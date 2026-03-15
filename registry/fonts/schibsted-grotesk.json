@@ -5,7 +5,7 @@
   "title": "Schibsted Grotesk",
   "description": "Schibsted Grotesk — Sans Serif font.",
   "font": {
-    "family": "Schibsted Grotesk",
+    "family": "Schibsted Grotesk Variable",
     "provider": "google",
     "import": "Schibsted_Grotesk",
     "variable": "--font-schibsted-grotesk",

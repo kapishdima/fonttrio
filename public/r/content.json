@@ -16,6 +16,7 @@
     "subsets": [
       "menu",
       "khmer"
-    ]
+    ],
+    "dependency": "@fontsource/content"
   }
 }

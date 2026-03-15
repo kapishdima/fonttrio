@@ -5,7 +5,7 @@
   "title": "Playwrite IE",
   "description": "Playwrite IE — Handwriting font.",
   "font": {
-    "family": "Playwrite IE",
+    "family": "Playwrite IE Variable",
     "provider": "google",
     "import": "Playwrite_IE",
     "variable": "--font-playwrite-ie",

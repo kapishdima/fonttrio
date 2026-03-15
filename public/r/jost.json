@@ -5,7 +5,7 @@
   "title": "Jost",
   "description": "Jost — Sans Serif font.",
   "font": {
-    "family": "Jost",
+    "family": "Jost Variable",
     "provider": "google",
     "import": "Jost",
     "variable": "--font-jost",

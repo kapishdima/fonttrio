@@ -5,7 +5,7 @@
   "title": "Agu Display",
   "description": "Agu Display — Display font.",
   "font": {
-    "family": "Agu Display",
+    "family": "Agu Display Variable",
     "provider": "google",
     "import": "Agu_Display",
     "variable": "--font-agu-display",

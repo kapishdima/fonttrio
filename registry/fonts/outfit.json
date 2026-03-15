@@ -5,7 +5,7 @@
   "title": "Outfit",
   "description": "Outfit — Sans Serif font.",
   "font": {
-    "family": "Outfit",
+    "family": "Outfit Variable",
     "provider": "google",
     "import": "Outfit",
     "variable": "--font-outfit",

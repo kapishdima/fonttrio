@@ -5,7 +5,7 @@
   "title": "Poltawski Nowy",
   "description": "Poltawski Nowy — Serif font.",
   "font": {
-    "family": "Poltawski Nowy",
+    "family": "Poltawski Nowy Variable",
     "provider": "google",
     "import": "Poltawski_Nowy",
     "variable": "--font-poltawski-nowy",

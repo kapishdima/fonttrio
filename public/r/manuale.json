@@ -5,7 +5,7 @@
   "title": "Manuale",
   "description": "Manuale — Serif font.",
   "font": {
-    "family": "Manuale",
+    "family": "Manuale Variable",
     "provider": "google",
     "import": "Manuale",
     "variable": "--font-manuale",

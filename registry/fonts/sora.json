@@ -5,7 +5,7 @@
   "title": "Sora",
   "description": "Sora — Sans Serif font.",
   "font": {
-    "family": "Sora",
+    "family": "Sora Variable",
     "provider": "google",
     "import": "Sora",
     "variable": "--font-sora",

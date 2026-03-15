@@ -5,7 +5,7 @@
   "title": "Bitcount Ink",
   "description": "Bitcount Ink — Display font.",
   "font": {
-    "family": "Bitcount Ink",
+    "family": "Bitcount Ink Variable",
     "provider": "google",
     "import": "Bitcount_Ink",
     "variable": "--font-bitcount-ink",

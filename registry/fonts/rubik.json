@@ -5,7 +5,7 @@
   "title": "Rubik",
   "description": "Rubik — Sans Serif font.",
   "font": {
-    "family": "Rubik",
+    "family": "Rubik Variable",
     "provider": "google",
     "import": "Rubik",
     "variable": "--font-rubik",

@@ -5,7 +5,7 @@
   "title": "Kapakana",
   "description": "Kapakana — Handwriting font.",
   "font": {
-    "family": "Kapakana",
+    "family": "Kapakana Variable",
     "provider": "google",
     "import": "Kapakana",
     "variable": "--font-kapakana",

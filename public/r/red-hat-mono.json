@@ -5,7 +5,7 @@
   "title": "Red Hat Mono",
   "description": "Red Hat Mono — Monospace font.",
   "font": {
-    "family": "Red Hat Mono",
+    "family": "Red Hat Mono Variable",
     "provider": "google",
     "import": "Red_Hat_Mono",
     "variable": "--font-red-hat-mono",

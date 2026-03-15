@@ -5,7 +5,7 @@
   "title": "Edu AU VIC WA NT Guides",
   "description": "Edu AU VIC WA NT Guides — Handwriting font.",
   "font": {
-    "family": "Edu AU VIC WA NT Guides",
+    "family": "Edu AU VIC WA NT Guides Variable",
     "provider": "google",
     "import": "Edu_AU_VIC_WA_NT_Guides",
     "variable": "--font-edu-au-vic-wa-nt-guides",

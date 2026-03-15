@@ -5,7 +5,7 @@
   "title": "Assistant",
   "description": "Assistant — Sans Serif font.",
   "font": {
-    "family": "Assistant",
+    "family": "Assistant Variable",
     "provider": "google",
     "import": "Assistant",
     "variable": "--font-assistant",

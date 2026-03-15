@@ -5,7 +5,7 @@
   "title": "Nokora",
   "description": "Nokora — Sans Serif font.",
   "font": {
-    "family": "Nokora",
+    "family": "Nokora Variable",
     "provider": "google",
     "import": "Nokora",
     "variable": "--font-nokora",

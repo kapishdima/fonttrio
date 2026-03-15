@@ -5,7 +5,7 @@
   "title": "Eczar",
   "description": "Eczar — Serif font.",
   "font": {
-    "family": "Eczar",
+    "family": "Eczar Variable",
     "provider": "google",
     "import": "Eczar",
     "variable": "--font-eczar",

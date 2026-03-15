@@ -5,7 +5,7 @@
   "title": "Google Sans Code",
   "description": "Google Sans Code — Monospace font.",
   "font": {
-    "family": "Google Sans Code",
+    "family": "Google Sans Code Variable",
     "provider": "google",
     "import": "Google_Sans_Code",
     "variable": "--font-google-sans-code",

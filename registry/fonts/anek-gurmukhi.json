@@ -5,7 +5,7 @@
   "title": "Anek Gurmukhi",
   "description": "Anek Gurmukhi — Sans Serif font.",
   "font": {
-    "family": "Anek Gurmukhi",
+    "family": "Anek Gurmukhi Variable",
     "provider": "google",
     "import": "Anek_Gurmukhi",
     "variable": "--font-anek-gurmukhi",

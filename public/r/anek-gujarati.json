@@ -5,7 +5,7 @@
   "title": "Anek Gujarati",
   "description": "Anek Gujarati — Sans Serif font.",
   "font": {
-    "family": "Anek Gujarati",
+    "family": "Anek Gujarati Variable",
     "provider": "google",
     "import": "Anek_Gujarati",
     "variable": "--font-anek-gujarati",

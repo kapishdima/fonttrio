@@ -17,6 +17,7 @@
       "khmer",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/konkhmer-sleokchher"
   }
 }

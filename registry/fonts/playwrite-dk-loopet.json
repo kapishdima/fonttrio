@@ -5,7 +5,7 @@
   "title": "Playwrite DK Loopet",
   "description": "Playwrite DK Loopet — Handwriting font.",
   "font": {
-    "family": "Playwrite DK Loopet",
+    "family": "Playwrite DK Loopet Variable",
     "provider": "google",
     "import": "Playwrite_DK_Loopet",
     "variable": "--font-playwrite-dk-loopet",

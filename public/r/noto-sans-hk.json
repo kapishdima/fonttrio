@@ -5,7 +5,7 @@
   "title": "Noto Sans HK",
   "description": "Noto Sans HK — Sans Serif font.",
   "font": {
-    "family": "Noto Sans HK",
+    "family": "Noto Sans HK Variable",
     "provider": "google",
     "import": "Noto_Sans_HK",
     "variable": "--font-noto-sans-hk",

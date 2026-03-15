@@ -23,6 +23,7 @@
       "gujarati",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/mukta-vaani"
   }
 }

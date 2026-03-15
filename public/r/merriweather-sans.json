@@ -5,7 +5,7 @@
   "title": "Merriweather Sans",
   "description": "Merriweather Sans — Sans Serif font.",
   "font": {
-    "family": "Merriweather Sans",
+    "family": "Merriweather Sans Variable",
     "provider": "google",
     "import": "Merriweather_Sans",
     "variable": "--font-merriweather-sans",

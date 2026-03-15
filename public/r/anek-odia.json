@@ -5,7 +5,7 @@
   "title": "Anek Odia",
   "description": "Anek Odia — Sans Serif font.",
   "font": {
-    "family": "Anek Odia",
+    "family": "Anek Odia Variable",
     "provider": "google",
     "import": "Anek_Odia",
     "variable": "--font-anek-odia",

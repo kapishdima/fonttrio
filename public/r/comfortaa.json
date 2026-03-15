@@ -5,7 +5,7 @@
   "title": "Comfortaa",
   "description": "Comfortaa — Display font.",
   "font": {
-    "family": "Comfortaa",
+    "family": "Comfortaa Variable",
     "provider": "google",
     "import": "Comfortaa",
     "variable": "--font-comfortaa",

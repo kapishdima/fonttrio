@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "telugu"
-    ]
+    ],
+    "dependency": "@fontsource/akaya-telivigala"
   }
 }

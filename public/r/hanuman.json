@@ -5,7 +5,7 @@
   "title": "Hanuman",
   "description": "Hanuman — Serif font.",
   "font": {
-    "family": "Hanuman",
+    "family": "Hanuman Variable",
     "provider": "google",
     "import": "Hanuman",
     "variable": "--font-hanuman",

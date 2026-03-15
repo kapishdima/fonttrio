@@ -5,7 +5,7 @@
   "title": "Karla",
   "description": "Karla — Sans Serif font.",
   "font": {
-    "family": "Karla",
+    "family": "Karla Variable",
     "provider": "google",
     "import": "Karla",
     "variable": "--font-karla",

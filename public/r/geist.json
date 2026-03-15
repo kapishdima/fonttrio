@@ -5,7 +5,7 @@
   "title": "Geist",
   "description": "Geist — Sans Serif font.",
   "font": {
-    "family": "Geist",
+    "family": "Geist Variable",
     "provider": "google",
     "import": "Geist",
     "variable": "--font-geist",

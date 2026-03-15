@@ -5,7 +5,7 @@
   "title": "Noto Sans Kayah Li",
   "description": "Noto Sans Kayah Li — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Kayah Li",
+    "family": "Noto Sans Kayah Li Variable",
     "provider": "google",
     "import": "Noto_Sans_Kayah_Li",
     "variable": "--font-noto-sans-kayah-li",

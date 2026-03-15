@@ -5,7 +5,7 @@
   "title": "MuseoModerno",
   "description": "MuseoModerno — Display font.",
   "font": {
-    "family": "MuseoModerno",
+    "family": "MuseoModerno Variable",
     "provider": "google",
     "import": "MuseoModerno",
     "variable": "--font-museomoderno",

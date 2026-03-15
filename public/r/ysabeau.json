@@ -5,7 +5,7 @@
   "title": "Ysabeau",
   "description": "Ysabeau — Sans Serif font.",
   "font": {
-    "family": "Ysabeau",
+    "family": "Ysabeau Variable",
     "provider": "google",
     "import": "Ysabeau",
     "variable": "--font-ysabeau",

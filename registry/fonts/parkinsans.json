@@ -5,7 +5,7 @@
   "title": "Parkinsans",
   "description": "Parkinsans — Sans Serif font.",
   "font": {
-    "family": "Parkinsans",
+    "family": "Parkinsans Variable",
     "provider": "google",
     "import": "Parkinsans",
     "variable": "--font-parkinsans",

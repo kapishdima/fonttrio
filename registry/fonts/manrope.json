@@ -5,7 +5,7 @@
   "title": "Manrope",
   "description": "Manrope — Sans Serif font.",
   "font": {
-    "family": "Manrope",
+    "family": "Manrope Variable",
     "provider": "google",
     "import": "Manrope",
     "variable": "--font-manrope",

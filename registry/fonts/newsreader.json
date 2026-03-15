@@ -5,7 +5,7 @@
   "title": "Newsreader",
   "description": "Newsreader — Serif font.",
   "font": {
-    "family": "Newsreader",
+    "family": "Newsreader Variable",
     "provider": "google",
     "import": "Newsreader",
     "variable": "--font-newsreader",

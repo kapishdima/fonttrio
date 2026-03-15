@@ -5,7 +5,7 @@
   "title": "Playwrite GB J",
   "description": "Playwrite GB J — Handwriting font.",
   "font": {
-    "family": "Playwrite GB J",
+    "family": "Playwrite GB J Variable",
     "provider": "google",
     "import": "Playwrite_GB_J",
     "variable": "--font-playwrite-gb-j",

@@ -5,7 +5,7 @@
   "title": "Playwrite NL",
   "description": "Playwrite NL — Handwriting font.",
   "font": {
-    "family": "Playwrite NL",
+    "family": "Playwrite NL Variable",
     "provider": "google",
     "import": "Playwrite_NL",
     "variable": "--font-playwrite-nl",

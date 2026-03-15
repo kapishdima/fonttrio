@@ -5,7 +5,7 @@
   "title": "Besley",
   "description": "Besley — Serif font.",
   "font": {
-    "family": "Besley",
+    "family": "Besley Variable",
     "provider": "google",
     "import": "Besley",
     "variable": "--font-besley",

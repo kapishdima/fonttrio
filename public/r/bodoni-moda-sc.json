@@ -5,7 +5,7 @@
   "title": "Bodoni Moda SC",
   "description": "Bodoni Moda SC — Serif font.",
   "font": {
-    "family": "Bodoni Moda SC",
+    "family": "Bodoni Moda SC Variable",
     "provider": "google",
     "import": "Bodoni_Moda_SC",
     "variable": "--font-bodoni-moda-sc",

@@ -5,7 +5,7 @@
   "title": "Yanone Kaffeesatz",
   "description": "Yanone Kaffeesatz — Sans Serif font.",
   "font": {
-    "family": "Yanone Kaffeesatz",
+    "family": "Yanone Kaffeesatz Variable",
     "provider": "google",
     "import": "Yanone_Kaffeesatz",
     "variable": "--font-yanone-kaffeesatz",

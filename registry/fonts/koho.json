@@ -23,6 +23,7 @@
       "latin-ext",
       "thai",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/koho"
   }
 }

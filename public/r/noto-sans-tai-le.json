@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "tai-le"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-tai-le"
   }
 }

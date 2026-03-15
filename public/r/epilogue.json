@@ -5,7 +5,7 @@
   "title": "Epilogue",
   "description": "Epilogue — Sans Serif font.",
   "font": {
-    "family": "Epilogue",
+    "family": "Epilogue Variable",
     "provider": "google",
     "import": "Epilogue",
     "variable": "--font-epilogue",

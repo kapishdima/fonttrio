@@ -5,7 +5,7 @@
   "title": "Yaldevi",
   "description": "Yaldevi — Sans Serif font.",
   "font": {
-    "family": "Yaldevi",
+    "family": "Yaldevi Variable",
     "provider": "google",
     "import": "Yaldevi",
     "variable": "--font-yaldevi",

@@ -17,6 +17,7 @@
       "khitan-small-script",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-serif-khitan-small-script"
   }
 }

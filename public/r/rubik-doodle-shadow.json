@@ -21,6 +21,7 @@
       "latin-ext",
       "math",
       "symbols"
-    ]
+    ],
+    "dependency": "@fontsource/rubik-doodle-shadow"
   }
 }

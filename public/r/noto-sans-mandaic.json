@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "mandaic"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-mandaic"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Chiron Sung HK",
   "description": "Chiron Sung HK — Serif font.",
   "font": {
-    "family": "Chiron Sung HK",
+    "family": "Chiron Sung HK Variable",
     "provider": "google",
     "import": "Chiron_Sung_HK",
     "variable": "--font-chiron-sung-hk",

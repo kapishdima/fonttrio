@@ -5,7 +5,7 @@
   "title": "Noto Serif Oriya",
   "description": "Noto Serif Oriya — Serif font.",
   "font": {
-    "family": "Noto Serif Oriya",
+    "family": "Noto Serif Oriya Variable",
     "provider": "google",
     "import": "Noto_Serif_Oriya",
     "variable": "--font-noto-serif-oriya",

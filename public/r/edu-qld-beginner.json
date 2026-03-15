@@ -5,7 +5,7 @@
   "title": "Edu QLD Beginner",
   "description": "Edu QLD Beginner — Handwriting font.",
   "font": {
-    "family": "Edu QLD Beginner",
+    "family": "Edu QLD Beginner Variable",
     "provider": "google",
     "import": "Edu_QLD_Beginner",
     "variable": "--font-edu-qld-beginner",

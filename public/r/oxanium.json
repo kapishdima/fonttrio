@@ -5,7 +5,7 @@
   "title": "Oxanium",
   "description": "Oxanium — Display font.",
   "font": {
-    "family": "Oxanium",
+    "family": "Oxanium Variable",
     "provider": "google",
     "import": "Oxanium",
     "variable": "--font-oxanium",

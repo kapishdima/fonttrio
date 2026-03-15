@@ -5,7 +5,7 @@
   "title": "Edu AU VIC WA NT Arrows",
   "description": "Edu AU VIC WA NT Arrows — Handwriting font.",
   "font": {
-    "family": "Edu AU VIC WA NT Arrows",
+    "family": "Edu AU VIC WA NT Arrows Variable",
     "provider": "google",
     "import": "Edu_AU_VIC_WA_NT_Arrows",
     "variable": "--font-edu-au-vic-wa-nt-arrows",

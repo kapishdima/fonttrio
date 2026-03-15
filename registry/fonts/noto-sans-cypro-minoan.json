@@ -17,6 +17,7 @@
       "cypro-minoan",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-cypro-minoan"
   }
 }

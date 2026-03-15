@@ -17,6 +17,7 @@
       "cyrillic-ext",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/fragment-mono"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Roboto",
   "description": "Roboto — Sans Serif font.",
   "font": {
-    "family": "Roboto",
+    "family": "Roboto Variable",
     "provider": "google",
     "import": "Roboto",
     "variable": "--font-roboto",

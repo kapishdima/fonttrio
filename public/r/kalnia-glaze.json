@@ -5,7 +5,7 @@
   "title": "Kalnia Glaze",
   "description": "Kalnia Glaze — Display font.",
   "font": {
-    "family": "Kalnia Glaze",
+    "family": "Kalnia Glaze Variable",
     "provider": "google",
     "import": "Kalnia_Glaze",
     "variable": "--font-kalnia-glaze",

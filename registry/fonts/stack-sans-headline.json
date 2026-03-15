@@ -5,7 +5,7 @@
   "title": "Stack Sans Headline",
   "description": "Stack Sans Headline — Sans Serif font.",
   "font": {
-    "family": "Stack Sans Headline",
+    "family": "Stack Sans Headline Variable",
     "provider": "google",
     "import": "Stack_Sans_Headline",
     "variable": "--font-stack-sans-headline",

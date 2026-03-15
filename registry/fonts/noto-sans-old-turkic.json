@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "old-turkic"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-old-turkic"
   }
 }

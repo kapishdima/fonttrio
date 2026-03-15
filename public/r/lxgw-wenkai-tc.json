@@ -25,6 +25,7 @@
       "latin-ext",
       "lisu",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/lxgw-wenkai-tc"
   }
 }

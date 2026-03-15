@@ -5,7 +5,7 @@
   "title": "Bitcount Prop Double Ink",
   "description": "Bitcount Prop Double Ink — Display font.",
   "font": {
-    "family": "Bitcount Prop Double Ink",
+    "family": "Bitcount Prop Double Ink Variable",
     "provider": "google",
     "import": "Bitcount_Prop_Double_Ink",
     "variable": "--font-bitcount-prop-double-ink",

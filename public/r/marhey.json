@@ -5,7 +5,7 @@
   "title": "Marhey",
   "description": "Marhey — Display font.",
   "font": {
-    "family": "Marhey",
+    "family": "Marhey Variable",
     "provider": "google",
     "import": "Marhey",
     "variable": "--font-marhey",

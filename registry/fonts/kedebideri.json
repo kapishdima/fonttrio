@@ -21,6 +21,7 @@
       "menu",
       "beria-erfe",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/kedebideri"
   }
 }

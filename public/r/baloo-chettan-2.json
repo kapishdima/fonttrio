@@ -5,7 +5,7 @@
   "title": "Baloo Chettan 2",
   "description": "Baloo Chettan 2 — Display font.",
   "font": {
-    "family": "Baloo Chettan 2",
+    "family": "Baloo Chettan 2 Variable",
     "provider": "google",
     "import": "Baloo_Chettan_2",
     "variable": "--font-baloo-chettan-2",

@@ -5,7 +5,7 @@
   "title": "Afacad",
   "description": "Afacad — Sans Serif font.",
   "font": {
-    "family": "Afacad",
+    "family": "Afacad Variable",
     "provider": "google",
     "import": "Afacad",
     "variable": "--font-afacad",

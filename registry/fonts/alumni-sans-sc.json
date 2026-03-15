@@ -5,7 +5,7 @@
   "title": "Alumni Sans SC",
   "description": "Alumni Sans SC — Sans Serif font.",
   "font": {
-    "family": "Alumni Sans SC",
+    "family": "Alumni Sans SC Variable",
     "provider": "google",
     "import": "Alumni_Sans_SC",
     "variable": "--font-alumni-sans-sc",

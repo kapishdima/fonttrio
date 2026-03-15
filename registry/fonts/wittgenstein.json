@@ -5,7 +5,7 @@
   "title": "Wittgenstein",
   "description": "Wittgenstein — Serif font.",
   "font": {
-    "family": "Wittgenstein",
+    "family": "Wittgenstein Variable",
     "provider": "google",
     "import": "Wittgenstein",
     "variable": "--font-wittgenstein",

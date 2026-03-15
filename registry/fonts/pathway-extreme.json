@@ -5,7 +5,7 @@
   "title": "Pathway Extreme",
   "description": "Pathway Extreme — Sans Serif font.",
   "font": {
-    "family": "Pathway Extreme",
+    "family": "Pathway Extreme Variable",
     "provider": "google",
     "import": "Pathway_Extreme",
     "variable": "--font-pathway-extreme",

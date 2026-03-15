@@ -5,7 +5,7 @@
   "title": "Ojuju",
   "description": "Ojuju — Sans Serif font.",
   "font": {
-    "family": "Ojuju",
+    "family": "Ojuju Variable",
     "provider": "google",
     "import": "Ojuju",
     "variable": "--font-ojuju",

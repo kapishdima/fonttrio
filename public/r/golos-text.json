@@ -5,7 +5,7 @@
   "title": "Golos Text",
   "description": "Golos Text — Sans Serif font.",
   "font": {
-    "family": "Golos Text",
+    "family": "Golos Text Variable",
     "provider": "google",
     "import": "Golos_Text",
     "variable": "--font-golos-text",

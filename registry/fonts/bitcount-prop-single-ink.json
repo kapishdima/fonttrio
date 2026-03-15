@@ -5,7 +5,7 @@
   "title": "Bitcount Prop Single Ink",
   "description": "Bitcount Prop Single Ink — Display font.",
   "font": {
-    "family": "Bitcount Prop Single Ink",
+    "family": "Bitcount Prop Single Ink Variable",
     "provider": "google",
     "import": "Bitcount_Prop_Single_Ink",
     "variable": "--font-bitcount-prop-single-ink",

@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "psalter-pahlavi"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-psalter-pahlavi"
   }
 }

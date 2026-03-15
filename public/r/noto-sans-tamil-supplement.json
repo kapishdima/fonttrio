@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "tamil-supplement"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-tamil-supplement"
   }
 }

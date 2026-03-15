@@ -5,7 +5,7 @@
   "title": "TASA Orbiter",
   "description": "TASA Orbiter — Sans Serif font.",
   "font": {
-    "family": "TASA Orbiter",
+    "family": "TASA Orbiter Variable",
     "provider": "google",
     "import": "TASA_Orbiter",
     "variable": "--font-tasa-orbiter",

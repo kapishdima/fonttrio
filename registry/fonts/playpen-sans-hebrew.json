@@ -5,7 +5,7 @@
   "title": "Playpen Sans Hebrew",
   "description": "Playpen Sans Hebrew — Handwriting font.",
   "font": {
-    "family": "Playpen Sans Hebrew",
+    "family": "Playpen Sans Hebrew Variable",
     "provider": "google",
     "import": "Playpen_Sans_Hebrew",
     "variable": "--font-playpen-sans-hebrew",

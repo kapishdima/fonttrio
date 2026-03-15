@@ -5,7 +5,7 @@
   "title": "Reem Kufi",
   "description": "Reem Kufi — Sans Serif font.",
   "font": {
-    "family": "Reem Kufi",
+    "family": "Reem Kufi Variable",
     "provider": "google",
     "import": "Reem_Kufi",
     "variable": "--font-reem-kufi",

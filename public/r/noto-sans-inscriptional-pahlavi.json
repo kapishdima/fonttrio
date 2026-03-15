@@ -17,6 +17,7 @@
       "inscriptional-pahlavi",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-inscriptional-pahlavi"
   }
 }

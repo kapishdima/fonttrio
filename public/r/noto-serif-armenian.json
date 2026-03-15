@@ -5,7 +5,7 @@
   "title": "Noto Serif Armenian",
   "description": "Noto Serif Armenian — Serif font.",
   "font": {
-    "family": "Noto Serif Armenian",
+    "family": "Noto Serif Armenian Variable",
     "provider": "google",
     "import": "Noto_Serif_Armenian",
     "variable": "--font-noto-serif-armenian",

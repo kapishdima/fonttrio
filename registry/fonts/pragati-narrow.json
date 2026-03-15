@@ -18,6 +18,7 @@
       "devanagari",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/pragati-narrow"
   }
 }

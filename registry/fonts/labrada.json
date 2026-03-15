@@ -5,7 +5,7 @@
   "title": "Labrada",
   "description": "Labrada — Serif font.",
   "font": {
-    "family": "Labrada",
+    "family": "Labrada Variable",
     "provider": "google",
     "import": "Labrada",
     "variable": "--font-labrada",

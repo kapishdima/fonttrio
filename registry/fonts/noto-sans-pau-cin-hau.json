@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "pau-cin-hau"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-pau-cin-hau"
   }
 }

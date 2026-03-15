@@ -5,7 +5,7 @@
   "title": "Handjet",
   "description": "Handjet — Display font.",
   "font": {
-    "family": "Handjet",
+    "family": "Handjet Variable",
     "provider": "google",
     "import": "Handjet",
     "variable": "--font-handjet",

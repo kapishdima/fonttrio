@@ -18,6 +18,7 @@
       "latin-ext",
       "math",
       "symbols"
-    ]
+    ],
+    "dependency": "@fontsource/micro-5"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Hanken Grotesk",
   "description": "Hanken Grotesk — Sans Serif font.",
   "font": {
-    "family": "Hanken Grotesk",
+    "family": "Hanken Grotesk Variable",
     "provider": "google",
     "import": "Hanken_Grotesk",
     "variable": "--font-hanken-grotesk",

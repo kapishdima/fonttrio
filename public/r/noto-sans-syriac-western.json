@@ -5,7 +5,7 @@
   "title": "Noto Sans Syriac Western",
   "description": "Noto Sans Syriac Western — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Syriac Western",
+    "family": "Noto Sans Syriac Western Variable",
     "provider": "google",
     "import": "Noto_Sans_Syriac_Western",
     "variable": "--font-noto-sans-syriac-western",

@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "shavian"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-shavian"
   }
 }

@@ -17,6 +17,7 @@
       "cuneiform",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-cuneiform"
   }
 }

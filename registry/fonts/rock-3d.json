@@ -16,6 +16,7 @@
       "menu",
       "japanese",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/rock-3d"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Playwrite HU",
   "description": "Playwrite HU — Handwriting font.",
   "font": {
-    "family": "Playwrite HU",
+    "family": "Playwrite HU Variable",
     "provider": "google",
     "import": "Playwrite_HU",
     "variable": "--font-playwrite-hu",

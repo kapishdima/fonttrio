@@ -5,7 +5,7 @@
   "title": "Trispace",
   "description": "Trispace — Sans Serif font.",
   "font": {
-    "family": "Trispace",
+    "family": "Trispace Variable",
     "provider": "google",
     "import": "Trispace",
     "variable": "--font-trispace",

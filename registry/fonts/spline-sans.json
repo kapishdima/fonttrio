@@ -5,7 +5,7 @@
   "title": "Spline Sans",
   "description": "Spline Sans — Sans Serif font.",
   "font": {
-    "family": "Spline Sans",
+    "family": "Spline Sans Variable",
     "provider": "google",
     "import": "Spline_Sans",
     "variable": "--font-spline-sans",

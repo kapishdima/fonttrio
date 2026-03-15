@@ -5,7 +5,7 @@
   "title": "Darker Grotesque",
   "description": "Darker Grotesque — Sans Serif font.",
   "font": {
-    "family": "Darker Grotesque",
+    "family": "Darker Grotesque Variable",
     "provider": "google",
     "import": "Darker_Grotesque",
     "variable": "--font-darker-grotesque",

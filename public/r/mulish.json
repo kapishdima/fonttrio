@@ -5,7 +5,7 @@
   "title": "Mulish",
   "description": "Mulish — Sans Serif font.",
   "font": {
-    "family": "Mulish",
+    "family": "Mulish Variable",
     "provider": "google",
     "import": "Mulish",
     "variable": "--font-mulish",

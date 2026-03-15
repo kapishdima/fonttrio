@@ -5,7 +5,7 @@
   "title": "Fustat",
   "description": "Fustat — Sans Serif font.",
   "font": {
-    "family": "Fustat",
+    "family": "Fustat Variable",
     "provider": "google",
     "import": "Fustat",
     "variable": "--font-fustat",

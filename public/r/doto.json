@@ -5,7 +5,7 @@
   "title": "Doto",
   "description": "Doto — Sans Serif font.",
   "font": {
-    "family": "Doto",
+    "family": "Doto Variable",
     "provider": "google",
     "import": "Doto",
     "variable": "--font-doto",

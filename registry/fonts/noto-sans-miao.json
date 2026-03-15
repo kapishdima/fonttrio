@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "miao"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-miao"
   }
 }

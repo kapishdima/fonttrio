@@ -5,7 +5,7 @@
   "title": "Noto Sans Telugu",
   "description": "Noto Sans Telugu — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Telugu",
+    "family": "Noto Sans Telugu Variable",
     "provider": "google",
     "import": "Noto_Sans_Telugu",
     "variable": "--font-noto-sans-telugu",

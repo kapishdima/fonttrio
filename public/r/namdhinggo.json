@@ -21,6 +21,7 @@
       "latin",
       "latin-ext",
       "limbu"
-    ]
+    ],
+    "dependency": "@fontsource/namdhinggo"
   }
 }

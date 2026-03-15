@@ -17,6 +17,7 @@
       "kharoshthi",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-kharoshthi"
   }
 }

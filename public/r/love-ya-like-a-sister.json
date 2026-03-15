@@ -16,6 +16,7 @@
       "menu",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/love-ya-like-a-sister"
   }
 }

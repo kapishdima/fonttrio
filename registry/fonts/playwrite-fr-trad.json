@@ -5,7 +5,7 @@
   "title": "Playwrite FR Trad",
   "description": "Playwrite FR Trad — Handwriting font.",
   "font": {
-    "family": "Playwrite FR Trad",
+    "family": "Playwrite FR Trad Variable",
     "provider": "google",
     "import": "Playwrite_FR_Trad",
     "variable": "--font-playwrite-fr-trad",

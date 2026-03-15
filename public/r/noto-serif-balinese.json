@@ -17,6 +17,7 @@
       "balinese",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-serif-balinese"
   }
 }

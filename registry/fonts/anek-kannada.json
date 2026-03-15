@@ -5,7 +5,7 @@
   "title": "Anek Kannada",
   "description": "Anek Kannada — Sans Serif font.",
   "font": {
-    "family": "Anek Kannada",
+    "family": "Anek Kannada Variable",
     "provider": "google",
     "import": "Anek_Kannada",
     "variable": "--font-anek-kannada",

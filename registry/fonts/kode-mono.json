@@ -5,7 +5,7 @@
   "title": "Kode Mono",
   "description": "Kode Mono — Monospace font.",
   "font": {
-    "family": "Kode Mono",
+    "family": "Kode Mono Variable",
     "provider": "google",
     "import": "Kode_Mono",
     "variable": "--font-kode-mono",

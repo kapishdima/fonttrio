@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "tangut"
-    ]
+    ],
+    "dependency": "@fontsource/noto-serif-tangut"
   }
 }

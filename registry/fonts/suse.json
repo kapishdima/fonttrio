@@ -5,7 +5,7 @@
   "title": "SUSE",
   "description": "SUSE — Sans Serif font.",
   "font": {
-    "family": "SUSE",
+    "family": "SUSE Variable",
     "provider": "google",
     "import": "SUSE",
     "variable": "--font-suse",

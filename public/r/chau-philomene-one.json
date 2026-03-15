@@ -16,6 +16,7 @@
       "menu",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/chau-philomene-one"
   }
 }

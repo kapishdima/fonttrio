@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "manichaean"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-manichaean"
   }
 }

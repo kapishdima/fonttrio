@@ -5,7 +5,7 @@
   "title": "Noto Sans Arabic",
   "description": "Noto Sans Arabic — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Arabic",
+    "family": "Noto Sans Arabic Variable",
     "provider": "google",
     "import": "Noto_Sans_Arabic",
     "variable": "--font-noto-sans-arabic",

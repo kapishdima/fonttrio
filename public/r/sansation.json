@@ -20,6 +20,7 @@
       "greek",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/sansation"
   }
 }

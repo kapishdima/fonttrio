@@ -17,6 +17,7 @@
       "latin",
       "math",
       "symbols"
-    ]
+    ],
+    "dependency": "@fontsource/yarndings-12-charted"
   }
 }

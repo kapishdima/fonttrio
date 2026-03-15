@@ -5,7 +5,7 @@
   "title": "Sixtyfour",
   "description": "Sixtyfour — Monospace font.",
   "font": {
-    "family": "Sixtyfour",
+    "family": "Sixtyfour Variable",
     "provider": "google",
     "import": "Sixtyfour",
     "variable": "--font-sixtyfour",

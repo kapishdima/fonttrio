@@ -5,7 +5,7 @@
   "title": "Baloo Paaji 2",
   "description": "Baloo Paaji 2 — Display font.",
   "font": {
-    "family": "Baloo Paaji 2",
+    "family": "Baloo Paaji 2 Variable",
     "provider": "google",
     "import": "Baloo_Paaji_2",
     "variable": "--font-baloo-paaji-2",

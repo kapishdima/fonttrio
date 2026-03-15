@@ -5,7 +5,7 @@
   "title": "Playwrite CO",
   "description": "Playwrite CO — Handwriting font.",
   "font": {
-    "family": "Playwrite CO",
+    "family": "Playwrite CO Variable",
     "provider": "google",
     "import": "Playwrite_CO",
     "variable": "--font-playwrite-co",

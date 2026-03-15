@@ -15,6 +15,7 @@
     "subsets": [
       "menu",
       "korean"
-    ]
+    ],
+    "dependency": "@fontsource/song-myung"
   }
 }

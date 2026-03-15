@@ -5,7 +5,7 @@
   "title": "Kumbh Sans",
   "description": "Kumbh Sans — Sans Serif font.",
   "font": {
-    "family": "Kumbh Sans",
+    "family": "Kumbh Sans Variable",
     "provider": "google",
     "import": "Kumbh_Sans",
     "variable": "--font-kumbh-sans",

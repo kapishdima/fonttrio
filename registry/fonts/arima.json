@@ -5,7 +5,7 @@
   "title": "Arima",
   "description": "Arima — Display font.",
   "font": {
-    "family": "Arima",
+    "family": "Arima Variable",
     "provider": "google",
     "import": "Arima",
     "variable": "--font-arima",

@@ -5,7 +5,7 @@
   "title": "Climate Crisis",
   "description": "Climate Crisis — Display font.",
   "font": {
-    "family": "Climate Crisis",
+    "family": "Climate Crisis Variable",
     "provider": "google",
     "import": "Climate_Crisis",
     "variable": "--font-climate-crisis",
@@ -14,6 +14,8 @@
     ],
     "subsets": [
       "menu",
+      "cyrillic",
+      "cyrillic-ext",
       "latin",
       "latin-ext"
     ]

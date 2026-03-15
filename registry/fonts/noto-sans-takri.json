@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "takri"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-takri"
   }
 }

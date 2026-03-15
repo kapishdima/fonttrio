@@ -5,7 +5,7 @@
   "title": "Playwrite ES Deco",
   "description": "Playwrite ES Deco — Handwriting font.",
   "font": {
-    "family": "Playwrite ES Deco",
+    "family": "Playwrite ES Deco Variable",
     "provider": "google",
     "import": "Playwrite_ES_Deco",
     "variable": "--font-playwrite-es-deco",

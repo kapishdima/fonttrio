@@ -5,7 +5,7 @@
   "title": "Nabla",
   "description": "Nabla — Display font.",
   "font": {
-    "family": "Nabla",
+    "family": "Nabla Variable",
     "provider": "google",
     "import": "Nabla",
     "variable": "--font-nabla",

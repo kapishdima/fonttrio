@@ -5,7 +5,7 @@
   "title": "Noto Sans Gunjala Gondi",
   "description": "Noto Sans Gunjala Gondi — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Gunjala Gondi",
+    "family": "Noto Sans Gunjala Gondi Variable",
     "provider": "google",
     "import": "Noto_Sans_Gunjala_Gondi",
     "variable": "--font-noto-sans-gunjala-gondi",

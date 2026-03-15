@@ -5,7 +5,7 @@
   "title": "Geist Mono",
   "description": "Geist Mono — Monospace font.",
   "font": {
-    "family": "Geist Mono",
+    "family": "Geist Mono Variable",
     "provider": "google",
     "import": "Geist_Mono",
     "variable": "--font-geist-mono",

@@ -5,7 +5,7 @@
   "title": "Playpen Sans Deva",
   "description": "Playpen Sans Deva — Handwriting font.",
   "font": {
-    "family": "Playpen Sans Deva",
+    "family": "Playpen Sans Deva Variable",
     "provider": "google",
     "import": "Playpen_Sans_Deva",
     "variable": "--font-playpen-sans-deva",

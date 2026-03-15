@@ -5,7 +5,7 @@
   "title": "Noto Kufi Arabic",
   "description": "Noto Kufi Arabic — Sans Serif font.",
   "font": {
-    "family": "Noto Kufi Arabic",
+    "family": "Noto Kufi Arabic Variable",
     "provider": "google",
     "import": "Noto_Kufi_Arabic",
     "variable": "--font-noto-kufi-arabic",

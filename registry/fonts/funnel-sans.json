@@ -5,7 +5,7 @@
   "title": "Funnel Sans",
   "description": "Funnel Sans — Sans Serif font.",
   "font": {
-    "family": "Funnel Sans",
+    "family": "Funnel Sans Variable",
     "provider": "google",
     "import": "Funnel_Sans",
     "variable": "--font-funnel-sans",

@@ -5,7 +5,7 @@
   "title": "Tilt Warp",
   "description": "Tilt Warp — Display font.",
   "font": {
-    "family": "Tilt Warp",
+    "family": "Tilt Warp Variable",
     "provider": "google",
     "import": "Tilt_Warp",
     "variable": "--font-tilt-warp",

@@ -5,7 +5,7 @@
   "title": "Sometype Mono",
   "description": "Sometype Mono — Monospace font.",
   "font": {
-    "family": "Sometype Mono",
+    "family": "Sometype Mono Variable",
     "provider": "google",
     "import": "Sometype_Mono",
     "variable": "--font-sometype-mono",

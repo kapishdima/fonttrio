@@ -17,6 +17,7 @@
       "devanagari",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/tiro-devanagari-sanskrit"
   }
 }

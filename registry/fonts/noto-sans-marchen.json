@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "marchen"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-marchen"
   }
 }

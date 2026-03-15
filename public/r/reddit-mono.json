@@ -5,7 +5,7 @@
   "title": "Reddit Mono",
   "description": "Reddit Mono — Monospace font.",
   "font": {
-    "family": "Reddit Mono",
+    "family": "Reddit Mono Variable",
     "provider": "google",
     "import": "Reddit_Mono",
     "variable": "--font-reddit-mono",

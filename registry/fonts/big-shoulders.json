@@ -5,7 +5,7 @@
   "title": "Big Shoulders",
   "description": "Big Shoulders — Display font.",
   "font": {
-    "family": "Big Shoulders",
+    "family": "Big Shoulders Variable",
     "provider": "google",
     "import": "Big_Shoulders",
     "variable": "--font-big-shoulders",

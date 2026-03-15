@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "tagalog"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-tagalog"
   }
 }

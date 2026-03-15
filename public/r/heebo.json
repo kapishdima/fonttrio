@@ -5,7 +5,7 @@
   "title": "Heebo",
   "description": "Heebo — Sans Serif font.",
   "font": {
-    "family": "Heebo",
+    "family": "Heebo Variable",
     "provider": "google",
     "import": "Heebo",
     "variable": "--font-heebo",

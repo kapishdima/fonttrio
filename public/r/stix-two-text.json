@@ -5,7 +5,7 @@
   "title": "STIX Two Text",
   "description": "STIX Two Text — Serif font.",
   "font": {
-    "family": "STIX Two Text",
+    "family": "STIX Two Text Variable",
     "provider": "google",
     "import": "STIX_Two_Text",
     "variable": "--font-stix-two-text",

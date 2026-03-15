@@ -5,7 +5,7 @@
   "title": "Danfo",
   "description": "Danfo — Serif font.",
   "font": {
-    "family": "Danfo",
+    "family": "Danfo Variable",
     "provider": "google",
     "import": "Danfo",
     "variable": "--font-danfo",

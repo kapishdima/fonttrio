@@ -5,7 +5,7 @@
   "title": "Baskervville",
   "description": "Baskervville — Serif font.",
   "font": {
-    "family": "Baskervville",
+    "family": "Baskervville Variable",
     "provider": "google",
     "import": "Baskervville",
     "variable": "--font-baskervville",

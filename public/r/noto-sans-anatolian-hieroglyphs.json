@@ -17,6 +17,7 @@
       "anatolian-hieroglyphs",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-anatolian-hieroglyphs"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Rethink Sans",
   "description": "Rethink Sans — Sans Serif font.",
   "font": {
-    "family": "Rethink Sans",
+    "family": "Rethink Sans Variable",
     "provider": "google",
     "import": "Rethink_Sans",
     "variable": "--font-rethink-sans",

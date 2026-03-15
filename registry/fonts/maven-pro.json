@@ -5,7 +5,7 @@
   "title": "Maven Pro",
   "description": "Maven Pro — Sans Serif font.",
   "font": {
-    "family": "Maven Pro",
+    "family": "Maven Pro Variable",
     "provider": "google",
     "import": "Maven_Pro",
     "variable": "--font-maven-pro",

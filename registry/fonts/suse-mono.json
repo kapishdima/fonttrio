@@ -5,7 +5,7 @@
   "title": "SUSE Mono",
   "description": "SUSE Mono — Sans Serif font.",
   "font": {
-    "family": "SUSE Mono",
+    "family": "SUSE Mono Variable",
     "provider": "google",
     "import": "SUSE_Mono",
     "variable": "--font-suse-mono",

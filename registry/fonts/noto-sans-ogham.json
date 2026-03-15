@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "ogham"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-ogham"
   }
 }

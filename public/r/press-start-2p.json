@@ -19,6 +19,7 @@
       "greek",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/press-start-2p"
   }
 }

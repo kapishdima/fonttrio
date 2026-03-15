@@ -5,7 +5,7 @@
   "title": "Menbere",
   "description": "Menbere — Sans Serif font.",
   "font": {
-    "family": "Menbere",
+    "family": "Menbere Variable",
     "provider": "google",
     "import": "Menbere",
     "variable": "--font-menbere",

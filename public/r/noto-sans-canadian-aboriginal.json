@@ -5,7 +5,7 @@
   "title": "Noto Sans Canadian Aboriginal",
   "description": "Noto Sans Canadian Aboriginal — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Canadian Aboriginal",
+    "family": "Noto Sans Canadian Aboriginal Variable",
     "provider": "google",
     "import": "Noto_Sans_Canadian_Aboriginal",
     "variable": "--font-noto-sans-canadian-aboriginal",

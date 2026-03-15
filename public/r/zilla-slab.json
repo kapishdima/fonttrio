@@ -20,6 +20,7 @@
       "menu",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/zilla-slab"
   }
 }

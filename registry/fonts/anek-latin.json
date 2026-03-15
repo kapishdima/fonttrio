@@ -5,7 +5,7 @@
   "title": "Anek Latin",
   "description": "Anek Latin — Sans Serif font.",
   "font": {
-    "family": "Anek Latin",
+    "family": "Anek Latin Variable",
     "provider": "google",
     "import": "Anek_Latin",
     "variable": "--font-anek-latin",

@@ -5,7 +5,7 @@
   "title": "Dancing Script",
   "description": "Dancing Script — Handwriting font.",
   "font": {
-    "family": "Dancing Script",
+    "family": "Dancing Script Variable",
     "provider": "google",
     "import": "Dancing_Script",
     "variable": "--font-dancing-script",

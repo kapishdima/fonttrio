@@ -5,7 +5,7 @@
   "title": "Red Hat Display",
   "description": "Red Hat Display — Sans Serif font.",
   "font": {
-    "family": "Red Hat Display",
+    "family": "Red Hat Display Variable",
     "provider": "google",
     "import": "Red_Hat_Display",
     "variable": "--font-red-hat-display",

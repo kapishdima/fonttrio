@@ -5,7 +5,7 @@
   "title": "Sansita Swashed",
   "description": "Sansita Swashed — Display font.",
   "font": {
-    "family": "Sansita Swashed",
+    "family": "Sansita Swashed Variable",
     "provider": "google",
     "import": "Sansita_Swashed",
     "variable": "--font-sansita-swashed",

@@ -5,7 +5,7 @@
   "title": "Baloo 2",
   "description": "Baloo 2 — Display font.",
   "font": {
-    "family": "Baloo 2",
+    "family": "Baloo 2 Variable",
     "provider": "google",
     "import": "Baloo_2",
     "variable": "--font-baloo-2",

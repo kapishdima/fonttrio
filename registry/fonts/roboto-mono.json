@@ -5,7 +5,7 @@
   "title": "Roboto Mono",
   "description": "Roboto Mono — Monospace font.",
   "font": {
-    "family": "Roboto Mono",
+    "family": "Roboto Mono Variable",
     "provider": "google",
     "import": "Roboto_Mono",
     "variable": "--font-roboto-mono",

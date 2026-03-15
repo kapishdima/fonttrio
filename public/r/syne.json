@@ -5,7 +5,7 @@
   "title": "Syne",
   "description": "Syne — Sans Serif font.",
   "font": {
-    "family": "Syne",
+    "family": "Syne Variable",
     "provider": "google",
     "import": "Syne",
     "variable": "--font-syne",

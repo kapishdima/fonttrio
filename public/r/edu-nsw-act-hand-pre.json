@@ -5,7 +5,7 @@
   "title": "Edu NSW ACT Hand Pre",
   "description": "Edu NSW ACT Hand Pre — Handwriting font.",
   "font": {
-    "family": "Edu NSW ACT Hand Pre",
+    "family": "Edu NSW ACT Hand Pre Variable",
     "provider": "google",
     "import": "Edu_NSW_ACT_Hand_Pre",
     "variable": "--font-edu-nsw-act-hand-pre",

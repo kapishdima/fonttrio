@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "ottoman-siyaq-numbers"
-    ]
+    ],
+    "dependency": "@fontsource/noto-serif-ottoman-siyaq"
   }
 }

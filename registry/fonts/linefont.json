@@ -5,7 +5,7 @@
   "title": "Linefont",
   "description": "Linefont — Display font.",
   "font": {
-    "family": "Linefont",
+    "family": "Linefont Variable",
     "provider": "google",
     "import": "Linefont",
     "variable": "--font-linefont",

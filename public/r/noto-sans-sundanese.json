@@ -5,7 +5,7 @@
   "title": "Noto Sans Sundanese",
   "description": "Noto Sans Sundanese — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Sundanese",
+    "family": "Noto Sans Sundanese Variable",
     "provider": "google",
     "import": "Noto_Sans_Sundanese",
     "variable": "--font-noto-sans-sundanese",

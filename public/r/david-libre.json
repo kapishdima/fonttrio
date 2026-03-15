@@ -22,6 +22,7 @@
       "math",
       "symbols",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/david-libre"
   }
 }

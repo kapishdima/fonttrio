@@ -22,6 +22,7 @@
       "latin",
       "latin-ext",
       "phoenician"
-    ]
+    ],
+    "dependency": "@fontsource/tuffy"
   }
 }

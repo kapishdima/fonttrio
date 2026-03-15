@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "makasar"
-    ]
+    ],
+    "dependency": "@fontsource/noto-serif-makasar"
   }
 }

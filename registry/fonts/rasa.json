@@ -5,7 +5,7 @@
   "title": "Rasa",
   "description": "Rasa — Serif font.",
   "font": {
-    "family": "Rasa",
+    "family": "Rasa Variable",
     "provider": "google",
     "import": "Rasa",
     "variable": "--font-rasa",

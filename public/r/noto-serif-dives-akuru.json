@@ -17,6 +17,7 @@
       "dives-akuru",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-serif-dives-akuru"
   }
 }

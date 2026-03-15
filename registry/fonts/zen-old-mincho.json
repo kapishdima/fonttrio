@@ -23,6 +23,7 @@
       "japanese",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/zen-old-mincho"
   }
 }

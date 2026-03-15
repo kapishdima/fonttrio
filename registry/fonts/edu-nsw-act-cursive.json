@@ -5,7 +5,7 @@
   "title": "Edu NSW ACT Cursive",
   "description": "Edu NSW ACT Cursive — Handwriting font.",
   "font": {
-    "family": "Edu NSW ACT Cursive",
+    "family": "Edu NSW ACT Cursive Variable",
     "provider": "google",
     "import": "Edu_NSW_ACT_Cursive",
     "variable": "--font-edu-nsw-act-cursive",

@@ -24,6 +24,7 @@
       "latin",
       "latin-ext",
       "lisu"
-    ]
+    ],
+    "dependency": "@fontsource/lisu-bosa"
   }
 }

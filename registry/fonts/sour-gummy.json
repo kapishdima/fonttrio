@@ -5,7 +5,7 @@
   "title": "Sour Gummy",
   "description": "Sour Gummy — Sans Serif font.",
   "font": {
-    "family": "Sour Gummy",
+    "family": "Sour Gummy Variable",
     "provider": "google",
     "import": "Sour_Gummy",
     "variable": "--font-sour-gummy",

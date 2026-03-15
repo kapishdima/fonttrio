@@ -5,7 +5,7 @@
   "title": "Anek Bangla",
   "description": "Anek Bangla — Sans Serif font.",
   "font": {
-    "family": "Anek Bangla",
+    "family": "Anek Bangla Variable",
     "provider": "google",
     "import": "Anek_Bangla",
     "variable": "--font-anek-bangla",

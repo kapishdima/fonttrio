@@ -5,7 +5,7 @@
   "title": "Bitcount",
   "description": "Bitcount — Display font.",
   "font": {
-    "family": "Bitcount",
+    "family": "Bitcount Variable",
     "provider": "google",
     "import": "Bitcount",
     "variable": "--font-bitcount",

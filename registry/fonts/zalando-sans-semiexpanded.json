@@ -5,7 +5,7 @@
   "title": "Zalando Sans SemiExpanded",
   "description": "Zalando Sans SemiExpanded — Sans Serif font.",
   "font": {
-    "family": "Zalando Sans SemiExpanded",
+    "family": "Zalando Sans SemiExpanded Variable",
     "provider": "google",
     "import": "Zalando_Sans_SemiExpanded",
     "variable": "--font-zalando-sans-semiexpanded",

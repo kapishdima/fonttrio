@@ -19,6 +19,7 @@
       "greek-ext",
       "latin",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/gfs-neohellenic"
   }
 }

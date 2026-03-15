@@ -5,7 +5,7 @@
   "title": "Inter",
   "description": "Inter — Sans Serif font.",
   "font": {
-    "family": "Inter",
+    "family": "Inter Variable",
     "provider": "google",
     "import": "Inter",
     "variable": "--font-inter",

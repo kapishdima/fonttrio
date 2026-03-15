@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "mayan-numerals"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-mayan-numerals"
   }
 }

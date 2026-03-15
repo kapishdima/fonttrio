@@ -5,7 +5,7 @@
   "title": "TASA Explorer",
   "description": "TASA Explorer — Sans Serif font.",
   "font": {
-    "family": "TASA Explorer",
+    "family": "TASA Explorer Variable",
     "provider": "google",
     "import": "TASA_Explorer",
     "variable": "--font-tasa-explorer",

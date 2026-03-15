@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "saurashtra"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-saurashtra"
   }
 }

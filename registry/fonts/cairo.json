@@ -5,7 +5,7 @@
   "title": "Cairo",
   "description": "Cairo — Sans Serif font.",
   "font": {
-    "family": "Cairo",
+    "family": "Cairo Variable",
     "provider": "google",
     "import": "Cairo",
     "variable": "--font-cairo",

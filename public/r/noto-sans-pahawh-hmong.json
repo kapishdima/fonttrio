@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "pahawh-hmong"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-pahawh-hmong"
   }
 }

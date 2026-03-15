@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "sogdian"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-sogdian"
   }
 }

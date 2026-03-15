@@ -5,7 +5,7 @@
   "title": "Expletus Sans",
   "description": "Expletus Sans — Display font.",
   "font": {
-    "family": "Expletus Sans",
+    "family": "Expletus Sans Variable",
     "provider": "google",
     "import": "Expletus_Sans",
     "variable": "--font-expletus-sans",

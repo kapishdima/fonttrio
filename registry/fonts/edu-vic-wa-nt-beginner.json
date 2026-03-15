@@ -5,7 +5,7 @@
   "title": "Edu VIC WA NT Beginner",
   "description": "Edu VIC WA NT Beginner — Handwriting font.",
   "font": {
-    "family": "Edu VIC WA NT Beginner",
+    "family": "Edu VIC WA NT Beginner Variable",
     "provider": "google",
     "import": "Edu_VIC_WA_NT_Beginner",
     "variable": "--font-edu-vic-wa-nt-beginner",

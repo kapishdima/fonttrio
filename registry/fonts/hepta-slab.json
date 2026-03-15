@@ -5,7 +5,7 @@
   "title": "Hepta Slab",
   "description": "Hepta Slab — Serif font.",
   "font": {
-    "family": "Hepta Slab",
+    "family": "Hepta Slab Variable",
     "provider": "google",
     "import": "Hepta_Slab",
     "variable": "--font-hepta-slab",

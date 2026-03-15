@@ -5,7 +5,7 @@
   "title": "Alegreya",
   "description": "Alegreya — Serif font.",
   "font": {
-    "family": "Alegreya",
+    "family": "Alegreya Variable",
     "provider": "google",
     "import": "Alegreya",
     "variable": "--font-alegreya",

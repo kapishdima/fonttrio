@@ -5,7 +5,7 @@
   "title": "Sen",
   "description": "Sen — Sans Serif font.",
   "font": {
-    "family": "Sen",
+    "family": "Sen Variable",
     "provider": "google",
     "import": "Sen",
     "variable": "--font-sen",

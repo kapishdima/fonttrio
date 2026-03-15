@@ -5,7 +5,7 @@
   "title": "Georama",
   "description": "Georama — Sans Serif font.",
   "font": {
-    "family": "Georama",
+    "family": "Georama Variable",
     "provider": "google",
     "import": "Georama",
     "variable": "--font-georama",

@@ -5,7 +5,7 @@
   "title": "Baloo Tamma 2",
   "description": "Baloo Tamma 2 — Display font.",
   "font": {
-    "family": "Baloo Tamma 2",
+    "family": "Baloo Tamma 2 Variable",
     "provider": "google",
     "import": "Baloo_Tamma_2",
     "variable": "--font-baloo-tamma-2",

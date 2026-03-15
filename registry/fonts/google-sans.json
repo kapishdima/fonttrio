@@ -5,7 +5,7 @@
   "title": "Google Sans",
   "description": "Google Sans — Sans Serif font.",
   "font": {
-    "family": "Google Sans",
+    "family": "Google Sans Variable",
     "provider": "google",
     "import": "Google_Sans",
     "variable": "--font-google-sans",

@@ -20,6 +20,7 @@
       "kayah-li",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/kay-pho-du"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Markazi Text",
   "description": "Markazi Text — Serif font.",
   "font": {
-    "family": "Markazi Text",
+    "family": "Markazi Text Variable",
     "provider": "google",
     "import": "Markazi_Text",
     "variable": "--font-markazi-text",

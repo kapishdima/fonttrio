@@ -5,7 +5,7 @@
   "title": "Vend Sans",
   "description": "Vend Sans — Sans Serif font.",
   "font": {
-    "family": "Vend Sans",
+    "family": "Vend Sans Variable",
     "provider": "google",
     "import": "Vend_Sans",
     "variable": "--font-vend-sans",

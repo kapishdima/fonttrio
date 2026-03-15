@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "lepcha"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-lepcha"
   }
 }

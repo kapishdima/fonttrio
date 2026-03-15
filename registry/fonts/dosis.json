@@ -5,7 +5,7 @@
   "title": "Dosis",
   "description": "Dosis — Sans Serif font.",
   "font": {
-    "family": "Dosis",
+    "family": "Dosis Variable",
     "provider": "google",
     "import": "Dosis",
     "variable": "--font-dosis",

@@ -5,7 +5,7 @@
   "title": "Edu TAS Beginner",
   "description": "Edu TAS Beginner — Handwriting font.",
   "font": {
-    "family": "Edu TAS Beginner",
+    "family": "Edu TAS Beginner Variable",
     "provider": "google",
     "import": "Edu_TAS_Beginner",
     "variable": "--font-edu-tas-beginner",

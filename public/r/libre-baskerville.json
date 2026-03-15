@@ -5,7 +5,7 @@
   "title": "Libre Baskerville",
   "description": "Libre Baskerville — Serif font.",
   "font": {
-    "family": "Libre Baskerville",
+    "family": "Libre Baskerville Variable",
     "provider": "google",
     "import": "Libre_Baskerville",
     "variable": "--font-libre-baskerville",

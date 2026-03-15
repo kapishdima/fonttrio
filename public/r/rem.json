@@ -5,7 +5,7 @@
   "title": "REM",
   "description": "REM — Sans Serif font.",
   "font": {
-    "family": "REM",
+    "family": "REM Variable",
     "provider": "google",
     "import": "REM",
     "variable": "--font-rem",

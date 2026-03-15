@@ -19,6 +19,7 @@
       "glagolitic",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/shafarik"
   }
 }

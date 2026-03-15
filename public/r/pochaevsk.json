@@ -17,6 +17,7 @@
       "cyrillic",
       "cyrillic-ext",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/pochaevsk"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Onest",
   "description": "Onest — Sans Serif font.",
   "font": {
-    "family": "Onest",
+    "family": "Onest Variable",
     "provider": "google",
     "import": "Onest",
     "variable": "--font-onest",

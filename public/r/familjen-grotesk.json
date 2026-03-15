@@ -5,7 +5,7 @@
   "title": "Familjen Grotesk",
   "description": "Familjen Grotesk — Sans Serif font.",
   "font": {
-    "family": "Familjen Grotesk",
+    "family": "Familjen Grotesk Variable",
     "provider": "google",
     "import": "Familjen_Grotesk",
     "variable": "--font-familjen-grotesk",

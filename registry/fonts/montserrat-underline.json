@@ -5,7 +5,7 @@
   "title": "Montserrat Underline",
   "description": "Montserrat Underline — Sans Serif font.",
   "font": {
-    "family": "Montserrat Underline",
+    "family": "Montserrat Underline Variable",
     "provider": "google",
     "import": "Montserrat_Underline",
     "variable": "--font-montserrat-underline",

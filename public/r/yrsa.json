@@ -5,7 +5,7 @@
   "title": "Yrsa",
   "description": "Yrsa — Serif font.",
   "font": {
-    "family": "Yrsa",
+    "family": "Yrsa Variable",
     "provider": "google",
     "import": "Yrsa",
     "variable": "--font-yrsa",

@@ -5,7 +5,7 @@
   "title": "Noto Sans Adlam",
   "description": "Noto Sans Adlam — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Adlam",
+    "family": "Noto Sans Adlam Variable",
     "provider": "google",
     "import": "Noto_Sans_Adlam",
     "variable": "--font-noto-sans-adlam",

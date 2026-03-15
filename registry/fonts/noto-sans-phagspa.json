@@ -19,6 +19,7 @@
       "math",
       "phags-pa",
       "symbols"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-phagspa"
   }
 }

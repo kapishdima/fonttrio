@@ -5,7 +5,7 @@
   "title": "Bitter",
   "description": "Bitter — Serif font.",
   "font": {
-    "family": "Bitter",
+    "family": "Bitter Variable",
     "provider": "google",
     "import": "Bitter",
     "variable": "--font-bitter",

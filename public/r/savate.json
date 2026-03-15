@@ -5,7 +5,7 @@
   "title": "Savate",
   "description": "Savate — Sans Serif font.",
   "font": {
-    "family": "Savate",
+    "family": "Savate Variable",
     "provider": "google",
     "import": "Savate",
     "variable": "--font-savate",

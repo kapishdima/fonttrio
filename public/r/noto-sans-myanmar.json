@@ -5,7 +5,7 @@
   "title": "Noto Sans Myanmar",
   "description": "Noto Sans Myanmar — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Myanmar",
+    "family": "Noto Sans Myanmar Variable",
     "provider": "google",
     "import": "Noto_Sans_Myanmar",
     "variable": "--font-noto-sans-myanmar",

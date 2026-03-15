@@ -5,7 +5,7 @@
   "title": "Noto Sans Javanese",
   "description": "Noto Sans Javanese — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Javanese",
+    "family": "Noto Sans Javanese Variable",
     "provider": "google",
     "import": "Noto_Sans_Javanese",
     "variable": "--font-noto-sans-javanese",

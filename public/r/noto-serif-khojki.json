@@ -5,7 +5,7 @@
   "title": "Noto Serif Khojki",
   "description": "Noto Serif Khojki — Serif font.",
   "font": {
-    "family": "Noto Serif Khojki",
+    "family": "Noto Serif Khojki Variable",
     "provider": "google",
     "import": "Noto_Serif_Khojki",
     "variable": "--font-noto-serif-khojki",

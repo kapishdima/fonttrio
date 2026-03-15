@@ -18,6 +18,7 @@
       "cyrillic",
       "latin",
       "symbols2"
-    ]
+    ],
+    "dependency": "@fontsource/uoqmunthenkhung"
   }
 }

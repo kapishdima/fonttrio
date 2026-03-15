@@ -17,6 +17,7 @@
       "kannada",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/hubballi"
   }
 }

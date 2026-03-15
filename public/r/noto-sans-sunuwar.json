@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "sunuwar"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-sunuwar"
   }
 }

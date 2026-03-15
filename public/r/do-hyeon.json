@@ -16,6 +16,7 @@
       "menu",
       "korean",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/do-hyeon"
   }
 }

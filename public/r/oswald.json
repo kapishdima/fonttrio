@@ -5,7 +5,7 @@
   "title": "Oswald",
   "description": "Oswald — Sans Serif font.",
   "font": {
-    "family": "Oswald",
+    "family": "Oswald Variable",
     "provider": "google",
     "import": "Oswald",
     "variable": "--font-oswald",

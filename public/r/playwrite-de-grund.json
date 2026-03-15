@@ -5,7 +5,7 @@
   "title": "Playwrite DE Grund",
   "description": "Playwrite DE Grund — Handwriting font.",
   "font": {
-    "family": "Playwrite DE Grund",
+    "family": "Playwrite DE Grund Variable",
     "provider": "google",
     "import": "Playwrite_DE_Grund",
     "variable": "--font-playwrite-de-grund",

@@ -18,6 +18,7 @@
       "arabic",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/aref-ruqaa"
   }
 }

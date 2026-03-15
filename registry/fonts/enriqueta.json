@@ -19,6 +19,7 @@
       "menu",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/enriqueta"
   }
 }

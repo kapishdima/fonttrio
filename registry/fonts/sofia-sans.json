@@ -5,7 +5,7 @@
   "title": "Sofia Sans",
   "description": "Sofia Sans — Sans Serif font.",
   "font": {
-    "family": "Sofia Sans",
+    "family": "Sofia Sans Variable",
     "provider": "google",
     "import": "Sofia_Sans",
     "variable": "--font-sofia-sans",

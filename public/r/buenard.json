@@ -5,7 +5,7 @@
   "title": "Buenard",
   "description": "Buenard — Serif font.",
   "font": {
-    "family": "Buenard",
+    "family": "Buenard Variable",
     "provider": "google",
     "import": "Buenard",
     "variable": "--font-buenard",

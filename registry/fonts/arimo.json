@@ -5,7 +5,7 @@
   "title": "Arimo",
   "description": "Arimo — Sans Serif font.",
   "font": {
-    "family": "Arimo",
+    "family": "Arimo Variable",
     "provider": "google",
     "import": "Arimo",
     "variable": "--font-arimo",

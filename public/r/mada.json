@@ -5,7 +5,7 @@
   "title": "Mada",
   "description": "Mada — Sans Serif font.",
   "font": {
-    "family": "Mada",
+    "family": "Mada Variable",
     "provider": "google",
     "import": "Mada",
     "variable": "--font-mada",

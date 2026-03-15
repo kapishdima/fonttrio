@@ -5,7 +5,7 @@
   "title": "Playwrite VN",
   "description": "Playwrite VN — Handwriting font.",
   "font": {
-    "family": "Playwrite VN",
+    "family": "Playwrite VN Variable",
     "provider": "google",
     "import": "Playwrite_VN",
     "variable": "--font-playwrite-vn",

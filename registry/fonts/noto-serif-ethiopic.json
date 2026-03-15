@@ -5,7 +5,7 @@
   "title": "Noto Serif Ethiopic",
   "description": "Noto Serif Ethiopic — Serif font.",
   "font": {
-    "family": "Noto Serif Ethiopic",
+    "family": "Noto Serif Ethiopic Variable",
     "provider": "google",
     "import": "Noto_Serif_Ethiopic",
     "variable": "--font-noto-serif-ethiopic",

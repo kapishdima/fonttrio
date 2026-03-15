@@ -5,7 +5,7 @@
   "title": "Montagu Slab",
   "description": "Montagu Slab — Serif font.",
   "font": {
-    "family": "Montagu Slab",
+    "family": "Montagu Slab Variable",
     "provider": "google",
     "import": "Montagu_Slab",
     "variable": "--font-montagu-slab",

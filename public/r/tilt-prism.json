@@ -5,7 +5,7 @@
   "title": "Tilt Prism",
   "description": "Tilt Prism — Display font.",
   "font": {
-    "family": "Tilt Prism",
+    "family": "Tilt Prism Variable",
     "provider": "google",
     "import": "Tilt_Prism",
     "variable": "--font-tilt-prism",

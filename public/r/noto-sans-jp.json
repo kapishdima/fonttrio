@@ -5,7 +5,7 @@
   "title": "Noto Sans JP",
   "description": "Noto Sans JP — Sans Serif font.",
   "font": {
-    "family": "Noto Sans JP",
+    "family": "Noto Sans JP Variable",
     "provider": "google",
     "import": "Noto_Sans_JP",
     "variable": "--font-noto-sans-jp",

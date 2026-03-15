@@ -5,7 +5,7 @@
   "title": "Funnel Display",
   "description": "Funnel Display — Display font.",
   "font": {
-    "family": "Funnel Display",
+    "family": "Funnel Display Variable",
     "provider": "google",
     "import": "Funnel_Display",
     "variable": "--font-funnel-display",

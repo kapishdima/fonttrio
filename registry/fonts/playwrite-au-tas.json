@@ -5,7 +5,7 @@
   "title": "Playwrite AU TAS",
   "description": "Playwrite AU TAS — Handwriting font.",
   "font": {
-    "family": "Playwrite AU TAS",
+    "family": "Playwrite AU TAS Variable",
     "provider": "google",
     "import": "Playwrite_AU_TAS",
     "variable": "--font-playwrite-au-tas",

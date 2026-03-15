@@ -24,6 +24,7 @@
       "japanese",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/ibm-plex-sans-jp"
   }
 }

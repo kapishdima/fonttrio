@@ -5,7 +5,7 @@
   "title": "Akshar",
   "description": "Akshar — Sans Serif font.",
   "font": {
-    "family": "Akshar",
+    "family": "Akshar Variable",
     "provider": "google",
     "import": "Akshar",
     "variable": "--font-akshar",

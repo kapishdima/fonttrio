@@ -5,7 +5,7 @@
   "title": "Science Gothic",
   "description": "Science Gothic — Sans Serif font.",
   "font": {
-    "family": "Science Gothic",
+    "family": "Science Gothic Variable",
     "provider": "google",
     "import": "Science_Gothic",
     "variable": "--font-science-gothic",

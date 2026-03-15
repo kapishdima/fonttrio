@@ -5,7 +5,7 @@
   "title": "Noto Sans KR",
   "description": "Noto Sans KR — Sans Serif font.",
   "font": {
-    "family": "Noto Sans KR",
+    "family": "Noto Sans KR Variable",
     "provider": "google",
     "import": "Noto_Sans_KR",
     "variable": "--font-noto-sans-kr",

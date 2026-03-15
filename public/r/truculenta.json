@@ -5,7 +5,7 @@
   "title": "Truculenta",
   "description": "Truculenta — Sans Serif font.",
   "font": {
-    "family": "Truculenta",
+    "family": "Truculenta Variable",
     "provider": "google",
     "import": "Truculenta",
     "variable": "--font-truculenta",

@@ -5,7 +5,7 @@
   "title": "Lexend Exa",
   "description": "Lexend Exa — Sans Serif font.",
   "font": {
-    "family": "Lexend Exa",
+    "family": "Lexend Exa Variable",
     "provider": "google",
     "import": "Lexend_Exa",
     "variable": "--font-lexend-exa",

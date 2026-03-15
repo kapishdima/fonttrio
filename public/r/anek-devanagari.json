@@ -5,7 +5,7 @@
   "title": "Anek Devanagari",
   "description": "Anek Devanagari — Sans Serif font.",
   "font": {
-    "family": "Anek Devanagari",
+    "family": "Anek Devanagari Variable",
     "provider": "google",
     "import": "Anek_Devanagari",
     "variable": "--font-anek-devanagari",

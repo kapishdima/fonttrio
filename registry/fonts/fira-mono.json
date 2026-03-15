@@ -23,6 +23,7 @@
       "latin",
       "latin-ext",
       "symbols2"
-    ]
+    ],
+    "dependency": "@fontsource/fira-mono"
   }
 }

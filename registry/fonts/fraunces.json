@@ -5,7 +5,7 @@
   "title": "Fraunces",
   "description": "Fraunces — Serif font.",
   "font": {
-    "family": "Fraunces",
+    "family": "Fraunces Variable",
     "provider": "google",
     "import": "Fraunces",
     "variable": "--font-fraunces",

@@ -5,7 +5,7 @@
   "title": "Playwrite AU SA",
   "description": "Playwrite AU SA — Handwriting font.",
   "font": {
-    "family": "Playwrite AU SA",
+    "family": "Playwrite AU SA Variable",
     "provider": "google",
     "import": "Playwrite_AU_SA",
     "variable": "--font-playwrite-au-sa",

@@ -5,7 +5,7 @@
   "title": "Recursive",
   "description": "Recursive — Sans Serif font.",
   "font": {
-    "family": "Recursive",
+    "family": "Recursive Variable",
     "provider": "google",
     "import": "Recursive",
     "variable": "--font-recursive",

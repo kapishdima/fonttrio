@@ -5,7 +5,7 @@
   "title": "Playwrite US Trad",
   "description": "Playwrite US Trad — Handwriting font.",
   "font": {
-    "family": "Playwrite US Trad",
+    "family": "Playwrite US Trad Variable",
     "provider": "google",
     "import": "Playwrite_US_Trad",
     "variable": "--font-playwrite-us-trad",

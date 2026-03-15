@@ -5,7 +5,7 @@
   "title": "Noto Sans Tangsa",
   "description": "Noto Sans Tangsa — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Tangsa",
+    "family": "Noto Sans Tangsa Variable",
     "provider": "google",
     "import": "Noto_Sans_Tangsa",
     "variable": "--font-noto-sans-tangsa",

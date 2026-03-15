@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "tirhuta"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-tirhuta"
   }
 }

@@ -19,6 +19,7 @@
       "meroitic",
       "meroitic-cursive",
       "meroitic-hieroglyphs"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-meroitic"
   }
 }

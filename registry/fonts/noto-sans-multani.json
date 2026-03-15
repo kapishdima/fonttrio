@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "multani"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-multani"
   }
 }

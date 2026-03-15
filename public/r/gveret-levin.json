@@ -16,6 +16,7 @@
       "menu",
       "hebrew",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/gveret-levin"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Gelasio",
   "description": "Gelasio — Serif font.",
   "font": {
-    "family": "Gelasio",
+    "family": "Gelasio Variable",
     "provider": "google",
     "import": "Gelasio",
     "variable": "--font-gelasio",

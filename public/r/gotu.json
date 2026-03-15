@@ -18,6 +18,7 @@
       "latin",
       "latin-ext",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/gotu"
   }
 }

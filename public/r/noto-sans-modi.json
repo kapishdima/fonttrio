@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "modi"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-modi"
   }
 }

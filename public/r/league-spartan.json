@@ -5,7 +5,7 @@
   "title": "League Spartan",
   "description": "League Spartan — Sans Serif font.",
   "font": {
-    "family": "League Spartan",
+    "family": "League Spartan Variable",
     "provider": "google",
     "import": "League_Spartan",
     "variable": "--font-league-spartan",

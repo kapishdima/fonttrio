@@ -5,7 +5,7 @@
   "title": "Bricolage Grotesque",
   "description": "Bricolage Grotesque — Sans Serif font.",
   "font": {
-    "family": "Bricolage Grotesque",
+    "family": "Bricolage Grotesque Variable",
     "provider": "google",
     "import": "Bricolage_Grotesque",
     "variable": "--font-bricolage-grotesque",

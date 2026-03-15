@@ -5,7 +5,7 @@
   "title": "Frank Ruhl Libre",
   "description": "Frank Ruhl Libre — Serif font.",
   "font": {
-    "family": "Frank Ruhl Libre",
+    "family": "Frank Ruhl Libre Variable",
     "provider": "google",
     "import": "Frank_Ruhl_Libre",
     "variable": "--font-frank-ruhl-libre",

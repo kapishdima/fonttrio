@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "old-uyghur"
-    ]
+    ],
+    "dependency": "@fontsource/noto-serif-old-uyghur"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Roboto Slab",
   "description": "Roboto Slab — Serif font.",
   "font": {
-    "family": "Roboto Slab",
+    "family": "Roboto Slab Variable",
     "provider": "google",
     "import": "Roboto_Slab",
     "variable": "--font-roboto-slab",

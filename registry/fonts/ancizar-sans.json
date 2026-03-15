@@ -5,7 +5,7 @@
   "title": "Ancizar Sans",
   "description": "Ancizar Sans — Sans Serif font.",
   "font": {
-    "family": "Ancizar Sans",
+    "family": "Ancizar Sans Variable",
     "provider": "google",
     "import": "Ancizar_Sans",
     "variable": "--font-ancizar-sans",

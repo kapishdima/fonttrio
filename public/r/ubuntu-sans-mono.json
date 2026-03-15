@@ -5,7 +5,7 @@
   "title": "Ubuntu Sans Mono",
   "description": "Ubuntu Sans Mono — Monospace font.",
   "font": {
-    "family": "Ubuntu Sans Mono",
+    "family": "Ubuntu Sans Mono Variable",
     "provider": "google",
     "import": "Ubuntu_Sans_Mono",
     "variable": "--font-ubuntu-sans-mono",

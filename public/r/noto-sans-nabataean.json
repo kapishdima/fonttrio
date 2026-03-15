@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "nabataean"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-nabataean"
   }
 }

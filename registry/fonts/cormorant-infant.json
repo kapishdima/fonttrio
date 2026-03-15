@@ -5,7 +5,7 @@
   "title": "Cormorant Infant",
   "description": "Cormorant Infant — Serif font.",
   "font": {
-    "family": "Cormorant Infant",
+    "family": "Cormorant Infant Variable",
     "provider": "google",
     "import": "Cormorant_Infant",
     "variable": "--font-cormorant-infant",

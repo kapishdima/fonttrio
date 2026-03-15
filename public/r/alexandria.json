@@ -5,7 +5,7 @@
   "title": "Alexandria",
   "description": "Alexandria — Sans Serif font.",
   "font": {
-    "family": "Alexandria",
+    "family": "Alexandria Variable",
     "provider": "google",
     "import": "Alexandria",
     "variable": "--font-alexandria",

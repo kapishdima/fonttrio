@@ -5,7 +5,7 @@
   "title": "Red Rose",
   "description": "Red Rose — Display font.",
   "font": {
-    "family": "Red Rose",
+    "family": "Red Rose Variable",
     "provider": "google",
     "import": "Red_Rose",
     "variable": "--font-red-rose",

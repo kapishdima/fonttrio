@@ -5,7 +5,7 @@
   "title": "Sofia Sans Condensed",
   "description": "Sofia Sans Condensed — Sans Serif font.",
   "font": {
-    "family": "Sofia Sans Condensed",
+    "family": "Sofia Sans Condensed Variable",
     "provider": "google",
     "import": "Sofia_Sans_Condensed",
     "variable": "--font-sofia-sans-condensed",

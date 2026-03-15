@@ -17,6 +17,7 @@
       "elbasan",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-elbasan"
   }
 }

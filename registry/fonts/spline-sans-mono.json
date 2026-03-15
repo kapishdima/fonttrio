@@ -5,7 +5,7 @@
   "title": "Spline Sans Mono",
   "description": "Spline Sans Mono — Monospace font.",
   "font": {
-    "family": "Spline Sans Mono",
+    "family": "Spline Sans Mono Variable",
     "provider": "google",
     "import": "Spline_Sans_Mono",
     "variable": "--font-spline-sans-mono",

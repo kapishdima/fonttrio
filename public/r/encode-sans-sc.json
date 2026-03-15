@@ -5,7 +5,7 @@
   "title": "Encode Sans SC",
   "description": "Encode Sans SC — Sans Serif font.",
   "font": {
-    "family": "Encode Sans SC",
+    "family": "Encode Sans SC Variable",
     "provider": "google",
     "import": "Encode_Sans_SC",
     "variable": "--font-encode-sans-sc",

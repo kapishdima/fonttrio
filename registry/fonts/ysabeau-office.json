@@ -5,7 +5,7 @@
   "title": "Ysabeau Office",
   "description": "Ysabeau Office — Sans Serif font.",
   "font": {
-    "family": "Ysabeau Office",
+    "family": "Ysabeau Office Variable",
     "provider": "google",
     "import": "Ysabeau_Office",
     "variable": "--font-ysabeau-office",

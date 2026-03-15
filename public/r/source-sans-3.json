@@ -5,7 +5,7 @@
   "title": "Source Sans 3",
   "description": "Source Sans 3 — Sans Serif font.",
   "font": {
-    "family": "Source Sans 3",
+    "family": "Source Sans 3 Variable",
     "provider": "google",
     "import": "Source_Sans_3",
     "variable": "--font-source-sans-3",

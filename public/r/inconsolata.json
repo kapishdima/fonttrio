@@ -5,7 +5,7 @@
   "title": "Inconsolata",
   "description": "Inconsolata — Monospace font.",
   "font": {
-    "family": "Inconsolata",
+    "family": "Inconsolata Variable",
     "provider": "google",
     "import": "Inconsolata",
     "variable": "--font-inconsolata",

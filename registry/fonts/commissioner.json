@@ -5,7 +5,7 @@
   "title": "Commissioner",
   "description": "Commissioner — Sans Serif font.",
   "font": {
-    "family": "Commissioner",
+    "family": "Commissioner Variable",
     "provider": "google",
     "import": "Commissioner",
     "variable": "--font-commissioner",

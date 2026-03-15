@@ -5,7 +5,7 @@
   "title": "Playwrite CA",
   "description": "Playwrite CA — Handwriting font.",
   "font": {
-    "family": "Playwrite CA",
+    "family": "Playwrite CA Variable",
     "provider": "google",
     "import": "Playwrite_CA",
     "variable": "--font-playwrite-ca",

@@ -5,7 +5,7 @@
   "title": "Noto Serif Khmer",
   "description": "Noto Serif Khmer — Serif font.",
   "font": {
-    "family": "Noto Serif Khmer",
+    "family": "Noto Serif Khmer Variable",
     "provider": "google",
     "import": "Noto_Serif_Khmer",
     "variable": "--font-noto-serif-khmer",

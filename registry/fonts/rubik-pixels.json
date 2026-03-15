@@ -19,6 +19,7 @@
       "hebrew",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/rubik-pixels"
   }
 }

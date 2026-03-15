@@ -5,7 +5,7 @@
   "title": "Matangi",
   "description": "Matangi — Sans Serif font.",
   "font": {
-    "family": "Matangi",
+    "family": "Matangi Variable",
     "provider": "google",
     "import": "Matangi",
     "variable": "--font-matangi",

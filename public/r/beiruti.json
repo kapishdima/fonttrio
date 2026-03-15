@@ -5,7 +5,7 @@
   "title": "Beiruti",
   "description": "Beiruti — Sans Serif font.",
   "font": {
-    "family": "Beiruti",
+    "family": "Beiruti Variable",
     "provider": "google",
     "import": "Beiruti",
     "variable": "--font-beiruti",

@@ -5,7 +5,7 @@
   "title": "Noto Serif Hentaigana",
   "description": "Noto Serif Hentaigana — Serif font.",
   "font": {
-    "family": "Noto Serif Hentaigana",
+    "family": "Noto Serif Hentaigana Variable",
     "provider": "google",
     "import": "Noto_Serif_Hentaigana",
     "variable": "--font-noto-serif-hentaigana",

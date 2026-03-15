@@ -5,7 +5,7 @@
   "title": "Host Grotesk",
   "description": "Host Grotesk — Sans Serif font.",
   "font": {
-    "family": "Host Grotesk",
+    "family": "Host Grotesk Variable",
     "provider": "google",
     "import": "Host_Grotesk",
     "variable": "--font-host-grotesk",

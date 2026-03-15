@@ -17,6 +17,7 @@
       "khmer",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/kdam-thmor-pro"
   }
 }

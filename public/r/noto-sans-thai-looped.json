@@ -5,7 +5,7 @@
   "title": "Noto Sans Thai Looped",
   "description": "Noto Sans Thai Looped — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Thai Looped",
+    "family": "Noto Sans Thai Looped Variable",
     "provider": "google",
     "import": "Noto_Sans_Thai_Looped",
     "variable": "--font-noto-sans-thai-looped",

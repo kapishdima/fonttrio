@@ -5,7 +5,7 @@
   "title": "Bitcount Prop Single",
   "description": "Bitcount Prop Single — Display font.",
   "font": {
-    "family": "Bitcount Prop Single",
+    "family": "Bitcount Prop Single Variable",
     "provider": "google",
     "import": "Bitcount_Prop_Single",
     "variable": "--font-bitcount-prop-single",

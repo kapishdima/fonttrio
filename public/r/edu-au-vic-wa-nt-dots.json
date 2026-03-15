@@ -5,7 +5,7 @@
   "title": "Edu AU VIC WA NT Dots",
   "description": "Edu AU VIC WA NT Dots — Handwriting font.",
   "font": {
-    "family": "Edu AU VIC WA NT Dots",
+    "family": "Edu AU VIC WA NT Dots Variable",
     "provider": "google",
     "import": "Edu_AU_VIC_WA_NT_Dots",
     "variable": "--font-edu-au-vic-wa-nt-dots",

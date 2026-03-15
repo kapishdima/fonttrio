@@ -5,7 +5,7 @@
   "title": "Google Sans Flex",
   "description": "Google Sans Flex — Sans Serif font.",
   "font": {
-    "family": "Google Sans Flex",
+    "family": "Google Sans Flex Variable",
     "provider": "google",
     "import": "Google_Sans_Flex",
     "variable": "--font-google-sans-flex",

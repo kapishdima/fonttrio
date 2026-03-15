@@ -5,7 +5,7 @@
   "title": "Big Shoulders Stencil",
   "description": "Big Shoulders Stencil — Display font.",
   "font": {
-    "family": "Big Shoulders Stencil",
+    "family": "Big Shoulders Stencil Variable",
     "provider": "google",
     "import": "Big_Shoulders_Stencil",
     "variable": "--font-big-shoulders-stencil",

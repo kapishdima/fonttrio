@@ -5,7 +5,7 @@
   "title": "Cinzel",
   "description": "Cinzel — Serif font.",
   "font": {
-    "family": "Cinzel",
+    "family": "Cinzel Variable",
     "provider": "google",
     "import": "Cinzel",
     "variable": "--font-cinzel",

@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "palmyrene"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-palmyrene"
   }
 }

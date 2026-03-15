@@ -5,7 +5,7 @@
   "title": "Noto Serif Gurmukhi",
   "description": "Noto Serif Gurmukhi — Serif font.",
   "font": {
-    "family": "Noto Serif Gurmukhi",
+    "family": "Noto Serif Gurmukhi Variable",
     "provider": "google",
     "import": "Noto_Serif_Gurmukhi",
     "variable": "--font-noto-serif-gurmukhi",

@@ -17,6 +17,7 @@
       "cypriot",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-cypriot"
   }
 }

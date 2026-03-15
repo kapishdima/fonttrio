@@ -5,7 +5,7 @@
   "title": "Playfair Display",
   "description": "Playfair Display — Serif font.",
   "font": {
-    "family": "Playfair Display",
+    "family": "Playfair Display Variable",
     "provider": "google",
     "import": "Playfair_Display",
     "variable": "--font-playfair-display",

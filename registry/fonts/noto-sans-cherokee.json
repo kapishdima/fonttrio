@@ -5,7 +5,7 @@
   "title": "Noto Sans Cherokee",
   "description": "Noto Sans Cherokee — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Cherokee",
+    "family": "Noto Sans Cherokee Variable",
     "provider": "google",
     "import": "Noto_Sans_Cherokee",
     "variable": "--font-noto-sans-cherokee",

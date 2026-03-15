@@ -5,7 +5,7 @@
   "title": "Epunda Slab",
   "description": "Epunda Slab — Serif font.",
   "font": {
-    "family": "Epunda Slab",
+    "family": "Epunda Slab Variable",
     "provider": "google",
     "import": "Epunda_Slab",
     "variable": "--font-epunda-slab",

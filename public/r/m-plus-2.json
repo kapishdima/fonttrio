@@ -5,7 +5,7 @@
   "title": "M PLUS 2",
   "description": "M PLUS 2 — Sans Serif font.",
   "font": {
-    "family": "M PLUS 2",
+    "family": "M PLUS 2 Variable",
     "provider": "google",
     "import": "M_PLUS_2",
     "variable": "--font-m-plus-2",

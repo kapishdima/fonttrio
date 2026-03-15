@@ -5,7 +5,7 @@
   "title": "Zalando Sans",
   "description": "Zalando Sans — Sans Serif font.",
   "font": {
-    "family": "Zalando Sans",
+    "family": "Zalando Sans Variable",
     "provider": "google",
     "import": "Zalando_Sans",
     "variable": "--font-zalando-sans",

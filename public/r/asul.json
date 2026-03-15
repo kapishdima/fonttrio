@@ -16,6 +16,7 @@
     "subsets": [
       "menu",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/asul"
   }
 }

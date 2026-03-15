@@ -5,7 +5,7 @@
   "title": "Signika",
   "description": "Signika — Sans Serif font.",
   "font": {
-    "family": "Signika",
+    "family": "Signika Variable",
     "provider": "google",
     "import": "Signika",
     "variable": "--font-signika",

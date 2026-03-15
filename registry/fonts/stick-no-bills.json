@@ -5,7 +5,7 @@
   "title": "Stick No Bills",
   "description": "Stick No Bills — Sans Serif font.",
   "font": {
-    "family": "Stick No Bills",
+    "family": "Stick No Bills Variable",
     "provider": "google",
     "import": "Stick_No_Bills",
     "variable": "--font-stick-no-bills",

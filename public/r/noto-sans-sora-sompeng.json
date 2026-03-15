@@ -5,7 +5,7 @@
   "title": "Noto Sans Sora Sompeng",
   "description": "Noto Sans Sora Sompeng — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Sora Sompeng",
+    "family": "Noto Sans Sora Sompeng Variable",
     "provider": "google",
     "import": "Noto_Sans_Sora_Sompeng",
     "variable": "--font-noto-sans-sora-sompeng",

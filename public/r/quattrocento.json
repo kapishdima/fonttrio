@@ -17,6 +17,7 @@
       "menu",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/quattrocento"
   }
 }

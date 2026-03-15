@@ -5,7 +5,7 @@
   "title": "Playwrite DK Uloopet",
   "description": "Playwrite DK Uloopet — Handwriting font.",
   "font": {
-    "family": "Playwrite DK Uloopet",
+    "family": "Playwrite DK Uloopet Variable",
     "provider": "google",
     "import": "Playwrite_DK_Uloopet",
     "variable": "--font-playwrite-dk-uloopet",

@@ -5,7 +5,7 @@
   "title": "Baloo Bhaijaan 2",
   "description": "Baloo Bhaijaan 2 — Display font.",
   "font": {
-    "family": "Baloo Bhaijaan 2",
+    "family": "Baloo Bhaijaan 2 Variable",
     "provider": "google",
     "import": "Baloo_Bhaijaan_2",
     "variable": "--font-baloo-bhaijaan-2",

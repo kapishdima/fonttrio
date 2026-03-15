@@ -5,7 +5,7 @@
   "title": "Noto Sans Hebrew",
   "description": "Noto Sans Hebrew — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Hebrew",
+    "family": "Noto Sans Hebrew Variable",
     "provider": "google",
     "import": "Noto_Sans_Hebrew",
     "variable": "--font-noto-sans-hebrew",

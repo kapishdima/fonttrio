@@ -5,7 +5,7 @@
   "title": "Noto Sans New Tai Lue",
   "description": "Noto Sans New Tai Lue — Sans Serif font.",
   "font": {
-    "family": "Noto Sans New Tai Lue",
+    "family": "Noto Sans New Tai Lue Variable",
     "provider": "google",
     "import": "Noto_Sans_New_Tai_Lue",
     "variable": "--font-noto-sans-new-tai-lue",

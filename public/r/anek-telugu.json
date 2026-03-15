@@ -5,7 +5,7 @@
   "title": "Anek Telugu",
   "description": "Anek Telugu — Sans Serif font.",
   "font": {
-    "family": "Anek Telugu",
+    "family": "Anek Telugu Variable",
     "provider": "google",
     "import": "Anek_Telugu",
     "variable": "--font-anek-telugu",

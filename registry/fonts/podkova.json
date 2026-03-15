@@ -5,7 +5,7 @@
   "title": "Podkova",
   "description": "Podkova — Serif font.",
   "font": {
-    "family": "Podkova",
+    "family": "Podkova Variable",
     "provider": "google",
     "import": "Podkova",
     "variable": "--font-podkova",

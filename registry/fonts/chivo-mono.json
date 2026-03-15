@@ -5,7 +5,7 @@
   "title": "Chivo Mono",
   "description": "Chivo Mono — Monospace font.",
   "font": {
-    "family": "Chivo Mono",
+    "family": "Chivo Mono Variable",
     "provider": "google",
     "import": "Chivo_Mono",
     "variable": "--font-chivo-mono",

@@ -5,7 +5,7 @@
   "title": "Noto Sans Medefaidrin",
   "description": "Noto Sans Medefaidrin — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Medefaidrin",
+    "family": "Noto Sans Medefaidrin Variable",
     "provider": "google",
     "import": "Noto_Sans_Medefaidrin",
     "variable": "--font-noto-sans-medefaidrin",

@@ -5,7 +5,7 @@
   "title": "Rokkitt",
   "description": "Rokkitt — Serif font.",
   "font": {
-    "family": "Rokkitt",
+    "family": "Rokkitt Variable",
     "provider": "google",
     "import": "Rokkitt",
     "variable": "--font-rokkitt",

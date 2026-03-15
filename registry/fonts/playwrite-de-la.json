@@ -5,7 +5,7 @@
   "title": "Playwrite DE LA",
   "description": "Playwrite DE LA — Handwriting font.",
   "font": {
-    "family": "Playwrite DE LA",
+    "family": "Playwrite DE LA Variable",
     "provider": "google",
     "import": "Playwrite_DE_LA",
     "variable": "--font-playwrite-de-la",

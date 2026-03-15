@@ -5,7 +5,7 @@
   "title": "Josefin Slab",
   "description": "Josefin Slab — Serif font.",
   "font": {
-    "family": "Josefin Slab",
+    "family": "Josefin Slab Variable",
     "provider": "google",
     "import": "Josefin_Slab",
     "variable": "--font-josefin-slab",

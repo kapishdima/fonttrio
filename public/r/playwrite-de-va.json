@@ -5,7 +5,7 @@
   "title": "Playwrite DE VA",
   "description": "Playwrite DE VA — Handwriting font.",
   "font": {
-    "family": "Playwrite DE VA",
+    "family": "Playwrite DE VA Variable",
     "provider": "google",
     "import": "Playwrite_DE_VA",
     "variable": "--font-playwrite-de-va",

@@ -5,7 +5,7 @@
   "title": "Texturina",
   "description": "Texturina — Serif font.",
   "font": {
-    "family": "Texturina",
+    "family": "Texturina Variable",
     "provider": "google",
     "import": "Texturina",
     "variable": "--font-texturina",

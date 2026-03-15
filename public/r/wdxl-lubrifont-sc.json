@@ -19,6 +19,7 @@
       "latin",
       "latin-ext",
       "symbols2"
-    ]
+    ],
+    "dependency": "@fontsource/wdxl-lubrifont-sc"
   }
 }

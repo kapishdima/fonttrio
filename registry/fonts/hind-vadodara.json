@@ -21,6 +21,7 @@
       "gujarati",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/hind-vadodara"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Playwrite US Modern",
   "description": "Playwrite US Modern — Handwriting font.",
   "font": {
-    "family": "Playwrite US Modern",
+    "family": "Playwrite US Modern Variable",
     "provider": "google",
     "import": "Playwrite_US_Modern",
     "variable": "--font-playwrite-us-modern",

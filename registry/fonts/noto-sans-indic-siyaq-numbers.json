@@ -17,6 +17,7 @@
       "indic-siyaq-numbers",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-indic-siyaq-numbers"
   }
 }

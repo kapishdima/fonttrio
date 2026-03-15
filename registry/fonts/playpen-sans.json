@@ -5,7 +5,7 @@
   "title": "Playpen Sans",
   "description": "Playpen Sans — Handwriting font.",
   "font": {
-    "family": "Playpen Sans",
+    "family": "Playpen Sans Variable",
     "provider": "google",
     "import": "Playpen_Sans",
     "variable": "--font-playpen-sans",

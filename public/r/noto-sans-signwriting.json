@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "signwriting"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-signwriting"
   }
 }

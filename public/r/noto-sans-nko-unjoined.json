@@ -5,7 +5,7 @@
   "title": "Noto Sans NKo Unjoined",
   "description": "Noto Sans NKo Unjoined — Sans Serif font.",
   "font": {
-    "family": "Noto Sans NKo Unjoined",
+    "family": "Noto Sans NKo Unjoined Variable",
     "provider": "google",
     "import": "Noto_Sans_NKo_Unjoined",
     "variable": "--font-noto-sans-nko-unjoined",

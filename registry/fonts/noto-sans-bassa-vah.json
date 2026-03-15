@@ -5,7 +5,7 @@
   "title": "Noto Sans Bassa Vah",
   "description": "Noto Sans Bassa Vah — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Bassa Vah",
+    "family": "Noto Sans Bassa Vah Variable",
     "provider": "google",
     "import": "Noto_Sans_Bassa_Vah",
     "variable": "--font-noto-sans-bassa-vah",

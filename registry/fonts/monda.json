@@ -5,7 +5,7 @@
   "title": "Monda",
   "description": "Monda — Sans Serif font.",
   "font": {
-    "family": "Monda",
+    "family": "Monda Variable",
     "provider": "google",
     "import": "Monda",
     "variable": "--font-monda",

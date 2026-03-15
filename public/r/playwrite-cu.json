@@ -5,7 +5,7 @@
   "title": "Playwrite CU",
   "description": "Playwrite CU — Handwriting font.",
   "font": {
-    "family": "Playwrite CU",
+    "family": "Playwrite CU Variable",
     "provider": "google",
     "import": "Playwrite_CU",
     "variable": "--font-playwrite-cu",

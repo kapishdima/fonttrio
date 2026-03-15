@@ -5,7 +5,7 @@
   "title": "Tilt Neon",
   "description": "Tilt Neon — Display font.",
   "font": {
-    "family": "Tilt Neon",
+    "family": "Tilt Neon Variable",
     "provider": "google",
     "import": "Tilt_Neon",
     "variable": "--font-tilt-neon",

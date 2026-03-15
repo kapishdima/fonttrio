@@ -17,6 +17,7 @@
       "menu",
       "korean",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/nanum-gothic-coding"
   }
 }

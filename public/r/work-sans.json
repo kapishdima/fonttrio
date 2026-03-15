@@ -5,7 +5,7 @@
   "title": "Work Sans",
   "description": "Work Sans — Sans Serif font.",
   "font": {
-    "family": "Work Sans",
+    "family": "Work Sans Variable",
     "provider": "google",
     "import": "Work_Sans",
     "variable": "--font-work-sans",

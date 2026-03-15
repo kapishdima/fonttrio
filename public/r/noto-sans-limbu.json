@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "limbu"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-limbu"
   }
 }

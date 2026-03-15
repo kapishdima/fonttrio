@@ -5,7 +5,7 @@
   "title": "Noto Serif Yezidi",
   "description": "Noto Serif Yezidi — Serif font.",
   "font": {
-    "family": "Noto Serif Yezidi",
+    "family": "Noto Serif Yezidi Variable",
     "provider": "google",
     "import": "Noto_Serif_Yezidi",
     "variable": "--font-noto-serif-yezidi",

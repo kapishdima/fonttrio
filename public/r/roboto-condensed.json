@@ -5,7 +5,7 @@
   "title": "Roboto Condensed",
   "description": "Roboto Condensed — Sans Serif font.",
   "font": {
-    "family": "Roboto Condensed",
+    "family": "Roboto Condensed Variable",
     "provider": "google",
     "import": "Roboto_Condensed",
     "variable": "--font-roboto-condensed",

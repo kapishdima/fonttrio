@@ -5,7 +5,7 @@
   "title": "Comme",
   "description": "Comme — Sans Serif font.",
   "font": {
-    "family": "Comme",
+    "family": "Comme Variable",
     "provider": "google",
     "import": "Comme",
     "variable": "--font-comme",

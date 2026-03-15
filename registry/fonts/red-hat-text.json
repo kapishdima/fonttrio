@@ -5,7 +5,7 @@
   "title": "Red Hat Text",
   "description": "Red Hat Text — Sans Serif font.",
   "font": {
-    "family": "Red Hat Text",
+    "family": "Red Hat Text Variable",
     "provider": "google",
     "import": "Red_Hat_Text",
     "variable": "--font-red-hat-text",

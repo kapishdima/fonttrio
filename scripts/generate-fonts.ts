@@ -5,7 +5,7 @@
  * Usage: bun run scripts/generate-fonts.ts
  */
 
-import { writeFileSync, mkdirSync, readdirSync, readFileSync } from "fs";
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const FONTS_DIR = join(import.meta.dir, "..", "registry", "fonts");
@@ -26,23 +26,23 @@ const MANUAL_FONTS: Array<{
   provider: "npm";
   npmPackage: string;
 }> = [
-  {
-    family: "Geist",
-    category: "sans-serif",
-    weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-    subsets: ["latin", "latin-ext"],
-    provider: "npm",
-    npmPackage: "geist",
-  },
-  {
-    family: "Geist Mono",
-    category: "monospace",
-    weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-    subsets: ["latin", "latin-ext"],
-    provider: "npm",
-    npmPackage: "geist",
-  },
-];
+    {
+      family: "Geist",
+      category: "sans-serif",
+      weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+      subsets: ["latin", "latin-ext"],
+      provider: "npm",
+      npmPackage: "geist",
+    },
+    {
+      family: "Geist Mono",
+      category: "monospace",
+      weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+      subsets: ["latin", "latin-ext"],
+      provider: "npm",
+      npmPackage: "geist",
+    },
+  ];
 
 function toKebab(family: string): string {
   return family
@@ -89,6 +89,41 @@ function collectRequiredFonts(): void {
   console.log(`Required by pairings: ${REQUIRED_FAMILIES.size} fonts`);
 }
 
+const FONTSOURCE_CACHE = new Map<string, boolean>(); // true = variable exists
+
+async function hasVariablePackage(kebab: string): Promise<boolean> {
+  if (FONTSOURCE_CACHE.has(kebab)) return FONTSOURCE_CACHE.get(kebab)!;
+  const res = await fetch(
+    `https://registry.npmjs.org/@fontsource-variable/${kebab}`,
+    { method: "HEAD" }
+  );
+  const exists = res.status === 200;
+  FONTSOURCE_CACHE.set(kebab, exists);
+  return exists;
+}
+
+async function checkAllFonts(
+  kebabs: string[],
+  concurrency = 20
+): Promise<Map<string, boolean>> {
+  const results = new Map<string, boolean>();
+  const chunks: string[][] = [];
+  for (let i = 0; i < kebabs.length; i += concurrency) {
+    chunks.push(kebabs.slice(i, i + concurrency));
+  }
+  let done = 0;
+  for (const chunk of chunks) {
+    const settled = await Promise.all(
+      chunk.map(async (k) => ({ k, ok: await hasVariablePackage(k) }))
+    );
+    for (const { k, ok } of settled) results.set(k, ok);
+    done += chunk.length;
+    process.stdout.write(`\r  ${done}/${kebabs.length} checked...`);
+  }
+  process.stdout.write("\n");
+  return results;
+}
+
 function writeFont(opts: {
   family: string;
   category: string;
@@ -96,8 +131,18 @@ function writeFont(opts: {
   subsets: string[];
   provider: string;
   npmPackage?: string;
+  dependency?: string;
 }): void {
   const kebab = toKebab(opts.family);
+  // No dependency → @fontsource-variable exists → append " Variable" to family name
+  // dependency set → only regular @fontsource available → keep family name as-is
+  const fontFamily =
+    opts.provider === "google"
+      ? opts.dependency
+        ? opts.family
+        : `${opts.family} Variable`
+      : opts.family;
+
   const registryFont: Record<string, unknown> = {
     name: kebab,
     type: "registry:font",
@@ -105,12 +150,13 @@ function writeFont(opts: {
     title: opts.family,
     description: `${opts.family} — ${opts.category} font.`,
     font: {
-      family: opts.family,
+      family: fontFamily,
       provider: opts.provider,
       import: toImportName(opts.family),
       variable: `--font-${kebab}`,
       weight: opts.weights,
       subsets: opts.subsets,
+      ...(opts.dependency ? { dependency: opts.dependency } : {}),
     },
   };
 
@@ -162,15 +208,23 @@ async function main() {
 
   mkdirSync(FONTS_DIR, { recursive: true });
 
+  // Check @fontsource-variable availability for all Google Fonts
+  console.log("Checking @fontsource-variable availability on npm...");
+  const kebabs = families.map((f) => toKebab(f.family));
+  const variableMap = await checkAllFonts(kebabs);
+
   // Generate ALL Google Fonts
   let count = 0;
   for (const font of families) {
+    const kebab = toKebab(font.family);
+    const hasVariable = variableMap.get(kebab) ?? false;
     writeFont({
       family: font.family,
       category: font.category,
       weights: extractWeights(font.variants),
       subsets: font.subsets,
       provider: "google",
+      dependency: hasVariable ? undefined : `@fontsource/${kebab}`,
     });
     count++;
   }

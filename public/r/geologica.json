@@ -5,7 +5,7 @@
   "title": "Geologica",
   "description": "Geologica — Sans Serif font.",
   "font": {
-    "family": "Geologica",
+    "family": "Geologica Variable",
     "provider": "google",
     "import": "Geologica",
     "variable": "--font-geologica",

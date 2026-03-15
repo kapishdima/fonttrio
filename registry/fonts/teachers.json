@@ -5,7 +5,7 @@
   "title": "Teachers",
   "description": "Teachers — Sans Serif font.",
   "font": {
-    "family": "Teachers",
+    "family": "Teachers Variable",
     "provider": "google",
     "import": "Teachers",
     "variable": "--font-teachers",

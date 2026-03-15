@@ -5,7 +5,7 @@
   "title": "Fredoka",
   "description": "Fredoka — Sans Serif font.",
   "font": {
-    "family": "Fredoka",
+    "family": "Fredoka Variable",
     "provider": "google",
     "import": "Fredoka",
     "variable": "--font-fredoka",

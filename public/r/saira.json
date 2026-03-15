@@ -5,7 +5,7 @@
   "title": "Saira",
   "description": "Saira — Sans Serif font.",
   "font": {
-    "family": "Saira",
+    "family": "Saira Variable",
     "provider": "google",
     "import": "Saira",
     "variable": "--font-saira",

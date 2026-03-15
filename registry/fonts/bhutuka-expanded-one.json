@@ -17,6 +17,7 @@
       "gurmukhi",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/bhutuka-expanded-one"
   }
 }

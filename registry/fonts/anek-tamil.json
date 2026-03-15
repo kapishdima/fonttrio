@@ -5,7 +5,7 @@
   "title": "Anek Tamil",
   "description": "Anek Tamil — Sans Serif font.",
   "font": {
-    "family": "Anek Tamil",
+    "family": "Anek Tamil Variable",
     "provider": "google",
     "import": "Anek_Tamil",
     "variable": "--font-anek-tamil",

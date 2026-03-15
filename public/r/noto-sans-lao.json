@@ -5,7 +5,7 @@
   "title": "Noto Sans Lao",
   "description": "Noto Sans Lao — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Lao",
+    "family": "Noto Sans Lao Variable",
     "provider": "google",
     "import": "Noto_Sans_Lao",
     "variable": "--font-noto-sans-lao",

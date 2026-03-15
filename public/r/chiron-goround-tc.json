@@ -5,7 +5,7 @@
   "title": "Chiron GoRound TC",
   "description": "Chiron GoRound TC — Sans Serif font.",
   "font": {
-    "family": "Chiron GoRound TC",
+    "family": "Chiron GoRound TC Variable",
     "provider": "google",
     "import": "Chiron_GoRound_TC",
     "variable": "--font-chiron-goround-tc",

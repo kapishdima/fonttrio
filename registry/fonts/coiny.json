@@ -18,6 +18,7 @@
       "latin-ext",
       "tamil",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/coiny"
   }
 }

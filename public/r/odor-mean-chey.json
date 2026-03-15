@@ -16,6 +16,7 @@
       "menu",
       "khmer",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/odor-mean-chey"
   }
 }

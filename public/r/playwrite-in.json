@@ -5,7 +5,7 @@
   "title": "Playwrite IN",
   "description": "Playwrite IN — Handwriting font.",
   "font": {
-    "family": "Playwrite IN",
+    "family": "Playwrite IN Variable",
     "provider": "google",
     "import": "Playwrite_IN",
     "variable": "--font-playwrite-in",

@@ -17,6 +17,7 @@
       "buhid",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-buhid"
   }
 }

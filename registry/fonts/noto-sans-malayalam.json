@@ -5,7 +5,7 @@
   "title": "Noto Sans Malayalam",
   "description": "Noto Sans Malayalam — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Malayalam",
+    "family": "Noto Sans Malayalam Variable",
     "provider": "google",
     "import": "Noto_Sans_Malayalam",
     "variable": "--font-noto-sans-malayalam",

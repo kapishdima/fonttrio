@@ -5,7 +5,7 @@
   "title": "Unbounded",
   "description": "Unbounded — Sans Serif font.",
   "font": {
-    "family": "Unbounded",
+    "family": "Unbounded Variable",
     "provider": "google",
     "import": "Unbounded",
     "variable": "--font-unbounded",

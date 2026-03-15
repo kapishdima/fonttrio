@@ -25,6 +25,7 @@
       "devanagari",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/poppins"
   }
 }

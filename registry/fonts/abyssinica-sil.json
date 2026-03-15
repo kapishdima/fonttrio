@@ -17,6 +17,7 @@
       "ethiopic",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/abyssinica-sil"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Quicksand",
   "description": "Quicksand — Sans Serif font.",
   "font": {
-    "family": "Quicksand",
+    "family": "Quicksand Variable",
     "provider": "google",
     "import": "Quicksand",
     "variable": "--font-quicksand",

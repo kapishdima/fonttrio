@@ -5,7 +5,7 @@
   "title": "Noto Serif Tibetan",
   "description": "Noto Serif Tibetan — Serif font.",
   "font": {
-    "family": "Noto Serif Tibetan",
+    "family": "Noto Serif Tibetan Variable",
     "provider": "google",
     "import": "Noto_Serif_Tibetan",
     "variable": "--font-noto-serif-tibetan",

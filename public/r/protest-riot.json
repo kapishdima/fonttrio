@@ -19,6 +19,7 @@
       "math",
       "symbols",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/protest-riot"
   }
 }

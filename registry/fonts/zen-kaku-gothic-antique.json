@@ -22,6 +22,7 @@
       "japanese",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/zen-kaku-gothic-antique"
   }
 }

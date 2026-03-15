@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "linear-b"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-linear-b"
   }
 }

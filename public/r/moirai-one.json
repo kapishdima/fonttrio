@@ -17,6 +17,7 @@
       "korean",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/moirai-one"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Honk",
   "description": "Honk — Display font.",
   "font": {
-    "family": "Honk",
+    "family": "Honk Variable",
     "provider": "google",
     "import": "Honk",
     "variable": "--font-honk",

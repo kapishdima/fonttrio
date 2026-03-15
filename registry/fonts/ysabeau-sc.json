@@ -5,7 +5,7 @@
   "title": "Ysabeau SC",
   "description": "Ysabeau SC — Sans Serif font.",
   "font": {
-    "family": "Ysabeau SC",
+    "family": "Ysabeau SC Variable",
     "provider": "google",
     "import": "Ysabeau_SC",
     "variable": "--font-ysabeau-sc",

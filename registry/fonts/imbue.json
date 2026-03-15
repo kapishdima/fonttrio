@@ -5,7 +5,7 @@
   "title": "Imbue",
   "description": "Imbue — Serif font.",
   "font": {
-    "family": "Imbue",
+    "family": "Imbue Variable",
     "provider": "google",
     "import": "Imbue",
     "variable": "--font-imbue",

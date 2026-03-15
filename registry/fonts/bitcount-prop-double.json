@@ -5,7 +5,7 @@
   "title": "Bitcount Prop Double",
   "description": "Bitcount Prop Double — Display font.",
   "font": {
-    "family": "Bitcount Prop Double",
+    "family": "Bitcount Prop Double Variable",
     "provider": "google",
     "import": "Bitcount_Prop_Double",
     "variable": "--font-bitcount-prop-double",

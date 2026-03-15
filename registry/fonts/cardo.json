@@ -23,6 +23,7 @@
       "latin-ext",
       "old-italic",
       "runic"
-    ]
+    ],
+    "dependency": "@fontsource/cardo"
   }
 }

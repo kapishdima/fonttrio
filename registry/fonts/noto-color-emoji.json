@@ -15,6 +15,7 @@
     "subsets": [
       "menu",
       "emoji"
-    ]
+    ],
+    "dependency": "@fontsource/noto-color-emoji"
   }
 }

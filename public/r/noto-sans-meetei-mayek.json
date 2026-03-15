@@ -5,7 +5,7 @@
   "title": "Noto Sans Meetei Mayek",
   "description": "Noto Sans Meetei Mayek — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Meetei Mayek",
+    "family": "Noto Sans Meetei Mayek Variable",
     "provider": "google",
     "import": "Noto_Sans_Meetei_Mayek",
     "variable": "--font-noto-sans-meetei-mayek",

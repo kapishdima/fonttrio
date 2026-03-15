@@ -5,7 +5,7 @@
   "title": "Noto Serif NP Hmong",
   "description": "Noto Serif NP Hmong — Serif font.",
   "font": {
-    "family": "Noto Serif NP Hmong",
+    "family": "Noto Serif NP Hmong Variable",
     "provider": "google",
     "import": "Noto_Serif_NP_Hmong",
     "variable": "--font-noto-serif-np-hmong",

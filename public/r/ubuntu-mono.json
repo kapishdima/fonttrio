@@ -21,6 +21,7 @@
       "greek-ext",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/ubuntu-mono"
   }
 }

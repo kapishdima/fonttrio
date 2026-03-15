@@ -3385,6 +3385,12 @@
       "url": "https://www.fonttrio.xyz/r/oooh-baby.json"
     },
     {
+      "name": "iosevka-charon",
+      "title": "Iosevka Charon",
+      "category": "google",
+      "url": "https://www.fonttrio.xyz/r/iosevka-charon.json"
+    },
+    {
       "name": "petemoss",
       "title": "Petemoss",
       "category": "google",
@@ -7225,6 +7231,12 @@
       "url": "https://www.fonttrio.xyz/r/ibm-plex-sans.json"
     },
     {
+      "name": "iosevka-charon-mono",
+      "title": "Iosevka Charon Mono",
+      "category": "google",
+      "url": "https://www.fonttrio.xyz/r/iosevka-charon-mono.json"
+    },
+    {
       "name": "lexend-mega",
       "title": "Lexend Mega",
       "category": "google",
@@ -8285,6 +8297,12 @@
       "title": "Ruge Boogie",
       "category": "google",
       "url": "https://www.fonttrio.xyz/r/ruge-boogie.json"
+    },
+    {
+      "name": "datatype",
+      "title": "Datatype",
+      "category": "google",
+      "url": "https://www.fonttrio.xyz/r/datatype.json"
     },
     {
       "name": "liter",

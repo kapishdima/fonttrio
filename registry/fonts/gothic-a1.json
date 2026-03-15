@@ -30,6 +30,7 @@
       "latin",
       "latin-ext",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/gothic-a1"
   }
 }

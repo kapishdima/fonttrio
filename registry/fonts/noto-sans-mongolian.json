@@ -19,6 +19,7 @@
       "math",
       "mongolian",
       "symbols"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-mongolian"
   }
 }

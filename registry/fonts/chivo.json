@@ -5,7 +5,7 @@
   "title": "Chivo",
   "description": "Chivo — Sans Serif font.",
   "font": {
-    "family": "Chivo",
+    "family": "Chivo Variable",
     "provider": "google",
     "import": "Chivo",
     "variable": "--font-chivo",

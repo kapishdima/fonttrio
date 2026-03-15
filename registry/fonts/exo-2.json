@@ -5,7 +5,7 @@
   "title": "Exo 2",
   "description": "Exo 2 — Sans Serif font.",
   "font": {
-    "family": "Exo 2",
+    "family": "Exo 2 Variable",
     "provider": "google",
     "import": "Exo_2",
     "variable": "--font-exo-2",

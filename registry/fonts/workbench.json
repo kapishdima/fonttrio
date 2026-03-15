@@ -5,7 +5,7 @@
   "title": "Workbench",
   "description": "Workbench — Monospace font.",
   "font": {
-    "family": "Workbench",
+    "family": "Workbench Variable",
     "provider": "google",
     "import": "Workbench",
     "variable": "--font-workbench",

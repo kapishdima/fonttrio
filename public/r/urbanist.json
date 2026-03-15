@@ -5,7 +5,7 @@
   "title": "Urbanist",
   "description": "Urbanist — Sans Serif font.",
   "font": {
-    "family": "Urbanist",
+    "family": "Urbanist Variable",
     "provider": "google",
     "import": "Urbanist",
     "variable": "--font-urbanist",

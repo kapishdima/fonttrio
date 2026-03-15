@@ -5,7 +5,7 @@
   "title": "Noto Sans Tamil",
   "description": "Noto Sans Tamil — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Tamil",
+    "family": "Noto Sans Tamil Variable",
     "provider": "google",
     "import": "Noto_Sans_Tamil",
     "variable": "--font-noto-sans-tamil",

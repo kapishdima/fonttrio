@@ -5,7 +5,7 @@
   "title": "Ruda",
   "description": "Ruda — Sans Serif font.",
   "font": {
-    "family": "Ruda",
+    "family": "Ruda Variable",
     "provider": "google",
     "import": "Ruda",
     "variable": "--font-ruda",

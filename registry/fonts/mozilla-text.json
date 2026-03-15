@@ -5,7 +5,7 @@
   "title": "Mozilla Text",
   "description": "Mozilla Text — Sans Serif font.",
   "font": {
-    "family": "Mozilla Text",
+    "family": "Mozilla Text Variable",
     "provider": "google",
     "import": "Mozilla_Text",
     "variable": "--font-mozilla-text",

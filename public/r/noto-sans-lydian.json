@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "lydian"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-lydian"
   }
 }

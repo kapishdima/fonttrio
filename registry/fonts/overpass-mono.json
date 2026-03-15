@@ -5,7 +5,7 @@
   "title": "Overpass Mono",
   "description": "Overpass Mono — Monospace font.",
   "font": {
-    "family": "Overpass Mono",
+    "family": "Overpass Mono Variable",
     "provider": "google",
     "import": "Overpass_Mono",
     "variable": "--font-overpass-mono",

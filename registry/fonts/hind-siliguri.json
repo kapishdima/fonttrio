@@ -21,6 +21,7 @@
       "bengali",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/hind-siliguri"
   }
 }

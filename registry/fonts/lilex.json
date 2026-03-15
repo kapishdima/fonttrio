@@ -5,7 +5,7 @@
   "title": "Lilex",
   "description": "Lilex — Monospace font.",
   "font": {
-    "family": "Lilex",
+    "family": "Lilex Variable",
     "provider": "google",
     "import": "Lilex",
     "variable": "--font-lilex",

@@ -5,7 +5,7 @@
   "title": "Andada Pro",
   "description": "Andada Pro — Serif font.",
   "font": {
-    "family": "Andada Pro",
+    "family": "Andada Pro Variable",
     "provider": "google",
     "import": "Andada_Pro",
     "variable": "--font-andada-pro",

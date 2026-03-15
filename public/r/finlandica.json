@@ -5,7 +5,7 @@
   "title": "Finlandica",
   "description": "Finlandica — Sans Serif font.",
   "font": {
-    "family": "Finlandica",
+    "family": "Finlandica Variable",
     "provider": "google",
     "import": "Finlandica",
     "variable": "--font-finlandica",

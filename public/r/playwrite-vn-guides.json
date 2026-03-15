@@ -14,6 +14,7 @@
     ],
     "subsets": [
       "menu"
-    ]
+    ],
+    "dependency": "@fontsource/playwrite-vn-guides"
   }
 }

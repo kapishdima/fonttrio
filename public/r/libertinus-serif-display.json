@@ -21,6 +21,7 @@
       "latin",
       "latin-ext",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/libertinus-serif-display"
   }
 }

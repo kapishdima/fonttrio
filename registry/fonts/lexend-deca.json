@@ -5,7 +5,7 @@
   "title": "Lexend Deca",
   "description": "Lexend Deca — Sans Serif font.",
   "font": {
-    "family": "Lexend Deca",
+    "family": "Lexend Deca Variable",
     "provider": "google",
     "import": "Lexend_Deca",
     "variable": "--font-lexend-deca",

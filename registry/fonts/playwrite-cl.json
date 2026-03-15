@@ -5,7 +5,7 @@
   "title": "Playwrite CL",
   "description": "Playwrite CL — Handwriting font.",
   "font": {
-    "family": "Playwrite CL",
+    "family": "Playwrite CL Variable",
     "provider": "google",
     "import": "Playwrite_CL",
     "variable": "--font-playwrite-cl",

@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "warang-citi"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-warang-citi"
   }
 }

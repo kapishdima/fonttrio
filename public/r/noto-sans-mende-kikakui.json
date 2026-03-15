@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "mende-kikakui"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-mende-kikakui"
   }
 }

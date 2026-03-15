@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "osage"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-osage"
   }
 }

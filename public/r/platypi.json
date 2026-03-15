@@ -5,7 +5,7 @@
   "title": "Platypi",
   "description": "Platypi — Serif font.",
   "font": {
-    "family": "Platypi",
+    "family": "Platypi Variable",
     "provider": "google",
     "import": "Platypi",
     "variable": "--font-platypi",

@@ -17,6 +17,7 @@
       "cyrillic",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/liter"
   }
 }

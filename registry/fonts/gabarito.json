@@ -5,7 +5,7 @@
   "title": "Gabarito",
   "description": "Gabarito — Display font.",
   "font": {
-    "family": "Gabarito",
+    "family": "Gabarito Variable",
     "provider": "google",
     "import": "Gabarito",
     "variable": "--font-gabarito",

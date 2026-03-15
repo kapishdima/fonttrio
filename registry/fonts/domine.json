@@ -5,7 +5,7 @@
   "title": "Domine",
   "description": "Domine — Serif font.",
   "font": {
-    "family": "Domine",
+    "family": "Domine Variable",
     "provider": "google",
     "import": "Domine",
     "variable": "--font-domine",

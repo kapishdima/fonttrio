@@ -5,7 +5,7 @@
   "title": "National Park",
   "description": "National Park — Sans Serif font.",
   "font": {
-    "family": "National Park",
+    "family": "National Park Variable",
     "provider": "google",
     "import": "National_Park",
     "variable": "--font-national-park",

@@ -5,7 +5,7 @@
   "title": "Vollkorn",
   "description": "Vollkorn — Serif font.",
   "font": {
-    "family": "Vollkorn",
+    "family": "Vollkorn Variable",
     "provider": "google",
     "import": "Vollkorn",
     "variable": "--font-vollkorn",

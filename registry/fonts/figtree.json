@@ -5,7 +5,7 @@
   "title": "Figtree",
   "description": "Figtree — Sans Serif font.",
   "font": {
-    "family": "Figtree",
+    "family": "Figtree Variable",
     "provider": "google",
     "import": "Figtree",
     "variable": "--font-figtree",

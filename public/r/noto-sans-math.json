@@ -17,6 +17,7 @@
       "cyrillic",
       "latin",
       "math"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-math"
   }
 }

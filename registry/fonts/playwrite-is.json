@@ -5,7 +5,7 @@
   "title": "Playwrite IS",
   "description": "Playwrite IS — Handwriting font.",
   "font": {
-    "family": "Playwrite IS",
+    "family": "Playwrite IS Variable",
     "provider": "google",
     "import": "Playwrite_IS",
     "variable": "--font-playwrite-is",

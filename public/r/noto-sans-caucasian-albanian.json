@@ -17,6 +17,7 @@
       "caucasian-albanian",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-caucasian-albanian"
   }
 }

@@ -18,6 +18,7 @@
       "japanese",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/kosugi-maru"
   }
 }

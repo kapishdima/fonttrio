@@ -5,7 +5,7 @@
   "title": "AR One Sans",
   "description": "AR One Sans — Sans Serif font.",
   "font": {
-    "family": "AR One Sans",
+    "family": "AR One Sans Variable",
     "provider": "google",
     "import": "AR_One_Sans",
     "variable": "--font-ar-one-sans",

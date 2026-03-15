@@ -5,7 +5,7 @@
   "title": "Ibarra Real Nova",
   "description": "Ibarra Real Nova — Serif font.",
   "font": {
-    "family": "Ibarra Real Nova",
+    "family": "Ibarra Real Nova Variable",
     "provider": "google",
     "import": "Ibarra_Real_Nova",
     "variable": "--font-ibarra-real-nova",

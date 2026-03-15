@@ -5,7 +5,7 @@
   "title": "Raleway",
   "description": "Raleway — Sans Serif font.",
   "font": {
-    "family": "Raleway",
+    "family": "Raleway Variable",
     "provider": "google",
     "import": "Raleway",
     "variable": "--font-raleway",

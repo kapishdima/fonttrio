@@ -5,7 +5,7 @@
   "title": "Archivo Narrow",
   "description": "Archivo Narrow — Sans Serif font.",
   "font": {
-    "family": "Archivo Narrow",
+    "family": "Archivo Narrow Variable",
     "provider": "google",
     "import": "Archivo_Narrow",
     "variable": "--font-archivo-narrow",

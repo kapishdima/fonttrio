@@ -5,7 +5,7 @@
   "title": "Playwrite DE SAS",
   "description": "Playwrite DE SAS — Handwriting font.",
   "font": {
-    "family": "Playwrite DE SAS",
+    "family": "Playwrite DE SAS Variable",
     "provider": "google",
     "import": "Playwrite_DE_SAS",
     "variable": "--font-playwrite-de-sas",

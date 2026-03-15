@@ -5,7 +5,7 @@
   "title": "Playwrite AT",
   "description": "Playwrite AT — Handwriting font.",
   "font": {
-    "family": "Playwrite AT",
+    "family": "Playwrite AT Variable",
     "provider": "google",
     "import": "Playwrite_AT",
     "variable": "--font-playwrite-at",

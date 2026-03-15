@@ -19,6 +19,7 @@
       "latin-ext",
       "tai-viet",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/tai-heritage-pro"
   }
 }

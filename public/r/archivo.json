@@ -5,7 +5,7 @@
   "title": "Archivo",
   "description": "Archivo — Sans Serif font.",
   "font": {
-    "family": "Archivo",
+    "family": "Archivo Variable",
     "provider": "google",
     "import": "Archivo",
     "variable": "--font-archivo",

@@ -5,7 +5,7 @@
   "title": "Kreon",
   "description": "Kreon — Serif font.",
   "font": {
-    "family": "Kreon",
+    "family": "Kreon Variable",
     "provider": "google",
     "import": "Kreon",
     "variable": "--font-kreon",

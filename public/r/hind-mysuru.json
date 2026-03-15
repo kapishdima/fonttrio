@@ -21,6 +21,7 @@
       "kannada",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/hind-mysuru"
   }
 }

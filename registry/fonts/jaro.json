@@ -5,7 +5,7 @@
   "title": "Jaro",
   "description": "Jaro — Sans Serif font.",
   "font": {
-    "family": "Jaro",
+    "family": "Jaro Variable",
     "provider": "google",
     "import": "Jaro",
     "variable": "--font-jaro",

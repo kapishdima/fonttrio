@@ -15,6 +15,7 @@
     "subsets": [
       "menu",
       "khmer"
-    ]
+    ],
+    "dependency": "@fontsource/siemreap"
   }
 }

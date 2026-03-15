@@ -5,7 +5,7 @@
   "title": "Ancizar Serif",
   "description": "Ancizar Serif — Serif font.",
   "font": {
-    "family": "Ancizar Serif",
+    "family": "Ancizar Serif Variable",
     "provider": "google",
     "import": "Ancizar_Serif",
     "variable": "--font-ancizar-serif",

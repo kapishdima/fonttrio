@@ -5,7 +5,7 @@
   "title": "Fira Code",
   "description": "Fira Code — Monospace font.",
   "font": {
-    "family": "Fira Code",
+    "family": "Fira Code Variable",
     "provider": "google",
     "import": "Fira_Code",
     "variable": "--font-fira-code",

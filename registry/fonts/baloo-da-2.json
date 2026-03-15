@@ -5,7 +5,7 @@
   "title": "Baloo Da 2",
   "description": "Baloo Da 2 — Display font.",
   "font": {
-    "family": "Baloo Da 2",
+    "family": "Baloo Da 2 Variable",
     "provider": "google",
     "import": "Baloo_Da_2",
     "variable": "--font-baloo-da-2",

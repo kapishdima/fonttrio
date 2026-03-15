@@ -5,7 +5,7 @@
   "title": "Cause",
   "description": "Cause — Handwriting font.",
   "font": {
-    "family": "Cause",
+    "family": "Cause Variable",
     "provider": "google",
     "import": "Cause",
     "variable": "--font-cause",

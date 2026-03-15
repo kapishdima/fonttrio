@@ -5,7 +5,7 @@
   "title": "Genos",
   "description": "Genos — Sans Serif font.",
   "font": {
-    "family": "Genos",
+    "family": "Genos Variable",
     "provider": "google",
     "import": "Genos",
     "variable": "--font-genos",

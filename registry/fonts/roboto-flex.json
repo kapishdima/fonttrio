@@ -5,7 +5,7 @@
   "title": "Roboto Flex",
   "description": "Roboto Flex — Sans Serif font.",
   "font": {
-    "family": "Roboto Flex",
+    "family": "Roboto Flex Variable",
     "provider": "google",
     "import": "Roboto_Flex",
     "variable": "--font-roboto-flex",

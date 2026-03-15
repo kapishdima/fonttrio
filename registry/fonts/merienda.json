@@ -5,7 +5,7 @@
   "title": "Merienda",
   "description": "Merienda — Handwriting font.",
   "font": {
-    "family": "Merienda",
+    "family": "Merienda Variable",
     "provider": "google",
     "import": "Merienda",
     "variable": "--font-merienda",

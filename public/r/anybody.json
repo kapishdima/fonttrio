@@ -5,7 +5,7 @@
   "title": "Anybody",
   "description": "Anybody — Display font.",
   "font": {
-    "family": "Anybody",
+    "family": "Anybody Variable",
     "provider": "google",
     "import": "Anybody",
     "variable": "--font-anybody",

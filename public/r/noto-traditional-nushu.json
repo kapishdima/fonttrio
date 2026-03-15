@@ -5,7 +5,7 @@
   "title": "Noto Traditional Nushu",
   "description": "Noto Traditional Nushu — Sans Serif font.",
   "font": {
-    "family": "Noto Traditional Nushu",
+    "family": "Noto Traditional Nushu Variable",
     "provider": "google",
     "import": "Noto_Traditional_Nushu",
     "variable": "--font-noto-traditional-nushu",

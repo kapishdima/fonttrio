@@ -5,7 +5,7 @@
   "title": "Tektur",
   "description": "Tektur — Display font.",
   "font": {
-    "family": "Tektur",
+    "family": "Tektur Variable",
     "provider": "google",
     "import": "Tektur",
     "variable": "--font-tektur",

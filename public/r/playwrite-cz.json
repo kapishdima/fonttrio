@@ -5,7 +5,7 @@
   "title": "Playwrite CZ",
   "description": "Playwrite CZ — Handwriting font.",
   "font": {
-    "family": "Playwrite CZ",
+    "family": "Playwrite CZ Variable",
     "provider": "google",
     "import": "Playwrite_CZ",
     "variable": "--font-playwrite-cz",

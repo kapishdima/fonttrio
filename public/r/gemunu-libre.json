@@ -5,7 +5,7 @@
   "title": "Gemunu Libre",
   "description": "Gemunu Libre — Sans Serif font.",
   "font": {
-    "family": "Gemunu Libre",
+    "family": "Gemunu Libre Variable",
     "provider": "google",
     "import": "Gemunu_Libre",
     "variable": "--font-gemunu-libre",

@@ -5,7 +5,7 @@
   "title": "Teko",
   "description": "Teko — Sans Serif font.",
   "font": {
-    "family": "Teko",
+    "family": "Teko Variable",
     "provider": "google",
     "import": "Teko",
     "variable": "--font-teko",

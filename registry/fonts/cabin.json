@@ -5,7 +5,7 @@
   "title": "Cabin",
   "description": "Cabin — Sans Serif font.",
   "font": {
-    "family": "Cabin",
+    "family": "Cabin Variable",
     "provider": "google",
     "import": "Cabin",
     "variable": "--font-cabin",

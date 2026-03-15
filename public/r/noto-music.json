@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "music"
-    ]
+    ],
+    "dependency": "@fontsource/noto-music"
   }
 }

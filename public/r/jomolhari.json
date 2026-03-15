@@ -16,6 +16,7 @@
       "menu",
       "latin",
       "tibetan"
-    ]
+    ],
+    "dependency": "@fontsource/jomolhari"
   }
 }

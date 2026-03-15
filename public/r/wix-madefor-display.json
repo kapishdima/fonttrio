@@ -5,7 +5,7 @@
   "title": "Wix Madefor Display",
   "description": "Wix Madefor Display — Sans Serif font.",
   "font": {
-    "family": "Wix Madefor Display",
+    "family": "Wix Madefor Display Variable",
     "provider": "google",
     "import": "Wix_Madefor_Display",
     "variable": "--font-wix-madefor-display",

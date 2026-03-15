@@ -5,7 +5,7 @@
   "title": "Noto Rashi Hebrew",
   "description": "Noto Rashi Hebrew — Serif font.",
   "font": {
-    "family": "Noto Rashi Hebrew",
+    "family": "Noto Rashi Hebrew Variable",
     "provider": "google",
     "import": "Noto_Rashi_Hebrew",
     "variable": "--font-noto-rashi-hebrew",

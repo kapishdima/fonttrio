@@ -5,7 +5,7 @@
   "title": "Big Shoulders Inline",
   "description": "Big Shoulders Inline — Display font.",
   "font": {
-    "family": "Big Shoulders Inline",
+    "family": "Big Shoulders Inline Variable",
     "provider": "google",
     "import": "Big_Shoulders_Inline",
     "variable": "--font-big-shoulders-inline",

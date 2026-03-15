@@ -23,6 +23,7 @@
       "menu",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/blinker"
   }
 }

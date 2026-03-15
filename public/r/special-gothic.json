@@ -5,7 +5,7 @@
   "title": "Special Gothic",
   "description": "Special Gothic — Sans Serif font.",
   "font": {
-    "family": "Special Gothic",
+    "family": "Special Gothic Variable",
     "provider": "google",
     "import": "Special_Gothic",
     "variable": "--font-special-gothic",

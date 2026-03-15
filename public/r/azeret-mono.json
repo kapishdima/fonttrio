@@ -5,7 +5,7 @@
   "title": "Azeret Mono",
   "description": "Azeret Mono — Monospace font.",
   "font": {
-    "family": "Azeret Mono",
+    "family": "Azeret Mono Variable",
     "provider": "google",
     "import": "Azeret_Mono",
     "variable": "--font-azeret-mono",

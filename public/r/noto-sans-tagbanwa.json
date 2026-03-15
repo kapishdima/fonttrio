@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "tagbanwa"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-tagbanwa"
   }
 }

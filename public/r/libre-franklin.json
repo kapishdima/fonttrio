@@ -5,7 +5,7 @@
   "title": "Libre Franklin",
   "description": "Libre Franklin — Sans Serif font.",
   "font": {
-    "family": "Libre Franklin",
+    "family": "Libre Franklin Variable",
     "provider": "google",
     "import": "Libre_Franklin",
     "variable": "--font-libre-franklin",

@@ -5,7 +5,7 @@
   "title": "Noto Emoji",
   "description": "Noto Emoji — Sans Serif font.",
   "font": {
-    "family": "Noto Emoji",
+    "family": "Noto Emoji Variable",
     "provider": "google",
     "import": "Noto_Emoji",
     "variable": "--font-noto-emoji",

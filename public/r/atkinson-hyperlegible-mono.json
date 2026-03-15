@@ -5,7 +5,7 @@
   "title": "Atkinson Hyperlegible Mono",
   "description": "Atkinson Hyperlegible Mono — Sans Serif font.",
   "font": {
-    "family": "Atkinson Hyperlegible Mono",
+    "family": "Atkinson Hyperlegible Mono Variable",
     "provider": "google",
     "import": "Atkinson_Hyperlegible_Mono",
     "variable": "--font-atkinson-hyperlegible-mono",

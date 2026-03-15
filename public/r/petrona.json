@@ -5,7 +5,7 @@
   "title": "Petrona",
   "description": "Petrona — Serif font.",
   "font": {
-    "family": "Petrona",
+    "family": "Petrona Variable",
     "provider": "google",
     "import": "Petrona",
     "variable": "--font-petrona",

@@ -5,7 +5,7 @@
   "title": "Nata Sans",
   "description": "Nata Sans — Sans Serif font.",
   "font": {
-    "family": "Nata Sans",
+    "family": "Nata Sans Variable",
     "provider": "google",
     "import": "Nata_Sans",
     "variable": "--font-nata-sans",

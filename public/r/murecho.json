@@ -5,7 +5,7 @@
   "title": "Murecho",
   "description": "Murecho — Sans Serif font.",
   "font": {
-    "family": "Murecho",
+    "family": "Murecho Variable",
     "provider": "google",
     "import": "Murecho",
     "variable": "--font-murecho",

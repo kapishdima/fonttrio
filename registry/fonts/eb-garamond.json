@@ -5,7 +5,7 @@
   "title": "EB Garamond",
   "description": "EB Garamond — Serif font.",
   "font": {
-    "family": "EB Garamond",
+    "family": "EB Garamond Variable",
     "provider": "google",
     "import": "EB_Garamond",
     "variable": "--font-eb-garamond",

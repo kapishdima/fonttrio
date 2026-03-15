@@ -19,6 +19,7 @@
       "menu",
       "kirat-rai",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/kanchenjunga"
   }
 }

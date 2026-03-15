@@ -5,7 +5,7 @@
   "title": "Noto Naskh Arabic",
   "description": "Noto Naskh Arabic — Serif font.",
   "font": {
-    "family": "Noto Naskh Arabic",
+    "family": "Noto Naskh Arabic Variable",
     "provider": "google",
     "import": "Noto_Naskh_Arabic",
     "variable": "--font-noto-naskh-arabic",

@@ -25,6 +25,7 @@
       "latin",
       "latin-ext",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/spectral-sc"
   }
 }

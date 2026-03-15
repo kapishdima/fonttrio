@@ -5,7 +5,7 @@
   "title": "BioRhyme",
   "description": "BioRhyme — Serif font.",
   "font": {
-    "family": "BioRhyme",
+    "family": "BioRhyme Variable",
     "provider": "google",
     "import": "BioRhyme",
     "variable": "--font-biorhyme",

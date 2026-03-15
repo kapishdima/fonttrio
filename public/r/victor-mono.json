@@ -5,7 +5,7 @@
   "title": "Victor Mono",
   "description": "Victor Mono — Monospace font.",
   "font": {
-    "family": "Victor Mono",
+    "family": "Victor Mono Variable",
     "provider": "google",
     "import": "Victor_Mono",
     "variable": "--font-victor-mono",

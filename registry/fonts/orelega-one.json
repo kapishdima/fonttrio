@@ -18,6 +18,7 @@
       "cyrillic-ext",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/orelega-one"
   }
 }

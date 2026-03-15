@@ -5,7 +5,7 @@
   "title": "Winky Rough",
   "description": "Winky Rough — Sans Serif font.",
   "font": {
-    "family": "Winky Rough",
+    "family": "Winky Rough Variable",
     "provider": "google",
     "import": "Winky_Rough",
     "variable": "--font-winky-rough",

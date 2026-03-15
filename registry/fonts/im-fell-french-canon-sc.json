@@ -15,6 +15,7 @@
     "subsets": [
       "menu",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/im-fell-french-canon-sc"
   }
 }

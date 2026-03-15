@@ -5,7 +5,7 @@
   "title": "Playwrite AU NSW",
   "description": "Playwrite AU NSW — Handwriting font.",
   "font": {
-    "family": "Playwrite AU NSW",
+    "family": "Playwrite AU NSW Variable",
     "provider": "google",
     "import": "Playwrite_AU_NSW",
     "variable": "--font-playwrite-au-nsw",

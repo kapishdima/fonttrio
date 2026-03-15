@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "masaram-gondi"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-masaram-gondi"
   }
 }

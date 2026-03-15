@@ -5,7 +5,7 @@
   "title": "Sono",
   "description": "Sono — Sans Serif font.",
   "font": {
-    "family": "Sono",
+    "family": "Sono Variable",
     "provider": "google",
     "import": "Sono",
     "variable": "--font-sono",

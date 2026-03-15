@@ -5,7 +5,7 @@
   "title": "Playwrite SK",
   "description": "Playwrite SK — Handwriting font.",
   "font": {
-    "family": "Playwrite SK",
+    "family": "Playwrite SK Variable",
     "provider": "google",
     "import": "Playwrite_SK",
     "variable": "--font-playwrite-sk",

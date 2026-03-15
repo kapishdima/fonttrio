@@ -5,7 +5,7 @@
   "title": "Lexend Peta",
   "description": "Lexend Peta — Sans Serif font.",
   "font": {
-    "family": "Lexend Peta",
+    "family": "Lexend Peta Variable",
     "provider": "google",
     "import": "Lexend_Peta",
     "variable": "--font-lexend-peta",

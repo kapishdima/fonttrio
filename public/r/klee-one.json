@@ -20,6 +20,7 @@
       "japanese",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/klee-one"
   }
 }

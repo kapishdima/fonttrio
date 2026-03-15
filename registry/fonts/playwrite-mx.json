@@ -5,7 +5,7 @@
   "title": "Playwrite MX",
   "description": "Playwrite MX — Handwriting font.",
   "font": {
-    "family": "Playwrite MX",
+    "family": "Playwrite MX Variable",
     "provider": "google",
     "import": "Playwrite_MX",
     "variable": "--font-playwrite-mx",

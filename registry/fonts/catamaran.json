@@ -5,7 +5,7 @@
   "title": "Catamaran",
   "description": "Catamaran — Sans Serif font.",
   "font": {
-    "family": "Catamaran",
+    "family": "Catamaran Variable",
     "provider": "google",
     "import": "Catamaran",
     "variable": "--font-catamaran",

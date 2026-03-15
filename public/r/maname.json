@@ -18,6 +18,7 @@
       "latin-ext",
       "sinhala",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/maname"
   }
 }

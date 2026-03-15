@@ -5,7 +5,7 @@
   "title": "Cascadia Code",
   "description": "Cascadia Code — Sans Serif font.",
   "font": {
-    "family": "Cascadia Code",
+    "family": "Cascadia Code Variable",
     "provider": "google",
     "import": "Cascadia_Code",
     "variable": "--font-cascadia-code",

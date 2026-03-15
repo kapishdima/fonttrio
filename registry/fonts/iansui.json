@@ -18,6 +18,7 @@
       "latin",
       "latin-ext",
       "symbols2"
-    ]
+    ],
+    "dependency": "@fontsource/iansui"
   }
 }

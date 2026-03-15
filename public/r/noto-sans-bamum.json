@@ -5,7 +5,7 @@
   "title": "Noto Sans Bamum",
   "description": "Noto Sans Bamum — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Bamum",
+    "family": "Noto Sans Bamum Variable",
     "provider": "google",
     "import": "Noto_Sans_Bamum",
     "variable": "--font-noto-sans-bamum",

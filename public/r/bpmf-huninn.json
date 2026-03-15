@@ -17,6 +17,7 @@
       "chinese-traditional",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/bpmf-huninn"
   }
 }

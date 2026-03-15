@@ -5,7 +5,7 @@
   "title": "Kufam",
   "description": "Kufam — Sans Serif font.",
   "font": {
-    "family": "Kufam",
+    "family": "Kufam Variable",
     "provider": "google",
     "import": "Kufam",
     "variable": "--font-kufam",

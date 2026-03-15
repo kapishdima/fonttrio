@@ -5,7 +5,7 @@
   "title": "Cairo Play",
   "description": "Cairo Play — Sans Serif font.",
   "font": {
-    "family": "Cairo Play",
+    "family": "Cairo Play Variable",
     "provider": "google",
     "import": "Cairo_Play",
     "variable": "--font-cairo-play",

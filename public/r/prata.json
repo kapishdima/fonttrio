@@ -18,6 +18,7 @@
       "cyrillic-ext",
       "latin",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/prata"
   }
 }

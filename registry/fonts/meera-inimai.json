@@ -16,6 +16,7 @@
       "menu",
       "latin",
       "tamil"
-    ]
+    ],
+    "dependency": "@fontsource/meera-inimai"
   }
 }

@@ -27,6 +27,7 @@
       "latin",
       "latin-ext",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/alegreya-sans-sc"
   }
 }

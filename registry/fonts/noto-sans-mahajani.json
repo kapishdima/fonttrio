@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "mahajani"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-mahajani"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Bodoni Moda",
   "description": "Bodoni Moda — Serif font.",
   "font": {
-    "family": "Bodoni Moda",
+    "family": "Bodoni Moda Variable",
     "provider": "google",
     "import": "Bodoni_Moda",
     "variable": "--font-bodoni-moda",

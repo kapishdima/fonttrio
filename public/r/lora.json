@@ -5,7 +5,7 @@
   "title": "Lora",
   "description": "Lora — Serif font.",
   "font": {
-    "family": "Lora",
+    "family": "Lora Variable",
     "provider": "google",
     "import": "Lora",
     "variable": "--font-lora",

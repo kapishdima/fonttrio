@@ -5,7 +5,7 @@
   "title": "Playwrite NO",
   "description": "Playwrite NO — Handwriting font.",
   "font": {
-    "family": "Playwrite NO",
+    "family": "Playwrite NO Variable",
     "provider": "google",
     "import": "Playwrite_NO",
     "variable": "--font-playwrite-no",

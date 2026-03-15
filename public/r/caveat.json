@@ -5,7 +5,7 @@
   "title": "Caveat",
   "description": "Caveat — Handwriting font.",
   "font": {
-    "family": "Caveat",
+    "family": "Caveat Variable",
     "provider": "google",
     "import": "Caveat",
     "variable": "--font-caveat",

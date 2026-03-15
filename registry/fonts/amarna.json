@@ -5,7 +5,7 @@
   "title": "Amarna",
   "description": "Amarna — Sans Serif font.",
   "font": {
-    "family": "Amarna",
+    "family": "Amarna Variable",
     "provider": "google",
     "import": "Amarna",
     "variable": "--font-amarna",

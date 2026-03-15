@@ -5,7 +5,7 @@
   "title": "Noto Sans Gujarati",
   "description": "Noto Sans Gujarati — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Gujarati",
+    "family": "Noto Sans Gujarati Variable",
     "provider": "google",
     "import": "Noto_Sans_Gujarati",
     "variable": "--font-noto-sans-gujarati",

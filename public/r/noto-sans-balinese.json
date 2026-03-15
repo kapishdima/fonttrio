@@ -5,7 +5,7 @@
   "title": "Noto Sans Balinese",
   "description": "Noto Sans Balinese — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Balinese",
+    "family": "Noto Sans Balinese Variable",
     "provider": "google",
     "import": "Noto_Sans_Balinese",
     "variable": "--font-noto-sans-balinese",

@@ -5,7 +5,7 @@
   "title": "Inter Tight",
   "description": "Inter Tight — Sans Serif font.",
   "font": {
-    "family": "Inter Tight",
+    "family": "Inter Tight Variable",
     "provider": "google",
     "import": "Inter_Tight",
     "variable": "--font-inter-tight",

@@ -5,7 +5,7 @@
   "title": "Chiron Hei HK",
   "description": "Chiron Hei HK — Sans Serif font.",
   "font": {
-    "family": "Chiron Hei HK",
+    "family": "Chiron Hei HK Variable",
     "provider": "google",
     "import": "Chiron_Hei_HK",
     "variable": "--font-chiron-hei-hk",

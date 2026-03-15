@@ -17,6 +17,7 @@
       "egyptian-hieroglyphs",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-egyptian-hieroglyphs"
   }
 }

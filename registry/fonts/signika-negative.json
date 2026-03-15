@@ -5,7 +5,7 @@
   "title": "Signika Negative",
   "description": "Signika Negative — Sans Serif font.",
   "font": {
-    "family": "Signika Negative",
+    "family": "Signika Negative Variable",
     "provider": "google",
     "import": "Signika_Negative",
     "variable": "--font-signika-negative",

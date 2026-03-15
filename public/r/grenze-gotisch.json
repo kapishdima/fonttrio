@@ -5,7 +5,7 @@
   "title": "Grenze Gotisch",
   "description": "Grenze Gotisch — Display font.",
   "font": {
-    "family": "Grenze Gotisch",
+    "family": "Grenze Gotisch Variable",
     "provider": "google",
     "import": "Grenze_Gotisch",
     "variable": "--font-grenze-gotisch",

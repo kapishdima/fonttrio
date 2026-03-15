@@ -5,7 +5,7 @@
   "title": "Noto Sans Kawi",
   "description": "Noto Sans Kawi — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Kawi",
+    "family": "Noto Sans Kawi Variable",
     "provider": "google",
     "import": "Noto_Sans_Kawi",
     "variable": "--font-noto-sans-kawi",

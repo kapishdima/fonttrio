@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "tamil"
-    ]
+    ],
+    "dependency": "@fontsource/tiro-tamil"
   }
 }

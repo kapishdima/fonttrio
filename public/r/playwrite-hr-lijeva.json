@@ -5,7 +5,7 @@
   "title": "Playwrite HR Lijeva",
   "description": "Playwrite HR Lijeva — Handwriting font.",
   "font": {
-    "family": "Playwrite HR Lijeva",
+    "family": "Playwrite HR Lijeva Variable",
     "provider": "google",
     "import": "Playwrite_HR_Lijeva",
     "variable": "--font-playwrite-hr-lijeva",

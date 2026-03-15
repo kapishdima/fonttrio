@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "tifinagh"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-tifinagh"
   }
 }

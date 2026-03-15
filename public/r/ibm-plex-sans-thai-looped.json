@@ -24,6 +24,7 @@
       "latin",
       "latin-ext",
       "thai"
-    ]
+    ],
+    "dependency": "@fontsource/ibm-plex-sans-thai-looped"
   }
 }

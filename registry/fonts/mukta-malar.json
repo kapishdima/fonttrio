@@ -23,6 +23,7 @@
       "latin",
       "latin-ext",
       "tamil"
-    ]
+    ],
+    "dependency": "@fontsource/mukta-malar"
   }
 }

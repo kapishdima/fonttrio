@@ -5,7 +5,7 @@
   "title": "Tourney",
   "description": "Tourney — Display font.",
   "font": {
-    "family": "Tourney",
+    "family": "Tourney Variable",
     "provider": "google",
     "import": "Tourney",
     "variable": "--font-tourney",

@@ -5,7 +5,7 @@
   "title": "Playwrite NG Modern",
   "description": "Playwrite NG Modern — Handwriting font.",
   "font": {
-    "family": "Playwrite NG Modern",
+    "family": "Playwrite NG Modern Variable",
     "provider": "google",
     "import": "Playwrite_NG_Modern",
     "variable": "--font-playwrite-ng-modern",

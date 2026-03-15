@@ -5,7 +5,7 @@
   "title": "Noto Sans Thai",
   "description": "Noto Sans Thai — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Thai",
+    "family": "Noto Sans Thai Variable",
     "provider": "google",
     "import": "Noto_Sans_Thai",
     "variable": "--font-noto-sans-thai",

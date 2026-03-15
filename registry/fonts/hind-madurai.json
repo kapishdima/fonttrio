@@ -21,6 +21,7 @@
       "latin",
       "latin-ext",
       "tamil"
-    ]
+    ],
+    "dependency": "@fontsource/hind-madurai"
   }
 }

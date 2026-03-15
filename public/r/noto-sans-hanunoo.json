@@ -17,6 +17,7 @@
       "hanunoo",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-hanunoo"
   }
 }

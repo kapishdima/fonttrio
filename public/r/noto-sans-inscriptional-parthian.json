@@ -17,6 +17,7 @@
       "inscriptional-parthian",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-inscriptional-parthian"
   }
 }

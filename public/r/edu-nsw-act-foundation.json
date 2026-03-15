@@ -5,7 +5,7 @@
   "title": "Edu NSW ACT Foundation",
   "description": "Edu NSW ACT Foundation — Handwriting font.",
   "font": {
-    "family": "Edu NSW ACT Foundation",
+    "family": "Edu NSW ACT Foundation Variable",
     "provider": "google",
     "import": "Edu_NSW_ACT_Foundation",
     "variable": "--font-edu-nsw-act-foundation",

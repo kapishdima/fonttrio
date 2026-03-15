@@ -5,7 +5,7 @@
   "title": "Playwrite RO",
   "description": "Playwrite RO — Handwriting font.",
   "font": {
-    "family": "Playwrite RO",
+    "family": "Playwrite RO Variable",
     "provider": "google",
     "import": "Playwrite_RO",
     "variable": "--font-playwrite-ro",

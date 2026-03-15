@@ -5,7 +5,7 @@
   "title": "Baloo Tammudu 2",
   "description": "Baloo Tammudu 2 — Display font.",
   "font": {
-    "family": "Baloo Tammudu 2",
+    "family": "Baloo Tammudu 2 Variable",
     "provider": "google",
     "import": "Baloo_Tammudu_2",
     "variable": "--font-baloo-tammudu-2",

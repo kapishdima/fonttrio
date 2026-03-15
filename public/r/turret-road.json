@@ -21,6 +21,7 @@
       "menu",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/turret-road"
   }
 }

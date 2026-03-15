@@ -21,6 +21,7 @@
       "menu",
       "arabic",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/zain"
   }
 }

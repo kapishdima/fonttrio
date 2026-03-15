@@ -5,7 +5,7 @@
   "title": "Crimson Pro",
   "description": "Crimson Pro — Serif font.",
   "font": {
-    "family": "Crimson Pro",
+    "family": "Crimson Pro Variable",
     "provider": "google",
     "import": "Crimson_Pro",
     "variable": "--font-crimson-pro",

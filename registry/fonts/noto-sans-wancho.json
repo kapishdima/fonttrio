@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "wancho"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-wancho"
   }
 }

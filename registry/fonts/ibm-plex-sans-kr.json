@@ -23,6 +23,7 @@
       "korean",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/ibm-plex-sans-kr"
   }
 }

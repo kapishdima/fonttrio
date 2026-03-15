@@ -23,6 +23,7 @@
       "latin",
       "latin-ext",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/cormorant-unicase"
   }
 }

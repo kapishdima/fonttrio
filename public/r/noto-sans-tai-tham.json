@@ -5,7 +5,7 @@
   "title": "Noto Sans Tai Tham",
   "description": "Noto Sans Tai Tham — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Tai Tham",
+    "family": "Noto Sans Tai Tham Variable",
     "provider": "google",
     "import": "Noto_Sans_Tai_Tham",
     "variable": "--font-noto-sans-tai-tham",

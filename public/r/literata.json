@@ -5,7 +5,7 @@
   "title": "Literata",
   "description": "Literata — Serif font.",
   "font": {
-    "family": "Literata",
+    "family": "Literata Variable",
     "provider": "google",
     "import": "Literata",
     "variable": "--font-literata",

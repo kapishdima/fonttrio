@@ -17,6 +17,7 @@
       "khojki",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-khojki"
   }
 }

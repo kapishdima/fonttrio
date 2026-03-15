@@ -5,7 +5,7 @@
   "title": "Faustina",
   "description": "Faustina — Serif font.",
   "font": {
-    "family": "Faustina",
+    "family": "Faustina Variable",
     "provider": "google",
     "import": "Faustina",
     "variable": "--font-faustina",

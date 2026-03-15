@@ -5,7 +5,7 @@
   "title": "Albert Sans",
   "description": "Albert Sans — Sans Serif font.",
   "font": {
-    "family": "Albert Sans",
+    "family": "Albert Sans Variable",
     "provider": "google",
     "import": "Albert_Sans",
     "variable": "--font-albert-sans",

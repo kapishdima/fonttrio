@@ -5,7 +5,7 @@
   "title": "Source Code Pro",
   "description": "Source Code Pro — Monospace font.",
   "font": {
-    "family": "Source Code Pro",
+    "family": "Source Code Pro Variable",
     "provider": "google",
     "import": "Source_Code_Pro",
     "variable": "--font-source-code-pro",

@@ -5,7 +5,7 @@
   "title": "Noto Sans Display",
   "description": "Noto Sans Display — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Display",
+    "family": "Noto Sans Display Variable",
     "provider": "google",
     "import": "Noto_Sans_Display",
     "variable": "--font-noto-sans-display",

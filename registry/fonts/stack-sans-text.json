@@ -5,7 +5,7 @@
   "title": "Stack Sans Text",
   "description": "Stack Sans Text — Sans Serif font.",
   "font": {
-    "family": "Stack Sans Text",
+    "family": "Stack Sans Text Variable",
     "provider": "google",
     "import": "Stack_Sans_Text",
     "variable": "--font-stack-sans-text",

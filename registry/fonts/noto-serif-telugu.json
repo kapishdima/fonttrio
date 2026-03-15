@@ -5,7 +5,7 @@
   "title": "Noto Serif Telugu",
   "description": "Noto Serif Telugu — Serif font.",
   "font": {
-    "family": "Noto Serif Telugu",
+    "family": "Noto Serif Telugu Variable",
     "provider": "google",
     "import": "Noto_Serif_Telugu",
     "variable": "--font-noto-serif-telugu",

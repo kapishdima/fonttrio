@@ -5,7 +5,7 @@
   "title": "Playwrite BR",
   "description": "Playwrite BR — Handwriting font.",
   "font": {
-    "family": "Playwrite BR",
+    "family": "Playwrite BR Variable",
     "provider": "google",
     "import": "Playwrite_BR",
     "variable": "--font-playwrite-br",

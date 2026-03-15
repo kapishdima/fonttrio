@@ -5,7 +5,7 @@
   "title": "Playwrite AU QLD",
   "description": "Playwrite AU QLD — Handwriting font.",
   "font": {
-    "family": "Playwrite AU QLD",
+    "family": "Playwrite AU QLD Variable",
     "provider": "google",
     "import": "Playwrite_AU_QLD",
     "variable": "--font-playwrite-au-qld",

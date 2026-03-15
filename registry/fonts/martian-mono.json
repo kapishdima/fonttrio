@@ -5,7 +5,7 @@
   "title": "Martian Mono",
   "description": "Martian Mono — Monospace font.",
   "font": {
-    "family": "Martian Mono",
+    "family": "Martian Mono Variable",
     "provider": "google",
     "import": "Martian_Mono",
     "variable": "--font-martian-mono",

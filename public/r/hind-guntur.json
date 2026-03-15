@@ -21,6 +21,7 @@
       "latin",
       "latin-ext",
       "telugu"
-    ]
+    ],
+    "dependency": "@fontsource/hind-guntur"
   }
 }

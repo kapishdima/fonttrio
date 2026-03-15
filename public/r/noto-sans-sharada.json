@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "sharada"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-sharada"
   }
 }

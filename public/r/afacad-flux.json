@@ -5,7 +5,7 @@
   "title": "Afacad Flux",
   "description": "Afacad Flux — Sans Serif font.",
   "font": {
-    "family": "Afacad Flux",
+    "family": "Afacad Flux Variable",
     "provider": "google",
     "import": "Afacad_Flux",
     "variable": "--font-afacad-flux",

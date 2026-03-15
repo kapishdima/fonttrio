@@ -1,0 +1,35 @@
+{
+  "name": "iosevka-charon",
+  "type": "registry:font",
+  "category": "Monospace",
+  "title": "Iosevka Charon",
+  "description": "Iosevka Charon — Monospace font.",
+  "font": {
+    "family": "Iosevka Charon",
+    "provider": "google",
+    "import": "Iosevka_Charon",
+    "variable": "--font-iosevka-charon",
+    "weight": [
+      "300",
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": [
+      "menu",
+      "armenian",
+      "braille",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "symbols2",
+      "vietnamese"
+    ],
+    "dependency": "@fontsource/iosevka-charon"
+  }
+}

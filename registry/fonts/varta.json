@@ -5,7 +5,7 @@
   "title": "Varta",
   "description": "Varta — Sans Serif font.",
   "font": {
-    "family": "Varta",
+    "family": "Varta Variable",
     "provider": "google",
     "import": "Varta",
     "variable": "--font-varta",

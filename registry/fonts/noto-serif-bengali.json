@@ -5,7 +5,7 @@
   "title": "Noto Serif Bengali",
   "description": "Noto Serif Bengali — Serif font.",
   "font": {
-    "family": "Noto Serif Bengali",
+    "family": "Noto Serif Bengali Variable",
     "provider": "google",
     "import": "Noto_Serif_Bengali",
     "variable": "--font-noto-serif-bengali",

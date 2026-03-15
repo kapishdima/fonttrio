@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "nushu"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-nushu"
   }
 }

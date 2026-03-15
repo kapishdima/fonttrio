@@ -5,7 +5,7 @@
   "title": "Space Grotesk",
   "description": "Space Grotesk — Sans Serif font.",
   "font": {
-    "family": "Space Grotesk",
+    "family": "Space Grotesk Variable",
     "provider": "google",
     "import": "Space_Grotesk",
     "variable": "--font-space-grotesk",

@@ -5,7 +5,7 @@
   "title": "Edu VIC WA NT Hand Pre",
   "description": "Edu VIC WA NT Hand Pre — Handwriting font.",
   "font": {
-    "family": "Edu VIC WA NT Hand Pre",
+    "family": "Edu VIC WA NT Hand Pre Variable",
     "provider": "google",
     "import": "Edu_VIC_WA_NT_Hand_Pre",
     "variable": "--font-edu-vic-wa-nt-hand-pre",

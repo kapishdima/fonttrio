@@ -20,6 +20,7 @@
       "latin",
       "latin-ext",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/arsenal-sc"
   }
 }

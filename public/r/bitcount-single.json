@@ -5,7 +5,7 @@
   "title": "Bitcount Single",
   "description": "Bitcount Single — Display font.",
   "font": {
-    "family": "Bitcount Single",
+    "family": "Bitcount Single Variable",
     "provider": "google",
     "import": "Bitcount_Single",
     "variable": "--font-bitcount-single",

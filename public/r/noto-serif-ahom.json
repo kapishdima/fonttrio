@@ -17,6 +17,7 @@
       "ahom",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-serif-ahom"
   }
 }

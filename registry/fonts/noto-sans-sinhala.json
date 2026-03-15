@@ -5,7 +5,7 @@
   "title": "Noto Sans Sinhala",
   "description": "Noto Sans Sinhala — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Sinhala",
+    "family": "Noto Sans Sinhala Variable",
     "provider": "google",
     "import": "Noto_Sans_Sinhala",
     "variable": "--font-noto-sans-sinhala",

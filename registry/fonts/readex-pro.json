@@ -5,7 +5,7 @@
   "title": "Readex Pro",
   "description": "Readex Pro — Sans Serif font.",
   "font": {
-    "family": "Readex Pro",
+    "family": "Readex Pro Variable",
     "provider": "google",
     "import": "Readex_Pro",
     "variable": "--font-readex-pro",

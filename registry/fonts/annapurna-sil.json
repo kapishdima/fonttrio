@@ -20,6 +20,7 @@
       "latin-ext",
       "math",
       "symbols"
-    ]
+    ],
+    "dependency": "@fontsource/annapurna-sil"
   }
 }

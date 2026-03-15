@@ -16,6 +16,7 @@
       "menu",
       "chinese-simplified",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/long-cang"
   }
 }

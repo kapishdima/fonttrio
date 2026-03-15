@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "rejang"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-rejang"
   }
 }

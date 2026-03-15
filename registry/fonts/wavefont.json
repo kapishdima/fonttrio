@@ -5,7 +5,7 @@
   "title": "Wavefont",
   "description": "Wavefont — Display font.",
   "font": {
-    "family": "Wavefont",
+    "family": "Wavefont Variable",
     "provider": "google",
     "import": "Wavefont",
     "variable": "--font-wavefont",

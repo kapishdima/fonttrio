@@ -5,7 +5,7 @@
   "title": "Playwrite BE WAL",
   "description": "Playwrite BE WAL — Handwriting font.",
   "font": {
-    "family": "Playwrite BE WAL",
+    "family": "Playwrite BE WAL Variable",
     "provider": "google",
     "import": "Playwrite_BE_WAL",
     "variable": "--font-playwrite-be-wal",

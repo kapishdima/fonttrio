@@ -5,7 +5,7 @@
   "title": "Sixtyfour Convergence",
   "description": "Sixtyfour Convergence — Monospace font.",
   "font": {
-    "family": "Sixtyfour Convergence",
+    "family": "Sixtyfour Convergence Variable",
     "provider": "google",
     "import": "Sixtyfour_Convergence",
     "variable": "--font-sixtyfour-convergence",

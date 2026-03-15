@@ -19,6 +19,7 @@
       "japanese",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/zen-antique-soft"
   }
 }

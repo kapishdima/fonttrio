@@ -5,7 +5,7 @@
   "title": "Cascadia Mono",
   "description": "Cascadia Mono — Sans Serif font.",
   "font": {
-    "family": "Cascadia Mono",
+    "family": "Cascadia Mono Variable",
     "provider": "google",
     "import": "Cascadia_Mono",
     "variable": "--font-cascadia-mono",

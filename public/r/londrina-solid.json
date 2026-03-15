@@ -18,6 +18,7 @@
     "subsets": [
       "menu",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/londrina-solid"
   }
 }

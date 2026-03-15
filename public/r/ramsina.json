@@ -16,6 +16,7 @@
       "menu",
       "latin",
       "syriac"
-    ]
+    ],
+    "dependency": "@fontsource/ramsina"
   }
 }

@@ -17,6 +17,7 @@
     "subsets": [
       "menu",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/averia-libre"
   }
 }

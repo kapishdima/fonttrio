@@ -5,7 +5,7 @@
   "title": "League Gothic",
   "description": "League Gothic — Sans Serif font.",
   "font": {
-    "family": "League Gothic",
+    "family": "League Gothic Variable",
     "provider": "google",
     "import": "League_Gothic",
     "variable": "--font-league-gothic",

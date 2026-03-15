@@ -5,7 +5,7 @@
   "title": "Geom",
   "description": "Geom — Sans Serif font.",
   "font": {
-    "family": "Geom",
+    "family": "Geom Variable",
     "provider": "google",
     "import": "Geom",
     "variable": "--font-geom",

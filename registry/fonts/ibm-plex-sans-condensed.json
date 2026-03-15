@@ -24,6 +24,7 @@
       "latin",
       "latin-ext",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/ibm-plex-sans-condensed"
   }
 }

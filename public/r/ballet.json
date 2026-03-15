@@ -5,7 +5,7 @@
   "title": "Ballet",
   "description": "Ballet — Handwriting font.",
   "font": {
-    "family": "Ballet",
+    "family": "Ballet Variable",
     "provider": "google",
     "import": "Ballet",
     "variable": "--font-ballet",

@@ -5,7 +5,7 @@
   "title": "Phudu",
   "description": "Phudu — Display font.",
   "font": {
-    "family": "Phudu",
+    "family": "Phudu Variable",
     "provider": "google",
     "import": "Phudu",
     "variable": "--font-phudu",

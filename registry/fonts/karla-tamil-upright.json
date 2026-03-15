@@ -16,6 +16,7 @@
     "subsets": [
       "menu",
       "tamil"
-    ]
+    ],
+    "dependency": "@fontsource/karla-tamil-upright"
   }
 }

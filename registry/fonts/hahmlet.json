@@ -5,7 +5,7 @@
   "title": "Hahmlet",
   "description": "Hahmlet — Serif font.",
   "font": {
-    "family": "Hahmlet",
+    "family": "Hahmlet Variable",
     "provider": "google",
     "import": "Hahmlet",
     "variable": "--font-hahmlet",

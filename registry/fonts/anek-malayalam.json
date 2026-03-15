@@ -5,7 +5,7 @@
   "title": "Anek Malayalam",
   "description": "Anek Malayalam — Sans Serif font.",
   "font": {
-    "family": "Anek Malayalam",
+    "family": "Anek Malayalam Variable",
     "provider": "google",
     "import": "Anek_Malayalam",
     "variable": "--font-anek-malayalam",

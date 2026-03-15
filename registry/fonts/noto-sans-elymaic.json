@@ -17,6 +17,7 @@
       "elymaic",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-elymaic"
   }
 }

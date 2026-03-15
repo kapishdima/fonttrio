@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/saira-stencil-one"
   }
 }

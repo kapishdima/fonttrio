@@ -5,7 +5,7 @@
   "title": "Playwrite NZ",
   "description": "Playwrite NZ — Handwriting font.",
   "font": {
-    "family": "Playwrite NZ",
+    "family": "Playwrite NZ Variable",
     "provider": "google",
     "import": "Playwrite_NZ",
     "variable": "--font-playwrite-nz",

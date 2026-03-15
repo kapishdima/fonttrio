@@ -5,7 +5,7 @@
   "title": "Bitcount Grid Single",
   "description": "Bitcount Grid Single — Display font.",
   "font": {
-    "family": "Bitcount Grid Single",
+    "family": "Bitcount Grid Single Variable",
     "provider": "google",
     "import": "Bitcount_Grid_Single",
     "variable": "--font-bitcount-grid-single",

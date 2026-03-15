@@ -5,7 +5,7 @@
   "title": "Josefin Sans",
   "description": "Josefin Sans — Sans Serif font.",
   "font": {
-    "family": "Josefin Sans",
+    "family": "Josefin Sans Variable",
     "provider": "google",
     "import": "Josefin_Sans",
     "variable": "--font-josefin-sans",

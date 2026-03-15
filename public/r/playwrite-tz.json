@@ -5,7 +5,7 @@
   "title": "Playwrite TZ",
   "description": "Playwrite TZ — Handwriting font.",
   "font": {
-    "family": "Playwrite TZ",
+    "family": "Playwrite TZ Variable",
     "provider": "google",
     "import": "Playwrite_TZ",
     "variable": "--font-playwrite-tz",

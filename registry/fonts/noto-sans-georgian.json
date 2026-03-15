@@ -5,7 +5,7 @@
   "title": "Noto Sans Georgian",
   "description": "Noto Sans Georgian — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Georgian",
+    "family": "Noto Sans Georgian Variable",
     "provider": "google",
     "import": "Noto_Sans_Georgian",
     "variable": "--font-noto-sans-georgian",

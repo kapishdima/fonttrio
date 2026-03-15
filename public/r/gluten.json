@@ -5,7 +5,7 @@
   "title": "Gluten",
   "description": "Gluten — Display font.",
   "font": {
-    "family": "Gluten",
+    "family": "Gluten Variable",
     "provider": "google",
     "import": "Gluten",
     "variable": "--font-gluten",

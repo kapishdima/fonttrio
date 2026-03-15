@@ -5,7 +5,7 @@
   "title": "Noto Sans Syriac",
   "description": "Noto Sans Syriac — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Syriac",
+    "family": "Noto Sans Syriac Variable",
     "provider": "google",
     "import": "Noto_Sans_Syriac",
     "variable": "--font-noto-sans-syriac",

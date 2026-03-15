@@ -5,7 +5,7 @@
   "title": "Libre Bodoni",
   "description": "Libre Bodoni — Serif font.",
   "font": {
-    "family": "Libre Bodoni",
+    "family": "Libre Bodoni Variable",
     "provider": "google",
     "import": "Libre_Bodoni",
     "variable": "--font-libre-bodoni",

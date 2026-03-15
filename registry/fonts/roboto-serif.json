@@ -5,7 +5,7 @@
   "title": "Roboto Serif",
   "description": "Roboto Serif — Serif font.",
   "font": {
-    "family": "Roboto Serif",
+    "family": "Roboto Serif Variable",
     "provider": "google",
     "import": "Roboto_Serif",
     "variable": "--font-roboto-serif",

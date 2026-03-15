@@ -5,7 +5,7 @@
   "title": "Asap",
   "description": "Asap — Sans Serif font.",
   "font": {
-    "family": "Asap",
+    "family": "Asap Variable",
     "provider": "google",
     "import": "Asap",
     "variable": "--font-asap",

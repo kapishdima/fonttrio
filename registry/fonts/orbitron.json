@@ -5,7 +5,7 @@
   "title": "Orbitron",
   "description": "Orbitron — Sans Serif font.",
   "font": {
-    "family": "Orbitron",
+    "family": "Orbitron Variable",
     "provider": "google",
     "import": "Orbitron",
     "variable": "--font-orbitron",

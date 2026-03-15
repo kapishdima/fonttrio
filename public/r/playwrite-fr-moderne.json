@@ -5,7 +5,7 @@
   "title": "Playwrite FR Moderne",
   "description": "Playwrite FR Moderne — Handwriting font.",
   "font": {
-    "family": "Playwrite FR Moderne",
+    "family": "Playwrite FR Moderne Variable",
     "provider": "google",
     "import": "Playwrite_FR_Moderne",
     "variable": "--font-playwrite-fr-moderne",

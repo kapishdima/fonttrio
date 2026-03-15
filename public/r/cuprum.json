@@ -5,7 +5,7 @@
   "title": "Cuprum",
   "description": "Cuprum — Sans Serif font.",
   "font": {
-    "family": "Cuprum",
+    "family": "Cuprum Variable",
     "provider": "google",
     "import": "Cuprum",
     "variable": "--font-cuprum",

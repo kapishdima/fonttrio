@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "nandinagari"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-nandinagari"
   }
 }

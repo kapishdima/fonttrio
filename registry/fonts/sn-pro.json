@@ -5,7 +5,7 @@
   "title": "SN Pro",
   "description": "SN Pro — Sans Serif font.",
   "font": {
-    "family": "SN Pro",
+    "family": "SN Pro Variable",
     "provider": "google",
     "import": "SN_Pro",
     "variable": "--font-sn-pro",

@@ -5,7 +5,7 @@
   "title": "Piazzolla",
   "description": "Piazzolla — Serif font.",
   "font": {
-    "family": "Piazzolla",
+    "family": "Piazzolla Variable",
     "provider": "google",
     "import": "Piazzolla",
     "variable": "--font-piazzolla",

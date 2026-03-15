@@ -17,6 +17,7 @@
       "gujarati",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/mogra"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Playwrite IT Moderna",
   "description": "Playwrite IT Moderna — Handwriting font.",
   "font": {
-    "family": "Playwrite IT Moderna",
+    "family": "Playwrite IT Moderna Variable",
     "provider": "google",
     "import": "Playwrite_IT_Moderna",
     "variable": "--font-playwrite-it-moderna",

@@ -5,7 +5,7 @@
   "title": "Anaheim",
   "description": "Anaheim — Sans Serif font.",
   "font": {
-    "family": "Anaheim",
+    "family": "Anaheim Variable",
     "provider": "google",
     "import": "Anaheim",
     "variable": "--font-anaheim",

@@ -5,7 +5,7 @@
   "title": "DynaPuff",
   "description": "DynaPuff — Display font.",
   "font": {
-    "family": "DynaPuff",
+    "family": "DynaPuff Variable",
     "provider": "google",
     "import": "DynaPuff",
     "variable": "--font-dynapuff",

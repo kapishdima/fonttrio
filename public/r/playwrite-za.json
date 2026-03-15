@@ -5,7 +5,7 @@
   "title": "Playwrite ZA",
   "description": "Playwrite ZA — Handwriting font.",
   "font": {
-    "family": "Playwrite ZA",
+    "family": "Playwrite ZA Variable",
     "provider": "google",
     "import": "Playwrite_ZA",
     "variable": "--font-playwrite-za",

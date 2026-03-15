@@ -5,7 +5,7 @@
   "title": "M PLUS Code Latin",
   "description": "M PLUS Code Latin — Sans Serif font.",
   "font": {
-    "family": "M PLUS Code Latin",
+    "family": "M PLUS Code Latin Variable",
     "provider": "google",
     "import": "M_PLUS_Code_Latin",
     "variable": "--font-m-plus-code-latin",

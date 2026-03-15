@@ -23,6 +23,7 @@
       "gurmukhi",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/mukta-mahee"
   }
 }

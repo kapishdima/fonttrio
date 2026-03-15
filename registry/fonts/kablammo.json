@@ -5,7 +5,7 @@
   "title": "Kablammo",
   "description": "Kablammo — Display font.",
   "font": {
-    "family": "Kablammo",
+    "family": "Kablammo Variable",
     "provider": "google",
     "import": "Kablammo",
     "variable": "--font-kablammo",

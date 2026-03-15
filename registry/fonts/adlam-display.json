@@ -17,6 +17,7 @@
       "adlam",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/adlam-display"
   }
 }

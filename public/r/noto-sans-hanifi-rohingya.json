@@ -5,7 +5,7 @@
   "title": "Noto Sans Hanifi Rohingya",
   "description": "Noto Sans Hanifi Rohingya — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Hanifi Rohingya",
+    "family": "Noto Sans Hanifi Rohingya Variable",
     "provider": "google",
     "import": "Noto_Sans_Hanifi_Rohingya",
     "variable": "--font-noto-sans-hanifi-rohingya",

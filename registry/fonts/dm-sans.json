@@ -5,7 +5,7 @@
   "title": "DM Sans",
   "description": "DM Sans — Sans Serif font.",
   "font": {
-    "family": "DM Sans",
+    "family": "DM Sans Variable",
     "provider": "google",
     "import": "DM_Sans",
     "variable": "--font-dm-sans",

@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "tai-viet"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-tai-viet"
   }
 }

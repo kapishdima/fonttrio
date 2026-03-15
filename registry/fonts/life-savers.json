@@ -18,6 +18,7 @@
       "menu",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/life-savers"
   }
 }

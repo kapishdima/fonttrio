@@ -21,6 +21,7 @@
       "latin-ext",
       "runic",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/caudex"
   }
 }

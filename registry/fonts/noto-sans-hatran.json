@@ -17,6 +17,7 @@
       "hatran",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-hatran"
   }
 }

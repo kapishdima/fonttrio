@@ -5,7 +5,7 @@
   "title": "Alyamama",
   "description": "Alyamama — Serif font.",
   "font": {
-    "family": "Alyamama",
+    "family": "Alyamama Variable",
     "provider": "google",
     "import": "Alyamama",
     "variable": "--font-alyamama",

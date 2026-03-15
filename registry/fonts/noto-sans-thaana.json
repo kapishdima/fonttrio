@@ -5,7 +5,7 @@
   "title": "Noto Sans Thaana",
   "description": "Noto Sans Thaana — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Thaana",
+    "family": "Noto Sans Thaana Variable",
     "provider": "google",
     "import": "Noto_Sans_Thaana",
     "variable": "--font-noto-sans-thaana",

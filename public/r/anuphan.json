@@ -5,7 +5,7 @@
   "title": "Anuphan",
   "description": "Anuphan — Sans Serif font.",
   "font": {
-    "family": "Anuphan",
+    "family": "Anuphan Variable",
     "provider": "google",
     "import": "Anuphan",
     "variable": "--font-anuphan",

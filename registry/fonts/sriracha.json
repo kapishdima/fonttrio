@@ -18,6 +18,7 @@
       "latin-ext",
       "thai",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/sriracha"
   }
 }

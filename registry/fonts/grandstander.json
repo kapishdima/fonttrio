@@ -5,7 +5,7 @@
   "title": "Grandstander",
   "description": "Grandstander — Display font.",
   "font": {
-    "family": "Grandstander",
+    "family": "Grandstander Variable",
     "provider": "google",
     "import": "Grandstander",
     "variable": "--font-grandstander",

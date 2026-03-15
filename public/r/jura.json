@@ -5,7 +5,7 @@
   "title": "Jura",
   "description": "Jura — Sans Serif font.",
   "font": {
-    "family": "Jura",
+    "family": "Jura Variable",
     "provider": "google",
     "import": "Jura",
     "variable": "--font-jura",

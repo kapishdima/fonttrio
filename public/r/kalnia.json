@@ -5,7 +5,7 @@
   "title": "Kalnia",
   "description": "Kalnia — Serif font.",
   "font": {
-    "family": "Kalnia",
+    "family": "Kalnia Variable",
     "provider": "google",
     "import": "Kalnia",
     "variable": "--font-kalnia",

@@ -5,7 +5,7 @@
   "title": "Parastoo",
   "description": "Parastoo — Serif font.",
   "font": {
-    "family": "Parastoo",
+    "family": "Parastoo Variable",
     "provider": "google",
     "import": "Parastoo",
     "variable": "--font-parastoo",

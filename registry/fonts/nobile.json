@@ -19,6 +19,7 @@
       "cyrillic",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/nobile"
   }
 }

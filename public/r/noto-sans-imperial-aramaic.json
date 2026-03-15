@@ -17,6 +17,7 @@
       "imperial-aramaic",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-imperial-aramaic"
   }
 }

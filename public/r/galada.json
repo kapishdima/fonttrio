@@ -16,6 +16,7 @@
       "menu",
       "bengali",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/galada"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Mozilla Headline",
   "description": "Mozilla Headline — Sans Serif font.",
   "font": {
-    "family": "Mozilla Headline",
+    "family": "Mozilla Headline Variable",
     "provider": "google",
     "import": "Mozilla_Headline",
     "variable": "--font-mozilla-headline",

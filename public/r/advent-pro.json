@@ -5,7 +5,7 @@
   "title": "Advent Pro",
   "description": "Advent Pro — Sans Serif font.",
   "font": {
-    "family": "Advent Pro",
+    "family": "Advent Pro Variable",
     "provider": "google",
     "import": "Advent_Pro",
     "variable": "--font-advent-pro",

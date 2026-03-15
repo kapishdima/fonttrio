@@ -5,7 +5,7 @@
   "title": "Kantumruy Pro",
   "description": "Kantumruy Pro — Sans Serif font.",
   "font": {
-    "family": "Kantumruy Pro",
+    "family": "Kantumruy Pro Variable",
     "provider": "google",
     "import": "Kantumruy_Pro",
     "variable": "--font-kantumruy-pro",

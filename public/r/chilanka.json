@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "malayalam"
-    ]
+    ],
+    "dependency": "@fontsource/chilanka"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Cormorant Garamond",
   "description": "Cormorant Garamond — Serif font.",
   "font": {
-    "family": "Cormorant Garamond",
+    "family": "Cormorant Garamond Variable",
     "provider": "google",
     "import": "Cormorant_Garamond",
     "variable": "--font-cormorant-garamond",

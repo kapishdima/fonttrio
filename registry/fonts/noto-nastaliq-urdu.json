@@ -5,7 +5,7 @@
   "title": "Noto Nastaliq Urdu",
   "description": "Noto Nastaliq Urdu — Serif font.",
   "font": {
-    "family": "Noto Nastaliq Urdu",
+    "family": "Noto Nastaliq Urdu Variable",
     "provider": "google",
     "import": "Noto_Nastaliq_Urdu",
     "variable": "--font-noto-nastaliq-urdu",

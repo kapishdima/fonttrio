@@ -5,7 +5,7 @@
   "title": "Alkatra",
   "description": "Alkatra — Display font.",
   "font": {
-    "family": "Alkatra",
+    "family": "Alkatra Variable",
     "provider": "google",
     "import": "Alkatra",
     "variable": "--font-alkatra",

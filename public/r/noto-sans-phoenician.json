@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "phoenician"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-phoenician"
   }
 }

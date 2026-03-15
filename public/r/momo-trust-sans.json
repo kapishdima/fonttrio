@@ -5,7 +5,7 @@
   "title": "Momo Trust Sans",
   "description": "Momo Trust Sans — Sans Serif font.",
   "font": {
-    "family": "Momo Trust Sans",
+    "family": "Momo Trust Sans Variable",
     "provider": "google",
     "import": "Momo_Trust_Sans",
     "variable": "--font-momo-trust-sans",

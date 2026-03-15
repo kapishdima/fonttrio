@@ -5,7 +5,7 @@
   "title": "Mohave",
   "description": "Mohave — Sans Serif font.",
   "font": {
-    "family": "Mohave",
+    "family": "Mohave Variable",
     "provider": "google",
     "import": "Mohave",
     "variable": "--font-mohave",

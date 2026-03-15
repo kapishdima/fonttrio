@@ -5,7 +5,7 @@
   "title": "Lemonada",
   "description": "Lemonada — Display font.",
   "font": {
-    "family": "Lemonada",
+    "family": "Lemonada Variable",
     "provider": "google",
     "import": "Lemonada",
     "variable": "--font-lemonada",

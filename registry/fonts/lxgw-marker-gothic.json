@@ -22,6 +22,7 @@
       "latin-ext",
       "symbols2",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/lxgw-marker-gothic"
   }
 }

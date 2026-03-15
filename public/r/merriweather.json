@@ -5,7 +5,7 @@
   "title": "Merriweather",
   "description": "Merriweather — Serif font.",
   "font": {
-    "family": "Merriweather",
+    "family": "Merriweather Variable",
     "provider": "google",
     "import": "Merriweather",
     "variable": "--font-merriweather",

@@ -5,7 +5,7 @@
   "title": "Noto Serif Devanagari",
   "description": "Noto Serif Devanagari — Serif font.",
   "font": {
-    "family": "Noto Serif Devanagari",
+    "family": "Noto Serif Devanagari Variable",
     "provider": "google",
     "import": "Noto_Serif_Devanagari",
     "variable": "--font-noto-serif-devanagari",

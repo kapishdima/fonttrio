@@ -5,7 +5,7 @@
   "title": "Noto Serif TC",
   "description": "Noto Serif TC — Serif font.",
   "font": {
-    "family": "Noto Serif TC",
+    "family": "Noto Serif TC Variable",
     "provider": "google",
     "import": "Noto_Serif_TC",
     "variable": "--font-noto-serif-tc",

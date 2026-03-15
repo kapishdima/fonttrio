@@ -5,7 +5,7 @@
   "title": "Noto Sans Ethiopic",
   "description": "Noto Sans Ethiopic — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Ethiopic",
+    "family": "Noto Sans Ethiopic Variable",
     "provider": "google",
     "import": "Noto_Sans_Ethiopic",
     "variable": "--font-noto-sans-ethiopic",

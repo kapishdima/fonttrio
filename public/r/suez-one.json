@@ -17,6 +17,7 @@
       "hebrew",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/suez-one"
   }
 }

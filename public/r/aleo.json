@@ -5,7 +5,7 @@
   "title": "Aleo",
   "description": "Aleo — Serif font.",
   "font": {
-    "family": "Aleo",
+    "family": "Aleo Variable",
     "provider": "google",
     "import": "Aleo",
     "variable": "--font-aleo",

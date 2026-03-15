@@ -5,7 +5,7 @@
   "title": "Playpen Sans Arabic",
   "description": "Playpen Sans Arabic — Handwriting font.",
   "font": {
-    "family": "Playpen Sans Arabic",
+    "family": "Playpen Sans Arabic Variable",
     "provider": "google",
     "import": "Playpen_Sans_Arabic",
     "variable": "--font-playpen-sans-arabic",

@@ -5,7 +5,7 @@
   "title": "Moderustic",
   "description": "Moderustic — Sans Serif font.",
   "font": {
-    "family": "Moderustic",
+    "family": "Moderustic Variable",
     "provider": "google",
     "import": "Moderustic",
     "variable": "--font-moderustic",

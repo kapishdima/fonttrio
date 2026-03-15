@@ -5,7 +5,7 @@
   "title": "Noto Sans Devanagari",
   "description": "Noto Sans Devanagari — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Devanagari",
+    "family": "Noto Sans Devanagari Variable",
     "provider": "google",
     "import": "Noto_Sans_Devanagari",
     "variable": "--font-noto-sans-devanagari",

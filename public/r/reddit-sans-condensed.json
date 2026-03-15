@@ -5,7 +5,7 @@
   "title": "Reddit Sans Condensed",
   "description": "Reddit Sans Condensed — Sans Serif font.",
   "font": {
-    "family": "Reddit Sans Condensed",
+    "family": "Reddit Sans Condensed Variable",
     "provider": "google",
     "import": "Reddit_Sans_Condensed",
     "variable": "--font-reddit-sans-condensed",

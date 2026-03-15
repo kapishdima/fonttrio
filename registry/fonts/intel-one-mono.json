@@ -5,7 +5,7 @@
   "title": "Intel One Mono",
   "description": "Intel One Mono — Monospace font.",
   "font": {
-    "family": "Intel One Mono",
+    "family": "Intel One Mono Variable",
     "provider": "google",
     "import": "Intel_One_Mono",
     "variable": "--font-intel-one-mono",

@@ -17,6 +17,7 @@
       "menu",
       "devanagari",
       "latin"
-    ]
+    ],
+    "dependency": "@fontsource/sahitya"
   }
 }

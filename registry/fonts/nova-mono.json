@@ -17,6 +17,7 @@
       "greek",
       "latin",
       "latin-ext"
-    ]
+    ],
+    "dependency": "@fontsource/nova-mono"
   }
 }

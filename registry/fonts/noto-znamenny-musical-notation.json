@@ -19,6 +19,7 @@
       "math",
       "symbols",
       "znamenny"
-    ]
+    ],
+    "dependency": "@fontsource/noto-znamenny-musical-notation"
   }
 }

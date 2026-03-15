@@ -5,7 +5,7 @@
   "title": "Noto Sans Lisu",
   "description": "Noto Sans Lisu — Sans Serif font.",
   "font": {
-    "family": "Noto Sans Lisu",
+    "family": "Noto Sans Lisu Variable",
     "provider": "google",
     "import": "Noto_Sans_Lisu",
     "variable": "--font-noto-sans-lisu",

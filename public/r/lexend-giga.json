@@ -5,7 +5,7 @@
   "title": "Lexend Giga",
   "description": "Lexend Giga — Sans Serif font.",
   "font": {
-    "family": "Lexend Giga",
+    "family": "Lexend Giga Variable",
     "provider": "google",
     "import": "Lexend_Giga",
     "variable": "--font-lexend-giga",

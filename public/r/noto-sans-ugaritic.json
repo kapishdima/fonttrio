@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "ugaritic"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-ugaritic"
   }
 }

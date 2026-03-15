@@ -5,7 +5,7 @@
   "title": "Noto Serif Vithkuqi",
   "description": "Noto Serif Vithkuqi — Serif font.",
   "font": {
-    "family": "Noto Serif Vithkuqi",
+    "family": "Noto Serif Vithkuqi Variable",
     "provider": "google",
     "import": "Noto_Serif_Vithkuqi",
     "variable": "--font-noto-serif-vithkuqi",

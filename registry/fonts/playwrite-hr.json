@@ -5,7 +5,7 @@
   "title": "Playwrite HR",
   "description": "Playwrite HR — Handwriting font.",
   "font": {
-    "family": "Playwrite HR",
+    "family": "Playwrite HR Variable",
     "provider": "google",
     "import": "Playwrite_HR",
     "variable": "--font-playwrite-hr",

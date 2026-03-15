@@ -5,7 +5,7 @@
   "title": "Gantari",
   "description": "Gantari — Sans Serif font.",
   "font": {
-    "family": "Gantari",
+    "family": "Gantari Variable",
     "provider": "google",
     "import": "Gantari",
     "variable": "--font-gantari",

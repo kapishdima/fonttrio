@@ -18,6 +18,7 @@
       "menu",
       "latin",
       "syriac"
-    ]
+    ],
+    "dependency": "@fontsource/idiqlat"
   }
 }

@@ -23,6 +23,7 @@
     "subsets": [
       "menu",
       "myanmar"
-    ]
+    ],
+    "dependency": "@fontsource/noto-serif-myanmar"
   }
 }

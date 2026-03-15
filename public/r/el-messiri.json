@@ -5,7 +5,7 @@
   "title": "El Messiri",
   "description": "El Messiri — Sans Serif font.",
   "font": {
-    "family": "El Messiri",
+    "family": "El Messiri Variable",
     "provider": "google",
     "import": "El_Messiri",
     "variable": "--font-el-messiri",

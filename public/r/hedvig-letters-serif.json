@@ -5,7 +5,7 @@
   "title": "Hedvig Letters Serif",
   "description": "Hedvig Letters Serif — Serif font.",
   "font": {
-    "family": "Hedvig Letters Serif",
+    "family": "Hedvig Letters Serif Variable",
     "provider": "google",
     "import": "Hedvig_Letters_Serif",
     "variable": "--font-hedvig-letters-serif",

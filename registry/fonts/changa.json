@@ -5,7 +5,7 @@
   "title": "Changa",
   "description": "Changa — Sans Serif font.",
   "font": {
-    "family": "Changa",
+    "family": "Changa Variable",
     "provider": "google",
     "import": "Changa",
     "variable": "--font-changa",

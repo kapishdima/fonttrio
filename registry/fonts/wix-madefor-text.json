@@ -5,7 +5,7 @@
   "title": "Wix Madefor Text",
   "description": "Wix Madefor Text — Sans Serif font.",
   "font": {
-    "family": "Wix Madefor Text",
+    "family": "Wix Madefor Text Variable",
     "provider": "google",
     "import": "Wix_Madefor_Text",
     "variable": "--font-wix-madefor-text",

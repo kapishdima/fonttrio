@@ -26,6 +26,7 @@
       "latin-ext",
       "thai",
       "vietnamese"
-    ]
+    ],
+    "dependency": "@fontsource/taviraj"
   }
 }

@@ -5,7 +5,7 @@
   "title": "Glory",
   "description": "Glory — Sans Serif font.",
   "font": {
-    "family": "Glory",
+    "family": "Glory Variable",
     "provider": "google",
     "import": "Glory",
     "variable": "--font-glory",

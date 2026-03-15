@@ -5,7 +5,7 @@
   "title": "Stack Sans Notch",
   "description": "Stack Sans Notch — Sans Serif font.",
   "font": {
-    "family": "Stack Sans Notch",
+    "family": "Stack Sans Notch Variable",
     "provider": "google",
     "import": "Stack_Sans_Notch",
     "variable": "--font-stack-sans-notch",

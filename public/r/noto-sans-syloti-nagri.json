@@ -17,6 +17,7 @@
       "latin",
       "latin-ext",
       "syloti-nagri"
-    ]
+    ],
+    "dependency": "@fontsource/noto-sans-syloti-nagri"
   }
 }
