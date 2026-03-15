@@ -1,6 +1,6 @@
 "use client";
 
-import { Search } from "lucide-react";
+import { Github, Moon, Search, Sun, Twitter } from "lucide-react";
 import { motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 import DotGrid from "@/components/DotGrid";
@@ -20,8 +20,9 @@ const CHAOS_DURATION = 0.1;
 const HERO_DELAY =
 	(SCATTER_CONFIG.count - 1) * CHAOS_STAGGER + CHAOS_DURATION * 0.6;
 const HERO_STAGGER = 0.25;
+const HEADER_DELAY = HERO_DELAY + HERO_STAGGER * 2;
 
-const EFFECT_RADIUS = 250;
+const EFFECT_RADIUS = 150;
 const MAX_REPULSE = 30;
 const MAX_SCALE = 1.4;
 const BASE_OPACITY = 0.4;
@@ -107,7 +108,9 @@ export default function Redesign04() {
 		}>
 	>([]);
 
+	const [darkIcon, setDarkIcon] = useState(false);
 	const elemsRef = useRef<HTMLDivElement[]>([]);
+	const gradientRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const bounds = { width: window.innerWidth, height: window.innerHeight };
@@ -172,10 +175,18 @@ export default function Redesign04() {
 		const onPointerMove = (e: PointerEvent) => {
 			px = e.x;
 			py = e.y;
+			if (gradientRef.current) {
+				gradientRef.current.style.setProperty("--cursor-x", `${e.x}px`);
+				gradientRef.current.style.setProperty("--cursor-y", `${e.y}px`);
+				gradientRef.current.style.opacity = "1";
+			}
 			if (!rafId) rafId = requestAnimationFrame(tick);
 		};
 
 		const onPointerLeave = () => {
+			if (gradientRef.current) {
+				gradientRef.current.style.opacity = "0";
+			}
 			elemsRef.current.forEach((el) => {
 				if (!el) return;
 				el.style.setProperty("--repulse-x", "0px");
@@ -189,7 +200,10 @@ export default function Redesign04() {
 		document.documentElement.addEventListener("pointerleave", onPointerLeave);
 		return () => {
 			window.removeEventListener("pointermove", onPointerMove);
-			document.documentElement.removeEventListener("pointerleave", onPointerLeave);
+			document.documentElement.removeEventListener(
+				"pointerleave",
+				onPointerLeave,
+			);
 			if (rafId) cancelAnimationFrame(rafId);
 		};
 	}, [fonts]);
@@ -198,13 +212,75 @@ export default function Redesign04() {
 		<main className="w-screen overflow-x-hidden bg-black">
 			<div className="w-screen h-screen relative p-3">
 				<div className="w-full h-full bg-white rounded-4xl">
-					{/* <header className="w-full flex justify-center sticky z-10">
-						<nav className="w-[50vw] px-8 py-5 rounded-xl bg-black rounded-tr-none rounded-tl-none shadow-xl">
-							<a href="/" className="text-white mb-1 text-2xl font-bold">
-								Fonttrio
+					<motion.header
+						className="fixed top-6 left-1/2 z-50 flex items-center gap-1
+							bg-black/90 backdrop-blur-md rounded-full
+							px-2 py-1.5 shadow-2xl border border-white/10"
+						style={{ x: "-50%" }}
+						variants={{
+							hidden: { y: -80, opacity: 0, scale: 0.8, filter: "blur(8px)" },
+							visible: { y: 0, opacity: 1, scale: 1, filter: "blur(0px)" },
+						}}
+						initial="hidden"
+						animate="visible"
+						transition={{ ...heroTransition, delay: HEADER_DELAY }}
+					>
+						<a
+							href="/"
+							className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+						>
+							Fonttrio
+						</a>
+
+						<div className="w-px h-5 bg-white/15 " />
+
+						<nav className="flex items-center gap-0.5 pl-20 pr-2">
+							<a
+								href="/pairings"
+								className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+							>
+								Pairings
+							</a>
+							<a
+								href="/fonts"
+								className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+							>
+								Fonts
 							</a>
 						</nav>
-					</header> */}
+
+						<div className="w-px h-5 bg-white/15" />
+
+						<Button
+							size="icon"
+							variant="ghost"
+							className="size-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white cursor-pointer"
+							onClick={() => setDarkIcon((d) => !d)}
+						>
+							<Twitter />
+						</Button>
+						<Button
+							size="icon"
+							variant="ghost"
+							className="size-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white cursor-pointer"
+							onClick={() => setDarkIcon((d) => !d)}
+						>
+							<Github />
+						</Button>
+						<Button
+							size="icon"
+							variant="ghost"
+							className="size-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white cursor-pointer"
+							onClick={() => setDarkIcon((d) => !d)}
+						>
+							{darkIcon ? (
+								<Moon className="size-4" />
+							) : (
+								<Sun className="size-4" />
+							)}
+						</Button>
+					</motion.header>
+
 					<div
 						style={{
 							width: "100%",
@@ -229,7 +305,7 @@ export default function Redesign04() {
 						/>
 					</div>
 
-					<div className="size-full flex flex-col items-center justify-center relative z-10 py-[10vh]">
+					<div className="size-full flex flex-col items-center justify-center relative z-40 py-[10vh]">
 						<motion.h1
 							id="title"
 							className="text-9xl font-medium tracking-tight text-[#2C2C2A] font-['Manrope'] text-center leading-30"
@@ -263,7 +339,26 @@ export default function Redesign04() {
 						</motion.div>
 					</div>
 
-					<div className="size-full absolute top-0 left-0 z-10 pointer-events-none overflow-hidden">
+					<div className="size-full absolute top-0 left-0 z-10 overflow-hidden">
+						<div
+							ref={gradientRef}
+							className="absolute inset-0 pointer-events-none z-0"
+							style={
+								{
+									"--cursor-x": "-9999px",
+									"--cursor-y": "-9999px",
+									background: `radial-gradient(circle ${EFFECT_RADIUS}px at var(--cursor-x) var(--cursor-y),
+									transparent 0%,
+									transparent 60%,
+									rgba(0, 0, 0, 0.03) 80%,
+									rgba(0, 0, 0, 0.05) 92%,
+									transparent 100%
+								)`,
+									opacity: 0,
+									transition: "opacity 0.4s ease-out",
+								} as React.CSSProperties
+							}
+						/>
 						{fonts.map((item, i) => (
 							<ChaosFont
 								item={item}
@@ -301,7 +396,7 @@ const ChaosFont = React.forwardRef<
 >(({ item, index }, ref) => {
 	return (
 		<motion.div
-			className="absolute"
+			className="absolute pointer-events-none"
 			style={{
 				left: item.x,
 				top: item.y,
@@ -326,13 +421,17 @@ const ChaosFont = React.forwardRef<
 					"--cursor-scale": "1",
 					"--cursor-opacity": `${BASE_OPACITY}`,
 					animation: `levitate ${item.floatDuration}s ease-in-out ${item.floatDelay}s infinite`,
-					transform: "rotate(var(--rotate)) translate(var(--repulse-x), var(--repulse-y)) scale(var(--cursor-scale))",
+					transform:
+						"rotate(var(--rotate)) translate(var(--repulse-x), var(--repulse-y)) scale(var(--cursor-scale))",
 					transition: "transform 0.3s ease-out",
 				}}
 			>
 				<p
 					className="text-sm text-black whitespace-nowrap select-none"
-					style={{ opacity: "var(--cursor-opacity)", transition: "opacity 0.3s ease-out" }}
+					style={{
+						opacity: "var(--cursor-opacity)",
+						transition: "opacity 0.3s ease-out",
+					}}
 				>
 					{item.label}
 				</p>
