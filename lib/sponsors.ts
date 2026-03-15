@@ -50,6 +50,14 @@ export const SPONSORS: Sponsor[] = [
     logoDark: "https://cdn.shadcnstudio.com/ss-assets/marketing/shadcn-studio-logos/shadcn-studio-dark-full-logo.png",
     url: "https://shadcnstudio.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver"
+  },
+  {
+    id: "6",
+    name: "",
+    logo: "/sponsors/react-bits.svg",
+    logoDark: "/sponsors/react-bits-dark.svg",
+    url: "https://pro.reactbits.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    tier: "silver"
   }
 ];
 
