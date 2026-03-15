@@ -1,7 +1,8 @@
 "use client";
 
-import { Github, Moon, Search, Sun, Twitter } from "lucide-react";
-import { motion } from "motion/react";
+import { Moon, Search, Sun } from "lucide-react";
+import { motion, useScroll, useTransform } from "motion/react";
+import Lenis from "lenis";
 import React, { useEffect, useRef, useState } from "react";
 import DotGrid from "@/components/DotGrid";
 import { Button } from "@/components/ui/button";
@@ -25,7 +26,7 @@ const HEADER_DELAY = HERO_DELAY + HERO_STAGGER * 2;
 const EFFECT_RADIUS = 150;
 const MAX_REPULSE = 30;
 const MAX_SCALE = 1.4;
-const BASE_OPACITY = 0.4;
+const BASE_OPACITY = 0.25;
 const MAX_OPACITY = 1.0;
 
 const heroVariants = {
@@ -95,6 +96,71 @@ function generateScatterPositions(
 	return positions;
 }
 
+function Header({
+	darkIcon,
+	setDarkIcon,
+}: {
+	darkIcon: boolean;
+	setDarkIcon: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
+	return (
+		<motion.header
+			className="fixed top-6 left-1/2 z-50 flex items-center gap-1
+				bg-black/90 backdrop-blur-md rounded-full
+				px-2 py-1.5 shadow-2xl border border-white/10"
+			style={{ x: "-50%" }}
+			variants={{
+				hidden: { y: -80, opacity: 0, scale: 0.8, filter: "blur(8px)" },
+				visible: { y: 0, opacity: 1, scale: 1, filter: "blur(0px)" },
+			}}
+			initial="hidden"
+			animate="visible"
+			transition={{ ...heroTransition, delay: HEADER_DELAY }}
+		>
+			<a
+				href="/"
+				className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+			>
+				Fonttrio
+			</a>
+
+			{/* <div className="w-px h-5 bg-white/15" /> */}
+
+			<nav className="flex items-center gap-0.5 pl-20 pr-2">
+				<a
+					href="/pairings"
+					className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+				>
+					Pairings
+				</a>
+				<a
+					href="/fonts"
+					className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+				>
+					Fonts
+				</a>
+			</nav>
+
+			<div className="w-px h-5 bg-white/15 mr-2" />
+			<Button
+				size="xs"
+				className="rounded-full text-foreground bg-muted hover:bg-muted/80 transition-colors cursor-pointer text-xs font-['Manrope'] font-medium tracking-tight"
+			>
+				Sponsor
+			</Button>
+
+			<Button
+				size="icon"
+				variant="ghost"
+				className="size-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white cursor-pointer"
+				onClick={() => setDarkIcon((d) => !d)}
+			>
+				{darkIcon ? <Moon className="size-4" /> : <Sun className="size-4" />}
+			</Button>
+		</motion.header>
+	);
+}
+
 export default function Redesign04() {
 	const [fonts, setItems] = useState<
 		Array<{
@@ -111,6 +177,64 @@ export default function Redesign04() {
 	const [darkIcon, setDarkIcon] = useState(false);
 	const elemsRef = useRef<HTMLDivElement[]>([]);
 	const gradientRef = useRef<HTMLDivElement>(null);
+	const heroRef = useRef<HTMLDivElement>(null);
+	const chaosContainerRef = useRef<HTMLDivElement>(null);
+
+	const { scrollYProgress } = useScroll({
+		target: heroRef,
+		offset: ["start start", "end start"],
+	});
+
+	const titleY = useTransform(scrollYProgress, [0, 0.6], [0, -300]);
+	const titleOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+	const titleBlur = useTransform(scrollYProgress, [0, 0.4], [0, 20]);
+	const buttonY = useTransform(scrollYProgress, [0, 0.6], [0, -180]);
+	const buttonOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
+	const buttonBlur = useTransform(scrollYProgress, [0, 0.3], [0, 12]);
+	const titleFilter = useTransform(titleBlur, (v) => `blur(${v}px)`);
+	const buttonFilter = useTransform(buttonBlur, (v) => `blur(${v}px)`);
+	const dotOpacity = useTransform(scrollYProgress, [0, 0.4], [0.2, 0]);
+
+	// Single CSS variable drives all 200 ChaosFont scroll animations —
+	// no per-component useTransform, no React overhead, pure compositor work
+	useEffect(() => {
+		const unsubscribe = scrollYProgress.on("change", (v) => {
+			chaosContainerRef.current?.style.setProperty("--scroll-p", `${v}`);
+		});
+		return unsubscribe;
+	}, [scrollYProgress]);
+
+	// Hide scrollbar + Lenis smooth scroll
+	useEffect(() => {
+		document.documentElement.style.scrollbarWidth = "none";
+		document.body.style.overflow = "auto";
+		const style = document.createElement("style");
+		style.textContent = "html::-webkit-scrollbar { display: none !important; }";
+		document.head.appendChild(style);
+
+		const lenis = new Lenis({
+			duration: 1.2,
+			easing: (t) => Math.min(1, 1.001 - 2 ** (-10 * t)),
+			orientation: "vertical",
+			gestureOrientation: "vertical",
+			smoothWheel: true,
+			touchMultiplier: 2,
+		});
+
+		function raf(time: number) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+
+		requestAnimationFrame(raf);
+
+		return () => {
+			lenis.destroy();
+			document.documentElement.style.scrollbarWidth = "";
+			document.body.style.overflow = "";
+			style.remove();
+		};
+	}, []);
 
 	useEffect(() => {
 		const bounds = { width: window.innerWidth, height: window.innerHeight };
@@ -210,175 +334,128 @@ export default function Redesign04() {
 
 	return (
 		<main className="w-screen overflow-x-hidden bg-black">
-			<div className="w-screen h-screen relative p-3">
-				<div className="w-full h-full bg-white rounded-4xl">
-					<motion.header
-						className="fixed top-6 left-1/2 z-50 flex items-center gap-1
-							bg-black/90 backdrop-blur-md rounded-full
-							px-2 py-1.5 shadow-2xl border border-white/10"
-						style={{ x: "-50%" }}
-						variants={{
-							hidden: { y: -80, opacity: 0, scale: 0.8, filter: "blur(8px)" },
-							visible: { y: 0, opacity: 1, scale: 1, filter: "blur(0px)" },
-						}}
-						initial="hidden"
-						animate="visible"
-						transition={{ ...heroTransition, delay: HEADER_DELAY }}
-					>
-						<a
-							href="/"
-							className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
-						>
-							Fonttrio
-						</a>
-
-						<div className="w-px h-5 bg-white/15 " />
-
-						<nav className="flex items-center gap-0.5 pl-20 pr-2">
-							<a
-								href="/pairings"
-								className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
-							>
-								Pairings
-							</a>
-							<a
-								href="/fonts"
-								className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
-							>
-								Fonts
-							</a>
-						</nav>
-
-						<div className="w-px h-5 bg-white/15" />
-
-						<Button
-							size="icon"
-							variant="ghost"
-							className="size-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white cursor-pointer"
-							onClick={() => setDarkIcon((d) => !d)}
-						>
-							<Twitter />
-						</Button>
-						<Button
-							size="icon"
-							variant="ghost"
-							className="size-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white cursor-pointer"
-							onClick={() => setDarkIcon((d) => !d)}
-						>
-							<Github />
-						</Button>
-						<Button
-							size="icon"
-							variant="ghost"
-							className="size-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white cursor-pointer"
-							onClick={() => setDarkIcon((d) => !d)}
-						>
-							{darkIcon ? (
-								<Moon className="size-4" />
-							) : (
-								<Sun className="size-4" />
-							)}
-						</Button>
-					</motion.header>
-
-					<div
-						style={{
-							width: "100%",
-							height: "100vh",
-							position: "absolute",
-							top: 0,
-							left: 0,
-							padding: "20px",
-							opacity: 0.2,
-						}}
-					>
-						<DotGrid
-							dotSize={2}
-							gap={30}
-							baseColor="#1c1c1c"
-							activeColor="#a1a1a1"
-							proximity={200}
-							shockRadius={10}
-							shockStrength={10}
-							resistance={100}
-							returnDuration={2.9}
-						/>
-					</div>
-
-					<div className="size-full flex flex-col items-center justify-center relative z-40 py-[10vh]">
-						<motion.h1
-							id="title"
-							className="text-9xl font-medium tracking-tight text-[#2C2C2A] font-['Manrope'] text-center leading-30"
-							variants={heroVariants}
-							initial="hidden"
-							animate="visible"
-							transition={{ ...heroTransition, delay: HERO_DELAY }}
-						>
-							Three fonts
-							<br />
-							One{" "}
-							<span className="italic font-['Playfair_Display'] text-[#2C2C2A]">
-								command
-							</span>
-						</motion.h1>
+			<div ref={heroRef} style={{ height: "200vh", position: "relative" }}>
+				<div className="sticky top-0 h-screen p-3">
+					<div className="w-full h-full bg-white rounded-4xl">
+						<Header darkIcon={darkIcon} setDarkIcon={setDarkIcon} />
 
 						<motion.div
-							id="button"
-							variants={heroVariants}
-							initial="hidden"
-							animate="visible"
-							transition={{
-								...heroTransition,
-								delay: HERO_DELAY + HERO_STAGGER,
+							style={{
+								width: "100%",
+								height: "100vh",
+								position: "absolute",
+								top: 0,
+								left: 0,
+								padding: "20px",
+								opacity: dotOpacity,
 							}}
 						>
-							<Button className="text-md font-['Manrope'] justify-between font-medium h-12 w-[15vw] px-6 rounded-full mt-10 cursor-pointer">
-								Find font
-								<Search />
-							</Button>
-						</motion.div>
-					</div>
-
-					<div className="size-full absolute top-0 left-0 z-10 overflow-hidden">
-						<div
-							ref={gradientRef}
-							className="absolute inset-0 pointer-events-none z-0"
-							style={
-								{
-									"--cursor-x": "-9999px",
-									"--cursor-y": "-9999px",
-									background: `radial-gradient(circle ${EFFECT_RADIUS}px at var(--cursor-x) var(--cursor-y),
-									transparent 0%,
-									transparent 60%,
-									rgba(0, 0, 0, 0.03) 80%,
-									rgba(0, 0, 0, 0.05) 92%,
-									transparent 100%
-								)`,
-									opacity: 0,
-									transition: "opacity 0.4s ease-out",
-								} as React.CSSProperties
-							}
-						/>
-						{fonts.map((item, i) => (
-							<ChaosFont
-								item={item}
-								index={i}
-								key={i}
-								ref={(el) => {
-									if (el) elemsRef.current[i] = el;
-								}}
+							<DotGrid
+								dotSize={2}
+								gap={30}
+								baseColor="#1c1c1c"
+								activeColor="#a1a1a1"
+								proximity={200}
+								shockRadius={10}
+								shockStrength={10}
+								resistance={100}
+								returnDuration={2.9}
 							/>
-						))}
+						</motion.div>
+
+						<div className="size-full flex flex-col items-center justify-center relative z-40 py-[10vh]">
+							<motion.h1
+								id="title"
+								className="text-9xl font-medium tracking-tight text-[#2C2C2A] font-['Manrope'] text-center leading-30"
+								variants={heroVariants}
+								initial="hidden"
+								animate="visible"
+								transition={{ ...heroTransition, delay: HERO_DELAY }}
+								style={{
+									y: titleY,
+									opacity: titleOpacity,
+									filter: titleFilter,
+								}}
+							>
+								Three fonts
+								<br />
+								One{" "}
+								<span className="italic font-['Playfair_Display'] text-[#2C2C2A]">
+									command
+								</span>
+							</motion.h1>
+
+							<motion.div
+								id="button"
+								variants={heroVariants}
+								initial="hidden"
+								animate="visible"
+								transition={{
+									...heroTransition,
+									delay: HERO_DELAY + HERO_STAGGER,
+								}}
+								style={{ y: buttonY, opacity: buttonOpacity, filter: buttonFilter }}
+							>
+								<Button className="text-md font-['Manrope'] justify-between font-medium h-12 w-[15vw] px-6 rounded-full mt-10 cursor-pointer">
+									Find font
+									<Search />
+								</Button>
+							</motion.div>
+						</div>
+
+						<div
+							ref={chaosContainerRef}
+							className="size-full absolute top-0 left-0 z-10 overflow-hidden"
+							style={{ "--scroll-p": "0" } as React.CSSProperties}
+						>
+							<div
+								ref={gradientRef}
+								className="absolute inset-0 pointer-events-none z-0"
+								style={
+									{
+										"--cursor-x": "-9999px",
+										"--cursor-y": "-9999px",
+										background: `radial-gradient(circle ${EFFECT_RADIUS}px at var(--cursor-x) var(--cursor-y),
+										transparent 0%,
+										transparent 60%,
+										rgba(0, 0, 0, 0.03) 80%,
+										rgba(0, 0, 0, 0.05) 92%,
+										transparent 100%
+									)`,
+										opacity: 0,
+										transition: "opacity 0.4s ease-out",
+									} as React.CSSProperties
+								}
+							/>
+							{fonts.map((item, i) => (
+								<ChaosFont
+									item={item}
+									index={i}
+									key={i}
+									ref={(el) => {
+										if (el) elemsRef.current[i] = el;
+									}}
+								/>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
+
+			<section className="relative z-20 bg-black min-h-screen p-3">
+				<div className="bg-white rounded-4xl min-h-screen flex items-center justify-center">
+					<p className="text-4xl font-['Manrope'] text-[#2C2C2A]">
+						Next section
+					</p>
+				</div>
+			</section>
 		</main>
 	);
 }
 
-// Two-layer structure keeps motion (entrance) and CSS (levitate + rotate) independent:
-// motion.div  → handles position + staggered entrance (opacity, scale, filter)
-// inner div   → holds ref for JS --rotate tracking + CSS levitate animation
+// Scroll exit uses CSS calc() with inherited --scroll-p from parent container.
+// This means 0 useTransform hooks × 200 items = 0 motion subscriptions.
+// Only opacity + scale are animated (compositor-friendly, no blur repaint).
 const ChaosFont = React.forwardRef<
 	HTMLDivElement,
 	{
@@ -395,22 +472,32 @@ const ChaosFont = React.forwardRef<
 	}
 >(({ item, index }, ref) => {
 	return (
-		<motion.div
+		<div
 			className="absolute pointer-events-none"
-			style={{
-				left: item.x,
-				top: item.y,
-				translateX: "-50%",
-				translateY: "-50%",
-			}}
-			initial={{ scale: 0, opacity: 0, filter: "blur(8px)" }}
-			animate={{ scale: 1, opacity: 1, filter: "blur(1px)" }}
-			transition={{
-				delay: index * CHAOS_STAGGER,
-				duration: CHAOS_DURATION,
-				ease: [0.34, 1.56, 0.64, 1],
-			}}
+			style={
+				{
+					left: item.x,
+					top: item.y,
+					translate: "-50% -50%",
+					"--exit-scale":
+						"clamp(0, (0.5 - var(--scroll-p)) / 0.45, 1)",
+					scale: "var(--exit-scale)",
+					"--exit-opacity":
+						"clamp(0, (0.45 - var(--scroll-p)) / 0.35, 1)",
+					opacity: "var(--exit-opacity)",
+					willChange: "transform, opacity",
+				} as React.CSSProperties
+			}
 		>
+			<motion.div
+				initial={{ scale: 0, opacity: 0, filter: "blur(8px)" }}
+				animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
+				transition={{
+					delay: index * CHAOS_STAGGER,
+					duration: CHAOS_DURATION,
+					ease: [0.34, 1.56, 0.64, 1],
+				}}
+			>
 			<div
 				ref={ref}
 				style={{
@@ -436,7 +523,8 @@ const ChaosFont = React.forwardRef<
 					{item.label}
 				</p>
 			</div>
-		</motion.div>
+			</motion.div>
+		</div>
 	);
 });
 ChaosFont.displayName = "ChaosFont";
