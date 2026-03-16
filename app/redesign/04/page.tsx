@@ -3,6 +3,7 @@
 import Lenis from "lenis";
 import { useEffect } from "react";
 import { Hero } from "@/app/components/v2/hero";
+import { HowItWorks } from "@/app/components/v2/how-it-works";
 import { SponsorsMarquee } from "@/app/components/v2/sponsors-marquee";
 
 export default function Redesign04() {
@@ -39,10 +40,10 @@ export default function Redesign04() {
 	}, []);
 
 	return (
-		<main className="w-screen overflow-x-hidden dark:bg-black">
+		<main className="w-screen overflow-x-hidden bg-black">
 			<Hero />
 			<SponsorsMarquee />
-			<div className="h-[200vh]"></div>
+			<HowItWorks />
 		</main>
 	);
 }

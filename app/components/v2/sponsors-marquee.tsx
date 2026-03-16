@@ -4,16 +4,14 @@ const sponsors = SPONSORS.filter(
 	(s) => s.tier === "gold" || s.tier === "silver",
 );
 
+const gridCard =
+	"flex items-center justify-center border-b border-neutral-200 bg-white px-8 py-8 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-bg last:border-b-0 dark:border-neutral-800 md:border-r md:nth-[3n]:border-r-0 md:nth-last-[-n+3]:border-b-0 lg:nth-[3n]:border-r lg:nth-[6n]:border-r-0 lg:[&:nth-last-child(-n+6)]:border-b-0";
+
 function LogoList() {
 	return (
 		<div className="grid grid-cols-1 border border-neutral-200 dark:border-neutral-800 md:grid-cols-3 lg:grid-cols-6 mt-10 rounded-4xl overflow-hidden">
 			{sponsors.map((sponsor) => (
-				<a
-					href={sponsor.url}
-					key={sponsor.id}
-					className="flex items-center justify-center border-b border-neutral-200 bg-white px-8 py-8 last:border-b-0 dark:border-neutral-800 dark:bg-neutral-950 md:border-r md:[&amp;:nth-child(3n)]:border-r-0 md:[&amp;:nth-last-child(-n+3)]:border-b-0 lg:[&amp;:nth-child(3n)]:border-r lg:[&amp;:nth-child(6n)]:border-r-0 lg:[&amp;:nth-last-child(-n+6)]:border-b-0"
-					style={{ opacity: 1 }}
-				>
+				<a href={sponsor.url} key={sponsor.id} className={gridCard}>
 					{/** biome-ignore lint/performance/noImgElement: <bad url> */}
 					<img
 						alt={sponsor.name}
@@ -22,7 +20,7 @@ function LogoList() {
 					/>
 				</a>
 			))}
-			<div className="flex items-center justify-center border-b border-neutral-200 bg-white px-8 py-8 last:border-b-0 dark:border-neutral-800 dark:bg-neutral-950 md:border-r md:[&amp;:nth-child(3n)]:border-r-0 md:[&amp;:nth-last-child(-n+3)]:border-b-0 lg:[&amp;:nth-child(3n)]:border-r lg:[&amp;:nth-child(6n)]:border-r-0 lg:[&amp;:nth-last-child(-n+6)]:border-b-0">
+			<div className={gridCard}>
 				<a
 					href="/sponsors"
 					className="font-['Manrope'] text-md font-bold tracking-tight darkLtext-white hover:text-white/80"
@@ -36,8 +34,11 @@ function LogoList() {
 
 export function SponsorsMarquee() {
 	return (
-		<section aria-label="Sponsors" className="py-16 px-24 overflow-hidden">
-			<h2 className="font-['Manrope'] text-5xl dark:text-white text-neutral-800 font-medium tracking-tight">
+		<section
+			aria-label="Sponsors"
+			className="py-16 px-24 overflow-hidden dark:bg-black bg-white"
+		>
+			<h2 className="font-['Manrope'] text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance">
 				Huge thanks to <br /> my amazing sponsors!
 			</h2>
 			<LogoList />

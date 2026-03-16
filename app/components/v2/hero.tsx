@@ -63,7 +63,7 @@ export function Hero() {
 					<div className="size-full flex flex-col items-center justify-center relative z-40 py-[10vh]">
 						<motion.h1
 							id="title"
-							className="text-9xl font-medium tracking-tight text-[#2C2C2A] font-['Manrope'] text-center leading-30"
+							className="text-9xl font-medium tracking-tight text-[#2C2C2A] font-['Manrope'] text-center leading-30 [text-wrap:balance]"
 							variants={heroVariants}
 							initial="hidden"
 							animate="visible"
@@ -97,10 +97,15 @@ export function Hero() {
 								filter: buttonFilter,
 							}}
 						>
-							<Button className="text-md font-['Manrope'] justify-between font-medium h-12 w-[15vw] px-6 rounded-full mt-10 cursor-pointer">
-								Find font
-								<Search />
-							</Button>
+							<motion.div
+								whileTap={{ scale: 0.96 }}
+								transition={{ type: "spring", duration: 0.15, bounce: 0 }}
+							>
+								<Button className="text-md font-['Manrope'] justify-between font-medium h-12 w-[15vw] px-6 rounded-full mt-10 cursor-pointer">
+									Find font
+									<Search />
+								</Button>
+							</motion.div>
 						</motion.div>
 					</div>
 

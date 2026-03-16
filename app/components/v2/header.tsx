@@ -1,5 +1,5 @@
 import { Moon, Sun } from "lucide-react";
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { HEADER_TRANSITION } from "@/lib/constants";
@@ -44,12 +44,14 @@ export function Header() {
 			</nav>
 
 			<div className="w-px h-5 bg-white/15 mr-2" />
-			<Button
-				size="xs"
-				className="rounded-full text-foreground bg-muted hover:bg-muted/80 transition-colors cursor-pointer text-xs font-['Manrope'] font-medium tracking-tight"
-			>
-				Sponsor
-			</Button>
+			<motion.div whileTap={{ scale: 0.96 }} transition={{ type: "spring", duration: 0.15, bounce: 0 }}>
+				<Button
+					size="xs"
+					className="rounded-full text-foreground bg-muted hover:bg-muted/80 transition-colors cursor-pointer text-xs font-['Manrope'] font-medium tracking-tight"
+				>
+					Sponsor
+				</Button>
+			</motion.div>
 
 			<ThemeToggle />
 		</motion.header>
@@ -72,7 +74,18 @@ const ThemeToggle = () => {
 			className="size-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white cursor-pointer"
 			onClick={toggle}
 		>
-			{isDark ? <Moon className="size-4" /> : <Sun className="size-4" />}
+			<AnimatePresence initial={false} mode="wait">
+				<motion.span
+					key={isDark ? "dark" : "light"}
+					initial={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+					animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+					exit={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+					transition={{ type: "spring", duration: 0.3, bounce: 0 }}
+					className="flex items-center justify-center"
+				>
+					{isDark ? <Moon className="size-4" /> : <Sun className="size-4" />}
+				</motion.span>
+			</AnimatePresence>
 		</Button>
 	);
 };

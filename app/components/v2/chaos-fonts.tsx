@@ -38,12 +38,11 @@ export function ChaosFonts({ fonts, scrollYProgress }: ChaosFontsProps) {
 	const exitScale = useTransform(scrollYProgress, [0.05, 0.5], [1, 0]);
 	const exitOpacity = useTransform(scrollYProgress, [0.1, 0.45], [1, 0]);
 
-	// Cursor gradient: useMotionTemplate builds reactive radial-gradient string,
-	// useSpring smooths the binary 0/1 active signal into a 0.4s fade
-	const gradientOpacity = useSpring(cursor.active, {
-		duration: 0.4,
-		bounce: 0,
-	});
+	const gradientExitOpacity = useTransform(
+		scrollYProgress,
+		[0.05, 0.5],
+		[1, 0],
+	);
 
 	const gradientBackground = useMotionTemplate`radial-gradient(
 		circle ${REPULSOR.radius}px at ${cursor.x}px ${cursor.y}px,
@@ -60,7 +59,8 @@ export function ChaosFonts({ fonts, scrollYProgress }: ChaosFontsProps) {
 				className="absolute inset-0 pointer-events-none z-0"
 				style={{
 					background: gradientBackground,
-					opacity: gradientOpacity,
+					opacity: gradientExitOpacity,
+					willChange: "background, opacity, transform",
 				}}
 			/>
 			{fonts.map((item, i) => (
