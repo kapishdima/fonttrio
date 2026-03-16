@@ -390,6 +390,27 @@ body {
   }
 }
 
+/* ─── Marquee ─── */
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  --marquee-duration: 20s;
+  animation: marquee-scroll var(--marquee-duration) linear infinite;
+}
+
+@media (min-width: 768px) {
+  .marquee-track { --marquee-duration: 30s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
