@@ -87,6 +87,13 @@ export function Hero() {
 						</motion.h1>
 					</motion.div>
 
+					<motion.div
+						style={{
+							y: buttonY,
+							opacity: buttonOpacity,
+							filter: buttonFilter,
+						}}
+					>
 						<motion.div
 							id="button"
 							variants={heroVariants}
@@ -95,11 +102,6 @@ export function Hero() {
 							transition={{
 								...HERO_TRANSITION,
 								delay: HERO_TRANSITION.delay + HERO_TRANSITION.stagger,
-							}}
-							style={{
-								y: buttonY,
-								opacity: buttonOpacity,
-								filter: buttonFilter,
 							}}
 						>
 							<motion.div
@@ -112,6 +114,7 @@ export function Hero() {
 								</Button>
 							</motion.div>
 						</motion.div>
+					</motion.div>
 					</div>
 
 					<div className="size-full absolute top-0 left-0 z-10 overflow-hidden">
