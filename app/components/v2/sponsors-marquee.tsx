@@ -1,3 +1,5 @@
+"use client";
+
 import { SPONSORS } from "@/lib/sponsors";
 
 const sponsors = SPONSORS.filter(

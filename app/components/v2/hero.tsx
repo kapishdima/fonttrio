@@ -1,3 +1,5 @@
+"use client";
+
 import { Search } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";

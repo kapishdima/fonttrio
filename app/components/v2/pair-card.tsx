@@ -89,7 +89,7 @@ function ActivePair({
 
 	return createPortal(
 		<motion.div
-			ref={ref}
+			ref={ref as React.Ref<HTMLDivElement>}
 			layoutId={`card-${pair.name}`}
 			className="w-[30vw]  px-6 py-5 rounded-xl border dark:border-neutral-900/50 dark:bg-neutral-950 overflow-hidden fixed top-1/2 left-1/2 z-999 -translate-x-1/2 -translate-y-1/2"
 		>

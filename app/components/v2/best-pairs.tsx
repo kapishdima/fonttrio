@@ -1,7 +1,5 @@
 "use client";
 
-import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 import { motion } from "motion/react";
 import { PairCard } from "@/app/components/v2/pair-card";
 import { getAllPairings } from "@/lib/pairings";

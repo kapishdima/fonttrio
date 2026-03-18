@@ -4,7 +4,6 @@ import {
 	type MotionValue,
 	motion,
 	useMotionTemplate,
-	useSpring,
 	useTransform,
 } from "motion/react";
 import { REPULSOR } from "@/lib/constants";

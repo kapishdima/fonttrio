@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 import { TestimonialMarquee } from "@/app/components/v2/testimonials";
 

@@ -1,3 +1,5 @@
+"use client";
+
 import {
 	Delete02Icon,
 	Relieved01Icon,

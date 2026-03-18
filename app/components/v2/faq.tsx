@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 import DotGrid from "@/components/DotGrid";
 import FAQs from "@/components/faqs-1";

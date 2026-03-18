@@ -1,14 +1,12 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "motion/react";
 
 export function Footer() {
-	const shouldReduceMotion = useReducedMotion();
-
 	return (
 		<footer className="h-[50vh] relative overflow-hidden">
 			<motion.p
-				initial={shouldReduceMotion ? false : { opacity: 0, y: 80 }}
+				initial={{ opacity: 0, y: 80 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ once: true, margin: "-100px" }}
 				transition={{
