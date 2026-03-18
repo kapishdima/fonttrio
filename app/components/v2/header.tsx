@@ -1,5 +1,8 @@
+import { GithubIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { Moon, Sun } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import { createPortal } from "react-dom";
 import { Button } from "@/components/ui/button";
@@ -47,11 +50,24 @@ export function Header() {
 				whileTap={{ scale: 0.96 }}
 				transition={{ type: "spring", duration: 0.15, bounce: 0 }}
 			>
-				<Button size="xs" className="text-xs rounded-full tracking-tight">
+				<Button size="xs" className="text-xs rounded-full tracking-tight mr-2">
 					Sponsor
 				</Button>
 			</motion.div>
 
+			<Link
+				href="https://github.com/your-repo"
+				target="_blank"
+				rel="noopener noreferrer"
+				className="text-white/60 hover:text-white cursor-pointer"
+			>
+				<HugeiconsIcon
+					icon={GithubIcon}
+					size={16}
+					color="currentColor"
+					strokeWidth={1.5}
+				/>
+			</Link>
 			<ThemeToggle />
 		</motion.header>,
 		document.body,
