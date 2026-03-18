@@ -63,6 +63,13 @@ export function Hero() {
 					</motion.div>
 
 					<div className="size-full flex flex-col items-center justify-center relative z-40 py-[10vh]">
+					<motion.div
+						style={{
+							y: titleY,
+							opacity: titleOpacity,
+							filter: titleFilter,
+						}}
+					>
 						<motion.h1
 							id="title"
 							className="text-9xl font-medium tracking-tight text-[#2C2C2A] font-['Manrope'] text-center leading-30 [text-wrap:balance]"
@@ -70,11 +77,6 @@ export function Hero() {
 							initial="hidden"
 							animate="visible"
 							transition={HERO_TRANSITION}
-							style={{
-								y: titleY,
-								opacity: titleOpacity,
-								filter: titleFilter,
-							}}
 						>
 							Three fonts
 							<br />
@@ -83,6 +85,7 @@ export function Hero() {
 								command
 							</span>
 						</motion.h1>
+					</motion.div>
 
 						<motion.div
 							id="button"
