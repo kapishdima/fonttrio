@@ -1,0 +1,153 @@
+"use client";
+
+const marqueeStyles = `
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.marquee-animate {
+  animation: marquee-scroll var(--marquee-speed) linear infinite;
+}
+
+.marquee-container:hover .marquee-animate.pause-on-hover {
+  animation-play-state: paused;
+}
+`;
+
+interface Testimonial {
+	name: string;
+	username: string;
+	content: string;
+	avatar?: string;
+	className?: string;
+	url?: string;
+}
+
+export function Marquee({
+	children,
+	direction = "left",
+	speed = 40,
+	pauseOnHover = false,
+	className = "",
+}: {
+	children: React.ReactNode;
+	direction?: "left" | "right";
+	speed?: number;
+	pauseOnHover?: boolean;
+	className?: string;
+}) {
+	return (
+		<>
+			<style>{marqueeStyles}</style>
+			<div
+				className={`marquee-container flex overflow-hidden gap-4 ${className}`}
+				style={{
+					maskImage:
+						"linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+					WebkitMaskImage:
+						"linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+				}}
+			>
+				{[0, 1, 2, 3].map((i) => (
+					<div
+						key={i}
+						className={`marquee-animate flex shrink-0 gap-4 ${pauseOnHover ? "pause-on-hover" : ""}`}
+						style={{
+							"--marquee-speed": `${speed}s`,
+							animationDirection: direction === "right" ? "reverse" : "normal",
+							willChange: "transform",
+						}}
+						aria-hidden={i > 0}
+					>
+						{children}
+					</div>
+				))}
+			</div>
+		</>
+	);
+}
+
+export function TestimonialCard({
+	name,
+	username,
+	content,
+	avatar,
+	url,
+	className = "",
+}: Testimonial) {
+	return (
+		<a
+			href={url}
+			target="_blank"
+			rel="noopener noreferrer"
+			className={`relative w-87.5 shrink-0 cursor-pointer rounded-xl border border-neutral-900 bg-neutral-950 p-5 backdrop-blur-sm transition-all ease-out duration-300 hover:border-neutral-700/60 hover:bg-neutral-900/60 ${className}`}
+		>
+			<div className="flex items-center gap-3 mb-3">
+				{avatar ? (
+					// biome-ignore lint/performance/noImgElement: <>
+					<img
+						src={avatar}
+						alt={name}
+						className="w-9.5 h-9.5 rounded-full object-cover border border-zinc-700/50"
+					/>
+				) : (
+					<div className="w-10 h-10 rounded-full bg-linear-to-br from-zinc-700 to-zinc-800 flex items-center justify-center border border-zinc-700/50">
+						<span className="text-sm font-medium font-['Manrope'] tracking-tighter text-zinc-300">
+							{name?.charAt(0)?.toUpperCase() || "?"}
+						</span>
+					</div>
+				)}
+				<div className="flex flex-col">
+					<span className="text-sm font-bold font-['Manrope']  text-zinc-200">
+						{name}
+					</span>
+					<span className="text-xs font-['Manrope']  text-zinc-500">
+						{username}
+					</span>
+				</div>
+			</div>
+			<p className="text-sm font-medium font-['Manrope']  text-zinc-400 leading-normal text-balance">
+				{content}
+			</p>
+		</a>
+	);
+}
+
+export function TestimonialMarquee({
+	testimonials = [],
+	speed = 40,
+	pauseOnHover = true,
+	className = "",
+}: {
+	testimonials: Testimonial[];
+	speed?: number;
+	pauseOnHover?: boolean;
+	className?: string;
+}) {
+	const firstRow = testimonials.slice(0, Math.ceil(testimonials.length / 2));
+	const secondRow = testimonials.slice(Math.ceil(testimonials.length / 2));
+
+	return (
+		<div
+			className={`relative flex flex-col gap-4 overflow-hidden py-4 ${className}`}
+		>
+			<div className="pb-px">
+				<Marquee direction="left" speed={speed} pauseOnHover={pauseOnHover}>
+					{firstRow.map((testimonial) => (
+						<TestimonialCard key={testimonial.name} {...testimonial} />
+					))}
+				</Marquee>
+			</div>
+			<Marquee direction="right" speed={speed} pauseOnHover={pauseOnHover}>
+				{secondRow.map((testimonial) => (
+					<TestimonialCard key={testimonial.name} {...testimonial} />
+				))}
+			</Marquee>
+		</div>
+	);
+}

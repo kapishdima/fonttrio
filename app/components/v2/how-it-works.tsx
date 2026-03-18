@@ -5,7 +5,7 @@ import {
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { motion } from "motion/react";
-import { Button } from "@/components/ui/button";
+import DotGrid from "@/components/DotGrid";
 
 const containerVariants = {
 	hidden: {},
@@ -63,8 +63,31 @@ export function HowItWorks() {
 	return (
 		<section
 			aria-label="How It Works"
-			className="py-16 px-24 overflow-hidden bg-black dark:bg-white"
+			className="py-20 px-24 overflow-hidden bg-black dark:bg-white  relative"
 		>
+			<div
+				style={{
+					width: "100vw",
+					height: "100vh",
+					position: "absolute",
+					bottom: 0,
+					left: 0,
+					zIndex: 0,
+					opacity: 0.2,
+				}}
+			>
+				<DotGrid
+					dotSize={2}
+					gap={30}
+					baseColor="#1c1c1c"
+					activeColor="#a1a1a1"
+					proximity={200}
+					shockRadius={10}
+					shockStrength={10}
+					resistance={100}
+					returnDuration={2.9}
+				/>
+			</div>
 			<motion.h2
 				className="font-['Manrope'] text-5xl text-white dark:text-neutral-800 font-medium tracking-tight text-balance"
 				variants={titleVariants}
@@ -124,7 +147,9 @@ export function HowItWorks() {
 					</motion.h3>
 
 					<div className="absolute bottom-0 left-0 w-full h-[10vh] bg-neutral-800/30 px-6 flex items-center justify-center">
-						<Button className="rounded-xl ">Explore fonts</Button>
+						<p className="opacity-20 font-['Manrope'] text-md font-bold tracking-tighter text-white">
+							How I want to find beautiful fonts quickly
+						</p>
 					</div>
 				</motion.div>
 
@@ -148,7 +173,7 @@ export function HowItWorks() {
 					</motion.h3>
 
 					<div className="absolute bottom-0 left-0 w-full h-[10vh] bg-neutral-800/30 px-6 flex items-center justify-center">
-						<p className="font-['Google Sans Code'] text-md font-medium text-white">
+						<p className="opacity-20 font-['Manrope'] text-md font-bold tracking-tighter text-white">
 							bun shadcn@latest add @fonttio/agency
 						</p>
 					</div>

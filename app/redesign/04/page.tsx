@@ -2,9 +2,13 @@
 
 import Lenis from "lenis";
 import { useEffect } from "react";
+import { BestPairs } from "@/app/components/v2/best-pairs";
+import { Faq } from "@/app/components/v2/faq";
+import { Footer } from "@/app/components/v2/footer";
 import { Hero } from "@/app/components/v2/hero";
 import { HowItWorks } from "@/app/components/v2/how-it-works";
 import { SponsorsMarquee } from "@/app/components/v2/sponsors-marquee";
+import { XTestimonials } from "@/app/components/v2/x-testimonials";
 
 export default function Redesign04() {
 	// Hide scrollbar + Lenis smooth scroll
@@ -44,6 +48,10 @@ export default function Redesign04() {
 			<Hero />
 			<SponsorsMarquee />
 			<HowItWorks />
+			<BestPairs />
+			<XTestimonials />
+			<Faq />
+			<Footer />
 		</main>
 	);
 }

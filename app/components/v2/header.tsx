@@ -1,13 +1,14 @@
 import { Moon, Sun } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useTheme } from "next-themes";
+import { createPortal } from "react-dom";
 import { Button } from "@/components/ui/button";
 import { HEADER_TRANSITION } from "@/lib/constants";
 
 export function Header() {
-	return (
+	return createPortal(
 		<motion.header
-			className="fixed top-6 left-1/2 z-50 flex items-center gap-1
+			className="fixed top-6 left-1/2 z-9999 flex items-center gap-1
 				bg-black/90 backdrop-blur-md rounded-full
 				px-2 py-1.5 shadow-2xl border border-white/10"
 			style={{ x: "-50%" }}
@@ -26,8 +27,6 @@ export function Header() {
 				Fonttrio
 			</a>
 
-			{/* <div className="w-px h-5 bg-white/15" /> */}
-
 			<nav className="flex items-center gap-0.5 pl-20 pr-2">
 				<a
 					href="/pairings"
@@ -44,17 +43,18 @@ export function Header() {
 			</nav>
 
 			<div className="w-px h-5 bg-white/15 mr-2" />
-			<motion.div whileTap={{ scale: 0.96 }} transition={{ type: "spring", duration: 0.15, bounce: 0 }}>
-				<Button
-					size="xs"
-					className="rounded-full text-foreground bg-muted hover:bg-muted/80 transition-colors cursor-pointer text-xs font-['Manrope'] font-medium tracking-tight"
-				>
+			<motion.div
+				whileTap={{ scale: 0.96 }}
+				transition={{ type: "spring", duration: 0.15, bounce: 0 }}
+			>
+				<Button size="xs" className="text-xs rounded-full tracking-tight">
 					Sponsor
 				</Button>
 			</motion.div>
 
 			<ThemeToggle />
-		</motion.header>
+		</motion.header>,
+		document.body,
 	);
 }
 

@@ -57,8 +57,8 @@
 
 
 .dark {
-  --bg: #0a0a0a;
-  --text: #ededed;
+  --bg: oklch(0.92 0.00 0);
+  --text: oklch(0.27 0.00 0);
   --text-muted: #888888;
   --text-subtle: #555555;
   --surface-border: #1f1f1f;
@@ -227,7 +227,7 @@ body {
 
 /* ─── Cross Grid Background ─── */
 .cross-grid {
-  background-image: 
+  background-image:
     linear-gradient(var(--surface-border) 1px, transparent 1px),
     linear-gradient(90deg, var(--surface-border) 1px, transparent 1px);
   background-size: 60px 60px;
@@ -235,7 +235,7 @@ body {
 
 /* ─── Fine Grid Background ─── */
 .fine-grid {
-  background-image: 
+  background-image:
     linear-gradient(var(--surface-border) 1px, transparent 1px),
     linear-gradient(90deg, var(--surface-border) 1px, transparent 1px);
   background-size: 20px 20px;
