@@ -51,6 +51,14 @@ const textVariants = {
 	},
 } as const;
 
+const highlightVariants = {
+	hidden: { scaleX: 0 },
+	visible: {
+		scaleX: 1,
+		transition: { duration: 0.5, ease: "easeOut" },
+	},
+} as const;
+
 const titleVariants = {
 	hidden: { y: 20, opacity: 0, filter: "blur(4px)" },
 	visible: {
@@ -116,10 +124,16 @@ export function HowItWorks() {
 					</motion.div>
 
 					<motion.h3
-						className="text-center text-3xl text-white font-medium font-['Manrope'] tracking-tighter"
+						className="text-center text-3xl text-white font-medium font-['Manrope'] tracking-tighter text-balance"
 						variants={textVariants}
 					>
-						Delete and forget about Google Fonts
+						Delete and forget about <br />
+						<motion.span
+							variants={highlightVariants}
+							className="bg-red-800/30 px-2 rounded-md origin-left"
+						>
+							Google Fonts
+						</motion.span>
 					</motion.h3>
 
 					<div className="absolute bottom-0 left-0 w-full h-[10vh] bg-neutral-800/30 px-6 flex items-center justify-center">
@@ -142,10 +156,17 @@ export function HowItWorks() {
 					</motion.div>
 
 					<motion.h3
-						className="text-center text-3xl text-white font-medium font-['Manrope'] tracking-tighter"
+						className="text-center text-3xl text-white font-medium font-['Manrope'] tracking-tighter text-balance"
 						variants={textVariants}
 					>
-						Find a ready-made font pair that you like
+						Find a{" "}
+						<motion.span
+							className="bg-green-800/30 px-2 rounded-md origin-left"
+							variants={highlightVariants}
+						>
+							ready-made
+						</motion.span>{" "}
+						font pair that you like
 					</motion.h3>
 
 					<div className="absolute bottom-0 left-0 w-full h-[10vh] bg-neutral-800/30 px-6 flex items-center justify-center">
@@ -168,10 +189,17 @@ export function HowItWorks() {
 					</motion.div>
 
 					<motion.h3
-						className="text-center text-3xl text-white font-medium font-['Manrope'] tracking-tighter"
+						className="text-center text-3xl text-white font-medium font-['Manrope'] tracking-tighter text-balance"
 						variants={textVariants}
 					>
-						Relax and enjoy your new fonts
+						Relax and{" "}
+						<motion.span
+							className="bg-yellow-800/30 px-2 rounded-md origin-left"
+							variants={highlightVariants}
+						>
+							enjoy
+						</motion.span>{" "}
+						your new fonts
 					</motion.h3>
 
 					<div className="absolute bottom-0 left-0 w-full h-[10vh] bg-neutral-800/30 px-6 flex items-center justify-center">
