@@ -1,7 +1,12 @@
 "use client";
 
-import { Search } from "lucide-react";
-import { motion, useScroll, useTransform } from "motion/react";
+import { ArrowRight, Search } from "lucide-react";
+import {
+	motion,
+	useReducedMotion,
+	useScroll,
+	useTransform,
+} from "motion/react";
 import { useRef } from "react";
 import { ChaosFonts } from "@/app/components/v2/chaos-fonts";
 import { Header } from "@/app/components/v2/header";
@@ -15,7 +20,13 @@ const heroVariants = {
 	visible: { scale: 1, opacity: 1, filter: "blur(0px)" },
 };
 
+const heroVariantsReduced = {
+	hidden: { opacity: 0 },
+	visible: { opacity: 1 },
+};
+
 export function Hero() {
+	const prefersReducedMotion = useReducedMotion();
 	const heroRef = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
 		target: heroRef,
@@ -35,7 +46,7 @@ export function Hero() {
 	return (
 		<div ref={heroRef} style={{ height: "100vh", position: "relative" }}>
 			<div className="sticky top-0 h-screen p-3">
-				<div className="w-full h-full bg-white rounded-4xl">
+				<div className="w-full h-full dark:bg-neutral-950 bg-white rounded-4xl">
 					<Header />
 
 					<motion.div
@@ -63,58 +74,64 @@ export function Hero() {
 					</motion.div>
 
 					<div className="size-full flex flex-col items-center justify-center relative z-40 py-[10vh]">
-					<motion.div
-						style={{
-							y: titleY,
-							opacity: titleOpacity,
-							filter: titleFilter,
-						}}
-					>
-						<motion.h1
-							id="title"
-							className="text-9xl font-medium tracking-tight text-[#2C2C2A] font-['Manrope'] text-center leading-30 [text-wrap:balance]"
-							variants={heroVariants}
-							initial="hidden"
-							animate="visible"
-							transition={HERO_TRANSITION}
-						>
-							Three fonts
-							<br />
-							One{" "}
-							<span className="italic font-['Playfair_Display'] text-[#2C2C2A]">
-								command
-							</span>
-						</motion.h1>
-					</motion.div>
-
-					<motion.div
-						style={{
-							y: buttonY,
-							opacity: buttonOpacity,
-							filter: buttonFilter,
-						}}
-					>
 						<motion.div
-							id="button"
-							variants={heroVariants}
-							initial="hidden"
-							animate="visible"
-							transition={{
-								...HERO_TRANSITION,
-								delay: HERO_TRANSITION.delay + HERO_TRANSITION.stagger,
+							style={{
+								y: titleY,
+								opacity: titleOpacity,
+								filter: titleFilter,
+							}}
+						>
+							<motion.h1
+								id="title"
+								className="text-9xl font-medium tracking-tight dark:text-white text-[#2C2C2A] font-['Manrope'] text-center leading-30 text-balance"
+								variants={
+									prefersReducedMotion ? heroVariantsReduced : heroVariants
+								}
+								initial="hidden"
+								animate="visible"
+								transition={HERO_TRANSITION}
+							>
+								Three fonts
+								<br />
+								One{" "}
+								<span className="italic font-['Playfair_Display'] dark:text-white text-[#2C2C2A]">
+									command
+								</span>
+							</motion.h1>
+						</motion.div>
+
+						<motion.div
+							style={{
+								y: buttonY,
+								opacity: buttonOpacity,
+								filter: buttonFilter,
 							}}
 						>
 							<motion.div
-								whileTap={{ scale: 0.96 }}
-								transition={{ type: "spring", duration: 0.15, bounce: 0 }}
+								id="button"
+								variants={
+									prefersReducedMotion ? heroVariantsReduced : heroVariants
+								}
+								initial="hidden"
+								animate="visible"
+								transition={{
+									...HERO_TRANSITION,
+									delay: HERO_TRANSITION.delay + HERO_TRANSITION.stagger,
+								}}
 							>
-								<Button className="text-md font-['Manrope'] justify-between font-medium h-12 w-[15vw] px-6 rounded-full mt-10 cursor-pointer">
-									Find font
-									<Search />
-								</Button>
+								<div className="flex items-center gap-3 mt-10">
+									<motion.div
+										whileTap={{ scale: 0.96 }}
+										transition={{ type: "spring", duration: 0.15, bounce: 0 }}
+									>
+										<Button className="text-base font-['Manrope'] justify-between font-medium h-12 w-48 px-6 rounded-full cursor-pointer">
+											Find font
+											<Search aria-hidden="true" className="shrink-0" />
+										</Button>
+									</motion.div>
+								</div>
 							</motion.div>
 						</motion.div>
-					</motion.div>
 					</div>
 
 					<div className="size-full absolute top-0 left-0 z-10 overflow-hidden">

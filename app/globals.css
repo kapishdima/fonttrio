@@ -57,8 +57,8 @@
 
 
 .dark {
-  --bg: oklch(0.92 0.00 0);
-  --text: oklch(0.27 0.00 0);
+  --bg: #0a0a0a;
+  --text: #f5f5f5;
   --text-muted: #888888;
   --text-subtle: #555555;
   --surface-border: #1f1f1f;

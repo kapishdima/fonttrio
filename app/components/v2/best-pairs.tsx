@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { PairCard } from "@/app/components/v2/pair-card";
 import { getAllPairings } from "@/lib/pairings";
 
@@ -35,12 +35,14 @@ const cardVariants = {
 
 export function BestPairs() {
 	const pairings = getAllPairings().slice(0, FEATURED_COUNT);
+	const prefersReducedMotion = useReducedMotion();
+	const reducedVariants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
 
 	return (
 		<section className="py-16 pt-24 px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white relative">
 			<motion.h2
 				className="font-['Manrope'] text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance mb-10"
-				variants={titleVariants}
+				variants={prefersReducedMotion ? reducedVariants : titleVariants}
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true, margin: "-200px" }}
@@ -52,13 +54,13 @@ export function BestPairs() {
 
 			<motion.div
 				className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-4"
-				variants={gridVariants}
+				variants={prefersReducedMotion ? reducedVariants : gridVariants}
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true, margin: "-100px" }}
 			>
 				{pairings.map((pairing) => (
-					<motion.div key={pairing.name} variants={cardVariants}>
+					<motion.div key={pairing.name} variants={prefersReducedMotion ? reducedVariants : cardVariants}>
 						<PairCard pairing={pairing} />
 					</motion.div>
 				))}

@@ -9,7 +9,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Button } from "@/components/ui/button";
-import { HEADER_TRANSITION } from "@/lib/constants";
+import { HEADER_TRANSITION, SOCIAL_LINKS } from "@/lib/constants";
 
 export function Header() {
 	const [mounted, setMounted] = useState(false);
@@ -67,16 +67,18 @@ export function Header() {
 			</motion.div>
 
 			<Link
-				href="https://github.com/your-repo"
+				href={SOCIAL_LINKS.github.url}
 				target="_blank"
 				rel="noopener noreferrer"
 				className="text-white/60 hover:text-white cursor-pointer"
+				aria-label={SOCIAL_LINKS.github.label}
 			>
 				<HugeiconsIcon
 					icon={GithubIcon}
 					size={16}
 					color="currentColor"
 					strokeWidth={1.5}
+					aria-hidden="true"
 				/>
 			</Link>
 			<ThemeToggle />

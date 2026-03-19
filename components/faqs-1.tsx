@@ -58,14 +58,18 @@ export default function FAQs() {
 	return (
 		<div>
 			<Card variant="outline" className="mt-12 p-2">
-				<Accordion type="single" collapsible>
+				<Accordion
+					type="single"
+					collapsible
+					className="rounded-md overflow-hidden"
+				>
 					{faqItems.map((item) => (
 						<AccordionItem
 							key={item.id}
 							value={item.id}
-							className="border-b-0 px-4 bg-neutral-900"
+							className="border-b-0 px-4 dark:bg-neutral-900 bg-neutral-100"
 						>
-							<AccordionTrigger className="cursor-pointer py-4 text-sm font-medium text-primary-foreground hover:no-underline">
+							<AccordionTrigger className="cursor-pointer py-4 text-sm font-medium dark:text-white text-neutral-800 hover:no-underline">
 								{item.question}
 							</AccordionTrigger>
 							<AccordionContent>

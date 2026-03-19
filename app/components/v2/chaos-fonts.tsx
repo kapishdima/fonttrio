@@ -128,7 +128,7 @@ function ChaosFont({
 						}}
 					>
 						<motion.p
-							className="text-sm text-black whitespace-nowrap select-none"
+							className="text-sm dark:text-white/40 text-black/40 whitespace-nowrap select-none"
 							style={{ opacity: repulsor.opacity }}
 						>
 							{item.label}

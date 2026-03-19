@@ -85,7 +85,7 @@ export function TestimonialCard({
 			href={url}
 			target="_blank"
 			rel="noopener noreferrer"
-			className={`relative w-87.5 shrink-0 cursor-pointer rounded-xl border border-neutral-900 bg-neutral-950 p-5 backdrop-blur-sm transition-all ease-out duration-300 hover:border-neutral-700/60 hover:bg-neutral-900/60 ${className}`}
+			className={`relative w-87.5 shrink-0 cursor-pointer rounded-xl border dark:border-neutral-900 border-neutral-200 dark:bg-neutral-950 bg-white p-5 transition-[background-color,border-color] ease-out duration-150 dark:hover:border-neutral-700/60 hover:border-neutral-300 dark:hover:bg-neutral-900/60 hover:bg-neutral-50 ${className}`}
 		>
 			<div className="flex items-center gap-3 mb-3">
 				{avatar ? (
@@ -93,25 +93,25 @@ export function TestimonialCard({
 					<img
 						src={avatar}
 						alt={name}
-						className="w-9.5 h-9.5 rounded-full object-cover border border-zinc-700/50"
+						className="w-9.5 h-9.5 rounded-full object-cover dark:border-zinc-700/50 border-neutral-200 border"
 					/>
 				) : (
-					<div className="w-10 h-10 rounded-full bg-linear-to-br from-zinc-700 to-zinc-800 flex items-center justify-center border border-zinc-700/50">
-						<span className="text-sm font-medium font-['Manrope'] tracking-tighter text-zinc-300">
+					<div className="w-10 h-10 rounded-full dark:bg-linear-to-br dark:from-zinc-700 dark:to-zinc-800 bg-neutral-100 flex items-center justify-center dark:border-zinc-700/50 border-neutral-200 border">
+						<span className="text-sm font-medium font-['Manrope'] tracking-tighter dark:text-zinc-300 text-neutral-600">
 							{name?.charAt(0)?.toUpperCase() || "?"}
 						</span>
 					</div>
 				)}
 				<div className="flex flex-col">
-					<span className="text-sm font-bold font-['Manrope']  text-zinc-200">
+					<span className="text-sm font-bold font-['Manrope'] dark:text-zinc-200 text-neutral-800">
 						{name}
 					</span>
-					<span className="text-xs font-['Manrope']  text-zinc-500">
+					<span className="text-xs font-['Manrope'] dark:text-zinc-500 text-neutral-500">
 						{username}
 					</span>
 				</div>
 			</div>
-			<p className="text-sm font-medium font-['Manrope']  text-zinc-400 leading-normal text-balance">
+			<p className="text-sm font-medium font-['Manrope'] dark:text-zinc-400 text-neutral-600 leading-normal text-balance">
 				{content}
 			</p>
 		</a>
