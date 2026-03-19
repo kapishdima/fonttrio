@@ -43,21 +43,40 @@ export function ChaosFonts({ fonts, scrollYProgress }: ChaosFontsProps) {
 		[1, 0],
 	);
 
-	const gradientBackground = useMotionTemplate`radial-gradient(
+	// Light mode: dark vignette on light bg
+	const gradientLight = useMotionTemplate`radial-gradient(
 		circle ${REPULSOR.radius}px at ${cursor.x}px ${cursor.y}px,
 		transparent 0%,
-		transparent 60%,
-		rgba(0, 0, 0, 0.03) 80%,
-		rgba(0, 0, 0, 0.05) 92%,
+		transparent 55%,
+		rgba(0, 0, 0, 0.04) 78%,
+		rgba(0, 0, 0, 0.09) 92%,
+		transparent 100%
+	)`;
+
+	// Dark mode: light vignette on dark bg
+	const gradientDark = useMotionTemplate`radial-gradient(
+		circle ${REPULSOR.radius}px at ${cursor.x}px ${cursor.y}px,
+		transparent 0%,
+		transparent 55%,
+		rgba(255, 255, 255, 0.04) 78%,
+		rgba(255, 255, 255, 0.09) 92%,
 		transparent 100%
 	)`;
 
 	return (
 		<>
 			<motion.div
-				className="absolute inset-0 pointer-events-none z-0"
+				className="absolute inset-0 pointer-events-none z-0 block dark:hidden"
 				style={{
-					background: gradientBackground,
+					background: gradientLight,
+					opacity: gradientExitOpacity,
+					willChange: "background, opacity, transform",
+				}}
+			/>
+			<motion.div
+				className="absolute inset-0 pointer-events-none z-0 hidden dark:block"
+				style={{
+					background: gradientDark,
 					opacity: gradientExitOpacity,
 					willChange: "background, opacity, transform",
 				}}
