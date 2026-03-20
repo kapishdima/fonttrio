@@ -11,7 +11,7 @@ import {
 } from "motion/react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Button } from "@/components/ui/button";
 import { HEADER_TRANSITION, SOCIAL_LINKS } from "@/lib/constants";
@@ -99,7 +99,6 @@ export function InnerHeader({
 }) {
 	const [mounted, setMounted] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
-	const hasEntered = useRef(false);
 	const { scrollY } = useScroll();
 
 	useMotionValueEvent(scrollY, "change", (latest) => {
@@ -108,115 +107,153 @@ export function InnerHeader({
 
 	useEffect(() => {
 		setMounted(true);
-		// Mark entrance animation as done after it completes
-		const timer = setTimeout(
-			() => {
-				hasEntered.current = true;
-			},
-			(HEADER_TRANSITION.delay + HEADER_TRANSITION.duration) * 1000,
-		);
-		return () => clearTimeout(timer);
 	}, []);
 
 	if (!mounted) return null;
 
-	// After entrance, use snappy scroll transitions (no delay)
-	const scrollTransition = {
-		duration: 0.4,
-		ease: [0.23, 1, 0.32, 1] as const,
-	};
-
-	const entranceTransition = {
-		...HEADER_TRANSITION,
-	};
-
-	const activeTransition = hasEntered.current
-		? scrollTransition
-		: entranceTransition;
+	const slideEase = [0.23, 1, 0.32, 1] as const;
+	const snappyTransition = { duration: 0.3, ease: slideEase };
 
 	return createPortal(
 		<>
-			<motion.header
-				layout
-				className={`fixed top-6 left-24 z-100 flex items-center justify-between gap-1
-					bg-neutral-950 backdrop-blur-md overflow-hidden
-					px-2 py-1.5 border border-white/10
-					${scrolled ? "w-fit" : "w-[calc(100%-12rem)]"}`}
-				style={{ borderRadius: 9999 }}
-				animate={{
-					y: 0,
-					opacity: 1,
-					scale: 1,
-					filter: "blur(0px)",
-					boxShadow: scrolled
-						? "0 20px 25px -5px rgba(0,0,0,0.25), 0 8px 10px -6px rgba(0,0,0,0.2)"
-						: "0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0)",
-				}}
-				transition={{
-					...activeTransition,
-					layout: { duration: 0.4, ease: [0.23, 1, 0.32, 1] },
-					boxShadow: { duration: 0.3, ease: "easeOut" },
-				}}
-			>
-				<motion.a
-					layout="position"
-					href="/redesign/04"
-					className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-				>
-					Fonttrio
-				</motion.a>
-
-				<motion.div layout="position" className="flex items-center">
-					<nav className="flex items-center gap-0.5 pr-2">
-						<a
-							href="/redesign/04/pairs"
-							className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-						>
-							Pairings
-						</a>
-						<a
-							href="/fonts"
-							className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-						>
-							Fonts
-						</a>
-					</nav>
-
-					<div className="w-px h-5 bg-white/15 mr-2" />
-					<Button
-						size="xs"
-						className="text-xs rounded-full tracking-tight mr-2"
+			{/* Static header — on first render just appears (initial=false skips mount anim),
+			    on re-entry after scroll-up slides from left via `initial` on the element */}
+			<AnimatePresence initial={false} mode="wait">
+				{!scrolled && (
+					<motion.header
+						key="static"
+						className="fixed top-6 left-24 z-100 flex items-center justify-between gap-1
+							bg-neutral-950 backdrop-blur-md overflow-hidden
+							w-[calc(100%-12rem)] px-2 py-1.5 border border-white/10 rounded-full"
+						initial={{ opacity: 0, x: -20, filter: "blur(4px)" }}
+						animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+						exit={{ opacity: 0, x: -20, filter: "blur(4px)" }}
+						transition={snappyTransition}
 					>
-						Sponsor
-					</Button>
+						<a
+							href="/redesign/04"
+							className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+						>
+							Fonttrio
+						</a>
 
-					<Link
-						href={SOCIAL_LINKS.github.url}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-white/60 hover:text-white cursor-pointer"
-						aria-label={SOCIAL_LINKS.github.label}
-					>
-						<HugeiconsIcon
-							icon={GithubIcon}
-							size={16}
-							color="currentColor"
-							strokeWidth={1.5}
-							aria-hidden="true"
-						/>
-					</Link>
-					<ThemeToggle />
-				</motion.div>
-			</motion.header>
+						<div className="flex items-center">
+							<nav className="flex items-center gap-0.5 pr-2">
+								<a
+									href="/redesign/04/pairs"
+									className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+								>
+									Pairings
+								</a>
+								<a
+									href="/fonts"
+									className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+								>
+									Fonts
+								</a>
+							</nav>
 
+							<div className="w-px h-5 bg-white/15 mr-2" />
+							<Button
+								size="xs"
+								className="text-xs rounded-full tracking-tight mr-2"
+							>
+								Sponsor
+							</Button>
+
+							<Link
+								href={SOCIAL_LINKS.github.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-white/60 hover:text-white cursor-pointer"
+								aria-label={SOCIAL_LINKS.github.label}
+							>
+								<HugeiconsIcon
+									icon={GithubIcon}
+									size={16}
+									color="currentColor"
+									strokeWidth={1.5}
+									aria-hidden="true"
+								/>
+							</Link>
+							<ThemeToggle />
+						</div>
+					</motion.header>
+				)}
+			</AnimatePresence>
+
+			{/* Scroll header + Extra content — both in one AnimatePresence, appear/disappear together */}
 			<AnimatePresence>
+				{scrolled && (
+					<motion.header
+						key="scroll"
+						className="fixed top-6 left-24 z-100 flex items-center gap-1
+							bg-neutral-950 backdrop-blur-md overflow-hidden
+							w-fit px-2 py-1.5 border border-white/10 rounded-full
+							shadow-[0_20px_25px_-5px_rgba(0,0,0,0.25),0_8px_10px_-6px_rgba(0,0,0,0.2)]"
+						initial={{ opacity: 0, x: -20, filter: "blur(4px)" }}
+						animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+						exit={{ opacity: 0, x: -20, filter: "blur(4px)" }}
+						transition={snappyTransition}
+					>
+						<a
+							href="/redesign/04"
+							className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+						>
+							Fonttrio
+						</a>
+
+						<div className="flex items-center">
+							<nav className="flex items-center gap-0.5 pr-2">
+								<a
+									href="/redesign/04/pairs"
+									className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+								>
+									Pairings
+								</a>
+								<a
+									href="/fonts"
+									className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+								>
+									Fonts
+								</a>
+							</nav>
+
+							<div className="w-px h-5 bg-white/15 mr-2" />
+							<Button
+								size="xs"
+								className="text-xs rounded-full tracking-tight mr-2"
+							>
+								Sponsor
+							</Button>
+
+							<Link
+								href={SOCIAL_LINKS.github.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-white/60 hover:text-white cursor-pointer"
+								aria-label={SOCIAL_LINKS.github.label}
+							>
+								<HugeiconsIcon
+									icon={GithubIcon}
+									size={16}
+									color="currentColor"
+									strokeWidth={1.5}
+									aria-hidden="true"
+								/>
+							</Link>
+							<ThemeToggle />
+						</div>
+					</motion.header>
+				)}
 				{scrolled && extraWhenScroll && (
 					<motion.div
+						key="extra"
 						className="fixed top-6 z-100 right-24 flex items-center gap-1 shadow-2xl"
 						initial={{ opacity: 0, x: 20, filter: "blur(4px)" }}
 						animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
 						exit={{ opacity: 0, x: 20, filter: "blur(4px)" }}
-						transition={{ duration: 0.3, ease: [0.23, 1, 0.32, 1] }}
+						transition={snappyTransition}
 					>
 						{extraWhenScroll}
 					</motion.div>
