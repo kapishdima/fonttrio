@@ -11,7 +11,7 @@ import {
 } from "motion/react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Button } from "@/components/ui/button";
 import { HEADER_TRANSITION, SOCIAL_LINKS } from "@/lib/constants";
@@ -99,6 +99,7 @@ export function InnerHeader({
 }) {
 	const [mounted, setMounted] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
+	const hasEntered = useRef(false);
 	const { scrollY } = useScroll();
 
 	useMotionValueEvent(scrollY, "change", (latest) => {
@@ -107,19 +108,38 @@ export function InnerHeader({
 
 	useEffect(() => {
 		setMounted(true);
+		// Mark entrance animation as done after it completes
+		const timer = setTimeout(() => {
+			hasEntered.current = true;
+		}, (HEADER_TRANSITION.delay + HEADER_TRANSITION.duration) * 1000);
+		return () => clearTimeout(timer);
 	}, []);
 
 	if (!mounted) return null;
+
+	// After entrance, use snappy scroll transitions (no delay)
+	const scrollTransition = {
+		duration: 0.4,
+		ease: [0.23, 1, 0.32, 1] as const,
+	};
+
+	const entranceTransition = {
+		...HEADER_TRANSITION,
+	};
+
+	const activeTransition = hasEntered.current
+		? scrollTransition
+		: entranceTransition;
 
 	return createPortal(
 		<>
 			<motion.header
 				layout
-				className={`fixed top-6 left-24 mx-auto z-100 flex items-center justify-between gap-1
-					bg-neutral-950 backdrop-blur-md rounded-full
+				className={`fixed top-6 left-24 z-100 flex items-center justify-between gap-1
+					bg-neutral-950 backdrop-blur-md overflow-hidden
 					px-2 py-1.5 border border-white/10
 					${scrolled ? "w-fit" : "w-[calc(100%-12rem)]"}`}
-				// initial={{ y: -80, opacity: 0, scale: 0.8, filter: "blur(8px)" }}
+				style={{ borderRadius: 9999 }}
 				animate={{
 					y: 0,
 					opacity: 1,
@@ -130,29 +150,30 @@ export function InnerHeader({
 						: "0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0)",
 				}}
 				transition={{
-					...HEADER_TRANSITION,
+					...activeTransition,
 					layout: { duration: 0.4, ease: [0.23, 1, 0.32, 1] },
 					boxShadow: { duration: 0.3, ease: "easeOut" },
 				}}
 			>
-				<a
+				<motion.a
+					layout="position"
 					href="/redesign/04"
-					className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+					className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
 				>
 					Fonttrio
-				</a>
+				</motion.a>
 
-				<motion.div className="flex items-center">
+				<motion.div layout="position" className="flex items-center">
 					<nav className="flex items-center gap-0.5 pr-2">
 						<a
 							href="/redesign/04/pairs"
-							className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+							className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
 						>
 							Pairings
 						</a>
 						<a
 							href="/fonts"
-							className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+							className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
 						>
 							Fonts
 						</a>

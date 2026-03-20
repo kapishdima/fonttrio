@@ -494,7 +494,7 @@ function ActivePair({
 			role="dialog"
 			aria-modal="true"
 			aria-label={`${pair.name} font pairing detail`}
-			className="w-[min(480px,90vw)] px-6 py-5 rounded-xl border dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-950 bg-white overflow-y-auto overscroll-contain fixed top-1/2 left-1/2 z-999 -translate-x-1/2 -translate-y-1/2 max-h-[90vh]"
+			className="w-[40vw] h-[90vh] px-6 py-5 rounded-xl border dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-950 bg-white overflow-y-auto overscroll-contain fixed top-1/2 left-1/2 z-999 -translate-x-1/2 -translate-y-1/2 max-h-[90vh]"
 		>
 			<motion.p
 				layoutId={`heading-${pair.name}`}
