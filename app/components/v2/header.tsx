@@ -39,54 +39,7 @@ export function Header() {
 			animate="visible"
 			transition={HEADER_TRANSITION}
 		>
-			<a
-				href="/redesign/04"
-				className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
-			>
-				Fonttrio
-			</a>
-
-			<nav className="flex items-center gap-0.5 pl-20 pr-2">
-				<Link
-					href="/redesign/04/pairs"
-					className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
-				>
-					Pairings
-				</Link>
-				<a
-					href="/fonts"
-					className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
-				>
-					Fonts
-				</a>
-			</nav>
-
-			<div className="w-px h-5 bg-white/15 mr-2" />
-			<motion.div
-				whileTap={{ scale: 0.96 }}
-				transition={{ type: "spring", duration: 0.15, bounce: 0 }}
-			>
-				<Button size="xs" className="text-xs rounded-full tracking-tight mr-2">
-					Sponsor
-				</Button>
-			</motion.div>
-
-			<Link
-				href={SOCIAL_LINKS.github.url}
-				target="_blank"
-				rel="noopener noreferrer"
-				className="text-white/60 hover:text-white cursor-pointer"
-				aria-label={SOCIAL_LINKS.github.label}
-			>
-				<HugeiconsIcon
-					icon={GithubIcon}
-					size={16}
-					color="currentColor"
-					strokeWidth={1.5}
-					aria-hidden="true"
-				/>
-			</Link>
-			<ThemeToggle />
+			<HeaderContent />
 		</motion.header>,
 		document.body,
 	);
@@ -116,8 +69,6 @@ export function InnerHeader({
 
 	return createPortal(
 		<>
-			{/* Static header — on first render just appears (initial=false skips mount anim),
-			    on re-entry after scroll-up slides from left via `initial` on the element */}
 			<AnimatePresence initial={false} mode="wait">
 				{!scrolled && (
 					<motion.header
@@ -130,54 +81,7 @@ export function InnerHeader({
 						exit={{ opacity: 0, x: -20, filter: "blur(4px)" }}
 						transition={snappyTransition}
 					>
-						<a
-							href="/redesign/04"
-							className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-						>
-							Fonttrio
-						</a>
-
-						<div className="flex items-center">
-							<nav className="flex items-center gap-0.5 pr-2">
-								<a
-									href="/redesign/04/pairs"
-									className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-								>
-									Pairings
-								</a>
-								<a
-									href="/fonts"
-									className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-								>
-									Fonts
-								</a>
-							</nav>
-
-							<div className="w-px h-5 bg-white/15 mr-2" />
-							<Button
-								size="xs"
-								className="text-xs rounded-full tracking-tight mr-2"
-							>
-								Sponsor
-							</Button>
-
-							<Link
-								href={SOCIAL_LINKS.github.url}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-white/60 hover:text-white cursor-pointer"
-								aria-label={SOCIAL_LINKS.github.label}
-							>
-								<HugeiconsIcon
-									icon={GithubIcon}
-									size={16}
-									color="currentColor"
-									strokeWidth={1.5}
-									aria-hidden="true"
-								/>
-							</Link>
-							<ThemeToggle />
-						</div>
+						<HeaderContent />
 					</motion.header>
 				)}
 			</AnimatePresence>
@@ -196,54 +100,7 @@ export function InnerHeader({
 						exit={{ opacity: 0, x: -20, filter: "blur(4px)" }}
 						transition={snappyTransition}
 					>
-						<a
-							href="/redesign/04"
-							className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-						>
-							Fonttrio
-						</a>
-
-						<div className="flex items-center">
-							<nav className="flex items-center gap-0.5 pr-2">
-								<a
-									href="/redesign/04/pairs"
-									className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-								>
-									Pairings
-								</a>
-								<a
-									href="/fonts"
-									className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-								>
-									Fonts
-								</a>
-							</nav>
-
-							<div className="w-px h-5 bg-white/15 mr-2" />
-							<Button
-								size="xs"
-								className="text-xs rounded-full tracking-tight mr-2"
-							>
-								Sponsor
-							</Button>
-
-							<Link
-								href={SOCIAL_LINKS.github.url}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-white/60 hover:text-white cursor-pointer"
-								aria-label={SOCIAL_LINKS.github.label}
-							>
-								<HugeiconsIcon
-									icon={GithubIcon}
-									size={16}
-									color="currentColor"
-									strokeWidth={1.5}
-									aria-hidden="true"
-								/>
-							</Link>
-							<ThemeToggle />
-						</div>
+						<HeaderContent />
 					</motion.header>
 				)}
 				{scrolled && extraWhenScroll && (
@@ -263,6 +120,58 @@ export function InnerHeader({
 		document.body,
 	);
 }
+
+const HeaderContent = () => {
+	return (
+		<>
+			<a
+				href="/redesign/04"
+				className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+			>
+				Fonttrio
+			</a>
+
+			<div className="flex items-center">
+				<nav className="flex items-center gap-0.5 pr-2">
+					<a
+						href="/redesign/04/pairs"
+						className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+					>
+						Pairings
+					</a>
+					<a
+						href="/fonts"
+						className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+					>
+						Fonts
+					</a>
+				</nav>
+
+				<div className="w-px h-5 bg-white/15 mr-2" />
+				<Button size="xs" className="text-xs rounded-full tracking-tight mr-2">
+					Sponsor
+				</Button>
+
+				<Link
+					href={SOCIAL_LINKS.github.url}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="text-white/60 hover:text-white cursor-pointer"
+					aria-label={SOCIAL_LINKS.github.label}
+				>
+					<HugeiconsIcon
+						icon={GithubIcon}
+						size={16}
+						color="currentColor"
+						strokeWidth={1.5}
+						aria-hidden="true"
+					/>
+				</Link>
+				<ThemeToggle />
+			</div>
+		</>
+	);
+};
 
 const ThemeToggle = () => {
 	const { setTheme, resolvedTheme } = useTheme();
