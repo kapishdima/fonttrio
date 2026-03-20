@@ -109,9 +109,12 @@ export function InnerHeader({
 	useEffect(() => {
 		setMounted(true);
 		// Mark entrance animation as done after it completes
-		const timer = setTimeout(() => {
-			hasEntered.current = true;
-		}, (HEADER_TRANSITION.delay + HEADER_TRANSITION.duration) * 1000);
+		const timer = setTimeout(
+			() => {
+				hasEntered.current = true;
+			},
+			(HEADER_TRANSITION.delay + HEADER_TRANSITION.duration) * 1000,
+		);
 		return () => clearTimeout(timer);
 	}, []);
 
@@ -209,7 +212,7 @@ export function InnerHeader({
 			<AnimatePresence>
 				{scrolled && extraWhenScroll && (
 					<motion.div
-						className="fixed top-6 z-100 right-24 flex items-center gap-1"
+						className="fixed top-6 z-100 right-24 flex items-center gap-1 shadow-2xl"
 						initial={{ opacity: 0, x: 20, filter: "blur(4px)" }}
 						animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
 						exit={{ opacity: 0, x: 20, filter: "blur(4px)" }}

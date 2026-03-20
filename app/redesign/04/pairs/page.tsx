@@ -16,9 +16,11 @@ import {
 	useCycle,
 	useReducedMotion,
 } from "motion/react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { InnerHeader } from "@/app/components/v2/header";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Field, FieldLabel, FieldTitle } from "@/components/ui/field";
 import {
@@ -26,7 +28,6 @@ import {
 	InputGroupAddon,
 	InputGroupInput,
 } from "@/components/ui/input-group";
-
 import {
 	Select,
 	SelectContent,
@@ -494,11 +495,11 @@ function ActivePair({
 			role="dialog"
 			aria-modal="true"
 			aria-label={`${pair.name} font pairing detail`}
-			className="w-[40vw] h-[90vh] px-6 py-5 rounded-xl border dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-950 bg-white overflow-y-auto overscroll-contain fixed top-1/2 left-1/2 z-999 -translate-x-1/2 -translate-y-1/2 max-h-[90vh]"
+			className="w-[90vw] md:w-[40vw] max-h-[90vh] px-6 py-5 rounded-xl border dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-950 bg-white overflow-y-auto overscroll-contain fixed top-1/2 left-1/2 z-999 -translate-x-1/2 -translate-y-1/2"
 		>
 			<motion.p
 				layoutId={`heading-${pair.name}`}
-				className="text-2xl md:text-4xl dark:text-neutral-200 text-neutral-800 truncate font-extrabold mb-3"
+				className="text-2xl md:text-4xl dark:text-neutral-200 text-neutral-800 truncate font-extrabold mb-2 pr-20"
 				style={{
 					fontFamily: pair.heading,
 				}}
@@ -507,12 +508,41 @@ function ActivePair({
 			</motion.p>
 
 			<motion.div
+				className="flex flex-wrap items-center gap-1 mb-4"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
 				transition={{ delay: 0.2 }}
 			>
-				<Button className="absolute top-5 right-5">Open</Button>
+				{pair.mood.map((m) => (
+					<Badge
+						key={m}
+						variant="secondary"
+						className="text-xs rounded-md font-['Manrope'] font-medium tracking-tighter"
+					>
+						{m}
+					</Badge>
+				))}
+				{pair.useCase.map((u) => (
+					<Badge
+						key={u}
+						variant="secondary"
+						className="text-xs rounded-md font-['Manrope'] font-medium tracking-tighter"
+					>
+						{u}
+					</Badge>
+				))}
+			</motion.div>
+
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				transition={{ delay: 0.3 }}
+			>
+				<Button asChild className="absolute top-5 right-5">
+					<Link href={`/${pair.name}`}>Open →</Link>
+				</Button>
 			</motion.div>
 
 			<motion.p
@@ -521,23 +551,97 @@ function ActivePair({
 			>
 				{pair.description}
 			</motion.p>
-			<motion.p
+
+			{/* Font Trio */}
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				transition={{ delay: 0.15 }}
+				className="grid grid-cols-3 gap-2 mt-4"
+			>
+				{[
+					{
+						label: "Heading",
+						font: pair.heading,
+					},
+					{ label: "Body", font: pair.body },
+					{ label: "Mono", font: pair.mono },
+				].map((item) => (
+					<div
+						key={item.label}
+						className="dark:bg-neutral-900/50 bg-neutral-50 rounded-lg p-3"
+					>
+						<p className="text-xs dark:text-neutral-500 text-neutral-500 font-['Manrope'] font-medium">
+							{item.label}
+						</p>
+						<p
+							className="text-base font-semibold dark:text-neutral-200 text-neutral-800 truncate mt-0.5"
+							style={{ fontFamily: item.font }}
+						>
+							{item.font}
+						</p>
+					</div>
+				))}
+			</motion.div>
+
+			{/* Type Scale */}
+			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
 				transition={{ delay: 0.2 }}
-				className="text-sm dark:text-neutral-400 text-neutral-600 font-medium leading-relaxed pt-4 mt-2 text-pretty border-t dark:border-neutral-900/50 border-neutral-200"
-				style={{
-					fontFamily: pair.body,
-				}}
+				className="mt-4 dark:bg-neutral-900/50 bg-neutral-50 rounded-lg p-3"
 			>
-				Typography shapes how your reader experiences every sentence. A
-				well-chosen body font reduces fatigue, guides the eye, and gives your
-				content the right voice.
-			</motion.p>
+				{/* <p className="text-sm tracking-wider dark:text-neutral-500 text-neutral-500 font-medium font-['Manrope'] mb-2.5">
+					Type Scale
+				</p> */}
+				{/* Column headers */}
+				<div className="grid grid-cols-[1fr_1fr_0.8fr_0.8fr] gap-x-2 mb-1.5 pb-1.5 border-b dark:border-neutral-800 border-neutral-200">
+					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-['Manrope'] font-medium">
+						Level
+					</span>
+					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-['Manrope'] font-medium">
+						Size
+					</span>
+					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-['Manrope'] font-medium">
+						Weight
+					</span>
+					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-['Manrope'] font-medium">
+						LH
+					</span>
+				</div>
+				<div className="space-y-1">
+					{(["h1", "h2", "h3", "h4", "body"] as const).map((level) => {
+						const s = pair.scale[level];
+						return (
+							<div
+								key={level}
+								className="grid grid-cols-[1fr_1fr_0.8fr_0.8fr] gap-x-2 text-xs py-1"
+							>
+								<span className="font-mono uppercase dark:text-neutral-300 text-neutral-800 font-medium">
+									{level}
+								</span>
+								<span className="tabular-nums dark:text-neutral-400 text-neutral-500">
+									{s.size}
+								</span>
+								<span className="tabular-nums dark:text-neutral-400 text-neutral-500">
+									{s.weight}
+								</span>
+								<span className="tabular-nums dark:text-neutral-400 text-neutral-500">
+									{s.lineHeight}
+								</span>
+							</div>
+						);
+					})}
+				</div>
+			</motion.div>
 
+			<p className="font-['Manrope'] font-medium tracking-tighter text-neutral-900 mt-4 mb-2">
+				Installation
+			</p>
 			<motion.code
-				className="px-4 py-2 dark:bg-neutral-900 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm mt-4 block"
+				className="px-4 py-2 dark:bg-neutral-900 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm font-medium block"
 				style={{ fontFamily: pair.mono }}
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
