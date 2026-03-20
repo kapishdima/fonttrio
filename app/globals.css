@@ -194,11 +194,7 @@ body {
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* ─── Focus ─── */
-:focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 2px;
-}
+
 
 /* ─── Scrollbar ─── */
 ::-webkit-scrollbar {
@@ -417,5 +413,7 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+
+    outline: none;
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import {
 	motion,
 	useReducedMotion,
@@ -9,7 +9,6 @@ import {
 } from "motion/react";
 import { useRef } from "react";
 import { ChaosFonts } from "@/app/components/v2/chaos-fonts";
-import { Header } from "@/app/components/v2/header";
 import DotGrid from "@/components/DotGrid";
 import { Button } from "@/components/ui/button";
 import { HERO_TRANSITION } from "@/lib/constants";
@@ -47,8 +46,6 @@ export function Hero() {
 		<div ref={heroRef} style={{ height: "100vh", position: "relative" }}>
 			<div className="sticky top-0 h-screen p-3">
 				<div className="w-full h-full dark:bg-neutral-950 bg-white rounded-4xl">
-					<Header />
-
 					<motion.div
 						style={{
 							width: "100%",
