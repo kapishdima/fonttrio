@@ -1,6 +1,13 @@
 "use client";
 
-import { motion } from "motion/react";
+import {
+	motion,
+	useAnimation,
+	useInView,
+	useReducedMotion,
+} from "motion/react";
+import { useEffect, useRef } from "react";
+import { RotatingSpecimen } from "@/app/components/v2/rotating-specimen";
 import { Button } from "@/components/ui/button";
 
 const containerVariants = {
@@ -35,6 +42,231 @@ const titleVariants = {
 	},
 } as const;
 
+/* ── Card 2: Preview mockup ── */
+
+const previewLineVariants = {
+	hidden: { opacity: 0, y: 8 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: { duration: 0.4, ease: [0.23, 1, 0.32, 1] },
+	},
+} as const;
+
+const previewContainerVariants = {
+	hidden: {
+		transition: {
+			staggerChildren: 0.06,
+			staggerDirection: -1,
+		},
+	},
+	visible: {
+		transition: {
+			staggerChildren: 0.18,
+			delayChildren: 0.3,
+		},
+	},
+} as const;
+
+/* ── Card 3: Terminal mockup ── */
+
+const terminalLineVariants = {
+	hidden: { opacity: 0, x: -6 },
+	visible: {
+		opacity: 1,
+		x: 0,
+		transition: { duration: 0.35, ease: [0.23, 1, 0.32, 1] },
+	},
+} as const;
+
+const terminalContainerVariants = {
+	hidden: {
+		transition: {
+			staggerChildren: 0.04,
+			staggerDirection: -1,
+		},
+	},
+	visible: {
+		transition: {
+			staggerChildren: 0.22,
+			delayChildren: 0.4,
+		},
+	},
+} as const;
+
+/* ── Looping animation hook ── */
+
+function useLoopingAnimation({
+	isInView,
+	visibleDuration = 5000,
+	hiddenDuration = 1200,
+}: {
+	isInView: boolean;
+	visibleDuration?: number;
+	hiddenDuration?: number;
+}) {
+	const controls = useAnimation();
+	const shouldReduceMotion = useReducedMotion();
+
+	useEffect(() => {
+		if (!isInView || shouldReduceMotion) {
+			controls.start("hidden");
+			return;
+		}
+
+		let cancelled = false;
+		const wait = (ms: number) =>
+			new Promise<void>((r) => {
+				const id = setTimeout(r, ms);
+				if (cancelled) clearTimeout(id);
+			});
+
+		async function loop() {
+			while (!cancelled) {
+				await controls.start("visible");
+				await wait(visibleDuration);
+				if (cancelled) break;
+				await controls.start("hidden");
+				await wait(hiddenDuration);
+			}
+		}
+
+		loop();
+		return () => {
+			cancelled = true;
+		};
+	}, [isInView, controls, shouldReduceMotion, visibleDuration, hiddenDuration]);
+
+	return controls;
+}
+
+/* ── Preview Mockup (Card 2) ── */
+
+function PreviewMockup() {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { margin: "-100px" });
+	const controls = useLoopingAnimation({
+		isInView,
+		visibleDuration: 5000,
+		hiddenDuration: 1500,
+	});
+
+	return (
+		<motion.div
+			ref={ref}
+			className="w-full h-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 overflow-hidden mb-1"
+			variants={previewContainerVariants}
+			initial="hidden"
+			animate={controls}
+		>
+			<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-800 border-neutral-200 dark:bg-neutral-900/60 bg-neutral-100/80">
+				<div className="size-2 rounded-full bg-red-400" />
+				<div className="size-2 rounded-full bg-yellow-400" />
+				<div className="size-2 rounded-full bg-green-400" />
+				<div className="flex-1 mx-3 h-4 rounded-full dark:bg-neutral-800 bg-neutral-200" />
+			</div>
+			<div className="p-4">
+				<motion.p
+					variants={previewLineVariants}
+					className="font-['Manrope'] text-2xl font-bold dark:text-neutral-100 text-neutral-900 tracking-tight"
+				>
+					The quick fox
+				</motion.p>
+				<motion.p
+					variants={previewLineVariants}
+					className="font-['Manrope'] text-xs dark:text-neutral-400 text-neutral-500 mt-1 leading-relaxed"
+				>
+					Typography defines the voice of your content. Choose a pair that
+					speaks for your brand.
+				</motion.p>
+				<motion.p
+					variants={previewLineVariants}
+					className="font-['Manrope'] text-xs font-medium p-2 rounded-md mt-2 dark:bg-neutral-950/50 bg-neutral-200/50 dark:text-white text-neutral-800"
+				>
+					bun shadcn@latest add @fonttrio/editorial
+				</motion.p>
+			</div>
+		</motion.div>
+	);
+}
+
+/* ── Terminal Mockup (Card 3) ── */
+
+function TerminalMockup() {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { margin: "-100px" });
+	const controls = useLoopingAnimation({
+		isInView,
+		visibleDuration: 5500,
+		hiddenDuration: 1500,
+	});
+
+	return (
+		<motion.div
+			ref={ref}
+			className="w-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 overflow-hidden mb-1"
+			variants={terminalContainerVariants}
+			initial="hidden"
+			animate={controls}
+		>
+			<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-800 border-neutral-200 dark:bg-neutral-900/60 bg-neutral-100/80">
+				<div className="size-2 rounded-full bg-red-400" />
+				<div className="size-2 rounded-full bg-yellow-400" />
+				<div className="size-2 rounded-full bg-green-400" />
+			</div>
+			<div className="p-4 font-['Manrope'] text-xs font-semibold tracking-tight space-y-1.5">
+				<motion.p
+					variants={terminalLineVariants}
+					className="dark:text-neutral-200 text-neutral-700"
+				>
+					<span className="dark:text-emerald-400 text-emerald-700">$</span>{" "}
+					bunx shadcn@latest add @fonttrio/editorial
+				</motion.p>
+				<motion.p
+					variants={terminalLineVariants}
+					className="dark:text-amber-400 text-amber-700 leading-relaxed"
+				>
+					You are about to install a new style. Existing CSS variables and
+					components will be overwritten. Continue?{" "}
+					<span className="dark:text-neutral-500 text-neutral-400">(y/N)</span>
+				</motion.p>
+				<motion.p
+					variants={terminalLineVariants}
+					className="dark:text-neutral-200 text-neutral-700"
+				>
+					<span className="dark:text-emerald-400 text-emerald-700 mr-1">
+						✔
+					</span>
+					Checking registry.
+				</motion.p>
+				<motion.p
+					variants={terminalLineVariants}
+					className="dark:text-neutral-200 text-neutral-700"
+				>
+					<span className="dark:text-emerald-400 text-emerald-700 mr-1">
+						✔
+					</span>
+					Installing dependencies.
+				</motion.p>
+				<motion.p
+					variants={terminalLineVariants}
+					className="dark:text-neutral-200 text-neutral-700"
+				>
+					<span className="dark:text-emerald-400 text-emerald-700 mr-1">
+						✔
+					</span>
+					Updating{" "}
+					<span className="dark:text-blue-400 text-blue-600">
+						src/styles.css
+					</span>
+				</motion.p>
+			</div>
+		</motion.div>
+	);
+}
+
+/* ── Main Section ── */
+
 export function HowItWorks() {
 	return (
 		<section
@@ -67,31 +299,7 @@ export function HowItWorks() {
 						01
 					</span>
 
-					{/* Font specimen preview */}
-					<div className="w-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 p-5 mb-1 relative overflow-hidden">
-						{/* Baseline guide lines */}
-						<div className="absolute inset-0 flex flex-col justify-around pointer-events-none">
-							{[0, 1, 2, 3].map((i) => (
-								<div
-									key={i}
-									className="w-full border-dashed border-t dark:border-neutral-800/30 border-neutral-200"
-								/>
-							))}
-						</div>
-						<p className="font-['Playfair_Display'] text-6xl dark:text-neutral-100 text-neutral-800 text-center relative z-10 tracking-tight leading-tight">
-							Aa
-						</p>
-						<div className="flex items-center justify-center gap-2 mt-3 relative z-10">
-							{["Heading", "Body", "Mono"].map((label) => (
-								<span
-									key={label}
-									className="text-[10px] font-['Manrope'] font-semibold tracking-wider dark:text-neutral-500 text-neutral-400 uppercase"
-								>
-									{label}
-								</span>
-							))}
-						</div>
-					</div>
+					<RotatingSpecimen containerClassName="w-full" />
 
 					<h3 className="font-['Manrope'] text-2xl dark:text-white text-neutral-900 font-semibold tracking-tight leading-snug">
 						Browse curated pairs
@@ -120,28 +328,10 @@ export function HowItWorks() {
 						before committing to a pair.
 					</p>
 
-					<div className="w-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 overflow-hidden mb-1">
-						<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-800 border-neutral-200 dark:bg-neutral-900/60 bg-neutral-100/80">
-							<div className="size-2 rounded-full bg-red-400" />
-							<div className="size-2 rounded-full bg-yellow-400" />
-							<div className="size-2 rounded-full bg-green-400" />
-							<div className="flex-1 mx-3 h-4 rounded-full dark:bg-neutral-800 bg-neutral-200" />
-						</div>
-						<div className="p-4">
-							<p className="font-['Manrope'] text-2xl font-bold dark:text-neutral-100 text-neutral-900 tracking-tight">
-								The quick fox
-							</p>
-							<p className="font-['Manrope'] text-xs dark:text-neutral-400 text-neutral-500 mt-1 leading-relaxed">
-								Typography defines the voice of your content. Choose a pair that
-								speaks for your brand.
-							</p>
-							<p className="font-['Manrope'] text-xs font-medium p-2 rounded-md mt-2 dark:bg-neutral-950/50 bg-neutral-200/50 dark:text-white text-neutral-800">
-								bunx --bun shadcn@latest add @fonttrio/editorial
-							</p>
-						</div>
-					</div>
+					<PreviewMockup />
 				</motion.div>
 
+				{/* Card 3 — Install */}
 				<motion.div
 					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
 					variants={cardVariants}
@@ -150,49 +340,7 @@ export function HowItWorks() {
 						03
 					</span>
 
-					<div className="w-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 overflow-hidden mb-1">
-						<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-800 border-neutral-200 dark:bg-neutral-900/60 bg-neutral-100/80">
-							<div className="size-2 rounded-full bg-red-400" />
-							<div className="size-2 rounded-full bg-yellow-400" />
-							<div className="size-2 rounded-full bg-green-400" />
-						</div>
-						<div className="p-4 font-['Manrope'] text-xs font-semibold tracking-tight space-y-1.5">
-							<p className="dark:text-neutral-200 text-neutral-700">
-								<span className="dark:text-emerald-400 text-emerald-700">
-									$
-								</span>{" "}
-								bunx shadcn@latest add @fonttrio/editorial
-							</p>
-							<p className="dark:text-amber-400 text-amber-700 leading-relaxed">
-								You are about to install a new style. Existing CSS variables and
-								components will be overwritten. Continue?{" "}
-								<span className="dark:text-neutral-500 text-neutral-400">
-									(y/N)
-								</span>
-							</p>
-							<p className="dark:text-neutral-200 text-neutral-700">
-								<span className="dark:text-emerald-400 text-emerald-700 mr-1">
-									✔
-								</span>
-								Checking registry.
-							</p>
-							<p className="dark:text-neutral-200 text-neutral-700">
-								<span className="dark:text-emerald-400 text-emerald-700 mr-1">
-									✔
-								</span>
-								Installing dependencies.
-							</p>
-							<p className="dark:text-neutral-200 text-neutral-700">
-								<span className="dark:text-emerald-400 text-emerald-700 mr-1">
-									✔
-								</span>
-								Updating{" "}
-								<span className="dark:text-blue-400 text-blue-600">
-									src/styles.css
-								</span>
-							</p>
-						</div>
-					</div>
+					<TerminalMockup />
 
 					<h3 className="font-['Manrope'] text-2xl dark:text-white text-neutral-900 font-semibold tracking-tight leading-snug">
 						Install with one command

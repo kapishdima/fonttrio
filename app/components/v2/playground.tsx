@@ -2,13 +2,11 @@
 
 import { Check, Copy, RotateCcw } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { usePackageManagerContext } from "@/lib/contexts/package-manager-context";
 import { buildInstallCommand } from "@/lib/package-managers";
 import { getAllPairings } from "@/lib/pairings";
-
-const PLAYGROUND_COUNT = 10;
 
 const DEFAULT_HEADING = "The future of typography is here";
 const DEFAULT_BODY =
@@ -41,10 +39,7 @@ const reducedVariants = {
 };
 
 export function Playground() {
-	const pairings = useMemo(
-		() => getAllPairings().slice(0, PLAYGROUND_COUNT),
-		[],
-	);
+	const pairings = useMemo(() => getAllPairings(), []);
 	const [headingText, setHeadingText] = useState(DEFAULT_HEADING);
 	const [bodyText, setBodyText] = useState(DEFAULT_BODY);
 	const [monoText, setMonoText] = useState(DEFAULT_MONO);

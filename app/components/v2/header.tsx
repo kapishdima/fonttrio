@@ -140,7 +140,7 @@ const HeaderContent = () => {
 						Pairings
 					</a>
 					<a
-						href="/fonts"
+						href="/redesign/04/fonts"
 						className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
 					>
 						Fonts

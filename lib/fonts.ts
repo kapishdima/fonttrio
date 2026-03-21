@@ -2,11 +2,17 @@
  * Client-safe font utilities — NO imports from registry.ts (uses Node fs).
  * Server-side helpers (getAllFontCategories, etc.) are in lib/fonts.server.ts
  */
+import { FONTS_DATA } from "./fonts-data";
 import { PAIRINGS_DATA } from "./pairings-data";
 import type { PairingData } from "./pairings";
 
 // Re-export type only (no runtime import of registry)
 export type { FontItem } from "./registry";
+
+/** Client-safe: returns all fonts from pre-generated static data */
+export function getAllFontsClient() {
+  return FONTS_DATA;
+}
 
 export function parseFontCategory(font: { category?: string; description: string }): string {
   // Use category field if present, normalize it
