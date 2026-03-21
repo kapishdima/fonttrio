@@ -2,7 +2,7 @@
 
 import { Check, Copy, RotateCcw } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { useCommandInstallation } from "@/hooks/use-command-installation";
 import { buildInstallCommand } from "@/lib/package-managers";
@@ -48,6 +48,30 @@ export function Playground() {
 	const prefersReducedMotion = useReducedMotion();
 
 	const command = useCommandInstallation(activePairing.name);
+	const scrollRef = useRef<HTMLDivElement>(null);
+	const [scrollFade, setScrollFade] = useState<"none" | "right" | "left" | "both">("right");
+
+	const updateScrollFade = useCallback(() => {
+		const el = scrollRef.current;
+		if (!el) return;
+		const atStart = el.scrollLeft <= 2;
+		const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 2;
+		setScrollFade(
+			atStart && atEnd ? "none" : atStart ? "right" : atEnd ? "left" : "both",
+		);
+	}, []);
+
+	useEffect(() => {
+		const el = scrollRef.current;
+		if (!el) return;
+		updateScrollFade();
+		el.addEventListener("scroll", updateScrollFade, { passive: true });
+		window.addEventListener("resize", updateScrollFade);
+		return () => {
+			el.removeEventListener("scroll", updateScrollFade);
+			window.removeEventListener("resize", updateScrollFade);
+		};
+	}, [updateScrollFade]);
 
 	const isDefault =
 		headingText === DEFAULT_HEADING &&
@@ -98,7 +122,28 @@ export function Playground() {
 				viewport={{ once: true, margin: "-100px" }}
 			>
 				{/* Pairing Selector */}
-				<div className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-hide">
+				<div
+					ref={scrollRef}
+					className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-hide"
+					style={{
+						maskImage:
+							scrollFade === "none"
+								? undefined
+								: scrollFade === "right"
+									? "linear-gradient(to right, black 90%, transparent)"
+									: scrollFade === "left"
+										? "linear-gradient(to left, black 90%, transparent)"
+										: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+						WebkitMaskImage:
+							scrollFade === "none"
+								? undefined
+								: scrollFade === "right"
+									? "linear-gradient(to right, black 90%, transparent)"
+									: scrollFade === "left"
+										? "linear-gradient(to left, black 90%, transparent)"
+										: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+					}}
+				>
 					{pairings.map((p) => (
 						<button
 							key={p.name}
