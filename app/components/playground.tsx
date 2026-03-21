@@ -93,11 +93,11 @@ export function Playground() {
 	return (
 		<section
 			aria-label="Playground"
-			className="py-16 pt-24 px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white relative"
+			className="py-16 pt-24 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white relative"
 		>
 			{/* Heading */}
 			<motion.h2
-				className="text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
+				className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
 				variants={prefersReducedMotion ? reducedVariants : titleVariants}
 				initial="hidden"
 				whileInView="visible"
@@ -170,7 +170,7 @@ export function Playground() {
 							animate={{ opacity: 1 }}
 							exit={{ opacity: 0 }}
 							transition={{ duration: 0.2 }}
-							className="grid grid-cols-1 md:grid-cols-3 gap-px dark:bg-neutral-900/50 bg-neutral-200"
+							className="grid grid-cols-1 lg:grid-cols-3 gap-px dark:bg-neutral-900/50 bg-neutral-200"
 						>
 							{/* Heading */}
 							<div className="dark:bg-neutral-950 bg-white px-6 pt-4 pb-6 flex flex-col gap-3">
@@ -186,7 +186,7 @@ export function Playground() {
 									value={headingText}
 									onChange={(e) => setHeadingText(e.target.value)}
 									rows={3}
-									className="w-full resize-none bg-transparent text-2xl md:text-3xl dark:text-neutral-100 text-neutral-800 leading-tight break-words focus:outline-none placeholder:dark:text-neutral-700 placeholder:text-neutral-300"
+									className="w-full resize-none bg-transparent text-xl sm:text-2xl md:text-3xl dark:text-neutral-100 text-neutral-800 leading-tight break-words focus:outline-none placeholder:dark:text-neutral-700 placeholder:text-neutral-300"
 									style={{
 										fontFamily: `"${activePairing.heading}", ${activePairing.headingCategory}`,
 										fontWeight: activePairing.scale.h1.weight,
@@ -243,7 +243,7 @@ export function Playground() {
 					</AnimatePresence>
 
 					{/* Footer */}
-					<div className="px-6 py-3 border-t dark:border-neutral-900/50 border-neutral-200 flex items-center justify-between gap-4 dark:bg-neutral-900/50 bg-neutral-50">
+					<div className="px-4 sm:px-6 py-3 border-t dark:border-neutral-900/50 border-neutral-200 flex items-center justify-between gap-2 sm:gap-4 flex-wrap dark:bg-neutral-900/50 bg-neutral-50">
 						<div className="flex items-center gap-3 min-w-0">
 							<div className="flex gap-1.5 shrink-0">
 								{activePairing.mood.slice(0, 2).map((m) => (

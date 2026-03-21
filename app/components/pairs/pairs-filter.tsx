@@ -34,7 +34,7 @@ const FILTERS = [
 export function PairFilter() {
 	return (
 		// bg-neutral-50 border border-neutral-100
-		<div className="grid grid-cols-2 lg:grid-cols-4 gap-4 rounded-3xl">
+		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 rounded-3xl">
 			<Field>
 				<FieldLabel>
 					<FieldTitle className="text-default">
@@ -146,7 +146,7 @@ export function FilterPill() {
 		<>
 			<motion.div
 				layout
-				className={`bg-neutral-950 backdrop-blur-md border border-white/10 flex flex-col overflow-hidden rounded-full z-0 px-2 py-1.5 w-[20vw]`}
+				className={`bg-neutral-950 backdrop-blur-md border border-white/10 flex flex-col overflow-hidden rounded-full z-0 px-2 py-1.5 min-w-32 w-40 sm:w-48 md:w-56 lg:w-64 shrink`}
 				transition={{ layout: { duration: 0.3, type: "spring", bounce: 0 } }}
 			>
 				<InputGroup className="border-none text-white rounded-full">
@@ -163,10 +163,10 @@ export function FilterPill() {
 			</motion.div>
 			<motion.div
 				layout
-				className={`bg-neutral-950 backdrop-blur-md border border-white/10 flex flex-col overflow-hidden rounded-full z-0`}
+				className={`bg-neutral-950 backdrop-blur-md border border-white/10 flex flex-col overflow-hidden rounded-full z-0 shrink-0`}
 				transition={{ layout: { duration: 0.3, type: "spring", bounce: 0 } }}
 			>
-				<div className="flex items-center gap-1 px-2 py-1.5">
+				<div className="flex items-center gap-1 px-2 py-1.5 overflow-x-auto scrollbar-hide">
 					{FILTERS.map((filter) => (
 						<>
 							<Button
@@ -192,7 +192,7 @@ export function FilterPill() {
 									exit={{ opacity: 0 }}
 								>
 									<Select>
-										<SelectTrigger className="w-40 bg-neutral-800 border-neutral-700 text-white text-xs h-8">
+										<SelectTrigger className="w-28 sm:w-40 bg-neutral-800 border-neutral-700 text-white text-xs h-8">
 											<SelectValue placeholder={filter.label} />
 										</SelectTrigger>
 										<SelectContent className="fixed z-200">

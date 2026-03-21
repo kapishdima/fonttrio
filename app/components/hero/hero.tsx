@@ -70,7 +70,7 @@ export function Hero() {
 						/>
 					</motion.div>
 
-					<div className="size-full flex flex-col items-center justify-center relative z-40 py-[10vh]">
+					<div className="size-full flex flex-col items-center justify-center relative z-40 py-[5vh] md:py-[10vh]">
 						<motion.div
 							style={{
 								y: titleY,
@@ -80,7 +80,7 @@ export function Hero() {
 						>
 							<motion.h1
 								id="title"
-								className="text-9xl font-medium tracking-tight dark:text-white text-[#2C2C2A] text-center leading-30 text-balance"
+								className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-medium tracking-tight dark:text-white text-[#2C2C2A] text-center leading-tight lg:leading-30 text-balance"
 								variants={
 									prefersReducedMotion ? heroVariantsReduced : heroVariants
 								}
@@ -122,7 +122,7 @@ export function Hero() {
 										transition={{ type: "spring", duration: 0.15, bounce: 0 }}
 									>
 										<Button
-											className="text-base justify-between font-medium h-12 w-48 px-6 rounded-full cursor-pointer"
+											className="text-base justify-between font-medium h-12 w-full sm:w-48 px-6 rounded-full cursor-pointer"
 											onClick={() => {
 												document
 													.querySelector('[aria-label="Playground"]')
@@ -138,7 +138,7 @@ export function Hero() {
 						</motion.div>
 					</div>
 
-					<div className="size-full absolute top-0 left-0 z-10 overflow-hidden">
+					<div className="size-full absolute top-0 left-0 z-10 overflow-hidden hidden md:block">
 						<ChaosFonts fonts={chaosFonts} scrollYProgress={scrollYProgress} />
 					</div>
 				</div>

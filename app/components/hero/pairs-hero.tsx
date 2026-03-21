@@ -10,8 +10,8 @@ import {
 
 export function PairsHero() {
 	return (
-		<div className="h-[60vh] p-3">
-			<section className="w-full h-full flex flex-col justify-center dark:bg-neutral-950 bg-white rounded-4xl pb-[5vh] px-6 md:px-12 lg:px-24 py-12 lg:py-0">
+		<div className="h-auto min-h-[40vh] md:h-[60vh] p-3">
+			<section className="w-full h-full flex flex-col justify-center dark:bg-neutral-950 bg-white rounded-4xl pb-[5vh] px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-0">
 				<div className="flex items-center justify-between mb-10">
 					<div>
 						<h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 dark:text-white tracking-tight text-balance">

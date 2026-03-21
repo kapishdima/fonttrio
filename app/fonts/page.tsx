@@ -97,8 +97,8 @@ function FontsHero({
 	totalCount: number;
 }) {
 	return (
-		<div className="h-[60vh] p-3">
-			<section className="w-full h-full flex flex-col justify-center dark:bg-neutral-950 bg-white rounded-4xl pb-[5vh] px-6 md:px-12 lg:px-24 py-12 lg:py-0">
+		<div className="h-auto min-h-[40vh] md:h-[60vh] p-3">
+			<section className="w-full h-full flex flex-col justify-center dark:bg-neutral-950 bg-white rounded-4xl pb-[5vh] px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-0">
 				<div className="flex items-center justify-between mb-10">
 					<div>
 						<h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 dark:text-white tracking-tight text-balance">
@@ -148,7 +148,7 @@ function FontFilter({
 	setCategoryFilter: (v: string) => void;
 }) {
 	return (
-		<div className="grid grid-cols-2 lg:grid-cols-4 gap-4 rounded-3xl">
+		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 rounded-3xl">
 			<Field>
 				<FieldLabel>
 					<FieldTitle className="text-default">
@@ -279,7 +279,7 @@ function FontsList({
 }) {
 	return (
 		<div className="p-3">
-			<section className="w-full h-full dark:bg-neutral-950 bg-white rounded-4xl py-16 px-6 md:px-12 lg:px-24">
+			<section className="w-full h-full dark:bg-neutral-950 bg-white rounded-4xl py-16 px-4 sm:px-6 md:px-12 lg:px-24">
 				{filteredCount === 0 ? (
 					<div className="py-24 text-center">
 						<p className="dark:text-neutral-400 text-neutral-500 text-sm font-medium">
@@ -410,7 +410,7 @@ function FontFilterPill({
 		<>
 			<motion.div
 				layout
-				className="bg-neutral-950 backdrop-blur-md border border-white/10 flex flex-col overflow-hidden rounded-full z-0 px-2 py-1.5 w-[20vw]"
+				className="bg-neutral-950 backdrop-blur-md border border-white/10 flex flex-col overflow-hidden rounded-full z-0 px-2 py-1.5 min-w-32 w-40 sm:w-48 md:w-56 lg:w-64 shrink"
 				transition={{
 					layout: { duration: 0.3, type: "spring", bounce: 0 },
 				}}
@@ -433,12 +433,12 @@ function FontFilterPill({
 			</motion.div>
 			<motion.div
 				layout
-				className="bg-neutral-950 backdrop-blur-md border border-white/10 flex flex-col overflow-hidden rounded-full z-0"
+				className="bg-neutral-950 backdrop-blur-md border border-white/10 flex flex-col overflow-hidden rounded-full z-0 shrink-0"
 				transition={{
 					layout: { duration: 0.3, type: "spring", bounce: 0 },
 				}}
 			>
-				<div className="flex items-center gap-1 px-2 py-1.5">
+				<div className="flex items-center gap-1 px-2 py-1.5 overflow-x-auto scrollbar-hide">
 					{PILL_FILTERS.map((filter) => (
 						<>
 							<Button
@@ -465,7 +465,7 @@ function FontFilterPill({
 									exit={{ opacity: 0 }}
 								>
 									<Select>
-										<SelectTrigger className="w-40 bg-neutral-800 border-neutral-700 text-white text-xs h-8">
+										<SelectTrigger className="w-28 sm:w-40 bg-neutral-800 border-neutral-700 text-white text-xs h-8">
 											<SelectValue placeholder={filter.label} />
 										</SelectTrigger>
 										<SelectContent className="fixed z-200">

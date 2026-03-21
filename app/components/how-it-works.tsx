@@ -242,10 +242,10 @@ export function HowItWorks() {
 	return (
 		<section
 			aria-label="How It Works"
-			className="py-16 pt-24 px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white relative"
+			className="py-16 pt-24 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white relative"
 		>
 			<motion.h2
-				className="text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
+				className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
 				variants={titleVariants}
 				initial="hidden"
 				whileInView="visible"
@@ -255,7 +255,7 @@ export function HowItWorks() {
 			</motion.h2>
 
 			<motion.div
-				className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10"
+				className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10"
 				variants={containerVariants}
 				initial="hidden"
 				whileInView="visible"
@@ -263,7 +263,7 @@ export function HowItWorks() {
 			>
 				{/* Card 1 — Browse */}
 				<motion.div
-					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
+					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-5 py-5 md:px-7 md:py-7 relative overflow-hidden"
 					variants={cardVariants}
 				>
 					<span className="text-xs font-bold tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
@@ -284,7 +284,7 @@ export function HowItWorks() {
 
 				{/* Card 2 — Preview */}
 				<motion.div
-					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
+					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-5 py-5 md:px-7 md:py-7 relative overflow-hidden"
 					variants={cardVariants}
 				>
 					<span className="text-xs font-bold tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
@@ -304,7 +304,7 @@ export function HowItWorks() {
 
 				{/* Card 3 — Install */}
 				<motion.div
-					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
+					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-5 py-5 md:px-7 md:py-7 relative overflow-hidden"
 					variants={cardVariants}
 				>
 					<span className="text-xs font-bold tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">

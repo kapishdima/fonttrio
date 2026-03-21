@@ -142,7 +142,7 @@ export function TestimonialMarquee({
 				<Marquee direction="left" speed={speed} pauseOnHover={pauseOnHover}>
 					{firstRow.map((testimonial) => (
 						<TestimonialSpotlight
-							className="w-[25vw] max-w-full"
+							className="w-[80vw] sm:w-[50vw] md:w-[30vw] lg:w-[25vw] max-w-full"
 							key={testimonial.username}
 							authorAvatar={testimonial.avatar ?? ""}
 							authorName={testimonial.name}
@@ -156,7 +156,7 @@ export function TestimonialMarquee({
 			<Marquee direction="right" speed={speed} pauseOnHover={pauseOnHover}>
 				{secondRow.map((testimonial) => (
 					<TestimonialSpotlight
-						className="w-[25vw] max-w-full"
+						className="w-[80vw] sm:w-[50vw] md:w-[30vw] lg:w-[25vw] max-w-full"
 						key={testimonial.username}
 						authorAvatar={testimonial.avatar ?? ""}
 						authorName={testimonial.name}
