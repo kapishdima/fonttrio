@@ -16,9 +16,9 @@ import {
 	useReducedMotion,
 } from "motion/react";
 import { useEffect, useState } from "react";
-import { FontFullCard } from "@/app/components/v2/font-card";
-import { InnerHeader } from "@/app/components/v2/header";
-import { RotatingSpecimen } from "@/app/components/v2/rotating-specimen";
+import { FontFullCard } from "@/app/components/font-card";
+import { InnerHeader } from "@/app/components/header";
+import { RotatingSpecimen } from "@/app/components/rotating-specimen";
 import { Button } from "@/components/ui/button";
 import { Field, FieldLabel, FieldTitle } from "@/components/ui/field";
 import {

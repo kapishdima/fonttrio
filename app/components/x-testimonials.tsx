@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
-import { TestimonialMarquee } from "@/app/components/v2/testimonials";
+import { TestimonialMarquee } from "@/app/components/testimonials";
 
 const titleVariants = {
 	hidden: { y: 20, opacity: 0, filter: "blur(4px)" },
@@ -124,7 +124,11 @@ export function XTestimonials() {
 		<section className="py-16 px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white">
 			<motion.h2
 				className="font-['Manrope'] text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance mb-10"
-				variants={prefersReducedMotion ? { hidden: { opacity: 0 }, visible: { opacity: 1 } } : titleVariants}
+				variants={
+					prefersReducedMotion
+						? { hidden: { opacity: 0 }, visible: { opacity: 1 } }
+						: titleVariants
+				}
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true, margin: "-250px" }}

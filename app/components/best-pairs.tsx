@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
-import { PairCard } from "@/app/components/v2/pair-card";
+import { PairCard } from "@/app/components/pair-card";
 import { getAllPairings } from "@/lib/pairings";
 
 const FEATURED_COUNT = 10;

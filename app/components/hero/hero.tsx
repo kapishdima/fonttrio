@@ -8,7 +8,7 @@ import {
 	useTransform,
 } from "motion/react";
 import { useRef } from "react";
-import { ChaosFonts } from "@/app/components/v2/chaos-fonts";
+import { ChaosFonts } from "@/app/components/chaos-fonts";
 import DotGrid from "@/components/DotGrid";
 import { Button } from "@/components/ui/button";
 import { HERO_TRANSITION } from "@/lib/constants";

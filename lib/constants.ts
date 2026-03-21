@@ -1,4 +1,3 @@
-import { delay } from "framer-motion";
 import type { FontCategory } from "@/lib/pairings";
 
 export const DISPLAY_TEXT = "Three fonts";
@@ -68,6 +67,8 @@ export const SOCIAL_LINKS = {
   },
 } as const;
 
+export const GITHUB_REPO = "kapishdima/fonttrio";
+
 export const REPULSOR = {
   radius: 150,
   maxRepulse: 30,
@@ -100,3 +101,4 @@ export const HEADER_TRANSITION = {
   duration: 0.7,
   ease: [0.34, 1.56, 0.64, 1],
 } as const
+

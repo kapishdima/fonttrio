@@ -1,7 +1,5 @@
 "use client";
 
-import { GithubIcon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 import { Moon, Sun } from "lucide-react";
 import {
 	AnimatePresence,
@@ -9,12 +7,12 @@ import {
 	useMotionValueEvent,
 	useScroll,
 } from "motion/react";
-import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { GithubStars } from "@/app/components/github-stars";
 import { Button } from "@/components/ui/button";
-import { HEADER_TRANSITION, SOCIAL_LINKS } from "@/lib/constants";
+import { HEADER_TRANSITION } from "@/lib/constants";
 
 export function Header() {
 	const [mounted, setMounted] = useState(false);
@@ -131,7 +129,7 @@ const HeaderContent = () => {
 				Fonttrio
 			</a>
 
-			<div className="flex items-center">
+			<div className="flex items-center pr-2">
 				<nav className="flex items-center gap-0.5 pr-2">
 					<a
 						href="/redesign/04/pairs"
@@ -148,26 +146,12 @@ const HeaderContent = () => {
 				</nav>
 
 				<div className="w-px h-5 bg-white/15 mr-2" />
-				<Button size="xs" className="text-xs rounded-full tracking-tight mr-2">
+				<Button size="xs" className="text-xs rounded-full tracking-tight">
 					Sponsor
 				</Button>
 
-				<Link
-					href={SOCIAL_LINKS.github.url}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="text-white/60 hover:text-white cursor-pointer"
-					aria-label={SOCIAL_LINKS.github.label}
-				>
-					<HugeiconsIcon
-						icon={GithubIcon}
-						size={16}
-						color="currentColor"
-						strokeWidth={1.5}
-						aria-hidden="true"
-					/>
-				</Link>
 				<ThemeToggle />
+				<GithubStars />
 			</div>
 		</>
 	);

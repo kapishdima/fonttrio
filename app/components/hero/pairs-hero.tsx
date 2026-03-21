@@ -1,7 +1,7 @@
 import { Search01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { PairFilter } from "@/app/components/v2/pairs/pairs-filter";
-import { RotatingSpecimen } from "@/app/components/v2/rotating-specimen";
+import { PairFilter } from "@/app/components/pairs/pairs-filter";
+import { RotatingSpecimen } from "@/app/components/rotating-specimen";
 import {
 	InputGroup,
 	InputGroupAddon,

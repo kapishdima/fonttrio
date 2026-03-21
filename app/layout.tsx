@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bebas_Neue } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/next";
@@ -8,9 +8,9 @@ import { NuqsAdapter } from "nuqs/adapters/next";
 import { Suspense } from "react";
 import { AllFontsLoader } from "./components/all-fonts-loader";
 
-const bebasNeue = Bebas_Neue({
-	weight: "400",
-	variable: "--font-bebas-neue",
+const manrope = Manrope({
+	weight: ["400", "500", "600", "700"],
+	variable: "--font-manrope",
 	subsets: ["latin"],
 	display: "swap",
 });
@@ -71,7 +71,7 @@ export default function RootLayout({
 				/>
 				<AllFontsLoader />
 			</head>
-			<body className={`${bebasNeue.variable} antialiased`}>
+			<body className={`${manrope.variable} antialiased`}>
 				<NextThemesProvider
 					attribute="class"
 					defaultTheme="system"

@@ -2,7 +2,7 @@
 
 import { motion, useCycle, useInView, useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useRef } from "react";
-import { RotatingSpecimen } from "@/app/components/v2/rotating-specimen";
+import { RotatingSpecimen } from "@/app/components/rotating-specimen";
 import { Button } from "@/components/ui/button";
 
 const containerVariants = {
