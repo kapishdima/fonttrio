@@ -1,13 +1,12 @@
 "use client";
 
-import { Search } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import {
 	motion,
 	useReducedMotion,
 	useScroll,
 	useTransform,
 } from "motion/react";
-import Link from "next/link";
 import { useRef } from "react";
 import { ChaosFonts } from "@/app/components/v2/chaos-fonts";
 import DotGrid from "@/components/DotGrid";
@@ -123,13 +122,15 @@ export function Hero() {
 										transition={{ type: "spring", duration: 0.15, bounce: 0 }}
 									>
 										<Button
-											asChild
 											className="text-base font-['Manrope'] justify-between font-medium h-12 w-48 px-6 rounded-full cursor-pointer"
+											onClick={() => {
+												document
+													.querySelector('[aria-label="Playground"]')
+													?.scrollIntoView({ behavior: "smooth" });
+											}}
 										>
-											<Link href="/redesign/04/pairs">
-												Find font
-												<Search aria-hidden="true" className="shrink-0" />
-											</Link>
+											Try it now
+											<ArrowDown aria-hidden="true" className="shrink-0" />
 										</Button>
 									</motion.div>
 								</div>

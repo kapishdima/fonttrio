@@ -45,7 +45,7 @@ export function BestPairs() {
 				variants={prefersReducedMotion ? reducedVariants : titleVariants}
 				initial="hidden"
 				whileInView="visible"
-				viewport={{ once: true, margin: "-200px" }}
+				viewport={{ once: true, margin: "-100px" }}
 			>
 				Popular font pairs
 				<br />
@@ -60,7 +60,10 @@ export function BestPairs() {
 				viewport={{ once: true, margin: "-100px" }}
 			>
 				{pairings.map((pairing) => (
-					<motion.div key={pairing.name} variants={prefersReducedMotion ? reducedVariants : cardVariants}>
+					<motion.div
+						key={pairing.name}
+						variants={prefersReducedMotion ? reducedVariants : cardVariants}
+					>
 						<PairCard pairing={pairing} />
 					</motion.div>
 				))}

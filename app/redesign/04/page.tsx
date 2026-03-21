@@ -6,6 +6,7 @@ import { Footer } from "@/app/components/v2/footer";
 import { Header } from "@/app/components/v2/header";
 import { Hero } from "@/app/components/v2/hero";
 import { HowItWorks } from "@/app/components/v2/how-it-works";
+import { Playground } from "@/app/components/v2/playground";
 import { SponsorsMarquee } from "@/app/components/v2/sponsors-marquee";
 import { XTestimonials } from "@/app/components/v2/x-testimonials";
 import { useLenis } from "@/lib/hooks/v2/use-lenis";
@@ -19,6 +20,7 @@ export default function Redesign04() {
 			<Hero />
 			<SponsorsMarquee />
 			<HowItWorks />
+			<Playground />
 			<BestPairs />
 			<XTestimonials />
 			<Faq />
