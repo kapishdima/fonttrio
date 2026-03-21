@@ -9,19 +9,15 @@ import {
 	Trash2,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { useClickAway } from "@uidotdev/usehooks";
 import {
 	AnimatePresence,
 	motion,
 	useCycle,
 	useReducedMotion,
 } from "motion/react";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
+import React, { Fragment, useEffect, useState } from "react";
 import { InnerHeader } from "@/app/components/v2/header";
 import { PairFullCard } from "@/app/components/v2/pair-card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Field, FieldLabel, FieldTitle } from "@/components/ui/field";
 import {
@@ -36,10 +32,6 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
-import { usePackageManagerContext } from "@/lib/contexts/package-manager-context";
-import { useLazyFontLoad } from "@/lib/hooks/use-lazy-font-load";
-import { buildInstallCommand } from "@/lib/package-managers";
-import type { PairingData } from "@/lib/pairings";
 import { getAllPairings } from "@/lib/pairings";
 
 export default function Redesign04Pairs() {
@@ -144,7 +136,7 @@ function PairsHero() {
 						<div className="flex flex-col max-w-lg w-full">
 							<InputGroup className="h-10 mt-6 pl-2 bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 font-['Manrope'] font-medium rounded-xl">
 								<InputGroupInput
-									placeholder="exp, blog about architecture"
+									placeholder="e.g., blog about architecture"
 									aria-label="Search font pairings"
 								/>
 								<InputGroupAddon>
@@ -201,7 +193,7 @@ function FilterPill() {
 				className={`bg-neutral-950 backdrop-blur-md border border-white/10 flex flex-col overflow-hidden rounded-full z-0 px-2 py-1.5 w-[20vw]`}
 				transition={{ layout: { duration: 0.3, type: "spring", bounce: 0 } }}
 			>
-				<InputGroup className="border-none text-white ">
+				<InputGroup className="border-none text-white rounded-full">
 					<InputGroupAddon>
 						<HugeiconsIcon
 							icon={Search01Icon}

@@ -364,9 +364,6 @@ function ActiveFullPair({
 				transition={{ delay: 0.2 }}
 				className="mt-4 dark:bg-neutral-900/50 bg-neutral-50 rounded-lg p-3"
 			>
-				{/* <p className="text-sm tracking-wider dark:text-neutral-500 text-neutral-500 font-medium font-['Manrope'] mb-2.5">
-					Type Scale
-				</p> */}
 				{/* Column headers */}
 				<div className="grid grid-cols-[1fr_1fr_0.8fr_0.8fr] gap-x-2 mb-1.5 pb-1.5 border-b dark:border-neutral-800 border-neutral-200">
 					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-['Manrope'] font-medium">
@@ -408,7 +405,7 @@ function ActiveFullPair({
 				</div>
 			</motion.div>
 
-			<p className="font-['Manrope'] font-medium tracking-tighter text-neutral-900 mt-4 mb-2">
+			<p className="font-['Manrope'] font-medium tracking-tighter dark:text-neutral-100 text-neutral-900 mt-4 mb-2">
 				Installation
 			</p>
 			<motion.code

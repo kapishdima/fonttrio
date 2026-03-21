@@ -1,5 +1,7 @@
 "use client";
 
+import { TestimonialSpotlight } from "@/components/testimonial-spotlight/testimonial-spotlight";
+
 const marqueeStyles = `
 @keyframes marquee-scroll {
   0% {
@@ -139,13 +141,30 @@ export function TestimonialMarquee({
 			<div className="pb-px">
 				<Marquee direction="left" speed={speed} pauseOnHover={pauseOnHover}>
 					{firstRow.map((testimonial) => (
-						<TestimonialCard key={testimonial.name} {...testimonial} />
+						<TestimonialSpotlight
+							className="w-[25vw] max-w-full"
+							key={testimonial.username}
+							authorAvatar={testimonial.avatar ?? ""}
+							authorName={testimonial.name}
+							authorTagline={testimonial.username}
+							url={testimonial.url ?? ""}
+							quote={testimonial.content}
+						/>
 					))}
 				</Marquee>
 			</div>
 			<Marquee direction="right" speed={speed} pauseOnHover={pauseOnHover}>
 				{secondRow.map((testimonial) => (
-					<TestimonialCard key={testimonial.name} {...testimonial} />
+					<TestimonialSpotlight
+						className="w-[25vw] max-w-full"
+						key={testimonial.username}
+						authorAvatar={testimonial.avatar ?? ""}
+						authorName={testimonial.name}
+						authorTagline={testimonial.username}
+						url={testimonial.url ?? ""}
+						quote={testimonial.content}
+					/>
+					// <TestimonialCard key={testimonial.name} {...testimonial} />
 				))}
 			</Marquee>
 		</div>
