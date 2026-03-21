@@ -86,7 +86,7 @@ export function RotatingSpecimen({
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
 					transition={{ duration: 0.25, ease: "easeOut" }}
-					className="text-xs font-[Manrope] font-medium dark:text-neutral-500 text-neutral-400"
+					className="text-xs font-medium dark:text-neutral-500 text-neutral-400"
 				>
 					{current.name}
 				</motion.span>

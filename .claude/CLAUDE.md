@@ -125,7 +125,7 @@ fonttrio/
 --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 ```
 
-В контенте страниц используются Outfit (заголовки) и Manrope (текст) через `font-[Outfit]` / `font-[Manrope]`.
+В контенте страниц используются Outfit (заголовки) через `font-[Outfit]`. Manrope — дефолтный sans-шрифт через `--font-sans`, не нужно указывать явно.
 
 ### DotGrid — параметры по умолчанию
 

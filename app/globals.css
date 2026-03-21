@@ -99,8 +99,7 @@
   --color-surface: var(--surface);
   --color-surface-hover: color-mix(in oklch, var(--surface) 80%, var(--foreground) 20%);
 
-  --font-display: var(--font-bebas-neue), system-ui, sans-serif;
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-manrope), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   --color-background: var(--background);
@@ -159,7 +158,7 @@ html.dark {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  @apply font-sans;
 }
 
 ::selection {

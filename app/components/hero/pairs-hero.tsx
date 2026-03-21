@@ -14,11 +14,11 @@ export function PairsHero() {
 			<section className="w-full h-full flex flex-col justify-center dark:bg-neutral-950 bg-white rounded-4xl pb-[5vh] px-6 md:px-12 lg:px-24 py-12 lg:py-0">
 				<div className="flex items-center justify-between mb-10">
 					<div>
-						<h2 className="font-[Manrope] text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 dark:text-white tracking-tight text-balance">
+						<h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 dark:text-white tracking-tight text-balance">
 							Search for the perfect font pairings
 						</h2>
 						<div className="flex flex-col max-w-lg w-full">
-							<InputGroup className="h-10 mt-6 pl-2 bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 font-['Manrope'] font-medium rounded-xl">
+							<InputGroup className="h-10 mt-6 pl-2 bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 font-medium rounded-xl">
 								<InputGroupInput
 									placeholder="e.g., blog about architecture"
 									aria-label="Search font pairings"

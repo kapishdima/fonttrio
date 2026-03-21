@@ -73,11 +73,11 @@ export function FontFullCard({ font }: FontFullCardProps) {
 				<div className="px-6 py-2.5 border-t dark:border-neutral-900/50 border-neutral-200 flex items-center gap-2">
 					<Badge
 						variant="secondary"
-						className="text-[10px] rounded-md font-['Manrope'] font-medium capitalize"
+						className="text-[10px] rounded-md font-medium capitalize"
 					>
 						{category}
 					</Badge>
-					<span className="text-xs dark:text-neutral-500 text-neutral-400 font-['Manrope'] font-medium tabular-nums">
+					<span className="text-xs dark:text-neutral-500 text-neutral-400 font-medium tabular-nums">
 						{font.font.weight.length} weights
 					</span>
 				</div>
@@ -162,20 +162,20 @@ function ActiveFontDetail({
 			>
 				<Badge
 					variant="secondary"
-					className="text-xs rounded-md font-['Manrope'] font-medium capitalize"
+					className="text-xs rounded-md font-medium capitalize"
 				>
 					{category}
 				</Badge>
 				<Badge
 					variant="secondary"
-					className="text-xs rounded-md font-['Manrope'] font-medium"
+					className="text-xs rounded-md font-medium"
 				>
 					{font.font.weight.length} weights
 				</Badge>
 				{font.font.provider === "google" && (
 					<Badge
 						variant="secondary"
-						className="text-xs rounded-md font-['Manrope'] font-medium"
+						className="text-xs rounded-md font-medium"
 					>
 						Google Fonts
 					</Badge>
@@ -190,7 +190,7 @@ function ActiveFontDetail({
 				transition={{ delay: 0.15 }}
 				className="mt-4 dark:bg-neutral-900/50 bg-neutral-50 rounded-lg p-4 space-y-3"
 			>
-				<p className="text-xs dark:text-neutral-500 text-neutral-500 font-['Manrope'] font-medium mb-2">
+				<p className="text-xs dark:text-neutral-500 text-neutral-500 font-medium mb-2">
 					Weights
 				</p>
 				{font.font.weight.map((w) => (
@@ -216,7 +216,7 @@ function ActiveFontDetail({
 				transition={{ delay: 0.2 }}
 				className="mt-4"
 			>
-				<p className="text-xs dark:text-neutral-500 text-neutral-500 font-['Manrope'] font-medium mb-2">
+				<p className="text-xs dark:text-neutral-500 text-neutral-500 font-medium mb-2">
 					Language support
 				</p>
 				<div className="flex flex-wrap gap-1">
@@ -226,7 +226,7 @@ function ActiveFontDetail({
 							<Badge
 								key={subset}
 								variant="outline"
-								className="text-[10px] rounded-md font-['Manrope'] font-medium capitalize"
+								className="text-[10px] rounded-md font-medium capitalize"
 							>
 								{subset.replace(/-/g, " ")}
 							</Badge>
@@ -234,7 +234,7 @@ function ActiveFontDetail({
 				</div>
 			</motion.div>
 
-			<p className="font-['Manrope'] font-medium tracking-tighter dark:text-neutral-100 text-neutral-900 mt-4 mb-2">
+			<p className="font-medium tracking-tighter dark:text-neutral-100 text-neutral-900 mt-4 mb-2">
 				Installation
 			</p>
 			<motion.code

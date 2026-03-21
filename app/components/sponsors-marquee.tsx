@@ -25,7 +25,7 @@ function LogoList() {
 			<div className={gridCard}>
 				<a
 					href="/sponsors"
-					className="font-['Manrope'] text-md font-bold tracking-tight darkLtext-white hover:text-white/80"
+					className="text-md font-bold tracking-tight darkLtext-white hover:text-white/80"
 				>
 					Become a sponsor
 				</a>
@@ -40,7 +40,7 @@ export function SponsorsMarquee() {
 			aria-label="Sponsors"
 			className="py-16 px-24 overflow-hidden dark:bg-black bg-white"
 		>
-			<h2 className="font-['Manrope'] text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance">
+			<h2 className="text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance">
 				Huge thanks to <br /> my amazing sponsors!
 			</h2>
 			<LogoList />

@@ -73,7 +73,7 @@ export function Playground() {
 		>
 			{/* Heading */}
 			<motion.h2
-				className="font-['Manrope'] text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
+				className="text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
 				variants={prefersReducedMotion ? reducedVariants : titleVariants}
 				initial="hidden"
 				whileInView="visible"
@@ -82,7 +82,7 @@ export function Playground() {
 				Try it with your text
 			</motion.h2>
 			<motion.p
-				className="font-['Manrope'] text-base dark:text-neutral-400 text-neutral-500 mt-3 mb-10 max-w-xl"
+				className="text-base dark:text-neutral-400 text-neutral-500 mt-3 mb-10 max-w-xl"
 				variants={prefersReducedMotion ? reducedVariants : titleVariants}
 				initial="hidden"
 				whileInView="visible"
@@ -104,7 +104,7 @@ export function Playground() {
 							key={p.name}
 							type="button"
 							onClick={() => setActivePairing(p)}
-							className={`shrink-0 px-4 py-2 rounded-full text-sm font-['Manrope'] font-medium transition-colors border cursor-pointer ${
+							className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border cursor-pointer ${
 								activePairing.name === p.name
 									? "dark:bg-white dark:text-black bg-neutral-900 text-white border-transparent"
 									: "dark:bg-neutral-900 dark:text-neutral-400 bg-white text-neutral-600 dark:border-neutral-800 border-neutral-200 dark:hover:text-white hover:text-neutral-900"
@@ -130,10 +130,10 @@ export function Playground() {
 							{/* Heading */}
 							<div className="dark:bg-neutral-950 bg-white px-6 pt-4 pb-6 flex flex-col gap-3">
 								<div className="flex items-center justify-between">
-									<span className="text-[11px] font-['Manrope'] font-semibold tracking-wider dark:text-neutral-500 text-neutral-400 uppercase">
+									<span className="text-[11px] font-semibold tracking-wider dark:text-neutral-500 text-neutral-400 uppercase">
 										Heading
 									</span>
-									<span className="text-[11px] font-['Manrope'] dark:text-neutral-600 text-neutral-400">
+									<span className="text-[11px] dark:text-neutral-600 text-neutral-400">
 										{activePairing.heading}
 									</span>
 								</div>
@@ -153,10 +153,10 @@ export function Playground() {
 							{/* Body */}
 							<div className="dark:bg-neutral-950 bg-white px-6 pt-4 pb-6 flex flex-col gap-3">
 								<div className="flex items-center justify-between">
-									<span className="text-[11px] font-['Manrope'] font-semibold tracking-wider dark:text-neutral-500 text-neutral-400 uppercase">
+									<span className="text-[11px] font-semibold tracking-wider dark:text-neutral-500 text-neutral-400 uppercase">
 										Body
 									</span>
-									<span className="text-[11px] font-['Manrope'] dark:text-neutral-600 text-neutral-400">
+									<span className="text-[11px] dark:text-neutral-600 text-neutral-400">
 										{activePairing.body}
 									</span>
 								</div>
@@ -176,10 +176,10 @@ export function Playground() {
 							{/* Mono */}
 							<div className="dark:bg-neutral-950 bg-white px-6 pt-4 pb-6 flex flex-col gap-3">
 								<div className="flex items-center justify-between">
-									<span className="text-[11px] font-['Manrope'] font-semibold tracking-wider dark:text-neutral-500 text-neutral-400 uppercase">
+									<span className="text-[11px] font-semibold tracking-wider dark:text-neutral-500 text-neutral-400 uppercase">
 										Code
 									</span>
-									<span className="text-[11px] font-['Manrope'] dark:text-neutral-600 text-neutral-400">
+									<span className="text-[11px] dark:text-neutral-600 text-neutral-400">
 										{activePairing.mono}
 									</span>
 								</div>
@@ -205,7 +205,7 @@ export function Playground() {
 									<Badge
 										key={m}
 										variant="secondary"
-										className="text-xs rounded-md font-['Manrope'] font-medium tracking-tighter"
+										className="text-xs rounded-md font-medium tracking-tighter"
 									>
 										{m}
 									</Badge>
@@ -218,7 +218,7 @@ export function Playground() {
 								<button
 									type="button"
 									onClick={handleReset}
-									className="flex items-center gap-1.5 text-xs font-['Manrope'] font-medium dark:text-neutral-500 text-neutral-400 dark:hover:text-neutral-300 hover:text-neutral-600 transition-colors cursor-pointer"
+									className="flex items-center gap-1.5 text-xs font-medium dark:text-neutral-500 text-neutral-400 dark:hover:text-neutral-300 hover:text-neutral-600 transition-colors cursor-pointer"
 									aria-label="Reset text to defaults"
 								>
 									<RotateCcw className="size-3" />
@@ -232,10 +232,10 @@ export function Playground() {
 								className="flex items-center gap-2 shrink-0 px-3 py-1.5 rounded-lg dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 dark:hover:bg-neutral-800/50 hover:bg-neutral-200 transition-colors cursor-pointer group"
 								aria-label={`Copy install command: ${command}`}
 							>
-								<code className="text-xs font-['Manrope'] font-medium dark:text-neutral-300 text-neutral-600 hidden sm:inline">
+								<code className="text-xs font-medium dark:text-neutral-300 text-neutral-600 hidden sm:inline">
 									{command}
 								</code>
-								<code className="text-xs font-['Manrope'] font-medium dark:text-neutral-300 text-neutral-600 sm:hidden">
+								<code className="text-xs font-medium dark:text-neutral-300 text-neutral-600 sm:hidden">
 									Copy command
 								</code>
 								<span className="dark:text-neutral-500 text-neutral-400 group-hover:dark:text-neutral-300 group-hover:text-neutral-600 transition-colors">

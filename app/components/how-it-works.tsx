@@ -148,20 +148,20 @@ function PreviewMockup() {
 			<div className="p-4">
 				<motion.p
 					variants={previewLineVariants}
-					className="font-['Manrope'] text-2xl font-bold dark:text-neutral-100 text-neutral-900 tracking-tight"
+					className="text-2xl font-bold dark:text-neutral-100 text-neutral-900 tracking-tight"
 				>
 					The quick fox
 				</motion.p>
 				<motion.p
 					variants={previewLineVariants}
-					className="font-['Manrope'] text-xs dark:text-neutral-400 text-neutral-500 mt-1 leading-relaxed"
+					className="text-xs dark:text-neutral-400 text-neutral-500 mt-1 leading-relaxed"
 				>
 					Typography defines the voice of your content. Choose a pair that
 					speaks for your brand.
 				</motion.p>
 				<motion.p
 					variants={previewLineVariants}
-					className="font-['Manrope'] text-xs font-medium p-2 rounded-md mt-2 dark:bg-neutral-950/50 bg-neutral-200/50 dark:text-white text-neutral-800"
+					className="text-xs font-medium p-2 rounded-md mt-2 dark:bg-neutral-950/50 bg-neutral-200/50 dark:text-white text-neutral-800"
 				>
 					bun shadcn@latest add @fonttrio/editorial
 				</motion.p>
@@ -191,7 +191,7 @@ function TerminalMockup() {
 				<div className="size-2 rounded-full bg-yellow-400" />
 				<div className="size-2 rounded-full bg-green-400" />
 			</div>
-			<div className="p-4 font-['Manrope'] text-xs font-semibold tracking-tight space-y-1.5">
+			<div className="p-4 text-xs font-semibold tracking-tight space-y-1.5">
 				<motion.p
 					variants={terminalLineVariants}
 					className="dark:text-neutral-200 text-neutral-700"
@@ -245,7 +245,7 @@ export function HowItWorks() {
 			className="py-16 pt-24 px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white relative"
 		>
 			<motion.h2
-				className="font-['Manrope'] text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
+				className="text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
 				variants={titleVariants}
 				initial="hidden"
 				whileInView="visible"
@@ -266,16 +266,16 @@ export function HowItWorks() {
 					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
 					variants={cardVariants}
 				>
-					<span className="text-xs font-bold font-['Manrope'] tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
+					<span className="text-xs font-bold tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
 						01
 					</span>
 
 					<RotatingSpecimen containerClassName="w-full" interval={3000} />
 
-					<h3 className="font-['Manrope'] text-2xl dark:text-white text-neutral-900 font-semibold tracking-tight leading-snug">
+					<h3 className="text-2xl dark:text-white text-neutral-900 font-semibold tracking-tight leading-snug">
 						Browse curated pairs
 					</h3>
-					<p className="font-['Manrope'] text-sm dark:text-neutral-400 text-neutral-500 leading-relaxed -mt-3">
+					<p className="text-sm dark:text-neutral-400 text-neutral-500 leading-relaxed -mt-3">
 						Hand-picked heading, body, and mono combinations tested for
 						contrast, rhythm, and legibility across every size.
 					</p>
@@ -287,14 +287,14 @@ export function HowItWorks() {
 					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
 					variants={cardVariants}
 				>
-					<span className="text-xs font-bold font-['Manrope'] tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
+					<span className="text-xs font-bold tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
 						02
 					</span>
 
-					<h3 className="font-['Manrope'] text-2xl dark:text-white text-neutral-900 font-semibold tracking-tight leading-snug">
+					<h3 className="text-2xl dark:text-white text-neutral-900 font-semibold tracking-tight leading-snug">
 						Preview with your content
 					</h3>
-					<p className="font-['Manrope'] text-sm dark:text-neutral-400 text-neutral-500 leading-relaxed -mt-3">
+					<p className="text-sm dark:text-neutral-400 text-neutral-500 leading-relaxed -mt-3">
 						See headings, body copy, and code blocks rendered side by side
 						before committing to a pair.
 					</p>
@@ -307,16 +307,16 @@ export function HowItWorks() {
 					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
 					variants={cardVariants}
 				>
-					<span className="text-xs font-bold font-['Manrope'] tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
+					<span className="text-xs font-bold tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
 						03
 					</span>
 
 					<TerminalMockup />
 
-					<h3 className="font-['Manrope'] text-2xl dark:text-white text-neutral-900 font-semibold tracking-tight leading-snug">
+					<h3 className="text-2xl dark:text-white text-neutral-900 font-semibold tracking-tight leading-snug">
 						Install with one command
 					</h3>
-					<p className="font-['Manrope'] text-sm dark:text-neutral-400 text-neutral-500 leading-relaxed -mt-3">
+					<p className="text-sm dark:text-neutral-400 text-neutral-500 leading-relaxed -mt-3">
 						One shadcn command adds fonts, CSS variables, and a full typography
 						scale. Nothing manual — everything configured.
 					</p>

@@ -99,21 +99,21 @@ export function TestimonialCard({
 					/>
 				) : (
 					<div className="w-10 h-10 rounded-full dark:bg-linear-to-br dark:from-zinc-700 dark:to-zinc-800 bg-neutral-100 flex items-center justify-center dark:border-zinc-700/50 border-neutral-200 border">
-						<span className="text-sm font-medium font-['Manrope'] tracking-tighter dark:text-zinc-300 text-neutral-600">
+						<span className="text-sm font-medium tracking-tighter dark:text-zinc-300 text-neutral-600">
 							{name?.charAt(0)?.toUpperCase() || "?"}
 						</span>
 					</div>
 				)}
 				<div className="flex flex-col">
-					<span className="text-sm font-bold font-['Manrope'] dark:text-zinc-200 text-neutral-800">
+					<span className="text-sm font-bold dark:text-zinc-200 text-neutral-800">
 						{name}
 					</span>
-					<span className="text-xs font-['Manrope'] dark:text-zinc-500 text-neutral-500">
+					<span className="text-xs dark:text-zinc-500 text-neutral-500">
 						{username}
 					</span>
 				</div>
 			</div>
-			<p className="text-sm font-medium font-['Manrope'] dark:text-zinc-400 text-neutral-600 leading-normal text-balance">
+			<p className="text-sm font-medium dark:text-zinc-400 text-neutral-600 leading-normal text-balance">
 				{content}
 			</p>
 		</a>

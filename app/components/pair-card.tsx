@@ -147,7 +147,7 @@ function ActiveFullPair({
 					<Badge
 						key={m}
 						variant="secondary"
-						className="text-xs rounded-md font-['Manrope'] font-medium tracking-tighter"
+						className="text-xs rounded-md font-medium tracking-tighter"
 					>
 						{m}
 					</Badge>
@@ -156,7 +156,7 @@ function ActiveFullPair({
 					<Badge
 						key={u}
 						variant="secondary"
-						className="text-xs rounded-md font-['Manrope'] font-medium tracking-tighter"
+						className="text-xs rounded-md font-medium tracking-tighter"
 					>
 						{u}
 					</Badge>
@@ -165,7 +165,7 @@ function ActiveFullPair({
 
 			<motion.p
 				layoutId={`description-${pair.name}`}
-				className="font-['Manrope'] text-sm dark:text-neutral-400 text-neutral-600 line-clamp-2 font-medium leading-normal"
+				className="text-sm dark:text-neutral-400 text-neutral-600 line-clamp-2 font-medium leading-normal"
 			>
 				{pair.description}
 			</motion.p>
@@ -189,7 +189,7 @@ function ActiveFullPair({
 						key={item.label}
 						className="dark:bg-neutral-900/50 bg-neutral-50 rounded-lg p-3"
 					>
-						<p className="text-xs dark:text-neutral-500 text-neutral-500 font-['Manrope'] font-medium">
+						<p className="text-xs dark:text-neutral-500 text-neutral-500 font-medium">
 							{item.label}
 						</p>
 						<p
@@ -212,16 +212,16 @@ function ActiveFullPair({
 			>
 				{/* Column headers */}
 				<div className="grid grid-cols-[1fr_1fr_0.8fr_0.8fr] gap-x-2 mb-1.5 pb-1.5 border-b dark:border-neutral-800 border-neutral-200">
-					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-['Manrope'] font-medium">
+					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-medium">
 						Level
 					</span>
-					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-['Manrope'] font-medium">
+					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-medium">
 						Size
 					</span>
-					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-['Manrope'] font-medium">
+					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-medium">
 						Weight
 					</span>
-					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-['Manrope'] font-medium">
+					<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-medium">
 						LH
 					</span>
 				</div>
@@ -251,7 +251,7 @@ function ActiveFullPair({
 				</div>
 			</motion.div>
 
-			<p className="font-['Manrope'] font-medium tracking-tighter dark:text-neutral-100 text-neutral-900 mt-4 mb-2">
+			<p className="font-medium tracking-tighter dark:text-neutral-100 text-neutral-900 mt-4 mb-2">
 				Installation
 			</p>
 			<motion.code

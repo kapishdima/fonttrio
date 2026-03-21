@@ -124,7 +124,7 @@ const HeaderContent = () => {
 		<>
 			<a
 				href="/redesign/04"
-				className="text-white font-['Manrope'] font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+				className="text-white font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
 			>
 				Fonttrio
 			</a>
@@ -133,13 +133,13 @@ const HeaderContent = () => {
 				<nav className="flex items-center gap-0.5 pr-2">
 					<a
 						href="/redesign/04/pairs"
-						className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+						className="text-white/60 hover:text-white text-xs font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
 					>
 						Pairings
 					</a>
 					<a
 						href="/redesign/04/fonts"
-						className="text-white/60 hover:text-white text-xs font-['Manrope'] font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+						className="text-white/60 hover:text-white text-xs font-medium tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
 					>
 						Fonts
 					</a>

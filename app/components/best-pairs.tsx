@@ -41,7 +41,7 @@ export function BestPairs() {
 	return (
 		<section className="py-16 pt-24 px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white relative">
 			<motion.h2
-				className="font-['Manrope'] text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance mb-10"
+				className="text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance mb-10"
 				variants={prefersReducedMotion ? reducedVariants : titleVariants}
 				initial="hidden"
 				whileInView="visible"

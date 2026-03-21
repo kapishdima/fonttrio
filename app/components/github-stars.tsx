@@ -40,7 +40,7 @@ export const GithubStars = () => {
 				strokeWidth={1.5}
 				aria-hidden="true"
 			/>
-			<span className=" text-xs tracking-tighter font-['Manrope'] font-medium">
+			<span className=" text-xs tracking-tighter font-medium">
 				{count}
 			</span>
 		</Link>

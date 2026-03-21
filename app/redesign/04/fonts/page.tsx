@@ -101,15 +101,15 @@ function FontsHero({
 			<section className="w-full h-full flex flex-col justify-center dark:bg-neutral-950 bg-white rounded-4xl pb-[5vh] px-6 md:px-12 lg:px-24 py-12 lg:py-0">
 				<div className="flex items-center justify-between mb-10">
 					<div>
-						<h2 className="font-[Manrope] text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 dark:text-white tracking-tight text-balance">
+						<h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 dark:text-white tracking-tight text-balance">
 							Browse fonts
 						</h2>
-						<p className="font-[Manrope] font-medium text-sm dark:text-neutral-400 text-neutral-500 mt-2">
+						<p className="font-medium text-sm dark:text-neutral-400 text-neutral-500 mt-2">
 							{totalCount.toLocaleString()}+ fonts. Install any with a single
 							command.
 						</p>
 						<div className="flex flex-col max-w-lg w-full">
-							<InputGroup className="h-10 mt-6 pl-2 bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 font-['Manrope'] font-medium rounded-xl">
+							<InputGroup className="h-10 mt-6 pl-2 bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 font-medium rounded-xl">
 								<InputGroupInput
 									placeholder="Search fonts..."
 									value={searchQuery ?? ""}
@@ -282,7 +282,7 @@ function FontsList({
 			<section className="w-full h-full dark:bg-neutral-950 bg-white rounded-4xl py-16 px-6 md:px-12 lg:px-24">
 				{filteredCount === 0 ? (
 					<div className="py-24 text-center">
-						<p className="dark:text-neutral-400 text-neutral-500 text-sm font-['Manrope'] font-medium">
+						<p className="dark:text-neutral-400 text-neutral-500 text-sm font-medium">
 							No fonts found.
 						</p>
 					</div>
@@ -345,7 +345,7 @@ function PaginationBar({
 			<Button
 				variant="ghost"
 				size="sm"
-				className="rounded-full font-['Manrope'] font-medium text-xs"
+				className="rounded-full font-medium text-xs"
 				disabled={currentPage === 1}
 				onClick={() => goTo(currentPage - 1)}
 			>
@@ -365,7 +365,7 @@ function PaginationBar({
 						key={p}
 						variant={currentPage === p ? "default" : "ghost"}
 						size="icon"
-						className="h-8 w-8 rounded-full font-['Manrope'] font-medium text-xs tabular-nums"
+						className="h-8 w-8 rounded-full font-medium text-xs tabular-nums"
 						onClick={() => goTo(p)}
 					>
 						{p}
@@ -376,7 +376,7 @@ function PaginationBar({
 			<Button
 				variant="ghost"
 				size="sm"
-				className="rounded-full font-['Manrope'] font-medium text-xs"
+				className="rounded-full font-medium text-xs"
 				disabled={currentPage === totalPages}
 				onClick={() => goTo(currentPage + 1)}
 			>

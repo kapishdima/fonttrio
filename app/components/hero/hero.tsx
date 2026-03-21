@@ -80,7 +80,7 @@ export function Hero() {
 						>
 							<motion.h1
 								id="title"
-								className="text-9xl font-medium tracking-tight dark:text-white text-[#2C2C2A] font-['Manrope'] text-center leading-30 text-balance"
+								className="text-9xl font-medium tracking-tight dark:text-white text-[#2C2C2A] text-center leading-30 text-balance"
 								variants={
 									prefersReducedMotion ? heroVariantsReduced : heroVariants
 								}
@@ -122,7 +122,7 @@ export function Hero() {
 										transition={{ type: "spring", duration: 0.15, bounce: 0 }}
 									>
 										<Button
-											className="text-base font-['Manrope'] justify-between font-medium h-12 w-48 px-6 rounded-full cursor-pointer"
+											className="text-base justify-between font-medium h-12 w-48 px-6 rounded-full cursor-pointer"
 											onClick={() => {
 												document
 													.querySelector('[aria-label="Playground"]')
