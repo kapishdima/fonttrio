@@ -4,7 +4,7 @@ import { Check, Copy, RotateCcw } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useCallback, useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
-import { usePackageManagerContext } from "@/lib/contexts/package-manager-context";
+import { useCommandInstallation } from "@/hooks/use-command-installation";
 import { buildInstallCommand } from "@/lib/package-managers";
 import { getAllPairings } from "@/lib/pairings";
 
@@ -47,8 +47,7 @@ export function Playground() {
 	const [copied, setCopied] = useState(false);
 	const prefersReducedMotion = useReducedMotion();
 
-	const { packageManager } = usePackageManagerContext();
-	const command = buildInstallCommand(activePairing.name, packageManager);
+	const command = useCommandInstallation(activePairing.name);
 
 	const isDefault =
 		headingText === DEFAULT_HEADING &&

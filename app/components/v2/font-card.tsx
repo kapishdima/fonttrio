@@ -4,14 +4,17 @@ import { useClickAway } from "@uidotdev/usehooks";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { Badge } from "@/components/ui/badge";
-import { usePackageManagerContext } from "@/lib/contexts/package-manager-context";
 import {
-	parseFontCategory,
-	getFontGoogleFontsUrl,
+	CodeBlockCommand,
+	convertNpmCommand,
+} from "@/components/code-block-command/code-block-command";
+import { Badge } from "@/components/ui/badge";
+import { useCommandInstallation } from "@/hooks/use-command-installation";
+import {
 	type FontItem,
+	getFontGoogleFontsUrl,
+	parseFontCategory,
 } from "@/lib/fonts";
-import { useCopyToClipboard } from "@/lib/hooks/use-copy-to-clipboard";
 import { useLazyFontLoad } from "@/lib/hooks/use-lazy-font-load";
 import { buildInstallCommand } from "@/lib/package-managers";
 
@@ -22,16 +25,12 @@ interface FontFullCardProps {
 export function FontFullCard({ font }: FontFullCardProps) {
 	const googleFontsUrl = getFontGoogleFontsUrl(font);
 	const { ref, loaded } = useLazyFontLoad(googleFontsUrl);
-	const { packageManager } = usePackageManagerContext();
-	const command = buildInstallCommand(font.name, packageManager);
-	const { copied, copy } = useCopyToClipboard(command);
 	const category = parseFontCategory(font);
+	const command = useCommandInstallation(font.name);
 
 	const [opened, setOpened] = useState(false);
 
-	const fontFamily = loaded
-		? `"${font.font.family}", ${category}`
-		: "inherit";
+	const fontFamily = loaded ? `"${font.font.family}", ${category}` : "inherit";
 
 	return (
 		<>
@@ -86,32 +85,19 @@ export function FontFullCard({ font }: FontFullCardProps) {
 				{/* Install command */}
 				<button
 					type="button"
-					onClick={(e) => {
-						e.stopPropagation();
-						copy(e);
-					}}
 					className="w-full flex items-center gap-2 px-6 py-3 border-t dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-900/50 bg-neutral-50 dark:hover:bg-neutral-800/50 hover:bg-neutral-100 text-left transition-colors min-h-[44px]"
 					aria-label={`Copy install command for ${font.title}`}
 				>
 					<code className="flex-1 truncate dark:text-neutral-400 text-neutral-500 font-medium text-xs font-mono">
 						{command}
 					</code>
-					<span
-						className="text-xs dark:text-neutral-500 text-neutral-400 shrink-0"
-						aria-hidden="true"
-					>
-						{copied ? "✓" : "⌘C"}
-					</span>
 				</button>
 			</motion.div>
 
 			<AnimatePresence>{opened ? <Overlay /> : null}</AnimatePresence>
 			<AnimatePresence>
 				{opened ? (
-					<ActiveFontDetail
-						font={font}
-						onClickAway={() => setOpened(false)}
-					/>
+					<ActiveFontDetail font={font} onClickAway={() => setOpened(false)} />
 				) : null}
 			</AnimatePresence>
 		</>
@@ -248,18 +234,19 @@ function ActiveFontDetail({
 				</div>
 			</motion.div>
 
-			{/* Install */}
 			<p className="font-['Manrope'] font-medium tracking-tighter dark:text-neutral-100 text-neutral-900 mt-4 mb-2">
 				Installation
 			</p>
 			<motion.code
-				className="px-4 py-2 dark:bg-neutral-900 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm font-medium block font-mono"
+				className="dark:bg-neutral-900 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm font-medium block font-mono"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
 				transition={{ delay: 0.3 }}
 			>
-				{buildInstallCommand(font.name, "npm")}
+				<CodeBlockCommand
+					{...convertNpmCommand(buildInstallCommand(font.name))}
+				/>
 			</motion.code>
 		</motion.div>,
 		document.body,

@@ -15,19 +15,22 @@ const SPECIMEN_FONTS = [
 
 type RotatingSpecimenProps = {
 	containerClassName?: string;
+	/** Delay in ms between font switches. Defaults to 5500 (matches terminal animation). */
+	interval?: number;
 };
 
 export function RotatingSpecimen({
 	containerClassName,
+	interval: intervalMs = 5500,
 }: RotatingSpecimenProps) {
 	const [current, cycle] = useCycle(...SPECIMEN_FONTS);
 	const shouldReduceMotion = useReducedMotion();
 
 	useEffect(() => {
 		if (shouldReduceMotion) return;
-		const interval = setInterval(cycle, 3000);
-		return () => clearInterval(interval);
-	}, [cycle, shouldReduceMotion]);
+		const id = setInterval(cycle, intervalMs);
+		return () => clearInterval(id);
+	}, [cycle, shouldReduceMotion, intervalMs]);
 
 	return (
 		<div

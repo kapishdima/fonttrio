@@ -9,11 +9,8 @@ import { HowItWorks } from "@/app/components/v2/how-it-works";
 import { Playground } from "@/app/components/v2/playground";
 import { SponsorsMarquee } from "@/app/components/v2/sponsors-marquee";
 import { XTestimonials } from "@/app/components/v2/x-testimonials";
-import { useLenis } from "@/lib/hooks/v2/use-lenis";
 
 export default function Redesign04() {
-	// useLenis();
-
 	return (
 		<main className="w-screen overflow-x-hidden bg-black">
 			<Header />

@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Heebo } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/next";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { NuqsAdapter } from "nuqs/adapters/next";
 import { Suspense } from "react";
-import { PackageManagerProvider } from "@/lib/contexts/package-manager-context";
 import { AllFontsLoader } from "./components/all-fonts-loader";
-import { FloatingFontPanel } from "./components/floating-font-panel";
-import { ThemeProvider } from "./components/theme-provider";
 
 const bebasNeue = Bebas_Neue({
 	weight: "400",
@@ -73,48 +71,17 @@ export default function RootLayout({
 				/>
 				<AllFontsLoader />
 			</head>
-			<body className={`${bebasNeue.variable}  antialiased`}>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify({
-							"@context": "https://schema.org",
-							"@type": "WebApplication",
-							name: "Fonttrio",
-							url: "https://www.fonttrio.xyz",
-							description:
-								"Curated font pairings for shadcn/ui. Install heading, body, and mono fonts with a single CLI command.",
-							applicationCategory: "DeveloperApplication",
-							operatingSystem: "Any",
-							offers: {
-								"@type": "Offer",
-								price: "0",
-								priceCurrency: "USD",
-							},
-						}),
-					}}
-				/>
-				<ThemeProvider
+			<body className={`${bebasNeue.variable} antialiased`}>
+				<NextThemesProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
 				>
 					<NuqsAdapter>
-						<Suspense fallback={null}>
-							<PackageManagerProvider>
-								<a
-									href="#main-content"
-									className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:border focus:border-border"
-								>
-									Skip to main content
-								</a>
-								{children}
-								<FloatingFontPanel />
-							</PackageManagerProvider>
-						</Suspense>
+						<Suspense fallback={null}>{children}</Suspense>
 					</NuqsAdapter>
-				</ThemeProvider>
+				</NextThemesProvider>
 				<Analytics />
 			</body>
 		</html>

@@ -1,12 +1,7 @@
 "use client";
 
-import {
-	motion,
-	useAnimation,
-	useInView,
-	useReducedMotion,
-} from "motion/react";
-import { useEffect, useRef } from "react";
+import { motion, useCycle, useInView, useReducedMotion } from "motion/react";
+import { useCallback, useEffect, useRef } from "react";
 import { RotatingSpecimen } from "@/app/components/v2/rotating-specimen";
 import { Button } from "@/components/ui/button";
 
@@ -94,50 +89,38 @@ const terminalContainerVariants = {
 	},
 } as const;
 
-/* ── Looping animation hook ── */
+/* ── Loop phase: declarative visible/hidden cycle via onAnimationComplete ── */
 
-function useLoopingAnimation({
-	isInView,
-	visibleDuration = 5000,
-	hiddenDuration = 1200,
-}: {
-	isInView: boolean;
-	visibleDuration?: number;
-	hiddenDuration?: number;
-}) {
-	const controls = useAnimation();
+function useLoopPhase(
+	isInView: boolean,
+	visibleDuration = 3000,
+	hiddenDuration = 400,
+) {
+	const [phase, cycle] = useCycle("hidden" as const, "visible" as const);
 	const shouldReduceMotion = useReducedMotion();
+	const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
 	useEffect(() => {
-		if (!isInView || shouldReduceMotion) {
-			controls.start("hidden");
-			return;
+		clearTimeout(timerRef.current);
+		if (isInView && !shouldReduceMotion) {
+			timerRef.current = setTimeout(cycle, hiddenDuration);
 		}
+		return () => clearTimeout(timerRef.current);
+	}, [isInView, shouldReduceMotion, hiddenDuration, cycle]);
 
-		let cancelled = false;
-		const wait = (ms: number) =>
-			new Promise<void>((r) => {
-				const id = setTimeout(r, ms);
-				if (cancelled) clearTimeout(id);
-			});
+	const onComplete = useCallback(
+		(definition: string) => {
+			if (!isInView || shouldReduceMotion) return;
+			clearTimeout(timerRef.current);
+			timerRef.current = setTimeout(
+				cycle,
+				definition === "visible" ? visibleDuration : hiddenDuration,
+			);
+		},
+		[isInView, shouldReduceMotion, visibleDuration, hiddenDuration, cycle],
+	);
 
-		async function loop() {
-			while (!cancelled) {
-				await controls.start("visible");
-				await wait(visibleDuration);
-				if (cancelled) break;
-				await controls.start("hidden");
-				await wait(hiddenDuration);
-			}
-		}
-
-		loop();
-		return () => {
-			cancelled = true;
-		};
-	}, [isInView, controls, shouldReduceMotion, visibleDuration, hiddenDuration]);
-
-	return controls;
+	return { phase, onComplete };
 }
 
 /* ── Preview Mockup (Card 2) ── */
@@ -145,11 +128,7 @@ function useLoopingAnimation({
 function PreviewMockup() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { margin: "-100px" });
-	const controls = useLoopingAnimation({
-		isInView,
-		visibleDuration: 5000,
-		hiddenDuration: 1500,
-	});
+	const { phase, onComplete } = useLoopPhase(isInView);
 
 	return (
 		<motion.div
@@ -157,7 +136,8 @@ function PreviewMockup() {
 			className="w-full h-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 overflow-hidden mb-1"
 			variants={previewContainerVariants}
 			initial="hidden"
-			animate={controls}
+			animate={phase}
+			onAnimationComplete={onComplete}
 		>
 			<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-800 border-neutral-200 dark:bg-neutral-900/60 bg-neutral-100/80">
 				<div className="size-2 rounded-full bg-red-400" />
@@ -195,11 +175,7 @@ function PreviewMockup() {
 function TerminalMockup() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { margin: "-100px" });
-	const controls = useLoopingAnimation({
-		isInView,
-		visibleDuration: 5500,
-		hiddenDuration: 1500,
-	});
+	const { phase, onComplete } = useLoopPhase(isInView);
 
 	return (
 		<motion.div
@@ -207,7 +183,8 @@ function TerminalMockup() {
 			className="w-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 overflow-hidden mb-1"
 			variants={terminalContainerVariants}
 			initial="hidden"
-			animate={controls}
+			animate={phase}
+			onAnimationComplete={onComplete}
 		>
 			<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-800 border-neutral-200 dark:bg-neutral-900/60 bg-neutral-100/80">
 				<div className="size-2 rounded-full bg-red-400" />
@@ -219,8 +196,8 @@ function TerminalMockup() {
 					variants={terminalLineVariants}
 					className="dark:text-neutral-200 text-neutral-700"
 				>
-					<span className="dark:text-emerald-400 text-emerald-700">$</span>{" "}
-					bunx shadcn@latest add @fonttrio/editorial
+					<span className="dark:text-emerald-400 text-emerald-700">$</span> bunx
+					shadcn@latest add @fonttrio/editorial
 				</motion.p>
 				<motion.p
 					variants={terminalLineVariants}
@@ -234,27 +211,21 @@ function TerminalMockup() {
 					variants={terminalLineVariants}
 					className="dark:text-neutral-200 text-neutral-700"
 				>
-					<span className="dark:text-emerald-400 text-emerald-700 mr-1">
-						✔
-					</span>
+					<span className="dark:text-emerald-400 text-emerald-700 mr-1">✔</span>
 					Checking registry.
 				</motion.p>
 				<motion.p
 					variants={terminalLineVariants}
 					className="dark:text-neutral-200 text-neutral-700"
 				>
-					<span className="dark:text-emerald-400 text-emerald-700 mr-1">
-						✔
-					</span>
+					<span className="dark:text-emerald-400 text-emerald-700 mr-1">✔</span>
 					Installing dependencies.
 				</motion.p>
 				<motion.p
 					variants={terminalLineVariants}
 					className="dark:text-neutral-200 text-neutral-700"
 				>
-					<span className="dark:text-emerald-400 text-emerald-700 mr-1">
-						✔
-					</span>
+					<span className="dark:text-emerald-400 text-emerald-700 mr-1">✔</span>
 					Updating{" "}
 					<span className="dark:text-blue-400 text-blue-600">
 						src/styles.css
@@ -299,7 +270,7 @@ export function HowItWorks() {
 						01
 					</span>
 
-					<RotatingSpecimen containerClassName="w-full" />
+					<RotatingSpecimen containerClassName="w-full" interval={3000} />
 
 					<h3 className="font-['Manrope'] text-2xl dark:text-white text-neutral-900 font-semibold tracking-tight leading-snug">
 						Browse curated pairs
