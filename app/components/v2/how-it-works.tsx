@@ -39,10 +39,10 @@ export function HowItWorks() {
 	return (
 		<section
 			aria-label="How It Works"
-			className="py-20 px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-neutral-50 relative"
+			className="py-16 pt-24 px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white relative"
 		>
 			<motion.h2
-				className="font-['Manrope'] text-5xl dark:text-white text-neutral-900 font-medium tracking-tight text-balance"
+				className="font-['Manrope'] text-4xl md:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
 				variants={titleVariants}
 				initial="hidden"
 				whileInView="visible"
@@ -60,7 +60,7 @@ export function HowItWorks() {
 			>
 				{/* Card 1 — Browse */}
 				<motion.div
-					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-900 bg-white border dark:border-neutral-800 border-neutral-200 px-7 py-7 relative overflow-hidden"
+					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
 					variants={cardVariants}
 				>
 					<span className="text-xs font-bold font-['Manrope'] tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
@@ -68,13 +68,13 @@ export function HowItWorks() {
 					</span>
 
 					{/* Font specimen preview */}
-					<div className="w-full rounded-xl dark:bg-neutral-800 bg-neutral-50 border dark:border-neutral-700 border-neutral-200 p-5 mb-1 relative overflow-hidden">
+					<div className="w-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 p-5 mb-1 relative overflow-hidden">
 						{/* Baseline guide lines */}
 						<div className="absolute inset-0 flex flex-col justify-around pointer-events-none">
 							{[0, 1, 2, 3].map((i) => (
 								<div
 									key={i}
-									className="w-full border-dashed border-t dark:border-neutral-700/30 border-neutral-200"
+									className="w-full border-dashed border-t dark:border-neutral-800/30 border-neutral-200"
 								/>
 							))}
 						</div>
@@ -105,7 +105,7 @@ export function HowItWorks() {
 
 				{/* Card 2 — Preview */}
 				<motion.div
-					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-900 bg-white border dark:border-neutral-800 border-neutral-200 px-7 py-7 relative overflow-hidden"
+					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
 					variants={cardVariants}
 				>
 					<span className="text-xs font-bold font-['Manrope'] tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
@@ -120,12 +120,12 @@ export function HowItWorks() {
 						before committing to a pair.
 					</p>
 
-					<div className="w-full rounded-xl dark:bg-neutral-800 bg-neutral-50 border dark:border-neutral-700 border-neutral-200 overflow-hidden mb-1">
-						<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-700 border-neutral-200 dark:bg-neutral-800/60 bg-neutral-100/80">
+					<div className="w-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 overflow-hidden mb-1">
+						<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-800 border-neutral-200 dark:bg-neutral-900/60 bg-neutral-100/80">
 							<div className="size-2 rounded-full bg-red-400" />
 							<div className="size-2 rounded-full bg-yellow-400" />
 							<div className="size-2 rounded-full bg-green-400" />
-							<div className="flex-1 mx-3 h-4 rounded-full dark:bg-neutral-700 bg-neutral-200" />
+							<div className="flex-1 mx-3 h-4 rounded-full dark:bg-neutral-800 bg-neutral-200" />
 						</div>
 						<div className="p-4">
 							<p className="font-['Manrope'] text-2xl font-bold dark:text-neutral-100 text-neutral-900 tracking-tight">
@@ -135,7 +135,7 @@ export function HowItWorks() {
 								Typography defines the voice of your content. Choose a pair that
 								speaks for your brand.
 							</p>
-							<p className="font-['Manrope'] text-xs font-medium p-2 rounded-md mt-2 dark:bg-neutral-900/50 bg-neutral-200/50 dark:text-white text-neutral-800">
+							<p className="font-['Manrope'] text-xs font-medium p-2 rounded-md mt-2 dark:bg-neutral-950/50 bg-neutral-200/50 dark:text-white text-neutral-800">
 								bunx --bun shadcn@latest add @fonttrio/editorial
 							</p>
 						</div>
@@ -143,15 +143,15 @@ export function HowItWorks() {
 				</motion.div>
 
 				<motion.div
-					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-900 bg-white border dark:border-neutral-800 border-neutral-200 px-7 py-7 relative overflow-hidden"
+					className="flex flex-col items-start gap-y-5 rounded-2xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 px-7 py-7 relative overflow-hidden"
 					variants={cardVariants}
 				>
 					<span className="text-xs font-bold font-['Manrope'] tracking-widest dark:text-neutral-500 text-neutral-400 uppercase">
 						03
 					</span>
 
-					<div className="w-full rounded-xl dark:bg-neutral-800 bg-neutral-50 border dark:border-neutral-700 border-neutral-200 overflow-hidden mb-1">
-						<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-700 border-neutral-200 dark:bg-neutral-800/60 bg-neutral-100/80">
+					<div className="w-full rounded-xl dark:bg-neutral-900/50 bg-neutral-50 border dark:border-neutral-800 border-neutral-200 overflow-hidden mb-1">
+						<div className="flex items-center gap-1.5 px-4 h-9 border-b dark:border-neutral-800 border-neutral-200 dark:bg-neutral-900/60 bg-neutral-100/80">
 							<div className="size-2 rounded-full bg-red-400" />
 							<div className="size-2 rounded-full bg-yellow-400" />
 							<div className="size-2 rounded-full bg-green-400" />

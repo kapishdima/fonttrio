@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
-import { PairCard } from "@/app/components/v2/pair-card";
+import { PairCard, PairFullCard } from "@/app/components/v2/pair-card";
 import { getAllPairings } from "@/lib/pairings";
 
 const FEATURED_COUNT = 10;
@@ -64,7 +64,7 @@ export function BestPairs() {
 						key={pairing.name}
 						variants={prefersReducedMotion ? reducedVariants : cardVariants}
 					>
-						<PairCard pairing={pairing} />
+						<PairFullCard pairing={pairing} />
 					</motion.div>
 				))}
 			</motion.div>

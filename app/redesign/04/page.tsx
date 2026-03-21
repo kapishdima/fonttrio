@@ -12,7 +12,7 @@ import { XTestimonials } from "@/app/components/v2/x-testimonials";
 import { useLenis } from "@/lib/hooks/v2/use-lenis";
 
 export default function Redesign04() {
-	useLenis();
+	// useLenis();
 
 	return (
 		<main className="w-screen overflow-x-hidden bg-black">
