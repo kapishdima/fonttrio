@@ -1,7 +1,10 @@
 "use client";
 
+import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { RotateCcw } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
 import { PairsListSelection } from "@/app/components/pairs/pairs-list-selection";
 import { Badge } from "@/components/ui/badge";
@@ -199,6 +202,13 @@ export function Playground({ pairings }: { pairings: PairingData[] }) {
 						</div>
 
 						<div className="flex items-center gap-x-4">
+							<Link
+								href={`/playground?pairing=${activePairing.name}`}
+								className="flex items-center gap-1.5 text-xs font-medium dark:text-neutral-500 text-neutral-400 dark:hover:text-neutral-300 hover:text-neutral-600 transition-colors"
+							>
+								Try with components
+								<HugeiconsIcon icon={ArrowRight02Icon} className="size-3" />
+							</Link>
 							{!isDefault && (
 								<button
 									type="button"
