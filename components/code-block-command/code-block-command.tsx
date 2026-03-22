@@ -106,7 +106,7 @@ export function CodeBlockCommand({
 	return (
 		<>
 			<Tabs
-				className="gap-0"
+				className="gap-0 w-full"
 				value={packageManager}
 				onValueChange={(value) => {
 					setPackageManager(value as PackageManager);

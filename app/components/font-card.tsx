@@ -166,17 +166,11 @@ function ActiveFontDetail({
 				>
 					{category}
 				</Badge>
-				<Badge
-					variant="secondary"
-					className="text-xs rounded-md font-medium"
-				>
+				<Badge variant="secondary" className="text-xs rounded-md font-medium">
 					{font.font.weight.length} weights
 				</Badge>
 				{font.font.provider === "google" && (
-					<Badge
-						variant="secondary"
-						className="text-xs rounded-md font-medium"
-					>
+					<Badge variant="secondary" className="text-xs rounded-md font-medium">
 						Google Fonts
 					</Badge>
 				)}
@@ -238,7 +232,7 @@ function ActiveFontDetail({
 				Installation
 			</p>
 			<motion.code
-				className="dark:bg-neutral-900 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm font-medium block font-mono"
+				className="dark:bg-neutral-900/50 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm font-medium block font-mono"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}

@@ -3,9 +3,9 @@
 import { Check, Copy, RotateCcw } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { PairsListSelection } from "@/app/components/pairs/pairs-list-selection";
 import { Badge } from "@/components/ui/badge";
 import { useCommandInstallation } from "@/hooks/use-command-installation";
-import { buildInstallCommand } from "@/lib/package-managers";
 import { getAllPairings } from "@/lib/pairings";
 
 const DEFAULT_HEADING = "The future of typography is here";
@@ -40,38 +40,16 @@ const reducedVariants = {
 
 export function Playground() {
 	const pairings = useMemo(() => getAllPairings(), []);
+
 	const [headingText, setHeadingText] = useState(DEFAULT_HEADING);
 	const [bodyText, setBodyText] = useState(DEFAULT_BODY);
 	const [monoText, setMonoText] = useState(DEFAULT_MONO);
+
 	const [activePairing, setActivePairing] = useState(pairings[0]);
 	const [copied, setCopied] = useState(false);
 	const prefersReducedMotion = useReducedMotion();
 
 	const command = useCommandInstallation(activePairing.name);
-	const scrollRef = useRef<HTMLDivElement>(null);
-	const [scrollFade, setScrollFade] = useState<"none" | "right" | "left" | "both">("right");
-
-	const updateScrollFade = useCallback(() => {
-		const el = scrollRef.current;
-		if (!el) return;
-		const atStart = el.scrollLeft <= 2;
-		const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 2;
-		setScrollFade(
-			atStart && atEnd ? "none" : atStart ? "right" : atEnd ? "left" : "both",
-		);
-	}, []);
-
-	useEffect(() => {
-		const el = scrollRef.current;
-		if (!el) return;
-		updateScrollFade();
-		el.addEventListener("scroll", updateScrollFade, { passive: true });
-		window.addEventListener("resize", updateScrollFade);
-		return () => {
-			el.removeEventListener("scroll", updateScrollFade);
-			window.removeEventListener("resize", updateScrollFade);
-		};
-	}, [updateScrollFade]);
 
 	const isDefault =
 		headingText === DEFAULT_HEADING &&
@@ -121,44 +99,15 @@ export function Playground() {
 				whileInView="visible"
 				viewport={{ once: true, margin: "-100px" }}
 			>
-				{/* Pairing Selector */}
-				<div
-					ref={scrollRef}
-					className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-hide"
-					style={{
-						maskImage:
-							scrollFade === "none"
-								? undefined
-								: scrollFade === "right"
-									? "linear-gradient(to right, black 90%, transparent)"
-									: scrollFade === "left"
-										? "linear-gradient(to left, black 90%, transparent)"
-										: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
-						WebkitMaskImage:
-							scrollFade === "none"
-								? undefined
-								: scrollFade === "right"
-									? "linear-gradient(to right, black 90%, transparent)"
-									: scrollFade === "left"
-										? "linear-gradient(to left, black 90%, transparent)"
-										: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+				<PairsListSelection
+					pairings={pairings}
+					onSelectPair={(name: string) => {
+						const pairing = pairings.find((p) => p.name === name);
+						if (pairing) setActivePairing(pairing);
 					}}
-				>
-					{pairings.map((p) => (
-						<button
-							key={p.name}
-							type="button"
-							onClick={() => setActivePairing(p)}
-							className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border cursor-pointer ${
-								activePairing.name === p.name
-									? "dark:bg-white dark:text-black bg-neutral-900 text-white border-transparent"
-									: "dark:bg-neutral-900 dark:text-neutral-400 bg-white text-neutral-600 dark:border-neutral-800 border-neutral-200 dark:hover:text-white hover:text-neutral-900"
-							}`}
-						>
-							{p.name}
-						</button>
-					))}
-				</div>
+					active={activePairing}
+					className="mb-4"
+				/>
 
 				{/* Preview Card */}
 				<div className="rounded-xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 overflow-hidden">
@@ -218,7 +167,6 @@ export function Playground() {
 								/>
 							</div>
 
-							{/* Mono */}
 							<div className="dark:bg-neutral-950 bg-white px-6 pt-4 pb-6 flex flex-col gap-3">
 								<div className="flex items-center justify-between">
 									<span className="text-[11px] font-semibold tracking-wider dark:text-neutral-500 text-neutral-400 uppercase">
@@ -270,7 +218,7 @@ export function Playground() {
 									<span className="hidden sm:inline">Reset</span>
 								</button>
 							)}
-							{/* Install Command */}
+
 							<button
 								type="button"
 								onClick={handleCopy}
@@ -280,16 +228,6 @@ export function Playground() {
 								<code className="text-xs font-medium dark:text-neutral-300 text-neutral-600 hidden sm:inline">
 									{command}
 								</code>
-								<code className="text-xs font-medium dark:text-neutral-300 text-neutral-600 sm:hidden">
-									Copy command
-								</code>
-								<span className="dark:text-neutral-500 text-neutral-400 group-hover:dark:text-neutral-300 group-hover:text-neutral-600 transition-colors">
-									{copied ? (
-										<Check className="size-3.5" />
-									) : (
-										<Copy className="size-3.5" />
-									)}
-								</span>
 							</button>
 						</div>
 					</div>
