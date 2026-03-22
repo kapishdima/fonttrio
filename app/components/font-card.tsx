@@ -20,11 +20,13 @@ import { buildInstallCommand } from "@/lib/package-managers";
 
 interface FontFullCardProps {
 	font: FontItem;
+	batchLoaded?: boolean;
 }
 
-export function FontFullCard({ font }: FontFullCardProps) {
-	const googleFontsUrl = getFontGoogleFontsUrl(font);
-	const { ref, loaded } = useLazyFontLoad(googleFontsUrl);
+export function FontFullCard({ font, batchLoaded }: FontFullCardProps) {
+	const googleFontsUrl = batchLoaded === undefined ? getFontGoogleFontsUrl(font) : "";
+	const { ref, loaded: lazyLoaded } = useLazyFontLoad(googleFontsUrl);
+	const loaded = batchLoaded ?? lazyLoaded;
 	const category = parseFontCategory(font);
 	const command = useCommandInstallation(font.name);
 

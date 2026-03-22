@@ -18,14 +18,12 @@ export function FontsHero({
 	filters,
 	filterValues,
 	onFilterChange,
-	totalCount,
 }: {
 	searchQuery: string;
 	setSearchQuery: (v: string | null) => void;
 	filters: FilterDefinition[];
 	filterValues: FilterValues;
 	onFilterChange: (filterId: string, value: string) => void;
-	totalCount: number;
 }) {
 	return (
 		<div className="h-auto min-h-[40vh] md:h-[60vh] p-3">
@@ -36,8 +34,7 @@ export function FontsHero({
 							Browse fonts
 						</h2>
 						<p className="font-medium text-sm dark:text-neutral-400 text-neutral-500 mt-2">
-							{totalCount.toLocaleString()}+ fonts. Install any with a single
-							command.
+							Install any with a single command
 						</p>
 						<div className="flex flex-col max-w-lg w-full">
 							<InputGroup className="h-10 mt-6 pl-2 bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 font-medium rounded-xl">

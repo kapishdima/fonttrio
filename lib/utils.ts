@@ -8,3 +8,4 @@ export function cn(...inputs: ClassValue[]) {
 export function buildFontFamily(name: string, category: string): string {
   return `"${name}", ${category}`;
 }
+

@@ -1,9 +1,8 @@
 "use client";
 
-import { useMemo, useCallback } from "react";
-import { useQueryState, parseAsString, parseAsInteger } from "nuqs";
-import type { FontItem } from "@/lib/registry";
-import { parseFontCategory } from "@/lib/fonts";
+import { useCallback } from "react";
+import { useQueryState } from "nuqs";
+import { serverInteger, serverString } from "@/lib/nuqs";
 
 export type FontCategoryFilter = "all" | "serif" | "sans-serif" | "monospace" | "display" | "handwriting";
 
@@ -16,44 +15,19 @@ export const FONT_CATEGORY_OPTIONS: { key: FontCategoryFilter; label: string }[]
   { key: "handwriting", label: "Handwriting" },
 ];
 
-const ITEMS_PER_PAGE = 60;
-
-export function useFontFilters(fonts: FontItem[]) {
+export function useFontFilters() {
   const [searchQuery, setSearchQuery] = useQueryState(
     "q",
-    parseAsString.withDefault("")
+    serverString.withDefault("")
   );
   const [categoryFilter, setCategoryFilter] = useQueryState(
     "category",
-    parseAsString.withDefault("all")
+    serverString.withDefault("all")
   );
-  const [page, setPage] = useQueryState(
+  const [, setPage] = useQueryState(
     "page",
-    parseAsInteger.withDefault(1)
+    serverInteger.withDefault(1)
   );
-
-  const filteredFonts = useMemo(() => {
-    return fonts.filter((f) => {
-      if (searchQuery) {
-        const q = searchQuery.toLowerCase();
-        if (!f.title.toLowerCase().includes(q)) return false;
-      }
-      if (categoryFilter && categoryFilter !== "all") {
-        if (parseFontCategory(f) !== categoryFilter) return false;
-      }
-      return true;
-    });
-  }, [fonts, searchQuery, categoryFilter]);
-
-  const totalPages = Math.ceil(filteredFonts.length / ITEMS_PER_PAGE);
-
-  // Ensure current page is valid
-  const currentPage = Math.min(Math.max(1, page), Math.max(1, totalPages));
-
-  const paginatedFonts = useMemo(() => {
-    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-    return filteredFonts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
-  }, [filteredFonts, currentPage]);
 
   const hasActiveFilters = !!searchQuery || (!!categoryFilter && categoryFilter !== "all");
 
@@ -68,10 +42,6 @@ export function useFontFilters(fonts: FontItem[]) {
     setPage(1);
   }, [setCategoryFilter, setPage]);
 
-  const handleSetPage = useCallback((newPage: number) => {
-    setPage(newPage);
-  }, [setPage]);
-
   function clearFilters() {
     setSearchQuery(null);
     setCategoryFilter(null);
@@ -83,14 +53,8 @@ export function useFontFilters(fonts: FontItem[]) {
     setSearchQuery: handleSetSearchQuery,
     categoryFilter: (categoryFilter || "all") as FontCategoryFilter,
     setCategoryFilter: handleSetCategoryFilter,
-    currentPage,
-    totalPages,
-    setPage: handleSetPage,
-    paginatedFonts,
-    filteredFonts,
     hasActiveFilters,
     clearFilters,
     categoryOptions: FONT_CATEGORY_OPTIONS,
-    itemsPerPage: ITEMS_PER_PAGE,
   };
 }

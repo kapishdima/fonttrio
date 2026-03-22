@@ -127,21 +127,14 @@ function buildGoogleFontsUrl(
   bodyKebab: string,
   monoKebab: string,
 ): string {
-  if (headingKebab === "geist" || bodyKebab === "geist" || monoKebab === "geist-mono") {
-    const parts: string[] = [];
-    if (headingKebab !== "geist") parts.push(`family=${heading.replace(/ /g, "+")}:wght@400;500;600;700`);
-    if (bodyKebab !== "geist" && body !== heading) parts.push(`family=${body.replace(/ /g, "+")}:wght@400;500;600`);
-    if (monoKebab !== "geist-mono") parts.push(`family=${mono.replace(/ /g, "+")}:wght@400;500`);
-    if (parts.length === 0) return "";
-    return `https://fonts.googleapis.com/css2?${parts.join("&")}&display=swap`;
-  }
-
   const parts: string[] = [];
   parts.push(`family=${heading.replace(/ /g, "+")}:wght@400;500;600;700`);
   if (body !== heading) {
     parts.push(`family=${body.replace(/ /g, "+")}:wght@400;500;600`);
   }
-  parts.push(`family=${mono.replace(/ /g, "+")}:wght@400;500`);
+  if (mono !== heading && mono !== body) {
+    parts.push(`family=${mono.replace(/ /g, "+")}:wght@400;500`);
+  }
 
   return `https://fonts.googleapis.com/css2?${parts.join("&")}&display=swap`;
 }

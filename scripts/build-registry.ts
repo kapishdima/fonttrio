@@ -4,7 +4,7 @@
  * Usage: bun run scripts/build-registry.ts
  */
 
-import { mkdirSync, writeFileSync, copyFileSync, readdirSync } from "fs";
+import { copyFileSync, mkdirSync, readdirSync, writeFileSync } from "fs";
 import { join } from "path";
 import { buildRegistryIndex } from "../lib/registry";
 
@@ -26,7 +26,7 @@ for (const file of readdirSync(FONTS_DIR).filter((f) => f.endsWith(".json"))) {
 for (const file of readdirSync(PAIRINGS_DIR).filter((f) => f.endsWith(".json"))) {
   const content = JSON.parse(
     Bun.file(join(PAIRINGS_DIR, file)).textSync?.() ??
-      require("fs").readFileSync(join(PAIRINGS_DIR, file), "utf-8")
+    require("fs").readFileSync(join(PAIRINGS_DIR, file), "utf-8")
   );
   // Output filename = pairing name without "pairing-" prefix
   const outName = content.name?.replace("pairing-", "") || file;

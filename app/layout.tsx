@@ -6,7 +6,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { NuqsAdapter } from "nuqs/adapters/next";
 import { Suspense } from "react";
-import { AllFontsLoader } from "./components/all-fonts-loader";
 
 const manrope = Manrope({
 	weight: ["400", "500", "600", "700"],
@@ -69,7 +68,6 @@ export default function RootLayout({
 					href="https://fonts.gstatic.com"
 					crossOrigin="anonymous"
 				/>
-				<AllFontsLoader />
 			</head>
 			<body className={`${manrope.variable} antialiased`}>
 				<NextThemesProvider

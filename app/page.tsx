@@ -9,11 +9,15 @@ import { SponsorsMarquee } from "@/app/components/sponsors-marquee";
 import { XTestimonials } from "@/app/components/x-testimonials";
 import { getAllPairings } from "@/lib/pairings";
 
-export default function Redesign04() {
+export default function Root() {
 	const pairings = getAllPairings();
+	const defaultPairingUrl = pairings[0]?.googleFontsUrl;
 
 	return (
 		<main className="w-screen overflow-x-hidden bg-black">
+			{defaultPairingUrl && (
+				<link rel="preload" href={defaultPairingUrl} as="style" />
+			)}
 			<Header />
 			<Hero />
 			<SponsorsMarquee />

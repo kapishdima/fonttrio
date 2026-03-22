@@ -5,10 +5,11 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { RotateCcw } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { PairsListSelection } from "@/app/components/pairs/pairs-list-selection";
 import { Badge } from "@/components/ui/badge";
 import { useCommandInstallation } from "@/hooks/use-command-installation";
+import { loadFontUrl } from "@/lib/hooks/font-load-registry";
 import type { PairingData } from "@/lib/pairings";
 
 const DEFAULT_HEADING = "The future of typography is here";
@@ -49,6 +50,13 @@ export function Playground({ pairings }: { pairings: PairingData[] }) {
 
 	const [activePairing, setActivePairing] = useState(pairings[0]);
 	const prefersReducedMotion = useReducedMotion();
+
+	// Load fonts for the active pairing eagerly (no IntersectionObserver needed)
+	useEffect(() => {
+		if (activePairing.googleFontsUrl) {
+			loadFontUrl(activePairing.googleFontsUrl);
+		}
+	}, [activePairing.googleFontsUrl]);
 
 	const command = useCommandInstallation(activePairing.name);
 
