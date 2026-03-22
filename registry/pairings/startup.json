@@ -67,6 +67,10 @@
       "startup",
       "consumer app",
       "landing page"
+    ],
+    "appearance": [
+      "geometric",
+      "humanist"
     ]
   }
 }

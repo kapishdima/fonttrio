@@ -67,6 +67,9 @@
       "SaaS",
       "developer tools",
       "Vercel-style"
+    ],
+    "appearance": [
+      "modern"
     ]
   }
 }

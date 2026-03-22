@@ -67,6 +67,10 @@
       "blog",
       "storytelling",
       "content"
+    ],
+    "appearance": [
+      "classic",
+      "humanist"
     ]
   }
 }

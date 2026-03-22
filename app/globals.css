@@ -2,6 +2,11 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@keyframes levitate {
+  0%, 100% { translate: 0 0; }
+  50%       { translate: 0 var(--float-amp); }
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -47,13 +52,13 @@
   --sidebar-accent-foreground: var(--text);
   --sidebar-border: var(--surface-border);
   --sidebar-ring: var(--text);
+  --code: oklch(0.985 0 0);
+  --code-foreground: oklch(0.141 0.005 285.823);
 }
-
-
 
 .dark {
   --bg: #0a0a0a;
-  --text: #ededed;
+  --text: #f5f5f5;
   --text-muted: #888888;
   --text-subtle: #555555;
   --surface-border: #1f1f1f;
@@ -80,6 +85,8 @@
   --sidebar-accent: var(--surface);
   --sidebar-accent-foreground: var(--text);
   --sidebar-border: var(--surface-border);
+  --code: oklch(0.21 0.006 285.885);
+  --code-foreground: oklch(0.985 0 0);
 }
 
 @theme inline {
@@ -92,8 +99,7 @@
   --color-surface: var(--surface);
   --color-surface-hover: color-mix(in oklch, var(--surface) 80%, var(--foreground) 20%);
 
-  --font-display: var(--font-bebas-neue), system-ui, sans-serif;
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-manrope), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   --color-background: var(--background);
@@ -137,6 +143,8 @@
   --radius-2xl: 16px;
   --radius-3xl: 20px;
   --radius-4xl: 24px;
+  --color-code: var(--code);
+  --color-code-foreground: var(--code-foreground);
 }
 
 html {
@@ -150,7 +158,7 @@ html.dark {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  @apply font-sans;
 }
 
 ::selection {
@@ -158,41 +166,13 @@ body {
   color: var(--bg);
 }
 
-/* ─── Specimen hover ─── */
-.specimen-link {
-  transition: opacity 0.15s ease;
+/* ─── Scrollbar hide utility ─── */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
-.specimen-link:hover {
-  opacity: 0.7;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .specimen-link {
-    transition: none;
-  }
-}
-
-/* ─── Drag Handle ─── */
-.drag-handle {
-  cursor: col-resize;
-  user-select: none;
-  touch-action: none;
-}
-
-/* ─── Display Font ─── */
-.font-display {
-  font-family: var(--font-display);
-}
-
-/* ─── Hide Scrollbar ─── */
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-/* ─── Focus ─── */
-:focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 2px;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 /* ─── Scrollbar ─── */
@@ -214,182 +194,93 @@ body {
   background: var(--text-muted);
 }
 
-/* ─── Dot Grid Background ─── */
-.dot-grid {
-  background-image: radial-gradient(circle, var(--text-subtle) 0.5px, transparent 0.5px);
-  background-size: 24px 24px;
-}
-
-/* ─── Cross Grid Background ─── */
-.cross-grid {
-  background-image: 
-    linear-gradient(var(--surface-border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--surface-border) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
-/* ─── Fine Grid Background ─── */
-.fine-grid {
-  background-image: 
-    linear-gradient(var(--surface-border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--surface-border) 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-
-/* ─── Vercel-style Guidelines ─── */
-.metric-line {
-  border: none;
-  border-top: 1px dashed var(--text-subtle);
-  position: relative;
-}
-
-.metric-line::after {
-  content: attr(data-value);
-  position: absolute;
-  right: 0;
-  top: -10px;
-  font-size: 10px;
-  font-family: var(--font-mono);
-  color: var(--text-muted);
-  background: var(--bg);
-  padding: 0 4px;
-}
-
-/* ─── Tab Navigation ─── */
-.tab-nav {
-  display: inline-flex;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 9999px;
-  padding: 4px;
-}
-
-.tab-btn {
-  padding: 8px 16px;
-  font-size: 13px;
-  border-radius: 9999px;
-  transition: all 0.2s ease;
-}
-
-.tab-btn.active {
-  background: var(--foreground);
-  color: var(--background);
-}
-
-/* ─── Hero Container ─── */
-.hero-container {
-  position: relative;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* ─── Guideline Dashed Lines ─── */
-.guideline-h {
-  border: none;
-  border-top: 1px dashed var(--text-subtle);
-  margin: 0;
-}
-
-.guideline-v {
-  border: none;
-  border-left: 1px dashed var(--text-subtle);
-  margin: 0;
-}
-
-/* ─── Baseline Indicator ─── */
-.baseline-indicator {
-  position: relative;
-}
-
-.baseline-indicator::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 1px dashed var(--text-subtle);
-  pointer-events: none;
-}
-
-/* ─── Sticky Filters ─── */
-.sticky-filters {
-  position: sticky;
-  top: 64px;
-  z-index: 40;
-  background: var(--bg);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--surface-border);
-}
-
-/* ─── Animated Text ─── */
-@keyframes textBlur {
-  0% { filter: blur(0px); opacity: 1; }
-  50% { filter: blur(8px); opacity: 0.3; }
-  100% { filter: blur(0px); opacity: 1; }
-}
-
-@keyframes textSwitch {
-  0% { opacity: 1; transform: translateY(0); }
-  45% { opacity: 0; transform: translateY(-10px); }
-  55% { opacity: 0; transform: translateY(10px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-.text-blur-animate {
-  animation: textBlur 0.5s ease-in-out;
-}
-
-.text-switch-animate {
-  animation: textSwitch 0.6s ease-in-out;
-}
-
-/* ─── Cursor Blink ─── */
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
-}
-
-.cursor-blink {
-  animation: blink 1s step-end infinite;
-}
-
-/* ─── Specimen Card ─── */
-.specimen-card {
-  transition: all 0.2s ease;
-  border-bottom: 1px solid var(--surface-border);
-}
-
-.specimen-card:hover {
-  background-color: var(--surface);
-}
-
-.specimen-card:hover .specimen-arrow {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.specimen-arrow {
-  opacity: 0;
-  transform: translateX(-8px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .specimen-card,
-  .specimen-arrow,
-  .text-blur-animate,
-  .text-switch-animate {
-    transition: none;
-    animation: none;
-  }
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+
+    outline: none;
   }
+
+@keyframes show-top-mask {
+  to {
+    --top-mask-height: var(--mask-height);
+    }
+  }
+
+@keyframes hide-bottom-mask {
+  to {
+    --bottom-mask-height: 0px;
+    }
+  }
+
+@keyframes show-left-mask {
+  to {
+    --left-mask-width: var(--mask-width);
+    }
+  }
+
+@keyframes hide-right-mask {
+  to {
+    --right-mask-width: 0px;
+    }
+  }
+}
+
+@property --top-mask-height {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 0px;
+}
+
+@property --bottom-mask-height {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 64px;
+}
+
+@property --left-mask-width {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 0px;
+}
+
+@property --right-mask-width {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 64px;
+}
+
+@utility scroll-fade-effect-y {
+    --mask-height: 64px;
+    --mask-offset-top: 0px;
+    --mask-offset-bottom: 0px;
+    --scroll-buffer: 2rem;
+    mask-image: linear-gradient(to top, transparent, black 90%), linear-gradient(to bottom, transparent 0%, black 100%), linear-gradient(black, black);
+    mask-size: 100% var(--top-mask-height), 100% var(--bottom-mask-height), 100% 100%;
+    mask-repeat: no-repeat, no-repeat, no-repeat;
+    mask-position: 0 var(--mask-offset-top), 0 calc(100% - var(--mask-offset-bottom)), 0 0;
+    mask-composite: exclude;
+    animation-name: show-top-mask, hide-bottom-mask;
+    animation-timeline: scroll(self), scroll(self);
+    animation-range: 0 var(--scroll-buffer), calc(100% - var(--scroll-buffer)) 100%;
+    animation-fill-mode: both;
+}
+
+@utility scroll-fade-effect-x {
+    --mask-width: 64px;
+    --mask-offset-left: 0px;
+    --mask-offset-right: 0px;
+    --scroll-buffer: 2rem;
+    mask-image: linear-gradient(to left, transparent, black 90%), linear-gradient(to right, transparent 0%, black 100%), linear-gradient(black, black);
+    mask-size: var(--left-mask-width) 100%, var(--right-mask-width) 100%, 100% 100%;
+    mask-repeat: no-repeat, no-repeat, no-repeat;
+    mask-position: var(--mask-offset-left) 0, calc(100% - var(--mask-offset-right)) 0, 0 0;
+    mask-composite: exclude;
+    animation-name: show-left-mask, hide-right-mask;
+    animation-timeline: scroll(self inline), scroll(self inline);
+    animation-range: 0 var(--scroll-buffer), calc(100% - var(--scroll-buffer)) 100%;
+    animation-fill-mode: both;
 }

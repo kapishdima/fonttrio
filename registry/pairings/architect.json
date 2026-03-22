@@ -67,6 +67,10 @@
       "portfolio",
       "agency",
       "architecture"
+    ],
+    "appearance": [
+      "modern",
+      "classic"
     ]
   }
 }

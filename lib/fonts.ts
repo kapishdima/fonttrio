@@ -1,11 +1,8 @@
 /**
- * Client-safe font utilities — NO imports from registry.ts (uses Node fs).
- * Server-side helpers (getAllFontCategories, etc.) are in lib/fonts.server.ts
+ * Font utilities — parseFontCategory, Google Fonts URL builders, etc.
+ * For reading font data, use getAllFonts() from lib/registry.ts in Server Components.
  */
-import { PAIRINGS_DATA } from "./pairings-data";
-import type { PairingData } from "./pairings";
 
-// Re-export type only (no runtime import of registry)
 export type { FontItem } from "./registry";
 
 export function parseFontCategory(font: { category?: string; description: string }): string {
@@ -28,15 +25,6 @@ export function parseFontCategory(font: { category?: string; description: string
   if (desc.includes("display")) return "display";
   if (desc.includes("handwriting")) return "handwriting";
   return "sans-serif";
-}
-
-export function getPairingsUsingFont(fontFamily: string): PairingData[] {
-  return PAIRINGS_DATA.filter(
-    (p) =>
-      p.heading === fontFamily ||
-      p.body === fontFamily ||
-      p.mono === fontFamily
-  );
 }
 
 export function getFontGoogleFontsUrl(font: {

@@ -67,6 +67,10 @@
       "social media",
       "consumer app",
       "i18n"
+    ],
+    "appearance": [
+      "classic",
+      "humanist"
     ]
   }
 }

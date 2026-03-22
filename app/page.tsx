@@ -1,21 +1,32 @@
-import { getAllMoods, getAllPairings, getPairing } from "@/lib/pairings";
-import { SPONSORS } from "@/lib/sponsors";
-import { LandingClient } from "./landing-client";
+import { BestPairs } from "@/app/components/best-pairs";
+import { Faq } from "@/app/components/faq";
+import { Footer } from "@/app/components/footer";
+import { Header } from "@/app/components/header";
+import { Hero } from "@/app/components/hero/hero";
+import { HowItWorks } from "@/app/components/how-it-works";
+import { Playground } from "@/app/components/playground";
+import { SponsorsMarquee } from "@/app/components/sponsors-marquee";
+import { XTestimonials } from "@/app/components/x-testimonials";
+import { getAllPairings } from "@/lib/pairings";
 
-export default function Home() {
-	const allPairings = getAllPairings();
-	const featured = getPairing("editorial")!;
-	const rest = allPairings.filter((p) => p.name !== "editorial");
-	const moods = getAllMoods();
-	const sponsors = SPONSORS.filter((s) => ["gold", "silver"].includes(s.tier));
+export default function Root() {
+	const pairings = getAllPairings();
+	const defaultPairingUrl = pairings[0]?.googleFontsUrl;
 
 	return (
-		<LandingClient
-			featured={featured}
-			pairings={rest}
-			allPairings={allPairings}
-			moods={moods}
-			sponsors={sponsors}
-		/>
+		<main className="w-screen overflow-x-hidden bg-black">
+			{defaultPairingUrl && (
+				<link rel="preload" href={defaultPairingUrl} as="style" />
+			)}
+			<Header />
+			<Hero />
+			<SponsorsMarquee />
+			<HowItWorks />
+			<Playground pairings={pairings} />
+			<BestPairs pairings={pairings} />
+			<XTestimonials />
+			<Faq />
+			<Footer />
+		</main>
 	);
 }

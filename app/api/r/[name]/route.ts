@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
-import { readFileSync, existsSync } from "fs";
+import { existsSync, readFileSync } from "fs";
+import { type NextRequest, NextResponse } from "next/server";
 import { join } from "path";
 
 const PAIRINGS_DIR = join(process.cwd(), "registry", "pairings");
