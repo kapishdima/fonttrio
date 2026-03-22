@@ -68,6 +68,10 @@
       "blog",
       "publishing",
       "book"
+    ],
+    "appearance": [
+      "classic",
+      "humanist"
     ]
   }
 }

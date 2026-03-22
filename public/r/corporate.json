@@ -66,6 +66,9 @@
       "enterprise",
       "Android",
       "Material Design"
+    ],
+    "appearance": [
+      "grotesque"
     ]
   }
 }

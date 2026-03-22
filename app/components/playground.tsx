@@ -1,12 +1,12 @@
 "use client";
 
-import { Check, Copy, RotateCcw } from "lucide-react";
+import { RotateCcw } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { PairsListSelection } from "@/app/components/pairs/pairs-list-selection";
 import { Badge } from "@/components/ui/badge";
 import { useCommandInstallation } from "@/hooks/use-command-installation";
-import { getAllPairings } from "@/lib/pairings";
+import type { PairingData } from "@/lib/pairings";
 
 const DEFAULT_HEADING = "The future of typography is here";
 const DEFAULT_BODY =
@@ -38,15 +38,13 @@ const reducedVariants = {
 	visible: { opacity: 1 },
 };
 
-export function Playground() {
-	const pairings = useMemo(() => getAllPairings(), []);
+export function Playground({ pairings }: { pairings: PairingData[] }) {
 
 	const [headingText, setHeadingText] = useState(DEFAULT_HEADING);
 	const [bodyText, setBodyText] = useState(DEFAULT_BODY);
 	const [monoText, setMonoText] = useState(DEFAULT_MONO);
 
 	const [activePairing, setActivePairing] = useState(pairings[0]);
-	const [copied, setCopied] = useState(false);
 	const prefersReducedMotion = useReducedMotion();
 
 	const command = useCommandInstallation(activePairing.name);
@@ -61,12 +59,6 @@ export function Playground() {
 		setBodyText(DEFAULT_BODY);
 		setMonoText(DEFAULT_MONO);
 	}, []);
-
-	const handleCopy = useCallback(() => {
-		navigator.clipboard.writeText(command);
-		setCopied(true);
-		setTimeout(() => setCopied(false), 2000);
-	}, [command]);
 
 	return (
 		<section
@@ -221,7 +213,6 @@ export function Playground() {
 
 							<button
 								type="button"
-								onClick={handleCopy}
 								className="flex items-center gap-2 shrink-0 px-3 py-1.5 rounded-lg dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 dark:hover:bg-neutral-800/50 hover:bg-neutral-200 transition-colors cursor-pointer group"
 								aria-label={`Copy install command: ${command}`}
 							>

@@ -67,6 +67,10 @@
       "blog",
       "memoir",
       "longform"
+    ],
+    "appearance": [
+      "classic",
+      "humanist"
     ]
   }
 }

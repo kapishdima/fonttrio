@@ -67,6 +67,10 @@
       "documentation",
       "research",
       "education"
+    ],
+    "appearance": [
+      "modern",
+      "classic"
     ]
   }
 }

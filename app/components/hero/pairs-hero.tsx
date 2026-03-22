@@ -13,10 +13,14 @@ export function PairsHero({
 	filters,
 	filterValues,
 	onFilterChange,
+	searchQuery,
+	onSearchChange,
 }: {
 	filters: FilterDefinition[];
 	filterValues: FilterValues;
 	onFilterChange: (filterId: string, value: string) => void;
+	searchQuery?: string;
+	onSearchChange?: (value: string) => void;
 }) {
 	return (
 		<div className="h-auto min-h-[40vh] md:h-[60vh] p-3">
@@ -29,6 +33,8 @@ export function PairsHero({
 						<div className="flex flex-col max-w-lg w-full">
 							<InputGroup className="h-10 mt-6 pl-2 bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 font-medium rounded-xl">
 								<InputGroupInput
+									value={searchQuery ?? ""}
+									onChange={(e) => onSearchChange?.(e.target.value)}
 									placeholder="e.g., blog about architecture"
 									aria-label="Search font pairings"
 								/>

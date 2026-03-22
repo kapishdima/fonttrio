@@ -67,6 +67,9 @@
       "portfolio",
       "art",
       "experimental"
+    ],
+    "appearance": [
+      "grotesque"
     ]
   }
 }

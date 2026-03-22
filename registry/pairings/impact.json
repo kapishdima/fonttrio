@@ -67,6 +67,10 @@
       "media",
       "sports",
       "marketing"
+    ],
+    "appearance": [
+      "geometric",
+      "grotesque"
     ]
   }
 }

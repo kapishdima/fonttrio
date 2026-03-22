@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "motion/react";
 import { PairCard } from "@/app/components/pair-card";
-import { getAllPairings } from "@/lib/pairings";
+import type { PairingData } from "@/lib/pairings";
 
 const FEATURED_COUNT = 10;
 
@@ -33,8 +33,8 @@ const cardVariants = {
 	},
 } as const;
 
-export function BestPairs() {
-	const pairings = getAllPairings().slice(0, FEATURED_COUNT);
+export function BestPairs({ pairings: allPairings }: { pairings: PairingData[] }) {
+	const pairings = allPairings.slice(0, FEATURED_COUNT);
 	const prefersReducedMotion = useReducedMotion();
 	const reducedVariants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
 

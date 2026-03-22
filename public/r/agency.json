@@ -67,6 +67,10 @@
       "agency",
       "design",
       "portfolio"
+    ],
+    "appearance": [
+      "humanist",
+      "grotesque"
     ]
   }
 }

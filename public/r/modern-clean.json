@@ -67,6 +67,9 @@
       "SaaS",
       "dashboard",
       "web app"
+    ],
+    "appearance": [
+      "modern"
     ]
   }
 }

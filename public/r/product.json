@@ -67,6 +67,10 @@
       "SaaS",
       "product",
       "web app"
+    ],
+    "appearance": [
+      "modern",
+      "humanist"
     ]
   }
 }

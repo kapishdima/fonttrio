@@ -67,6 +67,10 @@
       "news",
       "sports",
       "media"
+    ],
+    "appearance": [
+      "humanist",
+      "grotesque"
     ]
   }
 }

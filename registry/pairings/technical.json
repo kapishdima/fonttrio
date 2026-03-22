@@ -67,6 +67,9 @@
       "documentation",
       "enterprise",
       "developer tools"
+    ],
+    "appearance": [
+      "modern"
     ]
   }
 }
