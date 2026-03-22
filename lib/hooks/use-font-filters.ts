@@ -2,7 +2,7 @@
 
 import { useMemo, useCallback } from "react";
 import { useQueryState, parseAsString, parseAsInteger } from "nuqs";
-import type { FontItem } from "@/lib/fonts";
+import type { FontItem } from "@/lib/registry";
 import { parseFontCategory } from "@/lib/fonts";
 
 export type FontCategoryFilter = "all" | "serif" | "sans-serif" | "monospace" | "display" | "handwriting";

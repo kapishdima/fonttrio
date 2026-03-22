@@ -174,7 +174,7 @@ function MobileMenu({
 								<a
 									key={link.href}
 									href={link.href}
-									className="text-white/80 hover:text-white text-sm font-medium tracking-tight px-4 py-2.5 rounded-xl hover:bg-white/10 transition-colors"
+									className="text-white/80 hover:text-white text-sm font-medium tracking-tight px-4 py-2.5 rounded-lg hover:bg-white/10 transition-colors"
 									onClick={onClose}
 								>
 									{link.label}
