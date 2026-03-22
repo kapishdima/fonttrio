@@ -1,6 +1,6 @@
 "use client";
 
-import { Search01Icon, Trash2 } from "@hugeicons/core-free-icons";
+import { Search01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { motion } from "motion/react";
 import { useState } from "react";
@@ -18,6 +18,7 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
+import { ClearFiltersButton } from "./clear-filters-button";
 import type { FilterDefinition, FilterValues } from "./types";
 
 export function FilterPill({
@@ -40,6 +41,10 @@ export function FilterPill({
 		parseAsString.withDefault(""),
 	);
 	const [activeFilter, setActiveFilter] = useState<string | null>(null);
+
+	const hasActiveFilters =
+		!!searchQuery ||
+		Object.values(values).some((v) => v !== undefined && v !== "");
 
 	return (
 		<>
@@ -88,19 +93,9 @@ export function FilterPill({
 							onValueChange={(v) => onValueChange(filter.id, v)}
 						/>
 					))}
-					<Button
-						size="icon"
-						variant="destructive"
-						className="h-8 w-8 rounded-full p-0"
-						onClick={onClear}
-					>
-						<HugeiconsIcon
-							icon={Trash2}
-							size={12}
-							strokeWidth={1.5}
-							color="currentColor"
-						/>
-					</Button>
+					{hasActiveFilters && (
+						<ClearFiltersButton onClear={onClear} variant="pill" />
+					)}
 				</div>
 			</motion.div>
 		</>

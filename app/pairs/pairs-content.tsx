@@ -16,6 +16,7 @@ export function PairsContent({ pairings }: { pairings: PairingData[] }) {
 		filterValues,
 		handleFilterChange,
 		clearFilters,
+		hasActiveFilters,
 	} = usePairFilters(pairings);
 
 	return (
@@ -35,6 +36,8 @@ export function PairsContent({ pairings }: { pairings: PairingData[] }) {
 				filters={PAIR_FILTERS}
 				filterValues={filterValues}
 				onFilterChange={handleFilterChange}
+				onClear={clearFilters}
+				hasActiveFilters={hasActiveFilters}
 				searchQuery={searchQuery}
 				onSearchChange={(v) => setSearchQuery(v || null)}
 			/>

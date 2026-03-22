@@ -15,13 +15,15 @@ export function FilterGrid({
 	filters,
 	values,
 	onValueChange,
+	className,
 }: {
 	filters: FilterDefinition[];
 	values: FilterValues;
 	onValueChange: (filterId: string, value: string) => void;
+	className?: string;
 }) {
 	return (
-		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 rounded-3xl">
+		<div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 rounded-3xl ${className ?? ""}`}>
 			{filters.map((filter) => (
 				<Field key={filter.id}>
 					<FieldLabel>

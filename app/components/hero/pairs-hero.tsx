@@ -1,5 +1,6 @@
 import { Search01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { ClearFiltersButton } from "@/app/components/filters/clear-filters-button";
 import { FilterGrid } from "@/app/components/filters/filter-grid";
 import type { FilterDefinition, FilterValues } from "@/app/components/filters/types";
 import { RotatingSpecimen } from "@/app/components/rotating-specimen";
@@ -13,12 +14,16 @@ export function PairsHero({
 	filters,
 	filterValues,
 	onFilterChange,
+	onClear,
+	hasActiveFilters,
 	searchQuery,
 	onSearchChange,
 }: {
 	filters: FilterDefinition[];
 	filterValues: FilterValues;
 	onFilterChange: (filterId: string, value: string) => void;
+	onClear?: () => void;
+	hasActiveFilters?: boolean;
 	searchQuery?: string;
 	onSearchChange?: (value: string) => void;
 }) {
@@ -53,11 +58,17 @@ export function PairsHero({
 					<RotatingSpecimen />
 				</div>
 
-				<FilterGrid
-					filters={filters}
-					values={filterValues}
-					onValueChange={onFilterChange}
-				/>
+				<div className="flex items-end gap-4">
+					<FilterGrid
+						filters={filters}
+						values={filterValues}
+						onValueChange={onFilterChange}
+						className="flex-1"
+					/>
+					{hasActiveFilters && onClear && (
+						<ClearFiltersButton onClear={onClear} variant="inline" />
+					)}
+				</div>
 			</section>
 		</div>
 	);
