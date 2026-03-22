@@ -1,17 +1,35 @@
 "use client";
 
+import { FilterPill } from "@/app/components/filters/filter-pill";
 import { InnerHeader } from "@/app/components/header";
 import { PairsHero } from "@/app/components/hero/pairs-hero";
 import { PairCard } from "@/app/components/pair-card";
-import { FilterPill } from "@/app/components/pairs/pairs-filter";
 
+import { PAIR_FILTERS } from "@/lib/pairs-filter-config";
 import { getAllPairings } from "@/lib/pairings";
+
+const emptyValues = {};
+const noop = () => {};
 
 export default function Redesign04Pairs() {
 	return (
 		<main className="bg-black">
-			<InnerHeader extraWhenScroll={<FilterPill />} />
-			<PairsHero />
+			<InnerHeader
+				extraWhenScroll={
+					<FilterPill
+						filters={PAIR_FILTERS}
+						values={emptyValues}
+						onValueChange={noop}
+						onClear={noop}
+						searchPlaceholder="Search pairings..."
+					/>
+				}
+			/>
+			<PairsHero
+				filters={PAIR_FILTERS}
+				filterValues={emptyValues}
+				onFilterChange={noop}
+			/>
 			<PairsList />
 		</main>
 	);
