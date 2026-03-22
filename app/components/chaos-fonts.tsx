@@ -7,10 +7,7 @@ import {
 	useTransform,
 } from "motion/react";
 import { REPULSOR } from "@/lib/constants";
-import {
-	type RepulsorItemStyle,
-	useRepulsor,
-} from "@/lib/hooks/v2/use-repulsor";
+import { type RepulsorItemStyle, useRepulsor } from "@/lib/hooks/use-repulsor";
 
 const CHAOS_STAGGER = 0.003;
 const CHAOS_DURATION = 0.1;
