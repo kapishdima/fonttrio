@@ -1,216 +1,149 @@
+"use client";
+
+import { Heart } from "lucide-react";
+import { useState } from "react";
+import { Footer } from "@/app/components/footer";
+import { InnerHeader } from "@/app/components/header";
+import { SponsorHero } from "@/app/components/hero/sponsor-hero";
+
+import { SponsorSection } from "@/components/sponsors/sponsors-grid";
+import { TierCard } from "@/components/sponsors/tier-card";
+import {
+	BILLING_OPTIONS,
+	type BillingOption,
+	SPONSOR_TIERS,
+	SPONSORS,
+	SPONSORS_PAGE,
+} from "@/lib/sponsors";
+
 export default function SponsorsPage() {
+	const [billing, setBilling] = useState<BillingOption>(BILLING_OPTIONS[0]);
+
+	const goldSponsors = SPONSORS.filter((s) => s.tier === "gold");
+	const silverSponsors = SPONSORS.filter((s) => s.tier === "silver");
+	const bronzeSponsors = SPONSORS.filter((s) => s.tier === "bronze");
+
 	return (
-		<div className="min-h-screen bg-background text-foreground">
-			<div className="pt-32 pb-16 px-4 lg:px-8 max-w-6xl mx-auto">
-				Coming soon!
+		<main className="bg-black">
+			<InnerHeader />
+			<SponsorHero />
+
+			{/* Tier Cards */}
+			<div id="tiers" className="p-3 pt-0 scroll-mt-24">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<div className="flex items-center justify-between mb-12 flex-wrap gap-4">
+						<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900">
+							Choose your tier
+						</h2>
+
+						{/* Billing toggle */}
+						<div className="inline-flex rounded-full border dark:border-neutral-800 border-neutral-200 p-0.5">
+							{BILLING_OPTIONS.map((option) => (
+								<button
+									key={option.key}
+									type="button"
+									onClick={() => setBilling(option)}
+									className={`relative px-4 py-1.5 text-sm font-medium rounded-full transition-colors cursor-pointer min-h-[36px] ${
+										billing.key === option.key
+											? "bg-neutral-900 dark:bg-white text-white dark:text-neutral-900"
+											: "text-neutral-500 hover:text-neutral-900 dark:hover:text-white"
+									}`}
+								>
+									{option.label}
+								</button>
+							))}
+						</div>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+						{SPONSOR_TIERS.map((tier, i) => (
+							<TierCard
+								key={tier.key}
+								tier={tier}
+								billing={billing}
+								suffix={billing.suffix}
+								index={i}
+							/>
+						))}
+					</div>
+				</section>
 			</div>
-		</div>
+
+			<div className="p-3 pt-0">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-12">
+						{SPONSORS_PAGE.sectionTitles.sponsors}
+					</h2>
+
+					{SPONSORS.length === 0 ? (
+						<div className="text-center py-16 rounded-2xl border dark:border-neutral-800 border-neutral-200 border-dashed">
+							<Heart className="size-10 dark:text-neutral-600 text-neutral-400 mx-auto mb-4" />
+							<h3 className="text-lg font-medium dark:text-white text-neutral-900 mb-2">
+								{SPONSORS_PAGE.emptyState.title}
+							</h3>
+							<p className="text-sm dark:text-neutral-400 text-neutral-600 max-w-md mx-auto">
+								{SPONSORS_PAGE.emptyState.description}
+							</p>
+						</div>
+					) : (
+						<div className="space-y-16">
+							{/* Gold */}
+							{goldSponsors.length > 0 && (
+								<SponsorSection
+									label="Gold"
+									size="lg"
+									sponsors={goldSponsors}
+								/>
+							)}
+
+							{/* Silver */}
+							{silverSponsors.length > 0 && (
+								<SponsorSection
+									label="Silver"
+									size="md"
+									sponsors={silverSponsors}
+								/>
+							)}
+
+							{/* Bronze */}
+							{bronzeSponsors.length > 0 && (
+								<SponsorSection
+									label="Bronze"
+									size="sm"
+									sponsors={bronzeSponsors}
+								/>
+							)}
+						</div>
+					)}
+				</section>
+			</div>
+
+			{/* Why Sponsor */}
+			<div className="p-3 pt-0">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-12">
+						{SPONSORS_PAGE.sectionTitles.whySponsor}
+					</h2>
+
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+						{Object.values(SPONSORS_PAGE.whySponsor).map((item) => (
+							<div
+								key={item.title}
+								className="rounded-2xl border dark:border-neutral-800 border-neutral-200 p-6"
+							>
+								<h3 className="font-medium dark:text-white text-neutral-900 mb-2">
+									{item.title}
+								</h3>
+								<p className="text-sm dark:text-neutral-400 text-neutral-600 leading-relaxed">
+									{item.description}
+								</p>
+							</div>
+						))}
+					</div>
+				</section>
+			</div>
+
+			<Footer />
+		</main>
 	);
 }
-
-// import { ExternalLink, Heart } from "lucide-react";
-// import type { Metadata } from "next";
-// import { SPONSOR_TIERS, SPONSORS, SPONSORS_PAGE } from "@/lib/sponsors";
-// import { SiteFooter } from "../components/site-footer";
-// import { SiteHeader } from "../components/site-header";
-// import { SponsorLogo } from "../components/sponsor-logo";
-// import { SponsorTiers } from "./sponsor-tiers";
-
-// export const metadata: Metadata = {
-// 	title: "Sponsors",
-// 	description:
-// 		"Support Fonttrio, the open-source font pairing registry for shadcn/ui. Become a sponsor and get your brand in front of developers.",
-// 	alternates: {
-// 		canonical: "https://www.fonttrio.xyz/sponsors",
-// 	},
-// };
-
-// export default function SponsorsPage() {
-// 	const goldSponsors = SPONSORS.filter((s) => s.tier === "gold");
-// 	const silverSponsors = SPONSORS.filter((s) => s.tier === "silver");
-// 	const bronzeSponsors = SPONSORS.filter((s) => s.tier === "bronze");
-// 	const hasSponsors = SPONSORS.length > 0;
-
-// 	return (
-// 		<div className="min-h-screen bg-background text-foreground">
-// 			<SiteHeader />
-
-// 			<main className="pt-32 pb-16 px-4 lg:px-8 max-w-6xl mx-auto">
-// 				{/* Header */}
-// 				<div className="text-center mb-16">
-// 					<h1 className="text-4xl lg:text-5xl font-bold mb-4">
-// 						{SPONSORS_PAGE.title}
-// 					</h1>
-// 					<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-// 						{SPONSORS_PAGE.description}
-// 					</p>
-// 				</div>
-
-// 				{/* Billing Toggle + Tier Cards */}
-// 				<SponsorTiers />
-
-// 				{/* Current Sponsors Section */}
-// 				<div className="border-t border-border pt-16">
-// 					<h2 className="text-2xl font-bold text-center mb-12">
-// 						{SPONSORS_PAGE.sectionTitles.sponsors}
-// 					</h2>
-
-// 					{!hasSponsors ? (
-// 						<div className="text-center py-16 bg-surface/30 border border-border border-dashed">
-// 							<Heart className="size-12 text-muted-foreground mx-auto mb-4" />
-// 							<h3 className="text-lg font-medium mb-2">
-// 								{SPONSORS_PAGE.emptyState.title}
-// 							</h3>
-// 							<p className="text-muted-foreground max-w-md mx-auto mb-6">
-// 								{SPONSORS_PAGE.emptyState.description}
-// 							</p>
-// 							<a
-// 								href={SPONSOR_TIERS[0].paymentUrls.monthly}
-// 								target="_blank"
-// 								rel="noopener noreferrer"
-// 								className="inline-flex items-center gap-2 px-4 py-2 bg-foreground text-background text-sm uppercase tracking-wider font-medium hover:opacity-90 transition-opacity"
-// 							>
-// 								{SPONSORS_PAGE.emptyState.cta}
-// 							</a>
-// 						</div>
-// 					) : (
-// 						<div className="space-y-12">
-// 							{goldSponsors.length > 0 && (
-// 								<div>
-// 									<h3 className="text-sm uppercase tracking-wider text-muted-foreground text-center mb-8">
-// 										Gold Sponsors
-// 									</h3>
-// 									<div className="flex flex-wrap justify-center gap-8">
-// 										{goldSponsors.map((sponsor) => (
-// 											<a
-// 												key={sponsor.id}
-// 												href={sponsor.url}
-// 												target="_blank"
-// 												rel="noopener noreferrer"
-// 												className="group flex items-center justify-center gap-6 p-6 border border-border bg-surface transition-colors w-full sm:w-[calc(30%-1rem)] max-w-xl"
-// 											>
-// 												<div className="max-w-40 flex items-center justify-center shrink-0 overflow-hidden">
-// 													{sponsor.logo ? (
-// 														<SponsorLogo
-// 															sponsor={sponsor}
-// 															className="size-full object-contain"
-// 														/>
-// 													) : (
-// 														<span className="text-2xl font-bold">
-// 															{sponsor.name.charAt(0)}
-// 														</span>
-// 													)}
-// 												</div>
-// 												{sponsor.name && sponsor.name.length > 0 && (
-// 													<div className="flex-1 min-w-0">
-// 														<div className="text-xl font-medium truncate">
-// 															{sponsor.name}
-// 														</div>
-// 													</div>
-// 												)}
-// 												{/* <ExternalLink className="size-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" /> */}
-// 											</a>
-// 										))}
-// 									</div>
-// 								</div>
-// 							)}
-
-// 							{silverSponsors.length > 0 && (
-// 								<div>
-// 									<h3 className="text-sm uppercase tracking-wider text-muted-foreground text-center mb-6">
-// 										Silver Sponsors
-// 									</h3>
-// 									<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-// 										{silverSponsors.map((sponsor) => (
-// 											<a
-// 												key={sponsor.id}
-// 												href={sponsor.url}
-// 												target="_blank"
-// 												rel="noopener noreferrer"
-// 												className="group flex items-center justify-center gap-3 p-4 border border-border bg-surface/50 hover:bg-surface transition-colors"
-// 											>
-// 												<div className="max-w-40  rounded flex items-center justify-center shrink-0">
-// 													{sponsor.logo ? (
-// 														<SponsorLogo
-// 															sponsor={sponsor}
-// 															className="size-full object-contain mt-1"
-// 														/>
-// 													) : (
-// 														<span className="text-base font-bold">
-// 															{sponsor.name.charAt(0)}
-// 														</span>
-// 													)}
-// 												</div>
-// 												{/* <div className="flex-1 min-w-0">
-// 													<div className="text-sm font-medium truncate">
-// 														{sponsor.name}
-// 													</div>
-// 												</div> */}
-// 											</a>
-// 										))}
-// 									</div>
-// 								</div>
-// 							)}
-
-// 							{bronzeSponsors.length > 0 && (
-// 								<div>
-// 									<h3 className="text-sm uppercase tracking-wider text-muted-foreground text-center mb-6">
-// 										Bronze Sponsors
-// 									</h3>
-// 									<div className="flex flex-wrap justify-center gap-2">
-// 										{bronzeSponsors.map((sponsor) => (
-// 											<a
-// 												key={sponsor.id}
-// 												href={sponsor.url}
-// 												target="_blank"
-// 												rel="noopener noreferrer"
-// 												className="px-3 py-1.5 border border-border bg-surface/30 hover:bg-surface transition-colors text-xs"
-// 											>
-// 												{sponsor.name}
-// 											</a>
-// 										))}
-// 									</div>
-// 								</div>
-// 							)}
-// 						</div>
-// 					)}
-// 				</div>
-
-// 				{/* Why Sponsor Section */}
-// 				<div className="mt-20 pt-16 border-t border-border">
-// 					<h2 className="text-2xl font-bold text-center mb-8">
-// 						{SPONSORS_PAGE.sectionTitles.whySponsor}
-// 					</h2>
-// 					<div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-// 						<div>
-// 							<h3 className="font-medium mb-2">
-// 								{SPONSORS_PAGE.whySponsor.openSource.title}
-// 							</h3>
-// 							<p className="text-sm text-muted-foreground">
-// 								{SPONSORS_PAGE.whySponsor.openSource.description}
-// 							</p>
-// 						</div>
-// 						<div>
-// 							<h3 className="font-medium mb-2">
-// 								{SPONSORS_PAGE.whySponsor.community.title}
-// 							</h3>
-// 							<p className="text-sm text-muted-foreground">
-// 								{SPONSORS_PAGE.whySponsor.community.description}
-// 							</p>
-// 						</div>
-// 						<div>
-// 							<h3 className="font-medium mb-2">
-// 								{SPONSORS_PAGE.whySponsor.brand.title}
-// 							</h3>
-// 							<p className="text-sm text-muted-foreground">
-// 								{SPONSORS_PAGE.whySponsor.brand.description}
-// 							</p>
-// 						</div>
-// 					</div>
-// 				</div>
-// 			</main>
-
-// 			<SiteFooter />
-// 		</div>
-// 	);
-// }

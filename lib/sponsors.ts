@@ -68,7 +68,6 @@ export const BILLING_OPTIONS: BillingOption[] = [
   { key: "one-time", label: "One-time", suffix: "" },
 ];
 
-export const DEFAULT_BILLING_CYCLE: BillingCycle = "monthly";
 
 // ─── Tiers ────────────────────────────────────────────────────────
 

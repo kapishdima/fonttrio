@@ -17,6 +17,7 @@ import { HEADER_TRANSITION } from "@/lib/constants";
 const NAV_LINKS = [
 	{ href: "/redesign/04/pairs", label: "Pairings" },
 	{ href: "/redesign/04/fonts", label: "Fonts" },
+	{ href: "/sponsors", label: "Sponsors" },
 ];
 
 export function Header() {
