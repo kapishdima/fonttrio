@@ -1,0 +1,34 @@
+{
+  "name": "inter",
+  "type": "registry:font",
+  "category": "Sans Serif",
+  "title": "Inter",
+  "description": "Inter — Sans Serif font.",
+  "font": {
+    "family": "Inter",
+    "provider": "google",
+    "import": "Inter",
+    "variable": "--font-inter",
+    "weight": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "menu",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ]
+  }
+}
