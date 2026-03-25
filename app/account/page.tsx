@@ -1,9 +1,14 @@
 "use client";
 
 import { Copy, Eye, EyeOff, RefreshCw } from "lucide-react";
+import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { Footer } from "@/app/components/footer";
+import { InnerHeader } from "@/app/components/header";
 import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth-client";
+
+const EASE = [0.16, 1, 0.3, 1] as const;
 
 export default function AccountPage() {
 	const { data: session, isPending } = authClient.useSession();
@@ -31,9 +36,11 @@ export default function AccountPage() {
 
 	if (isPending) {
 		return (
-			<div className="min-h-screen bg-black flex items-center justify-center">
-				<p className="text-white/60 text-sm">Loading...</p>
-			</div>
+			<main className="bg-black min-h-screen flex items-center justify-center">
+				<p className="dark:text-neutral-500 text-neutral-400 text-sm">
+					Loading...
+				</p>
+			</main>
 		);
 	}
 
@@ -42,9 +49,11 @@ export default function AccountPage() {
 			authClient.signIn.social({ provider: "github" });
 		}
 		return (
-			<div className="min-h-screen bg-black flex items-center justify-center">
-				<p className="text-white/60 text-sm">Redirecting to sign in...</p>
-			</div>
+			<main className="bg-black min-h-screen flex items-center justify-center">
+				<p className="dark:text-neutral-500 text-neutral-400 text-sm">
+					Redirecting to sign in...
+				</p>
+			</main>
 		);
 	}
 
@@ -57,23 +66,40 @@ export default function AccountPage() {
 	};
 
 	const handleRegenerate = async () => {
-		if (!confirm("Regenerate API key? The old key will stop working immediately.")) return;
+		if (
+			!confirm(
+				"Regenerate API key? The old key will stop working immediately.",
+			)
+		)
+			return;
 		const res = await fetch("/api/account/api-key", { method: "POST" });
 		const data = await res.json();
 		setApiKey(data.apiKey);
 	};
 
 	return (
-		<div className="min-h-screen bg-black">
-			<div className="mx-auto max-w-2xl px-6 py-24">
-				<h1 className="text-2xl font-bold text-white mb-8">Account</h1>
+		<main className="bg-black min-h-screen flex flex-col">
+			<InnerHeader />
 
-				{/* Profile */}
-				<section className="mb-8 rounded-2xl border border-white/10 bg-white/5 p-6">
-					<h2 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
-						Profile
-					</h2>
-					<div className="flex items-center gap-4">
+			{/* Hero */}
+			<div className="p-3 pt-20">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<motion.h1
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.5, ease: EASE }}
+						className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight dark:text-white text-neutral-900"
+					>
+						Account
+					</motion.h1>
+
+					{/* Profile */}
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.5, ease: EASE, delay: 0.1 }}
+						className="flex items-center gap-4 mt-6"
+					>
 						{session.user.image && (
 							<img
 								src={session.user.image}
@@ -82,37 +108,50 @@ export default function AccountPage() {
 							/>
 						)}
 						<div>
-							<p className="text-white font-medium">{session.user.name}</p>
-							<p className="text-white/50 text-sm">{session.user.email}</p>
+							<p className="font-medium dark:text-white text-neutral-900">
+								{session.user.name}
+							</p>
+							<p className="text-sm dark:text-neutral-400 text-neutral-600">
+								{session.user.email}
+							</p>
 						</div>
-					</div>
+					</motion.div>
 				</section>
+			</div>
 
-				{/* API Key */}
-				<section className="mb-8 rounded-2xl border border-white/10 bg-white/5 p-6">
-					<h2 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+			{/* API Key */}
+			<div className="p-3 pt-0">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-8">
 						API Key
 					</h2>
+
 					{loading ? (
-						<p className="text-white/40 text-sm">Loading...</p>
+						<p className="text-sm dark:text-neutral-500 text-neutral-400">
+							Loading...
+						</p>
 					) : apiKey ? (
-						<div className="space-y-3">
-							<div className="flex items-center gap-2 bg-black/50 rounded-lg px-3 py-2 border border-white/10">
-								<code className="text-sm text-white/80 font-mono flex-1 truncate">
+						<div className="space-y-4 max-w-xl">
+							<div className="flex items-center gap-2 rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3">
+								<code className="text-sm font-mono dark:text-neutral-300 text-neutral-700 flex-1 truncate">
 									{showKey ? apiKey : maskedKey}
 								</code>
 								<Button
 									size="icon"
 									variant="ghost"
-									className="size-7 text-white/40 hover:text-white cursor-pointer"
+									className="size-7 dark:text-neutral-500 dark:hover:text-white text-neutral-400 hover:text-neutral-900 cursor-pointer shrink-0"
 									onClick={() => setShowKey(!showKey)}
 								>
-									{showKey ? <EyeOff className="size-3.5" /> : <Eye className="size-3.5" />}
+									{showKey ? (
+										<EyeOff className="size-3.5" />
+									) : (
+										<Eye className="size-3.5" />
+									)}
 								</Button>
 								<Button
 									size="icon"
 									variant="ghost"
-									className="size-7 text-white/40 hover:text-white cursor-pointer"
+									className="size-7 dark:text-neutral-500 dark:hover:text-white text-neutral-400 hover:text-neutral-900 cursor-pointer shrink-0"
 									onClick={handleCopyKey}
 								>
 									<Copy className="size-3.5" />
@@ -121,43 +160,63 @@ export default function AccountPage() {
 							<Button
 								size="sm"
 								variant="ghost"
-								className="text-xs text-white/40 hover:text-white cursor-pointer"
+								className="text-xs dark:text-neutral-500 dark:hover:text-white text-neutral-400 hover:text-neutral-900 cursor-pointer"
 								onClick={handleRegenerate}
 							>
 								<RefreshCw className="size-3 mr-1.5" />
-								Regenerate
+								Regenerate key
 							</Button>
 						</div>
 					) : (
-						<p className="text-white/40 text-sm">
-							Subscribe to Pro to get your API key.
-						</p>
+						<div className="rounded-2xl border dark:border-neutral-800 border-neutral-200 p-6">
+							<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-3">
+								Subscribe to Pro to get your API key.
+							</p>
+							<Button
+								size="sm"
+								className="cursor-pointer"
+								asChild
+							>
+								<a href="/ai">Upgrade to Pro</a>
+							</Button>
+						</div>
 					)}
 				</section>
+			</div>
 
-				{/* Subscription */}
-				<section className="mb-8 rounded-2xl border border-white/10 bg-white/5 p-6">
-					<h2 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+			{/* Subscription */}
+			<div className="p-3 pt-0">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-8">
 						Subscription
 					</h2>
+
 					{loading ? (
-						<p className="text-white/40 text-sm">Loading...</p>
+						<p className="text-sm dark:text-neutral-500 text-neutral-400">
+							Loading...
+						</p>
 					) : (
-						<div className="space-y-2">
-							<div className="flex items-center gap-2">
-								<span className="text-white/60 text-sm">Status:</span>
-								<StatusBadge status={subscription?.status || "free"} />
+						<div className="space-y-3">
+							<div className="flex items-center gap-3">
+								<span className="text-sm dark:text-neutral-400 text-neutral-600">
+									Status
+								</span>
+								<StatusBadge
+									status={subscription?.status || "free"}
+								/>
 							</div>
 							{subscription?.currentPeriodEnd && (
-								<p className="text-white/40 text-sm">
+								<p className="text-sm dark:text-neutral-500 text-neutral-400">
 									Next billing:{" "}
-									{new Date(subscription.currentPeriodEnd).toLocaleDateString()}
+									{new Date(
+										subscription.currentPeriodEnd,
+									).toLocaleDateString()}
 								</p>
 							)}
 							{subscription?.status === "free" && (
 								<Button
 									size="sm"
-									className="mt-3 text-xs rounded-full cursor-pointer"
+									className="mt-2 cursor-pointer"
 									asChild
 								>
 									<a href="/ai">Upgrade to Pro</a>
@@ -166,32 +225,39 @@ export default function AccountPage() {
 						</div>
 					)}
 				</section>
+			</div>
 
-				{/* Usage (placeholder) */}
-				<section className="rounded-2xl border border-white/10 bg-white/5 p-6">
-					<h2 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+			{/* Usage */}
+			<div className="p-3 pt-0">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-8">
 						Usage
 					</h2>
-					<p className="text-white/30 text-sm">
+					<p className="text-sm dark:text-neutral-500 text-neutral-400">
 						Usage statistics coming soon.
 					</p>
 				</section>
 			</div>
-		</div>
+
+			<Footer />
+		</main>
 	);
 }
 
 function StatusBadge({ status }: { status: string }) {
-	const colors: Record<string, string> = {
-		active: "bg-green-500/20 text-green-400 border-green-500/30",
-		cancelled: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
-		past_due: "bg-red-500/20 text-red-400 border-red-500/30",
-		free: "bg-white/10 text-white/50 border-white/20",
+	const styles: Record<string, string> = {
+		active:
+			"bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20",
+		cancelled:
+			"bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20",
+		past_due:
+			"bg-red-500/10 text-red-600 dark:text-red-400 border-red-500/20",
+		free: "dark:bg-neutral-800 bg-neutral-100 dark:text-neutral-400 text-neutral-500 dark:border-neutral-700 border-neutral-200",
 	};
 
 	return (
 		<span
-			className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border ${colors[status] || colors.free}`}
+			className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border ${styles[status] || styles.free}`}
 		>
 			{status}
 		</span>
