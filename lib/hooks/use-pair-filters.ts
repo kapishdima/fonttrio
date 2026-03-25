@@ -2,8 +2,11 @@
 
 import { useCallback, useMemo } from "react";
 import { useQueryState, parseAsString } from "nuqs";
+import { serverInteger } from "@/lib/nuqs";
 import type { PairingData } from "@/lib/pairings";
 import type { FilterValues } from "@/app/components/filters/types";
+
+const ITEMS_PER_PAGE = 40;
 
 const USE_CASE_MAP: Record<string, string> = {
   landing: "landing page",
@@ -67,6 +70,10 @@ export function usePairFilters(pairings: PairingData[]) {
     "feeling",
     parseAsString.withDefault(""),
   );
+  const [page, setPage] = useQueryState(
+    "page",
+    serverInteger.withDefault(1),
+  );
 
   const filteredPairings = useMemo(() => {
     return pairings.filter((p) => {
@@ -89,11 +96,20 @@ export function usePairFilters(pairings: PairingData[]) {
     [appearance, usecase, language, feeling],
   );
 
+  const totalPages = Math.ceil(filteredPairings.length / ITEMS_PER_PAGE);
+  const currentPage = Math.min(Math.max(1, page), Math.max(1, totalPages));
+
+  const paginatedPairings = useMemo(() => {
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredPairings.slice(start, start + ITEMS_PER_PAGE);
+  }, [filteredPairings, currentPage]);
+
   const hasActiveFilters =
     !!searchQuery || !!appearance || !!usecase || !!language || !!feeling;
 
   const handleFilterChange = useCallback(
     (filterId: string, value: string) => {
+      setPage(1);
       switch (filterId) {
         case "appearance":
           setAppearance(value || null);
@@ -109,7 +125,7 @@ export function usePairFilters(pairings: PairingData[]) {
           break;
       }
     },
-    [setAppearance, setUsecase, setLanguage, setFeeling],
+    [setAppearance, setUsecase, setLanguage, setFeeling, setPage],
   );
 
   const clearFilters = useCallback(() => {
@@ -118,12 +134,18 @@ export function usePairFilters(pairings: PairingData[]) {
     setUsecase(null);
     setLanguage(null);
     setFeeling(null);
-  }, [setSearchQuery, setAppearance, setUsecase, setLanguage, setFeeling]);
+    setPage(1);
+  }, [setSearchQuery, setAppearance, setUsecase, setLanguage, setFeeling, setPage]);
 
   return {
     searchQuery,
-    setSearchQuery,
+    setSearchQuery: (v: string | null) => {
+      setPage(1);
+      setSearchQuery(v);
+    },
     filteredPairings,
+    paginatedPairings,
+    totalPages,
     filterValues,
     handleFilterChange,
     clearFilters,

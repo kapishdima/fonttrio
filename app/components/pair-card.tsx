@@ -9,7 +9,7 @@ import { PairInstallationCode } from "@/app/components/pairs/pair-installation-c
 import Portal from "@/app/components/portal";
 
 import { Badge } from "@/components/ui/badge";
-import { useCommandInstallation } from "@/hooks/use-command-installation";
+import { useInstallCopy } from "@/hooks/use-install-copy";
 import { useLazyFontLoad } from "@/lib/hooks/use-lazy-font-load";
 import type { PairingData } from "@/lib/pairings";
 
@@ -19,7 +19,7 @@ interface PairCardProps {
 
 export function PairCard({ pairing }: PairCardProps) {
 	const { ref, loaded } = useLazyFontLoad(pairing.googleFontsUrl);
-	const command = useCommandInstallation(pairing.name);
+	const { command, state: copyState, copyCommand } = useInstallCopy(pairing.name);
 
 	const [opened, setOpened] = useState(false);
 
@@ -67,12 +67,27 @@ export function PairCard({ pairing }: PairCardProps) {
 					</motion.p>
 				</div>
 
-				<div className="w-full flex items-center gap-2 px-6 py-3 border-t dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-900/50 bg-neutral-50 dark:hover:bg-neutral-800/50 hover:bg-neutral-100 text-left transition-colors min-h-[44px]">
+				<div
+					role="button"
+					tabIndex={-1}
+					onClick={(e) => {
+						e.stopPropagation();
+						copyCommand();
+					}}
+					onKeyDown={(e) => {
+						if (e.key === "Enter" || e.key === " ") {
+							e.preventDefault();
+							e.stopPropagation();
+							copyCommand();
+						}
+					}}
+					className="w-full flex items-center gap-2 px-6 py-3 border-t dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-900/50 bg-neutral-50 dark:hover:bg-neutral-800/50 hover:bg-neutral-100 text-left transition-colors min-h-[44px] cursor-copy"
+				>
 					<code
 						className="flex-1 truncate dark:text-neutral-400 text-neutral-500 font-medium text-xs"
 						style={{ fontFamily: pairing.mono }}
 					>
-						{command}
+						{copyState === "done" ? "Copied!" : command}
 					</code>
 				</div>
 			</motion.div>

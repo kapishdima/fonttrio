@@ -1,0 +1,67 @@
+{
+  "name": "pairing-oxygen-mono-oxygen",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Oxygen Mono Oxygen — Oxygen Mono + Oxygen + Fira Code",
+  "description": "Oxygen Mono paired with Oxygen for a google fonts aesthetic.",
+  "categories": [
+    "google fonts"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/oxygen-mono.json",
+    "https://www.fonttrio.xyz/r/oxygen.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-oxygen-mono)",
+      "--font-body": "var(--font-oxygen)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.15",
+        "letter-spacing": "-0.03em",
+        "font-weight": "700"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.875rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.025em",
+        "font-weight": "600"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.5rem",
+        "line-height": "1.25",
+        "letter-spacing": "-0.02em",
+        "font-weight": "600"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.6"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "versatile"
+    ],
+    "useCase": [
+      "general"
+    ]
+  }
+}

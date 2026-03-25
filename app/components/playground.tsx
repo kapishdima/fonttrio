@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { PairsListSelection } from "@/app/components/pairs/pairs-list-selection";
 import { Badge } from "@/components/ui/badge";
-import { useCommandInstallation } from "@/hooks/use-command-installation";
+import { useInstallCopy } from "@/hooks/use-install-copy";
 import { loadFontUrl } from "@/lib/hooks/font-load-registry";
 import type { PairingData } from "@/lib/pairings";
 
@@ -58,7 +58,7 @@ export function Playground({ pairings }: { pairings: PairingData[] }) {
 		}
 	}, [activePairing.googleFontsUrl]);
 
-	const command = useCommandInstallation(activePairing.name);
+	const { command, state: copyState, copyCommand } = useInstallCopy(activePairing.name);
 
 	const isDefault =
 		headingText === DEFAULT_HEADING &&
@@ -231,11 +231,12 @@ export function Playground({ pairings }: { pairings: PairingData[] }) {
 
 							<button
 								type="button"
-								className="flex items-center gap-2 shrink-0 px-3 py-1.5 rounded-lg dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 dark:hover:bg-neutral-800/50 hover:bg-neutral-200 transition-colors cursor-pointer group"
+								onClick={() => copyCommand()}
+								className="flex items-center gap-2 shrink-0 px-3 py-1.5 rounded-lg dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 dark:hover:bg-neutral-800/50 hover:bg-neutral-200 transition-colors cursor-copy group"
 								aria-label={`Copy install command: ${command}`}
 							>
 								<code className="text-xs font-medium dark:text-neutral-300 text-neutral-600 hidden sm:inline">
-									{command}
+									{copyState === "done" ? "Copied!" : command}
 								</code>
 							</button>
 						</div>

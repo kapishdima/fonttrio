@@ -23,7 +23,7 @@ export function PairInstallationCode<T extends ElementType = "div">({
 	return (
 		<Comp
 			className={clsx(
-				"dark:bg-neutral-900/50 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm font-medium block",
+				"dark:bg-neutral-900/50 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm font-medium block relative",
 				className,
 			)}
 		>

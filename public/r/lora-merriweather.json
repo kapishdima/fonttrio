@@ -1,0 +1,67 @@
+{
+  "name": "pairing-lora-merriweather",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Lora Merriweather — Lora + Merriweather + Fira Code",
+  "description": "Lora and Merriweather are both versatile choices that work well across a wide range of use cases.",
+  "categories": [
+    "sans serif-sans serif"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/lora.json",
+    "https://www.fonttrio.xyz/r/merriweather.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-lora)",
+      "--font-body": "var(--font-merriweather)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.5rem",
+        "line-height": "1.15",
+        "letter-spacing": "-0.015em",
+        "font-weight": "400"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.01em",
+        "font-weight": "400"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.5rem",
+        "line-height": "1.3",
+        "letter-spacing": "0em",
+        "font-weight": "400"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "0em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.75"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "neutral"
+    ],
+    "useCase": [
+      "branding"
+    ]
+  }
+}

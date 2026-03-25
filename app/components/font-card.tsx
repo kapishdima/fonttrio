@@ -9,7 +9,7 @@ import {
 	convertNpmCommand,
 } from "@/components/code-block-command/code-block-command";
 import { Badge } from "@/components/ui/badge";
-import { useCommandInstallation } from "@/hooks/use-command-installation";
+import { useInstallCopy } from "@/hooks/use-install-copy";
 import {
 	type FontItem,
 	getFontGoogleFontsUrl,
@@ -28,7 +28,7 @@ export function FontFullCard({ font, batchLoaded }: FontFullCardProps) {
 	const { ref, loaded: lazyLoaded } = useLazyFontLoad(googleFontsUrl);
 	const loaded = batchLoaded ?? lazyLoaded;
 	const category = parseFontCategory(font);
-	const command = useCommandInstallation(font.name);
+	const { command, state: copyState, copyCommand } = useInstallCopy(font.name);
 
 	const [opened, setOpened] = useState(false);
 
@@ -87,11 +87,15 @@ export function FontFullCard({ font, batchLoaded }: FontFullCardProps) {
 				{/* Install command */}
 				<button
 					type="button"
-					className="w-full flex items-center gap-2 px-6 py-3 border-t dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-900/50 bg-neutral-50 dark:hover:bg-neutral-800/50 hover:bg-neutral-100 text-left transition-colors min-h-[44px]"
+					onClick={(e) => {
+						e.stopPropagation();
+						copyCommand();
+					}}
+					className="w-full flex items-center gap-2 px-6 py-3 border-t dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-900/50 bg-neutral-50 dark:hover:bg-neutral-800/50 hover:bg-neutral-100 text-left transition-colors min-h-[44px] cursor-copy"
 					aria-label={`Copy install command for ${font.title}`}
 				>
 					<code className="flex-1 truncate dark:text-neutral-400 text-neutral-500 font-medium text-xs font-mono">
-						{command}
+						{copyState === "done" ? "Copied!" : command}
 					</code>
 				</button>
 			</motion.div>

@@ -106,13 +106,13 @@ export function CodeBlockCommand({
 	return (
 		<>
 			<Tabs
-				className="gap-0 w-full"
+				className="gap-0 w-full "
 				value={packageManager}
 				onValueChange={(value) => {
 					setPackageManager(value as PackageManager);
 				}}
 			>
-				<div className="px-4 shadow-[inset_0_-1px_0_0] shadow-border">
+				<div className="px-4 shadow-[inset_0_-1px_0_0] shadow-border ">
 					<TabsList className="h-10 rounded-none bg-transparent p-0 dark:bg-transparent [&_svg]:me-2 [&_svg]:size-4 [&_svg]:text-muted-foreground">
 						{getIconForPackageManager(packageManager)}
 

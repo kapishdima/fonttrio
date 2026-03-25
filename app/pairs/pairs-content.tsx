@@ -4,6 +4,7 @@ import { FilterPill } from "@/app/components/filters/filter-pill";
 import { InnerHeader } from "@/app/components/header";
 import { PairsHero } from "@/app/components/hero/pairs-hero";
 import { PairCard } from "@/app/components/pair-card";
+import { Pagination } from "@/app/components/pagination";
 import { PAIR_FILTERS } from "@/lib/pairs-filter-config";
 import { usePairFilters } from "@/lib/hooks/use-pair-filters";
 import type { PairingData } from "@/lib/pairings";
@@ -13,6 +14,8 @@ export function PairsContent({ pairings }: { pairings: PairingData[] }) {
 		searchQuery,
 		setSearchQuery,
 		filteredPairings,
+		paginatedPairings,
+		totalPages,
 		filterValues,
 		handleFilterChange,
 		clearFilters,
@@ -50,11 +53,14 @@ export function PairsContent({ pairings }: { pairings: PairingData[] }) {
 							</p>
 						</div>
 					) : (
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
-							{filteredPairings.map((pairing) => (
-								<PairCard key={pairing.name} pairing={pairing} />
-							))}
-						</div>
+						<>
+							<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
+								{paginatedPairings.map((pairing) => (
+									<PairCard key={pairing.name} pairing={pairing} />
+								))}
+							</div>
+							<Pagination totalPages={totalPages} />
+						</>
 					)}
 				</section>
 			</div>
