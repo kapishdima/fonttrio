@@ -3,6 +3,7 @@ import {
 	AbsoluteFill,
 	Easing,
 	interpolate,
+	staticFile,
 	useCurrentFrame,
 	useVideoConfig,
 } from "remotion";
