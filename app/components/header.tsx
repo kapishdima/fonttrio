@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { LogOut, Menu, Moon, Sun, User, X } from "lucide-react";
 import {
 	AnimatePresence,
 	motion,
@@ -12,12 +12,20 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { GithubStars } from "@/app/components/github-stars";
 import { Button } from "@/components/ui/button";
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { HEADER_TRANSITION } from "@/lib/constants";
+import { authClient } from "@/lib/auth-client";
 
 const NAV_LINKS = [
 	{ href: "/redesign/04/pairs", label: "Pairings" },
 	{ href: "/redesign/04/fonts", label: "Fonts" },
 	{ href: "/playground", label: "Playground" },
+	{ href: "/ai", label: "AI" },
 	{ href: "/sponsors", label: "Sponsors" },
 ];
 
@@ -236,6 +244,7 @@ const HeaderContent = ({
 
 				<ThemeToggle />
 				<GithubStars />
+				<AuthButton />
 			</div>
 
 			{/* Mobile: theme toggle + burger */}
@@ -300,5 +309,61 @@ const ThemeToggle = () => {
 				</motion.span>
 			</AnimatePresence>
 		</Button>
+	);
+};
+
+const AuthButton = () => {
+	const { data: session, isPending } = authClient.useSession();
+
+	if (isPending) return null;
+
+	if (!session?.user) {
+		return (
+			<Button
+				size="xs"
+				variant="ghost"
+				className="text-xs rounded-full tracking-tight text-white/60 hover:text-white hover:bg-white/10 cursor-pointer"
+				onClick={() => authClient.signIn.social({ provider: "github" })}
+			>
+				Sign in
+			</Button>
+		);
+	}
+
+	return (
+		<DropdownMenu>
+			<DropdownMenuTrigger asChild>
+				<Button
+					size="icon"
+					variant="ghost"
+					className="size-8 rounded-full hover:bg-white/10 transition-colors cursor-pointer overflow-hidden"
+				>
+					{session.user.image ? (
+						<img
+							src={session.user.image}
+							alt={session.user.name || ""}
+							className="size-6 rounded-full"
+						/>
+					) : (
+						<User className="size-4 text-white/60" />
+					)}
+				</Button>
+			</DropdownMenuTrigger>
+			<DropdownMenuContent align="end" className="w-40">
+				<DropdownMenuItem asChild>
+					<a href="/account" className="cursor-pointer">
+						<User className="size-4 mr-2" />
+						Account
+					</a>
+				</DropdownMenuItem>
+				<DropdownMenuItem
+					className="cursor-pointer"
+					onClick={() => authClient.signOut()}
+				>
+					<LogOut className="size-4 mr-2" />
+					Sign out
+				</DropdownMenuItem>
+			</DropdownMenuContent>
+		</DropdownMenu>
 	);
 };
