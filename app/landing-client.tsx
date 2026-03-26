@@ -109,7 +109,6 @@ export function LandingClient({
 											key={sponsor.id}
 											href={sponsor.url}
 											target="_blank"
-											rel="noopener noreferrer"
 											className="group flex items-center gap-2 text-foreground font-medium"
 										>
 											<SponsorLogo

@@ -76,7 +76,6 @@ export default function SponsorsPage() {
 												key={sponsor.id}
 												href={sponsor.url}
 												target="_blank"
-												rel="noopener noreferrer"
 												className="group flex items-center justify-center gap-6 p-6 border border-border bg-surface transition-colors w-full sm:w-[calc(30%-1rem)] max-w-xl"
 											>
 												<div className="max-w-40 flex items-center justify-center shrink-0 overflow-hidden">
@@ -116,7 +115,6 @@ export default function SponsorsPage() {
 												key={sponsor.id}
 												href={sponsor.url}
 												target="_blank"
-												rel="noopener noreferrer"
 												className="group flex items-center justify-center gap-3 p-4 border border-border bg-surface/50 hover:bg-surface transition-colors"
 											>
 												<div className="max-w-40  rounded flex items-center justify-center shrink-0">
@@ -153,7 +151,6 @@ export default function SponsorsPage() {
 												key={sponsor.id}
 												href={sponsor.url}
 												target="_blank"
-												rel="noopener noreferrer"
 												className="px-3 py-1.5 border border-border bg-surface/30 hover:bg-surface transition-colors text-xs"
 											>
 												{sponsor.name}
