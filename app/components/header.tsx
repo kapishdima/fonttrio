@@ -18,8 +18,8 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { HEADER_TRANSITION } from "@/lib/constants";
 import { authClient } from "@/lib/auth-client";
+import { HEADER_TRANSITION } from "@/lib/constants";
 
 const NAV_LINKS = [
 	{ href: "/redesign/04/pairs", label: "Pairings" },
@@ -153,10 +153,7 @@ export function InnerHeader({
 	);
 }
 
-function MobileMenu({
-	open,
-	onClose,
-}: { open: boolean; onClose: () => void }) {
+function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
 	return (
 		<AnimatePresence>
 			{open && (
@@ -192,10 +189,7 @@ function MobileMenu({
 						</nav>
 						<div className="h-px bg-white/10 my-1.5 mx-2" />
 						<div className="flex items-center justify-between px-4 py-2">
-							<Button
-								size="xs"
-								className="text-xs rounded-full tracking-tight"
-							>
+							<Button size="xs" className="text-xs rounded-full tracking-tight">
 								Sponsor
 							</Button>
 							<GithubStars />
@@ -242,9 +236,9 @@ const HeaderContent = ({
 					Sponsor
 				</Button>
 
+				<AuthButton />
 				<ThemeToggle />
 				<GithubStars />
-				<AuthButton />
 			</div>
 
 			{/* Mobile: theme toggle + burger */}
