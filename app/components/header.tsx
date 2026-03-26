@@ -15,7 +15,10 @@ import { Button } from "@/components/ui/button";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
+	DropdownMenuGroup,
 	DropdownMenuItem,
+	DropdownMenuLabel,
+	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { authClient } from "@/lib/auth-client";
@@ -317,9 +320,9 @@ const AuthButton = () => {
 				size="xs"
 				variant="ghost"
 				className="text-xs rounded-full tracking-tight text-white/60 hover:text-white hover:bg-white/10 cursor-pointer"
-				onClick={() => authClient.signIn.social({ provider: "github" })}
+				asChild
 			>
-				Sign in
+				<a href="/sign-in">Sign in</a>
 			</Button>
 		);
 	}
@@ -331,28 +334,61 @@ const AuthButton = () => {
 					size="icon"
 					variant="ghost"
 					className="size-8 rounded-full hover:bg-white/10 transition-colors cursor-pointer overflow-hidden"
+					aria-label="Account menu"
 				>
 					{session.user.image ? (
 						<img
 							src={session.user.image}
-							alt={session.user.name || ""}
+							alt=""
 							className="size-6 rounded-full"
+							draggable={false}
 						/>
 					) : (
 						<User className="size-4 text-white/60" />
 					)}
 				</Button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent align="end" className="w-40">
-				<DropdownMenuItem asChild>
-					<a href="/account" className="cursor-pointer">
-						<User className="size-4 mr-2" />
-						Account
-					</a>
-				</DropdownMenuItem>
+			<DropdownMenuContent align="end" className="w-56">
+				<DropdownMenuLabel className="font-normal">
+					<div className="flex items-center gap-2.5 py-0.5">
+						{session.user.image ? (
+							<img
+								src={session.user.image}
+								alt=""
+								className="size-8 rounded-full shrink-0"
+								draggable={false}
+							/>
+						) : (
+							<div className="size-8 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center shrink-0">
+								<User className="size-3.5 text-neutral-500" />
+							</div>
+						)}
+						<div className="min-w-0">
+							<p className="text-sm font-medium truncate">
+								{session.user.name}
+							</p>
+							<p className="text-xs text-muted-foreground truncate">
+								{session.user.email}
+							</p>
+						</div>
+					</div>
+				</DropdownMenuLabel>
+				<DropdownMenuSeparator />
+				<DropdownMenuGroup>
+					<DropdownMenuItem asChild>
+						<a href="/account" className="cursor-pointer">
+							<User className="size-4 mr-2" />
+							Account
+						</a>
+					</DropdownMenuItem>
+				</DropdownMenuGroup>
+				<DropdownMenuSeparator />
 				<DropdownMenuItem
 					className="cursor-pointer"
-					onClick={() => authClient.signOut()}
+					onClick={() => {
+						authClient.signOut();
+						window.location.href = "/";
+					}}
 				>
 					<LogOut className="size-4 mr-2" />
 					Sign out

@@ -69,7 +69,7 @@ export default function AccountPage() {
 
 	if (!session?.user) {
 		if (typeof window !== "undefined") {
-			window.location.href = "/";
+			window.location.href = "/sign-in";
 		}
 		return (
 			<main className="bg-black min-h-screen flex items-center justify-center">

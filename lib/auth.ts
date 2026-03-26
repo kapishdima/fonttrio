@@ -5,6 +5,9 @@ export const auth = betterAuth({
 	database: new Pool({
 		connectionString: process.env.SUPABASE_DATABASE_URL,
 	}),
+	emailAndPassword: {
+		enabled: true,
+	},
 	socialProviders: {
 		github: {
 			clientId: process.env.GITHUB_CLIENT_ID!,
