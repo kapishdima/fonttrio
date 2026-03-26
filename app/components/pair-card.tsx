@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { FontsRow } from "@/app/components/fonts/fonts-row";
 import { PairInstallationCode } from "@/app/components/pairs/pair-installation-code";
-import Portal from "@/app/components/portal";
-
 import { Badge } from "@/components/ui/badge";
 import { useInstallCopy } from "@/hooks/use-install-copy";
 import { useLazyFontLoad } from "@/lib/hooks/use-lazy-font-load";
@@ -131,8 +129,7 @@ function ActiveFullPair({
 		return () => document.removeEventListener("keydown", handleKey);
 	}, [onClickAway]);
 
-	return (
-		<Portal>
+	return createPortal(
 			<motion.div
 				ref={ref as React.Ref<HTMLDivElement>}
 				layoutId={`card-${pair.name}`}
@@ -254,7 +251,7 @@ function ActiveFullPair({
 					exit={{ opacity: 0 }}
 					transition={{ delay: 0.3 }}
 				/>
-			</motion.div>
-		</Portal>
+			</motion.div>,
+		document.body,
 	);
 }
