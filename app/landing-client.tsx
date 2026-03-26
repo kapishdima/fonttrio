@@ -114,7 +114,7 @@ export function LandingClient({
 										>
 											<SponsorLogo
 												sponsor={sponsor}
-												className="w-auto h-10 object-cover "
+												className="w-auto h-6 object-cover "
 											/>
 											<span className="text-xl font-medium">
 												{sponsor.name}

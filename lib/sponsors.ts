@@ -58,7 +58,15 @@ export const SPONSORS: Sponsor[] = [
     logoDark: "/sponsors/react-bits-dark.svg",
     url: "https://pro.reactbits.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver"
-  }
+  },
+  {
+    id: "7",
+    name: "",
+    logo: "/sponsors/efferd.svg",
+    logoDark: "/sponsors/efferd-dark.svg",
+    url: "https://efferd.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    tier: "silver"
+  },
 ];
 
 // ─── Billing cycles ───────────────────────────────────────────────
