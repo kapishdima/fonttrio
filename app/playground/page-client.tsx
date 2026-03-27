@@ -1,27 +1,15 @@
 "use client";
 
-import { parseAsString, useQueryState } from "nuqs";
-import { useMemo } from "react";
-import { FontsRow } from "@/app/components/fonts/fonts-row";
 import { Footer } from "@/app/components/footer";
 import { InnerHeader } from "@/app/components/header";
-import { PairInstallationCode } from "@/app/components/pairs/pair-installation-code";
-import { PairsListSelection } from "@/app/components/pairs/pairs-list-selection";
-import { PlaygroundPreview } from "@/app/components/playground/preview";
+import { Playground } from "@/app/components/playground";
 import type { PairingData } from "@/lib/pairings";
 
 export function PlaygroundPageClient({
 	pairings,
-}: { pairings: PairingData[] }) {
-	const [pairingName, setPairingName] = useQueryState(
-		"pairing",
-		parseAsString.withDefault(pairings[0]?.name ?? "editorial"),
-	);
-	const activePairing = useMemo(
-		() => pairings.find((p) => p.name === pairingName) ?? pairings[0],
-		[pairingName, pairings],
-	);
-
+}: {
+	pairings: PairingData[];
+}) {
 	return (
 		<main className="bg-black min-h-screen flex flex-col">
 			<InnerHeader />
@@ -35,19 +23,10 @@ export function PlaygroundPageClient({
 						See how font pairings look on real shadcn/ui components. Pick a
 						pairing and watch every element update.
 					</p>
-
-					<PairsListSelection
-						pairings={pairings}
-						active={activePairing}
-						onSelectPair={(name) => setPairingName(name)}
-					/>
-
-					<FontsRow pairing={activePairing} />
-					<PairInstallationCode pairing={activePairing} className="mt-4" />
 				</section>
 			</div>
 
-			<PlaygroundPreview activePairing={activePairing} />
+			<Playground pairings={pairings} showHeader={false} />
 			<Footer />
 		</main>
 	);

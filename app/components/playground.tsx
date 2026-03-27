@@ -51,7 +51,7 @@ const reducedVariants = {
 	visible: { opacity: 1 },
 };
 
-export function Playground({ pairings }: { pairings: PairingData[] }) {
+export function Playground({ pairings, showHeader = true }: { pairings: PairingData[]; showHeader?: boolean }) {
 	const [activePairing, setActivePairing] = useState(pairings[0]);
 	const prefersReducedMotion = useReducedMotion();
 
@@ -74,24 +74,28 @@ export function Playground({ pairings }: { pairings: PairingData[] }) {
 			className="py-16 pt-24 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden dark:bg-black bg-white relative"
 		>
 			{/* Heading */}
-			<motion.h2
-				className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
-				variants={prefersReducedMotion ? reducedVariants : titleVariants}
-				initial="hidden"
-				whileInView="visible"
-				viewport={{ once: true, margin: "-200px" }}
-			>
-				Try it with your text
-			</motion.h2>
-			<motion.p
-				className="text-base dark:text-neutral-400 text-neutral-500 mt-3 mb-10 max-w-xl"
-				variants={prefersReducedMotion ? reducedVariants : titleVariants}
-				initial="hidden"
-				whileInView="visible"
-				viewport={{ once: true, margin: "-200px" }}
-			>
-				Type anything and see how it looks across different font pairings.
-			</motion.p>
+			{showHeader && (
+				<>
+					<motion.h2
+						className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl dark:text-white text-neutral-800 font-medium tracking-tight text-balance"
+						variants={prefersReducedMotion ? reducedVariants : titleVariants}
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true, margin: "-200px" }}
+					>
+						Try it with your text
+					</motion.h2>
+					<motion.p
+						className="text-base dark:text-neutral-400 text-neutral-500 mt-3 mb-10 max-w-xl"
+						variants={prefersReducedMotion ? reducedVariants : titleVariants}
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true, margin: "-200px" }}
+					>
+						Type anything and see how it looks across different font pairings.
+					</motion.p>
+				</>
+			)}
 
 			<motion.div
 				variants={prefersReducedMotion ? reducedVariants : contentVariants}

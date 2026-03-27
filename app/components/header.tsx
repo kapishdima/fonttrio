@@ -17,7 +17,7 @@ import { HEADER_TRANSITION } from "@/lib/constants";
 const NAV_LINKS = [
 	{ href: "/redesign/04/pairs", label: "Pairings" },
 	{ href: "/redesign/04/fonts", label: "Fonts" },
-	{ href: "/playground", label: "Playground" },
+	// { href: "/playground", label: "Playground" },
 	{ href: "/sponsors", label: "Sponsors" },
 ];
 
@@ -145,10 +145,7 @@ export function InnerHeader({
 	);
 }
 
-function MobileMenu({
-	open,
-	onClose,
-}: { open: boolean; onClose: () => void }) {
+function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
 	return (
 		<AnimatePresence>
 			{open && (
@@ -184,10 +181,7 @@ function MobileMenu({
 						</nav>
 						<div className="h-px bg-white/10 my-1.5 mx-2" />
 						<div className="flex items-center justify-between px-4 py-2">
-							<Button
-								size="xs"
-								className="text-xs rounded-full tracking-tight"
-							>
+							<Button size="xs" className="text-xs rounded-full tracking-tight">
 								Sponsor
 							</Button>
 							<GithubStars />
