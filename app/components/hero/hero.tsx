@@ -80,7 +80,7 @@ export function Hero() {
 						>
 							<motion.h1
 								id="title"
-								className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-medium tracking-tight dark:text-white text-[#2C2C2A] text-center leading-tight lg:leading-30 text-balance"
+								className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight dark:text-white text-[#2C2C2A] text-center leading-tight lg:leading-26 text-balance"
 								variants={
 									prefersReducedMotion ? heroVariantsReduced : heroVariants
 								}
@@ -88,9 +88,9 @@ export function Hero() {
 								animate="visible"
 								transition={HERO_TRANSITION}
 							>
-								Three fonts
+								Fonts paired for you
 								<br />
-								One{" "}
+								Install with one{" "}
 								<span className="italic font-['Playfair_Display'] dark:text-white text-[#2C2C2A]">
 									command
 								</span>

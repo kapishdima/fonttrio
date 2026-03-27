@@ -1,4 +1,4 @@
-import type { FontCategory } from "./pairings";
+import type { FontCategory, PairingData } from "./pairings";
 
 export type CategoryFilter = "all" | FontCategory;
 
@@ -23,3 +23,22 @@ export const CATEGORY_OPTIONS: { key: CategoryFilter; label: string }[] = [
   { key: "serif", label: "Serif" },
   { key: "sans-serif", label: "Sans" },
 ];
+
+/**
+ * Filter pairings by font name query.
+ * Matches against heading, body, mono font names and pairing name.
+ */
+export function filterPairingsByFont(
+  pairings: PairingData[],
+  query: string,
+): PairingData[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return pairings;
+  return pairings.filter(
+    (p) =>
+      p.heading.toLowerCase().includes(q) ||
+      p.body.toLowerCase().includes(q) ||
+      p.mono.toLowerCase().includes(q) ||
+      p.name.toLowerCase().includes(q),
+  );
+}

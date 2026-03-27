@@ -1,13 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import {
 	Accordion,
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Card } from "@/components/ui/card";
+import { Card } from "@/components/ui/faq-card";
 
 const faqItems = [
 	{

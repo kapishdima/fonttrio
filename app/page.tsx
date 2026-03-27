@@ -4,7 +4,7 @@ import { Footer } from "@/app/components/footer";
 import { Header } from "@/app/components/header";
 import { Hero } from "@/app/components/hero/hero";
 import { HowItWorks } from "@/app/components/how-it-works";
-import { Playground } from "@/app/components/playground";
+import { Playground } from "@/app/components/playground_v2";
 import { SponsorsMarquee } from "@/app/components/sponsors-marquee";
 import { XTestimonials } from "@/app/components/x-testimonials";
 import { getAllPairings } from "@/lib/pairings";
@@ -20,10 +20,10 @@ export default function Root() {
 			)}
 			<Header />
 			<Hero />
-			<SponsorsMarquee />
-			<HowItWorks />
 			<Playground pairings={pairings} />
+			<HowItWorks />
 			<BestPairs pairings={pairings} />
+			<SponsorsMarquee />
 			<XTestimonials />
 			<Faq />
 			<Footer />
