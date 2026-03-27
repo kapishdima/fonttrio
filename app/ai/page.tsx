@@ -1,50 +1,52 @@
-import { CheckmarkBadge02Icon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 import { Footer } from "@/app/components/footer";
 import { InnerHeader } from "@/app/components/header";
-import { Button } from "@/components/ui/button";
-import { PRO_TIER } from "@/lib/pro";
 import { AnimateIn, AnimateInView } from "./ai-hero";
-import { PricingCta } from "./pricing-cta";
 
 const MCP_TOOLS = [
 	{
 		name: "search_pairings",
 		description: "Search curated font pairings by mood, use case, or style",
 		example: "Find an elegant serif pairing for a blog",
+		params: "query, mood, useCase, category, limit",
 	},
 	{
 		name: "search_fonts",
 		description: "Search individual fonts by name or category",
 		example: "Find monospace fonts",
+		params: "query, category, limit",
 	},
 	{
 		name: "preview_pairing",
 		description: "Get full details: fonts, mood, typography scale, CSS vars",
 		example: "Preview the editorial pairing",
+		params: "name",
 	},
 	{
 		name: "install_pairing",
 		description: "Install a font pairing into your project automatically",
 		example: "Install modern-clean",
+		params: "name",
 	},
 	{
 		name: "install_font",
 		description: "Install an individual font into your project",
 		example: "Install Inter",
+		params: "name",
 	},
 ];
 
 const SKILLS = [
 	{
 		name: "audit-typography",
+		command: "/audit-typography",
 		description:
-			"Analyzes your project's current typography setup and identifies issues: missing fonts, inconsistent scales, accessibility problems.",
+			"Scans your project for font imports, CSS variables, typography scale, and font-display strategy. Reports issues ordered by severity with file paths and line numbers. Suggests a Fonttrio pairing if MCP is connected.",
 	},
 	{
 		name: "suggest-improvements",
+		command: "/suggest-improvements",
 		description:
-			"Analyzes your project's stack, mood, and use case, then recommends the best font pairing and offers to install it.",
+			"Reads your package.json, landing page, and styles to determine project type, mood, and audience. Searches Fonttrio for the best matching pairing and offers to install it.",
 	},
 ];
 
@@ -53,62 +55,86 @@ export default function AIPage() {
 		<main className="bg-black min-h-screen flex flex-col">
 			<InnerHeader />
 
-			{/* Hero + Pricing */}
+			{/* Hero */}
 			<div className="p-3 pt-20">
 				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
-					<div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12 lg:gap-16">
-						<div className="flex-1 min-w-0">
-							<AnimateIn>
-								<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight dark:text-white text-neutral-900 text-balance max-w-2xl">
-									AI-powered font pairing
-								</h1>
-							</AnimateIn>
-							<AnimateIn delay={0.1}>
-								<p className="mt-4 text-base md:text-lg dark:text-neutral-400 text-neutral-600 max-w-xl">
-									Search, preview, and install curated font pairings directly
-									from your IDE. Works with Claude&nbsp;Code, Cursor, Codex,
-									and OpenCode.
-								</p>
-							</AnimateIn>
-						</div>
+					<AnimateIn>
+						<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight dark:text-white text-neutral-900 text-balance max-w-2xl">
+							AI-powered font pairing
+						</h1>
+					</AnimateIn>
+					<AnimateIn delay={0.1}>
+						<p className="mt-4 text-base md:text-lg dark:text-neutral-400 text-neutral-600 max-w-xl">
+							Search, preview, and install curated font pairings directly
+							from your IDE. Works with Claude&nbsp;Code, Cursor, Codex,
+							and OpenCode. Free for everyone.
+						</p>
+					</AnimateIn>
+				</section>
+			</div>
 
-						<AnimateIn
-							delay={0.15}
-							className="rounded-2xl border dark:border-neutral-700 border-neutral-300 dark:bg-neutral-900/50 bg-neutral-50 p-6 md:p-8 w-full lg:w-[380px] shrink-0"
-						>
-							<div className="mb-6">
-								<div className="mt-2 flex items-baseline gap-1">
-									<span className="text-3xl md:text-5xl font-semibold tracking-tighter dark:text-white text-neutral-900 tabular-nums">
-										${PRO_TIER.price}
-									</span>
-									<span className="text-base dark:text-neutral-500 text-neutral-400">
-										/month
-									</span>
-								</div>
+			{/* Quick Install */}
+			<div className="p-3 pt-0">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-12">
+						Quick Install
+					</h2>
+
+					<div className="space-y-6 max-w-2xl">
+						<p className="text-sm dark:text-neutral-400 text-neutral-600">
+							Run this command to install MCP server and Claude Code skills.
+							The script will let you choose your IDE (Claude&nbsp;Code, Cursor,
+							Codex, OpenCode).
+						</p>
+						<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
+							<code className="text-sm font-mono dark:text-neutral-300 text-neutral-700 break-all">
+								curl -fsSL https://www.fonttrio.xyz/api/install | bash
+							</code>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			{/* Manual Setup */}
+			<div className="p-3 pt-0">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-12">
+						Manual Setup
+					</h2>
+
+					<div className="space-y-8 max-w-2xl">
+						<div>
+							<h3 className="font-medium dark:text-white text-neutral-900 mb-3">
+								MCP Server
+							</h3>
+							<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-3">
+								Add this to your IDE's MCP configuration:
+							</p>
+							<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
+								<pre className="text-xs font-mono dark:text-neutral-300 text-neutral-700">
+{`{
+  "mcpServers": {
+    "fonttrio": {
+      "url": "https://www.fonttrio.xyz/api/mcp"
+    }
+  }
+}`}
+								</pre>
 							</div>
 
-							<ul className="space-y-3 mb-8">
-								{PRO_TIER.features.map((feature) => (
-									<li
-										key={feature}
-										className="flex items-start gap-2.5 text-sm"
-									>
-										<HugeiconsIcon
-											icon={CheckmarkBadge02Icon}
-											size={16}
-											color="currentColor"
-											strokeWidth={1.5}
-											className="shrink-0 mt-0.5"
-										/>
-										<span className="dark:text-neutral-300 text-neutral-700">
-											{feature}
-										</span>
-									</li>
-								))}
-							</ul>
-
-							<PricingCta />
-						</AnimateIn>
+							<div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+								<ConfigPath
+									ide="Claude Code"
+									path="~/.claude/settings.json"
+								/>
+								<ConfigPath ide="Cursor" path="~/.cursor/mcp.json" />
+								<ConfigPath ide="Codex" path="~/.codex/mcp.json" />
+								<ConfigPath
+									ide="OpenCode"
+									path="~/.opencode/mcp.json"
+								/>
+							</div>
+						</div>
 					</div>
 				</section>
 			</div>
@@ -136,6 +162,9 @@ export default function AIPage() {
 								<p className="text-xs dark:text-neutral-600 text-neutral-400 mt-3">
 									{tool.example}
 								</p>
+								<p className="text-xs dark:text-neutral-500 text-neutral-400 mt-2 font-mono">
+									params: {tool.params}
+								</p>
 							</AnimateInView>
 						))}
 					</div>
@@ -157,7 +186,7 @@ export default function AIPage() {
 								className="rounded-2xl border dark:border-neutral-800 border-neutral-200 p-6"
 							>
 								<code className="text-sm font-mono dark:text-white text-neutral-900">
-									/{skill.name}
+									{skill.command}
 								</code>
 								<p className="text-sm dark:text-neutral-400 text-neutral-600 mt-2 leading-relaxed">
 									{skill.description}
@@ -168,22 +197,20 @@ export default function AIPage() {
 				</section>
 			</div>
 
-			{/* CTA to docs */}
-			<div className="p-3 pt-0">
-				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24 text-center">
-					<h2 className="text-2xl sm:text-3xl font-medium tracking-tight dark:text-white text-neutral-900 mb-3">
-						Already subscribed?
-					</h2>
-					<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-6">
-						Access the full setup documentation and installation guide.
-					</p>
-					<Button variant="outline" className="cursor-pointer" asChild>
-						<a href="/ai/docs">Go to docs</a>
-					</Button>
-				</section>
-			</div>
-
 			<Footer />
 		</main>
+	);
+}
+
+function ConfigPath({ ide, path }: { ide: string; path: string }) {
+	return (
+		<div className="rounded-xl border dark:border-neutral-800 border-neutral-200 px-4 py-3">
+			<p className="text-xs font-medium dark:text-neutral-400 text-neutral-500 mb-1">
+				{ide}
+			</p>
+			<code className="text-xs font-mono dark:text-neutral-300 text-neutral-700">
+				{path}
+			</code>
+		</div>
 	);
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { LogOut, Menu, Moon, Sun, User, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import {
 	AnimatePresence,
 	motion,
@@ -12,16 +12,6 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { GithubStars } from "@/app/components/github-stars";
 import { Button } from "@/components/ui/button";
-import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuGroup,
-	DropdownMenuItem,
-	DropdownMenuLabel,
-	DropdownMenuSeparator,
-	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { authClient } from "@/lib/auth-client";
 import { HEADER_TRANSITION } from "@/lib/constants";
 
 const NAV_LINKS = [
@@ -239,7 +229,6 @@ const HeaderContent = ({
 					Sponsor
 				</Button>
 
-				<AuthButton />
 				<ThemeToggle />
 				<GithubStars />
 			</div>
@@ -309,91 +298,3 @@ const ThemeToggle = () => {
 	);
 };
 
-const AuthButton = () => {
-	const { data: session, isPending } = authClient.useSession();
-
-	if (isPending) return null;
-
-	if (!session?.user) {
-		return (
-			<Button
-				size="xs"
-				variant="ghost"
-				className="text-xs rounded-full tracking-tight text-white/60 hover:text-white hover:bg-white/10 cursor-pointer"
-				asChild
-			>
-				<a href="/sign-in">Sign in</a>
-			</Button>
-		);
-	}
-
-	return (
-		<DropdownMenu>
-			<DropdownMenuTrigger asChild>
-				<Button
-					size="icon"
-					variant="ghost"
-					className="size-8 rounded-full hover:bg-white/10 transition-colors cursor-pointer overflow-hidden"
-					aria-label="Account menu"
-				>
-					{session.user.image ? (
-						<img
-							src={session.user.image}
-							alt=""
-							className="size-6 rounded-full"
-							draggable={false}
-						/>
-					) : (
-						<User className="size-4 text-white/60" />
-					)}
-				</Button>
-			</DropdownMenuTrigger>
-			<DropdownMenuContent align="end" className="w-56">
-				<DropdownMenuLabel className="font-normal">
-					<div className="flex items-center gap-2.5 py-0.5">
-						{session.user.image ? (
-							<img
-								src={session.user.image}
-								alt=""
-								className="size-8 rounded-full shrink-0"
-								draggable={false}
-							/>
-						) : (
-							<div className="size-8 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center shrink-0">
-								<User className="size-3.5 text-neutral-500" />
-							</div>
-						)}
-						<div className="min-w-0">
-							<p className="text-sm font-medium truncate">
-								{session.user.name}
-							</p>
-							<p className="text-xs text-muted-foreground truncate">
-								{session.user.email}
-							</p>
-						</div>
-					</div>
-				</DropdownMenuLabel>
-				<DropdownMenuSeparator />
-				<DropdownMenuGroup>
-					<DropdownMenuItem asChild>
-						<a href="/account" className="cursor-pointer">
-							<User className="size-4 mr-2" />
-							Account
-						</a>
-					</DropdownMenuItem>
-				</DropdownMenuGroup>
-				<DropdownMenuSeparator />
-				<DropdownMenuItem
-					className="cursor-pointer"
-					onClick={() => {
-						authClient.signOut();
-						window.location.href = "/";
-					}}
-				>
-					<LogOut className="size-4 mr-2" />
-					Sign out
-				</DropdownMenuItem>
-			</DropdownMenuContent>
-		</DropdownMenu>
-	);
-};

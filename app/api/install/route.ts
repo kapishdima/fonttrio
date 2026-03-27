@@ -1,19 +1,5 @@
-import { validateApiKey } from "@/lib/api-key";
-
-export async function GET(req: Request): Promise<Response> {
-	const url = new URL(req.url);
-	const key = url.searchParams.get("key");
-
-	if (!key) {
-		return new Response("Missing key parameter", { status: 400 });
-	}
-
-	const result = await validateApiKey(key);
-	if (!result.valid) {
-		return new Response("Invalid or inactive API key", { status: 401 });
-	}
-
-	const script = generateInstallScript(key);
+export async function GET(): Promise<Response> {
+	const script = generateInstallScript();
 
 	return new Response(script, {
 		headers: {
@@ -23,19 +9,18 @@ export async function GET(req: Request): Promise<Response> {
 	});
 }
 
-function generateInstallScript(apiKey: string): string {
+function generateInstallScript(): string {
 	return `#!/usr/bin/env bash
 set -euo pipefail
 
-# Fonttrio Pro Installer
+# Fonttrio Installer
 # Installs MCP server config + Claude Code skills
 
-API_KEY="${apiKey}"
 MCP_URL="https://www.fonttrio.xyz/api/mcp"
 SKILLS_URL="https://www.fonttrio.xyz/api/skills"
 
 echo ""
-echo "  Fonttrio Pro Installer"
+echo "  Fonttrio Installer"
 echo "  ────────────────────────"
 echo ""
 
@@ -118,10 +103,7 @@ merge_mcp_config() {
   mcp_entry=$(cat <<MCPJSON
 {
   "fonttrio": {
-    "url": "$MCP_URL",
-    "headers": {
-      "Authorization": "Bearer $API_KEY"
-    }
+    "url": "$MCP_URL"
   }
 }
 MCPJSON
@@ -144,8 +126,7 @@ with open('$config_file', 'r') as f:
     config = json.load(f)
 config.setdefault('mcpServers', {})
 config['mcpServers']['fonttrio'] = {
-    'url': '$MCP_URL',
-    'headers': {'Authorization': 'Bearer $API_KEY'}
+    'url': '$MCP_URL'
 }
 with open('$config_file', 'w') as f:
     json.dump(config, f, indent=2)
@@ -156,8 +137,7 @@ const fs = require('fs');
 const config = JSON.parse(fs.readFileSync('$config_file', 'utf8'));
 config.mcpServers = config.mcpServers || {};
 config.mcpServers.fonttrio = {
-  url: '$MCP_URL',
-  headers: { Authorization: 'Bearer $API_KEY' }
+  url: '$MCP_URL'
 };
 fs.writeFileSync('$config_file', JSON.stringify(config, null, 2));
 "
@@ -175,7 +155,7 @@ install_skills() {
 
   for skill in audit-typography suggest-improvements; do
     echo "  Downloading skill: $skill"
-    curl -fsSL "$SKILLS_URL/$skill?key=$API_KEY" -o "$skills_dir/$skill.md"
+    curl -fsSL "$SKILLS_URL/$skill" -o "$skills_dir/$skill.md"
   done
 }
 
@@ -209,7 +189,7 @@ done
 
 echo ""
 echo "  ────────────────────────"
-echo "  Done! Restart your IDE to activate Fonttrio Pro."
+echo "  Done! Restart your IDE to activate Fonttrio."
 echo ""
 `;
 }
