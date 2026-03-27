@@ -67,6 +67,10 @@
       "enterprise",
       "dashboard",
       "admin"
+    ],
+    "appearance": [
+      "humanist",
+      "grotesque"
     ]
   }
 }

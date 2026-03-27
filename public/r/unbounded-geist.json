@@ -1,0 +1,67 @@
+{
+  "name": "pairing-unbounded-geist",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Unbounded Geist — Unbounded + Geist + IBM Plex Mono",
+  "description": "Unbounded paired with Geist for a google fonts aesthetic.",
+  "categories": [
+    "google fonts"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/unbounded.json",
+    "https://www.fonttrio.xyz/r/geist.json",
+    "https://www.fonttrio.xyz/r/ibm-plex-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-unbounded)",
+      "--font-body": "var(--font-geist)",
+      "--font-mono": "var(--font-ibm-plex-mono)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.75rem",
+        "line-height": "1.05",
+        "letter-spacing": "-0.035em",
+        "font-weight": "800"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.1",
+        "letter-spacing": "-0.025em",
+        "font-weight": "700"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.75rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.02em",
+        "font-weight": "700"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.6"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "versatile"
+    ],
+    "useCase": [
+      "general"
+    ]
+  }
+}

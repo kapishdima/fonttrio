@@ -67,6 +67,11 @@
       "media",
       "news",
       "marketing"
+    ],
+    "appearance": [
+      "modern",
+      "classic",
+      "grotesque"
     ]
   }
 }

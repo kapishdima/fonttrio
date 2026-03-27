@@ -29,7 +29,8 @@ fonttrio/
 │   ├── fonts/                       # AUTO-GENERATED (~100 popular)
 │   └── pairings/                    # CURATED (6 стартовых)
 ├── app/
-│   ├── page.tsx                     # Landing: editorial masonry
+│   ├── page.tsx                     # Landing
+│   ├── landing-client.tsx           # Клиентский landing компонент
 │   ├── [pairing]/page.tsx           # Детальная страница
 │   ├── api/r/[name]/route.ts        # Dynamic registry endpoint
 │   └── components/
@@ -40,8 +41,12 @@ fonttrio/
 │       ├── side-by-side.tsx
 │       ├── install-command.tsx
 │       └── font-provider.tsx
+├── components/
+│   ├── DotGrid.tsx                  # Canvas-based interactive dot grid (GSAP)
+│   └── Magnet.tsx                   # Magnetic cursor effect component
 ├── lib/
 │   ├── pairings.ts
+│   ├── sponsors.ts
 │   └── registry.ts
 └── public/r/                        # Built registry output
 ```
@@ -61,7 +66,10 @@ fonttrio/
 
 - Next.js 16 (App Router), Tailwind CSS v4, TypeScript
 - **shadcn/ui** — ВСЕ примитивные UI компоненты (Button, Tabs, Slider, Select, Tooltip, Badge, etc.)
+  - Style: `radix-nova`, baseColor: `neutral`
+  - Дополнительный реестр: `@react-bits` → `https://reactbits.dev/r/{name}.json`
 - shadcn CLI (`shadcn build`) для сборки registry
+- **GSAP** + InertiaPlugin — для физических анимаций (DotGrid)
 - nuqs — URL state management
 - Vercel — хостинг
 - Bun — runtime/package manager
@@ -69,65 +77,71 @@ fonttrio/
 ## Правила разработки
 
 - **НИКОГДА не писать примитивные компоненты вручную.** Tabs, Button, Slider, Select, Input, Badge, Tooltip, Dialog, Dropdown, Toggle — всё через `bunx shadcn@latest add <component>`.
-- Кастомные компоненты (pairing-card, type-tester, context-preview и т.д.) строятся НА ОСНОВЕ shadcn/ui примитивов.
-- Стилизация — только через Tailwind классы и CSS variables, без inline стилей.
+- Кастомные компоненты (pairing-card, type-tester, DotGrid, Magnet и т.д.) строятся НА ОСНОВЕ shadcn/ui примитивов или являются автономными интерактивными компонентами.
+- Стилизация — Tailwind классы и CSS variables. Inline стили допускаются только для динамических значений (позиции, transform от JS).
+- Анимации — GSAP для физически-корректных эффектов, CSS transitions для простых hover/fade.
 
 ## Дизайн
 
-**Aesthetic:** Swiss International Style (Швейцарский стиль)
-- Чистый чёрно-белый дизайн с швейцарским красным акцентом (#E30613)
-- Display шрифт: Bebas Neue (драматичные заголовки)
-- UI шрифт: System fonts (максимальная производительность)
-- Модульная сетка 12 колонок, номера секций (01, 02, 03...)
-- Жёсткие горизонтальные разделители, нулевой border-radius
+**Aesthetic:** Modern Organic — тёмный фон с белыми скруглёнными поверхностями, интерактивные эффекты.
 
-### Цвета (Swiss Style)
+### Ключевые паттерны
+
+- **Обёртка страницы:** `bg-black` на `<main>`, внутри `bg-white rounded-4xl` — создаёт эффект "приложение в рамке"
+- **Навигация:** Центрированная плавающая тёмная панель, крепится к верху белого контейнера (`rounded-tr-none rounded-tl-none`)
+- **Фон:** Интерактивный DotGrid (canvas + GSAP physics) как фоновый слой
+- **Заголовки:** Outfit (bold) для крупных display текстов
+- **Тело:** Manrope (medium) для подзаголовков и UI текста
+- **Курсор:** Magnetic эффект через `Magnet.tsx` для ключевых интерактивных элементов
+- **Border-radius:** Крупные скругления (`rounded-4xl` = 24px) для контейнеров; `rounded-xl` для навигации
+
+### Цветовые переменные
 
 ```css
 /* Light */
---bg: #ffffff;
---text: #000000;
---muted: rgba(0, 0, 0, 0.5);
---border: rgba(0, 0, 0, 0.1);
---border-strong: rgba(0, 0, 0, 0.25);
---accent: #e30613; /* Swiss Red */
---accent-soft: rgba(227, 6, 19, 0.1);
+--bg: #fafafa;
+--text: #0a0a0a;
+--text-muted: #666666;
+--text-subtle: #999999;
+--surface-border: #eaeaea;
+--surface-border-strong: #d4d4d4;
+--surface: #f0f0f0;
 
 /* Dark */
---bg: #000000;
---text: #ffffff;
---muted: rgba(255, 255, 255, 0.5);
---border: rgba(255, 255, 255, 0.15);
---border-strong: rgba(255, 255, 255, 0.3);
---accent: #ff1a26;
---accent-soft: rgba(255, 26, 38, 0.15);
+--bg: #0a0a0a;
+--text: #ededed;
+--text-muted: #888888;
+--text-subtle: #555555;
+--surface-border: #1f1f1f;
+--surface-border-strong: #333333;
+--surface: #141414;
 ```
 
-## План реализации
+### Типографика
 
-### Шаг 1: Scaffold ✅
-- Next.js project создан
+```css
+--font-display: var(--font-bebas-neue), system-ui, sans-serif; /* акценты/лого */
+--font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+--font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+```
 
-### Шаг 2: Скрипт генерации шрифтов
-- `scripts/generate-fonts.ts` — fetch Google Fonts metadata → `registry/fonts/`
-- Топ ~100 по popularity
+В контенте страниц используются Outfit (заголовки) через `font-[Outfit]`. Manrope — дефолтный sans-шрифт через `--font-sans`, не нужно указывать явно.
 
-### Шаг 3: Pairing JSONs
-- 6 кураторских пар в `registry/pairings/`
+### DotGrid — параметры по умолчанию
 
-### Шаг 4: Registry build
-- `shadcn build` → `public/r/*.json`
-
-### Шаг 5: Preview website
-- Landing page, pairing detail page, все компоненты
-- Type tester, context previews, typography customizer, side-by-side, install command
-
-### Шаг 5.5: Рефакторинг на shadcn/ui
-- Пройти по всем компонентам, найти самописные примитивы (tabs, buttons, sliders, selects, badges, toggles, inputs)
-- Установить нужные shadcn/ui компоненты: `bunx shadcn@latest add tabs button slider select badge toggle input tooltip`
-- Заменить самописные реализации на shadcn/ui
-
-### Шаг 6: Deploy
+```tsx
+<DotGrid
+  dotSize={2}
+  gap={30}
+  baseColor="#1c1c1c"
+  activeColor="#a1a1a1"
+  proximity={200}
+  shockRadius={10}
+  shockStrength={10}
+  resistance={100}
+  returnDuration={2.9}
+/>
+```
 
 ## Открытые вопросы
 

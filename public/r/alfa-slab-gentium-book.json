@@ -1,0 +1,67 @@
+{
+  "name": "pairing-alfa-slab-gentium-book",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Alfa Slab Gentium Book — Alfa Slab One + Gentium Book Plus + Source Code Pro",
+  "description": "Alfa Slab One paired with Gentium Book Plus for a google fonts aesthetic.",
+  "categories": [
+    "google fonts"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/alfa-slab-one.json",
+    "https://www.fonttrio.xyz/r/gentium-book-plus.json",
+    "https://www.fonttrio.xyz/r/source-code-pro.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-alfa-slab-one)",
+      "--font-body": "var(--font-gentium-book-plus)",
+      "--font-mono": "var(--font-source-code-pro)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.75rem",
+        "line-height": "1.05",
+        "letter-spacing": "-0.035em",
+        "font-weight": "800"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.1",
+        "letter-spacing": "-0.025em",
+        "font-weight": "700"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.75rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.02em",
+        "font-weight": "700"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.6"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "versatile"
+    ],
+    "useCase": [
+      "general"
+    ]
+  }
+}

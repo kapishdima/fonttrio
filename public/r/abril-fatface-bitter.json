@@ -1,0 +1,68 @@
+{
+  "name": "pairing-abril-fatface-bitter",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Abril Fatface Bitter — Abril Fatface + Bitter + JetBrains Mono",
+  "description": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Bitter.",
+  "categories": [
+    "sans serif-sans serif"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/abril-fatface.json",
+    "https://www.fonttrio.xyz/r/bitter.json",
+    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-abril-fatface)",
+      "--font-body": "var(--font-bitter)",
+      "--font-mono": "var(--font-jetbrains-mono)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.75rem",
+        "line-height": "1.05",
+        "letter-spacing": "-0.035em",
+        "font-weight": "800"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.1",
+        "letter-spacing": "-0.025em",
+        "font-weight": "700"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.75rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.02em",
+        "font-weight": "700"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.6"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "editorial",
+      "elegant"
+    ],
+    "useCase": [
+      "editorial"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "pairing-sofia-sans-sofia-sans",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Sofia Sans Sofia Sans — Sofia Sans Condensed + Sofia Sans + Fira Code",
+  "description": "Sofia Sans Condensed paired with Sofia Sans for a google fonts aesthetic.",
+  "categories": [
+    "google fonts"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/sofia-sans-condensed.json",
+    "https://www.fonttrio.xyz/r/sofia-sans.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-sofia-sans-condensed)",
+      "--font-body": "var(--font-sofia-sans)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.15",
+        "letter-spacing": "-0.03em",
+        "font-weight": "700"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.875rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.025em",
+        "font-weight": "600"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.5rem",
+        "line-height": "1.25",
+        "letter-spacing": "-0.02em",
+        "font-weight": "600"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.6"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "versatile"
+    ],
+    "useCase": [
+      "general"
+    ]
+  }
+}

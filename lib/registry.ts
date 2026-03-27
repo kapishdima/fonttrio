@@ -1,5 +1,5 @@
-import { readdirSync, readFileSync } from "fs";
-import { join } from "path";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 
 const REGISTRY_DIR = join(process.cwd(), "registry");
 const FONTS_DIR = join(REGISTRY_DIR, "fonts");
@@ -58,6 +58,7 @@ export interface RegistryIndex {
   }>;
 }
 
+
 function readJsonDir<T>(dir: string): T[] {
   try {
     const files = readdirSync(dir).filter((f) => f.endsWith(".json"));
@@ -69,6 +70,7 @@ function readJsonDir<T>(dir: string): T[] {
     return [];
   }
 }
+
 
 export function getAllFonts(): FontItem[] {
   return readJsonDir<FontItem>(FONTS_DIR);

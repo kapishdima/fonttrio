@@ -1,0 +1,68 @@
+{
+  "name": "pairing-dm-sans-source-serif",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Dm Sans Source Serif — DM Sans + Source Serif 4 + JetBrains Mono",
+  "description": "Source Serif 4 balances the clean look of DM Sans for editorial use.",
+  "categories": [
+    "sans serif-serif"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/dm-sans.json",
+    "https://www.fonttrio.xyz/r/source-serif-4.json",
+    "https://www.fonttrio.xyz/r/jetbrains-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-dm-sans)",
+      "--font-body": "var(--font-source-serif-4)",
+      "--font-mono": "var(--font-jetbrains-mono)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.02em",
+        "font-weight": "600"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.75rem",
+        "line-height": "1.25",
+        "letter-spacing": "-0.015em",
+        "font-weight": "600"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.375rem",
+        "line-height": "1.3",
+        "letter-spacing": "-0.01em",
+        "font-weight": "500"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.005em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.65"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "editorial",
+      "modern"
+    ],
+    "useCase": [
+      "editorial"
+    ]
+  }
+}

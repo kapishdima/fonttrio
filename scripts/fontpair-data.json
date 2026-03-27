@@ -1,0 +1,2570 @@
+[
+  {
+    "heading": "Tenor Sans",
+    "body": "Alegreya Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Crisp and balanced",
+    "reason": "Tenor Sans is narrow and elegant, contrasting well with Alegreya Sans."
+  },
+  {
+    "heading": "Chivo",
+    "body": "IBM Plex Serif",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Sharp and technical.",
+    "reason": "IBM Plex Serif introduces structure and balance."
+  },
+  {
+    "heading": "Cormorant Garamond",
+    "body": "DM Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Traditional elegance with readability",
+    "reason": "Cormorant Garamond brings a traditional feel to the modern base of DM Sans."
+  },
+  {
+    "heading": "Sofia Sans Condensed",
+    "body": "Sofia Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Spectral",
+    "body": "JetBrains Mono",
+    "category": "Serif + Monospace",
+    "use_case": "Monospace Body",
+    "style_notes": "Elegant and focused",
+    "reason": "JetBrains Mono grounds Spectral with modern simplicity."
+  },
+  {
+    "heading": "Bitter",
+    "body": "Raleway",
+    "category": "Serif + Sans Serif",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Playfair Display",
+    "body": "Roboto",
+    "category": "Display + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Playfair Display delivers high-end flair, complemented by the elegant and refined tone of Roboto."
+  },
+  {
+    "heading": "Geist",
+    "body": "Inter",
+    "category": "General",
+    "use_case": "Web interfaces, applications",
+    "style_notes": "",
+    "reason": "Modern sans-serif pairing with excellent readability"
+  },
+  {
+    "heading": "Geist",
+    "body": "Manrope",
+    "category": "General",
+    "use_case": "Product pages, marketing",
+    "style_notes": "",
+    "reason": "Friendly geometric pairing with technical precision"
+  },
+  {
+    "heading": "Sora",
+    "body": "Geist",
+    "category": "General",
+    "use_case": "Branding, editorial",
+    "style_notes": "",
+    "reason": "Distinctive headlines with clean body text"
+  },
+  {
+    "heading": "Montserrat",
+    "body": "Poppins",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Montserrat adds a soft, approachable feel while Poppins keeps things clean and readable."
+  },
+  {
+    "heading": "Encode Sans Expanded",
+    "body": "Encode Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Libre Baskerville",
+    "body": "Libre Franklin",
+    "category": "Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Clean and trustworthy",
+    "reason": "Libre Franklin supports Libre Baskerville with a neutral and readable presence."
+  },
+  {
+    "heading": "Red Hat Display",
+    "body": "Red Hat Text",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Be Vietnam Pro",
+    "body": "Raleway",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Be Vietnam Pro and Raleway are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Bitter",
+    "body": "Archivo",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Bitter and Archivo are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Bebas Neue",
+    "body": "Nunito",
+    "category": "Mixed",
+    "use_case": "Posters / Display",
+    "style_notes": "Bold / Impact",
+    "reason": "Bebas Neue provides strong visual impact, while Nunito balances it with clear readability."
+  },
+  {
+    "heading": "Abril Fatface",
+    "body": "Merriweather",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Merriweather."
+  },
+  {
+    "heading": "Be Vietnam Pro",
+    "body": "Montserrat",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Be Vietnam Pro and Montserrat are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Archivo",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Archivo and Lora are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Bitter",
+    "body": "Roboto",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Bitter and Roboto are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Bitter",
+    "body": "Be Vietnam Pro",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Bitter and Be Vietnam Pro are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Merriweather",
+    "body": "Archivo",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Merriweather and Archivo are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Montserrat",
+    "body": "Archivo",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Montserrat and Archivo are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Lora",
+    "body": "Merriweather",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Lora and Merriweather are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Alegreya",
+    "body": "Alegreya Sans",
+    "category": "Google Fonts",
+    "use_case": "Fun stuff",
+    "style_notes": "",
+    "reason": "It just does"
+  },
+  {
+    "heading": "Fira Sans",
+    "body": "Merriweather",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Fira Sans and Merriweather are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Archivo",
+    "body": "Raleway",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Archivo and Raleway are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Archivo",
+    "body": "Bitter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Archivo and Bitter are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Be Vietnam Pro",
+    "body": "Merriweather",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Be Vietnam Pro and Merriweather are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Raleway",
+    "body": "Roboto",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Raleway and Roboto are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Fira Sans",
+    "body": "Be Vietnam Pro",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Fira Sans and Be Vietnam Pro are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Lora",
+    "body": "Raleway",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Lora and Raleway are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Bitter",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Bitter and Lora are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Merriweather",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Merriweather and Lora are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Montserrat",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Roboto and Montserrat are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Merriweather",
+    "body": "Be Vietnam Pro",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Merriweather and Be Vietnam Pro are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Merriweather",
+    "body": "Bitter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Merriweather and Bitter are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Archivo",
+    "body": "Fira Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Archivo and Fira Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Archivo",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Roboto and Archivo are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Bitter",
+    "body": "Fira Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Bitter and Fira Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Be Vietnam Pro",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Roboto and Be Vietnam Pro are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Fira Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Roboto and Fira Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Fira Sans",
+    "body": "Raleway",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Fira Sans and Raleway are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Raleway",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Raleway and Lora are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Montserrat",
+    "body": "Fira Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Montserrat and Fira Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Montserrat",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Montserrat and Lora are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Be Vietnam Pro",
+    "body": "Inter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Be Vietnam Pro and Inter share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "DM Serif Display",
+    "body": "Roboto Mono",
+    "category": "Serif + Monospace",
+    "use_case": "Monospace Body",
+    "style_notes": "Bold and digital",
+    "reason": "Roboto Mono adds order to the expressive DM Serif headline."
+  },
+  {
+    "heading": "Funnel Display",
+    "body": "Funnel Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "PT Serif",
+    "body": "PT Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Quattrocento",
+    "body": "Quattrocento Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Roboto Serif",
+    "body": "Roboto",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Ubuntu Mono",
+    "body": "Ubuntu",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Saira Condensed",
+    "body": "Saira",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Spline Sans",
+    "body": "Inter",
+    "category": "Mixed",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Zilla Slab",
+    "body": "Nunito Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Barlow Semi Condensed",
+    "body": "Barlow",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "PT Sans Narrow",
+    "body": "PT Serif",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Oswald",
+    "body": "Montserrat",
+    "category": "Mixed",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Alfa Slab One",
+    "body": "Gentium Book Plus",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Aleo",
+    "body": "Archivo",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Petrona",
+    "body": "Libre Franklin",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Expressive and rich",
+    "reason": "Petrona brings expressive serif energy to a minimal body base."
+  },
+  {
+    "heading": "Encode Sans Condensed",
+    "body": "Encode Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Fira Sans Condensed",
+    "body": "Fira Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Space Mono",
+    "body": "Space Grotesk",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Noto Serif",
+    "body": "Noto Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Brawler",
+    "body": "Nunito Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "IBM Plex Serif",
+    "body": "IBM Plex Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Ovo",
+    "body": "Mulish",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Lustria",
+    "body": "Mulish",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "DM Serif Display",
+    "body": "DM Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Fira Sans",
+    "body": "Archivo",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Fira Sans and Archivo are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Albert Sans",
+    "body": "Barlow",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Instrument Serif",
+    "body": "Instrument Sans",
+    "category": "Google Fonts",
+    "use_case": "Editorial / Product Design",
+    "style_notes": "Sibling Harmony",
+    "reason": "Designed to work together, Instrument Serif’s subtle contrast shines in headers while Instrument Sans excels in readability and structure."
+  },
+  {
+    "heading": "Aleo",
+    "body": "Albert Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "DM Sans",
+    "body": "DM Mono",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Ubuntu Condensed",
+    "body": "Ubuntu",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Yellowtail",
+    "body": "Lato",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "DM Serif Text",
+    "body": "DM Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Be Vietnam Pro",
+    "body": "Fira Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Be Vietnam Pro and Fira Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Josefin Slab",
+    "body": "Josefin Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Playfair Display",
+    "body": "Playfair",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Ubuntu Sans",
+    "body": "Ubuntu",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Bricolage Grotesque",
+    "body": "Ubuntu",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Yellowtail",
+    "body": "Nunito",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Karla",
+    "body": "Inconsolata",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "DM Serif Display",
+    "body": "DM Serif Text",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Public Sans",
+    "body": "Inter",
+    "category": "Mixed",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Alegreya Sans",
+    "body": "Merriweather",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Roboto",
+    "body": "Roboto Serif",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Noto Serif Display",
+    "body": "Noto Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Ubuntu Sans Mono",
+    "body": "Ubuntu Mono",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Ubuntu Sans Mono",
+    "body": "Ubuntu Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Bricolage Grotesque",
+    "body": "Geist",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Libre Franklin",
+    "body": "Libre Baskerville",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Cardo",
+    "body": "Roboto Serif",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Archivo Black",
+    "body": "Archivo",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Barlow Condensed",
+    "body": "Barlow",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Libre Caslon Display",
+    "body": "Libre Caslon Text",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Libre Caslon Display",
+    "body": "Libre Franklin",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Fira Code",
+    "body": "Work Sans",
+    "category": "Google Fonts",
+    "use_case": "Monospace Heading",
+    "style_notes": "Tech meets UI",
+    "reason": "Fira Code’s sharpness plays well with friendly Work Sans."
+  },
+  {
+    "heading": "Playfair Display SC",
+    "body": "Playfair",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Ubuntu Condensed",
+    "body": "Ubuntu Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Rubik",
+    "body": "Karla",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Nunito",
+    "body": "PT Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Asap Condensed",
+    "body": "Asap",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Libertinus Serif",
+    "body": "Libertinus Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Space Mono",
+    "body": "Work Sans",
+    "category": "Google Fonts",
+    "use_case": "Monospace Heading",
+    "style_notes": "Bold and clean",
+    "reason": "Space Mono’s personality pairs well with neutral Work Sans."
+  },
+  {
+    "heading": "Montserrat",
+    "body": "Nunito",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Montserrat",
+    "body": "Geist",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Alegreya SC",
+    "body": "Alegreya",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Lusitana",
+    "body": "Raleway",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Crimson Text",
+    "body": "Crimson Pro",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "PT Sans Narrow",
+    "body": "PT Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Roboto",
+    "body": "Nunito Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Teko",
+    "body": "Ubuntu",
+    "category": "Mixed",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Palanquin Dark",
+    "body": "Palanquin",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Domine",
+    "body": "Manrope",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Raleway",
+    "body": "Open Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Raleway and Open Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Inter",
+    "body": "Be Vietnam Pro",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Inter and Be Vietnam Pro share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Crimson Pro",
+    "body": "Crimson Text",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Instrument Sans",
+    "body": "Karla",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Wellness / Apps",
+    "style_notes": "Friendly + Humanist",
+    "reason": "Karla adds warmth and casual rhythm to Instrument Sans’s cool modernist edge — an ideal match for approachable digital experiences."
+  },
+  {
+    "heading": "Inter",
+    "body": "Fira Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Inter and Fira Sans share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Inter",
+    "body": "Roboto",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Inter and Roboto share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Spectral",
+    "body": "Merriweather",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Neutral",
+    "reason": "Spectral and Merriweather are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Nunito",
+    "body": "Merriweather",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Nunito adds a soft, approachable feel while Merriweather keeps things clean and readable."
+  },
+  {
+    "heading": "Nunito",
+    "body": "Bitter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Nunito adds a soft, approachable feel while Bitter keeps things clean and readable."
+  },
+  {
+    "heading": "Inter",
+    "body": "Poppins",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Friendly",
+    "reason": "Inter adds a soft, approachable feel while Poppins keeps things clean and readable."
+  },
+  {
+    "heading": "Open Sans",
+    "body": "Archivo",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Open Sans and Archivo are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Fira Sans",
+    "body": "Manrope",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Fira Sans and Manrope share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Bitter",
+    "body": "Spectral",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Neutral",
+    "reason": "Bitter and Spectral are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Poppins",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Poppins adds a soft, approachable feel while Lora keeps things clean and readable."
+  },
+  {
+    "heading": "Merriweather",
+    "body": "Spectral",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Neutral",
+    "reason": "Merriweather and Spectral are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "PT Sans",
+    "body": "Be Vietnam Pro",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Minimalist",
+    "reason": "PT Sans and Be Vietnam Pro share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Inter",
+    "body": "Montserrat",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Inter and Montserrat share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Open Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Roboto and Open Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Merriweather",
+    "body": "Poppins",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Merriweather adds a soft, approachable feel while Poppins keeps things clean and readable."
+  },
+  {
+    "heading": "PT Sans",
+    "body": "Nunito",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "PT Sans adds a soft, approachable feel while Nunito keeps things clean and readable."
+  },
+  {
+    "heading": "Arvo",
+    "body": "Montserrat",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Nunito",
+    "body": "Nunito Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Inter",
+    "body": "PT Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Inter and PT Sans share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Merriweather",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Manrope and Merriweather share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Lora",
+    "body": "Varela",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Inter",
+    "body": "Archivo",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Inter and Archivo share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Poppins",
+    "body": "Inter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Friendly",
+    "reason": "Poppins adds a soft, approachable feel while Inter keeps things clean and readable."
+  },
+  {
+    "heading": "Lora",
+    "body": "Poppins",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Lora adds a soft, approachable feel while Poppins keeps things clean and readable."
+  },
+  {
+    "heading": "Archivo",
+    "body": "Manrope",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Archivo and Manrope share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "IBM Plex Sans Condensed",
+    "body": "IBM Plex Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Alegreya Sans SC",
+    "body": "Alegreya Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Lora",
+    "body": "Manrope",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Roboto",
+    "body": "Poppins",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Roboto adds a soft, approachable feel while Poppins keeps things clean and readable."
+  },
+  {
+    "heading": "Spectral",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Neutral",
+    "reason": "Spectral and Lora are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Poppins",
+    "body": "Raleway",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Poppins adds a soft, approachable feel while Raleway keeps things clean and readable."
+  },
+  {
+    "heading": "Montserrat Alternates",
+    "body": "Montserrat",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Roboto Slab",
+    "body": "Roboto",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Open Sans",
+    "body": "Roboto",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Open Sans and Roboto are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Abril Fatface",
+    "body": "Roboto",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Roboto."
+  },
+  {
+    "heading": "Merriweather",
+    "body": "Open Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Merriweather and Open Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Abril Fatface",
+    "body": "Raleway",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Raleway."
+  },
+  {
+    "heading": "News Cycle",
+    "body": "Newsreader",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Open Sans",
+    "body": "PT Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Open Sans and PT Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "PT Sans",
+    "body": "Spectral",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Neutral",
+    "reason": "PT Sans and Spectral are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Lora",
+    "body": "PT Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Lora and PT Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Open Sans",
+    "body": "Bitter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Open Sans and Bitter are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Archivo",
+    "body": "Spectral",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Neutral",
+    "reason": "Archivo and Spectral are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Abril Fatface",
+    "body": "Inter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Luxe",
+    "reason": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Inter."
+  },
+  {
+    "heading": "Roboto",
+    "body": "PT Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Roboto and PT Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Poppins",
+    "body": "Nunito",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Poppins adds a soft, approachable feel while Nunito keeps things clean and readable."
+  },
+  {
+    "heading": "Nunito",
+    "body": "Poppins",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Nunito adds a soft, approachable feel while Poppins keeps things clean and readable."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Nunito",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Friendly",
+    "reason": "Manrope adds a soft, approachable feel while Nunito keeps things clean and readable."
+  },
+  {
+    "heading": "Be Vietnam Pro",
+    "body": "Spectral",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Minimalist",
+    "reason": "Be Vietnam Pro and Spectral share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Bitter",
+    "body": "PT Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Bitter and PT Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Bitter",
+    "body": "Inter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Bitter and Inter share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Be Vietnam Pro",
+    "body": "Manrope",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Be Vietnam Pro and Manrope share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Nunito",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Roboto adds a soft, approachable feel while Nunito keeps things clean and readable."
+  },
+  {
+    "heading": "Merriweather",
+    "body": "Merriweather Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Varela Round",
+    "body": "Varela",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Roboto Condensed",
+    "body": "Roboto",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Poppins",
+    "body": "Merriweather",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Poppins adds a soft, approachable feel while Merriweather keeps things clean and readable."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Roboto Mono",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "PT Sans",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "PT Sans and Lora are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "PT Sans",
+    "body": "Poppins",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "PT Sans adds a soft, approachable feel while Poppins keeps things clean and readable."
+  },
+  {
+    "heading": "Be Vietnam Pro",
+    "body": "Poppins",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Be Vietnam Pro adds a soft, approachable feel while Poppins keeps things clean and readable."
+  },
+  {
+    "heading": "PT Sans",
+    "body": "Open Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "PT Sans and Open Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Nunito",
+    "body": "Inter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Friendly",
+    "reason": "Nunito adds a soft, approachable feel while Inter keeps things clean and readable."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Be Vietnam Pro",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Manrope and Be Vietnam Pro share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Open Sans",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Open Sans and Lora are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Inter",
+    "body": "Manrope",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Inter and Manrope share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Fira Sans",
+    "body": "Bitter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Fira Sans and Bitter are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Bitter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Branding",
+    "style_notes": "Neutral",
+    "reason": "Roboto and Bitter are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Arvo",
+    "body": "Geist",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Overpass Mono",
+    "body": "Overpass",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Unbounded",
+    "body": "Geist",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Spline Sans",
+    "body": "Geist",
+    "category": "Mixed",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Rethink Sans",
+    "body": "Geist",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "IBM Plex Sans Condensed",
+    "body": "IBM Plex Serif",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Fira Sans",
+    "body": "Open Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Fira Sans and Open Sans are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Encode Sans Expanded",
+    "body": "Encode Sans Condensed",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "PT Sans Caption",
+    "body": "PT Sans",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Montserrat",
+    "body": "Hind",
+    "category": "Mixed",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Nunito",
+    "body": "Open Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Nunito adds a soft, approachable feel while Open Sans keeps things clean and readable."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Manrope",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Roboto and Manrope share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Roboto",
+    "body": "Inter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Roboto and Inter share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Be Vietnam Pro",
+    "body": "Open Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Minimalist",
+    "reason": "Be Vietnam Pro and Open Sans share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Archivo",
+    "body": "Nunito",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Archivo adds a soft, approachable feel while Nunito keeps things clean and readable."
+  },
+  {
+    "heading": "Oxygen Mono",
+    "body": "Oxygen",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "Manrope",
+    "body": "Raleway",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Manrope and Raleway share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Roboto",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Manrope and Roboto share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Open Sans",
+    "body": "Poppins",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Open Sans adds a soft, approachable feel while Poppins keeps things clean and readable."
+  },
+  {
+    "heading": "Nunito",
+    "body": "Roboto",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Nunito adds a soft, approachable feel while Roboto keeps things clean and readable."
+  },
+  {
+    "heading": "Libre Franklin",
+    "body": "Cambay",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Bold with a unique tone",
+    "reason": "Cambay adds personality without sacrificing clarity under Franklin’s tone."
+  },
+  {
+    "heading": "Open Sans",
+    "body": "Merriweather",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Open Sans and Merriweather are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Rosario",
+    "body": "Syne",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Friendly and smooth",
+    "reason": "Rosario enhances flow and readability without overpowering."
+  },
+  {
+    "heading": "Zen Kaku Gothic New",
+    "body": "Syne",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Neutral and tech-forward",
+    "reason": "Zen Kaku Gothic New supports Syne with neutral, legible body text."
+  },
+  {
+    "heading": "Mada",
+    "body": "Libre Franklin",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Functional and clean",
+    "reason": "Mada’s clean lines and digital-friendly tone ground bold headers."
+  },
+  {
+    "heading": "Archivo Narrow",
+    "body": "Be Vietnam Pro",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "tech UI",
+    "style_notes": "Neutral and modern",
+    "reason": "Be Vietnam Pro keeps digital designs clean and functional."
+  },
+  {
+    "heading": "Syne",
+    "body": "Red Hat Text",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Professional and versatile",
+    "reason": "Red Hat Text keeps branding content clean and balanced beneath Syne."
+  },
+  {
+    "heading": "Abril Fatface",
+    "body": "PT Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of PT Sans."
+  },
+  {
+    "heading": "Jost",
+    "body": "Libre Franklin",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Geometric and modern",
+    "reason": "Jost provides a geometric contrast to Libre Franklin’s versatility."
+  },
+  {
+    "heading": "Archivo",
+    "body": "Inter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Modern UI",
+    "style_notes": "Minimalist",
+    "reason": "Archivo and Inter share a clean, modern aesthetic that suits minimalist design systems."
+  },
+  {
+    "heading": "Archivo Narrow",
+    "body": "Inter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Neutral and flexible",
+    "reason": "Inter balances the tight spacing of Archivo Narrow with modern clarity."
+  },
+  {
+    "heading": "Abril Fatface",
+    "body": "Bitter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Bitter."
+  },
+  {
+    "heading": "Abril Fatface",
+    "body": "Lora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Lora."
+  },
+  {
+    "heading": "Abril Fatface",
+    "body": "Nunito",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Friendly",
+    "reason": "Abril Fatface adds a soft, approachable feel while Nunito keeps things clean and readable."
+  },
+  {
+    "heading": "Space Grotesk",
+    "body": "Be Vietnam Pro",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "tech UI",
+    "style_notes": "Clean and technical",
+    "reason": "Be Vietnam Pro brings tech-forward clarity that enhances modern layouts."
+  },
+  {
+    "heading": "Trispace",
+    "body": "Alegreya Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Wide and monospaced",
+    "reason": "Trispace’s tech-inspired feel grounds Alegreya Sans’s friendly voice."
+  },
+  {
+    "heading": "Syne",
+    "body": "Epilogue",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Contemporary and crisp",
+    "reason": "Epilogue’s sleek minimalism pairs well with Syne’s bolder geometry."
+  },
+  {
+    "heading": "Epilogue",
+    "body": "Rosario",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Friendly and neutral",
+    "reason": "Rosario maintains warmth and readability in digital contexts."
+  },
+  {
+    "heading": "Yaldevi",
+    "body": "Libre Franklin",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Compact and precise",
+    "reason": "Yaldevi offers a compact, neutral contrast that complements Franklin well."
+  },
+  {
+    "heading": "Space Grotesk",
+    "body": "Roboto",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Modern and widely legible",
+    "reason": "Roboto is a highly legible sans that complements the clean shapes of Space Grotesk."
+  },
+  {
+    "heading": "Tenor Sans",
+    "body": "Karla",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Minimal and tidy",
+    "reason": "Tenor Sans adds headline clarity over a calm Karla body."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Sora",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Rounded and bold",
+    "reason": "Sora softens Manrope’s geometry with playful curves."
+  },
+  {
+    "heading": "Instrument Serif",
+    "body": "Inter",
+    "category": "Serif + Sans Serif",
+    "use_case": "Editorial / Product Design",
+    "style_notes": "Structured + Systemic",
+    "reason": "Instrument Serif offers elevated elegance for titles; Inter keeps things clean and efficient in the body for digital readability."
+  },
+  {
+    "heading": "Gloock",
+    "body": "Instrument Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "Fashion / Lifestyle / Journals",
+    "style_notes": "Classic + Functional",
+    "reason": "Gloock makes a bold vintage statement in headers; Instrument Sans plays the modern foil in supporting copy."
+  },
+  {
+    "heading": "Cambo",
+    "body": "Alegreya Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Formal and charming",
+    "reason": "Cambo complements Alegreya Sans with delicate formality."
+  },
+  {
+    "heading": "Fraunces",
+    "body": "DM Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Personality-packed and friendly",
+    "reason": "Fraunces offers expressive character that pairs well with DM Sans’ clarity."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Inter",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Clean and technical",
+    "reason": "Inter brings structured simplicity to Manrope’s tone."
+  },
+  {
+    "heading": "Petrona",
+    "body": "Manrope",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Classic and clean",
+    "reason": "Manrope supports Petrona’s heritage tone cleanly."
+  },
+  {
+    "heading": "Fraunces",
+    "body": "Space Grotesk",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Warm with flair",
+    "reason": "Fraunces brings warmth and character to a clean sans-serif body."
+  },
+  {
+    "heading": "Gloock",
+    "body": "Epilogue",
+    "category": "Serif + Sans Serif",
+    "use_case": "creative",
+    "style_notes": "Editorial and bold",
+    "reason": "Gloock introduces bold expression against Epilogue’s modern base."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Work Sans",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "general web",
+    "style_notes": "Approachable and versatile",
+    "reason": "Work Sans pairs well with Manrope for general use."
+  },
+  {
+    "heading": "Caudex",
+    "body": "Alegreya Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Historic with character",
+    "reason": "Caudex offers classical depth to modern layouts."
+  },
+  {
+    "heading": "Fraunces",
+    "body": "Instrument Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "Premium Branding",
+    "style_notes": "Expressive + Minimal",
+    "reason": "Fraunces has flair and personality up top, while Instrument Sans keeps supporting text clean and quietly stylish."
+  },
+  {
+    "heading": "Ovo",
+    "body": "Syne",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Lightweight and distinctive",
+    "reason": "Ovo offers understated detail for longer-form content under bold headlines."
+  },
+  {
+    "heading": "Fraunces",
+    "body": "Epilogue",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Expressive and professional",
+    "reason": "Fraunces adds warmth and character to Epilogue’s clean delivery."
+  },
+  {
+    "heading": "Instrument Serif",
+    "body": "Work Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "Startups / Design Systems",
+    "style_notes": "Sharp + Friendly",
+    "reason": "Instrument Serif gives sharp, trustworthy vibes in the header, while Work Sans keeps things informal and readable below."
+  },
+  {
+    "heading": "Archivo Narrow",
+    "body": "Archivo",
+    "category": "Sans Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Wide and practical",
+    "reason": "Archivo supports Archivo Narrow with a broader, more versatile tone for body content."
+  },
+  {
+    "heading": "Libre Baskerville",
+    "body": "Figtree",
+    "category": "Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Round and approachable",
+    "reason": "Figtree's rounded forms bring warmth and rhythm to classic serif headings."
+  },
+  {
+    "heading": "Inknut Antiqua",
+    "body": "DM Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Clean and contemporary",
+    "reason": "DM Sans brings legibility and freshness to bold serif headlines."
+  },
+  {
+    "heading": "Libre Baskerville",
+    "body": "IBM Plex Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "tech UI",
+    "style_notes": "Sharp and versatile",
+    "reason": "IBM Plex Sans supports the authority of Libre Baskerville with a structured and digital-ready voice."
+  },
+  {
+    "heading": "Libre Baskerville",
+    "body": "Instrument Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Stylish and subtle",
+    "reason": "Instrument Sans offers smooth geometry under elegant serif shapes."
+  },
+  {
+    "heading": "Libre Baskerville",
+    "body": "Work Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Balanced and clean",
+    "reason": "Work Sans complements Libre Baskerville with a friendly, legible tone for UI and text."
+  },
+  {
+    "heading": "Libre Baskerville",
+    "body": "Rosario",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Friendly and legible",
+    "reason": "Rosario matches the refined, soft nature of Libre Baskerville."
+  },
+  {
+    "heading": "Inknut Antiqua",
+    "body": "Work Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Balanced and versatile",
+    "reason": "Work Sans softens the drama of Inknut with friendly tone."
+  },
+  {
+    "heading": "Inknut Antiqua",
+    "body": "Be Vietnam Pro",
+    "category": "Serif + Sans Serif",
+    "use_case": "tech UI",
+    "style_notes": "Tight and technical",
+    "reason": "Be Vietnam Pro keeps things readable and UI-friendly."
+  },
+  {
+    "heading": "Inknut Antiqua",
+    "body": "Instrument Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Crisp and understated",
+    "reason": "Instrument Sans brings a cool and neutral vibe to strong serif headings."
+  },
+  {
+    "heading": "Inknut Antiqua",
+    "body": "Inter",
+    "category": "Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Modern and neutral",
+    "reason": "Inter gives a modern counterbalance to Inknut Antiqua’s historic tone."
+  },
+  {
+    "heading": "Libre Baskerville",
+    "body": "DM Sans",
+    "category": "Serif + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Simple and clean",
+    "reason": "DM Sans balances out the contrast with an approachable modern tone."
+  },
+  {
+    "heading": "Inknut Antiqua",
+    "body": "Mulish",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Modern and flexible",
+    "reason": "Mulish offers a clean, friendly base for Inknut’s structured tone."
+  },
+  {
+    "heading": "David Libre",
+    "body": "Chivo",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Classic headline with clarity.",
+    "reason": "Chivo delivers a stable voice for expressive serif headers."
+  },
+  {
+    "heading": "Spectral",
+    "body": "Karla",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Classic and editorial",
+    "reason": "Spectral’s contrast and texture add depth to Karla’s readable body."
+  },
+  {
+    "heading": "Petrona",
+    "body": "Karla",
+    "category": "Serif + Sans Serif",
+    "use_case": "editorial",
+    "style_notes": "Elegant and readable",
+    "reason": "Petrona softens headlines with a traditional base."
+  },
+  {
+    "heading": "Libre Baskerville",
+    "body": "Inter",
+    "category": "Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Neutral and flexible",
+    "reason": "Inter softens the formal tone of Libre Baskerville with tech-ready clarity."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Faustina",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Refined and readable",
+    "reason": "Faustina’s upright form works well under wide sans."
+  },
+  {
+    "heading": "Libre Franklin",
+    "body": "Aleo",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Soft and humanist",
+    "reason": "Aleo’s rounded edges soften the modern crispness of Libre Franklin."
+  },
+  {
+    "heading": "Epilogue",
+    "body": "Newsreader",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Refined and modern",
+    "reason": "Newsreader softens Epilogue’s geometry with elegant contrast."
+  },
+  {
+    "heading": "DM Sans",
+    "body": "Source Serif 4",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Clean and professional",
+    "reason": "Source Serif 4 balances the clean look of DM Sans for editorial use."
+  },
+  {
+    "heading": "Libre Franklin",
+    "body": "David Libre",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Elegant with heritage",
+    "reason": "David Libre offers a formal and timeless feel below a strong header."
+  },
+  {
+    "heading": "Archivo Narrow",
+    "body": "Faustina",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Refined and literary",
+    "reason": "Faustina brings timeless rhythm to condensed UI design."
+  },
+  {
+    "heading": "DM Sans",
+    "body": "Spectral",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Warm and elegant",
+    "reason": "Spectral complements DM Sans with a refined serif touch."
+  },
+  {
+    "heading": "Syne",
+    "body": "Gloock",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Old-style charm, modern edge",
+    "reason": "Gloock introduces a literary and artistic feel to Syne’s bold headers."
+  },
+  {
+    "heading": "Syne",
+    "body": "Newsreader",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Refined and editorial",
+    "reason": "Newsreader’s contrast softens the strong presence of Syne."
+  },
+  {
+    "heading": "Epilogue",
+    "body": "Spectral",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Structured and legible",
+    "reason": "Spectral brings refined serif detail beneath Epilogue’s clarity."
+  },
+  {
+    "heading": "Space Grotesk",
+    "body": "Lora",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Classic meets future",
+    "reason": "Lora introduces traditional elegance that offsets Space Grotesk’s precision."
+  },
+  {
+    "heading": "Libre Franklin",
+    "body": "Martel",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Classical and serious",
+    "reason": "Martel’s traditional structure supports Libre Franklin with gravitas."
+  },
+  {
+    "heading": "Archivo Narrow",
+    "body": "David Libre",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Formal and bookish",
+    "reason": "David Libre enhances credibility and structure to lean modern layouts."
+  },
+  {
+    "heading": "Libre Franklin",
+    "body": "Faustina",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Structured and literary",
+    "reason": "Faustina’s vertical rhythm balances Libre Franklin’s neutrality."
+  },
+  {
+    "heading": "Alegreya Sans",
+    "body": "Alegreya",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Warm and cohesive",
+    "reason": "Alegreya offers a smooth serif complement to the humanist tones of Alegreya Sans."
+  },
+  {
+    "heading": "Alegreya Sans",
+    "body": "Faustina",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Modern and elegant",
+    "reason": "Faustina’s upright rhythm balances the softness of Alegreya Sans."
+  },
+  {
+    "heading": "Archivo Narrow",
+    "body": "Lora",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Classic and structured",
+    "reason": "Lora adds warmth and readability beneath Archivo Narrow’s compact geometry."
+  },
+  {
+    "heading": "Alegreya Sans",
+    "body": "Aleo",
+    "category": "Sans Serif + Serif",
+    "use_case": "branding",
+    "style_notes": "Friendly and soft",
+    "reason": "Aleo brings approachable curves to match Alegreya Sans’s tone."
+  },
+  {
+    "heading": "Alegreya Sans",
+    "body": "David Libre",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Literary and stylish",
+    "reason": "David Libre gives a clean literary vibe under modern sans."
+  },
+  {
+    "heading": "Archivo Narrow",
+    "body": "Spectral",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Elegant and serifed",
+    "reason": "Spectral provides elegant contrast for editorial balance."
+  },
+  {
+    "heading": "Alegreya Sans",
+    "body": "Petrona",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Expressive and unique",
+    "reason": "Petrona adds expressive classical details to grounded sans headings."
+  },
+  {
+    "heading": "Karla",
+    "body": "Newsreader",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Neutral and refined",
+    "reason": "Karla’s simplicity contrasts beautifully with Newsreader’s refinement."
+  },
+  {
+    "heading": "DM Sans",
+    "body": "Lora",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Classic serif balance",
+    "reason": "Lora adds classic charm to the simplicity of DM Sans."
+  },
+  {
+    "heading": "Archivo Narrow",
+    "body": "Source Serif 4",
+    "category": "Sans Serif + Serif",
+    "use_case": "general web",
+    "style_notes": "Familiar and functional",
+    "reason": "Source Serif 4 offers a familiar reading rhythm under a bold sans headline."
+  },
+  {
+    "heading": "Chivo",
+    "body": "Tinos",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Balanced and crisp",
+    "reason": "Tinos supports Chivo with clean, readable serif forms."
+  },
+  {
+    "heading": "Karla",
+    "body": "IBM Plex Serif",
+    "category": "Sans Serif + Serif",
+    "use_case": "branding",
+    "style_notes": "Geometric and modern",
+    "reason": "IBM Plex Serif delivers geometric precision under calm headers."
+  },
+  {
+    "heading": "Karla",
+    "body": "Faustina",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Approachable and upright",
+    "reason": "Faustina brings vertical rhythm to Karla’s modern flow."
+  },
+  {
+    "heading": "Playfair Display",
+    "body": "Nunito",
+    "category": "Display + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Friendly",
+    "reason": "Playfair Display adds a soft, approachable feel while Nunito keeps things clean and readable."
+  },
+  {
+    "heading": "Playfair Display",
+    "body": "Lora",
+    "category": "Display + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Playfair Display delivers high-end flair, complemented by the elegant and refined tone of Lora."
+  },
+  {
+    "heading": "Chivo",
+    "body": "Spectral",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Sharp and composed.",
+    "reason": "Spectral adds structure under strong Chivo headings."
+  },
+  {
+    "heading": "Playfair Display",
+    "body": "Fira Sans",
+    "category": "Display + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Playfair Display delivers high-end flair, complemented by the elegant and refined tone of Fira Sans."
+  },
+  {
+    "heading": "Chivo",
+    "body": "Lora",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Bold sans with literary rhythm.",
+    "reason": "Lora brings warm elegance to Chivo’s assertive tone."
+  },
+  {
+    "heading": "Chivo",
+    "body": "Cambo",
+    "category": "Sans Serif + Serif",
+    "use_case": "branding",
+    "style_notes": "Graceful and subtle",
+    "reason": "Cambo adds softness and classic elegance to Chivo’s structure."
+  },
+  {
+    "heading": "Karla",
+    "body": "David Libre",
+    "category": "Sans Serif + Serif",
+    "use_case": "branding",
+    "style_notes": "Balanced and sharp",
+    "reason": "David Libre pairs traditional elegance with Karla’s neutral tone."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Newsreader",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Modern and literary",
+    "reason": "Newsreader adds depth beneath modern sans headers."
+  },
+  {
+    "heading": "Chivo",
+    "body": "Rasa",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Warm and literary",
+    "reason": "Rasa adds personality and rhythm to editorial layouts."
+  },
+  {
+    "heading": "Manrope",
+    "body": "Lora",
+    "category": "Sans Serif + Serif",
+    "use_case": "editorial",
+    "style_notes": "Traditional and modern",
+    "reason": "Lora softens Manrope’s geometry with warmth."
+  },
+  {
+    "heading": "Playfair Display",
+    "body": "Be Vietnam Pro",
+    "category": "Display + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Playfair Display delivers high-end flair, complemented by the elegant and refined tone of Be Vietnam Pro."
+  },
+  {
+    "heading": "Inconsolata",
+    "body": "Spectral",
+    "category": "Serif + Monospace",
+    "use_case": "Monospace Heading",
+    "style_notes": "Code meets editorial",
+    "reason": "Inconsolata makes Spectral’s refined rhythm feel modern."
+  },
+  {
+    "heading": "Roboto Mono",
+    "body": "Spectral",
+    "category": "Serif + Monospace",
+    "use_case": "Monospace Heading",
+    "style_notes": "Balanced and bookish",
+    "reason": "Spectral softens the edge of Roboto Mono for a refined feel."
+  },
+  {
+    "heading": "Alumni Sans",
+    "body": "Libre Franklin",
+    "category": "Display + Sans Serif",
+    "use_case": "branding",
+    "style_notes": "Wide and confident",
+    "reason": "Alumni Sans brings dramatic weight above Libre Franklin’s polish."
+  },
+  {
+    "heading": "Space Mono",
+    "body": "Lora",
+    "category": "Serif + Monospace",
+    "use_case": "Monospace Heading",
+    "style_notes": "Retro and readable",
+    "reason": "Lora brings warmth and structure under bold Space Mono headings."
+  },
+  {
+    "heading": "Space Mono",
+    "body": "Roboto Mono",
+    "category": "Monospace + Monospace",
+    "use_case": "Monospace + Monospace",
+    "style_notes": "Playful yet clean",
+    "reason": "A pairing that balances charm with clarity."
+  },
+  {
+    "heading": "Inconsolata",
+    "body": "Fira Code",
+    "category": "Monospace + Monospace",
+    "use_case": "Monospace + Monospace",
+    "style_notes": "Technical and modern",
+    "reason": "For true code-driven design systems."
+  },
+  {
+    "heading": "Abril Fatface",
+    "body": "Fira Sans",
+    "category": "Display + Sans Serif",
+    "use_case": "Editorial",
+    "style_notes": "Luxe",
+    "reason": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Fira Sans."
+  },
+  {
+    "heading": "Playfair Display",
+    "body": "Fira Code",
+    "category": "Serif + Monospace",
+    "use_case": "Monospace Body",
+    "style_notes": "Classic meets modern",
+    "reason": "Fira Code supports Playfair with structure and clarity."
+  },
+  {
+    "heading": "David Libre",
+    "body": "Fira Code",
+    "category": "Serif + Monospace",
+    "use_case": "Monospace Body",
+    "style_notes": "Classic meets code",
+    "reason": "Fira Code adds structure and coding tone to serif headings."
+  },
+  {
+    "heading": "Roboto Mono",
+    "body": "Lora",
+    "category": "Serif + Monospace",
+    "use_case": "Monospace Heading",
+    "style_notes": "Technical and traditional",
+    "reason": "Roboto Mono adds edge and clarity to Lora’s warmth."
+  },
+  {
+    "heading": "JetBrains Mono",
+    "body": "Roboto Mono",
+    "category": "Monospace + Monospace",
+    "use_case": "Monospace + Monospace",
+    "style_notes": "Technical and open",
+    "reason": "Both fonts bring clarity and reliability for dev content."
+  },
+  {
+    "heading": "Work Sans",
+    "body": "JetBrains Mono",
+    "category": "Sans Serif + Monospace",
+    "use_case": "Sans + Monospace",
+    "style_notes": "UI and dev-friendly",
+    "reason": "JetBrains Mono adds flexibility to modern layouts."
+  },
+  {
+    "heading": "Inconsolata",
+    "body": "Newsreader",
+    "category": "Serif + Monospace",
+    "use_case": "Monospace Heading",
+    "style_notes": "Minimal and literary",
+    "reason": "Newsreader enhances Inconsolata with editorial rhythm."
+  },
+  {
+    "heading": "Teko",
+    "body": "Hind",
+    "category": "Mixed",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Teko and Hind are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Khand",
+    "body": "Hind",
+    "category": "Mixed",
+    "use_case": "General Web",
+    "style_notes": "Neutral",
+    "reason": "Khand and Hind are both versatile choices that work well across a wide range of use cases."
+  },
+  {
+    "heading": "Poppins",
+    "body": "Hind",
+    "category": "Mixed",
+    "use_case": "General Web",
+    "style_notes": "Friendly",
+    "reason": "Poppins adds a soft, approachable feel while Hind keeps things clean and readable."
+  },
+  {
+    "heading": "Quicksand",
+    "body": "Spline Sans",
+    "category": "Mixed",
+    "use_case": "Branding",
+    "style_notes": "Friendly",
+    "reason": "Quicksand adds a soft, approachable feel while Spline Sans keeps things clean and readable."
+  },
+  {
+    "heading": "Roboto Slab",
+    "body": "Roboto Serif",
+    "category": "Google Fonts",
+    "use_case": "",
+    "style_notes": "",
+    "reason": ""
+  },
+  {
+    "heading": "DM Sans",
+    "body": "Inter",
+    "category": "Serif + Sans Serif",
+    "use_case": "modern UI",
+    "style_notes": "Modern, minimal, and neutral",
+    "reason": "DM Sans and Inter share a neutral tone perfect for digital interfaces."
+  }
+]

@@ -67,6 +67,10 @@
       "magazine",
       "luxury",
       "fashion"
+    ],
+    "appearance": [
+      "classic",
+      "geometric"
     ]
   }
 }

@@ -67,6 +67,12 @@
       "fashion",
       "retail",
       "branding"
+    ],
+    "appearance": [
+      "modern",
+      "geometric",
+      "humanist",
+      "grotesque"
     ]
   }
 }

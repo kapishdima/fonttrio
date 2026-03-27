@@ -67,6 +67,10 @@
       "newsletter",
       "blog",
       "content"
+    ],
+    "appearance": [
+      "classic",
+      "humanist"
     ]
   }
 }
