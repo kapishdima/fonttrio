@@ -36,6 +36,28 @@ yarn-error.log*
 # vercel
 .vercel
 
+# installed skills (third-party)
+.agents/
+.claude/skills/
+skills-lock.json
+.commandcode/skills/
+.continue/skills/
+.crush/skills/
+.factory/skills/
+.goose/skills/
+.kilocode/skills/
+.kiro/skills/
+.mcpjam/skills/
+.neovate/skills/
+.openhands/skills/
+.pi/skills/
+.qoder/skills/
+.qwen/skills/
+.roo/skills/
+.trae/skills/
+.windsurf/skills/
+.zencoder/skills/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

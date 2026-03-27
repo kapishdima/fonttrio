@@ -65,9 +65,9 @@ export default function AIPage() {
 					</AnimateIn>
 					<AnimateIn delay={0.1}>
 						<p className="mt-4 text-base md:text-lg dark:text-neutral-400 text-neutral-600 max-w-xl">
-							Search, preview, and install curated font pairings directly
-							from your IDE. Works with Claude&nbsp;Code, Cursor, Codex,
-							and OpenCode. Free for everyone.
+							Search, preview, and install curated font pairings directly from
+							your IDE. Works with Claude&nbsp;Code, Cursor, Codex, and
+							OpenCode. Free for everyone.
 						</p>
 					</AnimateIn>
 				</section>
@@ -87,8 +87,8 @@ export default function AIPage() {
 								Install Skills
 							</h3>
 							<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-3">
-								Install typography audit and suggestion skills for your
-								AI coding agent via{" "}
+								Install typography audit and suggestion skills for your AI
+								coding agent via{" "}
 								<a
 									href="https://skills.sh"
 									className="underline underline-offset-2 hover:dark:text-neutral-300 hover:text-neutral-600"
@@ -101,7 +101,7 @@ export default function AIPage() {
 							</p>
 							<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
 								<code className="text-sm font-mono dark:text-neutral-300 text-neutral-700">
-									npx skills add fonttrio/fonttrio
+									npx skills add kapishdima/fonttrio
 								</code>
 							</div>
 						</div>
@@ -112,12 +112,12 @@ export default function AIPage() {
 								MCP Server
 							</h3>
 							<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-3">
-								Add this to your IDE's MCP configuration for AI-powered
-								font search and install:
+								Add this to your IDE's MCP configuration for AI-powered font
+								search and install:
 							</p>
 							<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
 								<pre className="text-xs font-mono dark:text-neutral-300 text-neutral-700">
-{`{
+									{`{
   "mcpServers": {
     "fonttrio": {
       "url": "https://www.fonttrio.xyz/api/mcp"
@@ -128,16 +128,10 @@ export default function AIPage() {
 							</div>
 
 							<div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
-								<ConfigPath
-									ide="Claude Code"
-									path="~/.claude/settings.json"
-								/>
+								<ConfigPath ide="Claude Code" path="~/.claude/settings.json" />
 								<ConfigPath ide="Cursor" path="~/.cursor/mcp.json" />
 								<ConfigPath ide="Codex" path="~/.codex/mcp.json" />
-								<ConfigPath
-									ide="OpenCode"
-									path="~/.opencode/mcp.json"
-								/>
+								<ConfigPath ide="OpenCode" path="~/.opencode/mcp.json" />
 							</div>
 						</div>
 					</div>
