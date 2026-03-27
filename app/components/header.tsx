@@ -18,6 +18,7 @@ const NAV_LINKS = [
 	{ href: "/redesign/04/pairs", label: "Pairings" },
 	{ href: "/redesign/04/fonts", label: "Fonts" },
 	// { href: "/playground", label: "Playground" },
+	{ href: "/ai", label: "AI" },
 	{ href: "/sponsors", label: "Sponsors" },
 ];
 
