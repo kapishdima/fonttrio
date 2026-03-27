@@ -73,42 +73,47 @@ export default function AIPage() {
 				</section>
 			</div>
 
-			{/* Quick Install */}
+			{/* Get Started */}
 			<div className="p-3 pt-0">
 				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
 					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-12">
-						Quick Install
+						Get Started
 					</h2>
 
-					<div className="space-y-6 max-w-2xl">
-						<p className="text-sm dark:text-neutral-400 text-neutral-600">
-							Run this command to install MCP server and Claude Code skills.
-							The script will let you choose your IDE (Claude&nbsp;Code, Cursor,
-							Codex, OpenCode).
-						</p>
-						<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
-							<code className="text-sm font-mono dark:text-neutral-300 text-neutral-700 break-all">
-								curl -fsSL https://www.fonttrio.xyz/api/install | bash
-							</code>
+					<div className="space-y-12 max-w-2xl">
+						{/* Skills */}
+						<div>
+							<h3 className="font-medium dark:text-white text-neutral-900 mb-3">
+								Install Skills
+							</h3>
+							<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-3">
+								Install typography audit and suggestion skills for your
+								AI coding agent via{" "}
+								<a
+									href="https://skills.sh"
+									className="underline underline-offset-2 hover:dark:text-neutral-300 hover:text-neutral-600"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									skills.sh
+								</a>
+								:
+							</p>
+							<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
+								<code className="text-sm font-mono dark:text-neutral-300 text-neutral-700">
+									npx skills add fonttrio/fonttrio
+								</code>
+							</div>
 						</div>
-					</div>
-				</section>
-			</div>
 
-			{/* Manual Setup */}
-			<div className="p-3 pt-0">
-				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
-					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-12">
-						Manual Setup
-					</h2>
-
-					<div className="space-y-8 max-w-2xl">
+						{/* MCP */}
 						<div>
 							<h3 className="font-medium dark:text-white text-neutral-900 mb-3">
 								MCP Server
 							</h3>
 							<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-3">
-								Add this to your IDE's MCP configuration:
+								Add this to your IDE's MCP configuration for AI-powered
+								font search and install:
 							</p>
 							<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
 								<pre className="text-xs font-mono dark:text-neutral-300 text-neutral-700">
