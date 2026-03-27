@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { PairCard } from "@/app/components/pair-card";
 import type { PairingData } from "@/lib/pairings";
-
-const FEATURED_COUNT = 10;
+import { POPULAR_PAIRING_NAMES } from "@/lib/popular-pairings";
 
 const titleVariants = {
 	hidden: { y: 20, opacity: 0, filter: "blur(4px)" },
@@ -34,17 +32,8 @@ const cardVariants = {
 	},
 } as const;
 
-function shuffle<T>(arr: T[]): T[] {
-	const a = [...arr];
-	for (let i = a.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[a[i], a[j]] = [a[j], a[i]];
-	}
-	return a;
-}
-
 export function BestPairs({ pairings: allPairings }: { pairings: PairingData[] }) {
-	const [pairings] = useState(() => shuffle(allPairings).slice(0, FEATURED_COUNT));
+	const pairings = allPairings.filter((p) => POPULAR_PAIRING_NAMES.has(p.name));
 	const prefersReducedMotion = useReducedMotion();
 	const reducedVariants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
 
