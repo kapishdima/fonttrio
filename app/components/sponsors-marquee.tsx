@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import { SponsorEmptyCard } from "@/components/sponsors/sponsor-card";
 import { SPONSORS } from "@/lib/sponsors";
 
@@ -8,7 +9,7 @@ const sponsors = SPONSORS.filter(
 );
 
 const gridCard =
-	"flex items-center justify-center border-b border-neutral-200 bg-white px-6 py-6 sm:px-8 sm:py-8 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-bg last:border-b-0 dark:border-neutral-800 sm:border-r sm:nth-[2n]:border-r-0 md:nth-[2n]:border-r md:border-r md:nth-[3n]:border-r-0 md:nth-last-[-n+3]:border-b-0 lg:nth-[3n]:border-r lg:nth-[6n]:border-r-0 lg:[&:nth-last-child(-n+6)]:border-b-0";
+	"flex items-center justify-center border-b border-neutral-200 bg-white px-6 py-6 sm:px-8 sm:py-8 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-bg dark:border-neutral-800 sm:border-r sm:nth-[2n]:border-r-0 md:nth-[2n]:border-r md:border-r md:nth-[3n]:border-r-0 lg:nth-[3n]:border-r lg:nth-[6n]:border-r-0 ";
 
 const LG_COLS = 6;
 
@@ -18,14 +19,17 @@ function LogoList() {
 	const placeholders = remainder === 0 ? 0 : LG_COLS - remainder;
 
 	return (
-		<div className="grid grid-cols-1 sm:grid-cols-2 border border-neutral-200 dark:border-neutral-800 md:grid-cols-3 lg:grid-cols-6 mt-10 rounded-4xl overflow-hidden">
+		<div className="grid grid-cols-1 sm:grid-cols-2 border border-b-0 border-neutral-200 dark:border-neutral-800 md:grid-cols-3 lg:grid-cols-6 mt-10 rounded-4xl overflow-hidden">
 			{sponsors.map((sponsor) => (
 				<a href={sponsor.url} key={sponsor.id} className={gridCard}>
 					{/** biome-ignore lint/performance/noImgElement: <bad url> */}
 					<img
 						alt={sponsor.name}
 						src={sponsor.logo ?? ""}
-						className="h-8 w-auto object-contain dark:grayscale dark:invert grayscale dark:opacity-100 opacity-80"
+						className={clsx(
+							"h-8 w-auto object-contain dark:grayscale dark:invert grayscale dark:opacity-100 opacity-80",
+							sponsor.classNames,
+						)}
 					/>
 				</a>
 			))}

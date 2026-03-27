@@ -30,7 +30,7 @@ export function SponsorSection({
 				{label}
 			</h4>
 			<div
-				className={`grid ${classes} border dark:border-neutral-800 border-neutral-200 rounded-2xl overflow-hidden`}
+				className={`grid ${classes} border dark:border-neutral-800 border-b-0 border-r-0 border-neutral-200 rounded-2xl overflow-hidden`}
 			>
 				{sponsors.map((sponsor) => (
 					<SponsorCard key={sponsor.id} sponsor={sponsor} cellPy={cellPy} />

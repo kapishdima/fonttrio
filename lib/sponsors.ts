@@ -7,6 +7,7 @@ export interface Sponsor {
   logoDark?: string;
   url: string;
   tier: "bronze" | "silver" | "gold";
+  classNames?: string; // Optional additional class names for styling
 }
 
 export const SPONSORS: Sponsor[] = [
@@ -66,6 +67,23 @@ export const SPONSORS: Sponsor[] = [
     logoDark: "/sponsors/efferd-dark.svg",
     url: "https://efferd.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver"
+  },
+  {
+    id: "8",
+    name: "",
+    logo: "/sponsors/shadcord.svg",
+    logoDark: "/sponsors/shadcord.svg",
+    url: "https://discord.gg/JH8mKQPxs",
+    tier: "silver"
+  },
+  {
+    id: "9",
+    name: "",
+    logo: "/sponsors/formcn.svg",
+    logoDark: "/sponsors/formcn.svg",
+    url: "https://formcn.dev?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    tier: "silver",
+    classNames: "h-12"
   },
 ];
 
