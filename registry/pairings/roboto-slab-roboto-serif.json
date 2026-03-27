@@ -1,0 +1,67 @@
+{
+  "name": "pairing-roboto-slab-roboto-serif",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Roboto Slab Roboto Serif — Roboto Slab + Roboto Serif + Inconsolata",
+  "description": "Roboto Slab paired with Roboto Serif for a google fonts aesthetic.",
+  "categories": [
+    "google fonts"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/roboto-slab.json",
+    "https://www.fonttrio.xyz/r/roboto-serif.json",
+    "https://www.fonttrio.xyz/r/inconsolata.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-roboto-slab)",
+      "--font-body": "var(--font-roboto-serif)",
+      "--font-mono": "var(--font-inconsolata)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.5rem",
+        "line-height": "1.15",
+        "letter-spacing": "-0.015em",
+        "font-weight": "400"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.01em",
+        "font-weight": "400"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.5rem",
+        "line-height": "1.3",
+        "letter-spacing": "0em",
+        "font-weight": "400"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "0em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.75"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "versatile"
+    ],
+    "useCase": [
+      "general"
+    ]
+  }
+}

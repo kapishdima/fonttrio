@@ -67,6 +67,10 @@
       "gallery",
       "museum",
       "portfolio"
+    ],
+    "appearance": [
+      "modern",
+      "classic"
     ]
   }
 }

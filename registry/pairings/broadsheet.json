@@ -67,6 +67,9 @@
       "news",
       "publishing",
       "i18n"
+    ],
+    "appearance": [
+      "classic"
     ]
   }
 }

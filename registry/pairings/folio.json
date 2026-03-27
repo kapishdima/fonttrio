@@ -67,6 +67,10 @@
       "portfolio",
       "fashion",
       "luxury"
+    ],
+    "appearance": [
+      "classic",
+      "geometric"
     ]
   }
 }

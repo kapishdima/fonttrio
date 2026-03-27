@@ -1,0 +1,67 @@
+{
+  "name": "pairing-syne-red-hat",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Syne Red Hat — Syne + Red Hat Text + IBM Plex Mono",
+  "description": "Red Hat Text keeps branding content clean and balanced beneath Syne.",
+  "categories": [
+    "sans serif-sans serif"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/syne.json",
+    "https://www.fonttrio.xyz/r/red-hat-text.json",
+    "https://www.fonttrio.xyz/r/ibm-plex-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-syne)",
+      "--font-body": "var(--font-red-hat-text)",
+      "--font-mono": "var(--font-ibm-plex-mono)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.15",
+        "letter-spacing": "-0.03em",
+        "font-weight": "700"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.875rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.025em",
+        "font-weight": "600"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.5rem",
+        "line-height": "1.25",
+        "letter-spacing": "-0.02em",
+        "font-weight": "600"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.6"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "versatile"
+    ],
+    "useCase": [
+      "branding"
+    ]
+  }
+}

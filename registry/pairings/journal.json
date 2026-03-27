@@ -67,6 +67,10 @@
       "blog",
       "journal",
       "publishing"
+    ],
+    "appearance": [
+      "classic",
+      "humanist"
     ]
   }
 }

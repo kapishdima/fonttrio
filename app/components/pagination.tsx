@@ -1,79 +1,106 @@
 "use client";
 
+import { useTransition } from "react";
+import { useQueryState } from "nuqs";
+import { serverInteger } from "@/lib/nuqs";
+import { Button } from "@/components/ui/button";
+import {
+	PaginationContent,
+	PaginationEllipsis,
+	PaginationItem,
+	Pagination as PaginationRoot,
+} from "@/components/ui/pagination";
+
 interface PaginationProps {
-  currentPage: number;
-  totalPages: number;
-  onPageChange: (page: number) => void;
-  scrollToTop?: boolean;
+	totalPages: number;
+	scrollToTop?: boolean;
 }
 
 export function Pagination({
-  currentPage,
-  totalPages,
-  onPageChange,
-  scrollToTop = true,
+	totalPages,
+	scrollToTop = true,
 }: PaginationProps) {
-  if (totalPages <= 1) return null;
+	const [currentPage, setPage] = useQueryState(
+		"page",
+		serverInteger.withDefault(1),
+	);
+	const [isPending, startTransition] = useTransition();
 
-  const handlePageChange = (page: number) => {
-    onPageChange(page);
-    if (scrollToTop) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  };
+	if (totalPages <= 1) return null;
 
-  // Calculate visible page range
-  const getVisiblePages = () => {
-    if (totalPages <= 5) {
-      return Array.from({ length: totalPages }, (_, i) => i + 1);
-    }
+	const page = Math.min(Math.max(1, currentPage), totalPages);
 
-    if (currentPage <= 3) {
-      return Array.from({ length: 5 }, (_, i) => i + 1);
-    }
+	const goTo = (p: number) => {
+		startTransition(async () => {
+			await setPage(p);
+			if (scrollToTop) {
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			}
+		});
+	};
 
-    if (currentPage >= totalPages - 2) {
-      return Array.from({ length: 5 }, (_, i) => totalPages - 4 + i);
-    }
+	const pages: (number | "...")[] = [];
 
-    return Array.from({ length: 5 }, (_, i) => currentPage - 2 + i);
-  };
+	if (totalPages <= 7) {
+		for (let i = 1; i <= totalPages; i++) pages.push(i);
+	} else {
+		pages.push(1);
+		if (page > 3) pages.push("...");
+		for (
+			let i = Math.max(2, page - 1);
+			i <= Math.min(totalPages - 1, page + 1);
+			i++
+		) {
+			pages.push(i);
+		}
+		if (page < totalPages - 2) pages.push("...");
+		pages.push(totalPages);
+	}
 
-  const visiblePages = getVisiblePages();
+	return (
+		<PaginationRoot className="mt-12">
+			<PaginationContent>
+				<PaginationItem>
+					<Button
+						variant="ghost"
+						size="sm"
+						className="rounded-full font-medium text-xs"
+						disabled={page === 1}
+						onClick={() => goTo(page - 1)}
+					>
+						Prev
+					</Button>
+				</PaginationItem>
 
-  return (
-    <div className="flex items-center justify-center gap-1">
-      <button
-        onClick={() => handlePageChange(currentPage - 1)}
-        disabled={currentPage === 1}
-        className="px-3 py-2 text-xs uppercase tracking-wider border border-border text-muted-foreground hover:text-foreground hover:border-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-      >
-        Prev
-      </button>
+				{pages.map((p, i) => (
+					<PaginationItem key={p === "..." ? `ellipsis-${i}` : p}>
+						{p === "..." ? (
+							<PaginationEllipsis />
+						) : (
+							<Button
+								variant={page === p ? "default" : "ghost"}
+								size="icon"
+								className="h-8 w-8 rounded-full font-medium text-xs tabular-nums"
+								onClick={() => goTo(p)}
+							>
+								{p}
+							</Button>
+						)}
+					</PaginationItem>
+				))}
 
-      <div className="flex items-center gap-1">
-        {visiblePages.map((pageNum) => (
-          <button
-            key={pageNum}
-            onClick={() => handlePageChange(pageNum)}
-            className={`min-w-[36px] px-3 py-2 text-xs font-mono transition-colors ${
-              currentPage === pageNum
-                ? "bg-foreground text-background"
-                : "text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            {pageNum}
-          </button>
-        ))}
-      </div>
-
-      <button
-        onClick={() => handlePageChange(currentPage + 1)}
-        disabled={currentPage === totalPages}
-        className="px-3 py-2 text-xs uppercase tracking-wider border border-border text-muted-foreground hover:text-foreground hover:border-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-      >
-        Next
-      </button>
-    </div>
-  );
+				<PaginationItem>
+					<Button
+						variant="ghost"
+						size="sm"
+						className="rounded-full font-medium text-xs"
+						disabled={page === totalPages}
+						onClick={() => goTo(page + 1)}
+					>
+						Next
+					</Button>
+				</PaginationItem>
+			</PaginationContent>
+		</PaginationRoot>
+	);
 }

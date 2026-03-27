@@ -67,6 +67,10 @@
       "healthcare",
       "wellness",
       "medical"
+    ],
+    "appearance": [
+      "modern",
+      "humanist"
     ]
   }
 }

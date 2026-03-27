@@ -1,0 +1,67 @@
+{
+  "name": "pairing-raleway-lora",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Raleway Lora — Raleway + Lora + Roboto Mono",
+  "description": "Raleway and Lora are both versatile choices that work well across a wide range of use cases.",
+  "categories": [
+    "sans serif-sans serif"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/raleway.json",
+    "https://www.fonttrio.xyz/r/lora.json",
+    "https://www.fonttrio.xyz/r/roboto-mono.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-raleway)",
+      "--font-body": "var(--font-lora)",
+      "--font-mono": "var(--font-roboto-mono)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.02em",
+        "font-weight": "600"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.75rem",
+        "line-height": "1.25",
+        "letter-spacing": "-0.015em",
+        "font-weight": "600"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.375rem",
+        "line-height": "1.3",
+        "letter-spacing": "-0.01em",
+        "font-weight": "500"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.005em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.65"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "neutral"
+    ],
+    "useCase": [
+      "branding"
+    ]
+  }
+}

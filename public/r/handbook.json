@@ -66,6 +66,10 @@
       "education",
       "documentation",
       "accessibility"
+    ],
+    "appearance": [
+      "modern",
+      "humanist"
     ]
   }
 }

@@ -67,6 +67,9 @@
       "dashboard",
       "data",
       "news"
+    ],
+    "appearance": [
+      "modern"
     ]
   }
 }

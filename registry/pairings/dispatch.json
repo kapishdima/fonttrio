@@ -67,6 +67,10 @@
       "i18n",
       "enterprise",
       "communication"
+    ],
+    "appearance": [
+      "humanist",
+      "grotesque"
     ]
   }
 }

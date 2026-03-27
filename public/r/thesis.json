@@ -67,6 +67,9 @@
       "documentation",
       "i18n",
       "enterprise"
+    ],
+    "appearance": [
+      "classic"
     ]
   }
 }

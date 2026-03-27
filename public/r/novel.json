@@ -67,6 +67,9 @@
       "publishing",
       "book",
       "longform"
+    ],
+    "appearance": [
+      "classic"
     ]
   }
 }
