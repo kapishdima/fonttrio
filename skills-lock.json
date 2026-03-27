@@ -46,6 +46,11 @@
       "sourceType": "github",
       "computedHash": "4fb24ad0ca7e75497cc25d98cf1de636a1acbbe0da919c75daab846ec63ba305"
     },
+    "expect": {
+      "source": "millionco/expect",
+      "sourceType": "github",
+      "computedHash": "9a05dd2233fbde2e3fb125250caa637d0713f82e3ef6faed6aa25446f14e8373"
+    },
     "extract": {
       "source": "pbakaus/impeccable",
       "sourceType": "github",
