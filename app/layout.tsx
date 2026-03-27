@@ -17,7 +17,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.fonttrio.xyz"),
 	title: {
-		default: "Fonttrio - Font Pairings for shadcn",
+		default: "Fonttrio - Best Font Pairings",
 		template: "%s | Fonttrio",
 	},
 	description:
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		siteName: "Fonttrio",
-		title: "Fonttrio - Font Pairings for shadcn",
+		title: "Fonttrio - Best Font Pairings",
 		description:
 			"Three fonts. One command. Curated font pairings for shadcn/ui.",
 		url: "https://www.fonttrio.xyz",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Fonttrio - Font Pairings for shadcn",
+		title: "Fonttrio - Best Font Pairings",
 		description:
 			"Three fonts. One command. Curated font pairings for shadcn/ui.",
 	},

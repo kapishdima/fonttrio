@@ -178,9 +178,9 @@ function loadPairings(): PairingData[] {
     const bodyKebab = raw.cssVars?.theme?.["--font-body"]?.match(/var\(--font-(.+)\)/)?.[1] || "";
     const monoKebab = raw.cssVars?.theme?.["--font-mono"]?.match(/var\(--font-(.+)\)/)?.[1] || "";
 
-    const heading = families.get(headingKebab) || kebabToTitle(headingKebab);
-    const body = families.get(bodyKebab) || kebabToTitle(bodyKebab);
-    const mono = families.get(monoKebab) || kebabToTitle(monoKebab);
+    const heading = (families.get(headingKebab) || kebabToTitle(headingKebab)).replace(/ Variable$/, "");
+    const body = (families.get(bodyKebab) || kebabToTitle(bodyKebab)).replace(/ Variable$/, "");
+    const mono = (families.get(monoKebab) || kebabToTitle(monoKebab)).replace(/ Variable$/, "");
 
     const headingCategory = inferCategory(headingKebab);
     const bodyCategory = inferCategory(bodyKebab);

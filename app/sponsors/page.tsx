@@ -89,124 +89,29 @@ export default function SponsorsPage() {
 						<div className="space-y-16">
 							{/* Gold */}
 							{goldSponsors.length > 0 && (
-<<<<<<< HEAD
-								<div>
-									<h3 className="text-sm uppercase tracking-wider text-muted-foreground text-center mb-8">
-										Gold Sponsors
-									</h3>
-									<div className="flex flex-wrap justify-center gap-8">
-										{goldSponsors.map((sponsor) => (
-											<a
-												key={sponsor.id}
-												href={sponsor.url}
-												target="_blank"
-												className="group flex items-center justify-center gap-6 p-6 border border-border bg-surface transition-colors w-full sm:w-[calc(30%-1rem)] max-w-xl"
-											>
-												<div className="max-w-40 flex items-center justify-center shrink-0 overflow-hidden">
-													{sponsor.logo ? (
-														<SponsorLogo
-															sponsor={sponsor}
-															className="size-full object-contain"
-														/>
-													) : (
-														<span className="text-2xl font-bold">
-															{sponsor.name.charAt(0)}
-														</span>
-													)}
-												</div>
-												{sponsor.name && sponsor.name.length > 0 && (
-													<div className="flex-1 min-w-0">
-														<div className="text-xl font-medium truncate">
-															{sponsor.name}
-														</div>
-													</div>
-												)}
-												{/* <ExternalLink className="size-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" /> */}
-											</a>
-										))}
-									</div>
-								</div>
-=======
 								<SponsorSection
 									label="Gold"
 									size="lg"
 									sponsors={goldSponsors}
 								/>
->>>>>>> feat/redesign-02
 							)}
 
 							{/* Silver */}
 							{silverSponsors.length > 0 && (
-<<<<<<< HEAD
-								<div>
-									<h3 className="text-sm uppercase tracking-wider text-muted-foreground text-center mb-6">
-										Silver Sponsors
-									</h3>
-									<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-										{silverSponsors.map((sponsor) => (
-											<a
-												key={sponsor.id}
-												href={sponsor.url}
-												target="_blank"
-												className="group flex items-center justify-center gap-3 p-4 border border-border bg-surface/50 hover:bg-surface transition-colors"
-											>
-												<div className="max-w-40  rounded flex items-center justify-center shrink-0">
-													{sponsor.logo ? (
-														<SponsorLogo
-															sponsor={sponsor}
-															className="size-full object-contain mt-1"
-														/>
-													) : (
-														<span className="text-base font-bold">
-															{sponsor.name.charAt(0)}
-														</span>
-													)}
-												</div>
-												{/* <div className="flex-1 min-w-0">
-													<div className="text-sm font-medium truncate">
-														{sponsor.name}
-													</div>
-												</div> */}
-											</a>
-										))}
-									</div>
-								</div>
-=======
 								<SponsorSection
 									label="Silver"
 									size="md"
 									sponsors={silverSponsors}
 								/>
->>>>>>> feat/redesign-02
 							)}
 
 							{/* Bronze */}
 							{bronzeSponsors.length > 0 && (
-<<<<<<< HEAD
-								<div>
-									<h3 className="text-sm uppercase tracking-wider text-muted-foreground text-center mb-6">
-										Bronze Sponsors
-									</h3>
-									<div className="flex flex-wrap justify-center gap-2">
-										{bronzeSponsors.map((sponsor) => (
-											<a
-												key={sponsor.id}
-												href={sponsor.url}
-												target="_blank"
-												className="px-3 py-1.5 border border-border bg-surface/30 hover:bg-surface transition-colors text-xs"
-											>
-												{sponsor.name}
-											</a>
-										))}
-									</div>
-								</div>
-=======
 								<SponsorSection
 									label="Bronze"
 									size="sm"
 									sponsors={bronzeSponsors}
 								/>
->>>>>>> feat/redesign-02
 							)}
 						</div>
 					)}

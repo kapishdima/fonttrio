@@ -15,8 +15,8 @@ import { Button } from "@/components/ui/button";
 import { HEADER_TRANSITION } from "@/lib/constants";
 
 const NAV_LINKS = [
-	{ href: "/redesign/04/pairs", label: "Pairings" },
-	{ href: "/redesign/04/fonts", label: "Fonts" },
+	{ href: "/pairs", label: "Pairings" },
+	{ href: "/fonts", label: "Fonts" },
 	// { href: "/playground", label: "Playground" },
 	{ href: "/ai", label: "AI" },
 	{ href: "/sponsors", label: "Sponsors" },
@@ -204,7 +204,7 @@ const HeaderContent = ({
 	return (
 		<>
 			<a
-				href="/redesign/04"
+				href="/"
 				className="text-white font-bold text-sm tracking-tight px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
 			>
 				Fonttrio

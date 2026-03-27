@@ -4,6 +4,7 @@ import { useCallback, useMemo } from "react";
 import { useQueryState, parseAsString } from "nuqs";
 import { serverInteger } from "@/lib/nuqs";
 import type { PairingData } from "@/lib/pairings";
+import { POPULAR_PAIRING_NAMES } from "@/lib/popular-pairings";
 import type { FilterValues } from "@/app/components/filters/types";
 
 const ITEMS_PER_PAGE = 40;
@@ -75,8 +76,14 @@ export function usePairFilters(pairings: PairingData[]) {
     serverInteger.withDefault(1),
   );
 
+  const hasActiveFilters =
+    !!searchQuery || !!appearance || !!usecase || !!language || !!feeling;
+
   const filteredPairings = useMemo(() => {
     return pairings.filter((p) => {
+      // Exclude popular pairings from the paginated list when no filters are active
+      // (they're shown in a separate "Popular pairings" section above)
+      if (!hasActiveFilters && POPULAR_PAIRING_NAMES.has(p.name)) return false;
       if (searchQuery && !matchesSearch(p, searchQuery)) return false;
       if (appearance && !p.appearance.includes(appearance)) return false;
       if (usecase && !matchesUseCase(p, usecase)) return false;
@@ -84,7 +91,7 @@ export function usePairFilters(pairings: PairingData[]) {
       if (feeling && !p.mood.includes(feeling)) return false;
       return true;
     });
-  }, [pairings, searchQuery, appearance, usecase, language, feeling]);
+  }, [pairings, searchQuery, appearance, usecase, language, feeling, hasActiveFilters]);
 
   const filterValues: FilterValues = useMemo(
     () => ({
@@ -103,9 +110,6 @@ export function usePairFilters(pairings: PairingData[]) {
     const start = (currentPage - 1) * ITEMS_PER_PAGE;
     return filteredPairings.slice(start, start + ITEMS_PER_PAGE);
   }, [filteredPairings, currentPage]);
-
-  const hasActiveFilters =
-    !!searchQuery || !!appearance || !!usecase || !!language || !!feeling;
 
   const handleFilterChange = useCallback(
     (filterId: string, value: string) => {
