@@ -116,76 +116,64 @@ export function Playground({ pairings }: { pairings: PairingData[] }) {
 				whileInView="visible"
 				viewport={{ once: true, margin: "-100px" }}
 			>
-				<PairsListSelection
-					pairings={pairings}
-					onSelectPair={(name: string) => {
-						const pairing = pairings.find((p) => p.name === name);
-						if (pairing) setActivePairing(pairing);
-					}}
-					active={activePairing}
-					searchable
-				/>
-
-				{/* Preview Card */}
-				<div className="rounded-xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 overflow-hidden mt-4">
-					{/* Specimens */}
-					<AnimatePresence mode="wait">
-						<div className="flex flex-1">
-							<TextsPreview
-								key={activePairing.name}
-								activePairing={activePairing}
-							/>
-							<ComponentsPreview activePairing={activePairing} />
+				{/* Browser Chrome */}
+				<div className="rounded-xl dark:bg-neutral-950 bg-white border dark:border-neutral-900/50 border-neutral-200 overflow-hidden">
+					{/* Title bar */}
+					<div className="flex items-center gap-3 px-4 py-3 border-b dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-950 bg-neutral-50">
+						{/* Traffic lights — monochrome */}
+						<div className="flex items-center gap-1.5">
+							<span className="size-3 rounded-full dark:bg-neutral-700 bg-neutral-300" />
+							<span className="size-3 rounded-full dark:bg-neutral-700 bg-neutral-300" />
+							<span className="size-3 rounded-full dark:bg-neutral-700 bg-neutral-300" />
 						</div>
-					</AnimatePresence>
 
-					{/* Footer */}
-					<div className="px-4 sm:px-6 py-3 border-t dark:border-neutral-900/50 border-neutral-200 flex items-center justify-between gap-2 sm:gap-4 flex-wrap dark:bg-neutral-900/50 bg-neutral-50">
-						<div className="flex items-center gap-3 min-w-0">
-							<div className="flex gap-1.5 shrink-0">
-								{activePairing.mood.slice(0, 2).map((m) => (
-									<Badge
-										key={m}
-										variant="secondary"
-										className="text-xs rounded-md font-medium tracking-tighter"
-									>
-										{m}
-									</Badge>
-								))}
+						{/* Address bar */}
+						<div className="flex-1 flex justify-start pl-2">
+							<div className="flex items-center gap-2 px-4 py-1 rounded-md dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 max-w-md w-full">
+								<span className="text-xs dark:text-neutral-500 text-neutral-400 truncate select-all">
+									fonttrio.xyz/{activePairing.name}
+								</span>
 							</div>
 						</div>
 
-						<div className="flex items-center gap-x-4">
-							<Link
-								href={`/playground?pairing=${activePairing.name}`}
-								className="flex items-center gap-1.5 text-xs font-medium dark:text-neutral-500 text-neutral-400 dark:hover:text-neutral-300 hover:text-neutral-600 transition-colors"
-							>
-								Try with components
-								<HugeiconsIcon icon={ArrowRight02Icon} className="size-3" />
-							</Link>
-							{/* {!isDefault && (
-								<button
-									type="button"
-									onClick={handleReset}
-									className="flex items-center gap-1.5 text-xs font-medium dark:text-neutral-500 text-neutral-400 dark:hover:text-neutral-300 hover:text-neutral-600 transition-colors cursor-pointer"
-									aria-label="Reset text to defaults"
-								>
-									<RotateCcw className="size-3" />
-									<span className="hidden sm:inline">Reset</span>
-								</button>
-							)} */}
+						{/* Right side — copy command */}
+						<button
+							type="button"
+							onClick={() => copyCommand()}
+							className="flex items-center gap-2 shrink-0 px-3 py-1 rounded-md dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 dark:hover:bg-neutral-800/50 hover:bg-neutral-200 transition-colors cursor-copy"
+							aria-label={`Copy install command: ${command}`}
+						>
+							<code className="text-xs font-medium dark:text-neutral-300 text-neutral-600">
+								{copyState === "done" ? "Copied!" : command}
+							</code>
+						</button>
+					</div>
 
-							<button
-								type="button"
-								onClick={() => copyCommand()}
-								className="flex items-center gap-2 shrink-0 px-3 py-1.5 rounded-lg dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 dark:hover:bg-neutral-800/50 hover:bg-neutral-200 transition-colors cursor-copy group"
-								aria-label={`Copy install command: ${command}`}
-							>
-								<code className="text-xs font-medium dark:text-neutral-300 text-neutral-600 hidden sm:inline">
-									{copyState === "done" ? "Copied!" : command}
-								</code>
-							</button>
-						</div>
+					{/* Browser content */}
+					<div className="flex">
+						{/* Pairs sidebar */}
+						<PairsListSelection
+							pairings={pairings}
+							onSelectPair={(name: string) => {
+								const pairing = pairings.find((p) => p.name === name);
+								if (pairing) setActivePairing(pairing);
+							}}
+							active={activePairing}
+							searchable
+							direction="vertical"
+							className="w-48 shrink-0 border-r dark:border-neutral-900/50 border-neutral-200 p-3 lg:max-h-150"
+						/>
+
+						{/* Specimens */}
+						<AnimatePresence mode="wait">
+							<div className="flex flex-1 min-w-0">
+								<TextsPreview
+									key={activePairing.name}
+									activePairing={activePairing}
+								/>
+								<ComponentsPreview activePairing={activePairing} />
+							</div>
+						</AnimatePresence>
 					</div>
 				</div>
 			</motion.div>
@@ -269,7 +257,7 @@ function ComponentsPreview({ activePairing }: { activePairing: PairingData }) {
 
 	return (
 		<div
-			className="flex-2 dark:bg-neutral-950 bg-white overflow-auto lg:max-h-180 hidden lg:block"
+			className="flex-2 dark:bg-neutral-950 bg-white overflow-auto lg:max-h-160 hidden lg:block"
 			style={
 				{
 					"--font-sans": bodyFont,

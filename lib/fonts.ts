@@ -43,3 +43,4 @@ export function getFontAllWeightsUrl(font: {
   const weights = font.font.weight.join(";");
   return `https://fonts.googleapis.com/css2?family=${importName}:wght@${weights}&display=swap`;
 }
+

@@ -5,16 +5,13 @@ import {
 	type ComponentPropsWithoutRef,
 	type ElementType,
 	useMemo,
-	useState,
 } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
 	InputGroup,
 	InputGroupAddon,
 	InputGroupInput,
 } from "@/components/ui/input-group";
-import { Separator } from "@/components/ui/separator";
 import { filterPairingsByFont } from "@/lib/filters";
 import type { PairingData } from "@/lib/pairings";
 
@@ -25,7 +22,15 @@ type PairsListSelectionProps<T extends ElementType = "div"> = {
 	active: PairingData;
 	className?: string;
 	searchable?: boolean;
+	direction?: "horizontal" | "vertical";
 } & ComponentPropsWithoutRef<T>;
+
+function normalizePairingName(name: string): string {
+	return name
+		.toLowerCase()
+		.replace("-", " ")
+		.replace(/\b\w/g, (c) => c.toUpperCase());
+}
 
 export function PairsListSelection<T extends ElementType = "div">({
 	pairings,
@@ -34,6 +39,7 @@ export function PairsListSelection<T extends ElementType = "div">({
 	active,
 	className,
 	searchable = false,
+	direction = "horizontal",
 }: PairsListSelectionProps<T>) {
 	const Comp = as || "div";
 	const [query, setQuery] = useQueryState("query", { defaultValue: "" });
@@ -43,30 +49,38 @@ export function PairsListSelection<T extends ElementType = "div">({
 		[pairings, query, searchable],
 	);
 
+	const isVertical = direction === "vertical";
+
 	return (
-		<div className="relative flex items-center gap-2 py-2 px-1">
+		<div
+			className={clsx(
+				"relative flex gap-2",
+				isVertical ? "flex-col" : "items-center py-2 px-1",
+				className,
+			)}
+		>
 			{searchable && (
-				<div className="sticky left-0 z-10 shrink-0 flex items-center">
-					<div className="relative">
-						<InputGroup className="h-9 w-64  text-sm rounded-full dark:bg-neutral-900 bg-white dark:border-neutral-800 border-neutral-200">
-							<InputGroupAddon>
-								<Search className="size-3.5 dark:text-neutral-500 text-neutral-400 pointer-events-none" />
-							</InputGroupAddon>
-							<InputGroupInput
-								type="text"
-								value={query}
-								onChange={(e) => setQuery(e.target.value)}
-								placeholder="Font…"
-								autoComplete="one-time-code"
-							/>
-						</InputGroup>
-					</div>
+				<div className="shrink-0">
+					<InputGroup className="h-9 w-full text-sm rounded-lg dark:bg-neutral-900 bg-white dark:border-neutral-800 border-neutral-200">
+						<InputGroupAddon>
+							<Search className="size-3.5 dark:text-neutral-500 text-neutral-400 pointer-events-none" />
+						</InputGroupAddon>
+						<InputGroupInput
+							type="text"
+							value={query}
+							onChange={(e) => setQuery(e.target.value)}
+							placeholder="Font…"
+							autoComplete="one-time-code"
+						/>
+					</InputGroup>
 				</div>
 			)}
 			<Comp
 				className={clsx(
-					"relative flex items-center gap-2 overflow-x-auto scrollbar-hide ",
-					className,
+					"relative flex gap-2 scrollbar-hide",
+					isVertical
+						? "flex-col overflow-y-auto scroll-fade-effect-y"
+						: "items-center overflow-x-auto scroll-fade-effect-x",
 				)}
 			>
 				{filtered.map((p) => (
@@ -74,13 +88,15 @@ export function PairsListSelection<T extends ElementType = "div">({
 						key={p.name}
 						type="button"
 						onClick={() => onSelectPair(p.name)}
-						className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border cursor-pointer ${
+						className={clsx(
+							"shrink-0  py-2 rounded-lg text-sm font-mediumcursor-pointer ",
+							isVertical && "w-full justify-start",
 							active.name === p.name
 								? "dark:bg-white dark:text-black bg-neutral-900 text-white border-transparent"
-								: "dark:bg-neutral-900 dark:text-neutral-400 bg-white text-neutral-600 dark:border-neutral-800 border-neutral-200 dark:hover:text-white hover:text-neutral-900"
-						}`}
+								: "dark:bg-neutral-900 dark:text-neutral-400 bg-white text-neutral-600 dark:border-neutral-800 border-neutral-200 dark:hover:text-white hover:text-neutral-900",
+						)}
 					>
-						{p.name}
+						{normalizePairingName(p.name)}
 					</Button>
 				))}
 				{searchable && query && filtered.length === 0 && (
