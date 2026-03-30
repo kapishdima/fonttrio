@@ -7,10 +7,11 @@ import { HowItWorks } from "@/app/components/how-it-works";
 import { Playground } from "@/app/components/playground";
 import { SponsorsMarquee } from "@/app/components/sponsors-marquee";
 import { XTestimonials } from "@/app/components/x-testimonials";
-import { getAllPairings } from "@/lib/pairings";
+import { getAllPairings, getAllPopularPairings } from "@/lib/pairings";
 
 export default function Root() {
 	const pairings = getAllPairings();
+	const popularPairings = getAllPopularPairings();
 	const defaultPairingUrl = pairings[0]?.googleFontsUrl;
 
 	return (
@@ -22,7 +23,7 @@ export default function Root() {
 			<Hero />
 			<Playground pairings={pairings} />
 			<HowItWorks />
-			<BestPairs pairings={pairings} />
+			<BestPairs pairings={popularPairings} />
 			<SponsorsMarquee />
 			<XTestimonials />
 			<Faq />

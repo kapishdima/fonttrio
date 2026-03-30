@@ -1,5 +1,5 @@
 {
-  "name": "pairing-overpass-mono-overpass",
+  "name": "overpass-mono-overpass",
   "type": "registry:style",
   "extends": "none",
   "title": "Overpass Mono Overpass — Overpass Mono + Overpass + Inconsolata",

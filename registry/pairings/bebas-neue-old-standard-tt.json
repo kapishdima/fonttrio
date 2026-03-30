@@ -1,0 +1,77 @@
+{
+  "name": "bebas-neue-old-standard-tt",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Bebas Neue + Old Standard TT + Fira Code",
+  "description": "Condensed all-caps display with classical serif body. Dramatic contrast between modern and traditional.",
+  "categories": [
+    "display",
+    "serif",
+    "high-contrast"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/bebas-neue.json",
+    "https://www.fonttrio.xyz/r/old-standard-tt.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-bebas-neue)",
+      "--font-body": "var(--font-old-standard-tt)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.75rem",
+        "line-height": "1.05",
+        "letter-spacing": "-0.035em",
+        "font-weight": "800"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.1",
+        "letter-spacing": "-0.025em",
+        "font-weight": "700"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.75rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.02em",
+        "font-weight": "700"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.6"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "dramatic",
+      "editorial",
+      "bold"
+    ],
+    "useCase": [
+      "magazine",
+      "poster",
+      "editorial"
+    ],
+    "appearance": [
+      "high-contrast",
+      "editorial"
+    ]
+  }
+}

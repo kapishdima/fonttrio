@@ -1,5 +1,5 @@
 {
-  "name": "pairing-spectral-lora",
+  "name": "spectral-lora",
   "type": "registry:style",
   "extends": "none",
   "title": "Spectral Lora — Spectral + Lora + Source Code Pro",

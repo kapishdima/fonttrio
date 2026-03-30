@@ -1,5 +1,5 @@
 {
-  "name": "pairing-chivo-rasa",
+  "name": "chivo-rasa",
   "type": "registry:style",
   "extends": "none",
   "title": "Chivo Rasa — Chivo + Rasa + JetBrains Mono",

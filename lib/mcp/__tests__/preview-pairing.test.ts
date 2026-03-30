@@ -4,7 +4,7 @@ import type { PairingItem } from "@/lib/registry";
 import editorial from "./fixtures/pairings/editorial.json";
 
 const pairingsMap: Record<string, PairingItem> = {
-	"pairing-editorial": editorial as unknown as PairingItem,
+	"editorial": editorial as unknown as PairingItem,
 };
 
 const getPairing = (name: string) => pairingsMap[name] || null;

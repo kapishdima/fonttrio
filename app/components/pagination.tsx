@@ -1,8 +1,7 @@
 "use client";
 
-import { useTransition } from "react";
 import { useQueryState } from "nuqs";
-import { serverInteger } from "@/lib/nuqs";
+import { useTransition } from "react";
 import { Button } from "@/components/ui/button";
 import {
 	PaginationContent,
@@ -10,6 +9,7 @@ import {
 	PaginationItem,
 	Pagination as PaginationRoot,
 } from "@/components/ui/pagination";
+import { serverInteger } from "@/lib/nuqs";
 
 interface PaginationProps {
 	totalPages: number;

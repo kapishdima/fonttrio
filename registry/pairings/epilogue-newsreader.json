@@ -1,5 +1,5 @@
 {
-  "name": "pairing-epilogue-newsreader",
+  "name": "epilogue-newsreader",
   "type": "registry:style",
   "extends": "none",
   "title": "Epilogue Newsreader — Epilogue + Newsreader + JetBrains Mono",

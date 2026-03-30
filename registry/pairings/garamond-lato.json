@@ -1,0 +1,62 @@
+{
+	"name": "garamond-lato",
+	"type": "registry:style",
+	"extends": "none",
+	"title": "Scholar — Lato + EB Garamond + Source Code Pro",
+	"description": "Academic precision meets digital clarity. EB Garamond's renaissance roots lend authority to headings, while Lato ensures perfect screen readability for long-form content.",
+	"categories": ["serif", "contrast", "academic"],
+	"registryDependencies": [
+		"https://www.fonttrio.xyz/r/eb-garamond.json",
+		"https://www.fonttrio.xyz/r/lato.json",
+		"https://www.fonttrio.xyz/r/source-code-pro.json"
+	],
+	"cssVars": {
+		"theme": {
+			"--font-heading": "var(--font-lato)",
+			"--font-body": "var(--font-eb-garamond)",
+			"--font-mono": "var(--font-source-code-pro)"
+		}
+	},
+	"css": {
+		"@layer base": {
+			"h1": {
+				"font-family": "var(--font-heading)",
+				"font-size": "2.5rem",
+				"line-height": "1.15",
+				"letter-spacing": "-0.015em",
+				"font-weight": "400"
+			},
+			"h2": {
+				"font-family": "var(--font-heading)",
+				"font-size": "2rem",
+				"line-height": "1.2",
+				"letter-spacing": "-0.01em",
+				"font-weight": "400"
+			},
+			"h3": {
+				"font-family": "var(--font-heading)",
+				"font-size": "1.5rem",
+				"line-height": "1.3",
+				"letter-spacing": "0em",
+				"font-weight": "400"
+			},
+			"h4, h5, h6": {
+				"font-family": "var(--font-heading)",
+				"letter-spacing": "0em"
+			},
+			"body, p": {
+				"font-family": "var(--font-body)",
+				"line-height": "1.75"
+			},
+			"code, pre": {
+				"font-family": "var(--font-mono)"
+			}
+		}
+	},
+	"meta": {
+		"preview": "The quick brown fox jumps over the lazy dog",
+		"mood": ["academic", "refined"],
+		"useCase": ["documentation", "research", "education"],
+		"appearance": ["modern", "classic"]
+	}
+}

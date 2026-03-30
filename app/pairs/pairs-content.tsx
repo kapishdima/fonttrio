@@ -1,21 +1,21 @@
 "use client";
 
-import { useMemo } from "react";
 import { FilterPill } from "@/app/components/filters/filter-pill";
 import { InnerHeader } from "@/app/components/header";
 import { PairsHero } from "@/app/components/hero/pairs-hero";
-import { PairCard } from "@/app/components/pair-card";
 import { Pagination } from "@/app/components/pagination";
-import { PAIR_FILTERS } from "@/lib/pairs-filter-config";
+import { PairCard } from "@/app/components/pair-card";
 import { usePairFilters } from "@/lib/hooks/use-pair-filters";
 import type { PairingData } from "@/lib/pairings";
-import { POPULAR_PAIRING_NAMES } from "@/lib/popular-pairings";
+import { PAIR_FILTERS } from "@/lib/pairs-filter-config";
 
-export function PairsContent({ pairings }: { pairings: PairingData[] }) {
-	const popularPairings = useMemo(
-		() => pairings.filter((p) => POPULAR_PAIRING_NAMES.has(p.name)),
-		[pairings],
-	);
+export function PairsContent({
+	pairings,
+	popularPairings,
+}: {
+	pairings: PairingData[];
+	popularPairings: PairingData[];
+}) {
 	const {
 		searchQuery,
 		setSearchQuery,

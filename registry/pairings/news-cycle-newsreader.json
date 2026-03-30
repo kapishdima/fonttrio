@@ -1,5 +1,5 @@
 {
-  "name": "pairing-news-cycle-newsreader",
+  "name": "news-cycle-newsreader",
   "type": "registry:style",
   "extends": "none",
   "title": "News Cycle Newsreader — News Cycle + Newsreader + Inconsolata",

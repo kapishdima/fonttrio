@@ -1,0 +1,77 @@
+{
+  "name": "lato-merriweather",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Lato + Merriweather + Fira Code",
+  "description": "Warm humanist sans heading with sturdy serif body. One of the most popular web pairings for readability.",
+  "categories": [
+    "sans-serif",
+    "serif",
+    "popular"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/lato.json",
+    "https://www.fonttrio.xyz/r/merriweather.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-lato)",
+      "--font-body": "var(--font-merriweather)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.02em",
+        "font-weight": "600"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.75rem",
+        "line-height": "1.25",
+        "letter-spacing": "-0.015em",
+        "font-weight": "600"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.375rem",
+        "line-height": "1.3",
+        "letter-spacing": "-0.01em",
+        "font-weight": "500"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.005em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.65"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "warm",
+      "readable",
+      "trustworthy"
+    ],
+    "useCase": [
+      "blog",
+      "news",
+      "documentation"
+    ],
+    "appearance": [
+      "classic",
+      "warm"
+    ]
+  }
+}

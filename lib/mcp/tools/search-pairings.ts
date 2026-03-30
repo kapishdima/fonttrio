@@ -67,15 +67,14 @@ export function searchPairings(
 
 	return {
 		pairings: limited.map((p) => {
-			const pairingSlug = p.name.replace("pairing-", "");
 			return {
-				name: pairingSlug,
+				name: p.name,
 				title: p.title,
 				description: p.description,
 				mood: p.meta?.mood || [],
 				useCase: p.meta?.useCase || [],
 				categories: p.categories || [],
-				installCommand: `bunx shadcn@latest add https://www.fonttrio.xyz/r/${pairingSlug}.json`,
+				installCommand: `bunx shadcn@latest add https://www.fonttrio.xyz/r/${p.name}.json`,
 			};
 		}),
 		total,

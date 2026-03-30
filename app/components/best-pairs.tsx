@@ -3,7 +3,6 @@
 import { motion, useReducedMotion } from "motion/react";
 import { PairCard } from "@/app/components/pair-card";
 import type { PairingData } from "@/lib/pairings";
-import { POPULAR_PAIRING_NAMES } from "@/lib/popular-pairings";
 
 const titleVariants = {
 	hidden: { y: 20, opacity: 0, filter: "blur(4px)" },
@@ -32,8 +31,7 @@ const cardVariants = {
 	},
 } as const;
 
-export function BestPairs({ pairings: allPairings }: { pairings: PairingData[] }) {
-	const pairings = allPairings.filter((p) => POPULAR_PAIRING_NAMES.has(p.name));
+export function BestPairs({ pairings }: { pairings: PairingData[] }) {
 	const prefersReducedMotion = useReducedMotion();
 	const reducedVariants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
 

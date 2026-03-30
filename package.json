@@ -8,7 +8,6 @@
 		"start": "next start",
 		"lint": "eslint",
 		"generate:fonts": "bun run scripts/generate-fonts.ts",
-		"generate:candidates": "bun run scripts/generate-pairing-candidates.ts",
 		"sync:pairings": "bun run scripts/sync-pairings-data.ts",
 		"build:registry": "bun run scripts/build-registry.ts",
 		"test": "vitest run",

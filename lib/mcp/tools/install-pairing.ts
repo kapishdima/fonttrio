@@ -18,8 +18,7 @@ export function installPairing(
 ): InstallPairingResult {
 	const { name } = input;
 
-	// Try both with and without "pairing-" prefix
-	const pairing = getPairing(`pairing-${name}`) || getPairing(name);
+	const pairing = getPairing(name);
 
 	if (!pairing) {
 		return {
@@ -29,12 +28,10 @@ export function installPairing(
 		};
 	}
 
-	const pairingSlug = pairing.name.replace("pairing-", "");
-
 	return {
 		found: true,
-		name: pairingSlug,
+		name: pairing.name,
 		title: pairing.title,
-		command: `bunx shadcn@latest add https://www.fonttrio.xyz/r/${pairingSlug}.json`,
+		command: `bunx shadcn@latest add https://www.fonttrio.xyz/r/${pairing.name}.json`,
 	};
 }

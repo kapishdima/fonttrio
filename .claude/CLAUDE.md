@@ -21,34 +21,38 @@
 fonttrio/
 ├── package.json
 ├── next.config.ts
-├── registry.json                    # Registry index
+├── registry.json                    # Registry index (generated)
 ├── scripts/
 │   ├── generate-fonts.ts            # Google Fonts API → registry:font JSONs
-│   └── generate-pairing-candidates.ts
+│   ├── import-fontpair.ts           # Import pairings from fontpair-data.json
+│   └── build-registry.ts           # Generates registry.json
 ├── registry/
-│   ├── fonts/                       # AUTO-GENERATED (~100 popular)
-│   └── pairings/                    # CURATED (6 стартовых)
+│   ├── fonts/                       # AUTO-GENERATED (~1900 Google Fonts)
+│   └── pairings/                    # CURATED (~365 пар)
 ├── app/
 │   ├── page.tsx                     # Landing
-│   ├── landing-client.tsx           # Клиентский landing компонент
-│   ├── [pairing]/page.tsx           # Детальная страница
-│   ├── api/r/[name]/route.ts        # Dynamic registry endpoint
+│   ├── r/[name]/route.ts            # Dynamic registry endpoint
+│   ├── fonts/page.tsx               # Fonts catalog
+│   ├── pairs/page.tsx               # Pairs catalog
+│   ├── playground/page.tsx          # Playground
+│   ├── sponsors/page.tsx            # Sponsors
+│   ├── ai/page.tsx                  # AI page
 │   └── components/
-│       ├── pairing-card.tsx
-│       ├── type-tester.tsx
-│       ├── context-preview.tsx
-│       ├── typography-customizer.tsx
-│       ├── side-by-side.tsx
-│       ├── install-command.tsx
-│       └── font-provider.tsx
+│       ├── pair-card.tsx
+│       ├── font-card.tsx
+│       ├── pairs/pair-installation-code.tsx
+│       ├── playground.tsx
+│       ├── hero/
+│       ├── filters/
+│       ├── header.tsx
+│       └── footer.tsx
 ├── components/
-│   ├── DotGrid.tsx                  # Canvas-based interactive dot grid (GSAP)
-│   └── Magnet.tsx                   # Magnetic cursor effect component
+│   └── DotGrid.tsx                  # Canvas-based interactive dot grid (GSAP)
 ├── lib/
 │   ├── pairings.ts
 │   ├── sponsors.ts
 │   └── registry.ts
-└── public/r/                        # Built registry output
+└── lib/mcp/                         # MCP server tools
 ```
 
 ## Стартовые 6 пар
@@ -68,7 +72,7 @@ fonttrio/
 - **shadcn/ui** — ВСЕ примитивные UI компоненты (Button, Tabs, Slider, Select, Tooltip, Badge, etc.)
   - Style: `radix-nova`, baseColor: `neutral`
   - Дополнительный реестр: `@react-bits` → `https://reactbits.dev/r/{name}.json`
-- shadcn CLI (`shadcn build`) для сборки registry
+- Кастомный `scripts/build-registry.ts` для сборки registry.json
 - **GSAP** + InertiaPlugin — для физических анимаций (DotGrid)
 - nuqs — URL state management
 - Vercel — хостинг
@@ -92,7 +96,6 @@ fonttrio/
 - **Фон:** Интерактивный DotGrid (canvas + GSAP physics) как фоновый слой
 - **Заголовки:** Outfit (bold) для крупных display текстов
 - **Тело:** Manrope (medium) для подзаголовков и UI текста
-- **Курсор:** Magnetic эффект через `Magnet.tsx` для ключевых интерактивных элементов
 - **Border-radius:** Крупные скругления (`rounded-4xl` = 24px) для контейнеров; `rounded-xl` для навигации
 
 ### Цветовые переменные

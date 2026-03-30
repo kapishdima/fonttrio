@@ -1,5 +1,5 @@
 {
-  "name": "pairing-roboto-mono-lora",
+  "name": "roboto-mono-lora",
   "type": "registry:style",
   "extends": "none",
   "title": "Roboto Mono Lora — Roboto Mono + Lora + IBM Plex Mono",

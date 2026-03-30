@@ -1,0 +1,77 @@
+{
+  "name": "oswald-old-standard-tt",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Oswald + Old Standard TT + Fira Code",
+  "description": "Condensed modern gothic heading with old-style serif body. Strong contrast between contemporary and classical.",
+  "categories": [
+    "display",
+    "serif",
+    "contrast"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/oswald.json",
+    "https://www.fonttrio.xyz/r/old-standard-tt.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-oswald)",
+      "--font-body": "var(--font-old-standard-tt)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.75rem",
+        "line-height": "1.05",
+        "letter-spacing": "-0.035em",
+        "font-weight": "800"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.1",
+        "letter-spacing": "-0.025em",
+        "font-weight": "700"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.75rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.02em",
+        "font-weight": "700"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.6"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "bold",
+      "dramatic",
+      "editorial"
+    ],
+    "useCase": [
+      "magazine",
+      "news",
+      "editorial"
+    ],
+    "appearance": [
+      "high-contrast",
+      "editorial"
+    ]
+  }
+}

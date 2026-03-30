@@ -1,5 +1,5 @@
 {
-  "name": "pairing-inconsolata-newsreader",
+  "name": "inconsolata-newsreader",
   "type": "registry:style",
   "extends": "none",
   "title": "Inconsolata Newsreader — Inconsolata + Newsreader + Fira Code",

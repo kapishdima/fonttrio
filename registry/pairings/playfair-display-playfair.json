@@ -1,5 +1,5 @@
 {
-  "name": "pairing-playfair-display-playfair",
+  "name": "playfair-display-playfair",
   "type": "registry:style",
   "extends": "none",
   "title": "Playfair Display Playfair — Playfair Display + Playfair + IBM Plex Mono",

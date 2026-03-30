@@ -1,5 +1,5 @@
 {
-  "name": "pairing-chivo-ibm-plex",
+  "name": "chivo-ibm-plex",
   "type": "registry:style",
   "extends": "none",
   "title": "Chivo Ibm Plex — Chivo + IBM Plex Serif + Inconsolata",

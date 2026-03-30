@@ -1,0 +1,77 @@
+{
+  "name": "libre-baskerville-source-sans-3",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Libre Baskerville + Source Sans 3 + Fira Code",
+  "description": "Classical Baskerville heading with clean Source Sans body. Timeless elegance with modern readability.",
+  "categories": [
+    "serif",
+    "sans-serif",
+    "editorial"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/libre-baskerville.json",
+    "https://www.fonttrio.xyz/r/source-sans-3.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-libre-baskerville)",
+      "--font-body": "var(--font-source-sans-3)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.025em",
+        "font-weight": "700"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.875rem",
+        "line-height": "1.25",
+        "letter-spacing": "-0.02em",
+        "font-weight": "600"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.5rem",
+        "line-height": "1.3",
+        "letter-spacing": "-0.015em",
+        "font-weight": "600"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.65"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "elegant",
+      "traditional",
+      "readable"
+    ],
+    "useCase": [
+      "blog",
+      "editorial",
+      "documentation"
+    ],
+    "appearance": [
+      "classic",
+      "editorial"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "pairing-manrope-newsreader",
+  "name": "manrope-newsreader",
   "type": "registry:style",
   "extends": "none",
   "title": "Manrope Newsreader — Manrope + Newsreader + IBM Plex Mono",

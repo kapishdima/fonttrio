@@ -1,5 +1,5 @@
 {
-  "name": "pairing-playfair-display-lora",
+  "name": "playfair-display-lora",
   "type": "registry:style",
   "extends": "none",
   "title": "Playfair Display Lora — Playfair Display + Lora + Source Code Pro",

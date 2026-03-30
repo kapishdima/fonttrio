@@ -1,0 +1,77 @@
+{
+  "name": "lobster-roboto-condensed",
+  "type": "registry:style",
+  "extends": "none",
+  "title": "Lobster + Roboto Condensed + Fira Code",
+  "description": "Playful script-like display heading with compact sans body. Fun and eye-catching for creative projects.",
+  "categories": [
+    "display",
+    "sans-serif",
+    "playful"
+  ],
+  "registryDependencies": [
+    "https://www.fonttrio.xyz/r/lobster.json",
+    "https://www.fonttrio.xyz/r/roboto-condensed.json",
+    "https://www.fonttrio.xyz/r/fira-code.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "--font-heading": "var(--font-lobster)",
+      "--font-body": "var(--font-roboto-condensed)",
+      "--font-mono": "var(--font-fira-code)"
+    }
+  },
+  "css": {
+    "@layer base": {
+      "h1": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.75rem",
+        "line-height": "1.05",
+        "letter-spacing": "-0.035em",
+        "font-weight": "800"
+      },
+      "h2": {
+        "font-family": "var(--font-heading)",
+        "font-size": "2.25rem",
+        "line-height": "1.1",
+        "letter-spacing": "-0.025em",
+        "font-weight": "700"
+      },
+      "h3": {
+        "font-family": "var(--font-heading)",
+        "font-size": "1.75rem",
+        "line-height": "1.2",
+        "letter-spacing": "-0.02em",
+        "font-weight": "700"
+      },
+      "h4, h5, h6": {
+        "font-family": "var(--font-heading)",
+        "letter-spacing": "-0.01em"
+      },
+      "body, p": {
+        "font-family": "var(--font-body)",
+        "line-height": "1.6"
+      },
+      "code, pre": {
+        "font-family": "var(--font-mono)"
+      }
+    }
+  },
+  "meta": {
+    "preview": "The quick brown fox jumps over the lazy dog",
+    "mood": [
+      "playful",
+      "creative",
+      "fun"
+    ],
+    "useCase": [
+      "portfolio",
+      "restaurant",
+      "creative"
+    ],
+    "appearance": [
+      "playful",
+      "casual"
+    ]
+  }
+}

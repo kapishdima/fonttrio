@@ -116,7 +116,7 @@ export function buildRegistryIndex(baseUrl = "https://www.fonttrio.xyz"): Regist
       categories: p.categories,
       mood: p.meta?.mood || [],
       useCase: p.meta?.useCase || [],
-      url: `${baseUrl}/r/${p.name.replace("pairing-", "")}.json`,
+      url: `${baseUrl}/r/${p.name}.json`,
     })),
   };
 }

@@ -11559,7 +11559,7 @@
   ],
   "pairings": [
     {
-      "name": "pairing-yaldevi-libre-franklin",
+      "name": "yaldevi-libre-franklin",
       "title": "Yaldevi Libre Franklin — Yaldevi + Libre Franklin + Fira Code",
       "description": "Yaldevi offers a compact, neutral contrast that complements Franklin well.",
       "categories": [
@@ -11574,7 +11574,7 @@
       "url": "https://www.fonttrio.xyz/r/yaldevi-libre-franklin.json"
     },
     {
-      "name": "pairing-open-sans-archivo",
+      "name": "open-sans-archivo",
       "title": "Open Sans Archivo — Open Sans + Archivo + Fira Code",
       "description": "Open Sans and Archivo are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -11589,7 +11589,7 @@
       "url": "https://www.fonttrio.xyz/r/open-sans-archivo.json"
     },
     {
-      "name": "pairing-crimson-text-crimson-pro",
+      "name": "crimson-text-crimson-pro",
       "title": "Crimson Text Crimson Pro — Crimson Text + Crimson Pro + IBM Plex Mono",
       "description": "Crimson Text paired with Crimson Pro for a google fonts aesthetic.",
       "categories": [
@@ -11604,7 +11604,7 @@
       "url": "https://www.fonttrio.xyz/r/crimson-text-crimson-pro.json"
     },
     {
-      "name": "pairing-space-grotesk-be-vietnam",
+      "name": "space-grotesk-be-vietnam",
       "title": "Space Grotesk Be Vietnam — Space Grotesk + Be Vietnam Pro + Inconsolata",
       "description": "Be Vietnam Pro brings tech-forward clarity that enhances modern layouts.",
       "categories": [
@@ -11621,7 +11621,7 @@
       "url": "https://www.fonttrio.xyz/r/space-grotesk-be-vietnam.json"
     },
     {
-      "name": "pairing-chivo-tinos",
+      "name": "chivo-tinos",
       "title": "Chivo Tinos — Chivo + Tinos + IBM Plex Mono",
       "description": "Tinos supports Chivo with clean, readable serif forms.",
       "categories": [
@@ -11637,7 +11637,7 @@
       "url": "https://www.fonttrio.xyz/r/chivo-tinos.json"
     },
     {
-      "name": "pairing-inknut-antiqua-work-sans",
+      "name": "inknut-antiqua-work-sans",
       "title": "Inknut Antiqua Work Sans — Inknut Antiqua + Work Sans + Source Code Pro",
       "description": "Work Sans softens the drama of Inknut with friendly tone.",
       "categories": [
@@ -11653,7 +11653,7 @@
       "url": "https://www.fonttrio.xyz/r/inknut-antiqua-work-sans.json"
     },
     {
-      "name": "pairing-petrona-karla",
+      "name": "petrona-karla",
       "title": "Petrona Karla — Petrona + Karla + JetBrains Mono",
       "description": "Petrona softens headlines with a traditional base.",
       "categories": [
@@ -11669,7 +11669,7 @@
       "url": "https://www.fonttrio.xyz/r/petrona-karla.json"
     },
     {
-      "name": "pairing-newspaper",
+      "name": "newspaper",
       "title": "Newspaper — Playfair Display + DM Sans + JetBrains Mono",
       "description": "High-contrast editorial with a modern twist. Playfair's sharp serifs cut through DM Sans's soft geometry, creating a sophisticated tension between tradition and modernity.",
       "categories": [
@@ -11689,7 +11689,7 @@
       "url": "https://www.fonttrio.xyz/r/newspaper.json"
     },
     {
-      "name": "pairing-pt-sans-nunito",
+      "name": "pt-sans-nunito",
       "title": "Pt Sans Nunito — PT Sans + Nunito + JetBrains Mono",
       "description": "PT Sans adds a soft, approachable feel while Nunito keeps things clean and readable.",
       "categories": [
@@ -11704,7 +11704,7 @@
       "url": "https://www.fonttrio.xyz/r/pt-sans-nunito.json"
     },
     {
-      "name": "pairing-manrope-merriweather",
+      "name": "manrope-merriweather",
       "title": "Manrope Merriweather — Manrope + Merriweather + Roboto Mono",
       "description": "Manrope and Merriweather share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -11719,7 +11719,7 @@
       "url": "https://www.fonttrio.xyz/r/manrope-merriweather.json"
     },
     {
-      "name": "pairing-manifesto",
+      "name": "manifesto",
       "title": "Manifesto — Roboto Slab + Roboto + Roboto Mono",
       "description": "The complete Roboto system. Slab headlines bring gravitas to Google's most versatile typeface family. A three-weight system that works everywhere, from Android to enterprise dashboards.",
       "categories": [
@@ -11739,7 +11739,7 @@
       "url": "https://www.fonttrio.xyz/r/manifesto.json"
     },
     {
-      "name": "pairing-chivo-cambo",
+      "name": "chivo-cambo",
       "title": "Chivo Cambo — Chivo + Cambo + Roboto Mono",
       "description": "Cambo adds softness and classic elegance to Chivo’s structure.",
       "categories": [
@@ -11754,7 +11754,7 @@
       "url": "https://www.fonttrio.xyz/r/chivo-cambo.json"
     },
     {
-      "name": "pairing-archivo-manrope",
+      "name": "archivo-manrope",
       "title": "Archivo Manrope — Archivo + Manrope + JetBrains Mono",
       "description": "Archivo and Manrope share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -11769,7 +11769,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-manrope.json"
     },
     {
-      "name": "pairing-headline",
+      "name": "headline",
       "title": "Headline — Anton + Work Sans + Roboto Mono",
       "description": "Bold and unapologetic. Anton's narrow, impactful letterforms dominate the viewport, while Work Sans's humanist warmth grounds the reading experience in comfortable body text.",
       "categories": [
@@ -11789,7 +11789,7 @@
       "url": "https://www.fonttrio.xyz/r/headline.json"
     },
     {
-      "name": "pairing-epilogue-newsreader",
+      "name": "epilogue-newsreader",
       "title": "Epilogue Newsreader — Epilogue + Newsreader + JetBrains Mono",
       "description": "Newsreader softens Epilogue’s geometry with elegant contrast.",
       "categories": [
@@ -11805,23 +11805,7 @@
       "url": "https://www.fonttrio.xyz/r/epilogue-newsreader.json"
     },
     {
-      "name": "pairing-abril-fatface-fira-sans",
-      "title": "Abril Fatface Fira Sans — Abril Fatface + Fira Sans + Inconsolata",
-      "description": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Fira Sans.",
-      "categories": [
-        "display-sans serif"
-      ],
-      "mood": [
-        "editorial",
-        "elegant"
-      ],
-      "useCase": [
-        "editorial"
-      ],
-      "url": "https://www.fonttrio.xyz/r/abril-fatface-fira-sans.json"
-    },
-    {
-      "name": "pairing-minimal",
+      "name": "minimal",
       "title": "Minimal — Geist + Geist + Geist Mono",
       "description": "Ultra-minimal Vercel-style pairing. One font family for everything, clean and modern.",
       "categories": [
@@ -11842,7 +11826,7 @@
       "url": "https://www.fonttrio.xyz/r/minimal.json"
     },
     {
-      "name": "pairing-fintech",
+      "name": "fintech",
       "title": "Fintech — Outfit + IBM Plex Sans + IBM Plex Mono",
       "description": "Trust through typography. Outfit's geometric clarity inspires confidence in headings, while IBM Plex's rigorous design system ensures readability in data-heavy financial interfaces.",
       "categories": [
@@ -11862,7 +11846,7 @@
       "url": "https://www.fonttrio.xyz/r/fintech.json"
     },
     {
-      "name": "pairing-spectral-lora",
+      "name": "spectral-lora",
       "title": "Spectral Lora — Spectral + Lora + Source Code Pro",
       "description": "Spectral and Lora are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -11878,7 +11862,7 @@
       "url": "https://www.fonttrio.xyz/r/spectral-lora.json"
     },
     {
-      "name": "pairing-encode-sans-encode-sans",
+      "name": "encode-sans-encode-sans",
       "title": "Encode Sans Encode Sans — Encode Sans Expanded + Encode Sans + Fira Code",
       "description": "Encode Sans Expanded paired with Encode Sans for a google fonts aesthetic.",
       "categories": [
@@ -11893,7 +11877,7 @@
       "url": "https://www.fonttrio.xyz/r/encode-sans-encode-sans.json"
     },
     {
-      "name": "pairing-libre-franklin-libre-baskerville",
+      "name": "libre-franklin-libre-baskerville",
       "title": "Libre Franklin Libre Baskerville — Libre Franklin + Libre Baskerville + Roboto Mono",
       "description": "Libre Franklin paired with Libre Baskerville for a google fonts aesthetic.",
       "categories": [
@@ -11908,7 +11892,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-franklin-libre-baskerville.json"
     },
     {
-      "name": "pairing-yellowtail-nunito",
+      "name": "yellowtail-nunito",
       "title": "Yellowtail Nunito — Yellowtail + Nunito + Inconsolata",
       "description": "Yellowtail paired with Nunito for a google fonts aesthetic.",
       "categories": [
@@ -11923,7 +11907,7 @@
       "url": "https://www.fonttrio.xyz/r/yellowtail-nunito.json"
     },
     {
-      "name": "pairing-manrope-newsreader",
+      "name": "manrope-newsreader",
       "title": "Manrope Newsreader — Manrope + Newsreader + IBM Plex Mono",
       "description": "Newsreader adds depth beneath modern sans headers.",
       "categories": [
@@ -11939,7 +11923,7 @@
       "url": "https://www.fonttrio.xyz/r/manrope-newsreader.json"
     },
     {
-      "name": "pairing-khand-hind",
+      "name": "khand-hind",
       "title": "Khand Hind — Khand + Hind + Roboto Mono",
       "description": "Khand and Hind are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -11954,7 +11938,7 @@
       "url": "https://www.fonttrio.xyz/r/khand-hind.json"
     },
     {
-      "name": "pairing-ovo-mulish",
+      "name": "ovo-mulish",
       "title": "Ovo Mulish — Ovo + Mulish + IBM Plex Mono",
       "description": "Ovo paired with Mulish for a google fonts aesthetic.",
       "categories": [
@@ -11969,7 +11953,7 @@
       "url": "https://www.fonttrio.xyz/r/ovo-mulish.json"
     },
     {
-      "name": "pairing-josefin-slab-josefin-sans",
+      "name": "josefin-slab-josefin-sans",
       "title": "Josefin Slab Josefin Sans — Josefin Slab + Josefin Sans + Fira Code",
       "description": "Josefin Slab paired with Josefin Sans for a google fonts aesthetic.",
       "categories": [
@@ -11984,7 +11968,7 @@
       "url": "https://www.fonttrio.xyz/r/josefin-slab-josefin-sans.json"
     },
     {
-      "name": "pairing-karla-newsreader",
+      "name": "karla-newsreader",
       "title": "Karla Newsreader — Karla + Newsreader + Inconsolata",
       "description": "Karla’s simplicity contrasts beautifully with Newsreader’s refinement.",
       "categories": [
@@ -12000,7 +11984,7 @@
       "url": "https://www.fonttrio.xyz/r/karla-newsreader.json"
     },
     {
-      "name": "pairing-inter-poppins",
+      "name": "inter-poppins",
       "title": "Inter Poppins — Inter + Poppins + Fira Code",
       "description": "Inter adds a soft, approachable feel while Poppins keeps things clean and readable.",
       "categories": [
@@ -12016,7 +12000,7 @@
       "url": "https://www.fonttrio.xyz/r/inter-poppins.json"
     },
     {
-      "name": "pairing-fira-sans-open-sans",
+      "name": "fira-sans-open-sans",
       "title": "Fira Sans Open Sans — Fira Sans + Open Sans + IBM Plex Mono",
       "description": "Fira Sans and Open Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12031,7 +12015,7 @@
       "url": "https://www.fonttrio.xyz/r/fira-sans-open-sans.json"
     },
     {
-      "name": "pairing-asap-condensed-asap",
+      "name": "asap-condensed-asap",
       "title": "Asap Condensed Asap — Asap Condensed + Asap + Inconsolata",
       "description": "Asap Condensed paired with Asap for a google fonts aesthetic.",
       "categories": [
@@ -12046,7 +12030,7 @@
       "url": "https://www.fonttrio.xyz/r/asap-condensed-asap.json"
     },
     {
-      "name": "pairing-bitter-lora",
+      "name": "bitter-lora",
       "title": "Bitter Lora — Bitter + Lora + Source Code Pro",
       "description": "Bitter and Lora are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12061,7 +12045,7 @@
       "url": "https://www.fonttrio.xyz/r/bitter-lora.json"
     },
     {
-      "name": "pairing-ubuntu-sans-ubuntu-mono",
+      "name": "ubuntu-sans-ubuntu-mono",
       "title": "Ubuntu Sans Ubuntu Mono — Ubuntu Sans Mono + Ubuntu Mono + Fira Code",
       "description": "Ubuntu Sans Mono paired with Ubuntu Mono for a google fonts aesthetic.",
       "categories": [
@@ -12076,7 +12060,22 @@
       "url": "https://www.fonttrio.xyz/r/ubuntu-sans-ubuntu-mono.json"
     },
     {
-      "name": "pairing-space-mono-work-sans",
+      "name": "open-sans-fraunces",
+      "title": "Open Sans Fraunces — Open Sans + Fraunces + Inconsolata",
+      "description": "Fraunces offers expressive character that pairs well with Open Sans’ clarity.",
+      "categories": [
+        "serif-sans serif"
+      ],
+      "mood": [
+        "approachable"
+      ],
+      "useCase": [
+        "branding"
+      ],
+      "url": "https://www.fonttrio.xyz/r/open-sans-fraunces.json"
+    },
+    {
+      "name": "space-mono-work-sans",
       "title": "Space Mono Work Sans — Space Mono + Work Sans + Inconsolata",
       "description": "Space Mono’s personality pairs well with neutral Work Sans.",
       "categories": [
@@ -12092,7 +12091,7 @@
       "url": "https://www.fonttrio.xyz/r/space-mono-work-sans.json"
     },
     {
-      "name": "pairing-archivo-raleway",
+      "name": "archivo-raleway",
       "title": "Archivo Raleway — Archivo + Raleway + Roboto Mono",
       "description": "Archivo and Raleway are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12107,7 +12106,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-raleway.json"
     },
     {
-      "name": "pairing-playfair-display-nunito",
+      "name": "playfair-display-nunito",
       "title": "Playfair Display Nunito — Playfair Display + Nunito + Fira Code",
       "description": "Playfair Display adds a soft, approachable feel while Nunito keeps things clean and readable.",
       "categories": [
@@ -12123,7 +12122,7 @@
       "url": "https://www.fonttrio.xyz/r/playfair-display-nunito.json"
     },
     {
-      "name": "pairing-bitter-be-vietnam",
+      "name": "bitter-be-vietnam",
       "title": "Bitter Be Vietnam — Bitter + Be Vietnam Pro + JetBrains Mono",
       "description": "Bitter and Be Vietnam Pro are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12138,7 +12137,7 @@
       "url": "https://www.fonttrio.xyz/r/bitter-be-vietnam.json"
     },
     {
-      "name": "pairing-be-vietnam-merriweather",
+      "name": "be-vietnam-merriweather",
       "title": "Be Vietnam Merriweather — Be Vietnam Pro + Merriweather + Inconsolata",
       "description": "Be Vietnam Pro and Merriweather are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12153,7 +12152,7 @@
       "url": "https://www.fonttrio.xyz/r/be-vietnam-merriweather.json"
     },
     {
-      "name": "pairing-lora-merriweather",
+      "name": "lora-merriweather",
       "title": "Lora Merriweather — Lora + Merriweather + Fira Code",
       "description": "Lora and Merriweather are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12168,7 +12167,7 @@
       "url": "https://www.fonttrio.xyz/r/lora-merriweather.json"
     },
     {
-      "name": "pairing-manrope-raleway",
+      "name": "manrope-raleway",
       "title": "Manrope Raleway — Manrope + Raleway + Roboto Mono",
       "description": "Manrope and Raleway share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -12183,7 +12182,7 @@
       "url": "https://www.fonttrio.xyz/r/manrope-raleway.json"
     },
     {
-      "name": "pairing-karla-david-libre",
+      "name": "karla-david-libre",
       "title": "Karla David Libre — Karla + David Libre + Inconsolata",
       "description": "David Libre pairs traditional elegance with Karla’s neutral tone.",
       "categories": [
@@ -12199,7 +12198,28 @@
       "url": "https://www.fonttrio.xyz/r/karla-david-libre.json"
     },
     {
-      "name": "pairing-libre-franklin-faustina",
+      "name": "lobster-roboto-condensed",
+      "title": "Lobster + Roboto Condensed + Fira Code",
+      "description": "Playful script-like display heading with compact sans body. Fun and eye-catching for creative projects.",
+      "categories": [
+        "display",
+        "sans-serif",
+        "playful"
+      ],
+      "mood": [
+        "playful",
+        "creative",
+        "fun"
+      ],
+      "useCase": [
+        "portfolio",
+        "restaurant",
+        "creative"
+      ],
+      "url": "https://www.fonttrio.xyz/r/lobster-roboto-condensed.json"
+    },
+    {
+      "name": "libre-franklin-faustina",
       "title": "Libre Franklin Faustina — Libre Franklin + Faustina + JetBrains Mono",
       "description": "Faustina’s vertical rhythm balances Libre Franklin’s neutrality.",
       "categories": [
@@ -12214,7 +12234,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-franklin-faustina.json"
     },
     {
-      "name": "pairing-classic",
+      "name": "classic",
       "title": "Classic — DM Serif Display + Libre Baskerville + JetBrains Mono",
       "description": "Literary and warm serif pairing. Elegant display headings with classic body text for publishing.",
       "categories": [
@@ -12235,7 +12255,7 @@
       "url": "https://www.fonttrio.xyz/r/classic.json"
     },
     {
-      "name": "pairing-be-vietnam-montserrat",
+      "name": "be-vietnam-montserrat",
       "title": "Be Vietnam Montserrat — Be Vietnam Pro + Montserrat + Inconsolata",
       "description": "Be Vietnam Pro and Montserrat are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12250,7 +12270,7 @@
       "url": "https://www.fonttrio.xyz/r/be-vietnam-montserrat.json"
     },
     {
-      "name": "pairing-fira-sans-be-vietnam",
+      "name": "fira-sans-be-vietnam",
       "title": "Fira Sans Be Vietnam — Fira Sans + Be Vietnam Pro + Fira Code",
       "description": "Fira Sans and Be Vietnam Pro are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12265,7 +12285,7 @@
       "url": "https://www.fonttrio.xyz/r/fira-sans-be-vietnam.json"
     },
     {
-      "name": "pairing-crimson-pro-crimson-text",
+      "name": "crimson-pro-crimson-text",
       "title": "Crimson Pro Crimson Text — Crimson Pro + Crimson Text + IBM Plex Mono",
       "description": "Crimson Pro paired with Crimson Text for a google fonts aesthetic.",
       "categories": [
@@ -12280,7 +12300,28 @@
       "url": "https://www.fonttrio.xyz/r/crimson-pro-crimson-text.json"
     },
     {
-      "name": "pairing-dm-sans-source-serif",
+      "name": "archivo-black-roboto",
+      "title": "Archivo Black + Roboto + Fira Code",
+      "description": "Heavy grotesque heading with versatile neo-grotesque body. Strong, modern, and highly readable.",
+      "categories": [
+        "sans-serif",
+        "display",
+        "bold"
+      ],
+      "mood": [
+        "bold",
+        "modern",
+        "strong"
+      ],
+      "useCase": [
+        "landing page",
+        "marketing",
+        "startup"
+      ],
+      "url": "https://www.fonttrio.xyz/r/archivo-black-roboto.json"
+    },
+    {
+      "name": "dm-sans-source-serif",
       "title": "Dm Sans Source Serif — DM Sans + Source Serif 4 + JetBrains Mono",
       "description": "Source Serif 4 balances the clean look of DM Sans for editorial use.",
       "categories": [
@@ -12296,7 +12337,7 @@
       "url": "https://www.fonttrio.xyz/r/dm-sans-source-serif.json"
     },
     {
-      "name": "pairing-memoir",
+      "name": "memoir",
       "title": "Memoir — Bitter + Lora + Inconsolata",
       "description": "Two screen-first serifs in harmony. Bitter's sturdy slab headlines ground the page, while Lora's calligraphic curves make every paragraph feel like turning a page in a favorite book.",
       "categories": [
@@ -12316,7 +12357,7 @@
       "url": "https://www.fonttrio.xyz/r/memoir.json"
     },
     {
-      "name": "pairing-roboto-poppins",
+      "name": "roboto-poppins",
       "title": "Roboto Poppins — Roboto + Poppins + JetBrains Mono",
       "description": "Roboto adds a soft, approachable feel while Poppins keeps things clean and readable.",
       "categories": [
@@ -12331,7 +12372,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-poppins.json"
     },
     {
-      "name": "pairing-oswald-montserrat",
+      "name": "oswald-montserrat",
       "title": "Oswald Montserrat — Oswald + Montserrat + Fira Code",
       "description": "Oswald paired with Montserrat for a mixed aesthetic.",
       "categories": [
@@ -12346,7 +12387,7 @@
       "url": "https://www.fonttrio.xyz/r/oswald-montserrat.json"
     },
     {
-      "name": "pairing-montserrat-alternates-montserrat",
+      "name": "montserrat-alternates-montserrat",
       "title": "Montserrat Alternates Montserrat — Montserrat Alternates + Montserrat + Inconsolata",
       "description": "Montserrat Alternates paired with Montserrat for a google fonts aesthetic.",
       "categories": [
@@ -12361,7 +12402,22 @@
       "url": "https://www.fonttrio.xyz/r/montserrat-alternates-montserrat.json"
     },
     {
-      "name": "pairing-broadsheet",
+      "name": "work-sans-merriweather",
+      "title": "Work Sans Merriweather — Work Sans + Merriweather + Fira Code",
+      "description": "Merriweather adds flexibility to modern layouts.",
+      "categories": [
+        "sans serif-monospace"
+      ],
+      "mood": [
+        "approachable"
+      ],
+      "useCase": [
+        "general"
+      ],
+      "url": "https://www.fonttrio.xyz/r/work-sans-merriweather.json"
+    },
+    {
+      "name": "broadsheet",
       "title": "Broadsheet — PT Serif + PT Sans + Inconsolata",
       "description": "Russia's gift to web typography. ParaType's public text fonts — commissioned for pan-Russian readability — pair beautifully: serif headlines carry authority, sans body text ensures clarity across Cyrillic and Latin.",
       "categories": [
@@ -12381,7 +12437,7 @@
       "url": "https://www.fonttrio.xyz/r/broadsheet.json"
     },
     {
-      "name": "pairing-alumni-sans-libre-franklin",
+      "name": "alumni-sans-libre-franklin",
       "title": "Alumni Sans Libre Franklin — Alumni Sans + Libre Franklin + Source Code Pro",
       "description": "Alumni Sans brings dramatic weight above Libre Franklin’s polish.",
       "categories": [
@@ -12396,7 +12452,7 @@
       "url": "https://www.fonttrio.xyz/r/alumni-sans-libre-franklin.json"
     },
     {
-      "name": "pairing-noto-serif-noto-sans",
+      "name": "noto-serif-noto-sans",
       "title": "Noto Serif Noto Sans — Noto Serif + Noto Sans + IBM Plex Mono",
       "description": "Noto Serif paired with Noto Sans for a google fonts aesthetic.",
       "categories": [
@@ -12411,7 +12467,7 @@
       "url": "https://www.fonttrio.xyz/r/noto-serif-noto-sans.json"
     },
     {
-      "name": "pairing-startup",
+      "name": "startup",
       "title": "Startup — Nunito + Nunito Sans + Fira Code",
       "description": "Friendly and approachable. Nunito's rounded terminals give headings warmth, while Nunito Sans straightens out for professional body text. The family that grows with your product.",
       "categories": [
@@ -12431,7 +12487,7 @@
       "url": "https://www.fonttrio.xyz/r/startup.json"
     },
     {
-      "name": "pairing-be-vietnam-spectral",
+      "name": "be-vietnam-spectral",
       "title": "Be Vietnam Spectral — Be Vietnam Pro + Spectral + JetBrains Mono",
       "description": "Be Vietnam Pro and Spectral share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -12446,7 +12502,7 @@
       "url": "https://www.fonttrio.xyz/r/be-vietnam-spectral.json"
     },
     {
-      "name": "pairing-fira-sans-bitter",
+      "name": "fira-sans-bitter",
       "title": "Fira Sans Bitter — Fira Sans + Bitter + Roboto Mono",
       "description": "Fira Sans and Bitter are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12461,7 +12517,7 @@
       "url": "https://www.fonttrio.xyz/r/fira-sans-bitter.json"
     },
     {
-      "name": "pairing-bricolage-grotesque-ubuntu",
+      "name": "bricolage-grotesque-ubuntu",
       "title": "Bricolage Grotesque Ubuntu — Bricolage Grotesque + Ubuntu + Source Code Pro",
       "description": "Bricolage Grotesque paired with Ubuntu for a google fonts aesthetic.",
       "categories": [
@@ -12476,7 +12532,7 @@
       "url": "https://www.fonttrio.xyz/r/bricolage-grotesque-ubuntu.json"
     },
     {
-      "name": "pairing-bebas-neue-nunito",
+      "name": "bebas-neue-nunito",
       "title": "Bebas Neue Nunito — Bebas Neue + Nunito + Roboto Mono",
       "description": "Bebas Neue provides strong visual impact, while Nunito balances it with clear readability.",
       "categories": [
@@ -12491,7 +12547,7 @@
       "url": "https://www.fonttrio.xyz/r/bebas-neue-nunito.json"
     },
     {
-      "name": "pairing-architect",
+      "name": "architect",
       "title": "Architect — Outfit + Libre Baskerville + IBM Plex Mono",
       "description": "Structured meets refined. Outfit's geometric precision in headings contrasts beautifully with Libre Baskerville's warm readability, like blueprints meeting handwritten notes.",
       "categories": [
@@ -12511,23 +12567,7 @@
       "url": "https://www.fonttrio.xyz/r/architect.json"
     },
     {
-      "name": "pairing-abril-fatface-merriweather",
-      "title": "Abril Fatface Merriweather — Abril Fatface + Merriweather + Roboto Mono",
-      "description": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Merriweather.",
-      "categories": [
-        "sans serif-sans serif"
-      ],
-      "mood": [
-        "editorial",
-        "elegant"
-      ],
-      "useCase": [
-        "editorial"
-      ],
-      "url": "https://www.fonttrio.xyz/r/abril-fatface-merriweather.json"
-    },
-    {
-      "name": "pairing-libre-baskerville-ibm-plex",
+      "name": "libre-baskerville-ibm-plex",
       "title": "Libre Baskerville Ibm Plex — Libre Baskerville + IBM Plex Sans + JetBrains Mono",
       "description": "IBM Plex Sans supports the authority of Libre Baskerville with a structured and digital-ready voice.",
       "categories": [
@@ -12543,7 +12583,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-baskerville-ibm-plex.json"
     },
     {
-      "name": "pairing-be-vietnam-poppins",
+      "name": "be-vietnam-poppins",
       "title": "Be Vietnam Poppins — Be Vietnam Pro + Poppins + Inconsolata",
       "description": "Be Vietnam Pro adds a soft, approachable feel while Poppins keeps things clean and readable.",
       "categories": [
@@ -12558,7 +12598,7 @@
       "url": "https://www.fonttrio.xyz/r/be-vietnam-poppins.json"
     },
     {
-      "name": "pairing-bitter-raleway",
+      "name": "bitter-raleway",
       "title": "Bitter Raleway — Bitter + Raleway + Inconsolata",
       "description": "Bitter paired with Raleway for a serif + sans serif aesthetic.",
       "categories": [
@@ -12573,7 +12613,7 @@
       "url": "https://www.fonttrio.xyz/r/bitter-raleway.json"
     },
     {
-      "name": "pairing-archivo-lora",
+      "name": "archivo-lora",
       "title": "Archivo Lora — Archivo + Lora + JetBrains Mono",
       "description": "Archivo and Lora are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12588,7 +12628,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-lora.json"
     },
     {
-      "name": "pairing-lora-varela",
+      "name": "lora-varela",
       "title": "Lora Varela — Lora + Varela + Inconsolata",
       "description": "Lora paired with Varela for a google fonts aesthetic.",
       "categories": [
@@ -12603,7 +12643,7 @@
       "url": "https://www.fonttrio.xyz/r/lora-varela.json"
     },
     {
-      "name": "pairing-manrope-roboto",
+      "name": "manrope-roboto",
       "title": "Manrope Roboto — Manrope + Roboto + Roboto Mono",
       "description": "Manrope and Roboto share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -12618,7 +12658,28 @@
       "url": "https://www.fonttrio.xyz/r/manrope-roboto.json"
     },
     {
-      "name": "pairing-epilogue-rosario",
+      "name": "playfair-display-raleway",
+      "title": "Playfair Display + Raleway + Fira Code",
+      "description": "High-contrast transitional serif heading with elegant thin sans body. Sophisticated and luxurious.",
+      "categories": [
+        "serif",
+        "sans-serif",
+        "elegant"
+      ],
+      "mood": [
+        "elegant",
+        "luxurious",
+        "sophisticated"
+      ],
+      "useCase": [
+        "fashion",
+        "luxury",
+        "editorial"
+      ],
+      "url": "https://www.fonttrio.xyz/r/playfair-display-raleway.json"
+    },
+    {
+      "name": "epilogue-rosario",
       "title": "Epilogue Rosario — Epilogue + Rosario + Inconsolata",
       "description": "Rosario maintains warmth and readability in digital contexts.",
       "categories": [
@@ -12635,7 +12696,7 @@
       "url": "https://www.fonttrio.xyz/r/epilogue-rosario.json"
     },
     {
-      "name": "pairing-aleo-albert-sans",
+      "name": "aleo-albert-sans",
       "title": "Aleo Albert Sans — Aleo + Albert Sans + Source Code Pro",
       "description": "Aleo paired with Albert Sans for a google fonts aesthetic.",
       "categories": [
@@ -12650,7 +12711,7 @@
       "url": "https://www.fonttrio.xyz/r/aleo-albert-sans.json"
     },
     {
-      "name": "pairing-ubuntu-sans-ubuntu",
+      "name": "ubuntu-sans-ubuntu",
       "title": "Ubuntu Sans Ubuntu — Ubuntu Sans + Ubuntu + Inconsolata",
       "description": "Ubuntu Sans paired with Ubuntu for a google fonts aesthetic.",
       "categories": [
@@ -12665,7 +12726,7 @@
       "url": "https://www.fonttrio.xyz/r/ubuntu-sans-ubuntu.json"
     },
     {
-      "name": "pairing-archivo-narrow-inter",
+      "name": "archivo-narrow-inter",
       "title": "Archivo Narrow Inter — Archivo Narrow + Inter + Fira Code",
       "description": "Inter balances the tight spacing of Archivo Narrow with modern clarity.",
       "categories": [
@@ -12681,7 +12742,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-narrow-inter.json"
     },
     {
-      "name": "pairing-fira-sans-archivo",
+      "name": "fira-sans-archivo",
       "title": "Fira Sans Archivo — Fira Sans + Archivo + Roboto Mono",
       "description": "Fira Sans and Archivo are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12696,7 +12757,7 @@
       "url": "https://www.fonttrio.xyz/r/fira-sans-archivo.json"
     },
     {
-      "name": "pairing-libre-franklin-cambay",
+      "name": "libre-franklin-cambay",
       "title": "Libre Franklin Cambay — Libre Franklin + Cambay + IBM Plex Mono",
       "description": "Cambay adds personality without sacrificing clarity under Franklin’s tone.",
       "categories": [
@@ -12711,7 +12772,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-franklin-cambay.json"
     },
     {
-      "name": "pairing-archivo-narrow-be-vietnam",
+      "name": "archivo-narrow-be-vietnam",
       "title": "Archivo Narrow Be Vietnam — Archivo Narrow + Be Vietnam Pro + Roboto Mono",
       "description": "Be Vietnam Pro keeps digital designs clean and functional.",
       "categories": [
@@ -12728,7 +12789,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-narrow-be-vietnam.json"
     },
     {
-      "name": "pairing-manrope-lora",
+      "name": "manrope-lora",
       "title": "Manrope Lora — Manrope + Lora + Source Code Pro",
       "description": "Lora softens Manrope’s geometry with warmth.",
       "categories": [
@@ -12744,7 +12805,43 @@
       "url": "https://www.fonttrio.xyz/r/manrope-lora.json"
     },
     {
-      "name": "pairing-news-cycle-newsreader",
+      "name": "raleway-merriweather",
+      "title": "Raleway + Merriweather + Fira Code",
+      "description": "Elegant thin sans heading with sturdy readable serif body. Refined modern-classic combination.",
+      "categories": [
+        "sans-serif",
+        "serif",
+        "elegant"
+      ],
+      "mood": [
+        "elegant",
+        "refined",
+        "readable"
+      ],
+      "useCase": [
+        "blog",
+        "portfolio",
+        "editorial"
+      ],
+      "url": "https://www.fonttrio.xyz/r/raleway-merriweather.json"
+    },
+    {
+      "name": "montserrat-crimson-text",
+      "title": "Montserrat Crimson Text — Montserrat + Crimson Text + IBM Plex Mono",
+      "description": "Montserrat paired with Crimson Text and IBM Plex Mono for a google fonts aesthetic.",
+      "categories": [
+        "google fonts"
+      ],
+      "mood": [
+        "versatile"
+      ],
+      "useCase": [
+        "general"
+      ],
+      "url": "https://www.fonttrio.xyz/r/montserrat-crimson-text.json"
+    },
+    {
+      "name": "news-cycle-newsreader",
       "title": "News Cycle Newsreader — News Cycle + Newsreader + Inconsolata",
       "description": "News Cycle paired with Newsreader for a google fonts aesthetic.",
       "categories": [
@@ -12759,7 +12856,7 @@
       "url": "https://www.fonttrio.xyz/r/news-cycle-newsreader.json"
     },
     {
-      "name": "pairing-venture",
+      "name": "venture",
       "title": "Venture — Jost + Rubik + Roboto Mono",
       "description": "Futura-inspired ambition. Jost channels Paul Renner's geometric ideals for commanding headlines, softened by Rubik's slightly rounded sans-serif that adds just enough warmth for comfortable reading.",
       "categories": [
@@ -12779,7 +12876,7 @@
       "url": "https://www.fonttrio.xyz/r/venture.json"
     },
     {
-      "name": "pairing-archivo-inter",
+      "name": "archivo-inter",
       "title": "Archivo Inter — Archivo + Inter + Source Code Pro",
       "description": "Archivo and Inter share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -12794,7 +12891,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-inter.json"
     },
     {
-      "name": "pairing-nunito-inter",
+      "name": "nunito-inter",
       "title": "Nunito Inter — Nunito + Inter + Roboto Mono",
       "description": "Nunito adds a soft, approachable feel while Inter keeps things clean and readable.",
       "categories": [
@@ -12810,7 +12907,7 @@
       "url": "https://www.fonttrio.xyz/r/nunito-inter.json"
     },
     {
-      "name": "pairing-spline-sans-geist",
+      "name": "spline-sans-geist",
       "title": "Spline Sans Geist — Spline Sans + Geist + IBM Plex Mono",
       "description": "Spline Sans paired with Geist for a mixed aesthetic.",
       "categories": [
@@ -12825,7 +12922,7 @@
       "url": "https://www.fonttrio.xyz/r/spline-sans-geist.json"
     },
     {
-      "name": "pairing-roboto-mono-lora",
+      "name": "roboto-mono-lora",
       "title": "Roboto Mono Lora — Roboto Mono + Lora + IBM Plex Mono",
       "description": "Roboto Mono adds edge and clarity to Lora’s warmth.",
       "categories": [
@@ -12840,7 +12937,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-mono-lora.json"
     },
     {
-      "name": "pairing-caudex-alegreya-sans",
+      "name": "caudex-alegreya-sans",
       "title": "Caudex Alegreya Sans — Caudex + Alegreya Sans + Inconsolata",
       "description": "Caudex offers classical depth to modern layouts.",
       "categories": [
@@ -12855,23 +12952,7 @@
       "url": "https://www.fonttrio.xyz/r/caudex-alegreya-sans.json"
     },
     {
-      "name": "pairing-abril-fatface-inter",
-      "title": "Abril Fatface Inter — Abril Fatface + Inter + Source Code Pro",
-      "description": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Inter.",
-      "categories": [
-        "sans serif-sans serif"
-      ],
-      "mood": [
-        "modern",
-        "elegant"
-      ],
-      "useCase": [
-        "web app"
-      ],
-      "url": "https://www.fonttrio.xyz/r/abril-fatface-inter.json"
-    },
-    {
-      "name": "pairing-alegreya-sans-aleo",
+      "name": "alegreya-sans-aleo",
       "title": "Alegreya Sans Aleo — Alegreya Sans + Aleo + Source Code Pro",
       "description": "Aleo brings approachable curves to match Alegreya Sans’s tone.",
       "categories": [
@@ -12886,7 +12967,7 @@
       "url": "https://www.fonttrio.xyz/r/alegreya-sans-aleo.json"
     },
     {
-      "name": "pairing-dm-sans-dm-mono",
+      "name": "dm-sans-dm-mono",
       "title": "Dm Sans Dm Mono — DM Sans + DM Mono + Source Code Pro",
       "description": "DM Sans paired with DM Mono for a google fonts aesthetic.",
       "categories": [
@@ -12901,7 +12982,7 @@
       "url": "https://www.fonttrio.xyz/r/dm-sans-dm-mono.json"
     },
     {
-      "name": "pairing-david-libre-chivo",
+      "name": "david-libre-chivo",
       "title": "David Libre Chivo — David Libre + Chivo + Fira Code",
       "description": "Chivo delivers a stable voice for expressive serif headers.",
       "categories": [
@@ -12916,7 +12997,7 @@
       "url": "https://www.fonttrio.xyz/r/david-libre-chivo.json"
     },
     {
-      "name": "pairing-roboto-open-sans",
+      "name": "roboto-open-sans",
       "title": "Roboto Open Sans — Roboto + Open Sans + JetBrains Mono",
       "description": "Roboto and Open Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -12931,7 +13012,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-open-sans.json"
     },
     {
-      "name": "pairing-playfair-display-playfair",
+      "name": "playfair-display-playfair",
       "title": "Playfair Display Playfair — Playfair Display + Playfair + IBM Plex Mono",
       "description": "Playfair Display paired with Playfair for a google fonts aesthetic.",
       "categories": [
@@ -12946,7 +13027,7 @@
       "url": "https://www.fonttrio.xyz/r/playfair-display-playfair.json"
     },
     {
-      "name": "pairing-roboto-roboto-mono",
+      "name": "roboto-roboto-mono",
       "title": "Roboto Roboto Mono — Roboto + Roboto Mono + Inconsolata",
       "description": "Roboto paired with Roboto Mono for a google fonts aesthetic.",
       "categories": [
@@ -12961,7 +13042,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-roboto-mono.json"
     },
     {
-      "name": "pairing-alegreya-sans-alegreya-sans",
+      "name": "alegreya-sans-alegreya-sans",
       "title": "Alegreya Sans Alegreya Sans — Alegreya Sans SC + Alegreya Sans + Source Code Pro",
       "description": "Alegreya Sans SC paired with Alegreya Sans for a google fonts aesthetic.",
       "categories": [
@@ -12976,7 +13057,7 @@
       "url": "https://www.fonttrio.xyz/r/alegreya-sans-alegreya-sans.json"
     },
     {
-      "name": "pairing-quicksand-spline-sans",
+      "name": "quicksand-spline-sans",
       "title": "Quicksand Spline Sans — Quicksand + Spline Sans + Roboto Mono",
       "description": "Quicksand adds a soft, approachable feel while Spline Sans keeps things clean and readable.",
       "categories": [
@@ -12991,7 +13072,7 @@
       "url": "https://www.fonttrio.xyz/r/quicksand-spline-sans.json"
     },
     {
-      "name": "pairing-health",
+      "name": "health",
       "title": "Health — Figtree + Overpass + Inconsolata",
       "description": "Calm and clear. Figtree's friendly geometry in headings paired with Overpass's Highway Gothic roots — designed to be read at speed. Perfect for interfaces where clarity saves lives.",
       "categories": [
@@ -13011,7 +13092,7 @@
       "url": "https://www.fonttrio.xyz/r/health.json"
     },
     {
-      "name": "pairing-playful",
+      "name": "playful",
       "title": "Playful — Quicksand + Cabin + Inconsolata",
       "description": "Rounded and inviting. Quicksand's perfectly circular counters give headings a toy-like friendliness, while Cabin's humanist proportions keep body text grounded and professional.",
       "categories": [
@@ -13031,7 +13112,23 @@
       "url": "https://www.fonttrio.xyz/r/playful.json"
     },
     {
-      "name": "pairing-bitter-archivo",
+      "name": "cormorant-garamond-proza-libre",
+      "title": "Cormorant Garamond Proza Libre",
+      "description": "Cormorant Garamond delivers high-end flair, complemented by the elegant and refined tone of Proza Libre.",
+      "categories": [
+        "serif-sans serif"
+      ],
+      "mood": [
+        "editorial",
+        "elegant"
+      ],
+      "useCase": [
+        "editorial"
+      ],
+      "url": "https://www.fonttrio.xyz/r/cormorant-garamond-proza-libre.json"
+    },
+    {
+      "name": "bitter-archivo",
       "title": "Bitter Archivo — Bitter + Archivo + JetBrains Mono",
       "description": "Bitter and Archivo are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -13046,7 +13143,7 @@
       "url": "https://www.fonttrio.xyz/r/bitter-archivo.json"
     },
     {
-      "name": "pairing-mada-libre-franklin",
+      "name": "mada-libre-franklin",
       "title": "Mada Libre Franklin — Mada + Libre Franklin + IBM Plex Mono",
       "description": "Mada’s clean lines and digital-friendly tone ground bold headers.",
       "categories": [
@@ -13061,7 +13158,28 @@
       "url": "https://www.fonttrio.xyz/r/mada-libre-franklin.json"
     },
     {
-      "name": "pairing-pt-serif-pt-sans",
+      "name": "open-sans-source-sans-3",
+      "title": "Open Sans + Source Sans 3 + Fira Code",
+      "description": "Two highly legible humanist sans-serifs. Neutral, professional dual-sans pairing for content-heavy sites.",
+      "categories": [
+        "sans-serif",
+        "clean",
+        "neutral"
+      ],
+      "mood": [
+        "neutral",
+        "professional",
+        "clean"
+      ],
+      "useCase": [
+        "documentation",
+        "corporate",
+        "web app"
+      ],
+      "url": "https://www.fonttrio.xyz/r/open-sans-source-sans-3.json"
+    },
+    {
+      "name": "pt-serif-pt-sans",
       "title": "Pt Serif Pt Sans — PT Serif + PT Sans + IBM Plex Mono",
       "description": "PT Serif paired with PT Sans for a google fonts aesthetic.",
       "categories": [
@@ -13076,7 +13194,7 @@
       "url": "https://www.fonttrio.xyz/r/pt-serif-pt-sans.json"
     },
     {
-      "name": "pairing-instrument-serif-instrument-sans",
+      "name": "instrument-serif-instrument-sans",
       "title": "Instrument Serif Instrument Sans — Instrument Serif + Instrument Sans + IBM Plex Mono",
       "description": "Designed to work together, Instrument Serif’s subtle contrast shines in headers while Instrument Sans excels in readability and structure.",
       "categories": [
@@ -13092,7 +13210,7 @@
       "url": "https://www.fonttrio.xyz/r/instrument-serif-instrument-sans.json"
     },
     {
-      "name": "pairing-inknut-antiqua-dm-sans",
+      "name": "inknut-antiqua-dm-sans",
       "title": "Inknut Antiqua Dm Sans — Inknut Antiqua + DM Sans + JetBrains Mono",
       "description": "DM Sans brings legibility and freshness to bold serif headlines.",
       "categories": [
@@ -13107,7 +13225,7 @@
       "url": "https://www.fonttrio.xyz/r/inknut-antiqua-dm-sans.json"
     },
     {
-      "name": "pairing-archivo-narrow-lora",
+      "name": "archivo-narrow-lora",
       "title": "Archivo Narrow Lora — Archivo Narrow + Lora + Inconsolata",
       "description": "Lora adds warmth and readability beneath Archivo Narrow’s compact geometry.",
       "categories": [
@@ -13122,7 +13240,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-narrow-lora.json"
     },
     {
-      "name": "pairing-karla-ibm-plex",
+      "name": "karla-ibm-plex",
       "title": "Karla Ibm Plex — Karla + IBM Plex Serif + Roboto Mono",
       "description": "IBM Plex Serif delivers geometric precision under calm headers.",
       "categories": [
@@ -13137,7 +13255,7 @@
       "url": "https://www.fonttrio.xyz/r/karla-ibm-plex.json"
     },
     {
-      "name": "pairing-fira-sans-raleway",
+      "name": "fira-sans-raleway",
       "title": "Fira Sans Raleway — Fira Sans + Raleway + IBM Plex Mono",
       "description": "Fira Sans and Raleway are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -13152,7 +13270,7 @@
       "url": "https://www.fonttrio.xyz/r/fira-sans-raleway.json"
     },
     {
-      "name": "pairing-lustria-mulish",
+      "name": "lustria-mulish",
       "title": "Lustria Mulish — Lustria + Mulish + IBM Plex Mono",
       "description": "Lustria paired with Mulish for a google fonts aesthetic.",
       "categories": [
@@ -13167,7 +13285,7 @@
       "url": "https://www.fonttrio.xyz/r/lustria-mulish.json"
     },
     {
-      "name": "pairing-playfair-display-fira-sans",
+      "name": "playfair-display-fira-sans",
       "title": "Playfair Display Fira Sans — Playfair Display + Fira Sans + Inconsolata",
       "description": "Playfair Display delivers high-end flair, complemented by the elegant and refined tone of Fira Sans.",
       "categories": [
@@ -13183,7 +13301,7 @@
       "url": "https://www.fonttrio.xyz/r/playfair-display-fira-sans.json"
     },
     {
-      "name": "pairing-storyteller",
+      "name": "storyteller",
       "title": "Storyteller — Lora + Nunito Sans + Inconsolata",
       "description": "Warm and inviting. Lora's brushed curves bring narrative warmth to headlines, while Nunito Sans's rounded terminals keep body text approachable and easy to scan.",
       "categories": [
@@ -13203,7 +13321,7 @@
       "url": "https://www.fonttrio.xyz/r/storyteller.json"
     },
     {
-      "name": "pairing-archivo-nunito",
+      "name": "archivo-nunito",
       "title": "Archivo Nunito — Archivo + Nunito + Roboto Mono",
       "description": "Archivo adds a soft, approachable feel while Nunito keeps things clean and readable.",
       "categories": [
@@ -13218,7 +13336,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-nunito.json"
     },
     {
-      "name": "pairing-merriweather-poppins",
+      "name": "merriweather-poppins",
       "title": "Merriweather Poppins — Merriweather + Poppins + JetBrains Mono",
       "description": "Merriweather adds a soft, approachable feel while Poppins keeps things clean and readable.",
       "categories": [
@@ -13233,7 +13351,7 @@
       "url": "https://www.fonttrio.xyz/r/merriweather-poppins.json"
     },
     {
-      "name": "pairing-karla-faustina",
+      "name": "karla-faustina",
       "title": "Karla Faustina — Karla + Faustina + JetBrains Mono",
       "description": "Faustina brings vertical rhythm to Karla’s modern flow.",
       "categories": [
@@ -13248,7 +13366,7 @@
       "url": "https://www.fonttrio.xyz/r/karla-faustina.json"
     },
     {
-      "name": "pairing-manrope-work-sans",
+      "name": "manrope-work-sans",
       "title": "Manrope Work Sans — Manrope + Work Sans + IBM Plex Mono",
       "description": "Work Sans pairs well with Manrope for general use.",
       "categories": [
@@ -13263,7 +13381,7 @@
       "url": "https://www.fonttrio.xyz/r/manrope-work-sans.json"
     },
     {
-      "name": "pairing-inter-pt-sans",
+      "name": "inter-pt-sans",
       "title": "Inter Pt Sans — Inter + PT Sans + Fira Code",
       "description": "Inter and PT Sans share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -13278,7 +13396,7 @@
       "url": "https://www.fonttrio.xyz/r/inter-pt-sans.json"
     },
     {
-      "name": "pairing-rosario-syne",
+      "name": "rosario-syne",
       "title": "Rosario Syne — Rosario + Syne + Source Code Pro",
       "description": "Rosario enhances flow and readability without overpowering.",
       "categories": [
@@ -13294,7 +13412,7 @@
       "url": "https://www.fonttrio.xyz/r/rosario-syne.json"
     },
     {
-      "name": "pairing-roboto-slab-roboto-serif",
+      "name": "roboto-slab-roboto-serif",
       "title": "Roboto Slab Roboto Serif — Roboto Slab + Roboto Serif + Inconsolata",
       "description": "Roboto Slab paired with Roboto Serif for a google fonts aesthetic.",
       "categories": [
@@ -13309,7 +13427,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-slab-roboto-serif.json"
     },
     {
-      "name": "pairing-epilogue-spectral",
+      "name": "epilogue-spectral",
       "title": "Epilogue Spectral — Epilogue + Spectral + IBM Plex Mono",
       "description": "Spectral brings refined serif detail beneath Epilogue’s clarity.",
       "categories": [
@@ -13324,7 +13442,22 @@
       "url": "https://www.fonttrio.xyz/r/epilogue-spectral.json"
     },
     {
-      "name": "pairing-roboto-condensed-roboto",
+      "name": "lora-montserrat",
+      "title": "Lora Montserrat — Lora + Montserrat + Inconsolata",
+      "description": "Lora and Montserrat are both versatile choices that work well across a wide range of use cases.",
+      "categories": [
+        "sans serif-sans serif"
+      ],
+      "mood": [
+        "neutral"
+      ],
+      "useCase": [
+        "branding"
+      ],
+      "url": "https://www.fonttrio.xyz/r/lora-montserrat.json"
+    },
+    {
+      "name": "roboto-condensed-roboto",
       "title": "Roboto Condensed Roboto — Roboto Condensed + Roboto + Fira Code",
       "description": "Roboto Condensed paired with Roboto for a google fonts aesthetic.",
       "categories": [
@@ -13339,7 +13472,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-condensed-roboto.json"
     },
     {
-      "name": "pairing-teko-hind",
+      "name": "teko-hind",
       "title": "Teko Hind — Teko + Hind + IBM Plex Mono",
       "description": "Teko and Hind are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -13354,7 +13487,22 @@
       "url": "https://www.fonttrio.xyz/r/teko-hind.json"
     },
     {
-      "name": "pairing-inknut-antiqua-be-vietnam",
+      "name": "bricolage-grotesque-crimson-text",
+      "title": "Bricolage Grotesque Crimson Text — Bricolage Grotesque + Crimson Text + Roboto Mono",
+      "description": "Bricolage Grotesque paired with Crimson Text for a google fonts aesthetic.",
+      "categories": [
+        "google fonts"
+      ],
+      "mood": [
+        "versatile"
+      ],
+      "useCase": [
+        "general"
+      ],
+      "url": "https://www.fonttrio.xyz/r/bricolage-grotesque-crimson-text.json"
+    },
+    {
+      "name": "inknut-antiqua-be-vietnam",
       "title": "Inknut Antiqua Be Vietnam — Inknut Antiqua + Be Vietnam Pro + JetBrains Mono",
       "description": "Be Vietnam Pro keeps things readable and UI-friendly.",
       "categories": [
@@ -13370,7 +13518,7 @@
       "url": "https://www.fonttrio.xyz/r/inknut-antiqua-be-vietnam.json"
     },
     {
-      "name": "pairing-poppins-merriweather",
+      "name": "poppins-merriweather",
       "title": "Poppins Merriweather — Poppins + Merriweather + JetBrains Mono",
       "description": "Poppins adds a soft, approachable feel while Merriweather keeps things clean and readable.",
       "categories": [
@@ -13385,7 +13533,28 @@
       "url": "https://www.fonttrio.xyz/r/poppins-merriweather.json"
     },
     {
-      "name": "pairing-jetbrains-mono-roboto-mono",
+      "name": "exo-2-alegreya-sans",
+      "title": "Exo 2 + Alegreya Sans + Fira Code",
+      "description": "Geometric futuristic heading with humanist sans body. Tech-forward yet approachable.",
+      "categories": [
+        "sans-serif",
+        "geometric",
+        "modern"
+      ],
+      "mood": [
+        "modern",
+        "tech",
+        "friendly"
+      ],
+      "useCase": [
+        "web app",
+        "tech",
+        "startup"
+      ],
+      "url": "https://www.fonttrio.xyz/r/exo-2-alegreya-sans.json"
+    },
+    {
+      "name": "jetbrains-mono-roboto-mono",
       "title": "Jetbrains Mono Roboto Mono — JetBrains Mono + Roboto Mono + Roboto Mono",
       "description": "Both fonts bring clarity and reliability for dev content.",
       "categories": [
@@ -13400,7 +13569,7 @@
       "url": "https://www.fonttrio.xyz/r/jetbrains-mono-roboto-mono.json"
     },
     {
-      "name": "pairing-bitter-roboto",
+      "name": "bitter-roboto",
       "title": "Bitter Roboto — Bitter + Roboto + Fira Code",
       "description": "Bitter and Roboto are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -13415,7 +13584,7 @@
       "url": "https://www.fonttrio.xyz/r/bitter-roboto.json"
     },
     {
-      "name": "pairing-syne-newsreader",
+      "name": "syne-newsreader",
       "title": "Syne Newsreader — Syne + Newsreader + Fira Code",
       "description": "Newsreader’s contrast softens the strong presence of Syne.",
       "categories": [
@@ -13430,7 +13599,7 @@
       "url": "https://www.fonttrio.xyz/r/syne-newsreader.json"
     },
     {
-      "name": "pairing-instrument-serif-work-sans",
+      "name": "instrument-serif-work-sans",
       "title": "Instrument Serif Work Sans — Instrument Serif + Work Sans + JetBrains Mono",
       "description": "Instrument Serif gives sharp, trustworthy vibes in the header, while Work Sans keeps things informal and readable below.",
       "categories": [
@@ -13446,7 +13615,7 @@
       "url": "https://www.fonttrio.xyz/r/instrument-serif-work-sans.json"
     },
     {
-      "name": "pairing-roboto-nunito",
+      "name": "roboto-nunito",
       "title": "Roboto Nunito — Roboto + Nunito + JetBrains Mono",
       "description": "Roboto adds a soft, approachable feel while Nunito keeps things clean and readable.",
       "categories": [
@@ -13461,7 +13630,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-nunito.json"
     },
     {
-      "name": "pairing-be-vietnam-fira-sans",
+      "name": "be-vietnam-fira-sans",
       "title": "Be Vietnam Fira Sans — Be Vietnam Pro + Fira Sans + Roboto Mono",
       "description": "Be Vietnam Pro and Fira Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -13476,7 +13645,7 @@
       "url": "https://www.fonttrio.xyz/r/be-vietnam-fira-sans.json"
     },
     {
-      "name": "pairing-dm-sans-lora",
+      "name": "dm-sans-lora",
       "title": "Dm Sans Lora — DM Sans + Lora + Source Code Pro",
       "description": "Lora adds classic charm to the simplicity of DM Sans.",
       "categories": [
@@ -13491,7 +13660,7 @@
       "url": "https://www.fonttrio.xyz/r/dm-sans-lora.json"
     },
     {
-      "name": "pairing-sora-geist",
+      "name": "sora-geist",
       "title": "Sora Geist — Sora + Geist + Fira Code",
       "description": "Distinctive headlines with clean body text",
       "categories": [
@@ -13508,7 +13677,7 @@
       "url": "https://www.fonttrio.xyz/r/sora-geist.json"
     },
     {
-      "name": "pairing-handbook",
+      "name": "handbook",
       "title": "Handbook — Lexend + Lexend + Inconsolata",
       "description": "Designed for readability research. Lexend's variable font axes were fine-tuned through scientific studies to reduce visual noise and increase reading proficiency.",
       "categories": [
@@ -13528,7 +13697,7 @@
       "url": "https://www.fonttrio.xyz/r/handbook.json"
     },
     {
-      "name": "pairing-petrona-libre-franklin",
+      "name": "petrona-libre-franklin",
       "title": "Petrona Libre Franklin — Petrona + Libre Franklin + IBM Plex Mono",
       "description": "Petrona brings expressive serif energy to a minimal body base.",
       "categories": [
@@ -13543,7 +13712,7 @@
       "url": "https://www.fonttrio.xyz/r/petrona-libre-franklin.json"
     },
     {
-      "name": "pairing-libre-baskerville-figtree",
+      "name": "libre-baskerville-figtree",
       "title": "Libre Baskerville Figtree — Libre Baskerville + Figtree + IBM Plex Mono",
       "description": "Figtree's rounded forms bring warmth and rhythm to classic serif headings.",
       "categories": [
@@ -13558,7 +13727,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-baskerville-figtree.json"
     },
     {
-      "name": "pairing-roboto-inter",
+      "name": "roboto-inter",
       "title": "Roboto Inter — Roboto + Inter + Fira Code",
       "description": "Roboto and Inter share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -13573,7 +13742,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-inter.json"
     },
     {
-      "name": "pairing-montserrat-fira-sans",
+      "name": "montserrat-fira-sans",
       "title": "Montserrat Fira Sans — Montserrat + Fira Sans + Source Code Pro",
       "description": "Montserrat and Fira Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -13588,7 +13757,7 @@
       "url": "https://www.fonttrio.xyz/r/montserrat-fira-sans.json"
     },
     {
-      "name": "pairing-space-grotesk-roboto",
+      "name": "space-grotesk-roboto",
       "title": "Space Grotesk Roboto — Space Grotesk + Roboto + IBM Plex Mono",
       "description": "Roboto is a highly legible sans that complements the clean shapes of Space Grotesk.",
       "categories": [
@@ -13603,7 +13772,7 @@
       "url": "https://www.fonttrio.xyz/r/space-grotesk-roboto.json"
     },
     {
-      "name": "pairing-fira-sans-manrope",
+      "name": "fira-sans-manrope",
       "title": "Fira Sans Manrope — Fira Sans + Manrope + Roboto Mono",
       "description": "Fira Sans and Manrope share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -13618,7 +13787,7 @@
       "url": "https://www.fonttrio.xyz/r/fira-sans-manrope.json"
     },
     {
-      "name": "pairing-scholar",
+      "name": "scholar",
       "title": "Scholar — EB Garamond + Inter + Source Code Pro",
       "description": "Academic precision meets digital clarity. EB Garamond's renaissance roots lend authority to headings, while Inter ensures perfect screen readability for long-form content.",
       "categories": [
@@ -13638,7 +13807,7 @@
       "url": "https://www.fonttrio.xyz/r/scholar.json"
     },
     {
-      "name": "pairing-brawler-nunito-sans",
+      "name": "brawler-nunito-sans",
       "title": "Brawler Nunito Sans — Brawler + Nunito Sans + Inconsolata",
       "description": "Brawler paired with Nunito Sans for a google fonts aesthetic.",
       "categories": [
@@ -13653,23 +13822,7 @@
       "url": "https://www.fonttrio.xyz/r/brawler-nunito-sans.json"
     },
     {
-      "name": "pairing-abril-fatface-raleway",
-      "title": "Abril Fatface Raleway — Abril Fatface + Raleway + Inconsolata",
-      "description": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Raleway.",
-      "categories": [
-        "sans serif-sans serif"
-      ],
-      "mood": [
-        "editorial",
-        "elegant"
-      ],
-      "useCase": [
-        "editorial"
-      ],
-      "url": "https://www.fonttrio.xyz/r/abril-fatface-raleway.json"
-    },
-    {
-      "name": "pairing-be-vietnam-inter",
+      "name": "be-vietnam-inter",
       "title": "Be Vietnam Inter — Be Vietnam Pro + Inter + IBM Plex Mono",
       "description": "Be Vietnam Pro and Inter share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -13684,7 +13837,7 @@
       "url": "https://www.fonttrio.xyz/r/be-vietnam-inter.json"
     },
     {
-      "name": "pairing-poppins-inter",
+      "name": "poppins-inter",
       "title": "Poppins Inter — Poppins + Inter + Fira Code",
       "description": "Poppins adds a soft, approachable feel while Inter keeps things clean and readable.",
       "categories": [
@@ -13700,7 +13853,7 @@
       "url": "https://www.fonttrio.xyz/r/poppins-inter.json"
     },
     {
-      "name": "pairing-saas",
+      "name": "saas",
       "title": "Saas — Urbanist + Libre Franklin + JetBrains Mono",
       "description": "SaaS-native typography. Urbanist's low-contrast geometric forms feel at home in navigation and pricing, while Libre Franklin's newsprint heritage makes feature descriptions feel trustworthy.",
       "categories": [
@@ -13720,7 +13873,7 @@
       "url": "https://www.fonttrio.xyz/r/saas.json"
     },
     {
-      "name": "pairing-fraunces-epilogue",
+      "name": "fraunces-epilogue",
       "title": "Fraunces Epilogue — Fraunces + Epilogue + Fira Code",
       "description": "Fraunces adds warmth and character to Epilogue’s clean delivery.",
       "categories": [
@@ -13735,7 +13888,7 @@
       "url": "https://www.fonttrio.xyz/r/fraunces-epilogue.json"
     },
     {
-      "name": "pairing-zen-kaku-syne",
+      "name": "zen-kaku-syne",
       "title": "Zen Kaku Syne — Zen Kaku Gothic New + Syne + IBM Plex Mono",
       "description": "Zen Kaku Gothic New supports Syne with neutral, legible body text.",
       "categories": [
@@ -13750,7 +13903,7 @@
       "url": "https://www.fonttrio.xyz/r/zen-kaku-syne.json"
     },
     {
-      "name": "pairing-dm-serif-dm-sans",
+      "name": "dm-serif-dm-sans",
       "title": "Dm Serif Dm Sans — DM Serif Display + DM Sans + Source Code Pro",
       "description": "DM Serif Display paired with DM Sans for a google fonts aesthetic.",
       "categories": [
@@ -13765,7 +13918,7 @@
       "url": "https://www.fonttrio.xyz/r/dm-serif-dm-sans.json"
     },
     {
-      "name": "pairing-alegreya-sans-petrona",
+      "name": "alegreya-sans-petrona",
       "title": "Alegreya Sans Petrona — Alegreya Sans + Petrona + JetBrains Mono",
       "description": "Petrona adds expressive classical details to grounded sans headings.",
       "categories": [
@@ -13780,7 +13933,28 @@
       "url": "https://www.fonttrio.xyz/r/alegreya-sans-petrona.json"
     },
     {
-      "name": "pairing-nunito-nunito-sans",
+      "name": "abril-fatface-lato",
+      "title": "Abril Fatface + Lato + Fira Code",
+      "description": "Bold display serif with clean sans-serif body. High contrast pairing for striking headlines.",
+      "categories": [
+        "display",
+        "serif-sans",
+        "high-contrast"
+      ],
+      "mood": [
+        "bold",
+        "dramatic",
+        "elegant"
+      ],
+      "useCase": [
+        "blog",
+        "magazine",
+        "portfolio"
+      ],
+      "url": "https://www.fonttrio.xyz/r/abril-fatface-lato.json"
+    },
+    {
+      "name": "nunito-nunito-sans",
       "title": "Nunito Nunito Sans — Nunito + Nunito Sans + Inconsolata",
       "description": "Nunito paired with Nunito Sans for a google fonts aesthetic.",
       "categories": [
@@ -13795,7 +13969,7 @@
       "url": "https://www.fonttrio.xyz/r/nunito-nunito-sans.json"
     },
     {
-      "name": "pairing-inconsolata-fira-code",
+      "name": "inconsolata-fira-code",
       "title": "Inconsolata Fira Code — Inconsolata + Fira Code + JetBrains Mono",
       "description": "For true code-driven design systems.",
       "categories": [
@@ -13811,7 +13985,27 @@
       "url": "https://www.fonttrio.xyz/r/inconsolata-fira-code.json"
     },
     {
-      "name": "pairing-lora-raleway",
+      "name": "garamond-lato",
+      "title": "Scholar — Lato + EB Garamond + Source Code Pro",
+      "description": "Academic precision meets digital clarity. EB Garamond's renaissance roots lend authority to headings, while Lato ensures perfect screen readability for long-form content.",
+      "categories": [
+        "serif",
+        "contrast",
+        "academic"
+      ],
+      "mood": [
+        "academic",
+        "refined"
+      ],
+      "useCase": [
+        "documentation",
+        "research",
+        "education"
+      ],
+      "url": "https://www.fonttrio.xyz/r/garamond-lato.json"
+    },
+    {
+      "name": "lora-raleway",
       "title": "Lora Raleway — Lora + Raleway + Inconsolata",
       "description": "Lora and Raleway are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -13826,7 +14020,7 @@
       "url": "https://www.fonttrio.xyz/r/lora-raleway.json"
     },
     {
-      "name": "pairing-social",
+      "name": "social",
       "title": "Social — Poppins + Hind + Roboto Mono",
       "description": "Global-ready friendliness. Poppins brings Indian Type Foundry's geometric warmth to headlines, while Hind's Devanagari-first design ensures beautiful rendering across Latin and Indic scripts.",
       "categories": [
@@ -13846,7 +14040,7 @@
       "url": "https://www.fonttrio.xyz/r/social.json"
     },
     {
-      "name": "pairing-roboto-mono-spectral",
+      "name": "roboto-mono-spectral",
       "title": "Roboto Mono Spectral — Roboto Mono + Spectral + Source Code Pro",
       "description": "Spectral softens the edge of Roboto Mono for a refined feel.",
       "categories": [
@@ -13861,23 +14055,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-mono-spectral.json"
     },
     {
-      "name": "pairing-abril-fatface-nunito",
-      "title": "Abril Fatface Nunito — Abril Fatface + Nunito + Roboto Mono",
-      "description": "Abril Fatface adds a soft, approachable feel while Nunito keeps things clean and readable.",
-      "categories": [
-        "sans serif-sans serif"
-      ],
-      "mood": [
-        "editorial",
-        "approachable"
-      ],
-      "useCase": [
-        "editorial"
-      ],
-      "url": "https://www.fonttrio.xyz/r/abril-fatface-nunito.json"
-    },
-    {
-      "name": "pairing-commons",
+      "name": "commons",
       "title": "Commons — Cabin + Mukta + Fira Code",
       "description": "Humanist warmth across scripts. Cabin's slightly condensed forms give headings a distinct character, while Mukta — designed for both Devanagari and Latin — brings inclusive readability to body text.",
       "categories": [
@@ -13897,7 +14075,7 @@
       "url": "https://www.fonttrio.xyz/r/commons.json"
     },
     {
-      "name": "pairing-oxygen-mono-oxygen",
+      "name": "oxygen-mono-oxygen",
       "title": "Oxygen Mono Oxygen — Oxygen Mono + Oxygen + Fira Code",
       "description": "Oxygen Mono paired with Oxygen for a google fonts aesthetic.",
       "categories": [
@@ -13912,7 +14090,7 @@
       "url": "https://www.fonttrio.xyz/r/oxygen-mono-oxygen.json"
     },
     {
-      "name": "pairing-roboto-pt-sans",
+      "name": "roboto-pt-sans",
       "title": "Roboto Pt Sans — Roboto + PT Sans + JetBrains Mono",
       "description": "Roboto and PT Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -13927,7 +14105,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-pt-sans.json"
     },
     {
-      "name": "pairing-teko-ubuntu",
+      "name": "teko-ubuntu",
       "title": "Teko Ubuntu — Teko + Ubuntu + JetBrains Mono",
       "description": "Teko paired with Ubuntu for a mixed aesthetic.",
       "categories": [
@@ -13942,7 +14120,7 @@
       "url": "https://www.fonttrio.xyz/r/teko-ubuntu.json"
     },
     {
-      "name": "pairing-libre-baskerville-work-sans",
+      "name": "libre-baskerville-work-sans",
       "title": "Libre Baskerville Work Sans — Libre Baskerville + Work Sans + Source Code Pro",
       "description": "Work Sans complements Libre Baskerville with a friendly, legible tone for UI and text.",
       "categories": [
@@ -13959,7 +14137,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-baskerville-work-sans.json"
     },
     {
-      "name": "pairing-inknut-antiqua-instrument-sans",
+      "name": "inknut-antiqua-instrument-sans",
       "title": "Inknut Antiqua Instrument Sans — Inknut Antiqua + Instrument Sans + IBM Plex Mono",
       "description": "Instrument Sans brings a cool and neutral vibe to strong serif headings.",
       "categories": [
@@ -13974,7 +14152,23 @@
       "url": "https://www.fonttrio.xyz/r/inknut-antiqua-instrument-sans.json"
     },
     {
-      "name": "pairing-manrope-inter",
+      "name": "playfair-display-roboto",
+      "title": "Playfair Display Inter — Playfair Display + Inter + Inconsolata",
+      "description": "Playfair Display delivers high-end flair, complemented by the elegant and refined tone of Inter.",
+      "categories": [
+        "display-sans serif"
+      ],
+      "mood": [
+        "editorial",
+        "elegant"
+      ],
+      "useCase": [
+        "editorial"
+      ],
+      "url": "https://www.fonttrio.xyz/r/playfair-display-roboto.json"
+    },
+    {
+      "name": "manrope-inter",
       "title": "Manrope Inter — Manrope + Inter + JetBrains Mono",
       "description": "Inter brings structured simplicity to Manrope’s tone.",
       "categories": [
@@ -13990,7 +14184,7 @@
       "url": "https://www.fonttrio.xyz/r/manrope-inter.json"
     },
     {
-      "name": "pairing-roboto-serif-roboto",
+      "name": "roboto-serif-roboto",
       "title": "Roboto Serif Roboto — Roboto Serif + Roboto + Roboto Mono",
       "description": "Roboto Serif paired with Roboto for a google fonts aesthetic.",
       "categories": [
@@ -14005,7 +14199,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-serif-roboto.json"
     },
     {
-      "name": "pairing-dispatch",
+      "name": "dispatch",
       "title": "Dispatch — Heebo + Assistant + Source Code Pro",
       "description": "Hebrew-Latin harmony. Heebo's geometric forms designed for both scripts create inclusive headlines, while Assistant — with similar dual-script DNA — maintains that consistency through body text.",
       "categories": [
@@ -14025,7 +14219,7 @@
       "url": "https://www.fonttrio.xyz/r/dispatch.json"
     },
     {
-      "name": "pairing-bitter-inter",
+      "name": "bitter-inter",
       "title": "Bitter Inter — Bitter + Inter + JetBrains Mono",
       "description": "Bitter and Inter share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -14040,7 +14234,7 @@
       "url": "https://www.fonttrio.xyz/r/bitter-inter.json"
     },
     {
-      "name": "pairing-alfa-slab-gentium-book",
+      "name": "alfa-slab-gentium-book",
       "title": "Alfa Slab Gentium Book — Alfa Slab One + Gentium Book Plus + Source Code Pro",
       "description": "Alfa Slab One paired with Gentium Book Plus for a google fonts aesthetic.",
       "categories": [
@@ -14055,7 +14249,7 @@
       "url": "https://www.fonttrio.xyz/r/alfa-slab-gentium-book.json"
     },
     {
-      "name": "pairing-devtool",
+      "name": "devtool",
       "title": "Devtool — Red Hat Display + Red Hat Display + Fira Code",
       "description": "Open-source identity. Red Hat Display balances geometric precision with humanist warmth, creating a type system that feels both technical and approachable — exactly what developer tools need.",
       "categories": [
@@ -14075,7 +14269,7 @@
       "url": "https://www.fonttrio.xyz/r/devtool.json"
     },
     {
-      "name": "pairing-nunito-open-sans",
+      "name": "nunito-open-sans",
       "title": "Nunito Open Sans — Nunito + Open Sans + Source Code Pro",
       "description": "Nunito adds a soft, approachable feel while Open Sans keeps things clean and readable.",
       "categories": [
@@ -14090,7 +14284,22 @@
       "url": "https://www.fonttrio.xyz/r/nunito-open-sans.json"
     },
     {
-      "name": "pairing-libre-franklin-aleo",
+      "name": "source-sans-pro-domine",
+      "title": "Source Sans Pro Domine — Source Sans Pro + Domine + IBM Plex Mono",
+      "description": "Source Sans Pro paired with Domine for a google fonts aesthetic.",
+      "categories": [
+        "google fonts"
+      ],
+      "mood": [
+        "versatile"
+      ],
+      "useCase": [
+        "general"
+      ],
+      "url": "https://www.fonttrio.xyz/r/source-sans-pro-domine.json"
+    },
+    {
+      "name": "libre-franklin-aleo",
       "title": "Libre Franklin Aleo — Libre Franklin + Aleo + JetBrains Mono",
       "description": "Aleo’s rounded edges soften the modern crispness of Libre Franklin.",
       "categories": [
@@ -14105,7 +14314,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-franklin-aleo.json"
     },
     {
-      "name": "pairing-karla-inconsolata",
+      "name": "karla-inconsolata",
       "title": "Karla Inconsolata — Karla + Inconsolata + IBM Plex Mono",
       "description": "Karla paired with Inconsolata for a google fonts aesthetic.",
       "categories": [
@@ -14120,7 +14329,7 @@
       "url": "https://www.fonttrio.xyz/r/karla-inconsolata.json"
     },
     {
-      "name": "pairing-yellowtail-lato",
+      "name": "yellowtail-lato",
       "title": "Yellowtail Lato — Yellowtail + Lato + JetBrains Mono",
       "description": "Yellowtail paired with Lato for a google fonts aesthetic.",
       "categories": [
@@ -14135,7 +14344,7 @@
       "url": "https://www.fonttrio.xyz/r/yellowtail-lato.json"
     },
     {
-      "name": "pairing-montserrat-poppins",
+      "name": "montserrat-poppins",
       "title": "Montserrat Poppins — Montserrat + Poppins + IBM Plex Mono",
       "description": "Montserrat adds a soft, approachable feel while Poppins keeps things clean and readable.",
       "categories": [
@@ -14150,7 +14359,7 @@
       "url": "https://www.fonttrio.xyz/r/montserrat-poppins.json"
     },
     {
-      "name": "pairing-lora-manrope",
+      "name": "lora-manrope",
       "title": "Lora Manrope — Lora + Manrope + IBM Plex Mono",
       "description": "Lora paired with Manrope for a google fonts aesthetic.",
       "categories": [
@@ -14165,7 +14374,7 @@
       "url": "https://www.fonttrio.xyz/r/lora-manrope.json"
     },
     {
-      "name": "pairing-thesis",
+      "name": "thesis",
       "title": "Thesis — Noto Serif + Noto Sans + Inconsolata",
       "description": "The universal pairing. Noto's unified design system ensures consistent rendering across every language and script. Truly global typography with no tofu.",
       "categories": [
@@ -14185,7 +14394,7 @@
       "url": "https://www.fonttrio.xyz/r/thesis.json"
     },
     {
-      "name": "pairing-studio",
+      "name": "studio",
       "title": "Studio — Bricolage Grotesque + Figtree + Fira Code",
       "description": "Design-forward pairing. Bricolage Grotesque's distinctive ink traps and angular terminals command attention, softened by Figtree's friendly geometric body text.",
       "categories": [
@@ -14205,7 +14414,7 @@
       "url": "https://www.fonttrio.xyz/r/studio.json"
     },
     {
-      "name": "pairing-red-hat-red-hat",
+      "name": "red-hat-red-hat",
       "title": "Red Hat Red Hat — Red Hat Display + Red Hat Text + Roboto Mono",
       "description": "Red Hat Display paired with Red Hat Text for a google fonts aesthetic.",
       "categories": [
@@ -14220,7 +14429,7 @@
       "url": "https://www.fonttrio.xyz/r/red-hat-red-hat.json"
     },
     {
-      "name": "pairing-libre-caslon-libre-franklin",
+      "name": "libre-caslon-libre-franklin",
       "title": "Libre Caslon Libre Franklin — Libre Caslon Display + Libre Franklin + Fira Code",
       "description": "Libre Caslon Display paired with Libre Franklin for a google fonts aesthetic.",
       "categories": [
@@ -14235,7 +14444,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-caslon-libre-franklin.json"
     },
     {
-      "name": "pairing-space-mono-roboto-mono",
+      "name": "space-mono-roboto-mono",
       "title": "Space Mono Roboto Mono — Space Mono + Roboto Mono + Fira Code",
       "description": "A pairing that balances charm with clarity.",
       "categories": [
@@ -14250,7 +14459,7 @@
       "url": "https://www.fonttrio.xyz/r/space-mono-roboto-mono.json"
     },
     {
-      "name": "pairing-bitter-fira-sans",
+      "name": "bitter-fira-sans",
       "title": "Bitter Fira Sans — Bitter + Fira Sans + Inconsolata",
       "description": "Bitter and Fira Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14265,7 +14474,7 @@
       "url": "https://www.fonttrio.xyz/r/bitter-fira-sans.json"
     },
     {
-      "name": "pairing-barlow-semi-barlow",
+      "name": "barlow-semi-barlow",
       "title": "Barlow Semi Barlow — Barlow Semi Condensed + Barlow + Roboto Mono",
       "description": "Barlow Semi Condensed paired with Barlow for a google fonts aesthetic.",
       "categories": [
@@ -14280,7 +14489,7 @@
       "url": "https://www.fonttrio.xyz/r/barlow-semi-barlow.json"
     },
     {
-      "name": "pairing-folio",
+      "name": "folio",
       "title": "Folio — Josefin Sans + Raleway + Roboto Mono",
       "description": "Vintage geometry meets modern elegance. Josefin Sans's 1920s-inspired letterforms create distinctive headlines, while Raleway's refined thin weights bring fashion-forward sophistication to body text.",
       "categories": [
@@ -14300,7 +14509,7 @@
       "url": "https://www.fonttrio.xyz/r/folio.json"
     },
     {
-      "name": "pairing-gloock-instrument-sans",
+      "name": "gloock-instrument-sans",
       "title": "Gloock Instrument Sans — Gloock + Instrument Sans + Inconsolata",
       "description": "Gloock makes a bold vintage statement in headers; Instrument Sans plays the modern foil in supporting copy.",
       "categories": [
@@ -14315,7 +14524,7 @@
       "url": "https://www.fonttrio.xyz/r/gloock-instrument-sans.json"
     },
     {
-      "name": "pairing-manrope-sora",
+      "name": "manrope-sora",
       "title": "Manrope Sora — Manrope + Sora + Inconsolata",
       "description": "Sora softens Manrope’s geometry with playful curves.",
       "categories": [
@@ -14330,7 +14539,7 @@
       "url": "https://www.fonttrio.xyz/r/manrope-sora.json"
     },
     {
-      "name": "pairing-arvo-montserrat",
+      "name": "arvo-montserrat",
       "title": "Arvo Montserrat — Arvo + Montserrat + Fira Code",
       "description": "Arvo paired with Montserrat for a google fonts aesthetic.",
       "categories": [
@@ -14345,7 +14554,7 @@
       "url": "https://www.fonttrio.xyz/r/arvo-montserrat.json"
     },
     {
-      "name": "pairing-lusitana-raleway",
+      "name": "lusitana-raleway",
       "title": "Lusitana Raleway — Lusitana + Raleway + Source Code Pro",
       "description": "Lusitana paired with Raleway for a google fonts aesthetic.",
       "categories": [
@@ -14360,7 +14569,28 @@
       "url": "https://www.fonttrio.xyz/r/lusitana-raleway.json"
     },
     {
-      "name": "pairing-archivo-fira-sans",
+      "name": "league-gothic-pt-serif",
+      "title": "League Gothic + PT Serif + Fira Code",
+      "description": "Tall condensed gothic heading with elegant serif body. Bold editorial presence with classical readability.",
+      "categories": [
+        "display",
+        "serif",
+        "editorial"
+      ],
+      "mood": [
+        "bold",
+        "editorial",
+        "dramatic"
+      ],
+      "useCase": [
+        "magazine",
+        "editorial",
+        "news"
+      ],
+      "url": "https://www.fonttrio.xyz/r/league-gothic-pt-serif.json"
+    },
+    {
+      "name": "archivo-fira-sans",
       "title": "Archivo Fira Sans — Archivo + Fira Sans + Inconsolata",
       "description": "Archivo and Fira Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14375,7 +14605,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-fira-sans.json"
     },
     {
-      "name": "pairing-bricolage-grotesque-geist",
+      "name": "bricolage-grotesque-geist",
       "title": "Bricolage Grotesque Geist — Bricolage Grotesque + Geist + Roboto Mono",
       "description": "Bricolage Grotesque paired with Geist for a google fonts aesthetic.",
       "categories": [
@@ -14390,7 +14620,7 @@
       "url": "https://www.fonttrio.xyz/r/bricolage-grotesque-geist.json"
     },
     {
-      "name": "pairing-merriweather-archivo",
+      "name": "merriweather-archivo",
       "title": "Merriweather Archivo — Merriweather + Archivo + Fira Code",
       "description": "Merriweather and Archivo are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14405,7 +14635,7 @@
       "url": "https://www.fonttrio.xyz/r/merriweather-archivo.json"
     },
     {
-      "name": "pairing-roboto-manrope",
+      "name": "roboto-manrope",
       "title": "Roboto Manrope — Roboto + Manrope + Roboto Mono",
       "description": "Roboto and Manrope share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -14420,7 +14650,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-manrope.json"
     },
     {
-      "name": "pairing-unbounded-geist",
+      "name": "unbounded-geist",
       "title": "Unbounded Geist — Unbounded + Geist + IBM Plex Mono",
       "description": "Unbounded paired with Geist for a google fonts aesthetic.",
       "categories": [
@@ -14435,7 +14665,7 @@
       "url": "https://www.fonttrio.xyz/r/unbounded-geist.json"
     },
     {
-      "name": "pairing-archivo-narrow-source-serif",
+      "name": "archivo-narrow-source-serif",
       "title": "Archivo Narrow Source Serif — Archivo Narrow + Source Serif 4 + Fira Code",
       "description": "Source Serif 4 offers a familiar reading rhythm under a bold sans headline.",
       "categories": [
@@ -14450,7 +14680,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-narrow-source-serif.json"
     },
     {
-      "name": "pairing-petrona-manrope",
+      "name": "petrona-manrope",
       "title": "Petrona Manrope — Petrona + Manrope + Roboto Mono",
       "description": "Manrope supports Petrona’s heritage tone cleanly.",
       "categories": [
@@ -14466,7 +14696,28 @@
       "url": "https://www.fonttrio.xyz/r/petrona-manrope.json"
     },
     {
-      "name": "pairing-libre-baskerville-rosario",
+      "name": "league-spartan-libre-baskerville",
+      "title": "League Spartan + Libre Baskerville + Fira Code",
+      "description": "Geometric bold sans heading with refined Baskerville body. Modern strength meets classical elegance.",
+      "categories": [
+        "sans-serif",
+        "serif",
+        "contrast"
+      ],
+      "mood": [
+        "strong",
+        "elegant",
+        "professional"
+      ],
+      "useCase": [
+        "corporate",
+        "editorial",
+        "portfolio"
+      ],
+      "url": "https://www.fonttrio.xyz/r/league-spartan-libre-baskerville.json"
+    },
+    {
+      "name": "libre-baskerville-rosario",
       "title": "Libre Baskerville Rosario — Libre Baskerville + Rosario + Fira Code",
       "description": "Rosario matches the refined, soft nature of Libre Baskerville.",
       "categories": [
@@ -14482,7 +14733,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-baskerville-rosario.json"
     },
     {
-      "name": "pairing-open-sans-pt-sans",
+      "name": "open-sans-pt-sans",
       "title": "Open Sans Pt Sans — Open Sans + PT Sans + Source Code Pro",
       "description": "Open Sans and PT Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14497,7 +14748,7 @@
       "url": "https://www.fonttrio.xyz/r/open-sans-pt-sans.json"
     },
     {
-      "name": "pairing-be-vietnam-raleway",
+      "name": "be-vietnam-raleway",
       "title": "Be Vietnam Raleway — Be Vietnam Pro + Raleway + Inconsolata",
       "description": "Be Vietnam Pro and Raleway are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14512,7 +14763,7 @@
       "url": "https://www.fonttrio.xyz/r/be-vietnam-raleway.json"
     },
     {
-      "name": "pairing-trispace-alegreya-sans",
+      "name": "trispace-alegreya-sans",
       "title": "Trispace Alegreya Sans — Trispace + Alegreya Sans + IBM Plex Mono",
       "description": "Trispace’s tech-inspired feel grounds Alegreya Sans’s friendly voice.",
       "categories": [
@@ -14527,7 +14778,7 @@
       "url": "https://www.fonttrio.xyz/r/trispace-alegreya-sans.json"
     },
     {
-      "name": "pairing-archivo-bitter",
+      "name": "archivo-bitter",
       "title": "Archivo Bitter — Archivo + Bitter + JetBrains Mono",
       "description": "Archivo and Bitter are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14542,7 +14793,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-bitter.json"
     },
     {
-      "name": "pairing-dashboard",
+      "name": "dashboard",
       "title": "Dashboard — Manrope + DM Sans + Fira Code",
       "description": "Data-driven clarity. Manrope's optical corrections make dense dashboards legible, while DM Sans handles labels and descriptions with compact efficiency.",
       "categories": [
@@ -14562,7 +14813,7 @@
       "url": "https://www.fonttrio.xyz/r/dashboard.json"
     },
     {
-      "name": "pairing-archivo-black-archivo",
+      "name": "archivo-black-archivo",
       "title": "Archivo Black Archivo — Archivo Black + Archivo + Fira Code",
       "description": "Archivo Black paired with Archivo for a google fonts aesthetic.",
       "categories": [
@@ -14577,23 +14828,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-black-archivo.json"
     },
     {
-      "name": "pairing-abril-fatface-roboto",
-      "title": "Abril Fatface Roboto — Abril Fatface + Roboto + Fira Code",
-      "description": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Roboto.",
-      "categories": [
-        "sans serif-sans serif"
-      ],
-      "mood": [
-        "editorial",
-        "elegant"
-      ],
-      "useCase": [
-        "editorial"
-      ],
-      "url": "https://www.fonttrio.xyz/r/abril-fatface-roboto.json"
-    },
-    {
-      "name": "pairing-libertinus-serif-libertinus-sans",
+      "name": "libertinus-serif-libertinus-sans",
       "title": "Libertinus Serif Libertinus Sans — Libertinus Serif + Libertinus Sans + JetBrains Mono",
       "description": "Libertinus Serif paired with Libertinus Sans for a google fonts aesthetic.",
       "categories": [
@@ -14608,7 +14843,7 @@
       "url": "https://www.fonttrio.xyz/r/libertinus-serif-libertinus-sans.json"
     },
     {
-      "name": "pairing-ubuntu-condensed-ubuntu",
+      "name": "ubuntu-condensed-ubuntu",
       "title": "Ubuntu Condensed Ubuntu — Ubuntu Condensed + Ubuntu + Fira Code",
       "description": "Ubuntu Condensed paired with Ubuntu for a google fonts aesthetic.",
       "categories": [
@@ -14623,7 +14858,7 @@
       "url": "https://www.fonttrio.xyz/r/ubuntu-condensed-ubuntu.json"
     },
     {
-      "name": "pairing-gazette",
+      "name": "gazette",
       "title": "Gazette — Cormorant Garamond + Raleway + Roboto Mono",
       "description": "Old-world elegance meets contemporary grace. Cormorant Garamond's delicate high-contrast strokes create dramatic headlines, balanced by Raleway's geometric sophistication.",
       "categories": [
@@ -14643,7 +14878,7 @@
       "url": "https://www.fonttrio.xyz/r/gazette.json"
     },
     {
-      "name": "pairing-geist-manrope",
+      "name": "geist-manrope",
       "title": "Geist Manrope — Geist + Manrope + Source Code Pro",
       "description": "Friendly geometric pairing with technical precision",
       "categories": [
@@ -14659,7 +14894,7 @@
       "url": "https://www.fonttrio.xyz/r/geist-manrope.json"
     },
     {
-      "name": "pairing-space-grotesk-lora",
+      "name": "space-grotesk-lora",
       "title": "Space Grotesk Lora — Space Grotesk + Lora + Roboto Mono",
       "description": "Lora introduces traditional elegance that offsets Space Grotesk’s precision.",
       "categories": [
@@ -14674,7 +14909,7 @@
       "url": "https://www.fonttrio.xyz/r/space-grotesk-lora.json"
     },
     {
-      "name": "pairing-playfair-display-be-vietnam",
+      "name": "playfair-display-be-vietnam",
       "title": "Playfair Display Be Vietnam — Playfair Display + Be Vietnam Pro + JetBrains Mono",
       "description": "Playfair Display delivers high-end flair, complemented by the elegant and refined tone of Be Vietnam Pro.",
       "categories": [
@@ -14690,7 +14925,28 @@
       "url": "https://www.fonttrio.xyz/r/playfair-display-be-vietnam.json"
     },
     {
-      "name": "pairing-domine-manrope",
+      "name": "oswald-old-standard-tt",
+      "title": "Oswald + Old Standard TT + Fira Code",
+      "description": "Condensed modern gothic heading with old-style serif body. Strong contrast between contemporary and classical.",
+      "categories": [
+        "display",
+        "serif",
+        "contrast"
+      ],
+      "mood": [
+        "bold",
+        "dramatic",
+        "editorial"
+      ],
+      "useCase": [
+        "magazine",
+        "news",
+        "editorial"
+      ],
+      "url": "https://www.fonttrio.xyz/r/oswald-old-standard-tt.json"
+    },
+    {
+      "name": "domine-manrope",
       "title": "Domine Manrope — Domine + Manrope + IBM Plex Mono",
       "description": "Domine paired with Manrope for a google fonts aesthetic.",
       "categories": [
@@ -14705,7 +14961,7 @@
       "url": "https://www.fonttrio.xyz/r/domine-manrope.json"
     },
     {
-      "name": "pairing-lora-pt-sans",
+      "name": "lora-pt-sans",
       "title": "Lora Pt Sans — Lora + PT Sans + Fira Code",
       "description": "Lora and PT Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14720,7 +14976,7 @@
       "url": "https://www.fonttrio.xyz/r/lora-pt-sans.json"
     },
     {
-      "name": "pairing-document",
+      "name": "document",
       "title": "Document — Source Sans 3 + Source Sans 3 + Source Code Pro",
       "description": "Adobe's open-source superfamily. Source Sans 3's humanist proportions excel in UI and documents alike, with Source Code Pro maintaining the same vertical metrics for seamless mixed content.",
       "categories": [
@@ -14740,7 +14996,7 @@
       "url": "https://www.fonttrio.xyz/r/document.json"
     },
     {
-      "name": "pairing-merriweather-open-sans",
+      "name": "merriweather-open-sans",
       "title": "Merriweather Open Sans — Merriweather + Open Sans + JetBrains Mono",
       "description": "Merriweather and Open Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14755,7 +15011,7 @@
       "url": "https://www.fonttrio.xyz/r/merriweather-open-sans.json"
     },
     {
-      "name": "pairing-open-sans-bitter",
+      "name": "open-sans-bitter",
       "title": "Open Sans Bitter — Open Sans + Bitter + Inconsolata",
       "description": "Open Sans and Bitter are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14770,7 +15026,7 @@
       "url": "https://www.fonttrio.xyz/r/open-sans-bitter.json"
     },
     {
-      "name": "pairing-albert-sans-barlow",
+      "name": "albert-sans-barlow",
       "title": "Albert Sans Barlow — Albert Sans + Barlow + Source Code Pro",
       "description": "Albert Sans paired with Barlow for a google fonts aesthetic.",
       "categories": [
@@ -14785,7 +15041,7 @@
       "url": "https://www.fonttrio.xyz/r/albert-sans-barlow.json"
     },
     {
-      "name": "pairing-journal",
+      "name": "journal",
       "title": "Journal — Merriweather + Mulish + Source Code Pro",
       "description": "Purpose-built for reading. Merriweather's sturdy serifs hold up at any size, paired with Mulish's neutral warmth for body text that keeps readers engaged paragraph after paragraph.",
       "categories": [
@@ -14805,7 +15061,7 @@
       "url": "https://www.fonttrio.xyz/r/journal.json"
     },
     {
-      "name": "pairing-swiss",
+      "name": "swiss",
       "title": "Swiss — Inter Tight + Open Sans + IBM Plex Mono",
       "description": "Neo-grotesque precision. Inter Tight's condensed proportions pack more information into headlines without sacrificing legibility, while Open Sans provides the reliable body text that 40% of the web already trusts.",
       "categories": [
@@ -14825,7 +15081,7 @@
       "url": "https://www.fonttrio.xyz/r/swiss.json"
     },
     {
-      "name": "pairing-capsule",
+      "name": "capsule",
       "title": "Capsule — Montserrat + Karla + JetBrains Mono",
       "description": "Buenos Aires modernism. Montserrat channels the urban signage of its namesake neighborhood — bold, geometric, unmistakable. Karla's grotesque quirks keep body text from feeling clinical.",
       "categories": [
@@ -14845,7 +15101,7 @@
       "url": "https://www.fonttrio.xyz/r/capsule.json"
     },
     {
-      "name": "pairing-alegreya-sc-alegreya",
+      "name": "alegreya-sc-alegreya",
       "title": "Alegreya Sc Alegreya — Alegreya SC + Alegreya + IBM Plex Mono",
       "description": "Alegreya SC paired with Alegreya for a google fonts aesthetic.",
       "categories": [
@@ -14860,7 +15116,7 @@
       "url": "https://www.fonttrio.xyz/r/alegreya-sc-alegreya.json"
     },
     {
-      "name": "pairing-libre-baskerville-inter",
+      "name": "libre-baskerville-inter",
       "title": "Libre Baskerville Inter — Libre Baskerville + Inter + Source Code Pro",
       "description": "Inter softens the formal tone of Libre Baskerville with tech-ready clarity.",
       "categories": [
@@ -14876,7 +15132,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-baskerville-inter.json"
     },
     {
-      "name": "pairing-roboto-bitter",
+      "name": "roboto-bitter",
       "title": "Roboto Bitter — Roboto + Bitter + Roboto Mono",
       "description": "Roboto and Bitter are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14891,7 +15147,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-bitter.json"
     },
     {
-      "name": "pairing-roboto-montserrat",
+      "name": "roboto-montserrat",
       "title": "Roboto Montserrat — Roboto + Montserrat + IBM Plex Mono",
       "description": "Roboto and Montserrat are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14906,7 +15162,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-montserrat.json"
     },
     {
-      "name": "pairing-quattrocento-quattrocento-sans",
+      "name": "quattrocento-quattrocento-sans",
       "title": "Quattrocento Quattrocento Sans — Quattrocento + Quattrocento Sans + Roboto Mono",
       "description": "Quattrocento paired with Quattrocento Sans for a google fonts aesthetic.",
       "categories": [
@@ -14921,7 +15177,7 @@
       "url": "https://www.fonttrio.xyz/r/quattrocento-quattrocento-sans.json"
     },
     {
-      "name": "pairing-libre-franklin-david-libre",
+      "name": "libre-franklin-david-libre",
       "title": "Libre Franklin David Libre — Libre Franklin + David Libre + Fira Code",
       "description": "David Libre offers a formal and timeless feel below a strong header.",
       "categories": [
@@ -14937,7 +15193,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-franklin-david-libre.json"
     },
     {
-      "name": "pairing-merriweather-spectral",
+      "name": "merriweather-spectral",
       "title": "Merriweather Spectral — Merriweather + Spectral + Fira Code",
       "description": "Merriweather and Spectral are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -14953,7 +15209,7 @@
       "url": "https://www.fonttrio.xyz/r/merriweather-spectral.json"
     },
     {
-      "name": "pairing-be-vietnam-manrope",
+      "name": "be-vietnam-manrope",
       "title": "Be Vietnam Manrope — Be Vietnam Pro + Manrope + Source Code Pro",
       "description": "Be Vietnam Pro and Manrope share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -14968,7 +15224,7 @@
       "url": "https://www.fonttrio.xyz/r/be-vietnam-manrope.json"
     },
     {
-      "name": "pairing-manrope-faustina",
+      "name": "manrope-faustina",
       "title": "Manrope Faustina — Manrope + Faustina + Inconsolata",
       "description": "Faustina’s upright form works well under wide sans.",
       "categories": [
@@ -14983,7 +15239,7 @@
       "url": "https://www.fonttrio.xyz/r/manrope-faustina.json"
     },
     {
-      "name": "pairing-inconsolata-spectral",
+      "name": "inconsolata-spectral",
       "title": "Inconsolata Spectral — Inconsolata + Spectral + Inconsolata",
       "description": "Inconsolata makes Spectral’s refined rhythm feel modern.",
       "categories": [
@@ -14998,7 +15254,7 @@
       "url": "https://www.fonttrio.xyz/r/inconsolata-spectral.json"
     },
     {
-      "name": "pairing-archivo-narrow-david-libre",
+      "name": "archivo-narrow-david-libre",
       "title": "Archivo Narrow David Libre — Archivo Narrow + David Libre + Roboto Mono",
       "description": "David Libre enhances credibility and structure to lean modern layouts.",
       "categories": [
@@ -15013,7 +15269,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-narrow-david-libre.json"
     },
     {
-      "name": "pairing-nunito-poppins",
+      "name": "nunito-poppins",
       "title": "Nunito Poppins — Nunito + Poppins + IBM Plex Mono",
       "description": "Nunito adds a soft, approachable feel while Poppins keeps things clean and readable.",
       "categories": [
@@ -15028,7 +15284,7 @@
       "url": "https://www.fonttrio.xyz/r/nunito-poppins.json"
     },
     {
-      "name": "pairing-corporate",
+      "name": "corporate",
       "title": "Corporate — Roboto + Roboto + Roboto Mono",
       "description": "Google's type system. Roboto's dual nature — mechanical skeleton with friendly curves — creates a cohesive experience from headlines to fine print. The de facto standard for Material Design.",
       "categories": [
@@ -15048,7 +15304,7 @@
       "url": "https://www.fonttrio.xyz/r/corporate.json"
     },
     {
-      "name": "pairing-raleway-lora",
+      "name": "raleway-lora",
       "title": "Raleway Lora — Raleway + Lora + Roboto Mono",
       "description": "Raleway and Lora are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15063,7 +15319,7 @@
       "url": "https://www.fonttrio.xyz/r/raleway-lora.json"
     },
     {
-      "name": "pairing-saira-condensed-saira",
+      "name": "saira-condensed-saira",
       "title": "Saira Condensed Saira — Saira Condensed + Saira + Inconsolata",
       "description": "Saira Condensed paired with Saira for a google fonts aesthetic.",
       "categories": [
@@ -15078,7 +15334,7 @@
       "url": "https://www.fonttrio.xyz/r/saira-condensed-saira.json"
     },
     {
-      "name": "pairing-brutalist",
+      "name": "brutalist",
       "title": "Brutalist — Archivo Black + Archivo + Source Code Pro",
       "description": "Raw typographic power. Archivo Black's heavy weight fills every pixel of the headline, while regular Archivo maintains the same DNA in a readable body weight. No decoration, pure function.",
       "categories": [
@@ -15098,7 +15354,7 @@
       "url": "https://www.fonttrio.xyz/r/brutalist.json"
     },
     {
-      "name": "pairing-ovo-syne",
+      "name": "ovo-syne",
       "title": "Ovo Syne — Ovo + Syne + Fira Code",
       "description": "Ovo offers understated detail for longer-form content under bold headlines.",
       "categories": [
@@ -15113,7 +15369,7 @@
       "url": "https://www.fonttrio.xyz/r/ovo-syne.json"
     },
     {
-      "name": "pairing-poppins-hind",
+      "name": "poppins-hind",
       "title": "Poppins Hind — Poppins + Hind + Source Code Pro",
       "description": "Poppins adds a soft, approachable feel while Hind keeps things clean and readable.",
       "categories": [
@@ -15128,7 +15384,7 @@
       "url": "https://www.fonttrio.xyz/r/poppins-hind.json"
     },
     {
-      "name": "pairing-syne-red-hat",
+      "name": "syne-red-hat",
       "title": "Syne Red Hat — Syne + Red Hat Text + IBM Plex Mono",
       "description": "Red Hat Text keeps branding content clean and balanced beneath Syne.",
       "categories": [
@@ -15143,7 +15399,7 @@
       "url": "https://www.fonttrio.xyz/r/syne-red-hat.json"
     },
     {
-      "name": "pairing-libre-baskerville-dm-sans",
+      "name": "libre-baskerville-dm-sans",
       "title": "Libre Baskerville Dm Sans — Libre Baskerville + DM Sans + IBM Plex Mono",
       "description": "DM Sans balances out the contrast with an approachable modern tone.",
       "categories": [
@@ -15158,7 +15414,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-baskerville-dm-sans.json"
     },
     {
-      "name": "pairing-fira-sans-merriweather",
+      "name": "fira-sans-merriweather",
       "title": "Fira Sans Merriweather — Fira Sans + Merriweather + JetBrains Mono",
       "description": "Fira Sans and Merriweather are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15173,7 +15429,7 @@
       "url": "https://www.fonttrio.xyz/r/fira-sans-merriweather.json"
     },
     {
-      "name": "pairing-alegreya-sans-faustina",
+      "name": "alegreya-sans-faustina",
       "title": "Alegreya Sans Faustina — Alegreya Sans + Faustina + JetBrains Mono",
       "description": "Faustina’s upright rhythm balances the softness of Alegreya Sans.",
       "categories": [
@@ -15190,7 +15446,7 @@
       "url": "https://www.fonttrio.xyz/r/alegreya-sans-faustina.json"
     },
     {
-      "name": "pairing-open-sans-merriweather",
+      "name": "open-sans-merriweather",
       "title": "Open Sans Merriweather — Open Sans + Merriweather + IBM Plex Mono",
       "description": "Open Sans and Merriweather are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15205,7 +15461,7 @@
       "url": "https://www.fonttrio.xyz/r/open-sans-merriweather.json"
     },
     {
-      "name": "pairing-ubuntu-condensed-ubuntu-sans",
+      "name": "ubuntu-condensed-ubuntu-sans",
       "title": "Ubuntu Condensed Ubuntu Sans — Ubuntu Condensed + Ubuntu Sans + JetBrains Mono",
       "description": "Ubuntu Condensed paired with Ubuntu Sans for a google fonts aesthetic.",
       "categories": [
@@ -15220,23 +15476,7 @@
       "url": "https://www.fonttrio.xyz/r/ubuntu-condensed-ubuntu-sans.json"
     },
     {
-      "name": "pairing-abril-fatface-pt-sans",
-      "title": "Abril Fatface Pt Sans — Abril Fatface + PT Sans + Inconsolata",
-      "description": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of PT Sans.",
-      "categories": [
-        "sans serif-sans serif"
-      ],
-      "mood": [
-        "editorial",
-        "elegant"
-      ],
-      "useCase": [
-        "editorial"
-      ],
-      "url": "https://www.fonttrio.xyz/r/abril-fatface-pt-sans.json"
-    },
-    {
-      "name": "pairing-chivo-rasa",
+      "name": "chivo-rasa",
       "title": "Chivo Rasa — Chivo + Rasa + JetBrains Mono",
       "description": "Rasa adds personality and rhythm to editorial layouts.",
       "categories": [
@@ -15252,7 +15492,7 @@
       "url": "https://www.fonttrio.xyz/r/chivo-rasa.json"
     },
     {
-      "name": "pairing-archivo-narrow-faustina",
+      "name": "archivo-narrow-faustina",
       "title": "Archivo Narrow Faustina — Archivo Narrow + Faustina + IBM Plex Mono",
       "description": "Faustina brings timeless rhythm to condensed UI design.",
       "categories": [
@@ -15267,7 +15507,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-narrow-faustina.json"
     },
     {
-      "name": "pairing-playfair-display-fira-code",
+      "name": "playfair-display-fira-code",
       "title": "Playfair Display Fira Code — Playfair Display + Fira Code + Fira Code",
       "description": "Fira Code supports Playfair with structure and clarity.",
       "categories": [
@@ -15282,7 +15522,7 @@
       "url": "https://www.fonttrio.xyz/r/playfair-display-fira-code.json"
     },
     {
-      "name": "pairing-pt-sans-spectral",
+      "name": "pt-sans-spectral",
       "title": "Pt Sans Spectral — PT Sans + Spectral + Roboto Mono",
       "description": "PT Sans and Spectral are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15298,7 +15538,7 @@
       "url": "https://www.fonttrio.xyz/r/pt-sans-spectral.json"
     },
     {
-      "name": "pairing-roboto-fira-sans",
+      "name": "roboto-fira-sans",
       "title": "Roboto Fira Sans — Roboto + Fira Sans + Source Code Pro",
       "description": "Roboto and Fira Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15313,7 +15553,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-fira-sans.json"
     },
     {
-      "name": "pairing-pt-sans-poppins",
+      "name": "pt-sans-poppins",
       "title": "Pt Sans Poppins — PT Sans + Poppins + JetBrains Mono",
       "description": "PT Sans adds a soft, approachable feel while Poppins keeps things clean and readable.",
       "categories": [
@@ -15328,23 +15568,7 @@
       "url": "https://www.fonttrio.xyz/r/pt-sans-poppins.json"
     },
     {
-      "name": "pairing-abril-fatface-bitter",
-      "title": "Abril Fatface Bitter — Abril Fatface + Bitter + JetBrains Mono",
-      "description": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Bitter.",
-      "categories": [
-        "sans serif-sans serif"
-      ],
-      "mood": [
-        "editorial",
-        "elegant"
-      ],
-      "useCase": [
-        "editorial"
-      ],
-      "url": "https://www.fonttrio.xyz/r/abril-fatface-bitter.json"
-    },
-    {
-      "name": "pairing-libre-franklin-martel",
+      "name": "libre-franklin-martel",
       "title": "Libre Franklin Martel — Libre Franklin + Martel + IBM Plex Mono",
       "description": "Martel’s traditional structure supports Libre Franklin with gravitas.",
       "categories": [
@@ -15359,7 +15583,28 @@
       "url": "https://www.fonttrio.xyz/r/libre-franklin-martel.json"
     },
     {
-      "name": "pairing-sofia-sans-sofia-sans",
+      "name": "lato-merriweather",
+      "title": "Lato + Merriweather + Fira Code",
+      "description": "Warm humanist sans heading with sturdy serif body. One of the most popular web pairings for readability.",
+      "categories": [
+        "sans-serif",
+        "serif",
+        "popular"
+      ],
+      "mood": [
+        "warm",
+        "readable",
+        "trustworthy"
+      ],
+      "useCase": [
+        "blog",
+        "news",
+        "documentation"
+      ],
+      "url": "https://www.fonttrio.xyz/r/lato-merriweather.json"
+    },
+    {
+      "name": "sofia-sans-sofia-sans",
       "title": "Sofia Sans Sofia Sans — Sofia Sans Condensed + Sofia Sans + Fira Code",
       "description": "Sofia Sans Condensed paired with Sofia Sans for a google fonts aesthetic.",
       "categories": [
@@ -15374,7 +15619,7 @@
       "url": "https://www.fonttrio.xyz/r/sofia-sans-sofia-sans.json"
     },
     {
-      "name": "pairing-pt-sans-lora",
+      "name": "pt-sans-lora",
       "title": "Pt Sans Lora — PT Sans + Lora + Fira Code",
       "description": "PT Sans and Lora are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15389,7 +15634,7 @@
       "url": "https://www.fonttrio.xyz/r/pt-sans-lora.json"
     },
     {
-      "name": "pairing-inter-fira-sans",
+      "name": "inter-fira-sans",
       "title": "Inter Fira Sans — Inter + Fira Sans + Roboto Mono",
       "description": "Inter and Fira Sans share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -15404,7 +15649,7 @@
       "url": "https://www.fonttrio.xyz/r/inter-fira-sans.json"
     },
     {
-      "name": "pairing-libre-baskerville-libre-franklin",
+      "name": "libre-baskerville-libre-franklin",
       "title": "Libre Baskerville Libre Franklin — Libre Baskerville + Libre Franklin + Roboto Mono",
       "description": "Libre Franklin supports Libre Baskerville with a neutral and readable presence.",
       "categories": [
@@ -15419,23 +15664,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-baskerville-libre-franklin.json"
     },
     {
-      "name": "pairing-abril-fatface-lora",
-      "title": "Abril Fatface Lora — Abril Fatface + Lora + JetBrains Mono",
-      "description": "Abril Fatface delivers high-end flair, complemented by the elegant and refined tone of Lora.",
-      "categories": [
-        "sans serif-sans serif"
-      ],
-      "mood": [
-        "editorial",
-        "elegant"
-      ],
-      "useCase": [
-        "editorial"
-      ],
-      "url": "https://www.fonttrio.xyz/r/abril-fatface-lora.json"
-    },
-    {
-      "name": "pairing-funnel-display-funnel-sans",
+      "name": "funnel-display-funnel-sans",
       "title": "Funnel Display Funnel Sans — Funnel Display + Funnel Sans + Inconsolata",
       "description": "Funnel Display paired with Funnel Sans for a google fonts aesthetic.",
       "categories": [
@@ -15450,7 +15679,7 @@
       "url": "https://www.fonttrio.xyz/r/funnel-display-funnel-sans.json"
     },
     {
-      "name": "pairing-montserrat-nunito",
+      "name": "montserrat-nunito",
       "title": "Montserrat Nunito — Montserrat + Nunito + JetBrains Mono",
       "description": "Montserrat paired with Nunito for a google fonts aesthetic.",
       "categories": [
@@ -15465,7 +15694,7 @@
       "url": "https://www.fonttrio.xyz/r/montserrat-nunito.json"
     },
     {
-      "name": "pairing-syne-gloock",
+      "name": "syne-gloock",
       "title": "Syne Gloock — Syne + Gloock + Source Code Pro",
       "description": "Gloock introduces a literary and artistic feel to Syne’s bold headers.",
       "categories": [
@@ -15481,7 +15710,7 @@
       "url": "https://www.fonttrio.xyz/r/syne-gloock.json"
     },
     {
-      "name": "pairing-open-sans-roboto",
+      "name": "open-sans-roboto",
       "title": "Open Sans Roboto — Open Sans + Roboto + IBM Plex Mono",
       "description": "Open Sans and Roboto are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15496,7 +15725,7 @@
       "url": "https://www.fonttrio.xyz/r/open-sans-roboto.json"
     },
     {
-      "name": "pairing-inconsolata-newsreader",
+      "name": "inconsolata-newsreader",
       "title": "Inconsolata Newsreader — Inconsolata + Newsreader + Fira Code",
       "description": "Newsreader enhances Inconsolata with editorial rhythm.",
       "categories": [
@@ -15511,7 +15740,7 @@
       "url": "https://www.fonttrio.xyz/r/inconsolata-newsreader.json"
     },
     {
-      "name": "pairing-dm-sans-spectral",
+      "name": "dm-sans-spectral",
       "title": "Dm Sans Spectral — DM Sans + Spectral + Source Code Pro",
       "description": "Spectral complements DM Sans with a refined serif touch.",
       "categories": [
@@ -15528,7 +15757,7 @@
       "url": "https://www.fonttrio.xyz/r/dm-sans-spectral.json"
     },
     {
-      "name": "pairing-tenor-sans-alegreya-sans",
+      "name": "tenor-sans-alegreya-sans",
       "title": "Tenor Sans Alegreya Sans — Tenor Sans + Alegreya Sans + Source Code Pro",
       "description": "Tenor Sans is narrow and elegant, contrasting well with Alegreya Sans.",
       "categories": [
@@ -15543,7 +15772,7 @@
       "url": "https://www.fonttrio.xyz/r/tenor-sans-alegreya-sans.json"
     },
     {
-      "name": "pairing-merriweather-merriweather-sans",
+      "name": "merriweather-merriweather-sans",
       "title": "Merriweather Merriweather Sans — Merriweather + Merriweather Sans + Fira Code",
       "description": "Merriweather paired with Merriweather Sans for a google fonts aesthetic.",
       "categories": [
@@ -15558,7 +15787,7 @@
       "url": "https://www.fonttrio.xyz/r/merriweather-merriweather-sans.json"
     },
     {
-      "name": "pairing-rubik-karla",
+      "name": "rubik-karla",
       "title": "Rubik Karla — Rubik + Karla + IBM Plex Mono",
       "description": "Rubik paired with Karla for a google fonts aesthetic.",
       "categories": [
@@ -15573,7 +15802,7 @@
       "url": "https://www.fonttrio.xyz/r/rubik-karla.json"
     },
     {
-      "name": "pairing-public-sans-inter",
+      "name": "public-sans-inter",
       "title": "Public Sans Inter — Public Sans + Inter + IBM Plex Mono",
       "description": "Public Sans paired with Inter for a mixed aesthetic.",
       "categories": [
@@ -15588,7 +15817,7 @@
       "url": "https://www.fonttrio.xyz/r/public-sans-inter.json"
     },
     {
-      "name": "pairing-chivo-lora",
+      "name": "chivo-lora",
       "title": "Chivo Lora — Chivo + Lora + Roboto Mono",
       "description": "Lora brings warm elegance to Chivo’s assertive tone.",
       "categories": [
@@ -15604,7 +15833,7 @@
       "url": "https://www.fonttrio.xyz/r/chivo-lora.json"
     },
     {
-      "name": "pairing-inter-montserrat",
+      "name": "inter-montserrat",
       "title": "Inter Montserrat — Inter + Montserrat + Roboto Mono",
       "description": "Inter and Montserrat share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -15619,7 +15848,7 @@
       "url": "https://www.fonttrio.xyz/r/inter-montserrat.json"
     },
     {
-      "name": "pairing-bitter-spectral",
+      "name": "bitter-spectral",
       "title": "Bitter Spectral — Bitter + Spectral + JetBrains Mono",
       "description": "Bitter and Spectral are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15635,7 +15864,7 @@
       "url": "https://www.fonttrio.xyz/r/bitter-spectral.json"
     },
     {
-      "name": "pairing-montserrat-archivo",
+      "name": "montserrat-archivo",
       "title": "Montserrat Archivo — Montserrat + Archivo + Inconsolata",
       "description": "Montserrat and Archivo are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15650,7 +15879,7 @@
       "url": "https://www.fonttrio.xyz/r/montserrat-archivo.json"
     },
     {
-      "name": "pairing-impact",
+      "name": "impact",
       "title": "Impact — Fjalla One + Josefin Sans + Fira Code",
       "description": "Condensed power meets art deco elegance. Fjalla One's Nordic condensed forms dominate the headline, while Josefin Sans's vintage geometric proportions add character to every paragraph.",
       "categories": [
@@ -15670,7 +15899,7 @@
       "url": "https://www.fonttrio.xyz/r/impact.json"
     },
     {
-      "name": "pairing-libre-baskerville-instrument-sans",
+      "name": "libre-baskerville-instrument-sans",
       "title": "Libre Baskerville Instrument Sans — Libre Baskerville + Instrument Sans + Source Code Pro",
       "description": "Instrument Sans offers smooth geometry under elegant serif shapes.",
       "categories": [
@@ -15685,7 +15914,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-baskerville-instrument-sans.json"
     },
     {
-      "name": "pairing-creative",
+      "name": "creative",
       "title": "Creative — Space Grotesk + DM Sans + Fira Code",
       "description": "Playful geometric pairing. Bold headings with friendly body text for startups and portfolios.",
       "categories": [
@@ -15706,7 +15935,7 @@
       "url": "https://www.fonttrio.xyz/r/creative.json"
     },
     {
-      "name": "pairing-dossier",
+      "name": "dossier",
       "title": "Dossier — Barlow Condensed + Barlow + IBM Plex Mono",
       "description": "California grotesk in two widths. Barlow Condensed packs maximum information into headlines, while regular Barlow breathes in body text. A superfamily designed for screen-first interfaces.",
       "categories": [
@@ -15726,7 +15955,7 @@
       "url": "https://www.fonttrio.xyz/r/dossier.json"
     },
     {
-      "name": "pairing-ubuntu-mono-ubuntu",
+      "name": "ubuntu-mono-ubuntu",
       "title": "Ubuntu Mono Ubuntu — Ubuntu Mono + Ubuntu + Inconsolata",
       "description": "Ubuntu Mono paired with Ubuntu for a google fonts aesthetic.",
       "categories": [
@@ -15741,7 +15970,7 @@
       "url": "https://www.fonttrio.xyz/r/ubuntu-mono-ubuntu.json"
     },
     {
-      "name": "pairing-protocol",
+      "name": "protocol",
       "title": "Protocol — Saira + Ubuntu + IBM Plex Mono",
       "description": "Racing DNA meets open-source philosophy. Saira's motorsport-inspired geometry powers through headlines, while Ubuntu's distinctive humanist forms — Canonical's signature typeface — make body text unmistakably modern.",
       "categories": [
@@ -15761,7 +15990,7 @@
       "url": "https://www.fonttrio.xyz/r/protocol.json"
     },
     {
-      "name": "pairing-merriweather-bitter",
+      "name": "merriweather-bitter",
       "title": "Merriweather Bitter — Merriweather + Bitter + Roboto Mono",
       "description": "Merriweather and Bitter are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15776,7 +16005,7 @@
       "url": "https://www.fonttrio.xyz/r/merriweather-bitter.json"
     },
     {
-      "name": "pairing-poppins-raleway",
+      "name": "poppins-raleway",
       "title": "Poppins Raleway — Poppins + Raleway + JetBrains Mono",
       "description": "Poppins adds a soft, approachable feel while Raleway keeps things clean and readable.",
       "categories": [
@@ -15791,7 +16020,7 @@
       "url": "https://www.fonttrio.xyz/r/poppins-raleway.json"
     },
     {
-      "name": "pairing-pt-sans-open-sans",
+      "name": "pt-sans-open-sans",
       "title": "Pt Sans Open Sans — PT Sans + Open Sans + Source Code Pro",
       "description": "PT Sans and Open Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15806,7 +16035,7 @@
       "url": "https://www.fonttrio.xyz/r/pt-sans-open-sans.json"
     },
     {
-      "name": "pairing-cambo-alegreya-sans",
+      "name": "cambo-alegreya-sans",
       "title": "Cambo Alegreya Sans — Cambo + Alegreya Sans + Fira Code",
       "description": "Cambo complements Alegreya Sans with delicate formality.",
       "categories": [
@@ -15821,7 +16050,43 @@
       "url": "https://www.fonttrio.xyz/r/cambo-alegreya-sans.json"
     },
     {
-      "name": "pairing-gloock-epilogue",
+      "name": "quicksand-roboto-slab",
+      "title": "Quicksand Roboto Slab — Quicksand + Roboto Slab + Roboto Mono",
+      "description": "Quicksand adds a soft, approachable feel while Roboto Slab keeps things clean and readable.",
+      "categories": [
+        "mixed"
+      ],
+      "mood": [
+        "approachable"
+      ],
+      "useCase": [
+        "branding"
+      ],
+      "url": "https://www.fonttrio.xyz/r/quicksand-roboto-slab.json"
+    },
+    {
+      "name": "bebas-neue-old-standard-tt",
+      "title": "Bebas Neue + Old Standard TT + Fira Code",
+      "description": "Condensed all-caps display with classical serif body. Dramatic contrast between modern and traditional.",
+      "categories": [
+        "display",
+        "serif",
+        "high-contrast"
+      ],
+      "mood": [
+        "dramatic",
+        "editorial",
+        "bold"
+      ],
+      "useCase": [
+        "magazine",
+        "poster",
+        "editorial"
+      ],
+      "url": "https://www.fonttrio.xyz/r/bebas-neue-old-standard-tt.json"
+    },
+    {
+      "name": "gloock-epilogue",
       "title": "Gloock Epilogue — Gloock + Epilogue + Inconsolata",
       "description": "Gloock introduces bold expression against Epilogue’s modern base.",
       "categories": [
@@ -15837,7 +16102,7 @@
       "url": "https://www.fonttrio.xyz/r/gloock-epilogue.json"
     },
     {
-      "name": "pairing-montserrat-lora",
+      "name": "montserrat-lora",
       "title": "Montserrat Lora — Montserrat + Lora + Inconsolata",
       "description": "Montserrat and Lora are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15852,7 +16117,7 @@
       "url": "https://www.fonttrio.xyz/r/montserrat-lora.json"
     },
     {
-      "name": "pairing-inter-manrope",
+      "name": "inter-manrope",
       "title": "Inter Manrope — Inter + Manrope + IBM Plex Mono",
       "description": "Inter and Manrope share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -15867,7 +16132,7 @@
       "url": "https://www.fonttrio.xyz/r/inter-manrope.json"
     },
     {
-      "name": "pairing-manrope-be-vietnam",
+      "name": "manrope-be-vietnam",
       "title": "Manrope Be Vietnam — Manrope + Be Vietnam Pro + Source Code Pro",
       "description": "Manrope and Be Vietnam Pro share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -15882,7 +16147,7 @@
       "url": "https://www.fonttrio.xyz/r/manrope-be-vietnam.json"
     },
     {
-      "name": "pairing-pt-sans-pt-serif",
+      "name": "pt-sans-pt-serif",
       "title": "Pt Sans Pt Serif — PT Sans Narrow + PT Serif + Fira Code",
       "description": "PT Sans Narrow paired with PT Serif for a google fonts aesthetic.",
       "categories": [
@@ -15897,7 +16162,7 @@
       "url": "https://www.fonttrio.xyz/r/pt-sans-pt-serif.json"
     },
     {
-      "name": "pairing-merriweather-be-vietnam",
+      "name": "merriweather-be-vietnam",
       "title": "Merriweather Be Vietnam — Merriweather + Be Vietnam Pro + Roboto Mono",
       "description": "Merriweather and Be Vietnam Pro are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -15912,7 +16177,7 @@
       "url": "https://www.fonttrio.xyz/r/merriweather-be-vietnam.json"
     },
     {
-      "name": "pairing-be-vietnam-open-sans",
+      "name": "be-vietnam-open-sans",
       "title": "Be Vietnam Open Sans — Be Vietnam Pro + Open Sans + Inconsolata",
       "description": "Be Vietnam Pro and Open Sans share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -15927,7 +16192,7 @@
       "url": "https://www.fonttrio.xyz/r/be-vietnam-open-sans.json"
     },
     {
-      "name": "pairing-archivo-narrow-spectral",
+      "name": "archivo-narrow-spectral",
       "title": "Archivo Narrow Spectral — Archivo Narrow + Spectral + Inconsolata",
       "description": "Spectral provides elegant contrast for editorial balance.",
       "categories": [
@@ -15943,7 +16208,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-narrow-spectral.json"
     },
     {
-      "name": "pairing-inknut-antiqua-mulish",
+      "name": "inknut-antiqua-mulish",
       "title": "Inknut Antiqua Mulish — Inknut Antiqua + Mulish + IBM Plex Mono",
       "description": "Mulish offers a clean, friendly base for Inknut’s structured tone.",
       "categories": [
@@ -15959,7 +16224,7 @@
       "url": "https://www.fonttrio.xyz/r/inknut-antiqua-mulish.json"
     },
     {
-      "name": "pairing-varela-round-varela",
+      "name": "varela-round-varela",
       "title": "Varela Round Varela — Varela Round + Varela + JetBrains Mono",
       "description": "Varela Round paired with Varela for a google fonts aesthetic.",
       "categories": [
@@ -15974,7 +16239,7 @@
       "url": "https://www.fonttrio.xyz/r/varela-round-varela.json"
     },
     {
-      "name": "pairing-beacon",
+      "name": "beacon",
       "title": "Beacon — Exo 2 + Titillium Web + Source Code Pro",
       "description": "Space-age geometry. Exo 2's futuristic proportions make headlines feel like mission control, while Titillium Web's Italian polytechnic origins keep body text grounded in engineering precision.",
       "categories": [
@@ -15994,7 +16259,7 @@
       "url": "https://www.fonttrio.xyz/r/beacon.json"
     },
     {
-      "name": "pairing-editorial",
+      "name": "editorial",
       "title": "Editorial — Playfair Display + Source Serif 4 + JetBrains Mono",
       "description": "Classic editorial pairing. High-contrast serif headings with readable serif body text.",
       "categories": [
@@ -16016,7 +16281,22 @@
       "url": "https://www.fonttrio.xyz/r/editorial.json"
     },
     {
-      "name": "pairing-cardo-roboto-serif",
+      "name": "poppins-open-sans",
+      "title": "Poppins Open Sans — Poppins + Open Sans + Source Code Pro",
+      "description": "Poppins adds a soft, approachable feel while Open Sans keeps things clean and readable.",
+      "categories": [
+        "sans serif-sans serif"
+      ],
+      "mood": [
+        "approachable"
+      ],
+      "useCase": [
+        "web"
+      ],
+      "url": "https://www.fonttrio.xyz/r/poppins-open-sans.json"
+    },
+    {
+      "name": "cardo-roboto-serif",
       "title": "Cardo Roboto Serif — Cardo + Roboto Serif + Fira Code",
       "description": "Cardo paired with Roboto Serif for a google fonts aesthetic.",
       "categories": [
@@ -16031,7 +16311,7 @@
       "url": "https://www.fonttrio.xyz/r/cardo-roboto-serif.json"
     },
     {
-      "name": "pairing-fira-code-work-sans",
+      "name": "fira-code-work-sans",
       "title": "Fira Code Work Sans — Fira Code + Work Sans + Roboto Mono",
       "description": "Fira Code’s sharpness plays well with friendly Work Sans.",
       "categories": [
@@ -16046,7 +16326,7 @@
       "url": "https://www.fonttrio.xyz/r/fira-code-work-sans.json"
     },
     {
-      "name": "pairing-chivo-ibm-plex",
+      "name": "chivo-ibm-plex",
       "title": "Chivo Ibm Plex — Chivo + IBM Plex Serif + Inconsolata",
       "description": "IBM Plex Serif introduces structure and balance.",
       "categories": [
@@ -16062,7 +16342,7 @@
       "url": "https://www.fonttrio.xyz/r/chivo-ibm-plex.json"
     },
     {
-      "name": "pairing-palanquin-dark-palanquin",
+      "name": "palanquin-dark-palanquin",
       "title": "Palanquin Dark Palanquin — Palanquin Dark + Palanquin + Source Code Pro",
       "description": "Palanquin Dark paired with Palanquin for a google fonts aesthetic.",
       "categories": [
@@ -16077,7 +16357,7 @@
       "url": "https://www.fonttrio.xyz/r/palanquin-dark-palanquin.json"
     },
     {
-      "name": "pairing-chivo-spectral",
+      "name": "chivo-spectral",
       "title": "Chivo Spectral — Chivo + Spectral + Inconsolata",
       "description": "Spectral adds structure under strong Chivo headings.",
       "categories": [
@@ -16093,7 +16373,7 @@
       "url": "https://www.fonttrio.xyz/r/chivo-spectral.json"
     },
     {
-      "name": "pairing-launch",
+      "name": "launch",
       "title": "Launch — Sora + Public Sans + Fira Code",
       "description": "Launch-ready confidence. Sora's geometric precision with optical adjustments makes bold headlines pop, while Public Sans — born from US government accessibility standards — ensures every word lands clearly.",
       "categories": [
@@ -16113,7 +16393,7 @@
       "url": "https://www.fonttrio.xyz/r/launch.json"
     },
     {
-      "name": "pairing-nunito-bitter",
+      "name": "nunito-bitter",
       "title": "Nunito Bitter — Nunito + Bitter + Fira Code",
       "description": "Nunito adds a soft, approachable feel while Bitter keeps things clean and readable.",
       "categories": [
@@ -16128,7 +16408,7 @@
       "url": "https://www.fonttrio.xyz/r/nunito-bitter.json"
     },
     {
-      "name": "pairing-playfair-display-lora",
+      "name": "playfair-display-lora",
       "title": "Playfair Display Lora — Playfair Display + Lora + Source Code Pro",
       "description": "Playfair Display delivers high-end flair, complemented by the elegant and refined tone of Lora.",
       "categories": [
@@ -16144,7 +16424,7 @@
       "url": "https://www.fonttrio.xyz/r/playfair-display-lora.json"
     },
     {
-      "name": "pairing-instrument-sans-karla",
+      "name": "instrument-sans-karla",
       "title": "Instrument Sans Karla — Instrument Sans + Karla + Fira Code",
       "description": "Karla adds warmth and casual rhythm to Instrument Sans’s cool modernist edge — an ideal match for approachable digital experiences.",
       "categories": [
@@ -16159,7 +16439,7 @@
       "url": "https://www.fonttrio.xyz/r/instrument-sans-karla.json"
     },
     {
-      "name": "pairing-dm-sans-inter",
+      "name": "dm-sans-inter",
       "title": "Dm Sans Inter — DM Sans + Inter + JetBrains Mono",
       "description": "DM Sans and Inter share a neutral tone perfect for digital interfaces.",
       "categories": [
@@ -16175,7 +16455,7 @@
       "url": "https://www.fonttrio.xyz/r/dm-sans-inter.json"
     },
     {
-      "name": "pairing-open-sans-poppins",
+      "name": "open-sans-poppins",
       "title": "Open Sans Poppins — Open Sans + Poppins + Source Code Pro",
       "description": "Open Sans adds a soft, approachable feel while Poppins keeps things clean and readable.",
       "categories": [
@@ -16190,7 +16470,7 @@
       "url": "https://www.fonttrio.xyz/r/open-sans-poppins.json"
     },
     {
-      "name": "pairing-jost-libre-franklin",
+      "name": "jost-libre-franklin",
       "title": "Jost Libre Franklin — Jost + Libre Franklin + Fira Code",
       "description": "Jost provides a geometric contrast to Libre Franklin’s versatility.",
       "categories": [
@@ -16205,7 +16485,7 @@
       "url": "https://www.fonttrio.xyz/r/jost-libre-franklin.json"
     },
     {
-      "name": "pairing-bitter-pt-sans",
+      "name": "bitter-pt-sans",
       "title": "Bitter Pt Sans — Bitter + PT Sans + Fira Code",
       "description": "Bitter and PT Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -16220,7 +16500,7 @@
       "url": "https://www.fonttrio.xyz/r/bitter-pt-sans.json"
     },
     {
-      "name": "pairing-alegreya-sans-david-libre",
+      "name": "alegreya-sans-david-libre",
       "title": "Alegreya Sans David Libre — Alegreya Sans + David Libre + Inconsolata",
       "description": "David Libre gives a clean literary vibe under modern sans.",
       "categories": [
@@ -16235,7 +16515,7 @@
       "url": "https://www.fonttrio.xyz/r/alegreya-sans-david-libre.json"
     },
     {
-      "name": "pairing-lora-poppins",
+      "name": "lora-poppins",
       "title": "Lora Poppins — Lora + Poppins + Fira Code",
       "description": "Lora adds a soft, approachable feel while Poppins keeps things clean and readable.",
       "categories": [
@@ -16250,7 +16530,28 @@
       "url": "https://www.fonttrio.xyz/r/lora-poppins.json"
     },
     {
-      "name": "pairing-product",
+      "name": "fira-sans-pt-serif",
+      "title": "Fira Sans + PT Serif + Fira Code",
+      "description": "Humanist sans heading with classical transitional serif body. Professional and well-balanced.",
+      "categories": [
+        "sans-serif",
+        "serif",
+        "professional"
+      ],
+      "mood": [
+        "professional",
+        "balanced",
+        "readable"
+      ],
+      "useCase": [
+        "documentation",
+        "corporate",
+        "blog"
+      ],
+      "url": "https://www.fonttrio.xyz/r/fira-sans-pt-serif.json"
+    },
+    {
+      "name": "product",
       "title": "Product — Plus Jakarta Sans + Inter + JetBrains Mono",
       "description": "Product-focused clarity. Jakarta's slightly warmer geometry gives headings personality without the noise, while Inter handles the fine print with surgical precision.",
       "categories": [
@@ -16270,7 +16571,7 @@
       "url": "https://www.fonttrio.xyz/r/product.json"
     },
     {
-      "name": "pairing-alegreya-sans-alegreya",
+      "name": "alegreya-sans-alegreya",
       "title": "Alegreya Sans Alegreya — Alegreya Sans + Alegreya + Roboto Mono",
       "description": "Alegreya offers a smooth serif complement to the humanist tones of Alegreya Sans.",
       "categories": [
@@ -16286,7 +16587,7 @@
       "url": "https://www.fonttrio.xyz/r/alegreya-sans-alegreya.json"
     },
     {
-      "name": "pairing-manrope-nunito",
+      "name": "manrope-nunito",
       "title": "Manrope Nunito — Manrope + Nunito + Inconsolata",
       "description": "Manrope adds a soft, approachable feel while Nunito keeps things clean and readable.",
       "categories": [
@@ -16302,7 +16603,7 @@
       "url": "https://www.fonttrio.xyz/r/manrope-nunito.json"
     },
     {
-      "name": "pairing-tenor-sans-karla",
+      "name": "tenor-sans-karla",
       "title": "Tenor Sans Karla — Tenor Sans + Karla + IBM Plex Mono",
       "description": "Tenor Sans adds headline clarity over a calm Karla body.",
       "categories": [
@@ -16317,7 +16618,7 @@
       "url": "https://www.fonttrio.xyz/r/tenor-sans-karla.json"
     },
     {
-      "name": "pairing-spectral-karla",
+      "name": "spectral-karla",
       "title": "Spectral Karla — Spectral + Karla + Inconsolata",
       "description": "Spectral’s contrast and texture add depth to Karla’s readable body.",
       "categories": [
@@ -16332,7 +16633,7 @@
       "url": "https://www.fonttrio.xyz/r/spectral-karla.json"
     },
     {
-      "name": "pairing-ibm-plex-ibm-plex",
+      "name": "ibm-plex-ibm-plex",
       "title": "Ibm Plex Ibm Plex — IBM Plex Serif + IBM Plex Sans + JetBrains Mono",
       "description": "IBM Plex Serif paired with IBM Plex Sans for a google fonts aesthetic.",
       "categories": [
@@ -16347,7 +16648,7 @@
       "url": "https://www.fonttrio.xyz/r/ibm-plex-ibm-plex.json"
     },
     {
-      "name": "pairing-spectral-jetbrains-mono",
+      "name": "spectral-jetbrains-mono",
       "title": "Spectral Jetbrains Mono — Spectral + JetBrains Mono + Inconsolata",
       "description": "JetBrains Mono grounds Spectral with modern simplicity.",
       "categories": [
@@ -16362,7 +16663,7 @@
       "url": "https://www.fonttrio.xyz/r/spectral-jetbrains-mono.json"
     },
     {
-      "name": "pairing-roboto-roboto-serif",
+      "name": "roboto-roboto-serif",
       "title": "Roboto Roboto Serif — Roboto + Roboto Serif + Inconsolata",
       "description": "Roboto paired with Roboto Serif for a google fonts aesthetic.",
       "categories": [
@@ -16377,7 +16678,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-roboto-serif.json"
     },
     {
-      "name": "pairing-inter-be-vietnam",
+      "name": "inter-be-vietnam",
       "title": "Inter Be Vietnam — Inter + Be Vietnam Pro + Source Code Pro",
       "description": "Inter and Be Vietnam Pro share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -16392,7 +16693,7 @@
       "url": "https://www.fonttrio.xyz/r/inter-be-vietnam.json"
     },
     {
-      "name": "pairing-dm-serif-dm-serif",
+      "name": "dm-serif-dm-serif",
       "title": "Dm Serif Dm Serif — DM Serif Display + DM Serif Text + Inconsolata",
       "description": "DM Serif Display paired with DM Serif Text for a google fonts aesthetic.",
       "categories": [
@@ -16407,7 +16708,28 @@
       "url": "https://www.fonttrio.xyz/r/dm-serif-dm-serif.json"
     },
     {
-      "name": "pairing-agency",
+      "name": "libre-baskerville-source-sans-3",
+      "title": "Libre Baskerville + Source Sans 3 + Fira Code",
+      "description": "Classical Baskerville heading with clean Source Sans body. Timeless elegance with modern readability.",
+      "categories": [
+        "serif",
+        "sans-serif",
+        "editorial"
+      ],
+      "mood": [
+        "elegant",
+        "traditional",
+        "readable"
+      ],
+      "useCase": [
+        "blog",
+        "editorial",
+        "documentation"
+      ],
+      "url": "https://www.fonttrio.xyz/r/libre-baskerville-source-sans-3.json"
+    },
+    {
+      "name": "agency",
       "title": "Agency — Schibsted Grotesk + Karla + Fira Code",
       "description": "Nordic minimalism meets grotesque warmth. Schibsted Grotesk's Scandinavian clarity in headlines paired with Karla's quirky grotesque personality for body text that feels human.",
       "categories": [
@@ -16427,7 +16749,7 @@
       "url": "https://www.fonttrio.xyz/r/agency.json"
     },
     {
-      "name": "pairing-fraunces-instrument-sans",
+      "name": "fraunces-instrument-sans",
       "title": "Fraunces Instrument Sans — Fraunces + Instrument Sans + Inconsolata",
       "description": "Fraunces has flair and personality up top, while Instrument Sans keeps supporting text clean and quietly stylish.",
       "categories": [
@@ -16442,7 +16764,7 @@
       "url": "https://www.fonttrio.xyz/r/fraunces-instrument-sans.json"
     },
     {
-      "name": "pairing-overpass-mono-overpass",
+      "name": "overpass-mono-overpass",
       "title": "Overpass Mono Overpass — Overpass Mono + Overpass + Inconsolata",
       "description": "Overpass Mono paired with Overpass for a google fonts aesthetic.",
       "categories": [
@@ -16457,7 +16779,7 @@
       "url": "https://www.fonttrio.xyz/r/overpass-mono-overpass.json"
     },
     {
-      "name": "pairing-alegreya-sans-merriweather",
+      "name": "alegreya-sans-merriweather",
       "title": "Alegreya Sans Merriweather — Alegreya Sans + Merriweather + IBM Plex Mono",
       "description": "Alegreya Sans paired with Merriweather for a sans serif + serif aesthetic.",
       "categories": [
@@ -16472,7 +16794,7 @@
       "url": "https://www.fonttrio.xyz/r/alegreya-sans-merriweather.json"
     },
     {
-      "name": "pairing-nunito-pt-sans",
+      "name": "nunito-pt-sans",
       "title": "Nunito Pt Sans — Nunito + PT Sans + IBM Plex Mono",
       "description": "Nunito paired with PT Sans for a google fonts aesthetic.",
       "categories": [
@@ -16487,7 +16809,7 @@
       "url": "https://www.fonttrio.xyz/r/nunito-pt-sans.json"
     },
     {
-      "name": "pairing-barlow-condensed-barlow",
+      "name": "barlow-condensed-barlow",
       "title": "Barlow Condensed Barlow — Barlow Condensed + Barlow + Inconsolata",
       "description": "Barlow Condensed paired with Barlow for a google fonts aesthetic.",
       "categories": [
@@ -16502,7 +16824,7 @@
       "url": "https://www.fonttrio.xyz/r/barlow-condensed-barlow.json"
     },
     {
-      "name": "pairing-inter-archivo",
+      "name": "inter-archivo",
       "title": "Inter Archivo — Inter + Archivo + JetBrains Mono",
       "description": "Inter and Archivo share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -16517,7 +16839,7 @@
       "url": "https://www.fonttrio.xyz/r/inter-archivo.json"
     },
     {
-      "name": "pairing-technical",
+      "name": "technical",
       "title": "Technical — IBM Plex Sans + IBM Plex Sans + IBM Plex Mono",
       "description": "Professional IBM Plex family pairing. Designed for documentation and enterprise applications.",
       "categories": [
@@ -16538,7 +16860,7 @@
       "url": "https://www.fonttrio.xyz/r/technical.json"
     },
     {
-      "name": "pairing-rethink-sans-geist",
+      "name": "rethink-sans-geist",
       "title": "Rethink Sans Geist — Rethink Sans + Geist + IBM Plex Mono",
       "description": "Rethink Sans paired with Geist for a google fonts aesthetic.",
       "categories": [
@@ -16553,7 +16875,7 @@
       "url": "https://www.fonttrio.xyz/r/rethink-sans-geist.json"
     },
     {
-      "name": "pairing-fraunces-dm-sans",
+      "name": "fraunces-dm-sans",
       "title": "Fraunces Dm Sans — Fraunces + DM Sans + Inconsolata",
       "description": "Fraunces offers expressive character that pairs well with DM Sans’ clarity.",
       "categories": [
@@ -16568,7 +16890,7 @@
       "url": "https://www.fonttrio.xyz/r/fraunces-dm-sans.json"
     },
     {
-      "name": "pairing-roboto-nunito-sans",
+      "name": "roboto-nunito-sans",
       "title": "Roboto Nunito Sans — Roboto + Nunito Sans + Fira Code",
       "description": "Roboto paired with Nunito Sans for a google fonts aesthetic.",
       "categories": [
@@ -16583,7 +16905,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-nunito-sans.json"
     },
     {
-      "name": "pairing-govtech",
+      "name": "govtech",
       "title": "Govtech — Public Sans + Lato + Source Code Pro",
       "description": "Government-grade clarity. Public Sans was designed for the US Web Design System — strong, neutral, and accessible. Paired with Lato's warm humanist body text for approachable civic interfaces.",
       "categories": [
@@ -16603,7 +16925,7 @@
       "url": "https://www.fonttrio.xyz/r/govtech.json"
     },
     {
-      "name": "pairing-geist-inter",
+      "name": "geist-inter",
       "title": "Geist Inter — Geist + Inter + JetBrains Mono",
       "description": "Modern sans-serif pairing with excellent readability",
       "categories": [
@@ -16619,7 +16941,7 @@
       "url": "https://www.fonttrio.xyz/r/geist-inter.json"
     },
     {
-      "name": "pairing-poppins-lora",
+      "name": "poppins-lora",
       "title": "Poppins Lora — Poppins + Lora + Fira Code",
       "description": "Poppins adds a soft, approachable feel while Lora keeps things clean and readable.",
       "categories": [
@@ -16634,7 +16956,7 @@
       "url": "https://www.fonttrio.xyz/r/poppins-lora.json"
     },
     {
-      "name": "pairing-poppins-nunito",
+      "name": "poppins-nunito",
       "title": "Poppins Nunito — Poppins + Nunito + Source Code Pro",
       "description": "Poppins adds a soft, approachable feel while Nunito keeps things clean and readable.",
       "categories": [
@@ -16649,7 +16971,28 @@
       "url": "https://www.fonttrio.xyz/r/poppins-nunito.json"
     },
     {
-      "name": "pairing-raleway-roboto",
+      "name": "lato-roboto",
+      "title": "Lato + Roboto + Fira Code",
+      "description": "Two versatile sans-serifs with subtly different personalities. Clean dual-sans pairing for UI-heavy projects.",
+      "categories": [
+        "sans-serif",
+        "clean",
+        "neutral"
+      ],
+      "mood": [
+        "clean",
+        "neutral",
+        "modern"
+      ],
+      "useCase": [
+        "web app",
+        "SaaS",
+        "dashboard"
+      ],
+      "url": "https://www.fonttrio.xyz/r/lato-roboto.json"
+    },
+    {
+      "name": "raleway-roboto",
       "title": "Raleway Roboto — Raleway + Roboto + IBM Plex Mono",
       "description": "Raleway and Roboto are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -16664,7 +17007,7 @@
       "url": "https://www.fonttrio.xyz/r/raleway-roboto.json"
     },
     {
-      "name": "pairing-curator",
+      "name": "curator",
       "title": "Curator — Plus Jakarta Sans + PT Serif + Source Code Pro",
       "description": "Contemporary curation. Plus Jakarta Sans brings Indonesian design heritage to bold headings, while PT Serif delivers ParaType's exceptional Cyrillic and Latin body text.",
       "categories": [
@@ -16684,7 +17027,7 @@
       "url": "https://www.fonttrio.xyz/r/curator.json"
     },
     {
-      "name": "pairing-instrument-serif-inter",
+      "name": "instrument-serif-inter",
       "title": "Instrument Serif Inter — Instrument Serif + Inter + Source Code Pro",
       "description": "Instrument Serif offers elevated elegance for titles; Inter keeps things clean and efficient in the body for digital readability.",
       "categories": [
@@ -16700,7 +17043,7 @@
       "url": "https://www.fonttrio.xyz/r/instrument-serif-inter.json"
     },
     {
-      "name": "pairing-pt-sans-pt-sans",
+      "name": "pt-sans-pt-sans",
       "title": "Pt Sans Pt Sans — PT Sans Narrow + PT Sans + Inconsolata",
       "description": "PT Sans Narrow paired with PT Sans for a google fonts aesthetic.",
       "categories": [
@@ -16715,7 +17058,7 @@
       "url": "https://www.fonttrio.xyz/r/pt-sans-pt-sans.json"
     },
     {
-      "name": "pairing-space-mono-space-grotesk",
+      "name": "space-mono-space-grotesk",
       "title": "Space Mono Space Grotesk — Space Mono + Space Grotesk + IBM Plex Mono",
       "description": "Space Mono paired with Space Grotesk for a google fonts aesthetic.",
       "categories": [
@@ -16730,7 +17073,7 @@
       "url": "https://www.fonttrio.xyz/r/space-mono-space-grotesk.json"
     },
     {
-      "name": "pairing-roboto-slab-roboto",
+      "name": "roboto-slab-roboto",
       "title": "Roboto Slab Roboto — Roboto Slab + Roboto + IBM Plex Mono",
       "description": "Roboto Slab paired with Roboto for a google fonts aesthetic.",
       "categories": [
@@ -16745,7 +17088,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-slab-roboto.json"
     },
     {
-      "name": "pairing-david-libre-fira-code",
+      "name": "david-libre-fira-code",
       "title": "David Libre Fira Code — David Libre + Fira Code + Inconsolata",
       "description": "Fira Code adds structure and coding tone to serif headings.",
       "categories": [
@@ -16760,7 +17103,7 @@
       "url": "https://www.fonttrio.xyz/r/david-libre-fira-code.json"
     },
     {
-      "name": "pairing-nunito-merriweather",
+      "name": "nunito-merriweather",
       "title": "Nunito Merriweather — Nunito + Merriweather + JetBrains Mono",
       "description": "Nunito adds a soft, approachable feel while Merriweather keeps things clean and readable.",
       "categories": [
@@ -16775,7 +17118,7 @@
       "url": "https://www.fonttrio.xyz/r/nunito-merriweather.json"
     },
     {
-      "name": "pairing-roboto-archivo",
+      "name": "roboto-archivo",
       "title": "Roboto Archivo — Roboto + Archivo + Fira Code",
       "description": "Roboto and Archivo are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -16790,7 +17133,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-archivo.json"
     },
     {
-      "name": "pairing-open-sans-lora",
+      "name": "open-sans-lora",
       "title": "Open Sans Lora — Open Sans + Lora + Inconsolata",
       "description": "Open Sans and Lora are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -16805,7 +17148,7 @@
       "url": "https://www.fonttrio.xyz/r/open-sans-lora.json"
     },
     {
-      "name": "pairing-poster",
+      "name": "poster",
       "title": "Poster — Oswald + Barlow + Inconsolata",
       "description": "Condensed impact. Oswald's tall proportions make every headline a statement, balanced by Barlow's slightly rounded sans-serif that adds approachability to the mechanical strength.",
       "categories": [
@@ -16825,7 +17168,7 @@
       "url": "https://www.fonttrio.xyz/r/poster.json"
     },
     {
-      "name": "pairing-pt-sans-be-vietnam",
+      "name": "pt-sans-be-vietnam",
       "title": "Pt Sans Be Vietnam — PT Sans + Be Vietnam Pro + Fira Code",
       "description": "PT Sans and Be Vietnam Pro share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -16840,7 +17183,7 @@
       "url": "https://www.fonttrio.xyz/r/pt-sans-be-vietnam.json"
     },
     {
-      "name": "pairing-archivo-narrow-archivo",
+      "name": "archivo-narrow-archivo",
       "title": "Archivo Narrow Archivo — Archivo Narrow + Archivo + Inconsolata",
       "description": "Archivo supports Archivo Narrow with a broader, more versatile tone for body content.",
       "categories": [
@@ -16855,7 +17198,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-narrow-archivo.json"
     },
     {
-      "name": "pairing-literary",
+      "name": "literary",
       "title": "Literary — EB Garamond + Crimson Text + Inconsolata",
       "description": "Pure literary elegance. Two old-style serifs in conversation — Garamond's refined Renaissance forms meet Crimson's contemporary interpretation, creating a scholarly harmony.",
       "categories": [
@@ -16875,7 +17218,7 @@
       "url": "https://www.fonttrio.xyz/r/literary.json"
     },
     {
-      "name": "pairing-novel",
+      "name": "novel",
       "title": "Novel — Cormorant Garamond + Lora + JetBrains Mono",
       "description": "For stories worth telling. Cormorant's dramatic display weight arrests attention at the chapter level, while Lora's brush-inspired curves make each paragraph a pleasure to read.",
       "categories": [
@@ -16895,7 +17238,7 @@
       "url": "https://www.fonttrio.xyz/r/novel.json"
     },
     {
-      "name": "pairing-space-mono-lora",
+      "name": "space-mono-lora",
       "title": "Space Mono Lora — Space Mono + Lora + Roboto Mono",
       "description": "Lora brings warmth and structure under bold Space Mono headings.",
       "categories": [
@@ -16910,7 +17253,7 @@
       "url": "https://www.fonttrio.xyz/r/space-mono-lora.json"
     },
     {
-      "name": "pairing-ubuntu-sans-ubuntu-sans",
+      "name": "ubuntu-sans-ubuntu-sans",
       "title": "Ubuntu Sans Ubuntu Sans — Ubuntu Sans Mono + Ubuntu Sans + Roboto Mono",
       "description": "Ubuntu Sans Mono paired with Ubuntu Sans for a google fonts aesthetic.",
       "categories": [
@@ -16925,7 +17268,7 @@
       "url": "https://www.fonttrio.xyz/r/ubuntu-sans-ubuntu-sans.json"
     },
     {
-      "name": "pairing-zilla-slab-nunito-sans",
+      "name": "zilla-slab-nunito-sans",
       "title": "Zilla Slab Nunito Sans — Zilla Slab + Nunito Sans + Source Code Pro",
       "description": "Zilla Slab paired with Nunito Sans for a google fonts aesthetic.",
       "categories": [
@@ -16940,7 +17283,7 @@
       "url": "https://www.fonttrio.xyz/r/zilla-slab-nunito-sans.json"
     },
     {
-      "name": "pairing-alegreya-alegreya-sans",
+      "name": "alegreya-alegreya-sans",
       "title": "Alegreya Alegreya Sans — Alegreya + Alegreya Sans + Fira Code",
       "description": "It just does",
       "categories": [
@@ -16955,7 +17298,7 @@
       "url": "https://www.fonttrio.xyz/r/alegreya-alegreya-sans.json"
     },
     {
-      "name": "pairing-cormorant-garamond-dm-sans",
+      "name": "cormorant-garamond-dm-sans",
       "title": "Cormorant Garamond Dm Sans — Cormorant Garamond + DM Sans + Source Code Pro",
       "description": "Cormorant Garamond brings a traditional feel to the modern base of DM Sans.",
       "categories": [
@@ -16970,7 +17313,7 @@
       "url": "https://www.fonttrio.xyz/r/cormorant-garamond-dm-sans.json"
     },
     {
-      "name": "pairing-nunito-roboto",
+      "name": "nunito-roboto",
       "title": "Nunito Roboto — Nunito + Roboto + Source Code Pro",
       "description": "Nunito adds a soft, approachable feel while Roboto keeps things clean and readable.",
       "categories": [
@@ -16985,7 +17328,7 @@
       "url": "https://www.fonttrio.xyz/r/nunito-roboto.json"
     },
     {
-      "name": "pairing-work-sans-jetbrains-mono",
+      "name": "work-sans-jetbrains-mono",
       "title": "Work Sans Jetbrains Mono — Work Sans + JetBrains Mono + Fira Code",
       "description": "JetBrains Mono adds flexibility to modern layouts.",
       "categories": [
@@ -17000,7 +17343,7 @@
       "url": "https://www.fonttrio.xyz/r/work-sans-jetbrains-mono.json"
     },
     {
-      "name": "pairing-dm-serif-roboto-mono",
+      "name": "dm-serif-roboto-mono",
       "title": "Dm Serif Roboto Mono — DM Serif Display + Roboto Mono + IBM Plex Mono",
       "description": "Roboto Mono adds order to the expressive DM Serif headline.",
       "categories": [
@@ -17015,7 +17358,7 @@
       "url": "https://www.fonttrio.xyz/r/dm-serif-roboto-mono.json"
     },
     {
-      "name": "pairing-fira-sans-fira-sans",
+      "name": "fira-sans-fira-sans",
       "title": "Fira Sans Fira Sans — Fira Sans Condensed + Fira Sans + Roboto Mono",
       "description": "Fira Sans Condensed paired with Fira Sans for a google fonts aesthetic.",
       "categories": [
@@ -17030,7 +17373,7 @@
       "url": "https://www.fonttrio.xyz/r/fira-sans-fira-sans.json"
     },
     {
-      "name": "pairing-aleo-archivo",
+      "name": "aleo-archivo",
       "title": "Aleo Archivo — Aleo + Archivo + Inconsolata",
       "description": "Aleo paired with Archivo for a google fonts aesthetic.",
       "categories": [
@@ -17045,7 +17388,22 @@
       "url": "https://www.fonttrio.xyz/r/aleo-archivo.json"
     },
     {
-      "name": "pairing-libre-caslon-libre-caslon",
+      "name": "arvo-lato",
+      "title": "Arvo Lato — Arvo + Lato + JetBrains Mono",
+      "description": "Arvo paired with Lato for a google fonts aesthetic.",
+      "categories": [
+        "google fonts"
+      ],
+      "mood": [
+        "versatile"
+      ],
+      "useCase": [
+        "general"
+      ],
+      "url": "https://www.fonttrio.xyz/r/arvo-lato.json"
+    },
+    {
+      "name": "libre-caslon-libre-caslon",
       "title": "Libre Caslon Libre Caslon — Libre Caslon Display + Libre Caslon Text + Fira Code",
       "description": "Libre Caslon Display paired with Libre Caslon Text for a google fonts aesthetic.",
       "categories": [
@@ -17060,7 +17418,7 @@
       "url": "https://www.fonttrio.xyz/r/libre-caslon-libre-caslon.json"
     },
     {
-      "name": "pairing-digest",
+      "name": "digest",
       "title": "Digest — Bitter + Open Sans + Source Code Pro",
       "description": "Slab-serif substance. Bitter's sturdy slab serifs were designed specifically for screen reading, making headlines feel anchored and authoritative. Open Sans handles the body with effortless neutrality.",
       "categories": [
@@ -17080,7 +17438,7 @@
       "url": "https://www.fonttrio.xyz/r/digest.json"
     },
     {
-      "name": "pairing-modern-clean",
+      "name": "modern-clean",
       "title": "Modern Clean — Inter + Inter + Geist Mono",
       "description": "Clean and neutral sans-serif pairing. Perfect for SaaS dashboards and web applications.",
       "categories": [
@@ -17101,7 +17459,7 @@
       "url": "https://www.fonttrio.xyz/r/modern-clean.json"
     },
     {
-      "name": "pairing-syne-epilogue",
+      "name": "syne-epilogue",
       "title": "Syne Epilogue — Syne + Epilogue + Fira Code",
       "description": "Epilogue’s sleek minimalism pairs well with Syne’s bolder geometry.",
       "categories": [
@@ -17116,7 +17474,7 @@
       "url": "https://www.fonttrio.xyz/r/syne-epilogue.json"
     },
     {
-      "name": "pairing-merriweather-lora",
+      "name": "merriweather-lora",
       "title": "Merriweather Lora — Merriweather + Lora + Inconsolata",
       "description": "Merriweather and Lora are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -17131,7 +17489,7 @@
       "url": "https://www.fonttrio.xyz/r/merriweather-lora.json"
     },
     {
-      "name": "pairing-spline-sans-inter",
+      "name": "spline-sans-inter",
       "title": "Spline Sans Inter — Spline Sans + Inter + IBM Plex Mono",
       "description": "Spline Sans paired with Inter for a mixed aesthetic.",
       "categories": [
@@ -17146,7 +17504,7 @@
       "url": "https://www.fonttrio.xyz/r/spline-sans-inter.json"
     },
     {
-      "name": "pairing-montserrat-geist",
+      "name": "montserrat-geist",
       "title": "Montserrat Geist — Montserrat + Geist + Fira Code",
       "description": "Montserrat paired with Geist for a google fonts aesthetic.",
       "categories": [
@@ -17161,7 +17519,7 @@
       "url": "https://www.fonttrio.xyz/r/montserrat-geist.json"
     },
     {
-      "name": "pairing-montserrat-hind",
+      "name": "montserrat-hind",
       "title": "Montserrat Hind — Montserrat + Hind + Source Code Pro",
       "description": "Montserrat paired with Hind for a mixed aesthetic.",
       "categories": [
@@ -17176,7 +17534,7 @@
       "url": "https://www.fonttrio.xyz/r/montserrat-hind.json"
     },
     {
-      "name": "pairing-spectral-merriweather",
+      "name": "spectral-merriweather",
       "title": "Spectral Merriweather — Spectral + Merriweather + Roboto Mono",
       "description": "Spectral and Merriweather are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -17192,7 +17550,7 @@
       "url": "https://www.fonttrio.xyz/r/spectral-merriweather.json"
     },
     {
-      "name": "pairing-roboto-be-vietnam",
+      "name": "roboto-be-vietnam",
       "title": "Roboto Be Vietnam — Roboto + Be Vietnam Pro + Roboto Mono",
       "description": "Roboto and Be Vietnam Pro are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -17207,7 +17565,7 @@
       "url": "https://www.fonttrio.xyz/r/roboto-be-vietnam.json"
     },
     {
-      "name": "pairing-archivo-spectral",
+      "name": "archivo-spectral",
       "title": "Archivo Spectral — Archivo + Spectral + IBM Plex Mono",
       "description": "Archivo and Spectral are both versatile choices that work well across a wide range of use cases.",
       "categories": [
@@ -17223,7 +17581,7 @@
       "url": "https://www.fonttrio.xyz/r/archivo-spectral.json"
     },
     {
-      "name": "pairing-inter-roboto",
+      "name": "inter-roboto",
       "title": "Inter Roboto — Inter + Roboto + Inconsolata",
       "description": "Inter and Roboto share a clean, modern aesthetic that suits minimalist design systems.",
       "categories": [
@@ -17238,7 +17596,7 @@
       "url": "https://www.fonttrio.xyz/r/inter-roboto.json"
     },
     {
-      "name": "pairing-fraunces-space-grotesk",
+      "name": "fraunces-space-grotesk",
       "title": "Fraunces Space Grotesk — Fraunces + Space Grotesk + JetBrains Mono",
       "description": "Fraunces brings warmth and character to a clean sans-serif body.",
       "categories": [
@@ -17254,7 +17612,7 @@
       "url": "https://www.fonttrio.xyz/r/fraunces-space-grotesk.json"
     },
     {
-      "name": "pairing-inknut-antiqua-inter",
+      "name": "inknut-antiqua-inter",
       "title": "Inknut Antiqua Inter — Inknut Antiqua + Inter + JetBrains Mono",
       "description": "Inter gives a modern counterbalance to Inknut Antiqua’s historic tone.",
       "categories": [
@@ -17270,7 +17628,7 @@
       "url": "https://www.fonttrio.xyz/r/inknut-antiqua-inter.json"
     },
     {
-      "name": "pairing-arvo-geist",
+      "name": "arvo-geist",
       "title": "Arvo Geist — Arvo + Geist + JetBrains Mono",
       "description": "Arvo paired with Geist for a google fonts aesthetic.",
       "categories": [
@@ -17285,7 +17643,7 @@
       "url": "https://www.fonttrio.xyz/r/arvo-geist.json"
     },
     {
-      "name": "pairing-playfair-display-roboto",
+      "name": "playfair-display-roboto",
       "title": "Playfair Display Roboto — Playfair Display + Roboto + Inconsolata",
       "description": "Playfair Display delivers high-end flair, complemented by the elegant and refined tone of Roboto.",
       "categories": [
@@ -17301,7 +17659,7 @@
       "url": "https://www.fonttrio.xyz/r/playfair-display-roboto.json"
     },
     {
-      "name": "pairing-raleway-open-sans",
+      "name": "raleway-open-sans",
       "title": "Raleway Open Sans — Raleway + Open Sans + IBM Plex Mono",
       "description": "Raleway and Open Sans are both versatile choices that work well across a wide range of use cases.",
       "categories": [

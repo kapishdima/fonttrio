@@ -1,5 +1,5 @@
 {
-  "name": "pairing-teko-ubuntu",
+  "name": "teko-ubuntu",
   "type": "registry:style",
   "extends": "none",
   "title": "Teko Ubuntu — Teko + Ubuntu + JetBrains Mono",

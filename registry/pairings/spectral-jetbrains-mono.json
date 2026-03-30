@@ -1,5 +1,5 @@
 {
-  "name": "pairing-spectral-jetbrains-mono",
+  "name": "spectral-jetbrains-mono",
   "type": "registry:style",
   "extends": "none",
   "title": "Spectral Jetbrains Mono — Spectral + JetBrains Mono + Inconsolata",

@@ -67,8 +67,8 @@ interface FontJson {
 const REGISTRY_DIR = join(process.cwd(), "registry");
 const PAIRINGS_DIR = join(REGISTRY_DIR, "pairings");
 const FONTS_DIR = join(REGISTRY_DIR, "fonts");
+const POPULAR_PAIRING_DIR = join(PAIRINGS_DIR, "popular");
 
-let _cachedPairings: PairingData[] | null = null;
 let _cachedFontFamilies: Map<string, string> | null = null;
 let _cachedFontSubsets: Map<string, string[]> | null = null;
 
@@ -123,9 +123,6 @@ function buildGoogleFontsUrl(
   heading: string,
   body: string,
   mono: string,
-  headingKebab: string,
-  bodyKebab: string,
-  monoKebab: string,
 ): string {
   const parts: string[] = [];
   parts.push(`family=${heading.replace(/ /g, "+")}:wght@400;500;600;700`);
@@ -158,20 +155,19 @@ function computeSubsets(fontKebabs: string[], fontSubsets: Map<string, string[]>
   return Array.from(result).sort();
 }
 
-function loadPairings(): PairingData[] {
-  if (_cachedPairings) return _cachedPairings;
+function loadPairings(path: string = PAIRINGS_DIR): PairingData[] {
 
   const { families, subsets: fontSubsets } = loadFontMeta();
 
-  const files = readdirSync(PAIRINGS_DIR)
+  const files = readdirSync(path)
     .filter((f) => f.endsWith(".json"))
     .sort();
 
   const pairings: PairingData[] = [];
 
   for (const file of files) {
-    const raw = JSON.parse(readFileSync(join(PAIRINGS_DIR, file), "utf-8")) as PairingJson;
-    const name = raw.name.replace("pairing-", "");
+    const raw = JSON.parse(readFileSync(join(path, file), "utf-8")) as PairingJson;
+    const name = raw.name;
 
     // Extract font kebab names from cssVars
     const headingKebab = raw.cssVars?.theme?.["--font-heading"]?.match(/var\(--font-(.+)\)/)?.[1] || "";
@@ -234,18 +230,23 @@ function loadPairings(): PairingData[] {
       subsets: pairingSubsets,
       description: raw.description,
       scale,
-      googleFontsUrl: buildGoogleFontsUrl(heading, body, mono, headingKebab, bodyKebab, monoKebab),
+      googleFontsUrl: buildGoogleFontsUrl(heading, body, mono),
     });
   }
 
-  _cachedPairings = pairings;
   return pairings;
 }
 
 // --- Public API (same as before) ---
 
+
 export function getAllPairings(): PairingData[] {
   return loadPairings();
+}
+
+
+export function getAllPopularPairings(): PairingData[] {
+  return loadPairings(POPULAR_PAIRING_DIR);
 }
 
 export function getPairing(name: string): PairingData | undefined {

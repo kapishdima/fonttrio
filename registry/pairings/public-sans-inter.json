@@ -1,5 +1,5 @@
 {
-  "name": "pairing-public-sans-inter",
+  "name": "public-sans-inter",
   "type": "registry:style",
   "extends": "none",
   "title": "Public Sans Inter — Public Sans + Inter + IBM Plex Mono",

@@ -1,5 +1,5 @@
 {
-  "name": "pairing-syne-newsreader",
+  "name": "syne-newsreader",
   "type": "registry:style",
   "extends": "none",
   "title": "Syne Newsreader — Syne + Newsreader + Fira Code",

@@ -389,7 +389,7 @@ function main() {
     ].filter(Boolean);
 
     const json = {
-      name: `pairing-${pairingName}`,
+      name: pairingName,
       type: "registry:style",
       extends: "none",
       title: `${pairingName
@@ -439,7 +439,7 @@ function main() {
   console.log(
     "Run 'bun run scripts/generate-fonts.ts' to ensure all font dependencies exist."
   );
-  console.log("Then 'bun run build:registry' to rebuild public/r/.");
+  console.log("Then 'bun run build:registry' to rebuild registry.json.");
 }
 
 main();

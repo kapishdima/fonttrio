@@ -1,5 +1,5 @@
 {
-  "name": "pairing-ubuntu-sans-ubuntu",
+  "name": "ubuntu-sans-ubuntu",
   "type": "registry:style",
   "extends": "none",
   "title": "Ubuntu Sans Ubuntu — Ubuntu Sans + Ubuntu + Inconsolata",

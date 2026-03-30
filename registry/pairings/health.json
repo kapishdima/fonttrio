@@ -1,5 +1,5 @@
 {
-  "name": "pairing-health",
+  "name": "health",
   "type": "registry:style",
   "extends": "none",
   "title": "Health — Figtree + Overpass + Inconsolata",

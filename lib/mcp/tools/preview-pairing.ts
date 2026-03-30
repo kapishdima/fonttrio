@@ -26,7 +26,7 @@ export function previewPairing(
 ): PreviewPairingResult {
 	const { name } = input;
 
-	const pairing = getPairing(`pairing-${name}`) || getPairing(name);
+	const pairing = getPairing(name);
 
 	if (!pairing) {
 		return {
@@ -36,12 +36,11 @@ export function previewPairing(
 		};
 	}
 
-	const pairingSlug = pairing.name.replace("pairing-", "");
 	const theme = pairing.cssVars?.theme || {};
 
 	return {
 		found: true,
-		name: pairingSlug,
+		name: pairing.name,
 		title: pairing.title,
 		description: pairing.description,
 		headingFont: theme["--font-heading"],
@@ -51,6 +50,6 @@ export function previewPairing(
 		useCase: pairing.meta?.useCase,
 		categories: pairing.categories,
 		typographyScale: pairing.css?.["@layer base"],
-		installCommand: `bunx shadcn@latest add https://www.fonttrio.xyz/r/${pairingSlug}.json`,
+		installCommand: `bunx shadcn@latest add https://www.fonttrio.xyz/r/${pairing.name}.json`,
 	};
 }
