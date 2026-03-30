@@ -138,6 +138,149 @@ export default function AIPage() {
 				</section>
 			</div>
 
+			{/* Codex Plugin */}
+			<div className="p-3 pt-0">
+				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight dark:text-white text-neutral-900 mb-4">
+						Codex Plugin
+					</h2>
+					<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-12 max-w-xl">
+						Install the fonttrio plugin for OpenAI Codex. Includes MCP server
+						connection + typography skills — search, audit, and install font
+						pairings right from Codex.
+					</p>
+
+					<div className="space-y-8 max-w-2xl">
+						<div>
+							<h3 className="font-medium dark:text-white text-neutral-900 mb-3">
+								Workspace install (recommended)
+							</h3>
+							<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-3">
+								Run in your project root to install the plugin for this repo:
+							</p>
+							<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
+								<code className="text-sm font-mono dark:text-neutral-300 text-neutral-700">
+									curl -fsSL fonttrio.xyz/install-codex.sh | bash
+								</code>
+							</div>
+						</div>
+
+						<div>
+							<h3 className="font-medium dark:text-white text-neutral-900 mb-3">
+								Personal install
+							</h3>
+							<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-3">
+								Install globally for all your Codex workspaces:
+							</p>
+							<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
+								<code className="text-sm font-mono dark:text-neutral-300 text-neutral-700">
+									curl -fsSL fonttrio.xyz/install-codex.sh | bash -s --
+									--personal
+								</code>
+							</div>
+						</div>
+
+						<div>
+							<h3 className="font-medium dark:text-white text-neutral-900 mb-3">
+								Activate in Codex
+							</h3>
+							<p className="text-sm dark:text-neutral-400 text-neutral-600 mb-3">
+								After running the install script, open Codex and:
+							</p>
+							<ol className="text-sm dark:text-neutral-400 text-neutral-600 space-y-2 list-decimal list-inside">
+								<li>
+									Go to the{" "}
+									<span className="font-medium dark:text-neutral-200 text-neutral-800">
+										Plugins
+									</span>{" "}
+									tab
+								</li>
+								<li>
+									Find{" "}
+									<span className="font-medium dark:text-neutral-200 text-neutral-800">
+										Fonttrio
+									</span>{" "}
+									in the list
+								</li>
+								<li>
+									Click{" "}
+									<span className="font-medium dark:text-neutral-200 text-neutral-800">
+										Add
+									</span>{" "}
+									to enable it
+								</li>
+							</ol>
+						</div>
+
+						<details className="group">
+							<summary className="cursor-pointer text-sm font-medium dark:text-neutral-400 text-neutral-500 hover:dark:text-neutral-300 hover:text-neutral-600">
+								Manual installation
+							</summary>
+							<div className="mt-4 space-y-4 text-sm dark:text-neutral-400 text-neutral-600">
+								<div>
+									<p className="mb-2">
+										1. Download and extract the plugin:
+									</p>
+									<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
+										<code className="text-xs font-mono dark:text-neutral-300 text-neutral-700">
+											curl -fsSL fonttrio.xyz/fonttrio-codex-plugin.tar.gz |
+											tar -xz
+										</code>
+									</div>
+								</div>
+								<div>
+									<p className="mb-2">
+										2. Move{" "}
+										<code className="dark:text-neutral-300 text-neutral-700">
+											fonttrio/
+										</code>{" "}
+										to{" "}
+										<code className="dark:text-neutral-300 text-neutral-700">
+											.agents/plugins/fonttrio/
+										</code>{" "}
+										in your repo
+									</p>
+								</div>
+								<div>
+									<p className="mb-2">
+										3. Create{" "}
+										<code className="dark:text-neutral-300 text-neutral-700">
+											.agents/plugins/marketplace.json
+										</code>
+										:
+									</p>
+									<div className="rounded-xl dark:bg-neutral-900 bg-neutral-100 border dark:border-neutral-800 border-neutral-200 px-4 py-3 overflow-x-auto">
+										<pre className="text-xs font-mono dark:text-neutral-300 text-neutral-700">
+											{`{
+  "name": "fonttrio",
+  "interface": { "displayName": "Fonttrio" },
+  "plugins": [{
+    "name": "fonttrio",
+    "source": {
+      "source": "local",
+      "path": "./.agents/plugins/fonttrio"
+    },
+    "policy": {
+      "installation": "AVAILABLE",
+      "authentication": "ON_INSTALL"
+    },
+    "category": "Productivity"
+  }]
+}`}
+										</pre>
+									</div>
+								</div>
+								<div>
+									<p className="mb-2">
+										4. Open Codex → Plugins tab → select Fonttrio → click Add
+									</p>
+								</div>
+							</div>
+						</details>
+					</div>
+				</section>
+			</div>
+
 			{/* MCP Tools */}
 			<div className="p-3 pt-0">
 				<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl px-4 sm:px-6 md:px-12 lg:px-24 py-16 md:py-24">

@@ -36,6 +36,9 @@ yarn-error.log*
 # registry build output
 /public/r/
 
+# codex plugin archive (generated during build)
+public/fonttrio-codex-plugin.tar.gz
+
 # vercel
 .vercel
 

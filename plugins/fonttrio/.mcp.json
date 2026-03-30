@@ -2,7 +2,7 @@
 	"mcpServers": {
 		"supabase": {
 			"type": "http",
-			"url": "http://fonttrio.xyz/api/mcp"
+			"url": "https://www.fonttrio.xyz/api/mcp"
 		}
 	}
 }
