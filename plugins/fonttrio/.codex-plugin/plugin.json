@@ -1,0 +1,40 @@
+{
+	"name": "fonttrio",
+	"version": "0.1.0",
+	"description": "Fonttrio plugin with MCP and typography skills.",
+	"author": {
+		"name": "kapish_dima",
+		"email": "kapishdima@gmail.com",
+		"url": "https://github.com/kapishdima"
+	},
+	"homepage": "https://github.com/kapishdima/fonttrio",
+	"repository": "https://github.com/kapishdima/fonttrio",
+	"license": "MIT",
+	"keywords": ["fonts", "typography"],
+	"skills": "./skills/",
+	"mcpServers": "./.mcp.json",
+	"apps": "./.app.json",
+	"interface": {
+		"displayName": "Fonttrio",
+		"shortDescription": "Typography pairing tools for Codex.",
+		"longDescription": "Search, preview, and apply typography pairings with Fonttrio MCP plus project-aware typography skills.",
+		"developerName": "kapishdima",
+		"category": "Productivity",
+		"capabilities": ["Interactive", "Write"],
+		"websiteURL": "https://www.fonttrio.xyz/",
+		"privacyPolicyURL": "https://www.fonttrio.xyz/privacy",
+		"termsOfServiceURL": "https://www.fonttrio.xyz/terms",
+		"defaultPrompt": [
+			"Audit this project's typography setup",
+			"Suggest the best font pairing for this app"
+		],
+		"brandColor": "#0F766E",
+		"composerIcon": "./assets/app.png",
+		"logo": "./assets/app.png",
+		"screenshots": [
+			"./assets/screenshot1.png",
+			"./assets/screenshot2.png",
+			"./assets/screenshot3.png"
+		]
+	}
+}

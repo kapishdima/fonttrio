@@ -13,7 +13,6 @@ export async function GET(
   const { name } = await params;
   const rawName = name.replace(/\.json$/, "");
 
-  // Try to find the file: check pairings first, then fonts
   let filePath = join(PAIRINGS_DIR, `${rawName}.json`);
 
   if (!existsSync(filePath)) {
