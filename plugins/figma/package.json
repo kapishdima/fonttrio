@@ -1,0 +1,23 @@
+{
+  "name": "fonttrio-figma-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build && vite build --mode sandbox",
+    "dev": "concurrently \"vite build --watch\" \"vite build --mode sandbox --watch\""
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.106.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "concurrently": "^9.1.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vite-plugin-singlefile": "^2.0.0"
+  }
+}

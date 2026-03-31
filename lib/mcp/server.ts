@@ -1,13 +1,12 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import {
-	getAllPairings,
 	getAllFonts,
 	getPairing,
 	getFont,
-	type PairingItem,
 	type FontItem,
 } from "@/lib/registry";
+import { getAllPairings, type PairingData } from "@/lib/pairings";
 import { searchPairings } from "./tools/search-pairings";
 import { searchFonts } from "./tools/search-fonts";
 import { installPairing } from "./tools/install-pairing";
@@ -15,10 +14,10 @@ import { installFont } from "./tools/install-font";
 import { previewPairing } from "./tools/preview-pairing";
 
 // Cache data in memory across warm invocations
-let cachedPairings: PairingItem[] | null = null;
+let cachedPairings: PairingData[] | null = null;
 let cachedFonts: FontItem[] | null = null;
 
-function loadPairings(): PairingItem[] {
+function loadPairings(): PairingData[] {
 	if (!cachedPairings) {
 		cachedPairings = getAllPairings();
 	}

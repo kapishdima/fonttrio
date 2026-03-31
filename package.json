@@ -6,6 +6,7 @@
 		"dev": "next dev",
 		"build": "bun run build:registry && bun run build:codex-plugin && next build",
 		"build:codex-plugin": "tar -czf public/fonttrio-codex-plugin.tar.gz --exclude='.DS_Store' -C plugins fonttrio/",
+		"build:figma": "cd plugins/figma && bun run build",
 		"start": "next start",
 		"lint": "eslint",
 		"generate:fonts": "bun run scripts/generate-fonts.ts",

@@ -1,10 +1,63 @@
 import { describe, it, expect } from "vitest";
 import { searchPairings } from "../tools/search-pairings";
-import type { PairingItem } from "@/lib/registry";
-import editorial from "./fixtures/pairings/editorial.json";
-import modernClean from "./fixtures/pairings/modern-clean.json";
+import type { PairingData } from "@/lib/pairings";
 
-const pairings = [editorial, modernClean] as unknown as PairingItem[];
+const pairings: PairingData[] = [
+	{
+		name: "editorial",
+		heading: "Playfair Display",
+		headingKebab: "playfair-display",
+		headingCategory: "serif",
+		body: "Source Serif 4",
+		bodyKebab: "source-serif-4",
+		bodyCategory: "serif",
+		mono: "JetBrains Mono",
+		monoKebab: "jetbrains-mono",
+		mood: ["elegant", "traditional", "authoritative"],
+		useCase: ["blog", "editorial", "magazine", "documentation"],
+		appearance: ["classic"],
+		subsets: ["latin"],
+		description: "Classic editorial pairing. High-contrast serif headings with readable serif body text.",
+		scale: {
+			h1: { size: "2.25rem", weight: 700, lineHeight: "1.2", letterSpacing: "-0.025em" },
+			h2: { size: "1.875rem", weight: 600, lineHeight: "1.25", letterSpacing: "-0.02em" },
+			h3: { size: "1.5rem", weight: 600, lineHeight: "1.3", letterSpacing: "-0.015em" },
+			h4: { size: "1.25rem", weight: 500, lineHeight: "1.35", letterSpacing: "-0.01em" },
+			h5: { size: "1.125rem", weight: 500, lineHeight: "1.4", letterSpacing: "0em" },
+			h6: { size: "1rem", weight: 500, lineHeight: "1.5", letterSpacing: "0em" },
+			body: { size: "1rem", lineHeight: "1.65", weight: 400 },
+			code: { size: "0.875rem", lineHeight: "1.6", weight: 400 },
+		},
+		googleFontsUrl: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+	},
+	{
+		name: "modern-clean",
+		heading: "Inter",
+		headingKebab: "inter",
+		headingCategory: "sans-serif",
+		body: "Inter",
+		bodyKebab: "inter",
+		bodyCategory: "sans-serif",
+		mono: "Geist Mono",
+		monoKebab: "geist-mono",
+		mood: ["clean", "neutral", "modern"],
+		useCase: ["SaaS", "dashboard", "web app"],
+		appearance: ["modern", "geometric"],
+		subsets: ["latin"],
+		description: "Modern clean pairing for SaaS and dashboards.",
+		scale: {
+			h1: { size: "2.25rem", weight: 700, lineHeight: "1.2", letterSpacing: "-0.025em" },
+			h2: { size: "1.875rem", weight: 600, lineHeight: "1.25", letterSpacing: "-0.02em" },
+			h3: { size: "1.5rem", weight: 600, lineHeight: "1.3", letterSpacing: "-0.015em" },
+			h4: { size: "1.25rem", weight: 500, lineHeight: "1.35", letterSpacing: "-0.01em" },
+			h5: { size: "1.125rem", weight: 500, lineHeight: "1.4", letterSpacing: "0em" },
+			h6: { size: "1rem", weight: 500, lineHeight: "1.5", letterSpacing: "0em" },
+			body: { size: "1rem", lineHeight: "1.6", weight: 400 },
+			code: { size: "0.875rem", lineHeight: "1.6", weight: 400 },
+		},
+		googleFontsUrl: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+	},
+];
 
 describe("searchPairings", () => {
 	it("returns all pairings when no filters", () => {
@@ -13,7 +66,7 @@ describe("searchPairings", () => {
 		expect(result.pairings).toHaveLength(2);
 	});
 
-	it("searches by query in title", () => {
+	it("searches by query in name", () => {
 		const result = searchPairings(pairings, { query: "editorial" });
 		expect(result.total).toBe(1);
 		expect(result.pairings[0].name).toBe("editorial");
@@ -44,7 +97,7 @@ describe("searchPairings", () => {
 	});
 
 	it("filters by category", () => {
-		const result = searchPairings(pairings, { category: "editorial" });
+		const result = searchPairings(pairings, { category: "serif" });
 		expect(result.total).toBe(1);
 		expect(result.pairings[0].name).toBe("editorial");
 	});

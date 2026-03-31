@@ -11,15 +11,19 @@ export interface TypographyScale {
   h5: { size: string; weight: number; lineHeight: string; letterSpacing: string };
   h6: { size: string; weight: number; lineHeight: string; letterSpacing: string };
   body: { size: string; lineHeight: string; weight: number };
+  code: { size: string; lineHeight: string; weight: number };
 }
 
 export interface PairingData {
   name: string;
   heading: string;
+  headingKebab: string;
   headingCategory: FontCategory;
   body: string;
+  bodyKebab: string;
   bodyCategory: FontCategory;
   mono: string;
+  monoKebab: string;
   mood: string[];
   useCase: string[];
   appearance: string[];
@@ -188,6 +192,7 @@ function loadPairings(path: string = PAIRINGS_DIR): PairingData[] {
     const h3CSS = cssBlock["h3"] || {};
     const h4CSS = cssBlock["h4, h5, h6"] || cssBlock["h4"] || {};
     const bodyCSS = cssBlock["body, p"] || cssBlock["body"] || {};
+    const codeCSS = cssBlock["code, pre"] || cssBlock["code"] || {};
 
     function scaleEntry(
       obj: Record<string, string>,
@@ -213,6 +218,11 @@ function loadPairings(path: string = PAIRINGS_DIR): PairingData[] {
         lineHeight: bodyCSS["line-height"] || "1.6",
         weight: parseInt(bodyCSS["font-weight"] || "400"),
       },
+      code: {
+        size: codeCSS["font-size"] || "0.875rem",
+        lineHeight: codeCSS["line-height"] || "1.6",
+        weight: parseInt(codeCSS["font-weight"] || "400"),
+      },
     };
 
     const pairingSubsets = computeSubsets([headingKebab, bodyKebab, monoKebab], fontSubsets);
@@ -220,10 +230,13 @@ function loadPairings(path: string = PAIRINGS_DIR): PairingData[] {
     pairings.push({
       name,
       heading,
+      headingKebab,
       headingCategory,
       body,
+      bodyKebab,
       bodyCategory,
       mono,
+      monoKebab,
       mood: raw.meta?.mood || [],
       useCase: raw.meta?.useCase || [],
       appearance: raw.meta?.appearance || [],

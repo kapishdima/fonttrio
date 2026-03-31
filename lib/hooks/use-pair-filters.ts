@@ -5,50 +5,10 @@ import { useQueryState, parseAsString } from "nuqs";
 import { serverInteger } from "@/lib/nuqs";
 import type { PairingData } from "@/lib/pairings";
 import { POPULAR_PAIRING_NAMES } from "@/lib/popular-pairings";
+import { filterPairings } from "@/lib/filters";
 import type { FilterValues } from "@/app/components/filters/types";
 
 const ITEMS_PER_PAGE = 40;
-
-const USE_CASE_MAP: Record<string, string> = {
-  landing: "landing page",
-  ecommerce: "e-commerce",
-};
-
-const SUBSET_MAP: Record<string, string[]> = {
-  latin: ["latin", "latin-ext"],
-  cyrillic: ["cyrillic", "cyrillic-ext"],
-  greek: ["greek", "greek-ext"],
-  vietnamese: ["vietnamese"],
-  arabic: ["arabic"],
-  hebrew: ["hebrew"],
-  devanagari: ["devanagari"],
-  "chinese-simplified": ["chinese-simplified", "chinese-simplified-ext"],
-  japanese: ["japanese"],
-  korean: ["korean"],
-};
-
-function matchesSearch(p: PairingData, q: string): boolean {
-  const lower = q.toLowerCase();
-  return (
-    p.name.toLowerCase().includes(lower) ||
-    p.heading.toLowerCase().includes(lower) ||
-    p.body.toLowerCase().includes(lower) ||
-    p.mono.toLowerCase().includes(lower) ||
-    p.description.toLowerCase().includes(lower) ||
-    p.mood.some((m) => m.toLowerCase().includes(lower)) ||
-    p.useCase.some((u) => u.toLowerCase().includes(lower))
-  );
-}
-
-function matchesUseCase(p: PairingData, filter: string): boolean {
-  const mapped = USE_CASE_MAP[filter] || filter;
-  return p.useCase.some((u) => u.toLowerCase() === mapped.toLowerCase());
-}
-
-function matchesLanguage(p: PairingData, filter: string): boolean {
-  const subsetNames = SUBSET_MAP[filter] || [filter];
-  return subsetNames.some((s) => p.subsets.includes(s));
-}
 
 export function usePairFilters(pairings: PairingData[]) {
   const [searchQuery, setSearchQuery] = useQueryState(
@@ -80,16 +40,18 @@ export function usePairFilters(pairings: PairingData[]) {
     !!searchQuery || !!appearance || !!usecase || !!language || !!feeling;
 
   const filteredPairings = useMemo(() => {
-    return pairings.filter((p) => {
-      // Exclude popular pairings from the paginated list when no filters are active
-      // (they're shown in a separate "Popular pairings" section above)
-      if (!hasActiveFilters && POPULAR_PAIRING_NAMES.has(p.name)) return false;
-      if (searchQuery && !matchesSearch(p, searchQuery)) return false;
-      if (appearance && !p.appearance.includes(appearance)) return false;
-      if (usecase && !matchesUseCase(p, usecase)) return false;
-      if (language && !matchesLanguage(p, language)) return false;
-      if (feeling && !p.mood.includes(feeling)) return false;
-      return true;
+    // Exclude popular pairings from the paginated list when no filters are active
+    // (they're shown in a separate "Popular pairings" section above)
+    const base = hasActiveFilters
+      ? pairings
+      : pairings.filter((p) => !POPULAR_PAIRING_NAMES.has(p.name));
+
+    return filterPairings(base, {
+      query: searchQuery || undefined,
+      appearance: appearance || undefined,
+      useCase: usecase || undefined,
+      language: language || undefined,
+      mood: feeling || undefined,
     });
   }, [pairings, searchQuery, appearance, usecase, language, feeling, hasActiveFilters]);
 

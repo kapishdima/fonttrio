@@ -1,0 +1,17 @@
+{
+	"name": "Fonttrio",
+	"id": "1620816183416685722",
+	"api": "1.0.0",
+	"main": "dist/code.js",
+	"ui": "dist/index.html",
+	"editorType": ["figma"],
+	"networkAccess": {
+		"allowedDomains": [
+			"https://www.fonttrio.xyz",
+			"https://fonts.googleapis.com",
+			"https://fonts.gstatic.com"
+		],
+		"devAllowedDomains": ["http://localhost:3000"]
+	},
+	"documentAccess": "dynamic-page"
+}
