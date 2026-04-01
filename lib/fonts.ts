@@ -44,3 +44,14 @@ export function getFontAllWeightsUrl(font: {
   return `https://fonts.googleapis.com/css2?family=${importName}:wght@${weights}&display=swap`;
 }
 
+export function getSimilarFonts(
+  font: FontItem,
+  allFonts: FontItem[],
+  limit = 8,
+): FontItem[] {
+  const category = parseFontCategory(font);
+  return allFonts
+    .filter((f) => f.name !== font.name && parseFontCategory(f) === category)
+    .slice(0, limit);
+}
+

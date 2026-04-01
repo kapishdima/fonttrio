@@ -295,6 +295,15 @@ export function getPairingGoogleFontsUrl(name: string): string | null {
   return pairing?.googleFontsUrl ?? null;
 }
 
+export function getPairingsUsingFont(fontName: string): PairingData[] {
+  return getAllPairings().filter(
+    (p) =>
+      p.headingKebab === fontName ||
+      p.bodyKebab === fontName ||
+      p.monoKebab === fontName,
+  );
+}
+
 export function getRelatedPairings(
   pairing: PairingData,
   allPairings: PairingData[],

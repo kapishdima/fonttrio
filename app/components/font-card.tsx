@@ -1,8 +1,11 @@
 "use client";
 
+import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { useClickAway } from "@uidotdev/usehooks";
 import { track } from "@vercel/analytics";
 import { AnimatePresence, motion } from "motion/react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import {
@@ -155,13 +158,29 @@ function ActiveFontDetail({
 			aria-label={`${font.title} font detail`}
 			className="w-[90vw] md:w-[40vw] max-h-[90vh] px-6 py-5 rounded-xl border dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-950 bg-white overflow-y-auto overscroll-contain fixed top-1/2 left-1/2 z-999 -translate-x-1/2 -translate-y-1/2"
 		>
-			<motion.p
-				layoutId={`font-name-${font.name}`}
-				className="text-2xl md:text-4xl dark:text-neutral-200 text-neutral-800 truncate font-semibold mb-2 pr-20"
-				style={{ fontFamily }}
-			>
-				{font.title}
-			</motion.p>
+			<div className="flex items-center justify-between">
+				<motion.p
+					layoutId={`font-name-${font.name}`}
+					className="text-2xl md:text-4xl dark:text-neutral-200 text-neutral-800 truncate font-semibold mb-2 pr-20"
+					style={{ fontFamily }}
+				>
+					{font.title}
+				</motion.p>
+				<Link
+					href={`/fonts/${font.name}`}
+					onClick={(e) => e.stopPropagation()}
+					className="flex items-center gap-x-2 text-xs font-medium dark:text-neutral-500 text-neutral-400 dark:hover:text-neutral-200 hover:text-neutral-800 transition-colors"
+					aria-label={`View ${font.title} details`}
+				>
+					View details
+					<HugeiconsIcon
+						icon={ArrowRight02Icon}
+						size={14}
+						color="currentColor"
+						strokeWidth={1.5}
+					/>
+				</Link>
+			</div>
 
 			{/* Badges */}
 			<motion.div
@@ -180,11 +199,18 @@ function ActiveFontDetail({
 				<Badge variant="secondary" className="text-xs rounded-md font-medium">
 					{font.font.weight.length} weights
 				</Badge>
-				{font.font.provider === "google" && (
-					<Badge variant="secondary" className="text-xs rounded-md font-medium">
-						Google Fonts
-					</Badge>
-				)}
+
+				{font.font.subsets
+					.filter((s) => s !== "menu")
+					.map((subset) => (
+						<Badge
+							key={subset}
+							variant="secondary"
+							className="text-xs rounded-md font-medium"
+						>
+							{subset.replace(/-/g, " ")}
+						</Badge>
+					))}
 			</motion.div>
 
 			{/* Weights preview */}
@@ -213,37 +239,11 @@ function ActiveFontDetail({
 				))}
 			</motion.div>
 
-			{/* Subsets */}
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				exit={{ opacity: 0 }}
-				transition={{ delay: 0.2 }}
-				className="mt-4"
-			>
-				<p className="text-xs dark:text-neutral-500 text-neutral-500 font-medium mb-2">
-					Language support
-				</p>
-				<div className="flex flex-wrap gap-1">
-					{font.font.subsets
-						.filter((s) => s !== "menu")
-						.map((subset) => (
-							<Badge
-								key={subset}
-								variant="outline"
-								className="text-[10px] rounded-md font-medium capitalize"
-							>
-								{subset.replace(/-/g, " ")}
-							</Badge>
-						))}
-				</div>
-			</motion.div>
-
 			<p className="font-medium tracking-tighter dark:text-neutral-100 text-neutral-900 mt-4 mb-2">
 				Installation
 			</p>
 			<motion.code
-				className="dark:bg-neutral-900/50 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm font-medium block font-mono"
+				className="dark:bg-neutral-900/50 bg-neutral-100 dark:text-white text-neutral-800 rounded-md text-sm font-medium block font-mono relative"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}

@@ -12,11 +12,9 @@ export function PairHero({ pairing }: { pairing: PairingData }) {
 	return (
 		<div className="p-3">
 			<section className="w-full dark:bg-neutral-950 bg-white rounded-4xl py-12 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24">
-				{/* Back link */}
 				<BackLink href="/pairs" text="All pairings" />
 
 				<div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-16">
-					{/* Left: Identity */}
 					<div className="flex-1 min-w-0">
 						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight dark:text-white text-neutral-900 font-[Outfit] text-balance">
 							{kebabToTitle(pairing.name)}
@@ -51,7 +49,7 @@ export function PairHero({ pairing }: { pairing: PairingData }) {
 						</div>
 
 						<div className="mt-8 max-w-xl">
-							<p className="text-xs font-medium dark:text-neutral-500 text-neutral-400 mb-2 tracking-wider uppercase">
+							<p className="text-sm font-medium dark:text-neutral-500 text-neutral-400 mb-2 tracking-tighter ">
 								Installation
 							</p>
 							<PairInstallationCode pairing={pairing} />
