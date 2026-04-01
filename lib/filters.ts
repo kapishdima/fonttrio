@@ -112,12 +112,3 @@ export function filterPairings(
   });
 }
 
-/**
- * @deprecated Use filterPairings({ query }) instead
- */
-export function filterPairingsByFont(
-  pairings: PairingData[],
-  query: string,
-): PairingData[] {
-  return filterPairings(pairings, { query: query.trim() });
-}

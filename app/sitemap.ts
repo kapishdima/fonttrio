@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pairings = getAllPairings();
 
   const pairingUrls = pairings.map((p) => ({
-    url: `${BASE_URL}/${p.name}`,
+    url: `${BASE_URL}/pairs/${p.name}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.8,

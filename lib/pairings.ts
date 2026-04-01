@@ -294,3 +294,25 @@ export function getPairingGoogleFontsUrl(name: string): string | null {
   const pairing = getPairing(name);
   return pairing?.googleFontsUrl ?? null;
 }
+
+export function getRelatedPairings(
+  pairing: PairingData,
+  allPairings: PairingData[],
+  limit = 6,
+): PairingData[] {
+  const scored = allPairings
+    .filter((p) => p.name !== pairing.name)
+    .map((p) => {
+      let score = 0;
+      for (const m of p.mood) if (pairing.mood.includes(m)) score += 3;
+      for (const u of p.useCase) if (pairing.useCase.includes(u)) score += 2;
+      if (p.headingKebab === pairing.headingKebab) score += 1;
+      if (p.bodyKebab === pairing.bodyKebab) score += 1;
+      if (p.monoKebab === pairing.monoKebab) score += 1;
+      return { pairing: p, score };
+    })
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  return scored.slice(0, limit).map((s) => s.pairing);
+}

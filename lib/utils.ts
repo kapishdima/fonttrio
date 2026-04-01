@@ -9,3 +9,10 @@ export function buildFontFamily(name: string, category: string): string {
   return `"${name}", ${category}`;
 }
 
+
+export function kebabToTitle(kebab: string): string {
+  return kebab
+    .split("-")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+}

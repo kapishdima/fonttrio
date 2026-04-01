@@ -1,11 +1,18 @@
 "use client";
 
+import {
+	ArrowRight02Icon,
+	HugeiconsFreeIcons,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { useClickAway } from "@uidotdev/usehooks";
 import { AnimatePresence, motion } from "motion/react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { FontsRow } from "@/app/components/fonts/fonts-row";
 import { PairInstallationCode } from "@/app/components/pairs/pair-installation-code";
+import { PairScaleTable } from "@/app/components/pairs/pair-scale-table";
 import { Badge } from "@/components/ui/badge";
 import { useInstallCopy } from "@/hooks/use-install-copy";
 import { useLazyFontLoad } from "@/lib/hooks/use-lazy-font-load";
@@ -17,7 +24,11 @@ interface PairCardProps {
 
 export function PairCard({ pairing }: PairCardProps) {
 	const { ref, loaded } = useLazyFontLoad(pairing.googleFontsUrl);
-	const { command, state: copyState, copyCommand } = useInstallCopy(pairing.name);
+	const {
+		command,
+		state: copyState,
+		copyCommand,
+	} = useInstallCopy(pairing.name);
 
 	const [opened, setOpened] = useState(false);
 
@@ -44,15 +55,17 @@ export function PairCard({ pairing }: PairCardProps) {
 				<div
 					className={`flex-1 px-6 py-5 flex flex-col gap-2 transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
 				>
-					<motion.p
-						layoutId={`heading-${pairing.name}`}
-						className="text-3xl md:text-2xl dark:text-neutral-200 text-neutral-800 truncate font-extrabold"
-						style={{
-							fontFamily: pairing.heading,
-						}}
-					>
-						{pairing.heading}
-					</motion.p>
+					<div className="flex items-center justify-between gap-2">
+						<motion.p
+							layoutId={`heading-${pairing.name}`}
+							className="text-3xl md:text-2xl dark:text-neutral-200 text-neutral-800 truncate font-extrabold"
+							style={{
+								fontFamily: pairing.heading,
+							}}
+						>
+							{pairing.heading}
+						</motion.p>
+					</div>
 
 					<motion.p
 						layoutId={`description-${pairing.name}`}
@@ -130,14 +143,15 @@ function ActiveFullPair({
 	}, [onClickAway]);
 
 	return createPortal(
-			<motion.div
-				ref={ref as React.Ref<HTMLDivElement>}
-				layoutId={`card-${pair.name}`}
-				role="dialog"
-				aria-modal="true"
-				aria-label={`${pair.name} font pairing detail`}
-				className="w-[90vw] sm:w-[70vw] md:w-[55vw] lg:w-[40vw] max-h-[90vh] px-4 sm:px-6 py-5 rounded-xl border dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-950 bg-white overflow-y-auto overscroll-contain fixed top-1/2 left-1/2 z-999 -translate-x-1/2 -translate-y-1/2"
-			>
+		<motion.div
+			ref={ref as React.Ref<HTMLDivElement>}
+			layoutId={`card-${pair.name}`}
+			role="dialog"
+			aria-modal="true"
+			aria-label={`${pair.name} font pairing detail`}
+			className="w-[90vw] sm:w-[70vw] md:w-[55vw] lg:w-[40vw] max-h-[90vh] px-4 sm:px-6 py-5 rounded-xl border dark:border-neutral-900/50 border-neutral-200 dark:bg-neutral-950 bg-white overflow-y-auto overscroll-contain fixed top-1/2 left-1/2 z-999 -translate-x-1/2 -translate-y-1/2"
+		>
+			<div className=" flex flex-1 items-center justify-between">
 				<motion.p
 					layoutId={`heading-${pair.name}`}
 					className="text-2xl md:text-4xl dark:text-neutral-200 text-neutral-800 truncate font-extrabold mb-2 pr-20"
@@ -148,110 +162,87 @@ function ActiveFullPair({
 					{pair.heading}
 				</motion.p>
 
-				<motion.div
-					className="flex flex-wrap items-center gap-1 mb-4"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					transition={{ delay: 0.2 }}
+				<Link
+					href={`/pairs/${pair.name}`}
+					onClick={(e) => e.stopPropagation()}
+					className="flex items-center gap-x-2 text-xs font-medium dark:text-neutral-500 text-neutral-400 dark:hover:text-neutral-200 hover:text-neutral-800 transition-colors"
+					aria-label={`View ${pair.name} details`}
 				>
-					{pair.mood.map((m) => (
-						<Badge
-							key={m}
-							variant="secondary"
-							className="text-xs rounded-md font-medium tracking-tighter"
-						>
-							{m}
-						</Badge>
-					))}
-					{pair.useCase.map((u) => (
-						<Badge
-							key={u}
-							variant="secondary"
-							className="text-xs rounded-md font-medium tracking-tighter"
-						>
-							{u}
-						</Badge>
-					))}
-				</motion.div>
+					View details
+					<HugeiconsIcon
+						icon={ArrowRight02Icon}
+						size={14}
+						color="currentColor"
+						strokeWidth={1.5}
+					/>
+				</Link>
+			</div>
 
-				<motion.p
-					layoutId={`description-${pair.name}`}
-					className="text-sm dark:text-neutral-400 text-neutral-600 line-clamp-2 font-medium leading-normal"
-				>
-					{pair.description}
-				</motion.p>
+			<motion.div
+				className="flex flex-wrap items-center gap-1 mb-4"
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				transition={{ delay: 0.2 }}
+			>
+				{pair.mood.map((m) => (
+					<Badge
+						key={m}
+						variant="secondary"
+						className="text-xs rounded-md font-medium tracking-tighter"
+					>
+						{m}
+					</Badge>
+				))}
+				{pair.useCase.map((u) => (
+					<Badge
+						key={u}
+						variant="secondary"
+						className="text-xs rounded-md font-medium tracking-tighter"
+					>
+						{u}
+					</Badge>
+				))}
+			</motion.div>
 
-				<FontsRow
-					as={motion.div}
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					transition={{ delay: 0.15 }}
-					pairing={pair}
-				/>
+			<motion.p
+				layoutId={`description-${pair.name}`}
+				className="text-sm dark:text-neutral-400 text-neutral-600 line-clamp-2 font-medium leading-normal"
+			>
+				{pair.description}
+			</motion.p>
 
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					transition={{ delay: 0.2 }}
-					className="mt-4 dark:bg-neutral-900/50 bg-neutral-50 rounded-lg p-3"
-				>
-					{/* Column headers */}
-					<div className="grid grid-cols-[1fr_1fr_0.8fr_0.8fr] gap-x-2 mb-1.5 pb-1.5 border-b dark:border-neutral-800 border-neutral-200">
-						<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-medium">
-							Level
-						</span>
-						<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-medium">
-							Size
-						</span>
-						<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-medium">
-							Weight
-						</span>
-						<span className="text-xs tracking-wider dark:text-neutral-600 text-neutral-700 font-medium">
-							LH
-						</span>
-					</div>
-					<div className="space-y-1">
-						{(["h1", "h2", "h3", "h4", "body"] as const).map((level) => {
-							const s = pair.scale[level];
-							return (
-								<div
-									key={level}
-									className="grid grid-cols-[1fr_1fr_0.8fr_0.8fr] gap-x-2 text-xs py-1"
-								>
-									<span className="font-mono uppercase dark:text-neutral-300 text-neutral-800 font-medium">
-										{level}
-									</span>
-									<span className="tabular-nums dark:text-neutral-400 text-neutral-500">
-										{s.size}
-									</span>
-									<span className="tabular-nums dark:text-neutral-400 text-neutral-500">
-										{s.weight}
-									</span>
-									<span className="tabular-nums dark:text-neutral-400 text-neutral-500">
-										{s.lineHeight}
-									</span>
-								</div>
-							);
-						})}
-					</div>
-				</motion.div>
+			<FontsRow
+				as={motion.div}
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				transition={{ delay: 0.15 }}
+				pairing={pair}
+			/>
 
-				<p className="font-medium tracking-tighter dark:text-neutral-100 text-neutral-900 mt-4 mb-2">
-					Installation
-				</p>
-				<PairInstallationCode
-					pairing={pair}
-					as={motion.div}
-					style={{ fontFamily: pair.mono }}
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					transition={{ delay: 0.3 }}
-				/>
-			</motion.div>,
+			<PairScaleTable
+				as={motion.div}
+				pair={pair}
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				transition={{ delay: 0.2 }}
+			/>
+
+			<p className="font-medium tracking-tighter dark:text-neutral-100 text-neutral-900 mt-4 mb-2">
+				Installation
+			</p>
+			<PairInstallationCode
+				pairing={pair}
+				as={motion.div}
+				style={{ fontFamily: pair.mono }}
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				transition={{ delay: 0.3 }}
+			/>
+		</motion.div>,
 		document.body,
 	);
 }

@@ -12,7 +12,7 @@ import {
 	InputGroupAddon,
 	InputGroupInput,
 } from "@/components/ui/input-group";
-import { filterPairingsByFont } from "@/lib/filters";
+import { filterPairings } from "@/lib/filters";
 import type { PairingData } from "@/lib/pairings";
 
 type PairsListSelectionProps<T extends ElementType = "div"> = {
@@ -45,7 +45,7 @@ export function PairsListSelection<T extends ElementType = "div">({
 	const [query, setQuery] = useQueryState("query", { defaultValue: "" });
 
 	const filtered = useMemo(
-		() => (searchable ? filterPairingsByFont(pairings, query) : pairings),
+		() => (searchable ? filterPairings(pairings, { query }) : pairings),
 		[pairings, query, searchable],
 	);
 
