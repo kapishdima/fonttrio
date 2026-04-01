@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { getAllPairings } from "@/lib/pairings";
 import { filterPairings } from "@/lib/filters";
+import { getAllPairings } from "@/lib/pairings";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",

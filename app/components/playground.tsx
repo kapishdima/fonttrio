@@ -1,10 +1,11 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
+import { PairsListSelection } from "@/app/components/pairs/pairs-list-selection";
 import { ComponentsPreview } from "@/app/components/playground/components-preview";
 import { TextsPreview } from "@/app/components/playground/texts-preview";
-import { PairsListSelection } from "@/app/components/pairs/pairs-list-selection";
 import { useInstallCopy } from "@/hooks/use-install-copy";
 import { loadFontUrl } from "@/lib/hooks/font-load-registry";
 import type { PairingData } from "@/lib/pairings";
@@ -34,7 +35,13 @@ const reducedVariants = {
 	visible: { opacity: 1 },
 };
 
-export function Playground({ pairings, showHeader = true }: { pairings: PairingData[]; showHeader?: boolean }) {
+export function Playground({
+	pairings,
+	showHeader = true,
+}: {
+	pairings: PairingData[];
+	showHeader?: boolean;
+}) {
 	const [activePairing, setActivePairing] = useState(pairings[0]);
 	const prefersReducedMotion = useReducedMotion();
 
@@ -126,7 +133,10 @@ export function Playground({ pairings, showHeader = true }: { pairings: PairingD
 							pairings={pairings}
 							onSelectPair={(name: string) => {
 								const pairing = pairings.find((p) => p.name === name);
-								if (pairing) setActivePairing(pairing);
+								if (pairing) {
+									track("playground_pair_selected", { name });
+									setActivePairing(pairing);
+								}
 							}}
 							active={activePairing}
 							searchable
@@ -150,4 +160,3 @@ export function Playground({ pairings, showHeader = true }: { pairings: PairingD
 		</section>
 	);
 }
-

@@ -1,4 +1,4 @@
-import { track } from "@vercel/analytics";
+import { track } from "@vercel/analytics/server";
 import { NextResponse } from "next/server";
 import { buildRegistryIndex } from "@/lib/registry";
 

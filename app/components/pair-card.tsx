@@ -1,11 +1,9 @@
 "use client";
 
-import {
-	ArrowRight02Icon,
-	HugeiconsFreeIcons,
-} from "@hugeicons/core-free-icons";
+import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useClickAway } from "@uidotdev/usehooks";
+import { track } from "@vercel/analytics";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -37,7 +35,10 @@ export function PairCard({ pairing }: PairCardProps) {
 			<motion.div
 				layoutId={`card-${pairing.name}`}
 				ref={ref as React.Ref<HTMLDivElement>}
-				onClick={() => setOpened((t) => !t)}
+				onClick={() => {
+					if (!opened) track("pair_card_opened", { name: pairing.name });
+					setOpened((t) => !t);
+				}}
 				onKeyDown={(e) => {
 					if (e.key === "Enter" || e.key === " ") {
 						e.preventDefault();

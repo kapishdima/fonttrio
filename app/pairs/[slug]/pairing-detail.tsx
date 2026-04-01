@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import { useEffect } from "react";
 import { Footer } from "@/app/components/footer";
 import { InnerHeader } from "@/app/components/header";
@@ -12,7 +13,6 @@ import { ComponentsPreview } from "@/app/components/playground/components-previe
 import { TextsPreview } from "@/app/components/playground/texts-preview";
 import { loadFontUrl } from "@/lib/hooks/font-load-registry";
 import type { PairingData } from "@/lib/pairings";
-import { kebabToTitle } from "@/lib/utils";
 
 export function PairingDetail({
 	pairing,
@@ -25,7 +25,8 @@ export function PairingDetail({
 		if (pairing.googleFontsUrl) {
 			loadFontUrl(pairing.googleFontsUrl);
 		}
-	}, [pairing.googleFontsUrl]);
+		track("pair_detail_viewed", { name: pairing.name });
+	}, [pairing.googleFontsUrl, pairing.name]);
 
 	const monoFont = `"${pairing.mono}", monospace`;
 

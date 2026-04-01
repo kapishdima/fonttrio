@@ -1,6 +1,7 @@
 "use client";
 
 import { useClickAway } from "@uidotdev/usehooks";
+import { track } from "@vercel/analytics";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
@@ -24,7 +25,8 @@ interface FontFullCardProps {
 }
 
 export function FontFullCard({ font, batchLoaded }: FontFullCardProps) {
-	const googleFontsUrl = batchLoaded === undefined ? getFontGoogleFontsUrl(font) : "";
+	const googleFontsUrl =
+		batchLoaded === undefined ? getFontGoogleFontsUrl(font) : "";
 	const { ref, loaded: lazyLoaded } = useLazyFontLoad(googleFontsUrl);
 	const loaded = batchLoaded ?? lazyLoaded;
 	const category = parseFontCategory(font);
@@ -39,7 +41,10 @@ export function FontFullCard({ font, batchLoaded }: FontFullCardProps) {
 			<motion.div
 				layoutId={`font-${font.name}`}
 				ref={ref as React.Ref<HTMLDivElement>}
-				onClick={() => setOpened((t) => !t)}
+				onClick={() => {
+					if (!opened) track("font_card_opened", { name: font.name });
+					setOpened((t) => !t);
+				}}
 				onKeyDown={(e) => {
 					if (e.key === "Enter" || e.key === " ") {
 						e.preventDefault();
