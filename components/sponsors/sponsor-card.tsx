@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import type { Sponsor } from "@/lib/sponsors";
 
 export function SponsorCard({
@@ -19,7 +20,10 @@ export function SponsorCard({
 			<img
 				src={sponsor.logo}
 				alt={sponsor.name}
-				className="h-8 w-auto max-w-35 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 dark:invert"
+				className={clsx(
+					"h-8 w-auto max-w-35 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 dark:invert",
+					sponsor.classNames,
+				)}
 				draggable={false}
 			/>
 		</a>
