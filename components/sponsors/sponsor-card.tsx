@@ -20,26 +20,9 @@ export function SponsorCard({
 			<img
 				src={sponsor.logo}
 				alt={sponsor.name}
-				className="h-8 w-auto max-w-35 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 dark:hidden"
+				className="h-8 w-auto max-w-35 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 dark:invert"
 				draggable={false}
 			/>
-			{sponsor.logoDark ? (
-				// biome-ignore lint/performance/noImgElement: <fallback invert for dark>
-				<img
-					src={sponsor.logoDark}
-					alt={sponsor.name}
-					className="h-8 w-auto max-w-35 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 hidden dark:block"
-					draggable={false}
-				/>
-			) : (
-				// biome-ignore lint/performance/noImgElement: fallback invert for dark
-				<img
-					src={sponsor.logo}
-					alt={sponsor.name}
-					className="h-8 w-auto max-w-35 object-contain grayscale invert opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 hidden dark:block"
-					draggable={false}
-				/>
-			)}
 		</a>
 	);
 }
