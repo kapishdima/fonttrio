@@ -12,7 +12,6 @@ export function SponsorCard({
 			key={sponsor.id}
 			href={sponsor.url}
 			target="_blank"
-			rel="noopener noreferrer"
 			aria-label={sponsor.name}
 			className={`group flex items-center justify-center px-6 ${cellPy}  border-r dark:border-neutral-800 border-b  border-neutral-200  dark:hover:bg-neutral-900/60 hover:bg-neutral-50 transition-colors`}
 		>

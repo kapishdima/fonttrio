@@ -13,7 +13,6 @@ export const SPONSORS: Sponsor[] = [
     id: "10",
     name: "SlidesAI",
     logo: "/sponsors/slidesai-logo.svg",
-
     url: "https://www.slidesai.io?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "gold"
   },
@@ -21,15 +20,13 @@ export const SPONSORS: Sponsor[] = [
     id: "20",
     name: "Tailark",
     logo: "/sponsors/tailark.svg",
-
-    url: "https://pro.tailark.com?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    url: "https://tailark.com?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "gold"
   },
   {
     id: "30",
     name: "shadcn/space",
     logo: "https://shadcnspace.com/images/logo/shadcnspace.svg",
-
     url: "https://shadcnspace.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver"
   },
@@ -37,7 +34,6 @@ export const SPONSORS: Sponsor[] = [
     id: "40",
     name: "Shoogle",
     logo: "/sponsors/shoogle.svg",
-
     url: "https://shoogle.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver"
   },
@@ -45,7 +41,6 @@ export const SPONSORS: Sponsor[] = [
     id: "50",
     name: "shadcn blocks",
     logo: "/sponsors/shadcnblocks.svg",
-
     url: "https://shadcnblocks.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver"
   },

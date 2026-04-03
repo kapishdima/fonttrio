@@ -21,7 +21,12 @@ function LogoList() {
 	return (
 		<div className="grid grid-cols-1 sm:grid-cols-2 border border-b-0 border-neutral-200 dark:border-neutral-800 md:grid-cols-3 lg:grid-cols-6 mt-10 rounded-4xl overflow-hidden">
 			{sponsors.map((sponsor) => (
-				<a href={sponsor.url} key={sponsor.id} className={gridCard}>
+				<a
+					href={sponsor.url}
+					key={sponsor.id}
+					className={gridCard}
+					target="_blank"
+				>
 					{/** biome-ignore lint/performance/noImgElement: <bad url> */}
 					<img
 						alt={sponsor.name}
