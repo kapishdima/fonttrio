@@ -13,7 +13,7 @@ export interface Sponsor {
 export const SPONSORS: Sponsor[] = [
   // Add your sponsors here
   {
-    id: "1",
+    id: "10",
     name: "SlidesAI",
     logo: "/sponsors/slidesai-logo.svg",
     logoDark: "/sponsors/slidesai-logo-dark.svg",
@@ -21,7 +21,15 @@ export const SPONSORS: Sponsor[] = [
     tier: "gold"
   },
   {
-    id: "2",
+    id: "20",
+    name: "Tailark",
+    logo: "/sponsors/tailark.svg",
+    logoDark: "/sponsors/slidesai-logo-dark.svg",
+    url: "https://pro.tailark.com?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    tier: "gold"
+  },
+  {
+    id: "30",
     name: "shadcn/space",
     logo: "https://shadcnspace.com/images/logo/shadcnspace.svg",
     logoDark: "https://shadcnspace.com/images/logo/shadcnspace-white.svg",
@@ -29,7 +37,7 @@ export const SPONSORS: Sponsor[] = [
     tier: "silver"
   },
   {
-    id: "3",
+    id: "40",
     name: "Shoogle",
     logo: "/sponsors/shoogle.svg",
     logoDark: "/sponsors/shoogle-dark.svg",
@@ -37,7 +45,7 @@ export const SPONSORS: Sponsor[] = [
     tier: "silver"
   },
   {
-    id: "4",
+    id: "50",
     name: "shadcn blocks",
     logo: "/sponsors/shadcnblocks.svg",
     logoDark: "/sponsors/shadcnblocks-dark.svg",
@@ -45,7 +53,7 @@ export const SPONSORS: Sponsor[] = [
     tier: "silver"
   },
   {
-    id: "5",
+    id: "60",
     name: "shadcn studio",
     logo: "https://cdn.shadcnstudio.com/ss-assets/marketing/shadcn-studio-logos/shadcn-studio-light-full-logo.png",
     logoDark: "https://cdn.shadcnstudio.com/ss-assets/marketing/shadcn-studio-logos/shadcn-studio-dark-full-logo.png",
@@ -53,7 +61,7 @@ export const SPONSORS: Sponsor[] = [
     tier: "silver"
   },
   {
-    id: "6",
+    id: "70",
     name: "",
     logo: "/sponsors/react-bits.svg",
     logoDark: "/sponsors/react-bits-dark.svg",
@@ -61,7 +69,7 @@ export const SPONSORS: Sponsor[] = [
     tier: "silver"
   },
   {
-    id: "7",
+    id: "80",
     name: "",
     logo: "/sponsors/efferd.svg",
     logoDark: "/sponsors/efferd-dark.svg",
@@ -69,7 +77,7 @@ export const SPONSORS: Sponsor[] = [
     tier: "silver"
   },
   {
-    id: "8",
+    id: "90",
     name: "",
     logo: "/sponsors/shadcord.svg",
     logoDark: "/sponsors/shadcord.svg",
@@ -77,7 +85,7 @@ export const SPONSORS: Sponsor[] = [
     tier: "silver"
   },
   {
-    id: "9",
+    id: "100",
     name: "",
     logo: "/sponsors/formcn.svg",
     logoDark: "/sponsors/formcn.svg",
