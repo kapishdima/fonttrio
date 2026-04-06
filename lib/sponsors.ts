@@ -25,6 +25,14 @@ export const SPONSORS: Sponsor[] = [
     tier: "gold"
   },
   {
+    id: "21",
+    name: "TestMu AI",
+    logo: "/sponsors/testmuai.svg",
+    url: "https://www.testmuai.com/?utm_source=fonttrio&utm_medium=content_collab&utm_campaign=sponsorship",
+    tier: "gold",
+    classNames: "scale-80"
+  },
+  {
     id: "30",
     name: "shadcn/space",
     logo: "https://shadcnspace.com/images/logo/shadcnspace.svg",
@@ -68,7 +76,6 @@ export const SPONSORS: Sponsor[] = [
     id: "80",
     name: "",
     logo: "/sponsors/efferd.svg",
-
     url: "https://efferd.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver",
     classNames: "scale-80"
