@@ -99,6 +99,8 @@ export const SPONSORS: Sponsor[] = [
   },
 ];
 
+// test
+
 // ─── Billing cycles ───────────────────────────────────────────────
 
 export type BillingCycle = "monthly" | "one-time";
