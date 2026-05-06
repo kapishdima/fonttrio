@@ -1,25 +1,37 @@
-import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
-import { createMcpServer } from "@/lib/mcp/server";
+// import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
+// import { createMcpServer } from "@/lib/mcp/server";
 
-async function handleMcpRequest(req: Request): Promise<Response> {
-	const transport = new WebStandardStreamableHTTPServerTransport({
-		sessionIdGenerator: undefined, // stateless mode for Vercel serverless
-	});
+// async function handleMcpRequest(req: Request): Promise<Response> {
+// 	const transport = new WebStandardStreamableHTTPServerTransport({
+// 		sessionIdGenerator: undefined, // stateless mode for Vercel serverless
+// 	});
 
-	const server = createMcpServer();
-	await server.connect(transport);
+// 	const server = createMcpServer();
+// 	await server.connect(transport);
 
-	return transport.handleRequest(req);
-}
+// 	return transport.handleRequest(req);
+// }
+
+// export async function POST(req: Request): Promise<Response> {
+// 	return handleMcpRequest(req);
+// }
+
+// export async function GET(req: Request): Promise<Response> {
+// 	return handleMcpRequest(req);
+// }
+
+// export async function DELETE(): Promise<Response> {
+// 	return new Response(null, { status: 405 });
+// }
 
 export async function POST(req: Request): Promise<Response> {
-	return handleMcpRequest(req);
+	return new Response(null, { status: 503, statusText: "Temporary disabled" });
 }
 
 export async function GET(req: Request): Promise<Response> {
-	return handleMcpRequest(req);
+	return new Response(null, { status: 503, statusText: "Temporary disabled" });
 }
 
 export async function DELETE(): Promise<Response> {
-	return new Response(null, { status: 405 });
+	return new Response(null, { status: 503, statusText: "Temporary disabled" });
 }
