@@ -1,8 +1,8 @@
-import { track } from "@vercel/analytics/server";
 import { existsSync, readFileSync } from "fs";
 import { NextResponse } from "next/server";
 import { join } from "path";
-import { isBot, SHADCN_PROBE_NAMES } from "@/lib/analytics";
+import { isBot, SHADCN_PROBE_NAMES } from "@/lib/bot-detection";
+import { op } from "@/lib/op";
 
 const PAIRINGS_DIR = join(process.cwd(), "registry", "pairings");
 const FONTS_DIR = join(process.cwd(), "registry", "fonts");
@@ -23,7 +23,7 @@ export async function GET(
 
   if (!existsSync(filePath)) {
     if (!bot && !SHADCN_PROBE_NAMES.has(rawName)) {
-      track("registry_item_not_found", { name: rawName });
+      void op.track("registry_item_not_found", { name: rawName });
     }
 
     return NextResponse.json(
@@ -35,7 +35,7 @@ export async function GET(
   const type = filePath.includes("pairings") ? "pairing" : "font";
 
   if (!bot) {
-    track("registry_item_served", { name: rawName, type });
+    void op.track("registry_item_served", { name: rawName, type });
   }
 
   const data = JSON.parse(readFileSync(filePath, "utf-8"));

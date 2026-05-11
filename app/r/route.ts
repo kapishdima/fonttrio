@@ -1,9 +1,9 @@
-import { track } from "@vercel/analytics/server";
 import { NextResponse } from "next/server";
+import { op } from "@/lib/op";
 import { buildRegistryIndex } from "@/lib/registry";
 
 export async function GET() {
-  track("registry_index_served");
+  void op.track("registry_index_served");
 
   const index = buildRegistryIndex();
   return NextResponse.json(index, {

@@ -3,7 +3,6 @@
 import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useClickAway } from "@uidotdev/usehooks";
-import { track } from "@vercel/analytics";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -14,6 +13,7 @@ import {
 } from "@/components/code-block-command/code-block-command";
 import { Badge } from "@/components/ui/badge";
 import { useInstallCopy } from "@/hooks/use-install-copy";
+import { useTrackEvent } from "@/lib/analytics";
 import {
 	type FontItem,
 	getFontGoogleFontsUrl,
@@ -34,6 +34,7 @@ export function FontFullCard({ font, batchLoaded }: FontFullCardProps) {
 	const loaded = batchLoaded ?? lazyLoaded;
 	const category = parseFontCategory(font);
 	const { command, state: copyState, copyCommand } = useInstallCopy(font.name);
+	const trackEvent = useTrackEvent();
 
 	const [opened, setOpened] = useState(false);
 
@@ -45,7 +46,7 @@ export function FontFullCard({ font, batchLoaded }: FontFullCardProps) {
 				layoutId={`font-${font.name}`}
 				ref={ref as React.Ref<HTMLDivElement>}
 				onClick={() => {
-					if (!opened) track("font_card_opened", { name: font.name });
+					if (!opened) trackEvent("font_card_opened", { name: font.name });
 					setOpened((t) => !t);
 				}}
 				onKeyDown={(e) => {

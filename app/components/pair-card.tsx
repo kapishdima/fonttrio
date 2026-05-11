@@ -3,7 +3,6 @@
 import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useClickAway } from "@uidotdev/usehooks";
-import { track } from "@vercel/analytics";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -13,6 +12,7 @@ import { PairInstallationCode } from "@/app/components/pairs/pair-installation-c
 import { PairScaleTable } from "@/app/components/pairs/pair-scale-table";
 import { Badge } from "@/components/ui/badge";
 import { useInstallCopy } from "@/hooks/use-install-copy";
+import { useTrackEvent } from "@/lib/analytics";
 import { useLazyFontLoad } from "@/lib/hooks/use-lazy-font-load";
 import type { PairingData } from "@/lib/pairings";
 
@@ -27,6 +27,7 @@ export function PairCard({ pairing }: PairCardProps) {
 		state: copyState,
 		copyCommand,
 	} = useInstallCopy(pairing.name);
+	const trackEvent = useTrackEvent();
 
 	const [opened, setOpened] = useState(false);
 
@@ -36,7 +37,7 @@ export function PairCard({ pairing }: PairCardProps) {
 				layoutId={`card-${pairing.name}`}
 				ref={ref as React.Ref<HTMLDivElement>}
 				onClick={() => {
-					if (!opened) track("pair_card_opened", { name: pairing.name });
+					if (!opened) trackEvent("pair_card_opened", { name: pairing.name });
 					setOpened((t) => !t);
 				}}
 				onKeyDown={(e) => {

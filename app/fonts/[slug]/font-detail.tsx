@@ -1,12 +1,12 @@
 "use client";
 
-import { track } from "@vercel/analytics";
 import { useEffect, useState } from "react";
 import { Footer } from "@/app/components/footer";
 import { InnerHeader } from "@/app/components/header";
 import { FontHero } from "@/app/components/hero/font-hero";
 import { PairCard } from "@/app/components/pair-card";
 import { Badge } from "@/components/ui/badge";
+import { useTrackEvent } from "@/lib/analytics";
 import type { FontItem } from "@/lib/fonts";
 import { getFontAllWeightsUrl, parseFontCategory } from "@/lib/fonts";
 import { loadFontUrl } from "@/lib/hooks/font-load-registry";
@@ -44,12 +44,13 @@ export function FontDetail({
 	const [specimenText, setSpecimenText] = useState(
 		"The quick brown fox jumps over the lazy dog",
 	);
+	const trackEvent = useTrackEvent();
 
 	useEffect(() => {
 		const url = getFontAllWeightsUrl(font);
 		if (url) loadFontUrl(url);
-		track("font_detail_viewed", { name: font.name });
-	}, [font]);
+		trackEvent("font_detail_viewed", { name: font.name });
+	}, [font, trackEvent]);
 
 	return (
 		<main className="bg-black">

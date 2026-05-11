@@ -1,12 +1,12 @@
 "use client";
 
-import { track } from "@vercel/analytics";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
 import { PairsListSelection } from "@/app/components/pairs/pairs-list-selection";
 import { ComponentsPreview } from "@/app/components/playground/components-preview";
 import { TextsPreview } from "@/app/components/playground/texts-preview";
 import { useInstallCopy } from "@/hooks/use-install-copy";
+import { useTrackEvent } from "@/lib/analytics";
 import { loadFontUrl } from "@/lib/hooks/font-load-registry";
 import type { PairingData } from "@/lib/pairings";
 
@@ -44,6 +44,7 @@ export function Playground({
 }) {
 	const [activePairing, setActivePairing] = useState(pairings[0]);
 	const prefersReducedMotion = useReducedMotion();
+	const trackEvent = useTrackEvent();
 
 	// Load fonts for the active pairing eagerly (no IntersectionObserver needed)
 	useEffect(() => {
@@ -134,7 +135,7 @@ export function Playground({
 							onSelectPair={(name: string) => {
 								const pairing = pairings.find((p) => p.name === name);
 								if (pairing) {
-									track("playground_pair_selected", { name });
+									trackEvent("playground_pair_selected", { name });
 									setActivePairing(pairing);
 								}
 							}}

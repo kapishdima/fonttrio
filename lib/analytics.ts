@@ -1,66 +1,29 @@
-/**
- * Known shadcn component names that bots/tools probe for.
- * Suppress registry_item_not_found for these to reduce noise.
- */
-export const SHADCN_PROBE_NAMES = new Set([
-  "accordion",
-  "alert",
-  "alert-dialog",
-  "aspect-ratio",
-  "avatar",
-  "badge",
-  "breadcrumb",
-  "button",
-  "calendar",
-  "card",
-  "carousel",
-  "chart",
-  "checkbox",
-  "collapsible",
-  "combobox",
-  "command",
-  "context-menu",
-  "data-table",
-  "date-picker",
-  "dialog",
-  "drawer",
-  "dropdown-menu",
-  "feature-1",
-  "form",
-  "hover-card",
-  "input",
-  "input-otp",
-  "label",
-  "menubar",
-  "navigation-menu",
-  "pagination",
-  "popover",
-  "progress",
-  "radio-group",
-  "resizable",
-  "scroll-area",
-  "select",
-  "separator",
-  "sheet",
-  "sidebar-01",
-  "sidebar",
-  "skeleton",
-  "slider",
-  "sonner",
-  "switch",
-  "table",
-  "tabs",
-  "textarea",
-  "toast",
-  "toggle",
-  "toggle-group",
-  "tooltip",
-]);
+"use client";
 
-const BOT_UA_PATTERN =
-  /bot|crawl|spider|slurp|facebook|twitter|linkedin|discord|telegram|whatsapp|preview|fetch|curl|wget|python-requests|go-http-client|java|php|ruby|perl|dart|node-fetch|axios|got\//i;
+import { useOpenPanel } from "@openpanel/nextjs";
+import { useCallback } from "react";
+import type { PackageManager } from "@/hooks/use-package-manager";
 
-export function isBot(request: Request): boolean {
-  const ua = request.headers.get("user-agent") || "";
-  return !ua || BOT_UA_PATTERN.test(ua);
+type AnalyticsEvents = {
+	pair_detail_viewed: { name: string };
+	pair_card_opened: { name: string };
+	font_detail_viewed: { name: string };
+	font_card_opened: { name: string };
+	playground_pair_selected: { name: string };
+	install_copied: { name: string; package_manager: PackageManager };
+};
+
+export function useTrackEvent() {
+	const op = useOpenPanel();
+	return useCallback(
+		<E extends keyof AnalyticsEvents>(
+			event: E,
+			...args: AnalyticsEvents[E] extends Record<string, never>
+				? []
+				: [AnalyticsEvents[E]]
+		) => {
+			op.track(event, args[0] as Record<string, unknown> | undefined);
+		},
+		[op],
+	);
 }

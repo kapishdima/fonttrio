@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 
-import { Analytics } from "@vercel/analytics/next";
+import { OpenPanelComponent } from "@openpanel/nextjs";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { NuqsAdapter } from "nuqs/adapters/next";
 import { Suspense } from "react";
@@ -80,7 +80,13 @@ export default function RootLayout({
 						<Suspense fallback={null}>{children}</Suspense>
 					</NuqsAdapter>
 				</NextThemesProvider>
-				<Analytics />
+				<OpenPanelComponent
+					clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID as string}
+					apiUrl={process.env.NEXT_PUBLIC_OPENPANEL_API_URL}
+					trackScreenViews
+					trackAttributes
+					trackOutgoingLinks
+				/>
 			</body>
 		</html>
 	);

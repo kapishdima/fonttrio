@@ -1,6 +1,5 @@
 "use client";
 
-import { track } from "@vercel/analytics";
 import { useEffect } from "react";
 import { Footer } from "@/app/components/footer";
 import { InnerHeader } from "@/app/components/header";
@@ -11,6 +10,7 @@ import { PairInstallationCode } from "@/app/components/pairs/pair-installation-c
 import { PairScaleTable } from "@/app/components/pairs/pair-scale-table";
 import { ComponentsPreview } from "@/app/components/playground/components-preview";
 import { TextsPreview } from "@/app/components/playground/texts-preview";
+import { useTrackEvent } from "@/lib/analytics";
 import { loadFontUrl } from "@/lib/hooks/font-load-registry";
 import type { PairingData } from "@/lib/pairings";
 
@@ -21,12 +21,14 @@ export function PairingDetail({
 	pairing: PairingData;
 	relatedPairings: PairingData[];
 }) {
+	const trackEvent = useTrackEvent();
+
 	useEffect(() => {
 		if (pairing.googleFontsUrl) {
 			loadFontUrl(pairing.googleFontsUrl);
 		}
-		track("pair_detail_viewed", { name: pairing.name });
-	}, [pairing.googleFontsUrl, pairing.name]);
+		trackEvent("pair_detail_viewed", { name: pairing.name });
+	}, [pairing.googleFontsUrl, pairing.name, trackEvent]);
 
 	const monoFont = `"${pairing.mono}", monospace`;
 
