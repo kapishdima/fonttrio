@@ -25,6 +25,7 @@
     "@react-bits": "https://reactbits.dev/r/{name}.json",
     "@tailark": "https://tailark.com/r/{name}.json",
     "@ncdai": "https://chanhdai.com/r/{name}.json",
-    "@soundcn": "https://soundcn.xyz/r/{name}.json"
+    "@soundcn": "https://soundcn.xyz/r/{name}.json",
+    "@kibo-ui": "https://www.kibo-ui.com/r/{name}.json"
   }
 }
