@@ -5,20 +5,13 @@ export interface Sponsor {
   url: string;
   tier: "bronze" | "silver" | "gold";
   classNames?: string; // Optional additional class names for styling
+  isPaste?: boolean; // Optional flag to indicate if the sponsor is a paste (for styling purposes)
 }
 
 export const SPONSORS: Sponsor[] = [
-  // Add your sponsors here
-  {
-    id: "10",
-    name: "SlidesAI",
-    logo: "/sponsors/slidesai-logo.svg",
-    url: "https://www.slidesai.io?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
-    tier: "gold",
-    classNames: "h-10"
-  },
   {
     id: "20",
+    isPaste: false,
     name: "Tailark",
     logo: "/sponsors/tailark.svg",
     url: "https://tailark.com?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
@@ -26,6 +19,7 @@ export const SPONSORS: Sponsor[] = [
   },
   {
     id: "21",
+    isPaste: false,
     name: "TestMu AI",
     logo: "/sponsors/testmuai.svg",
     url: "https://www.testmuai.com/?utm_source=fonttrio&utm_medium=content_collab&utm_campaign=sponsorship",
@@ -33,7 +27,29 @@ export const SPONSORS: Sponsor[] = [
     classNames: "scale-80"
   },
   {
+    id: "50",
+    isPaste: false,
+    name: "shadcn blocks",
+    logo: "/sponsors/shadcnblocks.svg",
+    url: "https://shadcnblocks.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    tier: "silver",
+  },
+
+  // Paste sponsors
+  {
+    id: "10",
+    isPaste: true,
+    name: "SlidesAI",
+    logo: "/sponsors/slidesai-logo.svg",
+    url: "https://www.slidesai.io?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
+    tier: "gold",
+    classNames: "h-10"
+  },
+
+
+  {
     id: "30",
+    isPaste: true,
     name: "shadcn/space",
     logo: "https://shadcnspace.com/images/logo/shadcnspace.svg",
     url: "https://shadcnspace.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
@@ -42,22 +58,17 @@ export const SPONSORS: Sponsor[] = [
   },
   {
     id: "40",
+    isPaste: true,
     name: "Shoogle",
     logo: "/sponsors/shoogle.svg",
     url: "https://shoogle.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
     tier: "silver",
     classNames: "scale-90"
   },
-  {
-    id: "50",
-    name: "shadcn blocks",
-    logo: "/sponsors/shadcnblocks.svg",
-    url: "https://shadcnblocks.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
-    tier: "silver",
 
-  },
   {
     id: "60",
+    isPaste: true,
     name: "shadcn studio",
     logo: "https://cdn.shadcnstudio.com/ss-assets/marketing/shadcn-studio-logos/shadcn-studio-light-full-logo.png",
 
@@ -66,6 +77,7 @@ export const SPONSORS: Sponsor[] = [
   },
   {
     id: "70",
+    isPaste: true,
     name: "",
     logo: "/sponsors/react-bits.svg",
 
@@ -74,6 +86,7 @@ export const SPONSORS: Sponsor[] = [
   },
   {
     id: "80",
+    isPaste: true,
     name: "",
     logo: "/sponsors/efferd.svg",
     url: "https://efferd.com/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
@@ -82,6 +95,7 @@ export const SPONSORS: Sponsor[] = [
   },
   {
     id: "90",
+    isPaste: true,
     name: "",
     logo: "/sponsors/shadcord.svg",
 
@@ -90,6 +104,7 @@ export const SPONSORS: Sponsor[] = [
   },
   {
     id: "100",
+    isPaste: true,
     name: "",
     logo: "/sponsors/formcn.svg",
 
@@ -97,7 +112,7 @@ export const SPONSORS: Sponsor[] = [
     tier: "silver",
     classNames: "h-12"
   },
-];
+].filter((sponsor) => !sponsor.isPaste);
 
 // test
 
