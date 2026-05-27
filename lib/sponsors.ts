@@ -32,7 +32,8 @@ export const SPONSORS: Sponsor[] = [
     name: "shadcn blocks",
     logo: "/sponsors/shadcnblocks.svg",
     url: "https://shadcnblocks.dev/?utm_source=fonttrio&utm_medium=sponsor&utm_campaign=fonttrio_sponsors_page",
-    tier: "silver",
+    tier: "gold",
+    classNames: "scale-125"
   },
 
   // Paste sponsors
